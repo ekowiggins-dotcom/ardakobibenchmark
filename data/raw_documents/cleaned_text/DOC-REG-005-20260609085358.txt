@@ -1,0 +1,778 @@
+Sanal POS Hizmeti | Türkiye İş Bankası A.Ş.
+BİREYSEL
+BANKACILIK
+TİCARİ
+BANKACILIK
+BANKAMIZI
+TANIYIN
+BİREYSEL BANKACILIK
+Krediler
+Krediler
+İhtiyaç Kredisi
+Ek Hesap
+Taksitli Ek Hesap
+Taşıt Kredisi
+Ev Kredisi
+İş'te Limit
+Pos’tan İşPay’le Öde
+İşPay
+Kredi Notu Öğrenme / Risk Raporu
+Kredi Hesapla
+Kartlar
+Kartlar
+Maximum Kartlar
+Maximiles Kartlar
+Bankamatik Kartları
+Ön Ödemeli Kartlar
+Kart Hizmetleri
+Kampanyalar
+Maximum Mobil
+İşCep
+Mevduat ve Yatırım
+Mevduat ve Yatırım
+Vadeli Mevduat
+Yatırım Fonları
+Eurobond
+Vadesiz Mevduat
+Hisse Senedi
+Diğer Yatırım Ürünleri
+Altın
+Bono / Tahvil
+Birikim
+Vergi Kılavuzu
+Duyurular
+Dijital Bankacılık
+Dijital Bankacılık
+İşCep
+Maxi
+İşCep Hayatım
+Bireysel İnternet Şubesi
+Maximum Mobil
+Bankamatik
+Çözüm Merkezi
+Nays
+Planlı Kesintiler
+İşlemler
+Engelsiz Bankacılık
+İşCep Market
+Geleceğe Orman
+Açık Bankacılık Hizmetleri
+Müşteri Olmak İstiyorum
+Kişisel Finans Yönetimi
+Sigorta ve Emeklilik
+Sigorta ve Emeklilik
+SGK Emeklilerine Özel Ayrıcalıklar
+Bireysel Emeklilik (BES)
+Konut Paket Sigortası
+Kredi Destek Sigortası
+Hayat Sigortası
+Eşya Sigortası
+Bireysel Siber Güvenlik Sigortası
+DASK - Zorunlu Deprem Sigortası
+Sağlık Sigortası
+Kredi Kartı Destek Sigortası
+Trafik Sigortası
+Ferdi Kaza Sigortası
+Çocuğum için BES
+Ek Hesap Hayat Sigortası
+İş’te Çiftçi Hayat Sigortası
+İş yeri Sigortaları
+Ödemeler ve Para Transferi
+Ödemeler ve Para Transferi
+Trafik Para Cezası (TPC) Ödeme
+Ödeme İste
+ÖSYM Ödemeleri
+Para Aktarma
+Fatura Ödeme
+Tüketici Kredisi Ödeme
+Kolay Adres
+FAST
+HGS
+MTV Ödeme
+Güvenli Araç Alım-Satım
+SGK Ödemeleri
+Üniversite Ödemeleri
+Western Union
+Vergi
+Pasaport Ödemeleri
+Faturasız Hat Yükleme
+Ayrıcalıklı Hizmetler
+Ayrıcalıklı Hizmetler
+İş'te Maaşınızın Avantajları
+Kiralık Kasa
+SGK Emeklilerine Özel Ayrıcalıklar
+OYAK Üyelerine Özel Ayrıcalıklar
+e-Devlet Kapısı
+İş Mekan
+Ailelere Özel Bankacılık Çözümleri
+Çocuk Bankacılığı
+Gençlik Bankacılığı
+İş Plus
+İşCep
+Maximum Mobil
+Müşteri Olmak İstiyorum
+İş Black
+İş Black
+İş Black
+Özel Bankacılık
+Özel Bankacılık
+Özel Bankacılık
+Privia Black Kredi Kartı
+Bankacılık Hizmetleri
+Varlık Yönetimi
+Mevduat ve Yatırım
+Mevduat ve Yatırım
+Vadeli Mevduat
+Yatırım Fonları
+Günlük Kazandıran Hesap
+Vadesiz Mevduat
+Hisse Senedi
+Vade Bekletmeyen Mevduat Hesabı
+Altın
+Eurobond
+Diğer Yatırım Ürünleri
+Duyurular
+Vergi Kılavuzu
+İş Yatırım Hisse ve Model Portföy Önerileri
+Ticari Krediler
+Ticari Krediler
+Nakdi Krediler
+Anında Ticari Kredi
+İşyeri Kredisi
+Gayrınakdi Krediler
+Çevreye Duyarlı Krediler
+Dijital Teminat Mektubu
+Borçlu Cari Hesap
+KOSGEB Kredileri
+Findeks Hizmetleri
+Taksitli Ticari Ek Hesap
+Hemen Başvur
+Kredi Hesapla
+Ticari Kredi Faiz Oranları
+Ticari Kartlar
+Ticari Kartlar
+Maximum Ticari Kredi Kartı
+İmece Kart
+Maximum Business Aidatsız Kart
+Maximiles Business Kart
+Vergi Kart
+Maximiles Business Startup Kart
+Maximum Business Turizm Kart
+İşim Kart
+Ticari Bankamatik
+Maximum TEMA Şirket Kredi Kartı
+Hemen Başvur
+Ticari Kart Kampanyaları
+Ticari Kart Ayrıcalıkları
+Dış Ticaret
+Dış Ticaret
+Dış Ticarette Finansman ve Dış Ticaret Paketleri
+Dış Ticarette Sigorta
+Dijital Dış Ticaret
+Nakit Yönetimi Dosya Otomasyonu (NYDO)
+Dış Ticaret Paketleri
+Akreditif
+İhracat Bedeli Kabul Belgesi (İBKB) İşlemleri
+Dış Ticaret Ürünleri
+Döviz Havalesi/SWIFT
+İhracatım Öder Kredisi
+Maximiles TİM İhracatçı Kart
+İhracatçı Kart
+Dijital Dış Ticaret İşlem Listesi
+POS / ÖKC
+POS / ÖKC
+Üye İşyeri
+POS'um Cepte
+Anında POS
+Yazarkasa POS
+Pos Destek
+E-Ticaret Ürünleri
+POS Türleri
+POS Hata Kodları
+Sanal POS
+POS Sigortası
+Linkle Tahsilat
+İşPOS
+Pos Başvuru
+Pos Kampanyaları
+KOBİ ve Esnaf Bankacılığı
+KOBİ ve Esnaf Bankacılığı
+KOBİ Bankacılığı
+Esnaf Bankacılığı
+DijiKolay
+KOBİ Kredileri
+Esnaf Kredileri
+Ödemen Tamam
+Çek - Senet Paketleri
+Esnafa Anında Çözümler
+ÇekCepte
+Yatırım Kredisi
+Yeni Müşteri
+Turizm İşletmelerine Özel Çözümler
+Tarım Bankacılığı
+Tarım Bankacılığı
+Çiftçilere Özel
+Tarım ve Hayvancılık Kredileri
+Tarım Bankacılığı Ürünleri
+Dijital Tarım Bankacılığı
+Tarımsal Ürün Kart
+İmece Kart
+İmece POS
+İmece Mobil
+Traktör ve Ekipman Kredileri
+TARSİM Tarım Sigortaları
+Anında Tarım Kredisi
+İmece Kart
+Dijital Tarım Çözümü
+İşinize Özel
+İşinize Özel
+DijiKolay
+İşin Artısı
+Girişimci Kadınlara Özel Çözümler
+Nakit Yönetimi
+Girişimcilik
+Eczane ve Eczacılara Özel Hizmetler
+Kurumsal Bankacılık
+Turizm İşletmelerine Özel Çözümler
+Elektrik Üretim Kredisi
+Genç KOBİ'lere Özel Çözümler
+Workup Girişimcilik Programı
+Risk Yönetimi - Türev ve Yapılandırılmış Ürünler
+Dijital Bankacılık
+Dijital Bankacılık
+İşCep Ticari
+İnternet Şubesi Ticari
+Ticari İşlem Listesi
+İşCep Market
+Bankamatik
+İmeceMobil
+Kolay Adres
+API Portal
+DijiKolay Finansman
+İşPOS
+DijiKolay
+Dijital Slip
+Ödeme İste İle Dijital Tahsilat
+Müşteri Olmak İstiyorum
+Açık Bankacılık Hizmetleri
+Linkle Tahsilat
+Hakkımızda
+Hakkımızda
+Vizyon ve Stratejimiz
+Tarihimiz
+İştiraklerimiz
+Yurt Dışı Şubelerimiz
+Satılık Gayrimenkuller
+Sürdürülebilirlik
+Sürdürülebilirlik
+Yaklaşımımız
+Yapılanmamız
+Politikalarımız
+Sürdürülebilirlik Kilometre Taşları
+Sorumlu Bankacılık
+Sorumlu Ürün ve Hizmetler
+Raporlarımız
+Üyelikler ve İnisiyatifler
+Derecelendirme Notları ve Endeksler
+İklim Dönüşüm Stratejisi
+Geleceğe Orman
+Yatırımcı İlişkileri
+Yatırımcı İlişkileri
+Finansal Bilgiler
+Yatırımcı Sunumu
+Özel Durum Açıklamaları
+Kredi Derecelendirme Notları
+Kurumsal Bilgiler
+Kurumsal Yönetim
+Paylara İlişkin Bilgiler
+İletişim
+Sıkça Sorulan Sorular
+İŞ'te Kariyer
+İŞ'te Kariyer
+Kariyer Fırsatları
+Haberler ve Medya
+Haberler ve Medya
+İş Bankası'ndan Haberler
+Reklam Videolarımız
+Sosyal Medya
+Kurumsal Sosyal Sorumluluk
+Kurumsal Sosyal Sorumluluk
+Eğitim
+Çevre
+Kültür ve Sanat
+Anında Şifre
+Güvenlik
+Ürün ve Hizmet Ücretleri
+EN
+Anında Şifre
+Güvenlik
+Ürün ve Hizmet Ücretleri
+EN
+BİREYSEL
+BANKACILIK
+TİCARİ
+BANKACILIK
+BANKAMIZI
+TANIYIN
+İş Bankalı Ol
+İnternet Şubesi
+Bireysel Şube
+Ticari Şube
+İş Bankalı Ol
+İnternet Şubesi
+Bireysel Şube
+Ticari Şube
+X
+Size Nasıl Yardımcı Olabiliriz?
+Krediler
+Kartlar
+Mevduat ve Yatırım
+Dijital Bankacılık
+Sigorta ve Emeklilik
+Ödemeler ve Para Transferi
+Ayrıcalıklı Hizmetler
+İş Black
+Özel Bankacılık
+Mevduat ve Yatırım
+Ticari Krediler
+Ticari Kartlar
+Dış Ticaret
+POS / ÖKC
+KOBİ ve Esnaf Bankacılığı
+Tarım Bankacılığı
+İşinize Özel
+Dijital Bankacılık
+Hakkımızda
+Sürdürülebilirlik
+Yatırımcı İlişkileri
+İŞ'te Kariyer
+Haberler ve Medya
+Kurumsal Sosyal Sorumluluk
+İhtiyaç Kredisi
+Ek Hesap
+Taksitli Ek Hesap
+Taşıt Kredisi
+Ev Kredisi
+İş'te Limit
+Pos’tan İşPay’le Öde
+İşPay
+Kredi Notu Öğrenme / Risk Raporu
+Tüm Bireysel Kredi Ürünlerimiz
+Kredi Hesapla
+Maximum Kartlar
+Maximiles Kartlar
+Bankamatik Kartları
+Ön Ödemeli Kartlar
+Kart Hizmetleri
+Kampanyalar
+Tüm Kartlarımız
+Maximum Mobil
+İşCep
+Vadeli Mevduat
+Yatırım Fonları
+Eurobond
+Vadesiz Mevduat
+Hisse Senedi
+Diğer Yatırım Ürünleri
+Altın
+Bono / Tahvil
+Birikim
+Tüm Mevduat ve Yatırım Ürünlerimiz
+Vergi Kılavuzu
+Duyurular
+İşCep
+Maxi
+İşCep Hayatım
+Bireysel İnternet Şubesi
+Maximum Mobil
+Bankamatik
+Çözüm Merkezi
+Nays
+Planlı Kesintiler
+İşlemler
+Engelsiz Bankacılık
+İşCep Market
+Geleceğe Orman
+Açık Bankacılık Hizmetleri
+Tümü
+Müşteri Olmak İstiyorum
+Kişisel Finans Yönetimi
+SGK Emeklilerine Özel Ayrıcalıklar
+Bireysel Emeklilik (BES)
+Konut Paket Sigortası
+Kredi Destek Sigortası
+Hayat Sigortası
+Eşya Sigortası
+Bireysel Siber Güvenlik Sigortası
+DASK - Zorunlu Deprem Sigortası
+Sağlık Sigortası
+Kredi Kartı Destek Sigortası
+Trafik Sigortası
+Ferdi Kaza Sigortası
+Çocuğum için BES
+Ek Hesap Hayat Sigortası
+İş’te Çiftçi Hayat Sigortası
+Tüm Sigorta ve Emeklilik Ürünlerimiz
+İş yeri Sigortaları
+Trafik Para Cezası (TPC) Ödeme
+Ödeme İste
+ÖSYM Ödemeleri
+Para Aktarma
+Fatura Ödeme
+Tüketici Kredisi Ödeme
+Kolay Adres
+FAST
+HGS
+MTV Ödeme
+Güvenli Araç Alım-Satım
+SGK Ödemeleri
+Üniversite Ödemeleri
+Western Union
+Ödemeler ve Para Transferi
+Vergi
+Pasaport Ödemeleri
+Faturasız Hat Yükleme
+İş'te Maaşınızın Avantajları
+Kiralık Kasa
+SGK Emeklilerine Özel Ayrıcalıklar
+OYAK Üyelerine Özel Ayrıcalıklar
+e-Devlet Kapısı
+İş Mekan
+Ailelere Özel Bankacılık Çözümleri
+Çocuk Bankacılığı
+Gençlik Bankacılığı
+İş Plus
+Ayrıcalıklı Hizmetler
+İşCep
+Maximum Mobil
+Müşteri Olmak İstiyorum
+İş Black
+Özel Bankacılık
+Privia Black Kredi Kartı
+Bankacılık Hizmetleri
+Varlık Yönetimi
+privia.com.tr'yi ziyaret et
+Vadeli Mevduat
+Yatırım Fonları
+Günlük Kazandıran Hesap
+Vadesiz Mevduat
+Hisse Senedi
+Vade Bekletmeyen Mevduat Hesabı
+Altın
+Eurobond
+Diğer Yatırım Ürünleri
+Tüm Mevduat ve Yatırım Ürünlerimiz
+Duyurular
+Vergi Kılavuzu
+İş Yatırım Hisse ve Model Portföy Önerileri
+Nakdi Krediler
+Anında Ticari Kredi
+İşyeri Kredisi
+Gayrınakdi Krediler
+Çevreye Duyarlı Krediler
+Dijital Teminat Mektubu
+Borçlu Cari Hesap
+KOSGEB Kredileri
+Findeks Hizmetleri
+Taksitli Ticari Ek Hesap
+Tüm Ticari Kredi Ürünlerimiz
+Hemen Başvur
+Kredi Hesapla
+Ticari Kredi Faiz Oranları
+Maximum Ticari Kredi Kartı
+İmece Kart
+Maximum Business Aidatsız Kart
+Maximiles Business Kart
+Vergi Kart
+Maximiles Business Startup Kart
+Maximum Business Turizm Kart
+İşim Kart
+Ticari Bankamatik
+Maximum TEMA Şirket Kredi Kartı
+Tüm Kartlarımız
+Hemen Başvur
+Ticari Kart Kampanyaları
+Ticari Kart Ayrıcalıkları
+Dış Ticarette Finansman ve Dış Ticaret Paketleri
+Dış Ticarette Sigorta
+Dijital Dış Ticaret
+Nakit Yönetimi Dosya Otomasyonu (NYDO)
+Dış Ticaret Paketleri
+Akreditif
+İhracat Bedeli Kabul Belgesi (İBKB) İşlemleri
+Dış Ticaret Ürünleri
+Döviz Havalesi/SWIFT
+İhracatım Öder Kredisi
+Dış Ticaret
+Maximiles TİM İhracatçı Kart
+İhracatçı Kart
+Dijital Dış Ticaret İşlem Listesi
+Üye İşyeri
+POS'um Cepte
+Anında POS
+Yazarkasa POS
+Pos Destek
+E-Ticaret Ürünleri
+POS Türleri
+POS Hata Kodları
+Sanal POS
+POS Sigortası
+Linkle Tahsilat
+İşPOS
+POS / Üye İşyeri
+Pos Başvuru
+Pos Kampanyaları
+KOBİ Bankacılığı
+Esnaf Bankacılığı
+DijiKolay
+KOBİ Kredileri
+Esnaf Kredileri
+Ödemen Tamam
+Çek - Senet Paketleri
+Esnafa Anında Çözümler
+ÇekCepte
+Yatırım Kredisi
+KOBİ Bankacılığı
+Yeni Müşteri
+Turizm İşletmelerine Özel Çözümler
+Çiftçilere Özel
+Tarım ve Hayvancılık Kredileri
+Tarım Bankacılığı Ürünleri
+Dijital Tarım Bankacılığı
+Tarımsal Ürün Kart
+İmece Kart
+İmece POS
+İmece Mobil
+Traktör ve Ekipman Kredileri
+TARSİM Tarım Sigortaları
+Anında Tarım Kredisi
+Tarım Bankacılığı
+İmece Kart
+Dijital Tarım Çözümü
+DijiKolay
+İşin Artısı
+Girişimci Kadınlara Özel Çözümler
+Nakit Yönetimi
+Girişimcilik
+Eczane ve Eczacılara Özel Hizmetler
+Kurumsal Bankacılık
+Turizm İşletmelerine Özel Çözümler
+Elektrik Üretim Kredisi
+Genç KOBİ'lere Özel Çözümler
+İşinize Özel
+Workup Girişimcilik Programı
+Risk Yönetimi - Türev ve Yapılandırılmış Ürünler
+İşCep Ticari
+İnternet Şubesi Ticari
+Ticari İşlem Listesi
+İşCep Market
+Bankamatik
+İmeceMobil
+Kolay Adres
+API Portal
+DijiKolay Finansman
+İşPOS
+DijiKolay
+Dijital Slip
+Ödeme İste İle Dijital Tahsilat
+Tümü
+Müşteri Olmak İstiyorum
+Açık Bankacılık Hizmetleri
+Linkle Tahsilat
+Vizyon ve Stratejimiz
+Tarihimiz
+İştiraklerimiz
+Yurt Dışı Şubelerimiz
+Satılık Gayrimenkuller
+Hakkımızda
+Yaklaşımımız
+Yapılanmamız
+Politikalarımız
+Sürdürülebilirlik Kilometre Taşları
+Sorumlu Bankacılık
+Sorumlu Ürün ve Hizmetler
+Raporlarımız
+Üyelikler ve İnisiyatifler
+Derecelendirme Notları ve Endeksler
+İklim Dönüşüm Stratejisi
+Sürdürülebilirlik
+Geleceğe Orman
+Finansal Bilgiler
+Yatırımcı Sunumu
+Özel Durum Açıklamaları
+Kredi Derecelendirme Notları
+Kurumsal Bilgiler
+Kurumsal Yönetim
+Paylara İlişkin Bilgiler
+İletişim
+Sıkça Sorulan Sorular
+Yatırımcı İlişkileri
+Kariyer Fırsatları
+İŞ'te Kariyer
+İş Bankası'ndan Haberler
+Reklam Videolarımız
+Sosyal Medya
+Haberler ve Medya
+Eğitim
+Çevre
+Kültür ve Sanat
+Kurumsal Sosyal Sorumluluk
+Ana Sayfa >
+Üye İşyeri / POS  >
+E-Ticaret >
+Sanal POS
+Sanal POS
+İş Bankası Sanal POS özellikleri nelerdir?
+İş Bankası Sanal POS hizmeti, kolay entegre olunan yazılım altyapısı ile, e-ticaret dünyasında kartlı ödeme kabulünü zahmetsizce sağlar. Değişik formatları ile ihtiyacınıza en uygun raporları sunar.
+Sanal POS tahsisinde işyerlerinde aranan özellikler nelerdir?
+İşyerinin aktif bir web sitesi olması,
+İşyerinin web sitesi güvenliğinin minimum 128 bit şifreli SSL sertifikası ile sağlanmış olması, (SSL sertifikası bulunmayan işyerleri İş Bankası Güvenli Ödeme Sayfalarını kullanabilmektedir.)
+İş yerinin web sitesinde;
+Sunduğu ürünün/hizmetin tam ve açık tanımı
+Sunduğu ürünün/hizmetin fiyatı
+Siparişin iptali ve ürünün iadesi ile ilgili koşullar ve bunların kart hamili tarafından okunup kabul edildiğini gösteren ‘kabul ediyorum’ seçeneği
+Müşteri hizmetleri irtibat telefonları ve elektronik posta adresleri
+İşyerinin ticaret unvanı
+İşyerinin ikamet ettiği ülke adı ve işyeri adresi
+Teslimat politikası
+İşlemin gerçekleştirildiği para birimi
+Varsa ithalat kısıtlamaları
+Gizlilik taahhüdü ve bilgi güvenliği politikası
+MasterCard, Visa ve American Express logoları net bir şekilde yer almalıdır.
+Yasal düzenlemeler çerçevesinde satışı yasaklanmış ürünlerin sitede satılmaması,
+E-satış belgesinin iş yeri tarafından işlem gerçekleştirildikten sonra kart hamiline elektronik ya da kâğıt ortamda sunulabilecek olması gerekmektedir.
+Sanal POS’a nasıl başvurulur?
+Mevcutta Bankamız ile üye işyeri anlaşmanız bulunuyorsa sadece Şubenize başvurup talebinizi iletmeniz ve Elektronik Ticaret Sözleşmesini imzalamanız yeterli olacaktır. Mevcutta Bankamız üye işyeri değilseniz en yakın Şubemiz aracılığıyla işyeri başvurunuzu iletebilirsiniz.
+İş Bankası Sanal POS’larından hangi işlemler yapılabilmektedir?
+İş Bankası sanal POS’larında Visa, Mastercard, American Express, UnionPay, JCB ve TROY logolu tüm kredi ve banka kartları kabul edilmekte olup, fiziki POS cihazlarında yapılabilen satış, taksitli satış, vade farklı satış (Maximum Fırsat), MaxiPuan kullanma, ön provizyon alma/kapama işlemleri Sanal POS’ta da yapılabilmektedir. Ayrıca, bayi kart kullanan üye işyerleri tahsilâtlarını sanal POS üzerinden de gerçekleştirebilmektedirler.
+İş Bankası Sanal POS’u ile yurtdışı kartlar ile hangi para birimleri kullanılarak işlem yapılabilir?
+Bankamız sanal POS’unu kullanan işyerleri yurtdışı bankalara ait kredi ve banka kartlarıyla, ABD Doları (USD), Euro (EUR), İngiliz Sterlini (GBP), Avustralya Doları (AUD), Danimarka Kronu (DKK), İsveç Kronu (SEK), İsviçre Frangı (CHF), Japon Yeni (JPY), Kanada Doları (CAD), Kuveyt Dinarı (KWD), Norveç Kronu (NOK), Suudi Arabistan Riyali (SAR), Rus Rublesi (RUB) ve Çin Yuanı (CNY) olmak üzere 14 farklı para birimi ile yabancı para cinsinden işlem yapabilmekte ve söz konusu işlem tutarları döviz hesaplarına aktarılmaktadır.
+İş Bankası Sanal POS’unda Bankamatik kartı (debit kart) ile nasıl işlem yapabilirim?
+Bankamatik kartı ile internette yapılan işlemlerde 3D secure sistemi zorunludur.
+Sanal POS hizmeti için herhangi bir ücret talep edilmekte midir?
+İş Bankası sanal POS hizmeti için yıllık BSMV dahil 13.999 TL ücret alınmaktadır.
+3D güvenlik uygulaması nedir?
+3D Secure sistemi, e-ticaret işlemlerinin güvenli olarak yapılabilmesini sağlayan ve uluslararası kart kuruluşlarınca desteklenen bir sistemdir. 3D secure altyapısı olan e-ticaret sitelerin kart hamilleri, güvenli bir şekilde işlem yapabilmektedirler. 3D Secure sistemini kullanmayan üye iş yerlerinde, kart hamilinin bilgisi dışında gerçekleştirilen işlemlere kart hamillerinin itiraz etmeleri durumunda işlem tutarları uluslararası kuralları çerçevesinde üye işyerlerinden geri alınmaktadır. 3D secure ile işlem güvenliği sağlanırken, üye işyerleri de kart hamillerinin işlem bana ait değil yönündeki itirazlarından korunmaktadır.
+Bankamız elektronik ticaret ürünleriyle ilgili her türlü soru ve öneriniz için Şubelerimiz ile iletişime geçebilirsiniz.
+Başa Dön
+Faydalı Linkler
+Kampanyalar
+Kampanyalar
+Blog
+Blog
+Yatırım Fonları
+Yatırım Fonları
+SGK Emeklilerine Promosyon
+SGK Emeklilerine Promosyon
+Fiyatlar ve Oranlar
+Fiyatlar ve Oranlar
+IBAN Hesaplama
+IBAN Hesaplama
+Bireysel İnternet Şubesi
+Bireysel İnternet Şubesi
+Zamanaşımı
+Zamanaşımı
+Ticari Krediler Faiz Oranları
+Ticari Krediler Faiz Oranları
+KOSGEB
+KOSGEB
+Tarım ve Hayvancılık Kredileri
+Tarım ve Hayvancılık Kredileri
+POS Fiyatları
+POS Fiyatları
+E-Fatura
+E-Fatura
+Maaş Ödemeleri
+Maaş Ödemeleri
+POS /Üye İşyeri
+POS /Üye İşyeri
+Kartlar
+Kartlar
+Workup
+Workup
+Esnaf Bankacılıığı
+Esnaf Bankacılıığı
+Tarım Bankacılığı
+Tarım Bankacılığı
+Findeks Hizmetleri
+Findeks Hizmetleri
+Ticari İnternet Şubesi
+Ticari İnternet Şubesi
+İşCep Ticari
+İşCep Ticari
+Kadın Girişimci
+Kadın Girişimci
+Kredi Garanti Fonu
+Kredi Garanti Fonu
+Sözleşme ve Formlar
+Sözleşme ve Formlar
+Site Haritası
+Site Haritası
+Mevduat Sigortası Hakkında
+Mevduat Sigortası Hakkında
+Başvuru ve Hesaplama Araçları
+Ürün ve Hizmet Ücretleri
+Ürün ve Hizmet Ücretleri
+Hesaplama Araçları
+Hesaplama Araçları
+Anında Ticari Kredi
+Anında Ticari Kredi
+Ticari Kredi Kartı
+Ticari Kredi Kartı
+KOBİ Kredileri
+KOBİ Kredileri
+DijiKolay
+DijiKolay
+Sanal POS
+Sanal POS
+İşyeri Kredisi
+İşyeri Kredisi
+İmece Kart
+İmece Kart
+İşPOS
+İşPOS
+İşim Kart
+İşim Kart
+TARSİM
+TARSİM
+Esnafa Destek Kredisi
+Esnafa Destek Kredisi
+İmeceMobil
+İmeceMobil
+Traktör ve Ekipman Kredileri
+Traktör ve Ekipman Kredileri
+Borçlu Cari Hesap
+Borçlu Cari Hesap
+Tarımsal Arazi Kredisi
+Tarımsal Arazi Kredisi
+Ticari Müşteri Olmak İstiyorum
+Ticari Müşteri Olmak İstiyorum
+Hakkımızda
+0850 724 0 724
+0850 724 0 724
+Diyalog Şubesi
+Diyalog Şubesi
+Şube ve Bankamatikler
+Şube ve Bankamatikler
+İletişim
+İletişim
+İletişim Formu
+İletişim Formu
+İletişim Formu Takip
+İletişim Formu Takip
+Yardım
+Yardım
+© 2026 Türkiye İş Bankası A.Ş.
+Yasal Uyarı
+Yasal Uyarı
+Güvenlik
+Güvenlik
+Gizlilik Politikamız
+Gizlilik Politikamız
+Kişisel Verilerin Korunması
+Kişisel Verilerin Korunması
+Bilgi Toplumu Hizmetleri
+Bilgi Toplumu Hizmetleri
+Çerez Ayarları
+Çerez Ayarları
+X Kapat

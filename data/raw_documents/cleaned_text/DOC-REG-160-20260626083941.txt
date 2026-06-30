@@ -1,0 +1,470 @@
+Ürün ve Hizmet Ücretleri | Burgan Bank
+Havale
+Havale/Mobil
+Masraf
+Asgari Tutar
+Asgari Oran
+Azami Tutar
+Azami Oran
+Açıklama
+Güncel Tarihi
+Havale Ücreti ( 0 - 8.300 TL )
+3.99 TL
+BSMV hariçtir.Tutar 08/02/2026 tarihinden itibaren geçerli olacaktır
+01/19/2026 15:07:57
+Havale Ücreti ( 8.300,01 - 399.000 TL )
+7.98 TL
+01/08/2026 15:23:45
+Havale Ücreti (399.000 TL üzeri )
+99.71 TL
+01/09/2026 08:58:19
+Havale/Şube/Diğer
+19.94 TL
+01/08/2026 15:23:53
+39.88 TL
+Havale Ücreti ( 399.000 TL üzeri )
+398.84 TL
+Havale/Internet
+01/21/2026 14:03:00
+Havale Ücreti ( 8300,01 - 399.000 TL )
+Havale/Çagri Merkezi
+01/08/2026 15:23:48
+EFT
+EFT/Çagri Merkezi
+EFT Ücreti ( 0 - 8.300 TL )
+39.87 TL
+BSMV hariçtir.FAST sistemi üzerinden yapılan işlemler için de aynı ücret uygulanır.Tutar 08/02/2026 tarihinden itibaren geçerli olacaktır
+01/08/2026 15:23:56
+EFT Ücreti ( 8.300,01 - 399.000 TL )
+79.76 TL
+BSMV hariçtir. FAST sistemi üzerinden yapılan işlemler için de aynı ücret uygulanır.Tutar 08/02/2026 tarihinden itibaren geçerli olacaktır
+EFT Ücreti ( 399.000 TL üzeri )
+797.68 TL
+EFT/Internet
+7.97 TL
+01/08/2026 15:23:58
+15.96 TL
+199.41 TL
+EFT/Şube/Diğer
+01/08/2026 15:24:03
+EFT/Mobil
+01/08/2026 15:24:00
+Uluslararası Para Transferi
+Uluslararası Para Transferi(Şube)
+Döviz Giden Transfer (0-75.000 TL)
+800.00 TL
+Swift işlemlerinde muhabir banka masrafları ek olarak yansıtılacaktır ve işlem bazında ilgili mesajın sistemden alındığı anda yapılacak araştırma ve/veya iade işlemleri karşılığında azami 21 USD/21 EUR öncelikle müşterinin USD/EUR/TRL hesaplarından döviz veya Bankamızın döviz satış kuru esas alınarak TL olarak yapılır.BSMV Hariçtir.09/03/2026 tarihinden itibaren geçerli olacaktır
+02/06/2026 14:47:53
+Döviz Giden Transfer (75.000,01-250.000 TL)
+950.00 TL
+Swift işlemlerinde muhabir banka masrafları ek olarak yansıtılacaktır ve işlem bazında ilgili mesajın sistemden alındığı anda yapılacak araştırma ve/veya iade işlemleri karşılığında azami 21 USD/21 EUR öncelikle müşterinin USD/EUR/TRL hesaplarından döviz veya Bankamızın döviz satış kuru esas alınarak TL olarak yapılır.BSMV Hariçtir.09/03/2026 tarihinden itibaren geçerli olacaktır.
+02/06/2026 14:58:32
+Döviz Giden Transfer (250.000,01 TL ve üzeri)
+1150.00 TL
+02/06/2026 14:58:37
+Uluslararası Para Transferi(Mobil/İnternet/Çağrı Merkezi)
+Döviz Giden Transfer (1.800-15.000 TL)
+400.00 TL
+02/06/2026 15:02:45
+Döviz Giden Transfer (15.000,01-75.000 TL)
+475.00 TL
+575.00 TL
+Konut Kredileri
+Standart Mortgage
+12 Ay
+9.00 %
+KKDF ve BSMV hariç
+04/01/2024 12:03:16
+18 Ay
+24 Ay
+36 Ay
+48 Ay
+60 Ay
+84 Ay
+120 Ay
+Standart Mortgage Ekspertiz Ücreti
+1750.00 TL
+KDV hariç
+01/07/2022 18:19:10
+Standart Mortgage Ipotek Tesis Ücreti
+3070.00 TL
+İpotek Fek İşlemleri içinde aynı ücret alınmaktadır. KDV hariçtir.
+12/26/2025 13:27:04
+Standart Mortgage Yillik Toplam Maliyet Orani
+188.02 %
+36 ay vadeli ve 200.000 TL tutarindaki kredi için dosya masrafi,ekspertiz ücreti,ipotek tesis ücreti, yıllık maliyet oranlarina dahil edilmistir
+10/10/2024 13:42:58
+Standart Mortgage Kredi Tahsis Ücret
+0.50 %
+Muaf
+08/16/2024 08:39:13
+Finansal Destek Kredisi
+04/01/2024 12:03:19
+Finansal Destek Kredisi Ekspertiz Ücreti
+01/07/2022 18:19:13
+Finansal Destek Kredisi Ipotek Tesis Ücreti
+12/26/2025 13:27:05
+Finansal Destek Kredisi Yillik Toplam Maliyet Orani
+205.95 %
+24 ay vade ve 70.000 TL tutarindaki finansal destek kredisi için kredi tahsis ücreti,ekspertiz,ipotek masrafı,KKDF ve BSMV yillik maliyet oranlarina dahil edilmistir
+10/10/2024 13:43:01
+Finansal Destek Kredisi Kredi Tahsis Ücreti
+BSMV Hariç
+12/16/2019 11:00:39
+Konut Finansmanı Kredisi Erken Kapama Komisyonu (Kalan vadesi 36 ayı aşmayanlar için kalan tutar üzerinden)
+Konut Finansmanı Kredisi
+1.00 %
+11/09/2016 15:41:46
+Konut Finansmanı Kredisi Erken Kapama Komisyonu (Kalan vadesi 36 ayı aşanlar için kalan tutar üzerinden)
+2.00 %
+11/09/2016 15:41:52
+Taşıt Kredileri
+0 KM Taşıt Kredisi
+04/01/2024 12:03:22
+0 KM Tasit Kredisi Kredi Tahsis Ücreti
+BSMV hariç
+12/20/2019 11:40:37
+0 KM Tasit Kredisi Yillik Toplam Maliyet Orani
+140.14 %
+24 ay vade ve 40.000 TL tutarindaki tasit kredisi için kredi tahsis ücreti, KKDF ve BSMV yillik maliyet oranlarina dahil edilmistir
+11/23/2023 09:43:19
+Noterler Birliği Rehin İşlemleri
+350.92 TL
+Rehin koyma, Rehin kaldırma ve muvafakatname ücreti olarak işlem başına tahsil edilmektedir.
+01/01/2026 10:37:37
+2. El Taşıt Kredisi
+04/01/2024 12:03:24
+2. El Tasit Kredisi Kredi Tahsis Ücreti
+01/20/2021 11:22:02
+2. El Tasit Kredisi Yillik Toplam Maliyet Orani
+11/23/2023 09:43:16
+01/01/2026 10:37:31
+İhtiyaç Kredileri
+Bireysel İhtiyaç Kredisi
+04/01/2024 12:03:26
+Teminat Mektupları (Dönemsel tahsil edilir)
+150.00 TL
+4.00 %
+02/28/2019 16:41:11
+Teminat Mektupları Düzenleme Masrafı
+100.00 TL
+02/28/2019 16:41:19
+İhtiyaç Kredisi Kredi Tahsis Ücreti - %
+12/16/2019 10:44:36
+İhtiyaç Kredisi Yıllık Toplam Maliyet Oranı
+140.83 %
+12 ay vade ve 7.000 TL tutarındaki ihtiyaç kredisi için kredi tahsis ücreti, KKDF ve BSMV aylık maliyet oranlarına dahil edilmiştir.
+11/23/2023 09:43:22
+Süper Ek Hesap
+4.25 %
+KKDF ve BSMV hariç (Yıllık Faiz Oranı: %51,00)
+01/01/2026 11:03:30
+Dijital Kredi
+Dijital İhtiyaç Kredileri
+08/16/2024 11:02:53
+08/16/2024 11:41:36
+122.13 %
+12 ay vade ve 10.000 TL tutarındaki ihtiyaç kredisi için kredi tahsis ücreti, KKDF ve BSMV aylık maliyet oranlarına dahil edilmiştir.
+Sigorta Primi
+450.00 TL
+12 ay vade ve 10.000 TL tutarındaki ihtiyaç kredisi için hesaplanan ortalama prim tutarıdır. Sigorta primi kredi tutarı, vade vb. bilgilere göre değişiklik gösterebilir.
+01/01/2026 10:37:35
+Tasarruf Mevduatı
+Vadeli-Vadesiz
+Cari Hesap Ekstresi (TL)
+2.00 TL
+Sayfa Başına, BSMV Dahil
+12/02/2019 23:03:53
+Bankamız ATM'leri
+Banka Kartı
+Para Çekme (TL)
+Bulunmamaktadır
+10/04/2024 17:42:33
+Bakiye Sorma (TL)
+09/17/2020 11:32:52
+10/04/2024 17:42:34
+Diğer Banka ATM'leri
+Para Çekme
+1.04 TL
+1.15 %
+BSMV dahildir. Oran+Tutar şeklinde uygulanır. Asgari tutar 1,04 TL, Asgari oran %1,15 olarak hesaplanır.
+03/03/2025 15:38:26
+Bakiye Sorma
+0.27 TL
+BSMV dahildir. Sadece tutar uygulanır.
+07/18/2023 15:55:41
+Para Yatırma
+Kredi Kartı
+Diğer Banka ATM'lerinden Kredi Kartı Borç Ödeme
+İşlem ücretleri işlem başına çekilen tutarın %1.15 + 1.04 TL'dir. BSMV hariçtir.
+03/05/2025 08:21:49
+Diğer Banka ATMlerinden Kredi Kartı Limiti Sorgulama
+İşlem ücretleri işlem başına ve sabit olarak alınmakta olup BSMV hariçtir.
+03/05/2025 08:21:46
+Diğer Banka ATMlerinden Kredi Kartı Borç Sorgulama
+İşlem ücretleri işlem başına ve sabit olarak alınmakta olup BSMV hariçtir
+Yurtdışı ATM'ler
+03/21/2013 11:05:53
+TEB ATM'leri
+Para Çekme/Para Yatırma
+0.52 TL
+0.57 %
+BSMV dahildir. Oran+Tutar şeklinde uygulanır.Asgari tutar 0,52 TL, Asgari oran %0,57 olarak hesaplanır.
+10/11/2023 14:25:46
+Bakiye Sorgulama
+0.13 TL
+İş Bankası ATM'leri
+Para çekme/yatırma (TL)
+09/17/2020 11:33:11
+Bakiye sorgulama (TL)
+09/17/2020 11:33:28
+PTT ATM'leri
+07/18/2023 15:59:32
+Kasa Kiralama
+Küçük
+Yillik Ücret (TL)
+9000.00 TL
+BSMV hariçtir. Mevcutta ürünü kullanan müşterilerimiz için fiyat güncellemesi 09.03.2026 tarihi itibarıyla geçerli olacaktır
+02/06/2026 13:58:09
+Orta
+12000.00 TL
+Büyük
+15000.00 TL
+Menkul Kıymetler
+Menkul Kiymet Devir Islemleri
+Hazine Bonosu
+20.00 TL
+0.10 %
+200.00 TL
+01/03/2022 18:40:34
+Eurobond
+20.00 USD
+200.00 USD
+Menkul Kiymet Fiziki Teslim
+01/03/2022 14:21:46
+Nominal Tutar 250.000 TL üzeri (TL)
+03/21/2013 11:16:05
+Müsteri Ihale Islemleri
+Islem Komisyonu (%)
+0.30 %
+01/04/2022 13:57:36
+Menkul Kıymet Ekstresi
+5.00 TL
+Ekstre Başına BSMV Dahil
+12/27/2021 14:06:54
+MKK Ücretleri
+MKK Hesap Açma Ücreti
+MKK Hesap Açma İşlem Ücreti
+17.75 TL
+BSMV hariçtir. Üyeler tarafından açılan hesap başına 17,75 TL hesap açma ücreti alınır.
+03/02/2026 09:55:10
+MKK Sicil Numarası ve Şifresi Gönderim Ücreti
+MKK Yatırımcı sicil numarası ve şifresi gönderim işlem ücreti
+55.68 TL
+MKK bilgilendirme hizmetinden yararlanmak isteyen yatırımcıların şifre talep etmesi durumunda tahakkuk ettirilir.
+02/27/2026 10:49:05
+MKK Hesap Bakım Ücreti
+40.15 TL
+BSMV hariçtir. Saklama bakiyelerinin piyasa değeri 1000 TL ve üzeri olan hesaplardan günlük 0,11 TL hesap bakım ücreti alınır.
+03/02/2026 09:55:34
+MKK Saklama Ücreti
+MKK ÖSBA, VDMK, Kira sertifikası, DİBS Anapara Saklama Ücreti
+0.01 %
+Pay adedinin pay fiyatı ile çarpımının yıllık onbinde 0,65'i kadar olarak tahsil edilir. BSMV hariçtir.
+02/11/2025 22:44:45
+Pay Senedi ve Katılım Şemsiye Fonuna Bağlı Yatırım fonları Saklama Ücreti
+Pay adedinin pay fiyatı ile çarpımının yıllık onbinde 0,5'i kadar olarak tahsil edilir. BSMV hariçtir
+02/12/2025 14:01:07
+Diğer Yatırım Fonları Saklama Ücreti
+Pay adedinin pay fiyatı ile çarpımının yıllık onbinde 1'i kadar olarak tahsil edilir. BSMV hariçtir
+ÖSBA, VDMK, Kira sertifikası, DİBS Kupon Saklama Ücreti
+Nominal Değer ile çarpımının yıllık onbinde 0,065'i kadar olarak tahsil edilir. BSMV hariçtir
+ÖSBA, VDMK, Kira sertifikası, DİBS Anapara Saklama Ücreti
+Nominal Değer ile çarpımının yıllık onbinde 0,65'i kadar olarak tahsil edilir. BSMV hariçtir
+02/12/2025 14:06:48
+MKK Alım-Satım İşlemleri
+Yatırım Fonu Payı Alım Satım İşlemleri
+0.01 TL
+Yatırım Fonu Payı Alım Satım İşlemleri En az 0,01 TL (BSMV Hariç) olup, işlem tutarı üzerinden onbinde 0,075 olarak tahsil edilir. BSMV hariçtir. İlgili ücretler MKS’nin yatırım fonu payı ve DİBS alım satım fonksiyonları kullanılarak yapılan alım satım işlemlerini kapsamaktadır. TEFAS Platformunda gerçekleştirilen yatırım fonu katılım payı alım satım işlemlerinden TEFAS ücret tarifesi dışında ek b
+02/13/2025 11:57:41
+MKK ÖSBA Alım Satım İşlemleri (İşlem Sayısı)
+0,21 TL (BSMV Hariç)
+03/02/2026 09:51:03
+Çekler
+Çek İşlemleri
+Çek Defteri ve Çek Düzenleme İşlemi (Yaprak Başına)
+66.67 TL
+250.00 TL
+Asgari Tutar 10/02/2025 tarihinden itibaren geçerli olacaktır
+01/10/2025 17:28:59
+Çek İade Ücreti
+600.00 TL
+2500.00 TL
+04/29/2024 14:05:42
+Çek Tahsilatı Ücreti
+750.00 TL
+3000.00 TL
+Çek Belgelendirme ve Düzeltme İşlemi Ücretleri
+1000.00 TL
+Senetler
+Senet Islemleri
+Senet Tahsile Alma Ücreti
+0.25 %
+12/25/2024 10:43:05
+Senet Protesto İşlemleri
+1500.00 TL
+4000.00 TL
+Noter masrafı ve muhabir banka aracılığı ile yaptırılan senet tahsillerinde,muhabir masrafı ayrıca tahsil edilir
+04/29/2024 14:08:52
+Senet İade Ücreti
+Senet Bilgilendirme Ücreti
+500.00 TL
+KGS
+KGS Ücreti
+KGS Tahsis (TL)
+03/21/2013 11:35:07
+GİŞEDEN FATURA TAHSİLATI
+Fatura Ödemeleri
+Fatura Ödeme-Kurum Ödeme-Anlık Ödemeler
+1.00 TL
+İlgili komisyonlar (BSMV Dahil) şube gişelerinde yapılan işlemlerde alınmaktadır. TTNET, Türk Telekom, Vodafone ve Hatsu faturaları bu kapsamdadır.
+01/03/2024 13:47:24
+NOTER VASITASI İLE GİDEN EKSTRE
+Noter Vasıtası ile giden ekstrelerde noter masrafı ayrıca tahsil edilir
+12/20/2016 16:06:57
+REFERANS MEKTUPLARI
+Referans Mektupları
+2000.00 TL
+09/14/2021 15:41:56
+HALKBANK GİŞEDEN TAHSİLAT
+Bireysel kredi ödemesi
+3.00 TL
+BSMV hariçtir.
+09/05/2023 14:56:31
+ÖZEL HİZMETLER
+ÖZEL RAPORLAR
+KKB RAPORU (FINDEKS)
+10.00 TL
+12/20/2019 16:04:10
+TİCARİ KREDİLER
+KREDİ TAHSİS VE KREDİ KULLANDIRIM
+Kredi Tahsis
+0.20 %
+Dış ticaret kapsamında tüm gayri nakdi krediler ve ticari kredi kartları da dahil, kredi riski oluşturabilecek tüm limitlere karşılık alınır. Limit artışlarında ilave limit üzerinden yeni bir tahsis ücreti alınabilir. Limit tahsis veya yenileme talebi müşteriden gelmedikçe tahsis ücreti alınamaz. Ücret yıllık olup tahsis edilen limit süresinin ay sayısı dikkate alınarak oransal uygulanır.
+11/06/2025 15:49:08
+Kredi Kullandırım
+1.10 %
+Sadece nakdi kredilerden alınabilir. Rotatif kredilerde ortalama bakiye üzerinden yıllık olarak uygulanır. Rotatif kredilerde ilgili dönem ortalama kullandırım bakiyesi üzerinden dönem sonlarında, diğer nakdi krediler için ise her bir kullandırım anında tahakkuk ettirilir. Bir yıldan kısa vadeli kredi kullandırımlarında azami ücret vade gün sayısı dikkate alınarak ve oransal düşülerek uygulanır.
+11/06/2025 15:49:05
+İtibar/Niyet/Referans Mektubu Düzenleme Ücreti
+200000.00 TL
+3.00 %
+09/05/2023 10:50:29
+KREDİ RİSKİ SÜRECİ
+Yapılandırma, Temdit/Ödeme Planı ve Faiz Değişikliği Ücreti
+5000.00 TL
+2.50 %
+5.00 %
+Taahhüt Ücreti
+1.00
+6.00
+Müşteri ile imzalanan protokol çerçevesinde tahsil edilir.
+10/16/2025 16:05:42
+Taahhüde Uymama Ücreti
+10/16/2025 16:05:46
+Gayrinakdi Kredi - Dönem Ücreti
+Gayrinakdi- Garantörlük Komisyonu
+KAPAMA
+Nakdi Kredi Erken Kapama-Kalan Vadesi 24 Aya Kadar TL (1.3.2021 Tarihinden Önce Kullandırılan Kredilerde)
+Nakdi Kredi Erken Kapama-Kalan Vadesi 24 Aya Kadar YP (1.3.2021 Tarihinden Önce Kullandırılan Kredilerde)
+Nakdi Kredi Erken Kapama-Kalan Vadesi 24 Aydan Uzun TL (1.3.2021 Tarihinden Önce Kullandırılan Kredilerde)
+Nakdi Kredi Erken Kapama-Kalan Vadesi 24 Aydan Uzun YP (1.3.2021 Tarihinden Önce Kullandırılan Kredilerde)
+Nakdi Kredi Ara/Kısmi Ödeme TL
+Kısmi yapılan ödemelere ilişkin tahsil edilecek erken ödeme ücreti banka ve ticari müşteri arasında serbestçe belirlenir.
+10/16/2025 16:05:49
+Nakdi Kredi Ara/Kısmi Ödeme YP
+10/16/2025 16:05:52
+Nakdi Kredi Erken Kapama-Kalan Vadesi 24 Aya Kadar TL (1.3.2021 Tarihinden İtibaren Kullandırılan Kredilerde)
+Nakdi Kredi Erken Kapama-Kalan Vadesi 24 Aya Kadar YP (1.3.2021 Tarihinden İtibaren Kullandırılan Kredilerde)
+Nakdi Kredi Erken Kapama-Kalan Vadesi 24 Aydan Uzun TL (1.3.2021 Tarihinden İtibaren Kullandırılan Kredilerde)
+BSMV hariçtir.TL Krediler için %2 nin üzerine kalan vadenin 24 ayı aşan kısmındaki her bir yıl için % 1 eklenir.
+03/15/2021 11:30:45
+Nakdi Kredi Erken Kapama-Kalan Vadesi 24 Aydan Uzun YP (1.3.2021 Tarihinden İtibaren Kullandırılan Kredilerde)
+BSMV hariçtir.YP/ DEK Krediler için %3 ün üzerine kalan vadenin 24 ayı aşan kısmındaki her bir yıl için %1 eklenir.
+03/15/2021 11:30:49
+TEMİNATLANDIRMA
+Ekspertiz, Teminat Tesis, Değişiklik ve İptal Ücreti
+Kredinin tahsisinden kapatılmasına kadar geçen süre içinde yapılacak rehin, ipotek, ekspertiz ve alacak temliki de dahil tüm teminatlara ilişkin işlemler için banka tarafından üçüncü kişilere ödenecek ücretin yüzde on beş fazlasını, hizmetin banka bünyesinden sunulması halinde ise hizmetin makul bedelini geçmez.
+05/09/2023 16:50:14
+TİCARİ KREDİLER AZAMİ FAİZ ORANLARI
+İskonto ve İştira Kredileri
+0-12 Ay Vadeli
+60.00 %
+05/04/2023 09:13:03
+12-24 Ay Arası Vadeli
+24 Ay ve Üzeri Vadeli
+İhracat Kredileri
+05/04/2023 09:12:51
+Diğer Yatırım Kredileri
+05/04/2023 09:12:57
+İşletme Kredileri
+05/04/2023 09:12:54
+Kredili Mevduat Hesabı
+BSMV Hariç Yıllık KMH Faiz Oranıdır
+03/18/2024 08:31:22
+Banka Dışı Mali Kesime Kullandırılan Krediler
+05/04/2023 09:13:05
+Diğer Krediler
+05/04/2023 09:13:11
+Alışveriş
+Alışveriş Faiz Oranı
+Dönem Borcu 30.000 TL altı olan müşteriler için uygulanacak Alışveriş Faiz Oranı
+3.25 %
+BSMV ve KKDF Hariçtir.
+01/02/2026 10:05:19
+Dönem Borcu 30.000 - 180.000 TL arası olan müşteriler için uygulanacak Alışveriş Faiz Oranı
+3.75 %
+Dönem Borcu 180.000 TL üzeri olan müşteriler için uygulanacak Alışveriş Faiz Oranı
+Alışveriş Gecikme Faiz Oranı
+Dönem Borcu 30.000 TL altı olan müşteriler için uygulanacak Alışveriş Gecikme Faiz Oranı
+3.55 %
+01/02/2026 10:05:21
+Dönem Borcu 30.000 - 180.000 TL arası olan müşteriler için uygulanacak Alışveriş Gecikme Faiz Oranı
+4.05 %
+Dönem Borcu 180.000 TL üzeri olan müşteriler için uygulanacak Alışveriş Gecikme Faiz Oranı
+4.55 %
+Limit Aşım Faizi
+Bir önceki dönem borcu 30.000 TL altında olan kartlar için %3,25, Dönem borcu 30.000-180.000 TL arasında olan kartlar için %3,75, Dönem borcu 180.000 TL üzerinde olan kartlar için %4,25. BSMV ve KKDF Hariçtir.
+01/02/2026 10:05:14
+Nakit Avans
+Nakit Avans Faiz
+Nakit Avans Faiz Oranı
+01/02/2026 10:05:24
+Nakit Avans Gecikme Faiz Oranı
+Nakit Avans Ücret
+Nakit Avans Ücreti(Yurt İçi Diğer Banka ATM)
+0.57 TL
+3.86 %
+BSMV Hariçtir. İşlem Tutarının %3,86'sı ve her işlem başına 0,57 TL alınır.
+03/05/2025 08:22:05
+Nakit Avans Çekim Ücreti(Yurt İçi Burgan Bank Kanalları)
+BSMV Hariçtir.
+Nakit Avans Ücreti(Yurt Dışı ATM)
+1.50 %
+Kart Yenileme Ücreti
+Bir takvim yılı içerisinde ikiden sonraki kart yenilemelerinde maliyet kadar güncel ücret alınabilir.
+75.00 TL
+BSMV Dahildir.
+02/25/2025 14:22:05
+Basılı Ekstre Ücreti
+Geçmiş Dönem Basılı Ekstre Ücreti
+BSMV Hariçtir. Ekstrenin talep edildiği tarihten geriye doğru 1 yıllık hareketler için ücret alınmaz, 1 yılı aşanlar için alınır.
+02/25/2025 15:44:59
+Harcama ve Ekstre Taksitlendirme Faizi
+Harcama Sonradan Taksitlendirme Faizi
+BSMV ve KKDF Hariçtir. Aylık Taksitlendirme Faiz Oranıdır.
+01/02/2026 10:05:17
+Fatura Ödeme Ücreti
+Anlık Fatura Ödeme Ücreti
+Kredi Kartından Anlık Fatura Ödeme Ücreti(Mobil/İnternet)
+03/05/2025 08:22:10

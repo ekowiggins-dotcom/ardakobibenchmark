@@ -1,0 +1,187 @@
+2026-06-26 08:58:45,399 INFO Documents considered: 2
+2026-06-26 08:58:45,399 INFO Recency cutoff: 2026-05-01
+2026-06-26 08:58:45,399 INFO Allow undated: False
+2026-06-26 08:58:45,399 INFO Allow low date confidence: False
+2026-06-26 08:58:45,399 INFO Allow end-date recency: False
+2026-06-26 08:58:45,439 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Altın Top'ta Boş Yok! | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/altin-top/altin-topta-bos-yok
+2026-06-26 08:58:45,439 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | BMW iX1 Hediyematik'te Gizli! | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hediyematik/bmw-ix1-hediyematikte-gizli
+2026-06-26 08:58:45,440 INFO Poor item skipped | item_url_equals_source_url | Guncel Ozel Kampanyalar | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar
+2026-06-26 08:58:45,440 INFO Rejected candidate | item_url_equals_source_url | Guncel Ozel Kampanyalar | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar
+2026-06-26 08:58:45,440 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Yeni Müşterilere %1,99’dan Başlayan Faiz Oranlarıyla Efsane Kredi Kampanyası | https://www.fibabanka.com.tr/kampanyalar/guncel-kampanyalar/yeni-musterilere-ozel-efsane-kobi-kredi-kampanyasi
+2026-06-26 08:58:45,440 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Yeni Müşterilere Özel %0 Faizli Alışveriş Kredisi | https://www.fibabanka.com.tr/kampanyalar/guncel-kampanyalar
+2026-06-26 08:58:45,441 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Yemek Siparişinizi Hızlı Kart ile Ödeyin! | https://www.fibabanka.com.tr/kampanyalar/guncel-kampanyalar/yemek-siparisinizi-hizli-kart-ile-odeyin
+2026-06-26 08:58:45,441 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | TROY Hızlı Kart ile LC Waikiki’de 300 TL Anında İndirim! LC Waikiki’de 3.000 TL ve üzeri alışverişle | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hizli-kart/troy-hizli-kart-ile-lc-waikikide-300-tl-aninda-indirim
+2026-06-26 08:58:45,442 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Hızlı Kart ile Eğlence Başlıyor! Dijital üyeliklerinizin %25'i Hızlı Kart'tan her ay hediye! | https://www.fibabanka.com.tr/kampanyalar/guncel-kampanyalar/hizli-kart-ile-eglenceye-hazir-olun
+2026-06-26 08:58:45,442 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Mastercard Enuygun Kampanyası TROY kartla Trendyol'da yapacağın 2000 TL ve üzeri alışverişlerde TROY | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hizli-kart/mastercard-enuygun-kampanyasi
+2026-06-26 08:58:45,442 INFO Poor item skipped | title_too_short | Kampanyalar | https://www.fibabanka.com.tr/kampanyalar/musteriyim/guncel-ozel-kampanyalar
+2026-06-26 08:58:45,442 INFO Rejected candidate | title_too_short | Kampanyalar | https://www.fibabanka.com.tr/kampanyalar/musteriyim/guncel-ozel-kampanyalar
+2026-06-26 08:58:45,443 INFO Poor item skipped | title_too_short | Altın Top | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/altin-top
+2026-06-26 08:58:45,443 INFO Rejected candidate | title_too_short | Altın Top | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/altin-top
+2026-06-26 08:58:45,443 INFO Poor item skipped | title_too_short | Sigorta | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/sigorta
+2026-06-26 08:58:45,443 INFO Rejected candidate | title_too_short | Sigorta | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/sigorta
+2026-06-26 08:58:45,443 INFO Poor item skipped | title_too_short | Hediyematik | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hediyematik
+2026-06-26 08:58:45,443 INFO Rejected candidate | title_too_short | Hediyematik | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hediyematik
+2026-06-26 08:58:45,443 INFO Poor item skipped | title_too_short | Efsane Kredi | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/efsane-kredi
+2026-06-26 08:58:45,443 INFO Rejected candidate | title_too_short | Efsane Kredi | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/efsane-kredi
+2026-06-26 08:58:45,444 INFO Poor item skipped | title_too_short | Geçmiş Kampanyalar | https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar
+2026-06-26 08:58:45,444 INFO Rejected candidate | title_too_short | Geçmiş Kampanyalar | https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar
+2026-06-26 08:58:45,444 INFO Poor item skipped | title_too_short | BES | https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/bes
+2026-06-26 08:58:45,444 INFO Rejected candidate | title_too_short | BES | https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/bes
+2026-06-26 08:58:45,444 INFO Poor item skipped | title_too_short | Arkadaşını Davet et | https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/arkadaslarini-davet-et
+2026-06-26 08:58:45,444 INFO Rejected candidate | title_too_short | Arkadaşını Davet et | https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/arkadaslarini-davet-et
+2026-06-26 08:58:45,445 INFO Poor item skipped | title_too_short | Efsane Kredi | https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/efsane-kredi
+2026-06-26 08:58:45,445 INFO Rejected candidate | title_too_short | Efsane Kredi | https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/efsane-kredi
+2026-06-26 08:58:45,445 INFO Poor item skipped | title_too_short | Sigorta | https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/sigorta
+2026-06-26 08:58:45,445 INFO Rejected candidate | title_too_short | Sigorta | https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/sigorta
+2026-06-26 08:58:45,445 INFO Poor item skipped | title_too_short | Ramazan Kampanyası | https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/ramazan-kampanyasi
+2026-06-26 08:58:45,445 INFO Rejected candidate | title_too_short | Ramazan Kampanyası | https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/ramazan-kampanyasi
+2026-06-26 08:58:45,445 INFO Poor item skipped | title_too_short | Arkadaşını Davet et | https://www.fibabanka.com.tr/kampanyalar/gecmis-kampanyalar/arkadasini-davet-et
+2026-06-26 08:58:45,445 INFO Rejected candidate | title_too_short | Arkadaşını Davet et | https://www.fibabanka.com.tr/kampanyalar/gecmis-kampanyalar/arkadasini-davet-et
+2026-06-26 08:58:45,446 INFO Poor item skipped | title_too_short | Alışgidiş.com | https://www.fibabanka.com.tr/kampanyalar/gecmis-kampanyalar
+2026-06-26 08:58:45,446 INFO Rejected candidate | title_too_short | Alışgidiş.com | https://www.fibabanka.com.tr/kampanyalar/gecmis-kampanyalar
+2026-06-26 08:58:45,446 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Yurt Dışı Seyahat Sağlık Sigortası, 3 GB İnternet Paketi Kazandırıyor! Fibabanka Mobil’den Yurt Dışı | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/sigorta/yurt-disi-seyahat-saglik-sigortasi-internet-paketi-kazandiriyor
+2026-06-26 08:58:45,447 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Efsane KOBİ Kredisi – 1.500.000 TL’ye kadar %2,99’dan Başlayan Faiz Oranlarıyla İşletmenizin nakit i | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/efsane-kredi/efsane-kobi-kredi-kampanyasi
+2026-06-26 08:58:45,447 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | KOBİ'lere Özel Efsane Kredi | https://www.fibabanka.com.tr/kucuk-isletme-ve-tarim/kobi-kredileri
+2026-06-26 08:58:45,447 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Borçlu Cari Krediler | https://www.fibabanka.com.tr/ticari-kurumsal/krediler/nakit-krediler/borclu-cari-hesap
+2026-06-26 08:58:45,448 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Taksitli Ticari Krediler | https://www.fibabanka.com.tr/ticari-kurumsal/krediler/nakit-krediler/taksitli-ticari-kredi
+2026-06-26 08:58:45,448 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | İskonto/İştira Kredisi | https://www.fibabanka.com.tr/ticari-kurumsal/krediler/nakit-krediler/tl-cek-iskontosu
+2026-06-26 08:58:45,448 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Kredili Ticari Mevduat Hesabı | https://www.fibabanka.com.tr/ticari-kurumsal/krediler/nakit-krediler/kredili-ticari-ek-hesap
+2026-06-26 08:58:45,448 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Gayri Nakit Krediler | https://www.fibabanka.com.tr/ticari-kurumsal/krediler/gayri-nakdi-krediler
+2026-06-26 08:58:45,449 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Dijital Teminat Mektubu | https://www.fibabanka.com.tr/ticari-kurumsal/krediler/gayri-nakdi-krediler/teminat-mektubu
+2026-06-26 08:58:45,449 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Doğrudan Borçlandırma Sistemi (DBS) | https://www.fibabanka.com.tr/ticari-kurumsal/nakit-yonetim-urunleri/dogrudan-borclandirma-sistemi
+2026-06-26 08:58:45,449 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Tedarikçi Finansmanı Sistemi (TFS) | https://www.fibabanka.com.tr/ticari-kurumsal/nakit-yonetim-urunleri/tedarikci-finansmani-sistemi
+2026-06-26 08:58:45,449 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Yatırım Fonu Bültenleri | https://www.fibabanka.com.tr/yatirim-rehberi/yatirim-fonu-bultenleri
+2026-06-26 08:58:45,450 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Yurt İçi Borsa Bültenleri | https://www.fibabanka.com.tr/yatirim-rehberi/yurt-ici-borsa-bulteni
+2026-06-26 08:58:45,450 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Ticari ve Efsane KOBİ Kredisi | https://www.fibabanka.com.tr/kucuk-isletme-ve-tarim/isletme-ve-tarim-kredi-basvuru-formu
+2026-06-26 08:58:45,495 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Altın Top'ta Boş Yok! | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/altin-top/altin-topta-bos-yok
+2026-06-26 08:58:45,495 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | BMW iX1 Hediyematik'te Gizli! | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hediyematik/bmw-ix1-hediyematikte-gizli
+2026-06-26 08:58:45,496 INFO Poor item skipped | title_too_short | 2026 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2026
+2026-06-26 08:58:45,496 INFO Rejected candidate | title_too_short | 2026 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2026
+2026-06-26 08:58:45,496 INFO Poor item skipped | title_too_short | Kampanyalar | https://www.fibabanka.com.tr/kampanyalar/musteriyim/guncel-ozel-kampanyalar
+2026-06-26 08:58:45,496 INFO Rejected candidate | title_too_short | Kampanyalar | https://www.fibabanka.com.tr/kampanyalar/musteriyim/guncel-ozel-kampanyalar
+2026-06-26 08:58:45,496 INFO Poor item skipped | title_too_short | Duyuru ve Haberler | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler
+2026-06-26 08:58:45,496 INFO Rejected candidate | title_too_short | Duyuru ve Haberler | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler
+2026-06-26 08:58:45,496 INFO Poor item skipped | title_too_short | 2025 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2025
+2026-06-26 08:58:45,496 INFO Rejected candidate | title_too_short | 2025 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2025
+2026-06-26 08:58:45,497 INFO Poor item skipped | title_too_short | 2024 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2024
+2026-06-26 08:58:45,497 INFO Rejected candidate | title_too_short | 2024 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2024
+2026-06-26 08:58:45,497 INFO Poor item skipped | title_too_short | 2023 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2023
+2026-06-26 08:58:45,497 INFO Rejected candidate | title_too_short | 2023 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2023
+2026-06-26 08:58:45,497 INFO Poor item skipped | title_too_short | 2022 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2022
+2026-06-26 08:58:45,497 INFO Rejected candidate | title_too_short | 2022 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2022
+2026-06-26 08:58:45,498 INFO Poor item skipped | title_too_short | 2021 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2021
+2026-06-26 08:58:45,498 INFO Rejected candidate | title_too_short | 2021 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2021
+2026-06-26 08:58:45,498 INFO Poor item skipped | title_too_short | 2020 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2020
+2026-06-26 08:58:45,498 INFO Rejected candidate | title_too_short | 2020 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2020
+2026-06-26 08:58:45,498 INFO Poor item skipped | title_too_short | 2019 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2019
+2026-06-26 08:58:45,498 INFO Rejected candidate | title_too_short | 2019 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2019
+2026-06-26 08:58:45,498 INFO Poor item skipped | title_too_short | 2018 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2018
+2026-06-26 08:58:45,498 INFO Rejected candidate | title_too_short | 2018 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2018
+2026-06-26 08:58:45,499 INFO Poor item skipped | title_too_short | 2017 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2017
+2026-06-26 08:58:45,499 INFO Rejected candidate | title_too_short | 2017 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2017
+2026-06-26 08:58:45,499 INFO Poor item skipped | title_too_short | 2016 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2016
+2026-06-26 08:58:45,499 INFO Rejected candidate | title_too_short | 2016 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2016
+2026-06-26 08:58:45,499 INFO Poor item skipped | title_too_short | 2015 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2015
+2026-06-26 08:58:45,499 INFO Rejected candidate | title_too_short | 2015 | https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2015
+2026-06-26 08:58:45,500 INFO Poor item skipped | title_too_short | tıklayınız. | https://www.fibabanka.com.tr/docs/default-source/duyuru-ve-haberler/2026/talihli_listesi.pdf?sfvrsn=c1bd8dd9_1
+2026-06-26 08:58:45,500 INFO Rejected candidate | title_too_short | tıklayınız. | https://www.fibabanka.com.tr/docs/default-source/duyuru-ve-haberler/2026/talihli_listesi.pdf?sfvrsn=c1bd8dd9_1
+2026-06-26 08:58:45,500 INFO Poor item skipped | title_too_short | tıklayınız. | https://www.fibabanka.com.tr/docs/default-source/duyuru-ve-haberler/2026/rp_mms_customer_corporate_prıce_form_manuel_v2.pdf?sfvrsn=3bc696c2_2
+2026-06-26 08:58:45,500 INFO Rejected candidate | title_too_short | tıklayınız. | https://www.fibabanka.com.tr/docs/default-source/duyuru-ve-haberler/2026/rp_mms_customer_corporate_prıce_form_manuel_v2.pdf?sfvrsn=3bc696c2_2
+2026-06-26 08:58:45,500 INFO Poor item skipped | title_too_short | tıklayınız. | https://www.fibabanka.com.tr/docs/default-source/duyuru-ve-haberler/2026/davet.pdf?sfvrsn=4ba81f2f_2
+2026-06-26 08:58:45,500 INFO Rejected candidate | title_too_short | tıklayınız. | https://www.fibabanka.com.tr/docs/default-source/duyuru-ve-haberler/2026/davet.pdf?sfvrsn=4ba81f2f_2
+2026-06-26 08:58:45,501 INFO Poor item skipped | title_too_short | tıklayınız. | https://www.fibabanka.com.tr/docs/default-source/duyuru-ve-haberler/2026/22-31-aralık-talihli-listesi.pdf?sfvrsn=45a72a58_1
+2026-06-26 08:58:45,501 INFO Rejected candidate | title_too_short | tıklayınız. | https://www.fibabanka.com.tr/docs/default-source/duyuru-ve-haberler/2026/22-31-aralık-talihli-listesi.pdf?sfvrsn=45a72a58_1
+2026-06-26 08:58:45,501 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | KOBİ'lere Özel Efsane Kredi | https://www.fibabanka.com.tr/kucuk-isletme-ve-tarim/kobi-kredileri
+2026-06-26 08:58:45,501 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Borçlu Cari Krediler | https://www.fibabanka.com.tr/ticari-kurumsal/krediler/nakit-krediler/borclu-cari-hesap
+2026-06-26 08:58:45,502 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Taksitli Ticari Krediler | https://www.fibabanka.com.tr/ticari-kurumsal/krediler/nakit-krediler/taksitli-ticari-kredi
+2026-06-26 08:58:45,502 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | İskonto/İştira Kredisi | https://www.fibabanka.com.tr/ticari-kurumsal/krediler/nakit-krediler/tl-cek-iskontosu
+2026-06-26 08:58:45,502 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Kredili Ticari Mevduat Hesabı | https://www.fibabanka.com.tr/ticari-kurumsal/krediler/nakit-krediler/kredili-ticari-ek-hesap
+2026-06-26 08:58:45,503 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Gayri Nakit Krediler | https://www.fibabanka.com.tr/ticari-kurumsal/krediler/gayri-nakdi-krediler
+2026-06-26 08:58:45,503 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Dijital Teminat Mektubu | https://www.fibabanka.com.tr/ticari-kurumsal/krediler/gayri-nakdi-krediler/teminat-mektubu
+2026-06-26 08:58:45,503 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Doğrudan Borçlandırma Sistemi (DBS) | https://www.fibabanka.com.tr/ticari-kurumsal/nakit-yonetim-urunleri/dogrudan-borclandirma-sistemi
+2026-06-26 08:58:45,503 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Tedarikçi Finansmanı Sistemi (TFS) | https://www.fibabanka.com.tr/ticari-kurumsal/nakit-yonetim-urunleri/tedarikci-finansmani-sistemi
+2026-06-26 08:58:45,504 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Yatırım Fonu Bültenleri | https://www.fibabanka.com.tr/yatirim-rehberi/yatirim-fonu-bultenleri
+2026-06-26 08:58:45,504 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Yurt İçi Borsa Bültenleri | https://www.fibabanka.com.tr/yatirim-rehberi/yurt-ici-borsa-bulteni
+2026-06-26 08:58:45,504 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Ticari ve Efsane KOBİ Kredisi | https://www.fibabanka.com.tr/kucuk-isletme-ve-tarim/isletme-ve-tarim-kredi-basvuru-formu
+2026-06-26 08:58:45,504 INFO Dry run: 0 items would be written
+2026-06-26 08:58:45,519 INFO Total links found: 1235
+2026-06-26 08:58:45,519 INFO Candidate links found: 68
+2026-06-26 08:58:45,519 INFO Detail pages fetched: 0
+2026-06-26 08:58:45,519 INFO Recent items created: 0
+2026-06-26 08:58:45,519 INFO Saved recent developments: 0
+2026-06-26 08:58:45,519 INFO Rejected old items: 0
+2026-06-26 08:58:45,519 INFO Rejected undated items: 68
+2026-06-26 08:58:45,519 INFO Rejected low-confidence dates: 0
+2026-06-26 08:58:45,519 INFO Rejected non-developments: 0
+2026-06-26 08:58:45,519 INFO Saved by publication_date: 0
+2026-06-26 08:58:45,519 INFO Saved by announcement_date: 0
+2026-06-26 08:58:45,519 INFO Saved by campaign_start_date: 0
+2026-06-26 08:58:45,519 INFO Rejected because only campaign_end_date existed: 0
+2026-06-26 08:58:45,519 INFO passed_by_publication_date_count: 0
+2026-06-26 08:58:45,519 INFO passed_by_announcement_date_count: 0
+2026-06-26 08:58:45,519 INFO passed_by_campaign_start_date_count: 0
+2026-06-26 08:58:45,519 INFO passed_by_end_date_manual_override_count: 0
+2026-06-26 08:58:45,519 INFO rejected_only_campaign_end_date_count: 0
+2026-06-26 08:58:45,519 INFO Active old campaigns detected: 0
+2026-06-26 08:58:45,519 INFO Content role Bağımsız Gelişme: 22
+2026-06-26 08:58:45,519 INFO Content role Bağlamsal Veri: 0
+2026-06-26 08:58:45,519 INFO Content role Yönetici Bilgilendirme: 0
+2026-06-26 08:58:45,519 INFO Content role Kapsam Dışı/Benchmark: 46
+2026-06-26 08:58:45,519 INFO Poor items skipped: 32
+2026-06-26 08:58:45,519 INFO Duplicates skipped: 0
+2026-06-26 08:58:45,519 INFO Errors: 0
+2026-06-26 08:58:45,519 INFO First rejected items: Altın Top'ta Boş Yok! :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/altin-top/altin-topta-bos-yok | BMW iX1 Hediyematik'te Gizli! :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hediyematik/bmw-ix1-hediyematikte-gizli | Guncel Ozel Kampanyalar :: item_url_equals_source_url :: https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar | Yeni Müşterilere %1,99’dan Başlayan Faiz Oranlarıyla Efsane Kredi Kampanyası :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.fibabanka.com.tr/kampanyalar/guncel-kampanyalar/yeni-musterilere-ozel-efsane-kobi-kredi-kampanyasi | Yeni Müşterilere Özel %0 Faizli Alışveriş Kredisi :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.fibabanka.com.tr/kampanyalar/guncel-kampanyalar | Yemek Siparişinizi Hızlı Kart ile Ödeyin! :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.fibabanka.com.tr/kampanyalar/guncel-kampanyalar/yemek-siparisinizi-hizli-kart-ile-odeyin | TROY Hızlı Kart ile LC Waikiki’de 300 TL Anında İndirim! LC Waikiki’de 3.000 TL ve üzeri alışverişlerinizi TROY logolu Hızlı Kart ile yapın, ödeme adımında 300 TL indirim kazanın. :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hizli-kart/troy-hizli-kart-ile-lc-waikikide-300-tl-aninda-indirim | Hızlı Kart ile Eğlence Başlıyor! Dijital üyeliklerinizin %25'i Hızlı Kart'tan her ay hediye! :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.fibabanka.com.tr/kampanyalar/guncel-kampanyalar/hizli-kart-ile-eglenceye-hazir-olun | Mastercard Enuygun Kampanyası TROY kartla Trendyol'da yapacağın 2000 TL ve üzeri alışverişlerde TROY300 kodunu kullan, 300 TL indirim kazan! :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hizli-kart/mastercard-enuygun-kampanyasi | Kampanyalar :: title_too_short :: https://www.fibabanka.com.tr/kampanyalar/musteriyim/guncel-ozel-kampanyalar
+
+CANDIDATE REPORT
+source_id: REG-148
+source_name: Fibabanka Güncel Özel Kampanyalar
+source_url: https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar
+total links found: 624
+candidate links found: 36
+- score=8 | title=Altın Top'ta Boş Yok! | url=https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/altin-top/altin-topta-bos-yok | reason=title_length,positive_keyword,detail_path
+- score=8 | title=BMW iX1 Hediyematik'te Gizli! | url=https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hediyematik/bmw-ix1-hediyematikte-gizli | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Guncel Ozel Kampanyalar | url=https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Yeni Müşterilere %1,99’dan Başlayan Faiz Oranlarıyla Efsane Kredi Kampanyası | url=https://www.fibabanka.com.tr/kampanyalar/guncel-kampanyalar/yeni-musterilere-ozel-efsane-kobi-kredi-kampanyasi | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Yeni Müşterilere Özel %0 Faizli Alışveriş Kredisi | url=https://www.fibabanka.com.tr/kampanyalar/guncel-kampanyalar | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Yemek Siparişinizi Hızlı Kart ile Ödeyin! | url=https://www.fibabanka.com.tr/kampanyalar/guncel-kampanyalar/yemek-siparisinizi-hizli-kart-ile-odeyin | reason=title_length,positive_keyword,detail_path
+- score=8 | title=TROY Hızlı Kart ile LC Waikiki’de 300 TL Anında İndirim! LC Waikiki’de 3.000 TL ve üzeri alışverişlerinizi TROY logolu H | url=https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hizli-kart/troy-hizli-kart-ile-lc-waikikide-300-tl-aninda-indirim | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Hızlı Kart ile Eğlence Başlıyor! Dijital üyeliklerinizin %25'i Hızlı Kart'tan her ay hediye! | url=https://www.fibabanka.com.tr/kampanyalar/guncel-kampanyalar/hizli-kart-ile-eglenceye-hazir-olun | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Mastercard Enuygun Kampanyası TROY kartla Trendyol'da yapacağın 2000 TL ve üzeri alışverişlerde TROY300 kodunu kullan, 3 | url=https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hizli-kart/mastercard-enuygun-kampanyasi | reason=title_length,positive_keyword,detail_path
+- score=6 | title=Kampanyalar | url=https://www.fibabanka.com.tr/kampanyalar/musteriyim/guncel-ozel-kampanyalar | reason=positive_keyword,detail_path
+- score=6 | title=Altın Top | url=https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/altin-top | reason=positive_keyword,detail_path
+- score=6 | title=Sigorta | url=https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/sigorta | reason=positive_keyword,detail_path
+- score=6 | title=Hediyematik | url=https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hediyematik | reason=positive_keyword,detail_path
+- score=6 | title=Efsane Kredi | url=https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/efsane-kredi | reason=positive_keyword,detail_path
+- score=6 | title=Geçmiş Kampanyalar | url=https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar | reason=positive_keyword,detail_path
+- score=6 | title=BES | url=https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/bes | reason=positive_keyword,detail_path
+- score=6 | title=Arkadaşını Davet et | url=https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/arkadaslarini-davet-et | reason=positive_keyword,detail_path
+- score=6 | title=Efsane Kredi | url=https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/efsane-kredi | reason=positive_keyword,detail_path
+- score=6 | title=Sigorta | url=https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/sigorta | reason=positive_keyword,detail_path
+- score=6 | title=Ramazan Kampanyası | url=https://www.fibabanka.com.tr/kampanyalar/gecmis-ozel-kampanyalar/ramazan-kampanyasi | reason=positive_keyword,detail_path
+
+CANDIDATE REPORT
+source_id: REG-147
+source_name: Fibabanka Duyuru ve Haberler 2026
+source_url: https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2026
+total links found: 611
+candidate links found: 32
+- score=8 | title=Altın Top'ta Boş Yok! | url=https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/altin-top/altin-topta-bos-yok | reason=title_length,positive_keyword,detail_path
+- score=8 | title=BMW iX1 Hediyematik'te Gizli! | url=https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/hediyematik/bmw-ix1-hediyematikte-gizli | reason=title_length,positive_keyword,detail_path
+- score=6 | title=2026 | url=https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2026 | reason=positive_keyword,detail_path
+- score=6 | title=Kampanyalar | url=https://www.fibabanka.com.tr/kampanyalar/musteriyim/guncel-ozel-kampanyalar | reason=positive_keyword,detail_path
+- score=6 | title=Duyuru ve Haberler | url=https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler | reason=positive_keyword,detail_path
+- score=6 | title=2025 | url=https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2025 | reason=positive_keyword,detail_path
+- score=6 | title=2024 | url=https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2024 | reason=positive_keyword,detail_path
+- score=6 | title=2023 | url=https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2023 | reason=positive_keyword,detail_path
+- score=6 | title=2022 | url=https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2022 | reason=positive_keyword,detail_path
+- score=6 | title=2021 | url=https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2021 | reason=positive_keyword,detail_path
+- score=6 | title=2020 | url=https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2020 | reason=positive_keyword,detail_path
+- score=6 | title=2019 | url=https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2019 | reason=positive_keyword,detail_path
+- score=6 | title=2018 | url=https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2018 | reason=positive_keyword,detail_path
+- score=6 | title=2017 | url=https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2017 | reason=positive_keyword,detail_path
+- score=6 | title=2016 | url=https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2016 | reason=positive_keyword,detail_path
+- score=6 | title=2015 | url=https://www.fibabanka.com.tr/hakkimizda/duyuru-ve-haberler/2015 | reason=positive_keyword,detail_path
+- score=6 | title=tıklayınız. | url=https://www.fibabanka.com.tr/docs/default-source/duyuru-ve-haberler/2026/talihli_listesi.pdf?sfvrsn=c1bd8dd9_1 | reason=positive_keyword,detail_path
+- score=6 | title=tıklayınız. | url=https://www.fibabanka.com.tr/docs/default-source/duyuru-ve-haberler/2026/rp_mms_customer_corporate_prıce_form_manuel_v2.pdf?sfvrsn=3bc696c2_2 | reason=positive_keyword,detail_path
+- score=6 | title=tıklayınız. | url=https://www.fibabanka.com.tr/docs/default-source/duyuru-ve-haberler/2026/davet.pdf?sfvrsn=4ba81f2f_2 | reason=positive_keyword,detail_path
+- score=6 | title=tıklayınız. | url=https://www.fibabanka.com.tr/docs/default-source/duyuru-ve-haberler/2026/22-31-aralık-talihli-listesi.pdf?sfvrsn=45a72a58_1 | reason=positive_keyword,detail_path

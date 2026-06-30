@@ -1,0 +1,45 @@
+
+CANDIDATE REPORT
+source_id: REG-118
+source_name: Alternatif Bank Basın Bültenleri ve Duyurular
+source_url: https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular
+total links found: 130
+candidate links found: 4
+- score=28 | title=Alternatif Bank’a Kurumsal, Ticari Bankacılık ve Dış Ticarette 3 Uluslararası Ödül! | url=https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-banka-uc-uluslararasi-odul | reason=alternatif_bank_press_card
+- score=28 | title=Alternatif Bank, Kurumsal ve Ticari Bankacılıkta 2025 Yılını Güçlü Büyümeyle Tamamladı | url=https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-kurumsal-ve-ticari-bankacilikta-2025-yilini-guclu-buyumeyle-tamamladi | reason=alternatif_bank_press_card
+- score=28 | title=Alternatif Bank'tan Dış Ticaret Finansmanında Asya Kalkınma Bankası'yla Önemli İş Birliği | url=https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-dis-ticaret-finansmaninda-asya-kalkinma-bankasiyla-onemli-is-birligi | reason=alternatif_bank_press_card
+- score=28 | title=Alternatif Bank, Dijital/Mobil Kanallarda Masrafsız Bankacılık Deneyimi Sunmaya Devam Ediyor | url=https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-masrafsiz-bankacilik-deneyimi | reason=alternatif_bank_press_card
+2026-06-25 15:11:05,427 INFO Documents considered: 1
+2026-06-25 15:11:05,427 INFO Recency cutoff: 2026-05-01
+2026-06-25 15:11:05,427 INFO Allow undated: False
+2026-06-25 15:11:05,427 INFO Allow low date confidence: False
+2026-06-25 15:11:05,427 INFO Allow end-date recency: False
+2026-06-25 15:11:05,439 INFO Extracted item RI-f6167c763174 | Medium | Alternatif Bank’a Kurumsal, Ticari Bankacılık ve Dış Ticarette 3 Uluslararası Ödül!
+2026-06-25 15:11:05,441 INFO Rejected candidate | Kesim tarihinden eski: 2026-02-26 < 2026-05-01 | Alternatif Bank, Kurumsal ve Ticari Bankacılıkta 2025 Yılını Güçlü Büyümeyle Tamamladı | https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-kurumsal-ve-ticari-bankacilikta-2025-yilini-guclu-buyumeyle-tamamladi
+2026-06-25 15:11:05,441 INFO Rejected candidate | Kesim tarihinden eski: 2026-02-20 < 2026-05-01 | Alternatif Bank'tan Dış Ticaret Finansmanında Asya Kalkınma Bankası'yla Önemli İş Birliği | https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-dis-ticaret-finansmaninda-asya-kalkinma-bankasiyla-onemli-is-birligi
+2026-06-25 15:11:05,442 INFO Rejected candidate | Kesim tarihinden eski: 2026-01-21 < 2026-05-01 | Alternatif Bank, Dijital/Mobil Kanallarda Masrafsız Bankacılık Deneyimi Sunmaya Devam Ediyor | https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-masrafsiz-bankacilik-deneyimi
+2026-06-25 15:11:05,442 INFO Dry run: 1 items would be written
+2026-06-25 15:11:05,453 INFO Total links found: 130
+2026-06-25 15:11:05,453 INFO Candidate links found: 4
+2026-06-25 15:11:05,453 INFO Detail pages fetched: 0
+2026-06-25 15:11:05,453 INFO Recent items created: 1
+2026-06-25 15:11:05,453 INFO Saved recent developments: 1
+2026-06-25 15:11:05,453 INFO Rejected old items: 3
+2026-06-25 15:11:05,453 INFO Rejected undated items: 0
+2026-06-25 15:11:05,453 INFO Rejected low-confidence dates: 0
+2026-06-25 15:11:05,453 INFO Rejected non-developments: 0
+2026-06-25 15:11:05,453 INFO Saved by publication_date: 0
+2026-06-25 15:11:05,453 INFO Saved by announcement_date: 1
+2026-06-25 15:11:05,453 INFO Saved by campaign_start_date: 0
+2026-06-25 15:11:05,453 INFO Rejected because only campaign_end_date existed: 0
+2026-06-25 15:11:05,453 INFO passed_by_publication_date_count: 0
+2026-06-25 15:11:05,453 INFO passed_by_announcement_date_count: 1
+2026-06-25 15:11:05,453 INFO passed_by_campaign_start_date_count: 0
+2026-06-25 15:11:05,453 INFO passed_by_end_date_manual_override_count: 0
+2026-06-25 15:11:05,453 INFO rejected_only_campaign_end_date_count: 0
+2026-06-25 15:11:05,453 INFO Active old campaigns detected: 0
+2026-06-25 15:11:05,453 INFO Poor items skipped: 0
+2026-06-25 15:11:05,453 INFO Duplicates skipped: 0
+2026-06-25 15:11:05,453 INFO Errors: 0
+2026-06-25 15:11:05,453 INFO First saved items: Alternatif Bank’a Kurumsal, Ticari Bankacılık ve Dış Ticarette 3 Uluslararası Ödül! [2026-05-05] https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-banka-uc-uluslararasi-odul
+2026-06-25 15:11:05,453 INFO First rejected items: Alternatif Bank, Kurumsal ve Ticari Bankacılıkta 2025 Yılını Güçlü Büyümeyle Tamamladı :: Kesim tarihinden eski: 2026-02-26 < 2026-05-01 :: https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-kurumsal-ve-ticari-bankacilikta-2025-yilini-guclu-buyumeyle-tamamladi | Alternatif Bank'tan Dış Ticaret Finansmanında Asya Kalkınma Bankası'yla Önemli İş Birliği :: Kesim tarihinden eski: 2026-02-20 < 2026-05-01 :: https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-dis-ticaret-finansmaninda-asya-kalkinma-bankasiyla-onemli-is-birligi | Alternatif Bank, Dijital/Mobil Kanallarda Masrafsız Bankacılık Deneyimi Sunmaya Devam Ediyor :: Kesim tarihinden eski: 2026-01-21 < 2026-05-01 :: https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-masrafsiz-bankacilik-deneyimi

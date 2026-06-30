@@ -1,0 +1,104 @@
+
+CANDIDATE REPORT
+source_id: REG-083
+source_name: ING Basın Bültenleri 2026
+source_url: https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2026
+total links found: 116
+candidate links found: 30
+- score=8 | title=Kredi başvurunuzu yapabilir ve hızlıca sonucunu paylaşabilirim. | url=https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2026 | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Q12026 ING TasarrufArastirmasi | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/Q12026_ING_TasarrufArastirmasi_BB_.pdf | reason=title_length,positive_keyword,detail_path
+- score=8 | title=INGden KOBIlere masrafsiz bankacilik destegi | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGden_KOBIlere_masrafsiz_bankacilik_destegi.pdf | reason=title_length,positive_keyword,detail_path
+- score=8 | title=INGnin arastirmasina gore masrafsiz bankacilik temel beklenti haline geldi | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGnin_arastirmasina_gore_masrafsiz_bankacilik_temel_beklenti_haline_geldi.pdf | reason=title_length,positive_keyword,detail_path
+- score=8 | title=ING INGMobilYeniliklerBB Nisan2026 | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_INGMobilYeniliklerBB_Nisan2026.pdf | reason=title_length,positive_keyword,detail_path
+- score=8 | title=ING yapay zeka ve veri odakli yatirimlarla dijital altyapisini guclendiriyor | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_yapay_zeka_ve_veri_odakli_yatirimlarla_dijital_altyapisini_guclendiriyor.pdf | reason=title_length,positive_keyword,detail_path
+- score=8 | title=INGde sonsuza kadar masraf yok | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGde_sonsuza_kadar_masraf_yok.pdf | reason=title_length,positive_keyword,detail_path
+- score=8 | title=ING KadinlarGunu2026 | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_KadinlarGunu2026.pdf | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Ing__Dop_Duyurubb.Pdf | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING__DOP_DuyuruBB.pdf | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Duzenlendi TTEAQ4 2025 Subat2026 | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/duzenlendi_TTEAQ4_2025_BB_Subat2026.pdf | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Ing_Dop_Bb_Subat2025.Pdf | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_DOP_BB_Subat2025.pdf | reason=title_length,positive_keyword,detail_path
+- score=8 | title=ING Turkiye'den dijital altyapi donusumu | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_Turkiye'den_dijital_altyapi_donusumu.pdf | reason=title_length,positive_keyword,detail_path
+- score=6 | title=2025 | url=https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2025 | reason=positive_keyword,detail_path
+- score=6 | title=2024 | url=https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2024 | reason=positive_keyword,detail_path
+- score=6 | title=2023 | url=https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2023 | reason=positive_keyword,detail_path
+- score=6 | title=2022 | url=https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2022 | reason=positive_keyword,detail_path
+- score=6 | title=2021 | url=https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2021 | reason=positive_keyword,detail_path
+- score=6 | title=2020 | url=https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2020 | reason=positive_keyword,detail_path
+- score=6 | title=2019 | url=https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2019 | reason=positive_keyword,detail_path
+- score=6 | title=2018 | url=https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2018 | reason=positive_keyword,detail_path
+2026-06-25 15:08:11,504 INFO Documents considered: 1
+2026-06-25 15:08:11,504 INFO Recency cutoff: 2026-05-01
+2026-06-25 15:08:11,504 INFO Allow undated: False
+2026-06-25 15:08:11,504 INFO Allow low date confidence: False
+2026-06-25 15:08:11,504 INFO Allow end-date recency: False
+2026-06-25 15:08:11,517 INFO Poor item skipped | item_url_equals_source_url | Kredi başvurunuzu yapabilir ve hızlıca sonucunu paylaşabilirim. | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2026
+2026-06-25 15:08:11,517 INFO Rejected candidate | item_url_equals_source_url | Kredi başvurunuzu yapabilir ve hızlıca sonucunu paylaşabilirim. | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2026
+2026-06-25 15:08:11,517 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Q12026 ING TasarrufArastirmasi | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/Q12026_ING_TasarrufArastirmasi_BB_.pdf
+2026-06-25 15:08:11,518 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | INGden KOBIlere masrafsiz bankacilik destegi | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGden_KOBIlere_masrafsiz_bankacilik_destegi.pdf
+2026-06-25 15:08:11,518 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | INGnin arastirmasina gore masrafsiz bankacilik temel beklenti haline geldi | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGnin_arastirmasina_gore_masrafsiz_bankacilik_temel_beklenti_haline_geldi.pdf
+2026-06-25 15:08:11,518 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | ING INGMobilYeniliklerBB Nisan2026 | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_INGMobilYeniliklerBB_Nisan2026.pdf
+2026-06-25 15:08:11,519 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | ING yapay zeka ve veri odakli yatirimlarla dijital altyapisini guclendiriyor | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_yapay_zeka_ve_veri_odakli_yatirimlarla_dijital_altyapisini_guclendiriyor.pdf
+2026-06-25 15:08:11,519 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | INGde sonsuza kadar masraf yok | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGde_sonsuza_kadar_masraf_yok.pdf
+2026-06-25 15:08:11,519 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | ING KadinlarGunu2026 | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_KadinlarGunu2026.pdf
+2026-06-25 15:08:11,519 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Ing__Dop_Duyurubb.Pdf | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING__DOP_DuyuruBB.pdf
+2026-06-25 15:08:11,520 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Duzenlendi TTEAQ4 2025 Subat2026 | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/duzenlendi_TTEAQ4_2025_BB_Subat2026.pdf
+2026-06-25 15:08:11,520 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Ing_Dop_Bb_Subat2025.Pdf | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_DOP_BB_Subat2025.pdf
+2026-06-25 15:08:11,520 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | ING Turkiye'den dijital altyapi donusumu | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_Turkiye'den_dijital_altyapi_donusumu.pdf
+2026-06-25 15:08:11,520 INFO Poor item skipped | title_too_short | 2025 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2025
+2026-06-25 15:08:11,520 INFO Rejected candidate | title_too_short | 2025 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2025
+2026-06-25 15:08:11,521 INFO Poor item skipped | title_too_short | 2024 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2024
+2026-06-25 15:08:11,521 INFO Rejected candidate | title_too_short | 2024 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2024
+2026-06-25 15:08:11,521 INFO Poor item skipped | title_too_short | 2023 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2023
+2026-06-25 15:08:11,521 INFO Rejected candidate | title_too_short | 2023 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2023
+2026-06-25 15:08:11,521 INFO Poor item skipped | title_too_short | 2022 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2022
+2026-06-25 15:08:11,521 INFO Rejected candidate | title_too_short | 2022 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2022
+2026-06-25 15:08:11,521 INFO Poor item skipped | title_too_short | 2021 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2021
+2026-06-25 15:08:11,521 INFO Rejected candidate | title_too_short | 2021 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2021
+2026-06-25 15:08:11,522 INFO Poor item skipped | title_too_short | 2020 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2020
+2026-06-25 15:08:11,522 INFO Rejected candidate | title_too_short | 2020 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2020
+2026-06-25 15:08:11,522 INFO Poor item skipped | title_too_short | 2019 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2019
+2026-06-25 15:08:11,522 INFO Rejected candidate | title_too_short | 2019 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2019
+2026-06-25 15:08:11,522 INFO Poor item skipped | title_too_short | 2018 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2018
+2026-06-25 15:08:11,522 INFO Rejected candidate | title_too_short | 2018 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2018
+2026-06-25 15:08:11,522 INFO Poor item skipped | title_too_short | 2017 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2017
+2026-06-25 15:08:11,522 INFO Rejected candidate | title_too_short | 2017 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2017
+2026-06-25 15:08:11,522 INFO Poor item skipped | title_too_short | 2016 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2016
+2026-06-25 15:08:11,522 INFO Rejected candidate | title_too_short | 2016 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2016
+2026-06-25 15:08:11,523 INFO Poor item skipped | title_too_short | 2015 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2015
+2026-06-25 15:08:11,523 INFO Rejected candidate | title_too_short | 2015 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2015
+2026-06-25 15:08:11,523 INFO Poor item skipped | title_too_short | 2014 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2014
+2026-06-25 15:08:11,523 INFO Rejected candidate | title_too_short | 2014 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2014
+2026-06-25 15:08:11,523 INFO Poor item skipped | title_too_short | 2013 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2013
+2026-06-25 15:08:11,523 INFO Rejected candidate | title_too_short | 2013 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2013
+2026-06-25 15:08:11,523 INFO Poor item skipped | title_too_short | 2012 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2012
+2026-06-25 15:08:11,523 INFO Rejected candidate | title_too_short | 2012 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2012
+2026-06-25 15:08:11,524 INFO Poor item skipped | title_too_short | 2011 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2011
+2026-06-25 15:08:11,524 INFO Rejected candidate | title_too_short | 2011 | https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2011
+2026-06-25 15:08:11,524 INFO Poor item skipped | title_too_short | Yöneticiler | https://www.ing.com.tr/tr/ing/basin-odasi/gorsel-galeri/yoneticiler
+2026-06-25 15:08:11,524 INFO Rejected candidate | title_too_short | Yöneticiler | https://www.ing.com.tr/tr/ing/basin-odasi/gorsel-galeri/yoneticiler
+2026-06-25 15:08:11,524 INFO Poor item skipped | title_too_short | Kurumsal Logo | https://www.ing.com.tr/tr/ing/basin-odasi/gorsel-galeri/kurumsal-logo
+2026-06-25 15:08:11,524 INFO Rejected candidate | title_too_short | Kurumsal Logo | https://www.ing.com.tr/tr/ing/basin-odasi/gorsel-galeri/kurumsal-logo
+2026-06-25 15:08:11,525 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Maaş ve Kurum Ödemeleri | https://www.ing.com.tr/tr/sizin-icin/odemeler
+2026-06-25 15:08:11,525 INFO Dry run: 0 items would be written
+2026-06-25 15:08:11,534 INFO Total links found: 116
+2026-06-25 15:08:11,534 INFO Candidate links found: 30
+2026-06-25 15:08:11,534 INFO Detail pages fetched: 0
+2026-06-25 15:08:11,534 INFO Recent items created: 0
+2026-06-25 15:08:11,534 INFO Saved recent developments: 0
+2026-06-25 15:08:11,534 INFO Rejected old items: 0
+2026-06-25 15:08:11,534 INFO Rejected undated items: 30
+2026-06-25 15:08:11,534 INFO Rejected low-confidence dates: 0
+2026-06-25 15:08:11,534 INFO Rejected non-developments: 0
+2026-06-25 15:08:11,534 INFO Saved by publication_date: 0
+2026-06-25 15:08:11,534 INFO Saved by announcement_date: 0
+2026-06-25 15:08:11,534 INFO Saved by campaign_start_date: 0
+2026-06-25 15:08:11,534 INFO Rejected because only campaign_end_date existed: 0
+2026-06-25 15:08:11,534 INFO passed_by_publication_date_count: 0
+2026-06-25 15:08:11,534 INFO passed_by_announcement_date_count: 0
+2026-06-25 15:08:11,534 INFO passed_by_campaign_start_date_count: 0
+2026-06-25 15:08:11,534 INFO passed_by_end_date_manual_override_count: 0
+2026-06-25 15:08:11,534 INFO rejected_only_campaign_end_date_count: 0
+2026-06-25 15:08:11,534 INFO Active old campaigns detected: 0
+2026-06-25 15:08:11,534 INFO Poor items skipped: 18
+2026-06-25 15:08:11,534 INFO Duplicates skipped: 0
+2026-06-25 15:08:11,534 INFO Errors: 0
+2026-06-25 15:08:11,534 INFO First rejected items: Kredi başvurunuzu yapabilir ve hızlıca sonucunu paylaşabilirim. :: item_url_equals_source_url :: https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2026 | Q12026 ING TasarrufArastirmasi :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/Q12026_ING_TasarrufArastirmasi_BB_.pdf | INGden KOBIlere masrafsiz bankacilik destegi :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGden_KOBIlere_masrafsiz_bankacilik_destegi.pdf | INGnin arastirmasina gore masrafsiz bankacilik temel beklenti haline geldi :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGnin_arastirmasina_gore_masrafsiz_bankacilik_temel_beklenti_haline_geldi.pdf | ING INGMobilYeniliklerBB Nisan2026 :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_INGMobilYeniliklerBB_Nisan2026.pdf | ING yapay zeka ve veri odakli yatirimlarla dijital altyapisini guclendiriyor :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_yapay_zeka_ve_veri_odakli_yatirimlarla_dijital_altyapisini_guclendiriyor.pdf | INGde sonsuza kadar masraf yok :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGde_sonsuza_kadar_masraf_yok.pdf | ING KadinlarGunu2026 :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_KadinlarGunu2026.pdf | Ing__Dop_Duyurubb.Pdf :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING__DOP_DuyuruBB.pdf | Duzenlendi TTEAQ4 2025 Subat2026 :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/duzenlendi_TTEAQ4_2025_BB_Subat2026.pdf

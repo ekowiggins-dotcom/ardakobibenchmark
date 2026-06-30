@@ -1,0 +1,15 @@
+Sources checked: 7
+valid sources: 7
+failed sources: 0
+redirected sources: 0
+blocked sources: 0
+static-only sources: 0
+weekly-development eligible sources: 0
+
+source | REG-103 | TurkishBank Ana Site | status=200 | length=550377 | links=609 | useful_links=162 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Structural / ignored | collector=static_scrape
+source | REG-185 | TurkishBank Bizden Haberler | status=200 | length=461500 | links=591 | useful_links=164 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Manual inspection needed | collector=manual
+source | REG-186 | TurkishBank İlişki Bankacılığı | status=200 | length=473730 | links=593 | useful_links=167 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-187 | TurkishBank Finansal Kurumlar | status=200 | length=473806 | links=593 | useful_links=167 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Toptan / Kurumsal Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-188 | TurkishBank Teknoloji Bankacılığı | status=200 | length=471034 | links=590 | useful_links=160 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-189 | T-Gate | status=200 | length=156510 | links=111 | useful_links=34 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Manual inspection needed | collector=manual
+source | REG-198 | TurkishBank Ticari / Kurumsal Bankacılık | status=200 | length=470048 | links=592 | useful_links=164 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape

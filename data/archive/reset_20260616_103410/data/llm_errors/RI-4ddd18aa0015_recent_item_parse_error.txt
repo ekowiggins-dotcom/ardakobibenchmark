@@ -1,0 +1,31 @@
+```json
+{
+  "relevance_status": "İlgisiz",
+  "strategic_theme": "Kurumsal Konumlandırma",
+  "product_area": "Diğer",
+  "development_type": "Pazar Sinyali",
+  "headline": "Garanti BBVA Global Finance'tan Türkiye'nin En İyi Bankası Ödülü",
+  "summary": "Garanti BBVA, Global Finance tarafından düzenlenen World's Best Bank Awards 2026'da Türkiye'nin en iyi bankası seçildi. Ödül kârlılık, büyüme, inovasyon ve müşteri odaklılık kriterlerine göre verildi.",
+  "core_assessment": "Bu, Garanti BBVA'nın kurumsal imajını güçlendiren bir ödül haberidir ancak KOBİ ürün, hizmet veya strateji açısından doğrudan bir gelişme içermez.",
+  "strategic_relevance": "Gelişme, Garanti BBVA'nın dijital dönüşüm ve müşteri deneyimine yatırım yaptığını gösterir. Ancak KOBİ mevduat, kredileri, ödemeler, nakit yönetimi veya gömülü finans alanlarında somut bir ürün, fiyat veya hizmet değişikliği sunmaz.",
+  "impact_on_us": "Düşük",
+  "recommended_action": "Önceliklendirme",
+  "importance_level": "Düşük",
+  "confidence_level": "Yüksek",
+  "extracted_facts": [
+    "Garanti BBVA, Global Finance World's Best Bank Awards 2026'da Türkiye'nin en iyi bankası seçildi",
+    "Ödül değerlendirme kriterleri: kârlılık, büyüme, stratejik vizyon, inovasyon kapasitesi, müşteri ihtiyaçlarına yanıt verme",
+    "Garanti BBVA'nın 30 milyonu aşan müşteri tabanı ve 18 milyonu aşan aktif mobil müşterisi var",
+    "Perakende satışlarının %89'u dijital kanallar üzerinden gerçekleştiriliyor",
+    "2018-2029 dönemi için 3,5 trilyon TL sürdürülebilir finansman hedefi belirlendi",
+    "Genel Müdür Mahmut Akten tarafından yapılan açıklama"
+  ],
+  "open_questions": [
+    "Garanti BBVA'nın KOBİ segmentinde bu ödülün ardından yeni bir ürün veya kampanya planı var mı?",
+    "Rakip, bu ödülü KOBİ müşteri kazanımında veya mevduat artışında kullanacak mı?"
+  ],
+  "analysis_notes": {
+    "why_low_relevance": "Bu, Garanti BBVA'nın kurumsal itibar ve marka konumlandırması için önemli bir ödüldür. Ancak KOBİ segmentine özgü bir ürün lansmanı, kampanya, fiyat değişikliği, hizmet geliştirmesi veya strateji açıklaması içermez. Metinde dijital dönüşüm ve müşteri deneyiminden bahsedilse de, bunlar KOBİ-spesifik aksiyonlar değildir.",
+    "competitor_motivation": "Garanti BBVA, uluslararası bir ödülle kurumsal kredibilitesini artırmak, yatırımcı ve müşteri güvenini pekiştirmek ve medya görünürlüğü sağlamak istemektedir. Bu, genel marka stratejisinin parçasıdır.",
+    "akbank_action_required": "Doğrudan KOBİ aksiyonu gerekmez. Bu, rakibin kurumsal itibar yönetimi çalışmasıdır. Ancak Akbank yönetimi, rakibin uluslararası ödüllerle konumlandırılmaya devam ettiğini bilmelidir.",
+    "why_not_important": "KOBİ mevduat, kredileri, ödemeler, POS, tahsilat, nakit yönetimi, gömülü finans veya dijital KOBİ yolculuğu açısından somut bir tehdit veya fırsat sunmaz.

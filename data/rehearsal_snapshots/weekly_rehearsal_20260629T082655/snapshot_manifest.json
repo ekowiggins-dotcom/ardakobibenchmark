@@ -1,0 +1,510 @@
+{
+  "run_id": "weekly_rehearsal_20260629T082655",
+  "created_at": "2026-06-29T08:26:55+00:00",
+  "snapshot_path": "data/rehearsal_snapshots/weekly_rehearsal_20260629T082655",
+  "files": {
+    "source_registry.csv": {
+      "exists": true,
+      "hash": "cf79ac4489a1be3e834d09330d0fd69f33437952e40793d9c7fd9a6ab6fd49be",
+      "rows": 223,
+      "modified_at": "2026-06-29T08:06:49+00:00"
+    },
+    "recent_items.csv": {
+      "exists": true,
+      "hash": "31e6faabbd1021a7bbf98a8755a53ddf969a010af09a78e3ec806a00389a5df3",
+      "rows": 34,
+      "modified_at": "2026-06-26T11:54:14+00:00"
+    },
+    "recent_item_summaries.csv": {
+      "exists": true,
+      "hash": "c1a1a8e86a6defa8b352287ea5266868f5260fa9e811e7252409383d25febec0",
+      "rows": 34,
+      "modified_at": "2026-06-26T12:01:42+00:00"
+    },
+    "recent_item_review_queue.csv": {
+      "exists": true,
+      "hash": "293c02e015471934d30cb938bc2890065597e4a5efe023e8d688d7f20465f70b",
+      "rows": 12,
+      "modified_at": "2026-06-26T11:54:14+00:00"
+    },
+    "management_awareness_queue.csv": {
+      "exists": true,
+      "hash": "159e3567ec038f4deb1af3b158203dffaaf0dbe815977a45961fda58b860b9bd",
+      "rows": 4,
+      "modified_at": "2026-06-26T12:01:42+00:00"
+    },
+    "recent_item_archive.csv": {
+      "exists": true,
+      "hash": "4a5843332ffa9fdee4a971176374f70f85972bfbaaaee3c5e4036be26b0aaeed",
+      "rows": 13,
+      "modified_at": "2026-06-26T11:54:14+00:00"
+    },
+    "weekly_developments.csv": {
+      "exists": true,
+      "hash": "9642e24de8088c0a5ee3cae2a4c1afaa72caaac08b1dee8af7bebd8b07305eba",
+      "rows": 17,
+      "modified_at": "2026-06-26T09:00:08+00:00"
+    },
+    "benchmark_facts.csv": {
+      "exists": true,
+      "hash": "14992c3b32db06f0048cc5fcdc07384be3a3bcadf62770b7648e253c03244d7b",
+      "rows": 15,
+      "modified_at": "2026-06-09T10:56:54+00:00"
+    },
+    "raw_documents_metadata.csv": {
+      "exists": true,
+      "hash": "effc602bae2892f0f3257f556e15cf5715d8ab6c0355294911629dff0fc10173",
+      "rows": 155,
+      "modified_at": "2026-06-26T12:18:25+00:00"
+    },
+    "seen_item_index.csv": {
+      "exists": true,
+      "hash": "4785662d7e1dfbc648176b28cc4d53a6e9e928a738396b2da965f9c6982924c8",
+      "rows": 30,
+      "modified_at": "2026-06-25T11:54:44+00:00"
+    },
+    "recent_item_revisions.csv": {
+      "exists": true,
+      "hash": "abda811a15dd11cc34da93114f5f73c145e1b661cb4495800aa431dd89449b3a",
+      "rows": 0,
+      "modified_at": "2026-06-24T13:13:59+00:00"
+    },
+    "pipeline_runs.csv": {
+      "exists": true,
+      "hash": "f1f937cc1a4844701791dea24089eaf05b0640c11b7acb24f765a92dfd12535b",
+      "rows": 9,
+      "modified_at": "2026-06-25T11:54:44+00:00"
+    },
+    "pipeline_run_state.json": {
+      "exists": true,
+      "hash": "90f66aec3c3e23f74e36fc46bea185db872e77b12ee63839a809b79456a652df",
+      "rows": 0,
+      "modified_at": "2026-06-25T11:54:44+00:00"
+    },
+    "development_clusters.csv": {
+      "exists": true,
+      "hash": "96d0d2b65706bb75ea82c5654c5e296da975ec2fa06392d980d6f24db84cd60e",
+      "rows": 4,
+      "modified_at": "2026-06-24T13:20:21+00:00"
+    },
+    "development_cluster_review_queue.csv": {
+      "exists": true,
+      "hash": "8ef09c739bb79b3fccd046a01da7b54a48cd682532e98a125c72936a7e9e48ed",
+      "rows": 5,
+      "modified_at": "2026-06-25T12:34:51+00:00"
+    },
+    "mastercard_source_recovery_watch.csv": {
+      "exists": true,
+      "hash": "6b7b36359dcb2c669c7d006c29d1540bf09a6c138f6aca8f0a58d7732e964c5c",
+      "rows": 4,
+      "modified_at": "2026-06-29T08:06:49+00:00"
+    },
+    "mastercard_manual_official_evidence_inbox.csv": {
+      "exists": true,
+      "hash": "21ee4aba51deaf2d086b6f43606c77a360bc8e82c0c4bcdd006153fec688f3ff",
+      "rows": 0,
+      "modified_at": "2026-06-29T08:06:49+00:00"
+    },
+    "mastercard_manual_verified_candidates.csv": {
+      "exists": true,
+      "hash": "de68ea0bb1cc59d67828828dc318b478458a5f93abf9ccaf55d2f979e4ca7ade",
+      "rows": 0,
+      "modified_at": "2026-06-29T08:06:49+00:00"
+    }
+  },
+  "ids": {
+    "source_registry.csv": [],
+    "recent_items.csv": [
+      "RI-064031bb3d20",
+      "RI-11a75c9dc055",
+      "RI-25a788170d4d",
+      "RI-2b0df05d9558",
+      "RI-3478d5383e68",
+      "RI-453a32b9cd67",
+      "RI-4a32a729e83d",
+      "RI-4ddd18aa0015",
+      "RI-60c87040f497",
+      "RI-6764088a0677",
+      "RI-690d9a275508",
+      "RI-69b5a4d8b3c2",
+      "RI-6ee44cb3c25c",
+      "RI-949b7353941e",
+      "RI-975507b1b15c",
+      "RI-99a532c48ce4",
+      "RI-9d02a6bbe8bc",
+      "RI-a1196981f113",
+      "RI-afe74d89e411",
+      "RI-b2c49f044f23",
+      "RI-b415e9977087",
+      "RI-b461fe1c2787",
+      "RI-b79c88b3b6e5",
+      "RI-b9524814913f",
+      "RI-c691ef5bd769",
+      "RI-c8641a4c3026",
+      "RI-d446caf4eae6",
+      "RI-e4561838b13d",
+      "RI-ebbca739f3c8",
+      "RI-f26c47687a3a",
+      "RI-f2f1685394b7",
+      "RI-f59fd7ffaf9b",
+      "RI-f6167c763174",
+      "RI-f8fcc7126aad"
+    ],
+    "recent_item_summaries.csv": [
+      "SUM-14cbf250fe95",
+      "SUM-19e6bfe01cfd",
+      "SUM-31e7be6d0823",
+      "SUM-3711e590bbe0",
+      "SUM-385111958c8e",
+      "SUM-440cf2f57afb",
+      "SUM-5075570218a2",
+      "SUM-53d83b5ab17a",
+      "SUM-591c52efdfee",
+      "SUM-5d4774f81549",
+      "SUM-631ee0bcd53e",
+      "SUM-6d59db9a3629",
+      "SUM-6dca6b21be47",
+      "SUM-7128cadc4525",
+      "SUM-7a515d33bfd9",
+      "SUM-7fb61e7880c2",
+      "SUM-851d51982bbf",
+      "SUM-8cc0b3da2237",
+      "SUM-91317d5bac7e",
+      "SUM-9b5592f6465c",
+      "SUM-9e4bcb40d661",
+      "SUM-a6d1593ca0cd",
+      "SUM-b0b2dad9c14e",
+      "SUM-b1160e3116e8",
+      "SUM-b39deaa096c9",
+      "SUM-c760d53ddf47",
+      "SUM-d47e989d6bd1",
+      "SUM-e36232ed50fc",
+      "SUM-e65b3c66946a",
+      "SUM-e8be0147e465",
+      "SUM-e8d263b16237",
+      "SUM-f684900b4622",
+      "SUM-f869ed7465c4",
+      "SUM-fd82478b7312"
+    ],
+    "recent_item_review_queue.csv": [
+      "RIRQ-20af1c7fa430",
+      "RIRQ-2692f47b34e7",
+      "RIRQ-26a662990fa8",
+      "RIRQ-58bc54dddcd6",
+      "RIRQ-66753b2a0039",
+      "RIRQ-9c0a41d7e8b3",
+      "RIRQ-b054836979b8",
+      "RIRQ-bd92ada3f6a4",
+      "RIRQ-c594ce202640",
+      "RIRQ-e8e285146cbe",
+      "RIRQ-ed75c469bc65",
+      "RIRQ-fd5e71157025"
+    ],
+    "management_awareness_queue.csv": [
+      "MAQ-1c5332b26f62",
+      "MAQ-4e62e5787775",
+      "MAQ-c32024e80b3b",
+      "MAQ-fb08dacf886e"
+    ],
+    "recent_item_archive.csv": [
+      "RIA-063013c971b0",
+      "RIA-14cbf250fe95",
+      "RIA-164826a2583f",
+      "RIA-1c0946e93e33",
+      "RIA-5738ae9a7113",
+      "RIA-61e99b9a73a9",
+      "RIA-683bc0a367be",
+      "RIA-84f6c503ecef",
+      "RIA-ba3c700efe3b",
+      "RIA-cfc4712d82cb",
+      "RIA-d3791423e2f9",
+      "RIA-d7b14bdfc8dc",
+      "RIA-e4d4e6352b79"
+    ],
+    "weekly_developments.csv": [
+      "DEV-CL-7c4d694ed217",
+      "DEV-CL-c74625293c40",
+      "DEV-CL-f09ecebc67dd",
+      "DEV-MA-SUM-7128cadc4525",
+      "DEV-MA-SUM-7a515d33bfd9",
+      "DEV-MA-SUM-9e4bcb40d661",
+      "DEV-SUM-19e6bfe01cfd",
+      "DEV-SUM-31e7be6d0823",
+      "DEV-SUM-385111958c8e",
+      "DEV-SUM-5075570218a2",
+      "DEV-SUM-591c52efdfee",
+      "DEV-SUM-8cc0b3da2237",
+      "DEV-SUM-b0b2dad9c14e",
+      "DEV-SUM-b1160e3116e8",
+      "DEV-SUM-e65b3c66946a",
+      "DEV-SUM-f869ed7465c4",
+      "DEV-SUM-fd82478b7312"
+    ],
+    "benchmark_facts.csv": [
+      "FACT-06aa478d9f3a",
+      "FACT-0f73d1f2fae3",
+      "FACT-19ce6f9e5215",
+      "FACT-27cfb63f77e0",
+      "FACT-29747400d6ce",
+      "FACT-42690e2d1634",
+      "FACT-48557de97469",
+      "FACT-4d18dc9cda68",
+      "FACT-5b589bad966a",
+      "FACT-626d1759dfea",
+      "FACT-75dbd307d25a",
+      "FACT-c98b17815e44",
+      "FACT-d7e1b33f67d9",
+      "FACT-de47bd450a6c",
+      "FACT-fee82f7e4f13"
+    ],
+    "raw_documents_metadata.csv": [],
+    "seen_item_index.csv": [
+      "RI-064031bb3d20",
+      "RI-2b0df05d9558",
+      "RI-3478d5383e68",
+      "RI-453a32b9cd67",
+      "RI-4a32a729e83d",
+      "RI-4ddd18aa0015",
+      "RI-60c87040f497",
+      "RI-6764088a0677",
+      "RI-69b5a4d8b3c2",
+      "RI-6ee44cb3c25c",
+      "RI-949b7353941e",
+      "RI-975507b1b15c",
+      "RI-99a532c48ce4",
+      "RI-9d02a6bbe8bc",
+      "RI-a1196981f113",
+      "RI-afe74d89e411",
+      "RI-b2c49f044f23",
+      "RI-b415e9977087",
+      "RI-b79c88b3b6e5",
+      "RI-b9524814913f",
+      "RI-c691ef5bd769",
+      "RI-c8641a4c3026",
+      "RI-d446caf4eae6",
+      "RI-e4561838b13d",
+      "RI-ebbca739f3c8",
+      "RI-f26c47687a3a",
+      "RI-f2f1685394b7",
+      "RI-f59fd7ffaf9b",
+      "RI-f8fcc7126aad"
+    ],
+    "recent_item_revisions.csv": [],
+    "pipeline_runs.csv": [],
+    "pipeline_run_state.json": [],
+    "development_clusters.csv": [
+      "CL-7c4d694ed217",
+      "CL-c74625293c40",
+      "CL-ef2f2a70d27d",
+      "CL-f09ecebc67dd"
+    ],
+    "development_cluster_review_queue.csv": [
+      "CL-03c6dd9f69f3",
+      "CL-7c4d694ed217",
+      "CL-c74625293c40",
+      "CL-ef2f2a70d27d",
+      "CL-f09ecebc67dd"
+    ],
+    "mastercard_source_recovery_watch.csv": [],
+    "mastercard_manual_official_evidence_inbox.csv": [],
+    "mastercard_manual_verified_candidates.csv": []
+  },
+  "analyst_decisions": {
+    "recent_item_review_queue.csv": [
+      {
+        "review_id": "RIRQ-66753b2a0039",
+        "review_status": "Onaylandı",
+        "reviewer": "Demo Radar",
+        "reviewed_at": "2026-06-16T13:30:57.402408+00:00",
+        "approved_at": "2026-06-16T13:30:57.402408+00:00",
+        "analyst_note": "Kadın girişimcilere kefalet desteği KOBİ kredileri ve segment stratejisi açısından yönetici radarına alınmalı.",
+        "review_notes": "Kadın girişimcilere kefalet desteği KOBİ kredileri ve segment stratejisi açısından yönetici radarına alınmalı."
+      },
+      {
+        "review_id": "RIRQ-fd5e71157025",
+        "review_status": "Onaylandı",
+        "reviewer": "Demo Radar",
+        "reviewed_at": "2026-06-16T13:30:57.402408+00:00",
+        "approved_at": "2026-06-16T13:30:57.402408+00:00",
+        "analyst_note": "Ödeme İste API canlıya geçişi tahsilat ve KOBİ nakit akışı odağında Akbank için izlenmesi gereken ürün sinyali.",
+        "review_notes": "Ödeme İste API canlıya geçişi tahsilat ve KOBİ nakit akışı odağında Akbank için izlenmesi gereken ürün sinyali."
+      },
+      {
+        "review_id": "RIRQ-2692f47b34e7",
+        "review_status": "Onaylandı",
+        "reviewer": "Demo Radar",
+        "reviewed_at": "2026-06-16T13:30:57.402408+00:00",
+        "approved_at": "2026-06-16T13:30:57.402408+00:00",
+        "analyst_note": "TOBFED iş birliği gömülü finans ve sektör kanalı üzerinden kredi dağıtımı için BD konuşma notuna alınmalı.",
+        "review_notes": "TOBFED iş birliği gömülü finans ve sektör kanalı üzerinden kredi dağıtımı için BD konuşma notuna alınmalı."
+      },
+      {
+        "review_id": "RIRQ-58bc54dddcd6",
+        "review_status": "Onaylandı",
+        "reviewer": "Demo Radar",
+        "reviewed_at": "2026-06-16T13:30:57.402408+00:00",
+        "approved_at": "2026-06-16T13:30:57.402408+00:00",
+        "analyst_note": "Yeni firma müşteri kazanımı ve işlem paketi kurgusu KOBİ kampanya rekabeti için izlenmeli.",
+        "review_notes": "Yeni firma müşteri kazanımı ve işlem paketi kurgusu KOBİ kampanya rekabeti için izlenmeli."
+      },
+      {
+        "review_id": "RIRQ-b054836979b8",
+        "review_status": "Onaylandı",
+        "reviewer": "Demo Radar",
+        "reviewed_at": "2026-06-16T13:30:57.402408+00:00",
+        "approved_at": "2026-06-16T13:30:57.402408+00:00",
+        "analyst_note": "QNB'nin kadın girişimcilere yazılım indirimi KOBİ ekosistem faydaları açısından sınırlı ama kullanılabilir bir rekabet sinyali.",
+        "review_notes": "QNB'nin kadın girişimcilere yazılım indirimi KOBİ ekosistem faydaları açısından sınırlı ama kullanılabilir bir rekabet sinyali."
+      },
+      {
+        "review_id": "RIRQ-26a662990fa8",
+        "review_status": "Reddedildi",
+        "reviewer": "Demo Radar",
+        "reviewed_at": "2026-06-16T13:30:57.402408+00:00",
+        "approved_at": "2026-06-16T13:24:55.147585+00:00",
+        "analyst_note": "Sanal ofis indirimi düşük etkili yan fayda niteliğinde; demo radarında yayınlanmamalı.",
+        "review_notes": "Sanal ofis indirimi düşük etkili yan fayda niteliğinde; demo radarında yayınlanmamalı."
+      },
+      {
+        "review_id": "RIRQ-c594ce202640",
+        "review_status": "Onaylandı",
+        "reviewer": "",
+        "reviewed_at": "2026-06-23T11:56:44.415243+00:00",
+        "approved_at": "2026-06-23T11:56:44.415243+00:00",
+        "analyst_note": "",
+        "review_notes": ""
+      },
+      {
+        "review_id": "RIRQ-bd92ada3f6a4",
+        "review_status": "Onaylandı",
+        "reviewer": "",
+        "reviewed_at": "2026-06-24T13:57:52.051204+00:00",
+        "approved_at": "2026-06-24T13:57:52.051204+00:00",
+        "analyst_note": "",
+        "review_notes": ""
+      },
+      {
+        "review_id": "RIRQ-ed75c469bc65",
+        "review_status": "Onaylandı",
+        "reviewer": "",
+        "reviewed_at": "2026-06-24T13:57:55.310804+00:00",
+        "approved_at": "2026-06-24T13:57:55.310804+00:00",
+        "analyst_note": "",
+        "review_notes": ""
+      },
+      {
+        "review_id": "RIRQ-e8e285146cbe",
+        "review_status": "Onaylandı",
+        "reviewer": "",
+        "reviewed_at": "2026-06-24T13:57:14.765906+00:00",
+        "approved_at": "2026-06-24T13:57:14.765906+00:00",
+        "analyst_note": "",
+        "review_notes": ""
+      },
+      {
+        "review_id": "RIRQ-20af1c7fa430",
+        "review_status": "Onaylandı",
+        "reviewer": "",
+        "reviewed_at": "2026-06-24T13:57:17.032305+00:00",
+        "approved_at": "2026-06-24T13:57:17.032305+00:00",
+        "analyst_note": "",
+        "review_notes": ""
+      },
+      {
+        "review_id": "RIRQ-9c0a41d7e8b3",
+        "review_status": "Onaylandı",
+        "reviewer": "",
+        "reviewed_at": "2026-06-25T12:34:31.858569+00:00",
+        "approved_at": "2026-06-25T12:34:31.858569+00:00",
+        "analyst_note": "20 Mayıs 2026 ING masrafsız bankacılık araştırması bağımsız KOBİ gelişmesi değil; bu kampanyaya bağlamsal fiyat hassasiyeti verisi olarak eklendi.",
+        "review_notes": ""
+      }
+    ],
+    "management_awareness_queue.csv": [
+      {
+        "awareness_id": "MAQ-1c5332b26f62",
+        "review_status": "Onaylandı",
+        "reviewer": "Demo Radar",
+        "reviewed_at": "2026-06-16T13:30:57.402408+00:00",
+        "analyst_note": "Ödül haberi doğrudan BD aksiyonu değil; yönetici farkındalığı ve itibar sinyali olarak ayrı bölümde gösterilmeli."
+      },
+      {
+        "awareness_id": "MAQ-fb08dacf886e",
+        "review_status": "Onaylandı",
+        "reviewer": "",
+        "reviewed_at": "2026-06-25T12:34:57.836563+00:00",
+        "analyst_note": ""
+      },
+      {
+        "awareness_id": "MAQ-c32024e80b3b",
+        "review_status": "Onaylandı",
+        "reviewer": "",
+        "reviewed_at": "2026-06-26T09:00:08.964674+00:00",
+        "analyst_note": ""
+      },
+      {
+        "awareness_id": "MAQ-4e62e5787775",
+        "review_status": "Arşivlendi",
+        "reviewer": "",
+        "reviewed_at": "2026-06-26T12:01:42.491919+00:00",
+        "analyst_note": ""
+      }
+    ],
+    "development_cluster_review_queue.csv": [
+      {
+        "cluster_id": "CL-03c6dd9f69f3",
+        "review_status": "Onaylandı",
+        "reviewer": "Demo Radar",
+        "reviewed_at": "2026-06-25T12:34:51.900632+00:00",
+        "analyst_note": "Sürdürülebilirlik finansmanı kurumsal konumlandırma açısından anlamlı ancak KOBİ/BD aksiyonuna dönüşmesi için ek kanıt gerekiyor."
+      },
+      {
+        "cluster_id": "CL-7c4d694ed217",
+        "review_status": "Onaylandı",
+        "reviewer": "Demo Radar",
+        "reviewed_at": "2026-06-16T13:30:57.402408+00:00",
+        "analyst_note": "İş Bankası'nın ticari kart kampanyaları tekil haberden daha anlamlı bir aktivasyon paterni oluşturuyor."
+      },
+      {
+        "cluster_id": "CL-c74625293c40",
+        "review_status": "Onaylandı",
+        "reviewer": "",
+        "reviewed_at": "2026-06-24T13:58:23.911122+00:00",
+        "analyst_note": ""
+      },
+      {
+        "cluster_id": "CL-f09ecebc67dd",
+        "review_status": "Onaylandı",
+        "reviewer": "",
+        "reviewed_at": "2026-06-24T13:58:17.961811+00:00",
+        "analyst_note": ""
+      },
+      {
+        "cluster_id": "CL-ef2f2a70d27d",
+        "review_status": "Reddedildi",
+        "reviewer": "",
+        "reviewed_at": "2026-06-24T13:58:12.264421+00:00",
+        "analyst_note": ""
+      }
+    ]
+  },
+  "published_ids": [
+    "DEV-SUM-b1160e3116e8",
+    "DEV-SUM-b0b2dad9c14e",
+    "DEV-SUM-591c52efdfee",
+    "DEV-SUM-19e6bfe01cfd",
+    "DEV-SUM-fd82478b7312",
+    "DEV-CL-7c4d694ed217",
+    "DEV-MA-SUM-7a515d33bfd9",
+    "DEV-SUM-e65b3c66946a",
+    "DEV-SUM-5075570218a2",
+    "DEV-SUM-f869ed7465c4",
+    "DEV-SUM-385111958c8e",
+    "DEV-SUM-31e7be6d0823",
+    "DEV-CL-f09ecebc67dd",
+    "DEV-CL-c74625293c40",
+    "DEV-SUM-8cc0b3da2237",
+    "DEV-MA-SUM-9e4bcb40d661",
+    "DEV-MA-SUM-7128cadc4525"
+  ]
+}

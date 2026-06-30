@@ -1,0 +1,321 @@
+{
+  "run_id": "weekly_rehearsal_20260629T082655",
+  "snapshot_path": "data/rehearsal_snapshots/weekly_rehearsal_20260629T082655",
+  "before": {
+    "source_registry.csv": {
+      "exists": true,
+      "hash": "cf79ac4489a1be3e834d09330d0fd69f33437952e40793d9c7fd9a6ab6fd49be",
+      "rows": 223,
+      "modified_at": "2026-06-29T08:06:49+00:00"
+    },
+    "recent_items.csv": {
+      "exists": true,
+      "hash": "31e6faabbd1021a7bbf98a8755a53ddf969a010af09a78e3ec806a00389a5df3",
+      "rows": 34,
+      "modified_at": "2026-06-26T11:54:14+00:00"
+    },
+    "recent_item_summaries.csv": {
+      "exists": true,
+      "hash": "c1a1a8e86a6defa8b352287ea5266868f5260fa9e811e7252409383d25febec0",
+      "rows": 34,
+      "modified_at": "2026-06-26T12:01:42+00:00"
+    },
+    "recent_item_review_queue.csv": {
+      "exists": true,
+      "hash": "293c02e015471934d30cb938bc2890065597e4a5efe023e8d688d7f20465f70b",
+      "rows": 12,
+      "modified_at": "2026-06-26T11:54:14+00:00"
+    },
+    "management_awareness_queue.csv": {
+      "exists": true,
+      "hash": "159e3567ec038f4deb1af3b158203dffaaf0dbe815977a45961fda58b860b9bd",
+      "rows": 4,
+      "modified_at": "2026-06-26T12:01:42+00:00"
+    },
+    "recent_item_archive.csv": {
+      "exists": true,
+      "hash": "4a5843332ffa9fdee4a971176374f70f85972bfbaaaee3c5e4036be26b0aaeed",
+      "rows": 13,
+      "modified_at": "2026-06-26T11:54:14+00:00"
+    },
+    "weekly_developments.csv": {
+      "exists": true,
+      "hash": "9642e24de8088c0a5ee3cae2a4c1afaa72caaac08b1dee8af7bebd8b07305eba",
+      "rows": 17,
+      "modified_at": "2026-06-26T09:00:08+00:00"
+    },
+    "benchmark_facts.csv": {
+      "exists": true,
+      "hash": "14992c3b32db06f0048cc5fcdc07384be3a3bcadf62770b7648e253c03244d7b",
+      "rows": 15,
+      "modified_at": "2026-06-09T10:56:54+00:00"
+    },
+    "raw_documents_metadata.csv": {
+      "exists": true,
+      "hash": "effc602bae2892f0f3257f556e15cf5715d8ab6c0355294911629dff0fc10173",
+      "rows": 155,
+      "modified_at": "2026-06-26T12:18:25+00:00"
+    },
+    "seen_item_index.csv": {
+      "exists": true,
+      "hash": "4785662d7e1dfbc648176b28cc4d53a6e9e928a738396b2da965f9c6982924c8",
+      "rows": 30,
+      "modified_at": "2026-06-25T11:54:44+00:00"
+    },
+    "recent_item_revisions.csv": {
+      "exists": true,
+      "hash": "abda811a15dd11cc34da93114f5f73c145e1b661cb4495800aa431dd89449b3a",
+      "rows": 0,
+      "modified_at": "2026-06-24T13:13:59+00:00"
+    },
+    "pipeline_runs.csv": {
+      "exists": true,
+      "hash": "f1f937cc1a4844701791dea24089eaf05b0640c11b7acb24f765a92dfd12535b",
+      "rows": 9,
+      "modified_at": "2026-06-25T11:54:44+00:00"
+    },
+    "pipeline_run_state.json": {
+      "exists": true,
+      "hash": "90f66aec3c3e23f74e36fc46bea185db872e77b12ee63839a809b79456a652df",
+      "rows": 0,
+      "modified_at": "2026-06-25T11:54:44+00:00"
+    },
+    "development_clusters.csv": {
+      "exists": true,
+      "hash": "96d0d2b65706bb75ea82c5654c5e296da975ec2fa06392d980d6f24db84cd60e",
+      "rows": 4,
+      "modified_at": "2026-06-24T13:20:21+00:00"
+    },
+    "development_cluster_review_queue.csv": {
+      "exists": true,
+      "hash": "8ef09c739bb79b3fccd046a01da7b54a48cd682532e98a125c72936a7e9e48ed",
+      "rows": 5,
+      "modified_at": "2026-06-25T12:34:51+00:00"
+    },
+    "mastercard_source_recovery_watch.csv": {
+      "exists": true,
+      "hash": "6b7b36359dcb2c669c7d006c29d1540bf09a6c138f6aca8f0a58d7732e964c5c",
+      "rows": 4,
+      "modified_at": "2026-06-29T08:06:49+00:00"
+    },
+    "mastercard_manual_official_evidence_inbox.csv": {
+      "exists": true,
+      "hash": "21ee4aba51deaf2d086b6f43606c77a360bc8e82c0c4bcdd006153fec688f3ff",
+      "rows": 0,
+      "modified_at": "2026-06-29T08:06:49+00:00"
+    },
+    "mastercard_manual_verified_candidates.csv": {
+      "exists": true,
+      "hash": "de68ea0bb1cc59d67828828dc318b478458a5f93abf9ccaf55d2f979e4ca7ade",
+      "rows": 0,
+      "modified_at": "2026-06-29T08:06:49+00:00"
+    }
+  },
+  "after": {
+    "source_registry.csv": {
+      "exists": true,
+      "hash": "cf79ac4489a1be3e834d09330d0fd69f33437952e40793d9c7fd9a6ab6fd49be",
+      "rows": 223,
+      "modified_at": "2026-06-29T08:06:49+00:00"
+    },
+    "recent_items.csv": {
+      "exists": true,
+      "hash": "1a6c96bf003a33077946828dfefceec84247a00ff9532a0278d1868a8166792b",
+      "rows": 37,
+      "modified_at": "2026-06-29T08:28:54+00:00"
+    },
+    "recent_item_summaries.csv": {
+      "exists": true,
+      "hash": "0c3509a9418ae364b5238cd8963248eb6e1c6ec27cf9c2b3967cb80c11a3fcbb",
+      "rows": 34,
+      "modified_at": "2026-06-29T08:31:10+00:00"
+    },
+    "recent_item_review_queue.csv": {
+      "exists": true,
+      "hash": "293c02e015471934d30cb938bc2890065597e4a5efe023e8d688d7f20465f70b",
+      "rows": 12,
+      "modified_at": "2026-06-29T08:31:10+00:00"
+    },
+    "management_awareness_queue.csv": {
+      "exists": true,
+      "hash": "159e3567ec038f4deb1af3b158203dffaaf0dbe815977a45961fda58b860b9bd",
+      "rows": 4,
+      "modified_at": "2026-06-29T08:31:10+00:00"
+    },
+    "recent_item_archive.csv": {
+      "exists": true,
+      "hash": "9dfadae87cc650a03cb19e2e98b031b181bdf87e8942a4259c70b3bcff5d61cb",
+      "rows": 13,
+      "modified_at": "2026-06-29T08:31:10+00:00"
+    },
+    "weekly_developments.csv": {
+      "exists": true,
+      "hash": "9642e24de8088c0a5ee3cae2a4c1afaa72caaac08b1dee8af7bebd8b07305eba",
+      "rows": 17,
+      "modified_at": "2026-06-26T09:00:08+00:00"
+    },
+    "benchmark_facts.csv": {
+      "exists": true,
+      "hash": "14992c3b32db06f0048cc5fcdc07384be3a3bcadf62770b7648e253c03244d7b",
+      "rows": 15,
+      "modified_at": "2026-06-09T10:56:54+00:00"
+    },
+    "raw_documents_metadata.csv": {
+      "exists": true,
+      "hash": "54d2a646ffac6d2438a25e1cbd4b8e65f4846315926ed8c1a9c26f34ad928c9f",
+      "rows": 191,
+      "modified_at": "2026-06-29T08:30:54+00:00"
+    },
+    "seen_item_index.csv": {
+      "exists": true,
+      "hash": "4422657222c7f0fb92c5270e2901a2c5ff2d9785d49a4c428a6270a472feb014",
+      "rows": 38,
+      "modified_at": "2026-06-29T08:31:10+00:00"
+    },
+    "recent_item_revisions.csv": {
+      "exists": true,
+      "hash": "abda811a15dd11cc34da93114f5f73c145e1b661cb4495800aa431dd89449b3a",
+      "rows": 0,
+      "modified_at": "2026-06-24T13:13:59+00:00"
+    },
+    "pipeline_runs.csv": {
+      "exists": true,
+      "hash": "3b52c4df3b8de3814881e74663e2bcb44346946a7d51ad44dee2541440c04d65",
+      "rows": 11,
+      "modified_at": "2026-06-29T08:31:10+00:00"
+    },
+    "pipeline_run_state.json": {
+      "exists": true,
+      "hash": "0f3e18623651dc264a5dffda0dfbb596ffb8e010713e20d48b8fbdf13c45a7bc",
+      "rows": 0,
+      "modified_at": "2026-06-29T08:31:10+00:00"
+    },
+    "development_clusters.csv": {
+      "exists": true,
+      "hash": "05ad73f2fb38cee6967b22049e4401fbaa1b724a10e1e82a90f5f04870ef8a90",
+      "rows": 4,
+      "modified_at": "2026-06-29T08:30:05+00:00"
+    },
+    "development_cluster_review_queue.csv": {
+      "exists": true,
+      "hash": "621b25c9fabeb28bcb4da830d859e31dfc07e5d3704319160766b698ced62c88",
+      "rows": 5,
+      "modified_at": "2026-06-29T08:30:05+00:00"
+    },
+    "mastercard_source_recovery_watch.csv": {
+      "exists": true,
+      "hash": "6b7b36359dcb2c669c7d006c29d1540bf09a6c138f6aca8f0a58d7732e964c5c",
+      "rows": 4,
+      "modified_at": "2026-06-29T08:06:49+00:00"
+    },
+    "mastercard_manual_official_evidence_inbox.csv": {
+      "exists": true,
+      "hash": "21ee4aba51deaf2d086b6f43606c77a360bc8e82c0c4bcdd006153fec688f3ff",
+      "rows": 0,
+      "modified_at": "2026-06-29T08:06:49+00:00"
+    },
+    "mastercard_manual_verified_candidates.csv": {
+      "exists": true,
+      "hash": "de68ea0bb1cc59d67828828dc318b478458a5f93abf9ccaf55d2f979e4ca7ade",
+      "rows": 0,
+      "modified_at": "2026-06-29T08:06:49+00:00"
+    }
+  },
+  "new_ids": {
+    "source_registry.csv": [],
+    "recent_items.csv": [
+      "RI-402f008bdb89",
+      "RI-486659a98116",
+      "RI-4bd38c2acf44"
+    ],
+    "recent_item_summaries.csv": [],
+    "recent_item_review_queue.csv": [],
+    "management_awareness_queue.csv": [],
+    "recent_item_archive.csv": [
+      "RIA-f0439c42fdda"
+    ],
+    "weekly_developments.csv": [],
+    "benchmark_facts.csv": [],
+    "raw_documents_metadata.csv": [],
+    "seen_item_index.csv": [
+      "RI-11a75c9dc055",
+      "RI-25a788170d4d",
+      "RI-402f008bdb89",
+      "RI-486659a98116",
+      "RI-4bd38c2acf44",
+      "RI-690d9a275508",
+      "RI-b461fe1c2787",
+      "RI-f6167c763174"
+    ],
+    "recent_item_revisions.csv": [],
+    "pipeline_runs.csv": [],
+    "pipeline_run_state.json": [],
+    "development_clusters.csv": [],
+    "development_cluster_review_queue.csv": [],
+    "mastercard_source_recovery_watch.csv": [],
+    "mastercard_manual_official_evidence_inbox.csv": [],
+    "mastercard_manual_verified_candidates.csv": []
+  },
+  "removed_ids": {
+    "source_registry.csv": [],
+    "recent_items.csv": [],
+    "recent_item_summaries.csv": [],
+    "recent_item_review_queue.csv": [],
+    "management_awareness_queue.csv": [],
+    "recent_item_archive.csv": [
+      "RIA-14cbf250fe95"
+    ],
+    "weekly_developments.csv": [],
+    "benchmark_facts.csv": [],
+    "raw_documents_metadata.csv": [],
+    "seen_item_index.csv": [],
+    "recent_item_revisions.csv": [],
+    "pipeline_runs.csv": [],
+    "pipeline_run_state.json": [],
+    "development_clusters.csv": [],
+    "development_cluster_review_queue.csv": [],
+    "mastercard_source_recovery_watch.csv": [],
+    "mastercard_manual_official_evidence_inbox.csv": [],
+    "mastercard_manual_verified_candidates.csv": []
+  },
+  "changed_files": {
+    "recent_items.csv": {
+      "before_hash": "31e6faabbd1021a7bbf98a8755a53ddf969a010af09a78e3ec806a00389a5df3",
+      "after_hash": "1a6c96bf003a33077946828dfefceec84247a00ff9532a0278d1868a8166792b"
+    },
+    "recent_item_summaries.csv": {
+      "before_hash": "c1a1a8e86a6defa8b352287ea5266868f5260fa9e811e7252409383d25febec0",
+      "after_hash": "0c3509a9418ae364b5238cd8963248eb6e1c6ec27cf9c2b3967cb80c11a3fcbb"
+    },
+    "recent_item_archive.csv": {
+      "before_hash": "4a5843332ffa9fdee4a971176374f70f85972bfbaaaee3c5e4036be26b0aaeed",
+      "after_hash": "9dfadae87cc650a03cb19e2e98b031b181bdf87e8942a4259c70b3bcff5d61cb"
+    },
+    "raw_documents_metadata.csv": {
+      "before_hash": "effc602bae2892f0f3257f556e15cf5715d8ab6c0355294911629dff0fc10173",
+      "after_hash": "54d2a646ffac6d2438a25e1cbd4b8e65f4846315926ed8c1a9c26f34ad928c9f"
+    },
+    "seen_item_index.csv": {
+      "before_hash": "4785662d7e1dfbc648176b28cc4d53a6e9e928a738396b2da965f9c6982924c8",
+      "after_hash": "4422657222c7f0fb92c5270e2901a2c5ff2d9785d49a4c428a6270a472feb014"
+    },
+    "pipeline_runs.csv": {
+      "before_hash": "f1f937cc1a4844701791dea24089eaf05b0640c11b7acb24f765a92dfd12535b",
+      "after_hash": "3b52c4df3b8de3814881e74663e2bcb44346946a7d51ad44dee2541440c04d65"
+    },
+    "pipeline_run_state.json": {
+      "before_hash": "90f66aec3c3e23f74e36fc46bea185db872e77b12ee63839a809b79456a652df",
+      "after_hash": "0f3e18623651dc264a5dffda0dfbb596ffb8e010713e20d48b8fbdf13c45a7bc"
+    },
+    "development_clusters.csv": {
+      "before_hash": "96d0d2b65706bb75ea82c5654c5e296da975ec2fa06392d980d6f24db84cd60e",
+      "after_hash": "05ad73f2fb38cee6967b22049e4401fbaa1b724a10e1e82a90f5f04870ef8a90"
+    },
+    "development_cluster_review_queue.csv": {
+      "before_hash": "8ef09c739bb79b3fccd046a01da7b54a48cd682532e98a125c72936a7e9e48ed",
+      "after_hash": "621b25c9fabeb28bcb4da830d859e31dfc07e5d3704319160766b698ced62c88"
+    }
+  },
+  "analyst_decisions_changed": false,
+  "published_rows_changed": false
+}

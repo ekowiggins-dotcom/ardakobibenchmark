@@ -1,0 +1,27 @@
+Sanal POS Hizmeti | Türkiye İş Bankası A.Ş.
+Sanal POS
+İş Bankası Sanal POS hizmeti, kolay entegre olunan yazılım altyapısı ile, e-ticaret dünyasında kartlı ödeme kabulünü zahmetsizce sağlar. Değişik formatları ile ihtiyacınıza en uygun raporları sunar.
+İşyerinin aktif bir web sitesi olması,
+İşyerinin web sitesi güvenliğinin minimum 128 bit şifreli SSL sertifikası ile sağlanmış olması, (SSL sertifikası bulunmayan işyerleri İş Bankası Güvenli Ödeme Sayfalarını kullanabilmektedir.)
+İş yerinin web sitesinde;
+Sunduğu ürünün/hizmetin tam ve açık tanımı
+Sunduğu ürünün/hizmetin fiyatı
+Siparişin iptali ve ürünün iadesi ile ilgili koşullar ve bunların kart hamili tarafından okunup kabul edildiğini gösteren ‘kabul ediyorum’ seçeneği
+Müşteri hizmetleri irtibat telefonları ve elektronik posta adresleri
+İşyerinin ticaret unvanı
+İşyerinin ikamet ettiği ülke adı ve işyeri adresi
+Teslimat politikası
+İşlemin gerçekleştirildiği para birimi
+Varsa ithalat kısıtlamaları
+Gizlilik taahhüdü ve bilgi güvenliği politikası
+MasterCard, Visa ve American Express logoları net bir şekilde yer almalıdır.
+Yasal düzenlemeler çerçevesinde satışı yasaklanmış ürünlerin sitede satılmaması,
+E-satış belgesinin iş yeri tarafından işlem gerçekleştirildikten sonra kart hamiline elektronik ya da kâğıt ortamda sunulabilecek olması gerekmektedir.
+Mevcutta Bankamız ile üye işyeri anlaşmanız bulunuyorsa sadece Şubenize başvurup talebinizi iletmeniz ve Elektronik Ticaret Sözleşmesini imzalamanız yeterli olacaktır. Mevcutta Bankamız üye işyeri değilseniz en yakın Şubemiz aracılığıyla işyeri başvurunuzu iletebilirsiniz.
+İş Bankası sanal POS’larında Visa, Mastercard, American Express, UnionPay, JCB ve TROY logolu tüm kredi ve banka kartları kabul edilmekte olup, fiziki POS cihazlarında yapılabilen satış, taksitli satış, vade farklı satış (Maximum Fırsat), MaxiPuan kullanma, ön provizyon alma/kapama işlemleri Sanal POS’ta da yapılabilmektedir. Ayrıca, bayi kart kullanan üye işyerleri tahsilâtlarını sanal POS üzerinden de gerçekleştirebilmektedirler.
+Bankamız sanal POS’unu kullanan işyerleri yurtdışı bankalara ait kredi ve banka kartlarıyla, ABD Doları (USD), Euro (EUR), İngiliz Sterlini (GBP), Avustralya Doları (AUD), Danimarka Kronu (DKK), İsveç Kronu (SEK), İsviçre Frangı (CHF), Japon Yeni (JPY), Kanada Doları (CAD), Kuveyt Dinarı (KWD), Norveç Kronu (NOK), Suudi Arabistan Riyali (SAR), Rus Rublesi (RUB) ve Çin Yuanı (CNY) olmak üzere 14 farklı para birimi ile yabancı para cinsinden işlem yapabilmekte ve söz konusu işlem tutarları döviz hesaplarına aktarılmaktadır.
+Bankamatik kartı ile internette yapılan işlemlerde 3D secure sistemi zorunludur.
+İş Bankası sanal POS hizmeti için yıllık BSMV dahil 13.999 TL ücret alınmaktadır.
+3D Secure sistemi, e-ticaret işlemlerinin güvenli olarak yapılabilmesini sağlayan ve uluslararası kart kuruluşlarınca desteklenen bir sistemdir. 3D secure altyapısı olan e-ticaret sitelerin kart hamilleri, güvenli bir şekilde işlem yapabilmektedirler. 3D Secure sistemini kullanmayan üye iş yerlerinde, kart hamilinin bilgisi dışında gerçekleştirilen işlemlere kart hamillerinin itiraz etmeleri durumunda işlem tutarları uluslararası kuralları çerçevesinde üye işyerlerinden geri alınmaktadır. 3D secure ile işlem güvenliği sağlanırken, üye işyerleri de kart hamillerinin işlem bana ait değil yönündeki itirazlarından korunmaktadır.
+Bankamız elektronik ticaret ürünleriyle ilgili her türlü soru ve öneriniz için Şubelerimiz ile iletişime geçebilirsiniz.
+X Kapat

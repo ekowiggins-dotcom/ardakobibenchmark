@@ -1,0 +1,34 @@
+{
+  "data/recent_items.csv": {
+    "rows": 32,
+    "sha256": "0ce4c68dda658425168b093a7759f11d76d4b7a1738a9fadd10f0b1f6ece3601"
+  },
+  "data/recent_item_summaries.csv": {
+    "rows": 29,
+    "sha256": "566a44ac8fe2df69f1a36c3af6673f04091416dd679a81b4e32af18a0442923d"
+  },
+  "data/recent_item_review_queue.csv": {
+    "rows": 11,
+    "sha256": "dfb2932b8788276fef160c25513817fe4127e224e95d009ac038c1bffe02a96f"
+  },
+  "data/management_awareness_queue.csv": {
+    "rows": 1,
+    "sha256": "073dc7aed64bf217a68a2e8302ed460c5c2bc43d6a07759df8e3101b3afd3e1d"
+  },
+  "data/recent_item_archive.csv": {
+    "rows": 12,
+    "sha256": "880bdd84e93d1ece82c1060cfee726f026c6e1978ecb00e188b3133439190683"
+  },
+  "data/weekly_developments.csv": {
+    "rows": 14,
+    "sha256": "90e646433b1c3cda4452b009bccc8aaa23dc0d29b19b3ab1c285a64e12624785"
+  },
+  "data/development_clusters.csv": {
+    "rows": 4,
+    "sha256": "96d0d2b65706bb75ea82c5654c5e296da975ec2fa06392d980d6f24db84cd60e"
+  },
+  "data/development_cluster_review_queue.csv": {
+    "rows": 5,
+    "sha256": "606d5b2c2cccb58b32267a66aab7c3cc1449c18cca92c88096bde79446e164dd"
+  }
+}

@@ -1,0 +1,8 @@
+İşletme Sermayesi Kredileri
+TL ve döviz cinsinden İşletme kredisini spot/rotatif veya taksitli kredi olarak kullanabilir, dilerseniz taksitli kredilerinizin geri ödemelerini aylık eşit taksitler halinde veya esnek ödemeli olarak yapabilirsiniz.
+Spot Krediler
+Faiz oranının kullanım tarihinde belirlenip sabitlendiği bir nakit kredi tipi olup faiz ve anapara ödemeleri vade sonunda gerçekleştirilir.
+Rotatif Krediler
+Kısa düreli nakit ihtiyacının karşılanması amacıyla tahsis edilen kredi limiti dahilinde istenildiği zaman kullandırımı ve geri ödeme yapılabilen nakit kredi ürünüdür.
+Taksitli Ticari Krediler
+Sabit faiz oranlı veya Değişken faiz oranlı olarak kullanabilen geri ödemelerin belirli vadelerde taksitler halinde yapılabildiği nakit kredi türüdür. Sabit faiz oranlı kredilerde fonlama maliyetinden bağımsız olarak, krediye uygulanan faiz oranı ve yapılacak geri ödeme tutarları sabitlenir ve kredi kullandırım anında belirlenir. Değişken faiz oranlı kredilerde ise fonlama maliyeti değiştikçe ödenmemiş kredi bakiyesi üzerinden alınan faiz oranı ve tahsil edilen faiz tutarı değişir. bir nakit kredidir.

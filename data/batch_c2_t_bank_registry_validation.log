@@ -1,0 +1,16 @@
+Sources checked: 8
+valid sources: 8
+failed sources: 0
+redirected sources: 0
+blocked sources: 0
+static-only sources: 0
+weekly-development eligible sources: 0
+
+source | REG-102 | T-Bank Hakkında | status=200 | length=39707 | links=53 | useful_links=5 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-178 | T-Bank Duyurular | status=200 | length=47656 | links=97 | useful_links=52 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Manual inspection needed | collector=manual
+source | REG-179 | T-Bank Haberler | status=200 | length=42669 | links=85 | useful_links=38 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Manual inspection needed | collector=manual
+source | REG-180 | T-Bank Nakit Krediler | status=200 | length=44796 | links=38 | useful_links=12 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-181 | T-Bank Gayrinakdi Krediler | status=200 | length=40211 | links=38 | useful_links=12 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-182 | T-Bank Nakit Yönetimi | status=200 | length=45681 | links=40 | useful_links=14 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-183 | T-Bank Yatırım Ürünleri | status=200 | length=46251 | links=46 | useful_links=15 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-184 | T-Bank Diğer Ticari Ürünler | status=200 | length=36130 | links=38 | useful_links=12 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Kısmi Kapsam | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape

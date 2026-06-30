@@ -1,0 +1,11 @@
+Pos/Üye İş Yeri Kampanyaları | VakıfBank
+Kart sahiplerine yönelik kampanyalar POS üzerinden seçilen artı taksit, taksit öteleme, indirim kampanyalarından oluşmaktadır.
+Artı taksit ve taksit öteleme kampanyalarında,artı taksitlerin ve taksit ötelemelerin maliyetleri Bankamız tarafından karşılanmakta,iş yerlerimize ek bir maliyet yansıtılmamaktadır.
+Satış sliplerinde üye iş yeri nüshasında üye iş yeri için yapılan taksit sayısı; Kart hamili nüshasında ise artı taksit ile birlikte toplam taksit sayısı belirtilmektedir. Müşteri sliplerinde mesaj çıkmaması üye iş yerinin kampanyaya dahil olmadığını göstermektedir
+Fiziki POS cihazları üzerinden “İnceleme İşlemleri “menüsünden, Sanal POS’lar için de “Yönetim Paneli” üzerinden üye iş yerinizde tanımlı güncel kampanya bilgisini öğrenebilirsiniz.
+Artı taksit kampanyaları:
+Örneğin POS’unuzdan + 3 taksit kampanyasına dahil 100 TL’lık 2 taksitli bir işlem yaptığınızda; kart sahibi borcunu 5 eşit taksitle (+3 taksit uygulaması ile) (20 TL * 5) öder. POS’unda + 3 taksit kampanyasından faydalanabilmek için 2-3-4-5-6 taksit seçeneklerini seçmeniz yeterli olacaktır.
+Örneğin POS’unuzdan + 4 taksit kampanyasına dahil 60 TL’lik 6 taksitli bir işlem yaptığınızda 10 taksitli işlem olarak gerçekleşmeyecektir. POS’unuzda + 4 taksit kampanyasından faydalanabilmek için 2-3-4-5 taksit seçeneklerini seçmeniz yeterli olacaktır.
+POS’unuzdan + 4 taksit kampanyasına dahil 60 TL’lik 2 taksitli bir işlem yaptığınızda kart sahibi borcunu 6 eşit taksitle (+4 taksit uygulaması ile) (10 TL * 6) öder. ( Peşin fiyatında taksitli işlemlerde taksit üst sınırı 9’dur).
+Artı taksit ve Erteleme Kampanyaları :
+Örneğin POS’unuzdan + 2 taksit ve 3 ay öteleme kampanyasına dahil 600 TL’lik 4 taksitli bir işlem yaptığınızda; kart sahibi ilk taksitini 3 ekstre donemi sonra ödemeye başlar ve borcunu 6 eşit taksitle (100 TL * 6) öder.

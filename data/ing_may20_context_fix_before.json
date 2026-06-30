@@ -1,0 +1,22 @@
+{
+  "data/recent_items.csv": {
+    "rows": 32,
+    "sha256": "651d45008c2294f896eaea9ff50e4fb38115415ad53037f9545cc843d9db713f"
+  },
+  "data/recent_item_summaries.csv": {
+    "rows": 32,
+    "sha256": "22a3153a0c41d37b548992f8ac3c2fc4697bbd99bae3e7db0988bea9294335ff"
+  },
+  "data/recent_item_review_queue.csv": {
+    "rows": 13,
+    "sha256": "386586ee6a26ffa7f7bc5da0d78569b9118b0db3a04e57730a291fccf8923e5e"
+  },
+  "data/recent_item_archive.csv": {
+    "rows": 12,
+    "sha256": "880bdd84e93d1ece82c1060cfee726f026c6e1978ecb00e188b3133439190683"
+  },
+  "data/weekly_developments.csv": {
+    "rows": 17,
+    "sha256": "ff3296e49a7226fe0229f8ca888181ea1026659113fff7b939db6d0c2d033cff"
+  }
+}

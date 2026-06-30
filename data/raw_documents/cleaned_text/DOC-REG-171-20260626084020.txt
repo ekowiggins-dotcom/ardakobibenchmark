@@ -1,0 +1,98 @@
+Ücretler | Enpara Şirketim
+Alt Bölüme Git
+Para Transferleri
+Tüm TL para transferleri (EFT, FAST, havale)
+0,00 TL (Ücretsiz)
+Enpara içi yabancı para transferi (Havale)
+Enpara dışına giden ve muhabir masrafının alıcı ile paylaşıldığı (SHA) yabancı para transferi (SWIFT) (Serbest transfer, ithalat ve görünmeyen kalem)
+750,00 TL* (BSMV dahil, işlem başına)
+Enpara dışına giden ve muhabir masrafının tamamını sizin ödediğiniz (OUR) yabancı para transferi (SWIFT) (Serbest transfer, ithalat ve görünmeyen kalem)
+1.750,00 TL* (BSMV dahil, işlem başına)
+Enpara dışından gelen yabancı para transferi (SWIFT)
+151,00 TL karşılığı USD veya Euro (BSMV dahil, işlem başına)
+*Ek olarak, işleme aracılık eden bankalar veya alıcı bankalar işlem tutarına göre değişen masraflar tahsil edebilir. Bu masraflar transfer tutarından tahsil edilir.
+Ödemeler
+Fatura ödemeleri (Elektrik, su, doğalgaz, televizyon, cep telefonu ve diğer telekomünikasyon)
+Diğer banka kredi kartı ödeme
+Cep telefonu TL yükleme
+SGK ödemeleri (hesaptan veya kredi kartıyla talimatlı olarak)
+SGK ödemeleri (Enpara Şirketim veya SGK kanallarından kredi kartıyla)
+%3,10 (Minimum 1 TL) (BSMV dahil)
+Kredi Kartı
+Yıllık kart ücreti/aidatı
+QNB ATM’leri ve Enpara Şirketim kanalları üzerinden nakit avans
+%1,00 (BSMV hariç, işlem başına)
+Yurt içi diğer banka ATM'lerinden nakit avans
+%3,87 + 0,57 TL (BSMV hariç, işlem başına)
+Yurt dışı banka ATM’lerinden nakit avans ve yurt dışı nakit özellikli harcama
+%3,00 (BSMV hariç, işlem başına)
+Yurt içi diğer banka ATM'lerinden kredi kartı borcu ödeme
+1,04 TL + ödenen tutarın %1,15'i (BSMV hariç, işlem başına)
+Yurt içi diğer banka ATM'lerinden kredi kartı ekstre borcu veya limit sorgulama
+0,27 TL (BSMV hariç, işlem başına)
+Kart yenileme (1 yıl içindeki 3. ve sonraki yenilemeler için geçerli)
+73,50 TL (BSMV dahil, işlem başına)
+SGK ödemeleri (talimatlı olarak)
+SGK ödemeleri (Enpara Şirketim veya SGK kanallarından tek seferlik)
+POS
+Aylık masaüstü POS yazılım/donanım/bakım ücreti (Aidat)
+Aylık mobil POS yazılım/donanım/bakım ücreti (Aidat)
+Aylık yazarkasa POS yazılım/donanım/bakım ücreti (Aidat)
+0,00 TL (Ücretsiz) veya 329,00 TL* (BSMV dahil, POS başına)
+Aylık POS iletişim ücreti
+Üye işyeri komisyonu (Tek çekim)
+Tüm komisyon oranlarını görmek için
+tıklayınız.
+Üye işyeri komisyonu (Taksitli)
+Aylık üye işyeri ekstre ücreti (E-posta ile)
+Üye işyeri merkezi işlem ücreti
+Kayıp/hasarlı POS bedeli (Mobil POS)
+8.700,00 TL (BSMV dahil, POS başına)
+Kayıp/hasarlı POS bedeli (Masaüstü POS)
+5.600,00 TL (BSMV dahil, POS başına)
+Kayıp/hasarlı POS aksesuarı (Pinpad) bedeli
+3.700,00 TL (BSMV dahil, aksesuar başına)
+Kayıp/hasarlı POS aksesuarı (Adaptör) bedeli
+370,00 TL (BSMV dahil, aksesuar başına)
+*Enpara olarak “Yazarkasa POS” ürünümüze sahip olan müşterilerimiz için her ay kullandıkları POS cihazını üreten firmaya (Beko, Ingenico vb.) bir bakım ücreti ödemekle yükümlüyüz, bu sebeple yazarkasa POS aylık bakım ücretini POS kullanımınıza göre belirlemek durumunda kaldık. Buna göre, aylık POS cironuzun 10.000 TL ve üzerinde kaldığı aylarda ücretsiz (0,00 TL) olarak, altında kaldığı aylarda ise 329,00 TL aylık bakım ücreti ödeyerek yazarkasa POS ürünümüzü kullanabilirsiniz.
+Taksitli kredi
+Kredi tahsis
+0,00 TL (Ücretsiz, kredi limiti tanımlanması, yenilenmesi veya güncellenmesi sırasında alınan ücret)
+Kredi kullandırım
+%1,10 (BSMV hariç, kredi vadesi bir yıldan kısa ise vade gün sayısı dikkate alınarak ve oransal olarak düşülerek uygulanır.)
+Erken ödeme
+0,00 TL (Ücretsiz, krediye ait bir taksit tutarı kadar veya daha az bir tutarın tarihinden önce ödenmesi sırasında ödenen tutar üzerinden alınan ücret)
+Ara ödeme
+%5,00 (BSMV hariç, krediye ait bir taksit tutarından daha yüksek tutarda ödeme yapılması sırasında ödenen tutar üzerinden alınan ücret)
+Erken kapama
+Yıllık bileşik faiz oranının %5,00'i ve ağırlıklı ortalama vadenin %0,20'sinin toplamı (BSMV hariç, vadesinden önce kapatılan kredi tutarı üzerinden alınan ücret)
+Ödeme planı değişikliği
+%5,00 (BSMV hariç, kredinin ödeme planında değişiklik yapılması durumunda alınan ücret)
+Faiz değişikliği
+0,00 TL (Ücretsiz, kredinin faiz oranında değişiklik yapılması durumunda alınan ücret)
+ATM
+QNB ATM'lerinden yapılan tüm işlemler
+Yurt içi diğer banka ATM'lerinden para çekme
+1,04 TL + çekilen tutarın %1,15’i (BSMV hariç, işlem başına)
+Yurt içi diğer banka ATM'lerinden para yatırma
+1,04 TL + yatırılan tutarın %1,15’i (BSMV hariç, işlem başına)
+Yurt içi diğer banka ATM'lerinden bakiye sorgulama
+Yurt dışı banka ATM'lerinden para çekme
+3,00 USD karşılığı TL (BSMV hariç, işlem başına)
+QNB Şubeleri
+QNB şubelerini para yatırma ve para çekme işlemleriniz için ücretsiz olarak kullanabilirsiniz. Bu iki işlem dışında QNB şubelerinden Enpara ile ilgili hiçbir hizmet alamayacağınızı bilmenizi isteriz.
+Bilgilendirme
+Mobil bildirimler
+Standart kurye ile basılı belge gönderimi
+(4 iş günü içinde teslim edilir.)
+106,50 TL (BSMV dahil, gönderim başına)
+Moto kurye ile hızlı basılı belge gönderimi
+(Sadece İstanbul’un merkezi bölgelerine gönderim yapılır. İş günlerinde saat 14:30'a kadar iletilen talepler aynı gün içinde, diğer talepler ise bir sonraki iş gününde teslim edilir. İstanbul’daki kapsam dışı bölgeleri görmek için
+tıklayınız
+.)
+482,50 TL (BSMV dahil, gönderim başına)
+BSMV: Banka ve Sigorta Muameleleri Vergisi
+Son güncelleme tarihi: 03/04/2026
+Ürün ve hizmet ücretlerimizi tüm bankaların ilan ettiği standart formatta görmek için
+.
+Ticari müşterilerimiz için uygulanacak ürün ve hizmet ücretleri için

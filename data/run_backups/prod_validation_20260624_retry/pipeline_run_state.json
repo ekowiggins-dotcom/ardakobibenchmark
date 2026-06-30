@@ -1,0 +1,12 @@
+{
+  "global": {
+    "last_successful_weekly_run": "",
+    "last_run_duration_seconds": 0,
+    "last_new_items_count": 0,
+    "last_new_summaries_count": 0,
+    "last_queue_additions_count": 0,
+    "last_cluster_additions_count": 0
+  },
+  "pipeline": {},
+  "sources": {}
+}

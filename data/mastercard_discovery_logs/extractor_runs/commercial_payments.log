@@ -1,0 +1,179 @@
+$ python3 pipeline/extract_recent_items.py --institution Mastercard --source-id REG-224 --start-date 2026-05-01 --debug-candidates --limit 300 --dry-run
+
+STDERR:
+2026-06-26 15:21:29,663 INFO Documents considered: 0
+2026-06-26 15:21:29,663 INFO Recency cutoff: 2026-05-01
+2026-06-26 15:21:29,663 INFO Allow undated: False
+2026-06-26 15:21:29,663 INFO Allow low date confidence: False
+2026-06-26 15:21:29,663 INFO Allow end-date recency: False
+2026-06-26 15:21:29,663 INFO Dry run: 0 items would be written
+2026-06-26 15:21:29,663 INFO Total links found: 0
+2026-06-26 15:21:29,663 INFO Candidate links found: 0
+2026-06-26 15:21:29,663 INFO Detail pages fetched: 0
+2026-06-26 15:21:29,663 INFO Recent items created: 0
+2026-06-26 15:21:29,663 INFO Saved recent developments: 0
+2026-06-26 15:21:29,663 INFO Rejected old items: 0
+2026-06-26 15:21:29,663 INFO Rejected undated items: 0
+2026-06-26 15:21:29,663 INFO Rejected low-confidence dates: 0
+2026-06-26 15:21:29,663 INFO Rejected non-developments: 0
+2026-06-26 15:21:29,663 INFO Saved by publication_date: 0
+2026-06-26 15:21:29,663 INFO Saved by announcement_date: 0
+2026-06-26 15:21:29,663 INFO Saved by campaign_start_date: 0
+2026-06-26 15:21:29,663 INFO Rejected because only campaign_end_date existed: 0
+2026-06-26 15:21:29,663 INFO passed_by_publication_date_count: 0
+2026-06-26 15:21:29,663 INFO passed_by_announcement_date_count: 0
+2026-06-26 15:21:29,663 INFO passed_by_campaign_start_date_count: 0
+2026-06-26 15:21:29,663 INFO passed_by_end_date_manual_override_count: 0
+2026-06-26 15:21:29,663 INFO rejected_only_campaign_end_date_count: 0
+2026-06-26 15:21:29,663 INFO Active old campaigns detected: 0
+2026-06-26 15:21:29,664 INFO Content role Bağımsız Gelişme: 0
+2026-06-26 15:21:29,664 INFO Content role Bağlamsal Veri: 0
+2026-06-26 15:21:29,664 INFO Content role Yönetici Bilgilendirme: 0
+2026-06-26 15:21:29,664 INFO Content role Kapsam Dışı/Benchmark: 0
+2026-06-26 15:21:29,664 INFO Poor items skipped: 0
+2026-06-26 15:21:29,664 INFO Duplicates skipped: 0
+2026-06-26 15:21:29,664 INFO Errors: 0
+
+$ python3 pipeline/extract_recent_items.py --institution Mastercard --source-id REG-204 --start-date 2026-05-01 --debug-candidates --limit 300 --dry-run
+
+STDERR:
+2026-06-26 15:21:30,005 INFO Documents considered: 0
+2026-06-26 15:21:30,005 INFO Recency cutoff: 2026-05-01
+2026-06-26 15:21:30,005 INFO Allow undated: False
+2026-06-26 15:21:30,005 INFO Allow low date confidence: False
+2026-06-26 15:21:30,005 INFO Allow end-date recency: False
+2026-06-26 15:21:30,005 INFO Dry run: 0 items would be written
+2026-06-26 15:21:30,005 INFO Total links found: 0
+2026-06-26 15:21:30,005 INFO Candidate links found: 0
+2026-06-26 15:21:30,005 INFO Detail pages fetched: 0
+2026-06-26 15:21:30,005 INFO Recent items created: 0
+2026-06-26 15:21:30,005 INFO Saved recent developments: 0
+2026-06-26 15:21:30,005 INFO Rejected old items: 0
+2026-06-26 15:21:30,005 INFO Rejected undated items: 0
+2026-06-26 15:21:30,005 INFO Rejected low-confidence dates: 0
+2026-06-26 15:21:30,005 INFO Rejected non-developments: 0
+2026-06-26 15:21:30,005 INFO Saved by publication_date: 0
+2026-06-26 15:21:30,005 INFO Saved by announcement_date: 0
+2026-06-26 15:21:30,005 INFO Saved by campaign_start_date: 0
+2026-06-26 15:21:30,005 INFO Rejected because only campaign_end_date existed: 0
+2026-06-26 15:21:30,005 INFO passed_by_publication_date_count: 0
+2026-06-26 15:21:30,005 INFO passed_by_announcement_date_count: 0
+2026-06-26 15:21:30,005 INFO passed_by_campaign_start_date_count: 0
+2026-06-26 15:21:30,005 INFO passed_by_end_date_manual_override_count: 0
+2026-06-26 15:21:30,005 INFO rejected_only_campaign_end_date_count: 0
+2026-06-26 15:21:30,005 INFO Active old campaigns detected: 0
+2026-06-26 15:21:30,005 INFO Content role Bağımsız Gelişme: 0
+2026-06-26 15:21:30,005 INFO Content role Bağlamsal Veri: 0
+2026-06-26 15:21:30,005 INFO Content role Yönetici Bilgilendirme: 0
+2026-06-26 15:21:30,005 INFO Content role Kapsam Dışı/Benchmark: 0
+2026-06-26 15:21:30,005 INFO Poor items skipped: 0
+2026-06-26 15:21:30,005 INFO Duplicates skipped: 0
+2026-06-26 15:21:30,005 INFO Errors: 0
+
+$ python3 pipeline/extract_recent_items.py --institution Mastercard --source-id REG-206 --start-date 2026-05-01 --debug-candidates --limit 300 --dry-run
+
+STDERR:
+2026-06-26 15:21:30,351 INFO Documents considered: 0
+2026-06-26 15:21:30,351 INFO Recency cutoff: 2026-05-01
+2026-06-26 15:21:30,351 INFO Allow undated: False
+2026-06-26 15:21:30,351 INFO Allow low date confidence: False
+2026-06-26 15:21:30,351 INFO Allow end-date recency: False
+2026-06-26 15:21:30,352 INFO Dry run: 0 items would be written
+2026-06-26 15:21:30,352 INFO Total links found: 0
+2026-06-26 15:21:30,352 INFO Candidate links found: 0
+2026-06-26 15:21:30,352 INFO Detail pages fetched: 0
+2026-06-26 15:21:30,352 INFO Recent items created: 0
+2026-06-26 15:21:30,352 INFO Saved recent developments: 0
+2026-06-26 15:21:30,352 INFO Rejected old items: 0
+2026-06-26 15:21:30,352 INFO Rejected undated items: 0
+2026-06-26 15:21:30,352 INFO Rejected low-confidence dates: 0
+2026-06-26 15:21:30,352 INFO Rejected non-developments: 0
+2026-06-26 15:21:30,352 INFO Saved by publication_date: 0
+2026-06-26 15:21:30,352 INFO Saved by announcement_date: 0
+2026-06-26 15:21:30,352 INFO Saved by campaign_start_date: 0
+2026-06-26 15:21:30,352 INFO Rejected because only campaign_end_date existed: 0
+2026-06-26 15:21:30,352 INFO passed_by_publication_date_count: 0
+2026-06-26 15:21:30,352 INFO passed_by_announcement_date_count: 0
+2026-06-26 15:21:30,352 INFO passed_by_campaign_start_date_count: 0
+2026-06-26 15:21:30,352 INFO passed_by_end_date_manual_override_count: 0
+2026-06-26 15:21:30,352 INFO rejected_only_campaign_end_date_count: 0
+2026-06-26 15:21:30,352 INFO Active old campaigns detected: 0
+2026-06-26 15:21:30,352 INFO Content role Bağımsız Gelişme: 0
+2026-06-26 15:21:30,352 INFO Content role Bağlamsal Veri: 0
+2026-06-26 15:21:30,352 INFO Content role Yönetici Bilgilendirme: 0
+2026-06-26 15:21:30,352 INFO Content role Kapsam Dışı/Benchmark: 0
+2026-06-26 15:21:30,352 INFO Poor items skipped: 0
+2026-06-26 15:21:30,352 INFO Duplicates skipped: 0
+2026-06-26 15:21:30,352 INFO Errors: 0
+
+$ python3 pipeline/extract_recent_items.py --institution Mastercard --source-id REG-207 --start-date 2026-05-01 --debug-candidates --limit 300 --dry-run
+
+STDERR:
+2026-06-26 15:21:30,696 INFO Documents considered: 0
+2026-06-26 15:21:30,696 INFO Recency cutoff: 2026-05-01
+2026-06-26 15:21:30,696 INFO Allow undated: False
+2026-06-26 15:21:30,696 INFO Allow low date confidence: False
+2026-06-26 15:21:30,696 INFO Allow end-date recency: False
+2026-06-26 15:21:30,696 INFO Dry run: 0 items would be written
+2026-06-26 15:21:30,696 INFO Total links found: 0
+2026-06-26 15:21:30,696 INFO Candidate links found: 0
+2026-06-26 15:21:30,696 INFO Detail pages fetched: 0
+2026-06-26 15:21:30,696 INFO Recent items created: 0
+2026-06-26 15:21:30,696 INFO Saved recent developments: 0
+2026-06-26 15:21:30,696 INFO Rejected old items: 0
+2026-06-26 15:21:30,696 INFO Rejected undated items: 0
+2026-06-26 15:21:30,696 INFO Rejected low-confidence dates: 0
+2026-06-26 15:21:30,696 INFO Rejected non-developments: 0
+2026-06-26 15:21:30,696 INFO Saved by publication_date: 0
+2026-06-26 15:21:30,696 INFO Saved by announcement_date: 0
+2026-06-26 15:21:30,696 INFO Saved by campaign_start_date: 0
+2026-06-26 15:21:30,696 INFO Rejected because only campaign_end_date existed: 0
+2026-06-26 15:21:30,696 INFO passed_by_publication_date_count: 0
+2026-06-26 15:21:30,696 INFO passed_by_announcement_date_count: 0
+2026-06-26 15:21:30,696 INFO passed_by_campaign_start_date_count: 0
+2026-06-26 15:21:30,696 INFO passed_by_end_date_manual_override_count: 0
+2026-06-26 15:21:30,696 INFO rejected_only_campaign_end_date_count: 0
+2026-06-26 15:21:30,696 INFO Active old campaigns detected: 0
+2026-06-26 15:21:30,696 INFO Content role Bağımsız Gelişme: 0
+2026-06-26 15:21:30,696 INFO Content role Bağlamsal Veri: 0
+2026-06-26 15:21:30,696 INFO Content role Yönetici Bilgilendirme: 0
+2026-06-26 15:21:30,696 INFO Content role Kapsam Dışı/Benchmark: 0
+2026-06-26 15:21:30,696 INFO Poor items skipped: 0
+2026-06-26 15:21:30,696 INFO Duplicates skipped: 0
+2026-06-26 15:21:30,696 INFO Errors: 0
+
+$ python3 pipeline/extract_recent_items.py --institution Mastercard --source-id REG-208 --start-date 2026-05-01 --debug-candidates --limit 300 --dry-run
+
+STDERR:
+2026-06-26 15:21:31,039 INFO Documents considered: 0
+2026-06-26 15:21:31,039 INFO Recency cutoff: 2026-05-01
+2026-06-26 15:21:31,039 INFO Allow undated: False
+2026-06-26 15:21:31,039 INFO Allow low date confidence: False
+2026-06-26 15:21:31,039 INFO Allow end-date recency: False
+2026-06-26 15:21:31,039 INFO Dry run: 0 items would be written
+2026-06-26 15:21:31,039 INFO Total links found: 0
+2026-06-26 15:21:31,039 INFO Candidate links found: 0
+2026-06-26 15:21:31,039 INFO Detail pages fetched: 0
+2026-06-26 15:21:31,039 INFO Recent items created: 0
+2026-06-26 15:21:31,039 INFO Saved recent developments: 0
+2026-06-26 15:21:31,039 INFO Rejected old items: 0
+2026-06-26 15:21:31,039 INFO Rejected undated items: 0
+2026-06-26 15:21:31,039 INFO Rejected low-confidence dates: 0
+2026-06-26 15:21:31,039 INFO Rejected non-developments: 0
+2026-06-26 15:21:31,039 INFO Saved by publication_date: 0
+2026-06-26 15:21:31,039 INFO Saved by announcement_date: 0
+2026-06-26 15:21:31,040 INFO Saved by campaign_start_date: 0
+2026-06-26 15:21:31,040 INFO Rejected because only campaign_end_date existed: 0
+2026-06-26 15:21:31,040 INFO passed_by_publication_date_count: 0
+2026-06-26 15:21:31,040 INFO passed_by_announcement_date_count: 0
+2026-06-26 15:21:31,040 INFO passed_by_campaign_start_date_count: 0
+2026-06-26 15:21:31,040 INFO passed_by_end_date_manual_override_count: 0
+2026-06-26 15:21:31,040 INFO rejected_only_campaign_end_date_count: 0
+2026-06-26 15:21:31,040 INFO Active old campaigns detected: 0
+2026-06-26 15:21:31,040 INFO Content role Bağımsız Gelişme: 0
+2026-06-26 15:21:31,040 INFO Content role Bağlamsal Veri: 0
+2026-06-26 15:21:31,040 INFO Content role Yönetici Bilgilendirme: 0
+2026-06-26 15:21:31,040 INFO Content role Kapsam Dışı/Benchmark: 0
+2026-06-26 15:21:31,040 INFO Poor items skipped: 0
+2026-06-26 15:21:31,040 INFO Duplicates skipped: 0
+2026-06-26 15:21:31,040 INFO Errors: 0

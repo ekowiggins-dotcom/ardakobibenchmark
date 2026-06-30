@@ -1,0 +1,18 @@
+Sources checked: 10
+valid sources: 10
+failed sources: 0
+redirected sources: 0
+blocked sources: 0
+static-only sources: 0
+weekly-development eligible sources: 1
+
+source | REG-104 | Türk Ticaret Bankası Ana Site | status=200 | length=59497 | links=97 | useful_links=19 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Ticari / İhracat Bankası | priority=C | mvp_active=- | validation=Structural / ignored | collector=static_scrape
+source | REG-190 | Türk Ticaret Bankası Duyurular | status=200 | length=65476 | links=107 | useful_links=26 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Ticari / İhracat Bankası | priority=C | mvp_active=- | validation=Manual inspection needed | collector=manual
+source | REG-191 | Türk Ticaret Bankası Haberler | status=200 | length=69372 | links=100 | useful_links=28 | turkish_ok=True | redirected=False | blocked=False | eligible=True | category=weekly-development eligible | coverage=Ticari / İhracat Bankası | priority=C | mvp_active=True | validation=Valid weekly source | collector=static_scrape
+source | REG-192 | Türk Ticaret Bankası Basın Bültenleri | status=200 | length=56143 | links=92 | useful_links=26 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Ticari / İhracat Bankası | priority=C | mvp_active=- | validation=Promising but not current | collector=manual
+source | REG-193 | Türk Ticaret Bankası Bankamız | status=200 | length=45034 | links=89 | useful_links=16 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Ticari / İhracat Bankası | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-194 | Türk Ticaret Bankası Dış Ticaret Finansmanı | status=200 | length=71642 | links=84 | useful_links=15 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Ticari / İhracat Bankası | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-195 | Türk Ticaret Bankası İşletme Sermayesi Kredileri | status=200 | length=53574 | links=84 | useful_links=26 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Ticari / İhracat Bankası | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-196 | Türk Ticaret Bankası Teminat Mektupları | status=200 | length=46711 | links=84 | useful_links=16 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Ticari / İhracat Bankası | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-197 | Türk Ticaret Bankası Şubeler | status=200 | length=68122 | links=84 | useful_links=15 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Ticari / İhracat Bankası | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-199 | Türk Ticaret Bankası Ürün ve Hizmet Ücretleri | status=200 | length=46555 | links=86 | useful_links=15 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Ticari / İhracat Bankası | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape

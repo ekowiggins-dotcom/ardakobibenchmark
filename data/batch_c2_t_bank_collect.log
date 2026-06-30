@@ -1,0 +1,20 @@
+2026-06-26 14:08:09,174 INFO Total sources loaded: 199
+2026-06-26 14:08:09,174 INFO Active sources: 164
+2026-06-26 14:08:09,174 INFO collection_method == static_scrape olan kaynak sayısı: 162
+2026-06-26 14:08:09,174 INFO Eligible active static_scrape sources: 155
+2026-06-26 14:08:09,175 INFO --institution T-Bank uygulanıyor. Kontrol edilecek kaynak sayısı: 6
+2026-06-26 14:08:09,179 INFO Fetching REG-102 | T-Bank Hakkında | https://www.tbank.com.tr/hakkimizda/detay/T-Bank-Hakkinda/9/1/0
+2026-06-26 14:08:09,572 INFO Collected REG-102 from https://www.tbank.com.tr/hakkimizda/detay/T-Bank-Hakkinda/9/1/0
+2026-06-26 14:08:09,572 INFO Fetching REG-180 | T-Bank Nakit Krediler | https://www.tbank.com.tr/ticari-bankacilik/detay-akordeon/Nakit-Krediler/85/184/0
+2026-06-26 14:08:10,077 INFO Collected REG-180 from https://www.tbank.com.tr/ticari-bankacilik/detay-akordeon/Nakit-Krediler/85/184/0
+2026-06-26 14:08:10,077 INFO Fetching REG-181 | T-Bank Gayrinakdi Krediler | https://www.tbank.com.tr/ticari-bankacilik/detay-akordeon/Gayrinakdi-Krediler/105/176/0
+2026-06-26 14:08:10,487 INFO Collected REG-181 from https://www.tbank.com.tr/ticari-bankacilik/detay-akordeon/Gayrinakdi-Krediler/105/176/0
+2026-06-26 14:08:10,488 INFO Fetching REG-182 | T-Bank Nakit Yönetimi | https://www.tbank.com.tr/ticari-bankacilik/detay/Nakit-Yonetimi/114/245/0
+2026-06-26 14:08:10,896 INFO Collected REG-182 from https://www.tbank.com.tr/ticari-bankacilik/detay/Nakit-Yonetimi/114/245/0
+2026-06-26 14:08:10,897 INFO Fetching REG-183 | T-Bank Yatırım Ürünleri | https://www.tbank.com.tr/ticari-bankacilik/detay-akordeon/Yatirim-Urunleri/123/179/0
+2026-06-26 14:08:11,251 INFO Collected REG-183 from https://www.tbank.com.tr/ticari-bankacilik/detay-akordeon/Yatirim-Urunleri/123/179/0
+2026-06-26 14:08:11,251 INFO Fetching REG-184 | T-Bank Diğer Ticari Ürünler | https://www.tbank.com.tr/ticari-bankacilik/detay-akordeon/Diger-Urunler/130/186/0
+2026-06-26 14:08:11,594 INFO Collected REG-184 from https://www.tbank.com.tr/ticari-bankacilik/detay-akordeon/Diger-Urunler/130/186/0
+2026-06-26 14:08:11,598 INFO Wrote 142 metadata rows
+2026-06-26 14:08:11,598 INFO Successfully fetched this run: 6
+2026-06-26 14:08:11,598 INFO Failed this run: 0

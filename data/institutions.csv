@@ -1,0 +1,29 @@
+﻿institution_id,institution_name,institution_type,country,region,website,ownership_type,sme_focus_level,strategic_notes
+garanti_bbva,Garanti BBVA,Türk Bankası,Türkiye,Türkiye,https://www.garantibbva.com.tr,Özel,Yüksek,Strong SME Dijital bankacılık franchise with active merchant acquiring and Nakit Yönetimi capabilities.
+is_bankasi,İş Bankası,Türk Bankası,Türkiye,Türkiye,https://www.isbank.com.tr,Özel,Yüksek,"Broad SME reach, strong branch network and mature commercial banking proposition."
+akbank,Akbank,Türk Bankası,Türkiye,Türkiye,https://www.akbank.com,Özel,Yüksek,"Digital-forward bank with KOBİ Kredileri, payments and ecosystem İş Birliği potential."
+yapi_kredi,Yapı Kredi,Türk Bankası,Türkiye,Türkiye,https://www.yapikredi.com.tr,Özel,Yüksek,"Large SME portfolio, card acquiring strength and integrated Dijital bankacılık journey."
+qnb_finansbank,QNB Finansbank,Türk Bankası,Türkiye,Türkiye,https://www.qnbfinansbank.com,Özel,Orta,Entrepreneur-focused positioning with practical digital tools for SMEs.
+denizbank,DenizBank,Türk Bankası,Türkiye,Türkiye,https://www.denizbank.com,Özel,Orta,Sector-led SME propositions and merchant services supported by advisory approach.
+teb,TEB,Türk Bankası,Türkiye,Türkiye,https://www.teb.com.tr,Özel,Orta,Known for SME advisory and enterprise support programs with selective digital strength.
+vakifbank,VakifBank,Kamu Bankası,Türkiye,Türkiye,https://www.vakifbank.com.tr,Halka Açık,Yüksek,Halka Açık-sector scale with strong deposit gathering potential and extensive distribution.
+ziraat,Ziraat Bankasi,Kamu Bankası,Türkiye,Türkiye,https://www.ziraatbank.com.tr,Halka Açık,Yüksek,"Largest kamu bankacılığı footprint, especially relevant for mass SME and agriculture-linked segments."
+halkbank,Halkbank,Kamu Bankası,Türkiye,Türkiye,https://www.halkbank.com.tr,Halka Açık,Yüksek,Historically SME-focused Kamu Bankası with lending and government program linkage.
+kuveyt_turk,Kuveyt Türk,Katılım Bankası,Türkiye,Türkiye,https://www.kuveytturk.com.tr,Özel,Orta,Katılım Bankasıing proposition with SME Nakit Yönetimi and digital onboarding relevance.
+iyzico,iyzico,Ödeme Kuruluşu,Türkiye,Türkiye,https://www.iyzico.com,Özel,Yüksek,E-commerce payment gateway brand with strong merchant onboarding and marketplace relevance.
+paytr,PayTR,Ödeme Kuruluşu,Türkiye,Türkiye,https://www.paytr.com,Özel,Yüksek,Sanal POS and payment link player focused on fast SME merchant enablement.
+param,Param,Ödeme Kuruluşu,Türkiye,Türkiye,https://www.param.com.tr,Özel,Orta,"Wallet, card and payment acceptance capabilities with B2B service expansion."
+sipay,Sipay,Ödeme Kuruluşu,Türkiye,Türkiye,https://www.sipay.com.tr,Özel,Orta,"Payment infrastructure provider with wallet, POS and API-led merchant services."
+papara,Papara,Global Fintek,Türkiye,Türkiye,https://www.papara.com,Özel,Orta,Consumer-led fintech expanding business payment and wallet adjacency.
+paycell,Paycell,Ödeme Kuruluşu,Türkiye,Türkiye,https://www.paycell.com.tr,Kurumsal,Orta,"Telecom-backed payments ecosystem with QR, wallet and merchant offer potential."
+moka,Moka,Ödeme Kuruluşu,Türkiye,Türkiye,https://www.moka.com,Kurumsal,Orta,SME-oriented Sanal POS and payment collection capability under bank ownership.
+visa,Visa,Kart Şeması,ABD,Global,https://www.visa.com,Halka Açık Şirket,Orta,"Global card network shaping acceptance, SME enablement and Gömülü Finans iş birlikleri."
+mastercard,Mastercard,Kart Şeması,ABD,Global,https://www.mastercard.com,Halka Açık Şirket,Orta,"Global scheme with SME tools, data services, acceptance and open banking capabilities."
+troy,Troy,Kart Şeması,Türkiye,Türkiye,https://www.troyodeme.com,Yerli Şema,Orta,Domestic Kart Şeması relevant for local acceptance economics and Halka Açık-sector alignment.
+stripe,Stripe,Global Fintek,ABD,Global,https://stripe.com,Özel,Yüksek,"Global benchmark for developer-led payments, Gömülü Finans and SME platform monetization."
+adyen,Adyen,Global Fintek,Hollanda,Avrupa,https://www.adyen.com,Halka Açık Şirket,Yüksek,Enterprise-grade acquiring and unified commerce platform with strong data and reconciliation.
+square,Square,Global Fintek,ABD,Global,https://squareup.com,Halka Açık Şirket,Yüksek,"SME operating system across POS, payments, banking and working capital."
+sumup,SumUp,Global Fintek,Birleşik Krallık,Avrupa,https://www.sumup.com,Özel,Yüksek,Micro-merchant acquiring and simple POS proposition for small businesses.
+revolut_business,Revolut Business,Global Fintek,Birleşik Krallık,Avrupa,https://www.revolut.com/business,Özel,Yüksek,"Digital-first business account with FX, cards, payments and workakışı integrations."
+wise_business,Wise Business,Global Fintek,Birleşik Krallık,Avrupa,https://wise.com/business,Halka Açık Şirket,Orta,Cross-border SME account and FX proposition with transparent pricing.
+shopify_payments,Shopify Payments,Global Fintek,Kanada,Global,https://www.shopify.com/payments,Halka Açık Şirket,Yüksek,Embedded merchant payments inside commerce workakışı with deposit and lending adjacency.

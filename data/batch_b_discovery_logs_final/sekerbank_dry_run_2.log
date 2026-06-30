@@ -1,0 +1,91 @@
+2026-06-26 08:58:44,554 INFO Documents considered: 1
+2026-06-26 08:58:44,554 INFO Recency cutoff: 2026-05-01
+2026-06-26 08:58:44,554 INFO Allow undated: False
+2026-06-26 08:58:44,554 INFO Allow low date confidence: False
+2026-06-26 08:58:44,554 INFO Allow end-date recency: False
+2026-06-26 08:58:44,579 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | TL Gece Gündüz Hesap Vadesiz Mevduatta Kalacak Tutar Değişiklikleri Hakkında Bilgilendirme | https://www.sekerbank.com.tr/hakkimizda/basin-odasi/duyurular/2025/tl-gece-gunduz-hesap-vadesiz-alt-limit-tutar-degisiklikleri-hakkinda-bilgilendirme
+2026-06-26 08:58:44,580 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Şekerbank’ın “Yerinde Kredi” platformuna The Banker’dan ödül | https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-yerinde-kredi-platformuna-the-bankerdan-odul
+2026-06-26 08:58:44,581 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Şekerbank'a yeni genel müdür yardımcısı | https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbanka-yeni-genel-mudur-yardimcisi
+2026-06-26 08:58:44,581 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Şekerbank’a kalkınma odaklı Avrupa Fonu EFSE’den 50 milyon euroluk yeni kaynak | https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbanka-kalkinma-odakli-avrupa-fonu-efseden--50-milyon-euroluk-yeni-kaynak
+2026-06-26 08:58:44,582 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Şekerbank’ın yeni platformu “Yerinde Kredi” ile çiftçilere anında finansman desteği | https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-yeni-platformu-yerinde-kredi-ile-ciftcilere-aninda-finansman-destegi
+2026-06-26 08:58:44,582 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Şekerbank, CDP’de üç kategoride “A” skoruyla küresel sürdürülebilirlik liderleri arasında | https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2025/sekerbank-cdpde-uc-kategoride-a-skoruyla--kuresel-surdurulebilirlik-liderleri-arasinda
+2026-06-26 08:58:44,583 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Yeni Müşteri Başvurusu | https://www.sekerbank.com.tr/hakkimizda/basin-odasi#sizi-arayalim-formu
+2026-06-26 08:58:44,583 INFO Poor item skipped | title_too_short | Müşteri Ol | https://www.sekerbank.com.tr/hakkimizda/basin-odasi
+2026-06-26 08:58:44,583 INFO Rejected candidate | title_too_short | Müşteri Ol | https://www.sekerbank.com.tr/hakkimizda/basin-odasi
+2026-06-26 08:58:44,583 INFO Poor item skipped | title_too_short | Esnaf / KOBİ | https://www.sekerbank.com.tr/hakkimizda/basin-odasi#kobi
+2026-06-26 08:58:44,583 INFO Rejected candidate | title_too_short | Esnaf / KOBİ | https://www.sekerbank.com.tr/hakkimizda/basin-odasi#kobi
+2026-06-26 08:58:44,584 INFO Poor item skipped | title_too_short | Basın Bültenleri | https://www.sekerbank.com.tr/hakkimizda/basin-odasi#basin-bultenleri
+2026-06-26 08:58:44,584 INFO Rejected candidate | title_too_short | Basın Bültenleri | https://www.sekerbank.com.tr/hakkimizda/basin-odasi#basin-bultenleri
+2026-06-26 08:58:44,584 INFO Poor item skipped | title_too_short | Duyurular | https://www.sekerbank.com.tr/hakkimizda/basin-odasi#duyurular
+2026-06-26 08:58:44,584 INFO Rejected candidate | title_too_short | Duyurular | https://www.sekerbank.com.tr/hakkimizda/basin-odasi#duyurular
+2026-06-26 08:58:44,584 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Esnaf/Kobi Bankacılığı | https://www.sekerbank.com.tr/esnaf-kobi
+2026-06-26 08:58:44,584 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Esnaf/KOBİ Kredileri | https://www.sekerbank.com.tr/esnaf-kobi/esnafkobi-kredileri
+2026-06-26 08:58:44,585 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Finansal Kapsayıcılık ve Kadın Bankacılığı | https://www.sekerbank.com.tr/esnaf-kobi/kapsayici-finans-ve-kadin-bankaciligi
+2026-06-26 08:58:44,585 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Dış Ticaret ve Finansmanı | https://www.sekerbank.com.tr/esnaf-kobi/dis-ticaret-ve-finansmani
+2026-06-26 08:58:44,585 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Sektörel Destek ve İşbirlikleri | https://www.sekerbank.com.tr/esnaf-kobi/sektorel-destek-ve-is-birlikleri
+2026-06-26 08:58:44,586 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | KOBİ Paketleri ve İşlem Tarifeleri | https://www.sekerbank.com.tr/uploads/560/Paketler-Esnaf-Kobi-110226.pdf
+2026-06-26 08:58:44,586 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Ticari Kart Kampanyaları | https://www.sekerbank.com.tr/ticari-kartlar/ticari-kart-kampanyalari
+2026-06-26 08:58:44,586 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Kurumsal Paketleri ve İşlem Tarifeleri | https://www.sekerbank.com.tr/uploads/652/Paketler -Kurumsal-ve-Ticari-200226.pdf
+2026-06-26 08:58:44,587 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Şekerbank POS kampanyaları ile kazanma zamanı! | https://www.sekerbank.com.tr/esnaf-kobi/uye-isyeri-pos/pos-kampanyalari
+2026-06-26 08:58:44,587 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Sürsün Reklam Kampanyası | https://cdn.sekerbank.com.tr/uploads/737/SB_SURSUN_ANA_FILM_73sn(2).mp4
+2026-06-26 08:58:44,587 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | İşletme Sahibi ve Esnaf Kadınlarımıza Destek Kredisi | https://www.sekerbank.com.tr/uploads/işletme-sahibi-ve-esnaf-kadınlarımıza-destek-kredisi.mp4
+2026-06-26 08:58:44,587 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Esnafım Kredisi 1 (Fırın) | https://www.sekerbank.com.tr/uploads/esnafim_kredisi_firin.mp4
+2026-06-26 08:58:44,588 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Esnafım Kredisi 2 (Kundura) | https://www.sekerbank.com.tr/uploads/esnafim_kredisi_kundura.mp4
+2026-06-26 08:58:44,588 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Esnafım Kredisi 3 (Berber) | https://www.sekerbank.com.tr/uploads/esnafim_kredisi_-berber.mp4
+2026-06-26 08:58:44,588 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Esnaf ve İşletme Kredileri | https://www.sekerbank.com.tr/esnaf-kobi/esnafkobi-kredileri/esnaf-ve-isletme-kredileri
+2026-06-26 08:58:44,589 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Taksitli Tarım Kredisi | https://www.sekerbank.com.tr/tarim/tarim-kredileri/tarimsal-isletme-kredileri/taksitli-tarim-kredisi
+2026-06-26 08:58:44,589 INFO Dry run: 0 items would be written
+2026-06-26 08:58:44,601 INFO Total links found: 241
+2026-06-26 08:58:44,601 INFO Candidate links found: 27
+2026-06-26 08:58:44,601 INFO Detail pages fetched: 0
+2026-06-26 08:58:44,601 INFO Recent items created: 0
+2026-06-26 08:58:44,601 INFO Saved recent developments: 0
+2026-06-26 08:58:44,601 INFO Rejected old items: 0
+2026-06-26 08:58:44,601 INFO Rejected undated items: 27
+2026-06-26 08:58:44,601 INFO Rejected low-confidence dates: 0
+2026-06-26 08:58:44,601 INFO Rejected non-developments: 0
+2026-06-26 08:58:44,601 INFO Saved by publication_date: 0
+2026-06-26 08:58:44,601 INFO Saved by announcement_date: 0
+2026-06-26 08:58:44,601 INFO Saved by campaign_start_date: 0
+2026-06-26 08:58:44,601 INFO Rejected because only campaign_end_date existed: 0
+2026-06-26 08:58:44,601 INFO passed_by_publication_date_count: 0
+2026-06-26 08:58:44,601 INFO passed_by_announcement_date_count: 0
+2026-06-26 08:58:44,601 INFO passed_by_campaign_start_date_count: 0
+2026-06-26 08:58:44,601 INFO passed_by_end_date_manual_override_count: 0
+2026-06-26 08:58:44,601 INFO rejected_only_campaign_end_date_count: 0
+2026-06-26 08:58:44,601 INFO Active old campaigns detected: 0
+2026-06-26 08:58:44,601 INFO Content role Bağımsız Gelişme: 16
+2026-06-26 08:58:44,601 INFO Content role Bağlamsal Veri: 0
+2026-06-26 08:58:44,601 INFO Content role Yönetici Bilgilendirme: 0
+2026-06-26 08:58:44,601 INFO Content role Kapsam Dışı/Benchmark: 11
+2026-06-26 08:58:44,601 INFO Poor items skipped: 4
+2026-06-26 08:58:44,601 INFO Duplicates skipped: 0
+2026-06-26 08:58:44,601 INFO Errors: 0
+2026-06-26 08:58:44,601 INFO First rejected items: TL Gece Gündüz Hesap Vadesiz Mevduatta Kalacak Tutar Değişiklikleri Hakkında Bilgilendirme :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi/duyurular/2025/tl-gece-gunduz-hesap-vadesiz-alt-limit-tutar-degisiklikleri-hakkinda-bilgilendirme | Şekerbank’ın “Yerinde Kredi” platformuna The Banker’dan ödül :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-yerinde-kredi-platformuna-the-bankerdan-odul | Şekerbank'a yeni genel müdür yardımcısı :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbanka-yeni-genel-mudur-yardimcisi | Şekerbank’a kalkınma odaklı Avrupa Fonu EFSE’den 50 milyon euroluk yeni kaynak :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbanka-kalkinma-odakli-avrupa-fonu-efseden--50-milyon-euroluk-yeni-kaynak | Şekerbank’ın yeni platformu “Yerinde Kredi” ile çiftçilere anında finansman desteği :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-yeni-platformu-yerinde-kredi-ile-ciftcilere-aninda-finansman-destegi | Şekerbank, CDP’de üç kategoride “A” skoruyla küresel sürdürülebilirlik liderleri arasında :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2025/sekerbank-cdpde-uc-kategoride-a-skoruyla--kuresel-surdurulebilirlik-liderleri-arasinda | Yeni Müşteri Başvurusu :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi#sizi-arayalim-formu | Müşteri Ol :: title_too_short :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi | Esnaf / KOBİ :: title_too_short :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi#kobi | Basın Bültenleri :: title_too_short :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi#basin-bultenleri
+
+CANDIDATE REPORT
+source_id: REG-140
+source_name: Şekerbank Basın Odası
+source_url: https://www.sekerbank.com.tr/hakkimizda/basin-odasi
+total links found: 241
+candidate links found: 27
+- score=8 | title=TL Gece Gündüz Hesap Vadesiz Mevduatta Kalacak Tutar Değişiklikleri Hakkında Bilgilendirme | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/duyurular/2025/tl-gece-gunduz-hesap-vadesiz-alt-limit-tutar-degisiklikleri-hakkinda-bilgilendirme | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Şekerbank’ın “Yerinde Kredi” platformuna The Banker’dan ödül | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-yerinde-kredi-platformuna-the-bankerdan-odul | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Şekerbank'a yeni genel müdür yardımcısı | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbanka-yeni-genel-mudur-yardimcisi | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Şekerbank’a kalkınma odaklı Avrupa Fonu EFSE’den 50 milyon euroluk yeni kaynak | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbanka-kalkinma-odakli-avrupa-fonu-efseden--50-milyon-euroluk-yeni-kaynak | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Şekerbank’ın yeni platformu “Yerinde Kredi” ile çiftçilere anında finansman desteği | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-yeni-platformu-yerinde-kredi-ile-ciftcilere-aninda-finansman-destegi | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Şekerbank, CDP’de üç kategoride “A” skoruyla küresel sürdürülebilirlik liderleri arasında | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2025/sekerbank-cdpde-uc-kategoride-a-skoruyla--kuresel-surdurulebilirlik-liderleri-arasinda | reason=title_length,positive_keyword,detail_path
+- score=8 | title=Yeni Müşteri Başvurusu | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi#sizi-arayalim-formu | reason=title_length,positive_keyword,detail_path
+- score=6 | title=Müşteri Ol | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi | reason=positive_keyword,detail_path
+- score=6 | title=Esnaf / KOBİ | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi#kobi | reason=positive_keyword,detail_path
+- score=6 | title=Basın Bültenleri | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi#basin-bultenleri | reason=positive_keyword,detail_path
+- score=6 | title=Duyurular | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi#duyurular | reason=positive_keyword,detail_path
+- score=4 | title=Esnaf/Kobi Bankacılığı | url=https://www.sekerbank.com.tr/esnaf-kobi | reason=title_length,positive_keyword
+- score=4 | title=Esnaf/KOBİ Kredileri | url=https://www.sekerbank.com.tr/esnaf-kobi/esnafkobi-kredileri | reason=title_length,positive_keyword
+- score=4 | title=Finansal Kapsayıcılık ve Kadın Bankacılığı | url=https://www.sekerbank.com.tr/esnaf-kobi/kapsayici-finans-ve-kadin-bankaciligi | reason=title_length,positive_keyword
+- score=4 | title=Dış Ticaret ve Finansmanı | url=https://www.sekerbank.com.tr/esnaf-kobi/dis-ticaret-ve-finansmani | reason=title_length,positive_keyword
+- score=4 | title=Sektörel Destek ve İşbirlikleri | url=https://www.sekerbank.com.tr/esnaf-kobi/sektorel-destek-ve-is-birlikleri | reason=title_length,positive_keyword
+- score=4 | title=KOBİ Paketleri ve İşlem Tarifeleri | url=https://www.sekerbank.com.tr/uploads/560/Paketler-Esnaf-Kobi-110226.pdf | reason=title_length,positive_keyword
+- score=4 | title=Ticari Kart Kampanyaları | url=https://www.sekerbank.com.tr/ticari-kartlar/ticari-kart-kampanyalari | reason=title_length,positive_keyword
+- score=4 | title=Kurumsal Paketleri ve İşlem Tarifeleri | url=https://www.sekerbank.com.tr/uploads/652/Paketler -Kurumsal-ve-Ticari-200226.pdf | reason=title_length,positive_keyword
+- score=4 | title=Şekerbank POS kampanyaları ile kazanma zamanı! | url=https://www.sekerbank.com.tr/esnaf-kobi/uye-isyeri-pos/pos-kampanyalari | reason=title_length,positive_keyword

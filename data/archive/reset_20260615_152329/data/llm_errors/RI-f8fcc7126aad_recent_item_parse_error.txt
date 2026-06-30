@@ -1,0 +1,31 @@
+```json
+{
+  "relevance_status": "İlgisiz",
+  "strategic_theme": "Kurumsal Konumlandırma",
+  "product_area": "Diğer",
+  "development_type": "Rapor / Araştırma",
+  "headline": "Garanti BBVA, CDP İklim Raporu Sponsorluğuyla Kurumsal İmaj Güçlendiriyor",
+  "summary": "Garanti BBVA, Türkiye'deki şirketlerin çevresel raporlama performansını ölçen CDP 2025 İklim Değişikliği ve Doğa Raporu'nun ana sponsoru olarak konumlandırılmıştır. Rapor, Türkiye'deki 45 şirketin Küresel A Listesi'nde yer aldığını ve 5 şirketin Triple A seviyesine ulaştığını göstermektedir.",
+  "core_assessment": "Bu gelişme Garanti BBVA'nın kurumsal sürdürülebilirlik ve ESG alanında marka görünürlüğünü artırmaya yönelik bir PR ve sponsorluk aktivitesidir; KOBİ ürün, hizmet veya strateji açısından doğrudan bir anlamı yoktur.",
+  "strategic_relevance": "Gelişme, Garanti BBVA'nın kurumsal yönetim ve çevresel liderlik konularında kendisini konumlandırmasını hedeflemektedir. KOBİ segmentinin mevduat, kredi, ödeme, nakit yönetimi veya dijital hizmetleriyle ilgili yeni bir teklif, fiyat değişikliği veya rekabet avantajı içermemektedir.",
+  "impact_on_us": "Düşük",
+  "recommended_action": "Önceliklendirme",
+  "importance_level": "Düşük",
+  "confidence_level": "Yüksek",
+  "extracted_facts": [
+    "Garanti BBVA, CDP Türkiye 16. İklim Değişikliği & Doğa Konferansı'nın ana sponsoru",
+    "Rapor tarihi: 20 Mayıs 2026; Konferans tarihi: 15 Mayıs 2026",
+    "Türkiye'den 45 şirket Küresel A Listesi'nde yer aldı",
+    "Dünyada 27 şirketten 5'i Türkiye'den Triple A seviyesine ulaştı",
+    "Türkiye'deki raporlama şirketleri iklim yönetiminde %82, su yönetiminde %87, ormansızlaşmada %70 liderlik seviyesinde",
+    "Lider şirketler çevresel yatırımda 1 dolar başına 4 dolar finansal değer yaratıyor",
+    "Rapor, zorunlu raporlama çerçeveleriyle uyumu (TSRS %83) gösteriyor"
+  ],
+  "open_questions": [
+    "Garanti BBVA'nın bu sponsorluk aktivitesinin KOBİ müşteri tabanına yönelik bir iletişim veya ürün geliştirme planı var mı?",
+    "Raporda yer alan 45 şirketin KOBİ segmentine ait oranı nedir?"
+  ],
+  "detaylı_değerlendirme": {
+    "neden_düşük_değerli": "Bu gelişme, Garanti BBVA'nın kurumsal sosyal sorumluluk ve ESG konularında marka görünürlüğünü artırmaya yönelik bir sponsorluk ve PR aktivitesidir. Rapor, büyük şirketlerin çevresel performansını ölçmekte; KOBİ segmentinin finansal ürünleri, hizmetleri, fiyatlandırması veya rekabet konumunda herhangi bir değişiklik içermemektedir.",
+    "kobi_açısından_anlam": "KOBİ mevduat, kredi, POS/ödemeler, nakit yönetimi, gömülü finans veya dijital yolculuk açısından doğrudan bir anlamı yoktur. Rapor, büyük kurumsal şirketlerin iklim ve doğa raporlaması konusundaki olgunluk düzeyini göstermektedir.",
+    

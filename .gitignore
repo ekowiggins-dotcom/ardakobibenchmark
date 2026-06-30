@@ -1,0 +1,6 @@
+.env
+.env.local
+*.key
+data/llm_errors/*.txt
+__pycache__/
+.DS_Store

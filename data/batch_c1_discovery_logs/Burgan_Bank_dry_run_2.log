@@ -1,0 +1,110 @@
+2026-06-26 11:41:26,818 INFO Documents considered: 1
+2026-06-26 11:41:26,818 INFO Recency cutoff: 2026-05-01
+2026-06-26 11:41:26,818 INFO Allow undated: False
+2026-06-26 11:41:26,818 INFO Allow low date confidence: False
+2026-06-26 11:41:26,818 INFO Allow end-date recency: False
+2026-06-26 11:41:26,914 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank’tan Yeni Finansman Alternatifi Burgan’da Faktoring 11-2025 | https://www.burgan.com.tr/uploads/2025/12/burgan-banktan-yeni-finansman-alternatifi-burganda-faktoring.pdf
+2026-06-26 11:41:26,915 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank, EBRD’nin GEFF Programı Kapsamında İlk Yeşil Finansmanını Sağladı 11-2025 | https://www.burgan.com.tr/uploads/2025/12/burgan-bank-ebrdnin-geff-programi-kapsaminda-ilk-yesil-finansmanini-sagladi.pdf
+2026-06-26 11:41:26,915 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank 2623 Milyon Dolarlık Sendikasyon Kredisi Sağladı 10-2025 | https://www.burgan.com.tr/uploads/2025/12/burgan-bank-2623-milyon-dolarlik-sendikasyon-kredisi-sagladi-778413c5-9755-40f2-ad0d-b117f131e206.pdf
+2026-06-26 11:41:26,916 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank 262,3 Milyon Dolarlık Sendikasyon Kredisi Sağladı 06-2025 | https://www.burgan.com.tr/uploads/2025/7/burgan-bank-2623-milyon-dolarlik-sendikasyon-kredisi-sagladi.pdf
+2026-06-26 11:41:26,916 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank EBRD Ödül 05-2025 | https://www.burgan.com.tr/uploads/2025/7/burgan-bank-ebrd-odul_bb.pdf
+2026-06-26 11:41:26,916 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | 205 Milyon Abd Dolarlık Sendikasyon Kredisi 08-2017 | https://www.burgan.com.tr/uploads/2021/2/230817_burgan_bank_basin_bulteni_sendikasyon_kredisi.pdf
+2026-06-26 11:41:26,917 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Gelenekselleşen Bayram Kredisiyle Müşterilerinin Nakit İhtiyacını Karşılıyor 08-2017 | https://www.burgan.com.tr/uploads/2021/2/160817_burgan_bank_basin_bulteni_kurban_bayrami_kredisi.pdf
+2026-06-26 11:41:26,918 INFO Rejected candidate | Kesim tarihinden eski: 2021-02-14 < 2026-05-01 | Burgan Bank 2016 Üçüncü Çeyrek Finansal Sonuçlarını Açıkladı 11-2016 | https://www.burgan.com.tr/uploads/2021/2/14_11_2016_basin_bulteni_3_ceyrek_finansallar.pdf
+2026-06-26 11:41:26,918 INFO Rejected candidate | Kesim tarihinden eski: 2021-02-11 < 2026-05-01 | Burgan Bank’ta Faiz İndirimi! 11-2016 | https://www.burgan.com.tr/uploads/2021/2/11_06_2016_burgan_bank_basin_bulteni_faiz_indirimi.pdf
+2026-06-26 11:41:26,919 INFO Rejected candidate | Kesim tarihinden eski: 2021-02-08 < 2026-05-01 | Burgan Bank 2016 İlk Yarıyılı Finansal Sonuçlarını Açıkladı 08-2016 | https://www.burgan.com.tr/uploads/2021/2/08_12_2016_burgan_bank_basin_bulteni_2016_2_ceyrek_finansallar_bo.pdf
+2026-06-26 11:41:26,919 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank Sendikasyon Kredisi İmzaladı. 08-2016 | https://www.burgan.com.tr/uploads/2021/2/burgan_bank_sendikasyon_basin_bulteni_11082016.pdf
+2026-06-26 11:41:26,920 INFO Rejected candidate | Kesim tarihinden eski: 2021-02-07 < 2026-05-01 | Fitch'ten Burgan Bank Türkiye'ye en yüksek not! 07-2016 | https://www.burgan.com.tr/uploads/2021/2/07_20_2016_burgan_bank_basin_bulteni_fitch.pdf
+2026-06-26 11:41:26,920 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank’ta Faiz İndirimi! 07-2016 | https://www.burgan.com.tr/uploads/2021/2/burgan_bank_basin_bulteni_platin_kredi.pdf
+2026-06-26 11:41:26,921 INFO Rejected candidate | Kesim tarihinden eski: 2021-02-13 < 2026-05-01 | Burgan Bank 2016 Yılı İlk Çeyrek Finansal Sonuçlarını Açıkladı 05-2016 | https://www.burgan.com.tr/uploads/2021/2/13_05_2016_burgan-bank_basin-bulteni_2016-finansallar-1.pdf
+2026-06-26 11:41:26,921 INFO Rejected candidate | Kesim tarihinden eski: 2021-02-13 < 2026-05-01 | Burgan Bank'a Yeni CFO 05-2016 | https://www.burgan.com.tr/uploads/2021/2/13_05_2016_burgan-bank_basin-bulteni_yeni-cfo-atama.pdf
+2026-06-26 11:41:26,922 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank’a, IFC’den Kobi'leri Desteklemek İçin 60 Milyon ABD Doları Tutarında Kredi 05-2016 | https://www.burgan.com.tr/uploads/2021/2/burgan-bank_tr_ifc_mayis-11-2016.pdf
+2026-06-26 11:41:26,922 INFO Rejected candidate | Kesim tarihinden eski: 2021-02-04 < 2026-05-01 | Burgan Bank’tan Jet Hızıyla Bereketli Çeyiz Hesabı 04-2016 | https://www.burgan.com.tr/uploads/2021/2/04_20_2016_burgan-bank_basin-bulteni_ceyiz-hesabi.pdf
+2026-06-26 11:41:26,923 INFO Rejected candidate | Kesim tarihinden eski: 2021-02-03 < 2026-05-01 | Burgan Bank 2015 Yılını, Kredilerinde %27 Oranında Büyüme ve 52,2 Milyon Kâr Elde Ederek Tamamladı 0 | https://www.burgan.com.tr/uploads/2021/2/03_08_2016_burgan-bank_basin-bulteni_2015-finansallar-3-son-2.pdf
+2026-06-26 11:41:26,924 INFO Rejected candidate | Kesim tarihinden eski: 2021-02-01 < 2026-05-01 | Türkiye Hayata Burgan Bank'ın Yenilenen Websitesinden Bakacak! 02-2016 | https://www.burgan.com.tr/uploads/2021/2/01_2016_burgan-bank_basin-bulteni_yeni-web-sitesi.pdf
+2026-06-26 11:41:26,924 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank 2015 3. Çeyrek Finansal Sonuçlarını Açıkladı 11-2015 | https://www.burgan.com.tr/uploads/2021/2/388_1_11_13_2015_burgan_bank_basin_bulteni_2015_3ceyrek_finansallar.pdf
+2026-06-26 11:41:26,925 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Bankamız Kredi Kartı ve POS sistem altyapı değişikliği hakkında 10-2015 | https://www.burgan.com.tr/uploads/2021/2/388_1_sistem-aksakligi-_-duyuru_-01102015_2.pdf
+2026-06-26 11:41:26,925 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Bankacılık Sistemlerimizde Yapılacak iyileştirme Çalışmaları 09-2015 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_bankacilik_sistemlerimizde_yapilacak_iyilestirme_calismalari.pdf
+2026-06-26 11:41:26,925 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank 2015 ilk yarı finansal sonuçlarını açıkladı. 08-2015 | https://www.burgan.com.tr/uploads/2021/2/388_1_burgan-bank_basin-bulteni_2015_ilk_yari_finansallar_son_08132015.pdf
+2026-06-26 11:41:26,926 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank ve Akportföyden Büyük İşbirliği 07-2015 | https://www.burgan.com.tr/uploads/2021/2/388_1_akportfoy_10072015.pdf
+2026-06-26 11:41:26,926 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank 124 Milyon Dolarlık Sendikasyon Kredisi İmzaladı. 06-2015 | https://www.burgan.com.tr/uploads/2021/2/388_1_sendikasyon_basin_bulteni_25062015.pdf
+2026-06-26 11:41:26,927 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank’tan Bereketli Ramazan Kredisi 06-2015 | https://www.burgan.com.tr/uploads/2021/2/388_1_06_09_2015_burgan-bank_basin-bulteni_-ramazan-kredisi.pdf
+2026-06-26 11:41:26,927 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank 2015 ilk çeyrek finansal sonuçlarını açıkladı. 05-2015 | https://www.burgan.com.tr/uploads/2021/2/388_1_22_05_2015_burgan-bank_basin_bulteni_2015_ilk_ceyrek_finansallar.pdf
+2026-06-26 11:41:26,928 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank 2014 finansal sonuçlarını açıkladı. 03-2015 | https://www.burgan.com.tr/uploads/2021/2/388_1_burganbank_basin_bulteni_06_mart_2015_finansal_sonuclar.pdf
+2026-06-26 11:41:26,928 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bank’ın Tatlı Paketleri İle Bankacılığa Tat Geliyor 02-2015 | https://www.burgan.com.tr/uploads/2021/2/388_1_18_12_2014-burganbank_basin_bulteni_tatli_paket-can.pdf
+2026-06-26 11:41:26,929 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Güneydoğu Avrupa İçin Avrupa Fonu (EFSE), Türkiye’deki Kobi’leri Desteklemek İçin Burgan Bank ile İş | https://www.burgan.com.tr/uploads/2021/2/388_1_26_01_2015_burganbank_basin_bulteni_efse.pdf
+2026-06-26 11:41:26,929 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Bankın Kobilere Desteği KGF Kredileri ile Devam Ediyor 08-2014 | https://www.burgan.com.tr/uploads/2021/2/388_1_burgan_bankin_kobilere_destegi_kgf_kredileri_ile_devam_ediyor.pdf
+2026-06-26 11:41:26,930 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Burgan Banktan KOBİlere Özel yepyeni Bir Kredi İstediğinde Öde 06-2014 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_istediginde_ode_kredisi.pdf
+2026-06-26 11:41:26,930 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Eurobank Tekfenden Kobilere Özel Taksitli Ticari Kredi Kampanyası 09-2012 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_eurobank_tekfen_ttk.pdf
+2026-06-26 11:41:26,931 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Eurobank Tekfen Kredi Şenliği 09-2012 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_eurobank_tekfen_kredi_senligi_bulteni.pdf
+2026-06-26 11:41:26,931 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Türkiyenin En Başarılı Turizm Yatırımları Araştırması 2012 Sonuçları Açıklandı 06-2012 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_eurobank_tekfen_turizm_yarismasi_odul_ttoreni_bulteni.pdf
+2026-06-26 11:41:26,931 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Eurobank Tekfen Yaz Kredi Kampanyası 06-2012 | https://www.burgan.com.tr/uploads/2021/3/388_1_388_1_eurobank_tekfen_yaz_kredisi.pdf
+2026-06-26 11:41:26,932 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Kuveyt’in öncü bankası Burgan Bank, Eurobank Tekfen ile Türkiye pazarına giriyor 04-2012 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_basin_bulteni_09042012.pdf
+2026-06-26 11:41:26,932 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Eurobank Tekfen İlkbahar Kredi Kampanyası 03-2012 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_ilkbahar_kredi_kampanyasi_20032012.pdf
+2026-06-26 11:41:26,933 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Yeni Yıla Özel Yeni Yıl Kredisi Kampanyası 12-2011 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_yeni-yil-yeni-kredi-kampanyasi.pdf
+2026-06-26 11:41:26,933 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Eurobank Tekfen Dünya Turizm Gününde Turizmcilerin Yanında 09-2011 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_turizm-paketi-bb.pdf
+2026-06-26 11:41:26,933 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Adapazarı Şube Açılışı 08-2011 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_adapazari-sube-acilisi-2.pdf
+2026-06-26 11:41:26,934 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Eurobank Tekfen, Back-Up Üyeliği Hediyeli “Ramazan Kredisi” Kampanyasını Sunar… 07-2011 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_ramazan-kredisi-kampanyasi.pdf
+2026-06-26 11:41:26,934 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Eurobank Tekfenden %95 Anapara Garantili “Tarım Fonu” 07-2011 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_25072011.pdf
+2026-06-26 11:41:26,935 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Türkiye’nin En Başarılı Turizm Yatırımları 2011 Araştırması Sonuçları Açıklandı 06-2011 | https://www.burgan.com.tr/uploads/2021/3/388_1_388_1_eurobank_tekfen_turizm_yarismasi_odul_ttoreni_bulteni-e223f44b-59b7-4a00-bb19-783fd8ceb2d0.pdf
+2026-06-26 11:41:26,935 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Eurobank Tekfenin Ödenmiş Sermayesinin Artırılmasına Karar Verildi 04-2011 | https://www.burgan.com.tr/uploads/2021/3/388_1_388_1_eurobanktekfensermayearttirimibasinbulteni.pdf
+2026-06-26 11:41:26,937 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Eurobank Tekfenden İşletmelere Özel Güçlü Kobi Paketi 04-2011 | https://www.burgan.com.tr/uploads/2021/3/388_1_388_1_guclukobi-bulten.pdf
+2026-06-26 11:41:26,937 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Eurobank Tekfen’den İlkbahar Kredisi 03-2011 | https://www.burgan.com.tr/uploads/2021/3/388_1_388_1_eurobank-tekfen-ilkbahar-kampanyasi-bulten.pdf
+2026-06-26 11:41:26,938 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Faal Hesap Basın Bülteni 01-2011 | https://www.burgan.com.tr/uploads/2021/3/388_1_388_1_faal_hesap_bulten.pdf
+2026-06-26 11:41:26,938 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Eurobank KOBİ Danışmanı Olacak 04-2010 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_turkiye_15042010.pdf
+2026-06-26 11:41:26,939 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Eurobank Tekfenden Güçlü KOBİ Paketi 04-2010 | https://www.burgan.com.tr/uploads/2021/2/388_1_388_1_yeni_safak_13042010.pdf
+2026-06-26 11:41:26,939 INFO Dry run: 0 items would be written
+2026-06-26 11:41:26,964 INFO Total links found: 420
+2026-06-26 11:41:26,964 INFO Candidate links found: 62
+2026-06-26 11:41:26,964 INFO Detail pages fetched: 0
+2026-06-26 11:41:26,964 INFO Recent items created: 0
+2026-06-26 11:41:26,964 INFO Saved recent developments: 0
+2026-06-26 11:41:26,964 INFO Rejected old items: 9
+2026-06-26 11:41:26,964 INFO Rejected undated items: 41
+2026-06-26 11:41:26,964 INFO Rejected low-confidence dates: 0
+2026-06-26 11:41:26,964 INFO Rejected non-developments: 0
+2026-06-26 11:41:26,964 INFO Saved by publication_date: 0
+2026-06-26 11:41:26,964 INFO Saved by announcement_date: 0
+2026-06-26 11:41:26,964 INFO Saved by campaign_start_date: 0
+2026-06-26 11:41:26,964 INFO Rejected because only campaign_end_date existed: 0
+2026-06-26 11:41:26,964 INFO passed_by_publication_date_count: 0
+2026-06-26 11:41:26,964 INFO passed_by_announcement_date_count: 0
+2026-06-26 11:41:26,964 INFO passed_by_campaign_start_date_count: 0
+2026-06-26 11:41:26,964 INFO passed_by_end_date_manual_override_count: 0
+2026-06-26 11:41:26,964 INFO rejected_only_campaign_end_date_count: 0
+2026-06-26 11:41:26,964 INFO Active old campaigns detected: 0
+2026-06-26 11:41:26,964 INFO Content role Bağımsız Gelişme: 9
+2026-06-26 11:41:26,964 INFO Content role Bağlamsal Veri: 0
+2026-06-26 11:41:26,964 INFO Content role Yönetici Bilgilendirme: 0
+2026-06-26 11:41:26,964 INFO Content role Kapsam Dışı/Benchmark: 41
+2026-06-26 11:41:26,964 INFO Poor items skipped: 0
+2026-06-26 11:41:26,964 INFO Duplicates skipped: 0
+2026-06-26 11:41:26,964 INFO Errors: 0
+2026-06-26 11:41:26,964 INFO First rejected items: Burgan Bank’tan Yeni Finansman Alternatifi Burgan’da Faktoring 11-2025 :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.burgan.com.tr/uploads/2025/12/burgan-banktan-yeni-finansman-alternatifi-burganda-faktoring.pdf | Burgan Bank, EBRD’nin GEFF Programı Kapsamında İlk Yeşil Finansmanını Sağladı 11-2025 :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.burgan.com.tr/uploads/2025/12/burgan-bank-ebrdnin-geff-programi-kapsaminda-ilk-yesil-finansmanini-sagladi.pdf | Burgan Bank 2623 Milyon Dolarlık Sendikasyon Kredisi Sağladı 10-2025 :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.burgan.com.tr/uploads/2025/12/burgan-bank-2623-milyon-dolarlik-sendikasyon-kredisi-sagladi-778413c5-9755-40f2-ad0d-b117f131e206.pdf | Burgan Bank 262,3 Milyon Dolarlık Sendikasyon Kredisi Sağladı 06-2025 :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.burgan.com.tr/uploads/2025/7/burgan-bank-2623-milyon-dolarlik-sendikasyon-kredisi-sagladi.pdf | Burgan Bank EBRD Ödül 05-2025 :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.burgan.com.tr/uploads/2025/7/burgan-bank-ebrd-odul_bb.pdf | 205 Milyon Abd Dolarlık Sendikasyon Kredisi 08-2017 :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.burgan.com.tr/uploads/2021/2/230817_burgan_bank_basin_bulteni_sendikasyon_kredisi.pdf | Gelenekselleşen Bayram Kredisiyle Müşterilerinin Nakit İhtiyacını Karşılıyor 08-2017 :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.burgan.com.tr/uploads/2021/2/160817_burgan_bank_basin_bulteni_kurban_bayrami_kredisi.pdf | Burgan Bank 2016 Üçüncü Çeyrek Finansal Sonuçlarını Açıkladı 11-2016 :: Kesim tarihinden eski: 2021-02-14 < 2026-05-01 :: https://www.burgan.com.tr/uploads/2021/2/14_11_2016_basin_bulteni_3_ceyrek_finansallar.pdf | Burgan Bank’ta Faiz İndirimi! 11-2016 :: Kesim tarihinden eski: 2021-02-11 < 2026-05-01 :: https://www.burgan.com.tr/uploads/2021/2/11_06_2016_burgan_bank_basin_bulteni_faiz_indirimi.pdf | Burgan Bank 2016 İlk Yarıyılı Finansal Sonuçlarını Açıkladı 08-2016 :: Kesim tarihinden eski: 2021-02-08 < 2026-05-01 :: https://www.burgan.com.tr/uploads/2021/2/08_12_2016_burgan_bank_basin_bulteni_2016_2_ceyrek_finansallar_bo.pdf
+
+CANDIDATE REPORT
+source_id: REG-098
+source_name: Burgan Bank Basın Odası
+source_url: https://www.burgan.com.tr/basin-odasi
+total links found: 420
+candidate links found: 62
+- score=22 | title=Burgan Bank’tan Yeni Finansman Alternatifi Burgan’da Faktoring 11-2025 | url=https://www.burgan.com.tr/uploads/2025/12/burgan-banktan-yeni-finansman-alternatifi-burganda-faktoring.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank, EBRD’nin GEFF Programı Kapsamında İlk Yeşil Finansmanını Sağladı 11-2025 | url=https://www.burgan.com.tr/uploads/2025/12/burgan-bank-ebrdnin-geff-programi-kapsaminda-ilk-yesil-finansmanini-sagladi.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank 2623 Milyon Dolarlık Sendikasyon Kredisi Sağladı 10-2025 | url=https://www.burgan.com.tr/uploads/2025/12/burgan-bank-2623-milyon-dolarlik-sendikasyon-kredisi-sagladi-778413c5-9755-40f2-ad0d-b117f131e206.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank 262,3 Milyon Dolarlık Sendikasyon Kredisi Sağladı 06-2025 | url=https://www.burgan.com.tr/uploads/2025/7/burgan-bank-2623-milyon-dolarlik-sendikasyon-kredisi-sagladi.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank EBRD Ödül 05-2025 | url=https://www.burgan.com.tr/uploads/2025/7/burgan-bank-ebrd-odul_bb.pdf | reason=burgan_press_pdf
+- score=22 | title=205 Milyon Abd Dolarlık Sendikasyon Kredisi 08-2017 | url=https://www.burgan.com.tr/uploads/2021/2/230817_burgan_bank_basin_bulteni_sendikasyon_kredisi.pdf | reason=burgan_press_pdf
+- score=22 | title=Gelenekselleşen Bayram Kredisiyle Müşterilerinin Nakit İhtiyacını Karşılıyor 08-2017 | url=https://www.burgan.com.tr/uploads/2021/2/160817_burgan_bank_basin_bulteni_kurban_bayrami_kredisi.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank 2016 Üçüncü Çeyrek Finansal Sonuçlarını Açıkladı 11-2016 | url=https://www.burgan.com.tr/uploads/2021/2/14_11_2016_basin_bulteni_3_ceyrek_finansallar.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank’ta Faiz İndirimi! 11-2016 | url=https://www.burgan.com.tr/uploads/2021/2/11_06_2016_burgan_bank_basin_bulteni_faiz_indirimi.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank 2016 İlk Yarıyılı Finansal Sonuçlarını Açıkladı 08-2016 | url=https://www.burgan.com.tr/uploads/2021/2/08_12_2016_burgan_bank_basin_bulteni_2016_2_ceyrek_finansallar_bo.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank Sendikasyon Kredisi İmzaladı. 08-2016 | url=https://www.burgan.com.tr/uploads/2021/2/burgan_bank_sendikasyon_basin_bulteni_11082016.pdf | reason=burgan_press_pdf
+- score=22 | title=Fitch'ten Burgan Bank Türkiye'ye en yüksek not! 07-2016 | url=https://www.burgan.com.tr/uploads/2021/2/07_20_2016_burgan_bank_basin_bulteni_fitch.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank’ta Faiz İndirimi! 07-2016 | url=https://www.burgan.com.tr/uploads/2021/2/burgan_bank_basin_bulteni_platin_kredi.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank 2016 Yılı İlk Çeyrek Finansal Sonuçlarını Açıkladı 05-2016 | url=https://www.burgan.com.tr/uploads/2021/2/13_05_2016_burgan-bank_basin-bulteni_2016-finansallar-1.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank'a Yeni CFO 05-2016 | url=https://www.burgan.com.tr/uploads/2021/2/13_05_2016_burgan-bank_basin-bulteni_yeni-cfo-atama.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank’a, IFC’den Kobi'leri Desteklemek İçin 60 Milyon ABD Doları Tutarında Kredi 05-2016 | url=https://www.burgan.com.tr/uploads/2021/2/burgan-bank_tr_ifc_mayis-11-2016.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank’tan Jet Hızıyla Bereketli Çeyiz Hesabı 04-2016 | url=https://www.burgan.com.tr/uploads/2021/2/04_20_2016_burgan-bank_basin-bulteni_ceyiz-hesabi.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank 2015 Yılını, Kredilerinde %27 Oranında Büyüme ve 52,2 Milyon Kâr Elde Ederek Tamamladı 03-2016 | url=https://www.burgan.com.tr/uploads/2021/2/03_08_2016_burgan-bank_basin-bulteni_2015-finansallar-3-son-2.pdf | reason=burgan_press_pdf
+- score=22 | title=Türkiye Hayata Burgan Bank'ın Yenilenen Websitesinden Bakacak! 02-2016 | url=https://www.burgan.com.tr/uploads/2021/2/01_2016_burgan-bank_basin-bulteni_yeni-web-sitesi.pdf | reason=burgan_press_pdf
+- score=22 | title=Burgan Bank 2015 3. Çeyrek Finansal Sonuçlarını Açıkladı 11-2015 | url=https://www.burgan.com.tr/uploads/2021/2/388_1_11_13_2015_burgan_bank_basin_bulteni_2015_3ceyrek_finansallar.pdf | reason=burgan_press_pdf

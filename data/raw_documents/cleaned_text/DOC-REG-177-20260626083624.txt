@@ -1,0 +1,235 @@
+Masraf Komisyon Listesi | Burgan Bank
+Ticari ve Kurumsal Müşterilerden Alınan Masraf ve Komisyonlar
+TİCARİ ve KURUMSAL KREDİLER
+KREDİ TAHSİS VE KREDİ KULLANDIRIM
+Para Birimi
+Asgari Tutar
+Asgari Oran
+Azami Tutar
+Azami Oran
+Açıklama
+Güncelleme Tarihi
+Kredi Tahsis Ve Kredi Kullandırım Ücreti
+Kredi Tahsis
+TRY
+0,20%
+Dış ticaret kapsamında tüm gayri nakdi krediler ve ticari kredi kartları da dahil, kredi riski oluşturabilecek tüm limitlere karşılık alınır. Limit artışlarında ilave limit üzerinden yeni bir tahsis ücreti alınabilir. Limit tahsis veya yenileme talebi müşteriden gelmedikçe tahsis ücreti alınamaz. Ücret yıllık olup tahsis edilen limit süresinin ay sayısı dikkate alınarak oransal uygulanır.
+06.11.2025
+Kredi Kullandırım
+1.10%
+Sadece nakdi kredilerden alınabilir. Rotatif kredilerde ortalama bakiye üzerinden yıllık olarak uygulanır. Rotatif kredilerde ilgili dönem ortalama kullandırım bakiyesi üzerinden dönem sonlarında, diğer nakdi krediler için ise her bir kullandırım anında tahakkuk ettirilir. Bir yıldan kısa vadeli kredi kullandırımlarında azami ücret vade gün sayısı dikkate alınarak ve oransal düşülerek uygulanır.
+İtibar/Niyet/Referans Mektubu Düzenleme Ücreti
+3.000 TL
+0,1%
+200.000
+3,0%
+20.01.2023
+TEMİNATLANDIRMA
+Ekspertiz, Teminat Tesis, Değişiklik Ve İptal Ücreti
+Kredinin tahsisinden kapatılmasına kadar geçen süre içinde yapılacak rehin, ipotek, ekspertiz ve alacak temliki de dahil tüm teminatlara ilişkin işlemler için banka tarafından üçüncü kişilere ödenecek ücretin yüzde on beş fazlasını, hizmetin banka bünyesinden sunulması halinde ise hizmetin makul bedelini geçmez.
+19.08.2021
+KREDİ RİSKİ SÜRECİ
+Yapılandırma, Temdit/Ödeme Planı ve Faiz Değişikliği Ücreti
+5.000 TL
+2,5%
+7,5%
+07.07.2023
+Taahhüt/Taahhüde Uymama Ücreti TRY
+Taahhüt
+1,00%
+6,00%
+Müşteri ile imzalanan protokol çerçevesinde tahsil edilir.
+16.10.2025
+Taahhüde Uymama
+Gayrinakdi Kredi - Dönem Ücreti
+9.000 TL
+2,0%
+7.0%
+10.02.2025
+Gayrinakdi Kredi - Garantörlük Ücreti
+7,0%
+KAPAMA
+Nakdi Kredi Erken Ödeme Ücreti
+Nakdi Kredi Erken Kapama-Kalan Vadesi 24 Aya Kadar (1.3.2021 Tarihinden Önce Kullandırılan Kredilerde)
+Nakdi Kredi Erken Kapama (Türk Lirası Krediler)
+Kısmi yapılan ödemelere ilişkin tahsil edilecek erken ödeme ücreti banka ve ticari müşteri arasında serbestçe belirlenir.
+Nakdi Kredi Erken Kapama (Döviz Cinsi veya Dövize Endeksli Krediler)
+Nakdi Kredi Erken Kapama-Kalan Vadesi 24 Aydan Uzun (1.3.2021 Tarihinden Önce Kullandırılan Kredilerde)
+2,00%
+11.03.2020
+3,00%
+Nakdi Kredi Ara/Kısmi Ödeme
+1,0%
+6,0%
+22.09.2025
+Nakdi Kredi Erken Kapama-Kalan Vadesi 24 Aya Kadar (1.3.2021 - 01.07.2024 Tarihleri Arasında Kullandırılan Kredilerde)
+9.03.2021
+Nakdi Kredi Erken Kapama-Kalan Vadesi 24 Aydan Uzun (1.3.2021 - 01.07.2024 Tarihleri Arasında Kullandırılan Kredilerde)
+Kalan vadesi 24 ayı aşan kredilerde, %2 nin üzerine kalan vadenin 24 ayı aşan kısmındaki her bir yıl için % 1 eklenerek hesaplanan tutara kadar erken ödeme ücreti alınabilir. Söz konusu hesaplamada kalan vadenin 24 ayı aşan kısmındaki süreler yıla tamamlanır.
+Kalan vadesi 24 ayı aşan kredilerde %3 ün üzerine, kalan vadenin 24 ayı aşan kısmındaki her bir yıl için %1 eklenerek hesaplanan tutara kadar erken ödeme ücreti alınabilir. Söz konusu hesaplamada kalan vadenin 24 ayı aşan kısmındaki süreler yıla tamamlanır.
+Nakdi Kredi Erken Kapama (1.7.2024 Tarihinden İtibaren Kullandırılan Kredilerde)
+Nakdi Kredi Erken Kapama (Sabit Faizli Türk Lirası Krediler)
+Sabit faizli TL kredilerinde azami ücret, kredinin yıllık bileşik faiz oranının %5'i ile kalan ağırlıklı ortalama vadesinin %0,20'sinin toplanması ile belirlenir.
+1.07.2024
+Nakdi Kredi Erken Kapama (Sabit Faizli Döviz Cinsi veya Dövize Endeksli Krediler)
+Sabit faizli döviz cinsinden veya dövize endeksli kredilerde azami ücret, sabit %2 ile kalan ağırlıklı ortalama vadesinin %0,15'nin toplanması ile belirlenir.
+Nakdi Kredi Erken Kapama (06.01.2025 itibariyle kullandırılan Sabit Faizli Döviz Cinsi veya Dövize Endeksli Krediler)
+Sabit faizli döviz cinsinden veya dövize endeksli kredilerde azami ücret sabit %3 ile kalan ağırlıklı ortalama vadesinin %0.10’nun toplanması ile belirlenir.
+Nakdi Kredi Erken Kapama (Değişken Faizli Türk Lirası Krediler)
+Nakdi Kredi Erken Kapama (Değişken Faizli Döviz Cinsi veya Dövize Endeksli Krediler)
+DIŞ TİCARET
+İTHALAT İŞLEMLERİ
+Akreditif Açılış Ücreti
+6.000 TL
+05.04.2024
+Rezerv/Uyuşmazlık Ücreti
+4.500 TL
+10.000 TL
+Ön ihbar Ücreti
+Aval/Kabul Ücreti
+Vade/Tutar Değişiklik Ücreti
+5,0%
+Poliçe Kabul Ücreti
+İHRACAT İŞLEMLERİ
+İhbar Ücreti
+0,5%
+Teyit Ücreti
+Vade/Tutar Değişikliği Ücreti
+30.000
+Vadeli Ödeme Ücreti
+İskonto Ücreti
+15.000 TL
+15,0%
+Tahsil Ücreti
+İTHALAT/İHRACAT ORTAK İŞLEMLERİ
+Vesaik İnceleme Ücreti
+Değişiklik Ücreti
+20.000 TL
+İşlem Ücreti
+Muhabir Banka Masrafı
+Muhabirin talep ettiği masraf tahsil edilir
+1.04.2020
+Ödeme Ücreti
+NAKİT YÖNETİMİ
+Tedarikçi Finansmanı ve Doğrudan Borçlandırma Sistemi (DBS)
+Tedarikçi Finansmanı ve DBS Ücreti
+DBS
+12.000 TL
+50.000 TL
+Tedarikçi Finansmanı
+Tedarikçi Finansmanı ve DBS Dönem Ücreti
+7.500 TL
+MEVDUAT, KATILIM FONU VE KIYMETLİ MADEN DEPO HESAPLARI
+Para ve Kıymetli Maden Yatırma/Çekme Ücreti
+Şube Geç Para Yatırma
+1.500 TL
+0,25%
+40.000 TL
+Para Çekme
+Günlük Limit Üzeri Para Çekme
+24.02.2022
+Diğer Şubeden Para Çekme
+Kıymetli Maden Çekimi
+Hesabın Bulunduğu Şubeden Para Çekme
+Başka Kuruluş ATM'leri/Ortak ATM'lerden Yapılan İşlemler Ücreti
+Para Çekme/Yatırma/Borç Ödeme
+Diğer kuruluşa işlem karşılığı ödenen tutarın yüzde on beş fazlası peşin olarak tahsil edilir.
+ATM Bakiye/Limit/Borç Sorgulama
+PARA VE KIYMETLİ MADEN TRANSFERLERİ
+EFT/FAST
+Mobil/İnternet/Düzenli Ödeme
+8.300 TL ve altı
+7,97
+Peşin tahsil edilir. BSMV hariç tutarlardır. 08/02/2026 tarihinden itibaren geçerli olacaktır.
+12.01.2026
+8.300,01 - 399.000 TL arası
+15,96
+399.000 TL üstü
+199,41
+ATM/Kiosk
+27,84
+55,69
+398,83
+Diğer
+39,87
+79,76
+797,68
+Havale Ücreti
+3,99
+7,98
+99,71
+13,92
+27,85
+199,42
+19,94
+39,88
+399.000 üstü
+398,84
+Uluslararası Fon Transferi ve Mesajlaşma Ücreti
+Giden Fon Transferi
+Gelen Fon Transferi
+5.000TL
+Ödeme Kuruluşları Üzerinden Gönderilen
+16.04.2020
+Ödeme Kuruluşları Üzerinden Gelen
+Uluslararası Fon Transferi Sorgulama/Mesajlaşma Ücreti
+Swift işlemlerinde muhabir banka masrafları ek olarak yansıtılacaktır.
+Kıymetli Maden Transferi Ücreti
+Banka İçi
+Transfer sistemini işleten kuruluş tarafından işlem başına belirlenen transfer ücretinin Yüzde 15 fazlası tahsil edilir.
+01.04.2020
+Diğer Banka
+KİRALIK KASA
+Küçük Boy
+6.000
+Kiralık kasa hizmetleri karşılığında alınan ücrettir
+26.07.2024
+Orta Boy
+8.000
+Büyük Boy
+10.000
+ARACILIK HİZMETLERİ
+Fatura/Kurum Ödemesi
+Ücretsizdir.
+Tahsilat/Ödeme Hizmetleri
+BELGE VE BİLGİLENDİRME
+Basılı Ekstre Gönderimi
+4,50
+Müşterinin basılı ekstre taleplerinden sayfa başına 4,50 TL ücret alınır.
+1.12.2023
+Arşiv/Araştırma
+Müşterinin talebine istinaden sayfa başına 4,50 TL ücret alınır.
+ÇEK İŞLEMLERİ
+Çek Defteri ve Çek Düzenleme Ücreti
+Çek Defteri (Yaprak Başı)
+67 TL
+250 TL
+Çek Düzenleme
+5.523 TL
+Özel Nitelikli Çek Düzenleme
+Çek İade Ücreti
+600 TL
+2.500 TL
+Çek Tahsilat Ücreti
+Aynı Banka Çeki
+0,30%
+Diğer Banka Çeki
+3.500 TL
+Döviz Çekleri Tahsilatı (Diğer Banka)
+681 TL
+Çek Belgelendirme ve Düzeltme Ücreti
+Karşılıksız Çek Belgelendirme
+750 TL
+Çek Düzeltme Hakkı
+1.000 TL
+SENET İŞLEMLERİ
+Senet Bilgilendirme Ücreti
+500 TL
+Senet İade Ücreti
+Senet Protesto İşlemleri Ücreti
+Senet Protesto
+4.000 TL
+Senet Protesto Kaldırma
+Senet Tahsile Alma Ücreti
+Aynı Banka Senet Tahsili
+Muhabir Banka Senet Tahsili

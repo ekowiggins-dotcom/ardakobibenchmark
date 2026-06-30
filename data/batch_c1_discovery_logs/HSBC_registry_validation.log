@@ -1,0 +1,15 @@
+Sources checked: 6
+valid sources: 6
+failed sources: 0
+redirected sources: 1
+blocked sources: 0
+static-only sources: 0
+weekly-development eligible sources: 0
+
+source | REG-099 | HSBC Türkiye | status=200 | length=148974 | links=411 | useful_links=93 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Toptan / Kurumsal Banka | priority=C | mvp_active=- | validation=Disabled by Batch C1 exact-source review | collector=manual
+source | REG-161 | HSBC Haberler | status=200 | length=122634 | links=407 | useful_links=104 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Toptan / Kurumsal Banka | priority=C | mvp_active=- | validation=Manual inspection needed | collector=manual
+source | REG-162 | HSBC Business Türkiye | status=200 | length=178282 | links=30 | useful_links=0 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Toptan / Kurumsal Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-163 | HSBC Credit and Lending | status=200 | length=158572 | links=26 | useful_links=0 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Toptan / Kurumsal Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-164 | HSBC Business Expansion | status=200 | length=86838 | links=22 | useful_links=0 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=Toptan / Kurumsal Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-165 | HSBC Business Investments / Liquidity | status=200 | length=125892 | links=22 | useful_links=0 | turkish_ok=True | redirected=True | blocked=False | eligible=False | category=not eligible | coverage=Toptan / Kurumsal Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+  final_url: https://www.business.hsbc.com.tr/tr-tr/solutions/investments

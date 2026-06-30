@@ -1,0 +1,16 @@
+Sources checked: 8
+valid sources: 8
+failed sources: 0
+redirected sources: 0
+blocked sources: 0
+static-only sources: 0
+weekly-development eligible sources: 1
+
+source | REG-100 | Enpara Şirketim | status=200 | length=68877 | links=172 | useful_links=72 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-101 | Enpara Şirketim Kampanyalar | status=200 | length=54532 | links=160 | useful_links=75 | turkish_ok=True | redirected=False | blocked=False | eligible=True | category=weekly-development eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=True | validation=Valid weekly source with date-range detail pages | collector=static_scrape
+source | REG-166 | Enpara Şirketim Duyurular | status=200 | length=80302 | links=156 | useful_links=68 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Manual inspection needed | collector=manual
+source | REG-167 | Enpara Şirketim POS | status=200 | length=63099 | links=167 | useful_links=84 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-168 | Enpara Şirketim Ticari Kredi Kartı | status=200 | length=63962 | links=163 | useful_links=80 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-169 | Enpara Şirketim Ödemeler | status=200 | length=54286 | links=155 | useful_links=70 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-170 | Enpara Şirketim Oranlar ve Kurlar | status=200 | length=53186 | links=158 | useful_links=69 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-171 | Enpara Şirketim Ücretler | status=200 | length=64055 | links=158 | useful_links=67 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape

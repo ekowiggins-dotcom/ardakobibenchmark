@@ -1,0 +1,19 @@
+2026-06-26 14:54:14,681 INFO LLM provider: anthropic
+2026-06-26 14:54:14,681 INFO LLM model: claude-haiku-4-5-20251001
+2026-06-26 14:54:14,681 INFO Anthropic API key bulundu: Evet
+2026-06-26 14:54:14,681 INFO MAX_LLM_ITEMS_PER_RUN: 5
+2026-06-26 14:54:14,682 INFO MAX_CHARS_PER_ITEM: 8000
+2026-06-26 14:54:14,682 INFO Recency cutoff: 2026-05-01
+2026-06-26 14:54:14,682 INFO Allow undated: False
+2026-06-26 14:54:14,682 INFO Allow low date confidence: False
+2026-06-26 14:54:14,682 INFO Allow end-date recency: False
+2026-06-26 14:54:14,702 INFO Recent item candidates: 0
+2026-06-26 14:54:14,705 INFO Summaries created: 0
+2026-06-26 14:54:14,705 INFO Total summaries stored: 34
+2026-06-26 14:54:14,705 INFO JSON parse failures: 0
+2026-06-26 14:54:14,705 INFO Language rewrite attempts: 0
+2026-06-26 14:54:14,705 INFO Language rewrite failures: 0
+2026-06-26 14:54:14,705 INFO Items processed: 0
+2026-06-26 14:54:14,705 INFO Items skipped by recency/accuracy gate: 0
+2026-06-26 14:54:14,705 INFO Estimated item chars used: 0
+2026-06-26 14:54:14,705 INFO Estimated prompt/repair chars used: 0

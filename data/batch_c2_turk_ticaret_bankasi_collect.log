@@ -1,0 +1,22 @@
+2026-06-26 14:08:49,161 INFO Total sources loaded: 199
+2026-06-26 14:08:49,161 INFO Active sources: 164
+2026-06-26 14:08:49,161 INFO collection_method == static_scrape olan kaynak sayısı: 162
+2026-06-26 14:08:49,161 INFO Eligible active static_scrape sources: 155
+2026-06-26 14:08:49,161 INFO --institution Türk Ticaret Bankası uygulanıyor. Kontrol edilecek kaynak sayısı: 7
+2026-06-26 14:08:49,162 INFO Fetching REG-191 | Türk Ticaret Bankası Haberler | https://www.turkticaretbankasi.com.tr/icerikler/haberler
+2026-06-26 14:08:49,408 INFO Collected REG-191 from https://www.turkticaretbankasi.com.tr/icerikler/haberler
+2026-06-26 14:08:49,408 INFO Fetching REG-193 | Türk Ticaret Bankası Bankamız | https://www.turkticaretbankasi.com.tr/hakkimizda/bankamiz
+2026-06-26 14:08:49,613 INFO Collected REG-193 from https://www.turkticaretbankasi.com.tr/hakkimizda/bankamiz
+2026-06-26 14:08:49,614 INFO Fetching REG-194 | Türk Ticaret Bankası Dış Ticaret Finansmanı | https://www.turkticaretbankasi.com.tr/icerik/dis-ticaret-finansmani
+2026-06-26 14:08:49,852 INFO Collected REG-194 from https://www.turkticaretbankasi.com.tr/icerik/dis-ticaret-finansmani
+2026-06-26 14:08:49,853 INFO Fetching REG-195 | Türk Ticaret Bankası İşletme Sermayesi Kredileri | https://www.turkticaretbankasi.com.tr/icerik/isletme-sermayeli-krediler
+2026-06-26 14:08:50,074 INFO Collected REG-195 from https://www.turkticaretbankasi.com.tr/icerik/isletme-sermayeli-krediler
+2026-06-26 14:08:50,075 INFO Fetching REG-196 | Türk Ticaret Bankası Teminat Mektupları | https://www.turkticaretbankasi.com.tr/icerik/teminat-mektuplari
+2026-06-26 14:08:50,267 INFO Collected REG-196 from https://www.turkticaretbankasi.com.tr/icerik/teminat-mektuplari
+2026-06-26 14:08:50,267 INFO Fetching REG-197 | Türk Ticaret Bankası Şubeler | https://www.turkticaretbankasi.com.tr/icerik/subeler
+2026-06-26 14:08:50,486 INFO Collected REG-197 from https://www.turkticaretbankasi.com.tr/icerik/subeler
+2026-06-26 14:08:50,487 INFO Fetching REG-199 | Türk Ticaret Bankası Ürün ve Hizmet Ücretleri | https://www.turkticaretbankasi.com.tr/icerik/urun-ve-hizmet-ucretleri
+2026-06-26 14:08:50,684 INFO Collected REG-199 from https://www.turkticaretbankasi.com.tr/icerik/urun-ve-hizmet-ucretleri
+2026-06-26 14:08:50,688 INFO Wrote 153 metadata rows
+2026-06-26 14:08:50,688 INFO Successfully fetched this run: 7
+2026-06-26 14:08:50,688 INFO Failed this run: 0

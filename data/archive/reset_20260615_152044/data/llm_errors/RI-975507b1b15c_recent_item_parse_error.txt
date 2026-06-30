@@ -1,0 +1,29 @@
+```json
+{
+  "relevance_status": "İlgisiz",
+  "strategic_theme": "Kurumsal Konumlandırma",
+  "product_area": "Diğer",
+  "development_type": "Yönetim Açıklaması",
+  "headline": "Garanti BBVA Leasing'in Sürdürülebilirlik Bağlantılı Finansman İşlemleri",
+  "summary": "Garanti BBVA, Garanti BBVA Leasing ile aralarında imzalanan sürdürülebilirlik çerçeve mutabakatı kapsamında 2 milyar TL tutarında IRS işlemi ve 5 milyon euro tutarında kredi işlemi gerçekleştirmiştir. İşlemler, sürdürülebilirlik performans kriterlerini finansman ve risk yönetimi süreçlerine entegre etmektedir.",
+  "core_assessment": "Bu gelişme, Garanti BBVA'nın kurumsal sürdürülebilirlik konumlandırması için önemli olsa da, KOBİ segmentinin günlük finansman ihtiyaçlarına (mevduat, kredi, ödemeler, nakit yönetimi) doğrudan etki yapmamaktadır.",
+  "strategic_relevance": "Gelişme, Garanti BBVA'nın ESG ve sürdürülebilir finans alanında liderlik mesajı vermektedir, ancak KOBİ müşterilerine yönelik somut bir ürün, hizmet veya fiyatlandırma değişikliği içermemektedir. Leasing segmenti ve kurumsal müşteriler için tasarlanmış bir işlemdir.",
+  "impact_on_us": "Düşük",
+  "recommended_action": "Önceliklendirme",
+  "importance_level": "Düşük",
+  "confidence_level": "Yüksek",
+  "extracted_facts": [
+    "Garanti BBVA ve Garanti BBVA Leasing arasında sürdürülebilirlik çerçeve mutabakatı imzalanmıştır.",
+    "2 milyar TL tutarında sürdürülebilirlikle bağlantılı IRS (faiz swap) işlemi gerçekleştirilmiştir.",
+    "5 milyon euro tutarında sürdürülebilirlikle bağlantılı kredi (SLL) işlemi gerçekleştirilmiştir.",
+    "İşlemler, Garanti BBVA Leasing'in ilk sürdürülebilirlikle bağlantılı kredi ve IRS işlemleridir.",
+    "Duyuru tarihi: 01 Haziran 2026.",
+    "Sinem Edige (Garanti BBVA Genel Müdür Yardımcısı) tarafından yapılan açıklama, sürdürülebilirliğin finansal sistem dönüşümünün temel unsuru olduğunu vurgulamaktadır."
+  ],
+  "open_questions": [
+    "Bu işlemler KOBİ müşterilerine yönelik bir ürün veya hizmet geliştirmeye yol açacak mı?",
+    "Garanti BBVA, KOBİ segmentinde sürdürülebilirlikle bağlantılı finansman ürünleri sunmayı planlıyor mu?"
+  ],
+  "detailed_assessment": {
+    "neden_onemli_degil": "Bu haber, Garanti BBVA'nın kurumsal imajı ve ESG konumlandırması için önemli olsa da, KOBİ segmentinin temel finansman ihtiyaçlarına (kredi, mevduat, ödemeler, nakit yönetimi) dokunmamaktadır. İşlem, Garanti BBVA Leasing'in kurumsal müşterilerine yönelik bir faiz swap ve kredi işlemidir. KOBİ müşteriler bu tür sofistike finansal araçları (IRS, SLL) kullanmamaktadır.",
+    "rakip_neden_yapmis": "Garanti BBVA, ESG ve sürdürülebilir finans alanında pazar liderliği mesajı vermek, kurumsal müşteriler ve yatırımcılar nezdinde kredibilitesini artırmak ve uluslararası sürdürülebilirlik standartlarına uyum göst

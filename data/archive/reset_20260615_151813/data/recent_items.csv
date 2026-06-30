@@ -1,0 +1,727 @@
+﻿recent_item_id,document_id,source_id,tier,institution_id,institution_name,source_name,source_type,source_url,item_title,item_date,item_url,item_text,item_hash,detected_at,extraction_method,relevance_status,item_quality,normalized_item_date,date_confidence,date_source,is_recent,recency_cutoff,recency_reason,development_candidate_type,is_actual_development,actual_development_reason,publication_date,announcement_date,campaign_start_date,campaign_end_date,event_date_type,recency_basis_date,recency_basis_reason,is_active_campaign,active_campaign_reason,cluster_published,cluster_id
+RI-098243c77e94,DOC-REG-003-20260609085925,REG-003,Tier 1,garanti_bbva,Garanti BBVA,Garanti BBVA Kurumsal communication / press releases,Resmi Basın Bülteni Sayfası,https://www.garantibbva.com.tr/kurumsal-iletisim,Garanti BBVA TOBFED İş Birliği,22 Mayıs 2026,https://www.garantibbva.com.tr/content/public-website/kurumsal-iletisim/garanti-bbva-tobfed-is-birligi,"Garanti BBVA TOBFED İş Birliği
+22 Mayıs 2026
+Garanti BBVA ve TOBFED’den Otomotiv Ekosisteminde Güçlü Finansman İş Birliği
+TOBFED Yetkili Uygulama Merkezleri ve sektörel işletmelerde anında alışveriş kredisi dönemi başladı.
+Garanti BBVA ile Türkiye Araç Satış Sonrası Hizmetler Federasyonu (TOBFED), otomotiv perakende ve satış sonrası hizmetler ekosisteminde faaliyet gösteren işletmeler ile araç sahiplerinin finansmana erişimini kolaylaştıracak bir iş birliğine imza attı. İş birliği kapsamında, TOBFED’e bağlı anlaşmalı Yetkili Uygulama Merkezleri ve sektörel derneklere üye işletmelerde müşterilere anında alışveriş kredisi imkânı sunulacak.
+Hayata geçirilen iş birliğiyle müşteriler, şubeye gitmeye gerek kalmadan, hızlı ve pratik süreçlerle ihtiyaç duydukları finansmana kolayca ulaşabilecek. Garanti BBVA’nın güçlü finansal altyapısı ve dijital bankacılık çözümleri sayesinde kredi süreçleri daha hızlı, erişilebilir ve kullanıcı dostu hale gelirken; işletmelerin satış süreçleri ve nakit akışlarının da desteklenmesi hedefleniyor.
+TOBFED Yetkili Uygulama Merkezleri ve sektörel işletmelere finansal açıdan önemli avantajlar sunan iş birliği, aynı zamanda sektörün sürdürülebilir büyümesine katkı sağlayacak çözümlerin yaygınlaşmasını da destekleyecek.
+Garanti BBVA Tüketici Finansmanı Direktörü Koray Öztopçu
+, iş birliğine ilişkin değerlendirmesinde şunları söyledi:
+“Otomotiv perakende ve satış sonrası hizmet ekosisteminde müşteri beklentileri her geçen gün daha hızlı, pratik ve dijital çözümlere yöneliyor. Biz de Garanti BBVA olarak müşterilerimizin ihtiyaç duyduğu finansmana doğru anda, doğru kanaldan ulaşmalarını sağlayacak çözümler geliştirmeye devam ediyoruz. TOBFED ile gerçekleştirdiğimiz bu iş birliği sayesinde, anlaşmalı Yetkili Uygulama Merkezleri ve sektörel işletmelerde anında alışveriş kredisi çözümleri sunarak hem müşteri deneyimini iyileştiriyor hem de işletmelerin iş süreçlerini kolaylaştırıyoruz. Güçlü finansal altyapımız ve dijital bankacılık yetkinliklerimizle, otomotiv sektöründe sürdürülebilir büyümeyi destekleyen önemli bir adım atmaktan mutluluk duyuyoruz.”
+TOBFED Genel Başkanı Serkan Bakırtaş
+ise iş birliğini şu sözlerle değerlendirdi:
+“Araç satış sonrası hizmetler alanında faaliyet gösteren işletmelerimizin müşterilerine daha hızlı ve erişilebilir ödeme imkanları sunması sektörümüz adına büyük önem taşıyor. Garanti BBVA ile gerçekleştirdiğimiz bu iş birliği sayesinde Yetkili Uygulama Merkezlerimiz ve üye işletmelerimiz güçlü bir finansal destek altyapısına kavuşurken, araç sahipleri de ihtiyaç duydukları hizmetlere daha kolay ulaşabilecek. Bu iş birliğini sektörümüzün dijitalleşmesi, büyümesi ve sürdürülebilir gelişimi açısından önemli bir adım olarak görüyoruz.”
+Garanti BBVA, farklı sektörlere özel geliştirdiği finansman çözümleri ve stratejik iş birlikleriyle müşterilerinin yanında olmaya, iş ortaklarının büyümesini desteklemeye ve ekonomi için değer yaratmaya devam ediyor.",f1c98140c4babc76d7365b91cec9e33e03962cc31a49221c000347d0aec82003,2026-06-15T08:16:09.281729+00:00,detail_page_fetch,Beklemede,Good,2026-05-22,Yüksek,announcement_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-05-22,Kampanya,True,Kampanya veya müşteri teklifi sinyali içeriyor.,,2026-05-22,,,Duyuru Tarihi,2026-05-22,Duyuru/basın tarihi bulundu; recency için kullanıldı.,False,,,
+RI-0f5cfdbaa310,DOC-REG-003-20260609085925,REG-003,Tier 1,garanti_bbva,Garanti BBVA,Garanti BBVA Kurumsal communication / press releases,Resmi Basın Bülteni Sayfası,https://www.garantibbva.com.tr/kurumsal-iletisim,Ödeme İste API ile Tahsilatta Yeni Dönem,21 Mayıs 2026,https://www.garantibbva.com.tr/content/public-website/kurumsal-iletisim/odeme-iste-api-ile-tahsilatta-yeni-donem,"Ödeme İste API ile Tahsilatta Yeni Dönem
+21 Mayıs 2026
+Garanti BBVA’dan Ödeme İste API ile Tahsilatta Yeni Dönem
+Garanti BBVA, BKM entegrasyonlu Ödeme İste API çözümünü hayata geçirdi. Yeni uygulama sayesinde firmalar tahsilat süreçlerini kendi sistemleri üzerinden yönetebilirken, müşteriler de faturalarını hızlı, kolay ve kesintisiz şekilde ödeyebiliyor.
+Garanti BBVA, ödeme ve tahsilat süreçlerinde dijitalleşmeyi ileri taşıyan yeni çözümü BKM entegrasyonlu
+Ödeme İste
+API’yi canlı ortamda kullanıma aldı. Uludağ Elektrik ile gerçekleştirilen iş birliği kapsamında hayata geçirilen uygulama sayesinde Uludağ Elektrik müşterileri banka uygulamalarına iletilen Ödeme İste taleplerini tek bir onayla hızlı ve güvenli bir şekilde tamamlayabiliyor.
+Yeni çözüm sayesinde firmalar, Garanti BBVA dijital kanallarına girmeye gerek kalmadan kendi sistemleri üzerinden Garanti BBVA Ödeme İste API aracılığıyla ödeme isteği oluşturabiliyor; böylece tahsilat süreçleri daha hızlı, esnek ve operasyonel olarak daha verimli hale geliyor.
+Garanti BBVA Genel Müdür Yardımcısı Cemal Onaran,
+konuyla ilgili yaptığı değerlendirmede şunları söyledi: “Servis bankacılığı vizyonumuz doğrultusunda, müşterilerimizin iş yapış biçimlerine doğrudan entegre olan çözümler geliştirmeyi öncelikli odak alanlarımız arasında görüyoruz. BKM entegrasyonlu Ödeme İste API ile firmalar tahsilat süreçlerini kendi sistemleri üzerinden yönetebilirken, müşteriler de çok daha hızlı ve kesintisiz bir ödeme deneyimi yaşayabiliyor. Uludağ Elektrik ile birlikte hayata geçirdiğimiz bu uygulamanın, ödeme süreçlerinin dijitalleşmesi ve müşteri deneyiminin iyileştirilmesi açısından önemli bir örnek oluşturduğuna inanıyoruz. Bu çözümün firmaların nakit akışını daha etkin yönetmelerine, operasyonel verimliliklerini artırmalarına ve dijital dönüşüm süreçlerini hızlandırmalarına katkı sağlayacağını düşünüyoruz.”
+Ödeme süreçlerinde daha hızlı ve kesintisiz deneyim
+Uludağ Elektrik, Türkiye Cumhuriyet Merkez Bankası (TCMB) ve BKM ortaklığında geliştirilen FAST altyapılı “Ödeme İste” hizmetini kendi sistemlerine entegre ederek kullanıcı dostu yeni bir tahsilat modeli geliştirdi. Yeni sistem kapsamında belirli kriterleri karşılayan müşterilere otomatik ödeme talebi iletiliyor. Müşteriler, banka uygulamalarına gelen bildirimi onaylayarak faturalarını tek adımda ödeyebiliyor. Böylece unutulan faturalar, yetersiz bakiye nedeniyle gerçekleşmeyen otomatik ödeme talimatları ve manuel ödeme süreçlerinden kaynaklanan aksaklıkların azaltılması hedefleniyor.
+Uludağ Elektrik Genel Müdürü Remezan Arslan
+, uygulamayla ilgili yaptığı açıklamada:
+“Dijitalleşmeyi yalnızca bir teknoloji yatırımı olarak değil, müşteri deneyimini iyileştiren bütüncül bir dönüşüm olarak ele alıyoruz. Garanti BBVA iş birliğiyle hayata geçirdiğimiz bu yeni yapı sayesinde müşterilerimizin ödeme süreçlerini daha pratik, hızlı ve güvenli hale getiriyoruz. ‘Ödeme İste’ çözümünün ödeme alışkanlıklarını dönüştüren önemli bir adım olduğuna inanıyoruz,” dedi.
+Firmalara operasyonel kolaylık sağlıyor
+Ödeme İste API çözümüyle firmalar, BKM’nin sunduğu Kolay Adres Sistemi (KOLAS) altyapısı üzerinden bireysel veya kurumsal müşterilerine hızlı ve güvenli ödeme talebi gönderebiliyor. Böylece IBAN paylaşımı gibi manuel süreçlere ihtiyaç duyulmadan tahsilatlar kolaylaştırılıyor.
+Özellikle KOBİ, ticari ve kurumsal firmalara yönelik geliştirilen API çözümü; tahsilat süreçlerinin firmaların operasyonel akışlarına entegre edilmesine imkân tanırken, firmalar Garanti BBVA Developer Portal üzerinden başvurularını gerçekleştirerek sistemlerini uçtan uca dijital bir süreçle canlı ortama taşıyabiliyor.",31da222be6b94d3df5f1df41387af6816b793ee544b9c5d6a980bb698bbd2af8,2026-06-15T08:16:10.915121+00:00,detail_page_fetch,İlgili,Good,2026-05-21,Yüksek,announcement_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-05-21,İş Birliği,True,"İş birliği, mutabakat veya entegrasyon duyurusu içeriyor.",,2026-05-21,,,Duyuru Tarihi,2026-05-21,Duyuru/basın tarihi bulundu; recency için kullanıldı.,False,,,
+RI-9c430a239d9e,DOC-REG-003-20260609085925,REG-003,Tier 1,garanti_bbva,Garanti BBVA,Garanti BBVA Kurumsal communication / press releases,Resmi Basın Bülteni Sayfası,https://www.garantibbva.com.tr/kurumsal-iletisim,Kadın Girişimcilerin Finansmana Erişimi İçin Yeni Destek,12 Haziran 2026,https://www.garantibbva.com.tr/content/public-website/kurumsal-iletisim/kadin-girisimcilerin-finansmana-erisimi-icin-yeni-destek,"Kadın Girişimcilerin Finansmana Erişimi İçin Yeni Destek
+12 Haziran 2026
+Garanti BBVA, Kredi Garanti Fonu (KGF) iş birliğiyle kadın girişimcilerin finansmana erişimini desteklemek amacıyla yeni bir kredi destek paketini hayata geçiriyor. Kefalet desteği sunulan paket kapsamında toplam 2 Milyar kefalet limiti bulunuyor.
+Garanti BBVA, kadın girişimcilerin finansmana erişimini desteklemek amacıyla Kredi Garanti Fonu (KGF) ile yeni bir kredi destek paketini hayata geçiriyor. Toplam 2 milyar TL kefalet limiti kapsamında kadın girişimcilere kefalet desteği sağlanacak.
+Kadın Girişimcinin Finansmana Erişim desteği kapsamında; %50 ve üzeri kadın sahipliği bulunan ve başvuru tarihi itibarıyla ticaret sicil gazetesinde kadın ortağın şirketi temsilen imza yetkisine sahip olduğu tüzel firmalar ile şahıs firmaları destekten yararlanabilecek. Program kapsamında kadın girişimciler en fazla 10 milyon TL‘ye kadar kredi kullanabilecek. Kadın girişimciler detaylı bilgi için Garanti BBVA şubelerine başvurabilecekler.
+“Teminata erişimde zorlanan kadın girişimciler için çok kıymetli”
+Garanti BBVA Genel Müdür Yardımcısı Sibel Kaya kadın girişimciler için bu yeni finansman olanağını şu sözlerle değerlendirdi: “Garanti BBVA olarak bankacılığı aynı zamanda yol arkadaşlığı, rehberlik ve uzun vadeli ortaklık olarak tanımlıyoruz. Kadın girişimciliğini de yaklaşık 20 yıldır bu anlayışla destekliyoruz. Finansman, eğitim, cesaretlendirme ve pazara erişim olmak üzere dört temel alanda çok boyutlu bir modelle ilerliyoruz. Finansman tarafında son beş yılda kadın girişimcilere sağladığımız destek 350 milyar TL’yi aştı. Şimdi de KGF iş birliğiyle yeni bir finansman olanağını hayata geçiriyoruz. Bu yeni kredi destek paketini çok kıymetli buluyoruz, çünkü özellikle teminata erişimde zorlanan kadın girişimciler için %80 kefalet desteği önemli bir avantaj sağlayacak. Kadın girişimcilerin ekonomide daha güçlü yer almasının yalnızca bireysel başarı değil, aynı zamanda kapsayıcı büyüme ve sürdürülebilir kalkınma açısından da kritik olduğuna inanıyoruz. Bu anlayışla kadın girişimcilerin yanında olmaya ve ‘Birlikte Yaparız’ demeye devam edeceğiz.”
+Kadın girişimcilere ihtiyaç duydukları her alanda destek sağlanıyor
+Garanti BBVA, kadın girişimciliğine yönelik çalışmalarını yalnızca finansman desteğiyle sınırlamıyor. Banka, kadın girişimcileri 20 yıldır finansman, eğitim, cesaretlendirme ve pazarlara erişim alanlarında dört ana eksende kesintisiz destekliyor.
+Cesaretlendirme kapsamında, bugüne kadar 50 bini aşkın başvuru alınan Türkiye’nin Kadın Girişimcisi Yarışması ise bu yıl 19. kez gerçekleştirildi.
+Eğitim eksininde ise Türkiye Kadın Girişimci Akademisi ile bugüne kadar 6 bin kadın girişimciye eğitim desteği sağladı.
+KAGİDER iş birliğiyle yürüttüğü Ticaretin Kadınları platformu üzerinden yaklaşık 1.500 işletme ve 4 bine yakın kullanıcıyı yeni iş bağlantıları ve tedarik zincirleriyle buluşturuyor.",4e1f9b74d6c116f3f34fbab2f35a6b98f90f6903aa308866c6f19d6a5654bace,2026-06-15T08:16:11.191080+00:00,detail_page_fetch,İlgili,Good,2026-06-12,Yüksek,announcement_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-06-12,Kampanya,True,Kampanya veya müşteri teklifi sinyali içeriyor.,,2026-06-12,,,Duyuru Tarihi,2026-06-12,Duyuru/basın tarihi bulundu; recency için kullanıldı.,False,,,
+RI-e587c2c0a846,DOC-REG-003-20260609085925,REG-003,Tier 1,garanti_bbva,Garanti BBVA,Garanti BBVA Kurumsal communication / press releases,Resmi Basın Bülteni Sayfası,https://www.garantibbva.com.tr/kurumsal-iletisim,Garanti BBVA Sürdürülebilir Sendikasyon Kredisi,11 Haziran 2026,https://www.garantibbva.com.tr/content/public-website/kurumsal-iletisim/garanti-bbva-surdurulebilir-sendikasyon-kredisi,"Garanti BBVA Sürdürülebilir Sendikasyon Kredisi
+11 Haziran 2026
+Garanti BBVA, uluslararası piyasalardan sağladığı adil geçiş temalı sendikasyon kredisiyle ilk tematik sendikasyon kredisini aldı
+Garanti BBVA, uluslararası piyasalardan 367 gün, 24 ay 2 gün ve 36 ay 2 gün vadeli sürdürülebilirlik temalı
+[1]
+sendikasyon kredisi sağladı. 15 ülkeden 32 finansal kurumun katılımıyla gerçekleştirilen işlem, Garanti BBVA’nın ilk tematik sendikasyon kredisi olma özelliğini taşırken, Türkiye’nin adil geçişini
+[2]
+desteklemeyi amaçlıyor.
+Garanti BBVA, yurtdışı borçlanma programı kapsamında uluslararası piyasalardan sağladığı sürdürülebilirlik temalı sendikasyon kredisi anlaşmasını başarıyla tamamladı.
+Banka, toplamda 32,5 milyon dolar ve 23,5 milyon avro tutarında 367 gün vadeli, 105,25 milyon dolar ve 40 milyon avro tutarında 24 ay 2 gün vadeli, 87,5 milyon dolar ve 2 milyon avro tutarında 36 ay 2 gün vadeli olmak üzere sürdürülebilirlik temalı sendikasyon kredisi anlaşması imzaladı.
+15 ülkeden 32 finansal kurumun katılımıyla sağlanan sendikasyon kredisinin 367 gün vadeli dilimlerinin toplam maliyeti dolar ve avro için sırasıyla SOFR + %1,25 ve Euribor + %1,10 olarak gerçekleşti. 24 ay 2 gün vadeli dilimlerin toplam maliyeti dolar için SOFR + %1,75 ve avro için Euribor + %1,60 olurken, 36 ay 2 gün vadeli dilimlerin toplam maliyeti ise dolar için SOFR + %2,00 ve avro için Euribor + %1,80 seviyesinde gerçekleşti.
+Haziran döneminde uluslararası yatırımcılardan yoğun ilgi gören işlem kapsamında, sektördeki diğer bankalarda olduğu gibi üç yıl vadeli dilimler de yatırımcıların ilgisine sunuldu. Katılan banka sayısı ve sağlanan kaynak tutarı açısından güçlü talep gören sendikasyon işlemiyle Garanti BBVA, kredisini yeniledi.
+Garanti BBVA’nın Sürdürülebilir Borç Finansmanı Çerçevesi kapsamında gerçekleştirilen işlem, sürdürülebilir finansman alanındaki yaklaşımını bir adım ileri taşırken, 24 ay 2 gün ve 36 ay iki gün vadeli dilimlerinin Banka’nın ilk tematik sendikasyon kredisi olmasının yanı sıra adil geçiş temasını odağına alan yapısıyla da öne çıkıyor. İşlemden sağlanan kaynağın, Sürdürülebilir Borç Finansmanı Çerçevesi’nde tanımlanan uygunluk kriterleri kapsamında çevresel dönüşümü destekleyen[1] ve aynı zamanda olumlu sosyal etkiler yaratan projelerin finansmanında kullanılması hedefleniyor. Bu doğrultuda kaynağın, düşük karbonlu ekonomiye[2] adil geçişi destekleyen yatırımlara[3] yönlendirilmesinin yanı sıra istihdamın, sosyal kapsayıcılığın, yetkinlik gelişiminin ve ekonomik fırsatlara erişimin güçlendirilmesine katkı sağlayabilecek faaliyetlerin finansmanına tahsis edilmesi amaçlanıyor.
+Garanti BBVA Genel Müdürü Mahmut Akten
+, işlemle ilgili yaptığı değerlendirmede şunları söyledi: ""Uluslararası piyasalarda gerçekleştirdiğimiz bu işlemle Garanti BBVA’ya duyulan güveni ve bankamızın güçlü finansal yapısını bir kez daha ortaya koyduk. Küresel piyasalarda belirsizliklerin sürdüğü bir dönemde, farklı vadelerde ve para birimlerinde sağladığımız bu kaynakla fonlama yapımızı daha da güçlendirirken müşterilerimize kesintisiz destek sunma kapasitemizi de artırıyoruz. Bu işlemi ayrıca özel kılan unsur, bankamızın ilk tematik sendikasyon kredisi olması. Sürdürülebilir finansmanı iş modelimizin merkezinde konumlandırıyor, ekonomik büyümenin çevresel ve sosyal etkiler gözetilerek desteklenmesi gerektiğine inanıyoruz. Sağlanan kaynağın sürdürülebilir finansman hedeflerimize katkı sağlamasının yanı sıra düşük karbonlu ekonomiye adil geçişi destekleyerek ülkemiz ekonomisine ve reel sektöre verdiğimiz desteği de güçlendireceğine inanıyoruz.""
+[1] Çevresel dönüşümü destekleyen; sera gazı emisyonlarının azaltılması, enerji verimliliğinin artırılması, kaynak kullanımının iyileştirilmesi gibi çevresel etkilerin azaltılmasına katkı sağlayan faaliyetleri ifade eder.
+[2] Düşük karbonlu ekonomi; ekonomik büyümenin, sera gazı emisyonlarının azaltılması ve iklim değişikliğiyle mücadele hedefleriyle uyumlu şekilde gerçekleştirilmesini amaçlayan ekonomik yapıyı ifade eder.
+[3] Adil geçişi destekleyen yatırımlar; düşük karbonlu ekonomiye geçiş sürecinin ekonomik ve sosyal etkilerinden etkilenebilecek topluluklar ve diğer paydaşlar açısından adil ve kapsayıcı sonuçlar yaratmayı amaçlayan, iklim hedefleriyle uyumlu yatırımları ifade eder.
+[4] Düşük karbonlu ekonomi; ekonomik büyümenin, sera gazı emisyonlarının azaltılması ve iklim değişikliğiyle mücadele hedefleriyle uyumlu şekilde gerçekleştirilmesini amaçlayan ekonomik yapıyı ifade eder.
+[5] Adil geçişi destekleyen yatırımlar; düşük karbonlu ekonomiye geçiş sürecinin ekonomik ve sosyal etkilerinden etkilenebilecek topluluklar ve diğer paydaşlar açısından adil ve kapsayıcı sonuçlar yaratmayı amaçlayan, iklim hedefleriyle uyumlu yatırımları ifade eder.",a9aa77ff7ab163ec794cb5a94fc404470943941a13e7e13e2d06ee21ba20ad4a,2026-06-15T08:16:11.494186+00:00,detail_page_fetch,İlgisiz,Good,2026-06-11,Yüksek,announcement_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-06-11,Kampanya,True,Kampanya veya müşteri teklifi sinyali içeriyor.,,2026-06-11,,,Duyuru Tarihi,2026-06-11,Duyuru/basın tarihi bulundu; recency için kullanıldı.,False,,,
+RI-81e0090ecdd3,DOC-REG-003-20260609085925,REG-003,Tier 1,garanti_bbva,Garanti BBVA,Garanti BBVA Kurumsal communication / press releases,Resmi Basın Bülteni Sayfası,https://www.garantibbva.com.tr/kurumsal-iletisim,Global Summit of Women 2026,8 Haziran 2026,https://www.garantibbva.com.tr/content/public-website/kurumsal-iletisim/global-summit-of-women-2026,"Global Summit of Women 2026
+8 Haziran 2026
+Garanti BBVA, Global Summit of Women’da Kadın Girişimciliğindeki 20 Yıllık Deneyimini Dünyayla Paylaştı
+Garanti BBVA’nın ana destekçileri arasında yer aldığı Global Summit of Women 2026, dünyanın farklı ülkelerinden bakanları, iş dünyası liderlerini, yatırımcıları, girişimcileri ve kanaat önderlerini İstanbul’da bir araya getirdi. Kadın girişimciliği, kapsayıcı büyüme, yatırım ekosistemi ve sürdürülebilir kalkınma başlıklarının ele alındığı zirvede Garanti BBVA, kadın girişimciliğine yönelik 20 yıllık destek modelinin yanı sıra, KOBİ bankacılığı deneyimini ve bu alandaki yaklaşımını da uluslararası katılımcılarla paylaştı.
+4-6 Haziran tarihleri arasında düzenlenen zirveye farklı ülkelerden kamu temsilcileri, küresel şirket yöneticileri, yatırımcılar ve girişimcilik ekosisteminin önde gelen isimleri katıldı. Program kapsamında T.C. Hazine ve Maliye Bakanı Mehmet Şimşek’in yanı sıra çok sayıda uluslararası konuşmacı da yer aldı.
+Kadın girişimciliği alanındaki deneyim uluslararası platforma taşındı
+Kadınların ekonomideki rolü, girişimcilik, liderlik ve yatırım ekosistemi başlıklarının öne çıktığı zirvede, Garanti BBVA Genel Müdür Yardımcısı Sibel Kaya konuşmacı olarak yer aldı.
+Sibel Kaya, T.C. Hazine ve Maliye Bakanı Mehmet Şimşek’in ana konuşmacı olduğu “Türkiye'de Ticaret Yapmak” oturumunda; KOBİ’lerin ekonomideki önemi, girişimcilik ekosistemi ve kadın girişimciliğinin dönüşüm üzerindeki etkisine ilişkin değerlendirmelerde bulundu. Kaya ayrıca, Garanti BBVA’nın 20 yılı aşkın süredir kadın girişimcilere yönelik sürdürdüğü destek çalışmalarını ve bu alandaki yaklaşımını paylaştı.
+“Kadın girişimciliğini ekonomik ve toplumsal dönüşümün önemli bir parçası olarak görüyoruz”
+Garanti BBVA Genel Müdür Yardımcısı Sibel Kaya zirveye ilişkin değerlendirmesinde şunları söyledi:
+“Kadın girişimciliği alanında farklı ülkelerde geliştirilen deneyimlerin paylaşılması ve ortak öğrenme kültürünün güçlenmesi açısından Global Summit of Women gibi uluslararası platformları çok değerli buluyoruz. Garanti BBVA olarak kadın girişimciliğini 20 yıldır finansman, eğitim, cesaretlendirme ve pazara erişim olmak üzere dört temel alanda destekliyoruz.
+Son 5 yılda kadın girişimcilere sağladığımız 350 milyar TL finansmanla, onların ekonomik hayatta daha güçlü yer almasına katkı sunmayı sürdürdük. Kadın girişimciliğini yalnızca bir sosyal sorumluluk alanı olarak değil; kapsayıcı büyüme ve sürdürülebilir kalkınmanın önemli bir unsuru olarak görüyoruz.
+Bugün kadın girişimciler yalnızca kendi işletmelerini değil, içinde bulundukları ekosistemi de dönüştürüyor. Türkiye’de geliştirdiğimiz bu uzun soluklu destek modelinin uluslararası platformlarda örnek uygulama olarak paylaşılmasını çok kıymetli buluyoruz.
+Yakın dönemde kadın girişimciliğine yönelik model ve deneyimlerimizi IFC ile İstanbul’da paylaşırken, Birleşmiş Milletler Kadının Statüsü Komisyonu kapsamında New York’ta düzenlenen etkinlikte de uluslararası kamuoyuna aktardık. Şimdi ise Global Summit of Women’da dünyanın farklı ülkelerinden iş dünyası temsilcileri, yatırımcılar ve girişimcilik ekosistemi liderleriyle bu deneyimi paylaşmaya devam ediyoruz.
+Kadın girişimcilerin küresel ölçekte daha görünür ve güçlü olması gerektiğine inanıyoruz. Bu doğrultuda Techstars iş birliğimiz ve Startup Weekend Women gibi platformlarla kadın girişimcilerimizi uluslararası ağlarla buluşturmayı önemsiyoruz. Çünkü kadın girişimcilerin güçlenmesinin yalnızca ekonomik büyümeyi değil, toplumsal dönüşümü de beraberinde getirdiğine inanıyoruz.”
+Kadın girişimciler deneyimlerini uluslararası katılımcılarla paylaştı
+Zirvede Garanti BBVA’nın desteklediği kadın girişimciler de farklı oturumlarda yer aldı. Türkiye’nin Kadın Girişimcisi Yarışması’nın önceki dönem kazananlarından Nebyan Doğal’ın kurucusu Nazlı Uyanık ile Mol-E’nin kurucusu Müge Baltacı, Entrepreneurship Forum ve Youth Forum oturumlarında girişimcilik yolculuklarını ve büyüme hikâyelerini uluslararası katılımcılarla paylaştı.
+Garanti BBVA Girişim Bankacılığı Yöneticisi Selin Öz ise zirvenin kapanış gününde gerçekleştirilen “Investing for Your and Your Business’ Financial Future” panelinde konuşmacı olarak yer aldı. Panelde bireysel ve kurumsal finansal gelecek, yatırım perspektifi ve sürdürülebilir büyüme başlıkları ele alındı.",20c2cfa7e7eb17ececa1933805d53c0ba69acd434c2a0bc0195fb1543b74684c,2026-06-15T08:16:11.897645+00:00,detail_page_fetch,İlgili,Good,2026-06-08,Yüksek,announcement_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-06-08,İş Birliği,True,"İş birliği, mutabakat veya entegrasyon duyurusu içeriyor.",,2026-06-08,,,Duyuru Tarihi,2026-06-08,Duyuru/basın tarihi bulundu; recency için kullanıldı.,False,,,
+RI-4f105729f8a7,DOC-REG-003-20260609085925,REG-003,Tier 1,garanti_bbva,Garanti BBVA,Garanti BBVA Kurumsal communication / press releases,Resmi Basın Bülteni Sayfası,https://www.garantibbva.com.tr/kurumsal-iletisim,Kurumsal Hafızada 80 Yıllık Yolculuk,2 Haziran 2026,https://www.garantibbva.com.tr/content/public-website/kurumsal-iletisim/kurumsal-hafizada-80-yillik-yolculuk,"Kurumsal Hafızada 80 Yıllık Yolculuk
+2 Haziran 2026
+Garanti BBVA’dan Geçmişten Geleceğe Uzanan Bir Deneyim
+Garanti BBVA, 80 yıllık yolculuğunu anlatan “80 Yıldır Yarınlardayız” sergisini 2 Haziran’da, Salt Galata’da basın mensuplarına özel bir davetle tanıttı. Bankanın Ankara’da atılan temellerinden bugüne uzanan kurumsal hafızası, geçmişi bugüne taşıyan ve yeniden yorumlayan bir yapı olarak katılımcılarla paylaşıldı. Sergi, yalnızca bir kurum tarihini görünür kılmayı değil; farklı dönemlerde bankanın parçası olmuş çalışanların, müşterilerin ve paydaşların birlikte oluşturduğu yaşayan bir hikâyeyi geleceğe taşımayı amaçlıyor.
+Garanti BBVA Genel Müdürü Mahmut Akten, bankanın Türkiye ile birlikte büyüyen yolculuğuna dikkat çekti. 12 kurucu ortakla atılan temellerin bugün 23 bin çalışanın emeğiyle çok güçlü bir yapı olarak devam ettiğini vurgulayan Akten, kurum kültürünün en önemli gücünün insan kaynağı olduğunu ifade etti. Garanti BBVA’nın 80 yıllık geçmişine rağmen her zaman genç, dinamik ve kendini yenileyen bir kurum olduğunun altını çizdi.
+Garanti BBVA, 80. yıl iletişimlerinin ilk adımı olan Salt Galata’daki basın buluşmasıyla birlikte, kurumun 80 yıllık hafızasını dijital bir deneyim olarak ziyaretçilerle buluşturdu. Etkinlik kapsamında davetliler, bu deneyim alanını keşfetme imkânı buldu. Dijital deneyim alanı, Garanti BBVA’nın 80. yıl kapsamında, hayata geçireceği kapsamlı iletişim ve deneyim programının başlangıç noktasını oluşturuyor.
+Bu kapsamda Türkiye’nin farklı illerinde düzenlenecek Vizyon Buluşmaları, 23 bin çalışana özel büyük ölçekli etkinlikler, 80 bin fidanlık Hatıra Ormanı, kurum içi kulüplerinin özel projeleri ve gönüllülük çalışmalarıyla Garanti BBVA ailesi ortak hikâyeler etrafında bir araya gelecek.
+Köklü bir geçmişten geleceğe uzanan dönüşüm
+Garanti BBVA’nın 80 yıllık kurum kültürü yalnızca finansal dönüşümün değil, aynı zamanda insan hikâyelerinin de bütününü oluşturuyor. Farklı dönemlerden çalışanların deneyimleri, kurum kültürünün dönüşümü, birlikte üretme biçimleri ve ortak değer unsurları bu anlatının temel yapı taşları arasında yer alıyor.
+1946 yılında Ankara’da kurulan Garanti BBVA, geçen 80 yıl boyunca sürekli dönüşerek finans sektörünün öncü kurumlarından biri haline geldi.
+Kuruluşundan itibaren yalnızca bankacılık hizmetleri sunmayı değil; üretimi desteklemeyi, ticareti güçlendirmeyi, ekonomik gelişime katkı sağlamayı ve müşterilerinin her döneminde onlara A’dan Z’ye yol arkadaşlığı yapmayı hedefleyen banka, attığı adımlarla geniş bir etki alanı yarattı.
+Uluslararası ortaklıklarla küresel bir perspektif kazanan yapı, bugün BBVA’nın global vizyonuyla birleşerek faaliyetlerini sürdürüyor.
+Akten: “80 yıllık bir hikâyeyi anlatıyoruz ama hiç 80 hissetmiyoruz, hissettirmiyoruz”
+Garanti BBVA Genel Müdürü Mahmut Akten, bankanın 80 yıllık yolculuğunu “kendini sürekli yenileyen ama özündeki güven duygusunu hiç kaybetmeyen bir kurum hikâyesi” olarak tanımladığı konuşmasında geçmişten geleceğe uzanan deneyimi şu sözlerle aktardı:
+“Bugün burada yalnızca bir kuruluş yıl dönümünü değil, Türkiye ile birlikte büyüyen 80 yıllık bir kurumsal mirası konuşuyoruz. Ama bu 80 yıl, alıştığımız anlamda bir yaş alma öyküsü de değil. Aksine; her dönemde kendini yeniden tanımlayan, değişimi kucaklayan ve sürekli yenilenebilen bir yapıdan bahsediyoruz. Bu yüzden 80. yılımızı yıl boyunca farklı deneyimlerle devam edecek bir anlatı olarak ele alıyoruz.
+Garanti Bankası’nın hikâyesi, 1946’da Türkiye’nin üretmesi, güçlenmesi ve dünyayla bağ kurması amacıyla başladı. Türkiye büyüdükçe, şehirler değiştikçe ve teknoloji hayatın merkezine yerleştikçe biz de kendimizi sürekli dönüştürdük.
+Dijital deneyim alanımızın ziyaretçileri de reklam afişlerinden çalışan fotoğraflarına, şubelerin dönüşümünden dijitalleşmenin ilk adımlarına kadar uzanan pek çok hafıza parçasını bir arada deneyimleme imkânı bulacaklar.
+Garanti BBVA için bu anlatı, geçmişe dönük bir arşivleme faaliyetinden çok; sürekli gelişen, yeni hikâyelerle büyüyen ve kurumun geleceğine eşlik edecek ortak bir bellek oluşturma anlayışını temsil ediyor.
+Biz her zaman değişimi kucaklayan, teknolojiyi iş modelinin merkezine koyan ve geleceğe yatırım yapan bir anlayışla hareket ettik. İnternet bankacılığını hayata geçirdiğimiz dönemde şubeye gitmeden işlem yapmak birçok kişi için neredeyse bilim kurgu gibiydi. Ama biz teknolojinin hayatın akışını değiştireceğine inanıyorduk”.
+Sektöre yön veren yenilikler
+Garanti BBVA, 80 yılda Türkiye’de bankacılık sektörüne yön veren birçok yeniliğe imza attı.
+Gerçek zamanlı online bankacılık altyapılarından internet ve mobil bankacılığa, sanal POS’tan Bonus ödeme sistemine, temassız ve dijital ödeme çözümlerinden yapay zekâ destekli uygulamalara kadar birçok alanda geliştirdiği çözümlerle sektörde öncü rol üstlendi.
+Bugün standart hale gelen pek çok uygulamanın temeli, Garanti BBVA’nın erken dönemde attığı bu adımlara dayanıyor.
+Salt ile hafızaya katkı
+Garanti BBVA’nın yaklaşımı yalnızca finansal hizmetlerle sınırlı kalmıyor. Eğitimden kültür-sanata, toplumsal cinsiyet eşitliğinden çevreye kadar uzanan geniş bir yelpazede yürütülen çalışmalarla farklı alanlarda değer üretmeye devam ediyor.
+Bu yaklaşımın önemli bir parçasını ise hafıza oluşturuyor. Salt ile yürütülen arşiv çalışmaları sayesinde, bankanın 80 yıllık birikimi yalnızca kurumsal bir arşiv olarak değil, aynı zamanda daha geniş bir değer alanı olarak korunuyor.
+Salt ile birlikte yürütülen kapsamlı arşiv süreci kapsamında, 2023 yılından bu yana afiş, fotoğraf, rapor, reklam filmi, süreli yayın, albüm, negatif-pozitif film, broşür ve çeşitli objelerden oluşan 36 bini aşkın fiziksel materyal Türkçe ve İngilizce olarak kataloglanarak dijital ortama aktarıldı. Yaklaşık 255 bin dijital materyalin envanter çalışması tamamlandı. Kurum hafızasına dair gerçekleştirilen görüşmeleri de içeren Garanti BBVA Arşivi’nin 10 bin belgelik ilk bölümü ise 2026 yılında Salt Araştırma üzerinden erişime açılacak.
+Salt’ın arşivleme ve araştırma alanındaki uzmanlığıyla şekillenen bu yaklaşım, Garanti BBVA’nın kurumsal geçmişini sistematik biçimde koruma altına alırken, Türkiye’nin ekonomik ve toplumsal dönüşümüne dair önemli izleri de görünür kılıyor.
+80 yıllık serüven, yaşayan bir dijital deneyime dönüşüyor.
+Garanti BBVA’nın 80 yıllık yolculuğundan ilhamla hazırlanan sergi, geçmişi yalnızca anlatan değil, onu bugüne taşıyan ve yeniden yaşatan bir kurguyla tasarlandı.
+Ziyaretçiler bu deneyimde sabit bir anlatıcıya bağlı kalmadan, kendi rotalarını belirleyerek ilerliyor. Bu yönüyle sergi, her ziyaretçiye kişisel bir keşif alanı sunuyor.
+“80 Yıldır Yarınlardayız” sergisi 3 Haziran – 30 Eylül tarihlerinde Salt Galata’da ziyaret edilebilecek.",bf0b9bdfe5e128452f1cbe3b6845aa1c94f48a98a0d14465b8fce1ebd3c34d83,2026-06-15T08:16:12.253945+00:00,detail_page_fetch,İlgisiz,Good,2026-06-02,Yüksek,announcement_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-06-02,İş Birliği,True,"İş birliği, mutabakat veya entegrasyon duyurusu içeriyor.",,2026-06-02,,,Duyuru Tarihi,2026-06-02,Duyuru/basın tarihi bulundu; recency için kullanıldı.,False,,,
+RI-a2501e99ef1b,DOC-REG-003-20260609085925,REG-003,Tier 1,garanti_bbva,Garanti BBVA,Garanti BBVA Kurumsal communication / press releases,Resmi Basın Bülteni Sayfası,https://www.garantibbva.com.tr/kurumsal-iletisim,Garanti BBVA Leasing Sürdürülebilirlik Çerçeve Mutabakatı,01 Haziran 2026,https://www.garantibbva.com.tr/content/public-website/kurumsal-iletisim/garanti-bbva-leasing-surdurulebilirlik-cerceve-mutabakati,"Garanti BBVA Leasing Sürdürülebilirlik Çerçeve Mutabakatı
+01 Haziran 2026
+Garanti BBVA ve Garanti BBVA Leasing’ten sürdürülebilir finansmanda öncü adım
+Garanti BBVA ile Garanti BBVA Leasing arasında imzalanan sürdürülebilirlik çerçeve mutabakatı kapsamında, 2 milyar TL tutarında ilk sürdürülebilirlikle bağlantılı IRS (faiz swap) işlemi ve 5 milyon euro tutarında ilk sürdürülebilirlikle bağlantılı kredi (SLL) işlemi gerçekleştirildi. İşlemler, sürdürülebilirlik performans kriterlerinin hem finansman hem de faiz risk yönetimi süreçlerine entegre edilmesini sağladı.
+Garanti BBVA, sürdürülebilir finansman alanındaki yenilikçi uygulamalarına bir yenisini daha ekledi. Garanti BBVA ile Garanti BBVA Leasing arasında imzalanan sürdürülebilirlik çerçeve mutabakatı ile 2 milyar TL tutarında ilk sürdürülebilirlikle bağlantılı IRS (faiz swap) işlemi ve 5 milyon euro tutarında ilk sürdürülebilirlikle bağlantılı kredi (SLL) işlemi hayata geçirildi.
+Gerçekleştirilen işlemler kapsamında sürdürülebilirlik performans kriterleri, hem finansman süreçlerine hem de faiz riskinden korunma mekanizmalarına entegre edildi. Bu sayede sürdürülebilirlik hedefleri finansman yapısı ve risk yönetimi süreçleriyle bütünleşirken, işlem sürdürülebilir finans uygulamalarının farklı alanlarda kullanımına yönelik önemli bir örnek oluşturdu. İşlem, Garanti BBVA Leasing’in gerçekleştirdiği ilk sürdürülebilirlikle bağlantılı kredi ve IRS işlemi olmasının yanı sıra Garanti BBVA’nın da bir iştirakiyle hayata geçirdiği ilk sürdürülebilirlikle bağlantılı kredi ve IRS işlemi olma özelliği taşıyor.
+Garanti BBVA Genel Müdür Yardımcısı Sinem Edige,
+“Bugün sürdürülebilirlik, finansal sistemin dönüşümünü şekillendiren temel bir unsur haline geldi. Garanti BBVA olarak biz de bu dönüşüme öncülük etmeyi stratejik önceliklerimiz arasında görüyoruz. Garanti BBVA Leasing ile gerçekleştirdiğimiz bu işlemler hem Garanti BBVA Leasing’in hem de Garanti BBVA’nın bir iştirakiyle gerçekleştirdiği ilk sürdürülebilirlikle bağlantılı kredi ve IRS işlemleri olma özelliği taşıyor. Müşterilerimizin sürdürülebilirlik hedeflerini finansal stratejileriyle entegre etmelerini destekleyen yenilikçi çözümler geliştirmeye devam ediyoruz. Bu yaklaşımın, sürdürülebilir finansman uygulamalarının yaygınlaşmasına ve reel ekonominin dönüşümüne katkı sağlayacağına inanıyoruz. Bu önemli işlemin hayata geçirilmesinde emeği geçen tüm ekip arkadaşlarımıza ve paydaşlarımıza teşekkür ediyorum. Önümüzdeki dönemde de sürdürülebilir finansman alanında öncü ve yenilikçi adımlar atmaya devam edeceğiz,” dedi.
+Garanti BBVA, sürdürülebilir finansman alanındaki uzmanlığıyla müşterilerinin sürdürülebilirlik hedeflerini, finansal stratejileriyle uyumlu hale getirmelerine destek oluyor. Banka, yenilikçi finansman çözümleriyle sürdürülebilir finans uygulamalarının yaygınlaşmasına katkı sağlamayı sürdürüyor.",b0bc3414414ba64c0843bc9dc0a73333590e0c34318c7a94694e28146e05a06c,2026-06-15T08:16:12.541602+00:00,detail_page_fetch,İlgisiz,Good,2026-06-01,Yüksek,announcement_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-06-01,İş Birliği,True,"İş birliği, mutabakat veya entegrasyon duyurusu içeriyor.",,2026-06-01,,,Duyuru Tarihi,2026-06-01,Duyuru/basın tarihi bulundu; recency için kullanıldı.,False,,,
+RI-6ffc8e895a2e,DOC-REG-003-20260609085925,REG-003,Tier 1,garanti_bbva,Garanti BBVA,Garanti BBVA Kurumsal communication / press releases,Resmi Basın Bülteni Sayfası,https://www.garantibbva.com.tr/kurumsal-iletisim,Salt 15 Yıldır Kültür Mirasını Geleceğe Taşıyor,22 Mayıs 2026,https://www.garantibbva.com.tr/content/public-website/kurumsal-iletisim/salt-15-yildir-kultur-mirasini-gelecege-tasiyor,"Salt 15 Yıldır Kültür Mirasını Geleceğe Taşıyor
+22 Mayıs 2026
+Garanti BBVA tarafından 2011 yılında kurulan Salt, 15. yılını geride bırakırken Türkiye’nin kültür ve araştırma hafızasını güçlendirmeye devam ediyor. Kurum, bugüne kadar yaklaşık 5 milyon ziyaretçiyi ağırlarken, 2 milyonu aşkın belge ve kaynaktan oluşan arşiv koleksiyonlarını kamusal erişime açtı.
+Temelleri Osmanlı Bankası Müzesi, Garanti Galeri ve Platform Garanti’nin birikimi üzerine atılan Salt, bugün disiplinler arasındaki sınırları kaldıran bir yapıya dönüşmüş durumda. Salt bu güçlü altyapısıyla; bilgi, kültür ve sanat üretiminin önemli referans merkezlerinden biri olarak konumlanıyor. Salt aynı zamanda, İstanbul İstiklal Caddesi üzerindeki Salt Beyoğlu, Bankalar Caddesi üzerindeki Salt Galata mekânları ve dijital platformları aracılığıyla, kullanıcılarına araştırma, karşılaşma ve ifade alanları sunuyor.
+Salt’ın tüm mekânlarına girişin, programlarına katılımın ve arşivlerinin kullanımının herkes için ücretsiz olması, kurumun erişilebilirlik yaklaşımını güçlendirirken, toplumsal katkısını da pekiştiriyor. Sergilerden yayınlara ve web projelerine, film gösterimlerinden atölye çalışmalarına uzanan çok katmanlı program yapısıyla Salt, kültürel üretimini geniş kitlelerle buluşturmayı sürdürüyor.
+Ebru Taşcı Firuzbay: “Kültür ve araştırmayı uzun vadeli bir toplumsal yatırım olarak görüyoruz”
+Garanti BBVA Genel Müdür Yardımcısı ve Salt Yönetim Kurulu Üyesi Ebru Taşcı Firuzbay,
+Salt’ın 15. yılına dair yaptığı değerlendirmede, “Yürüttüğümüz toplumsal yatırım programlarının gerçek bir ihtiyaca dokunmasını, uzun vadeli olmasını ve yüksek etki yaratmasını önemsiyoruz. Salt, bu yaklaşımımızın en güçlü örneklerinden biri. Farklı kültürel birikimlerin bir araya gelmesiyle şekillenen bu yapı, bugün araştırmayı ve paylaşımı odağına alan çok özel bir kurum haline geldi. Salt Galata ve Salt Beyoğlu’nda bugüne kadar yaklaşık 5 milyon ziyaretçiye ulaşılması ve Salt Araştırma bünyesindeki çalışmalarla bilginin geniş kitlelere açılması, bu alandaki yaklaşımımızın ne kadar güçlü bir karşılık bulduğunu gösteriyor. Garanti BBVA olarak ‘Birlikte Yaparız’ anlayışımızla bilgi, kültür ve sanat üretimini desteklemeye devam edeceğiz.” dedi.
+Salt Genel Müdürü Deniz Ova
+ise yaptığı açıklamada, “Çok disiplinli üretimiyle sanat, mimarlık, tasarım ile sosyal ve ekonomik tarih arasındaki kesişimleri odağına alan Salt, son 15 yılda geçmiş ile bugün arasında canlı bir diyalog kurarak, günümüz meselelerini yeniden düşünmeye ve bilgi üretimini dönüştürmeye katkıda bulundu. Araştırma ve sorgulamaya dayalı üretimlerini, mekânları ve dijital platformlarında ücretsiz ve eşit erişime açan kurum, açık fikirlilik, karşılıklı öğrenme ve kapsayıcılık çerçevesinde şekillenen yaklaşımını geleceğe taşırken; Türkiye ve yakın coğrafyasını da birlikte düşünen, tartışan ve üreten bir alan olarak eleştirel diyaloğu beslemeyi sürdürecek. Özellikle genç kullanıcı ve izleyicilerle kurduğu dinamik etkileşimle yeni düşünme ve üretim biçimlerini teşvik etmeyi önceliklendirmeye devam edecek. Bu yolculukta kurucumuz Garanti BBVA’nın Salt’a verdiği destek için müteşekkiriz” dedi.
+Salt Araştırma Fonları ile 80’in Üzerinde Projeye Destek
+Salt, 2013 yılından bu yana sanat, mimarlık ve tasarım alanlarında özgün araştırmaları Salt Araştırma Fonları programıyla destekliyor. Bugüne kadar 80’in üzerinde projeye katkı sağlayan program, 2025 yılında hayata geçirilen Garanti BBVA Ekonomi Tarihi Fonu ile kapsamını daha da genişletti. Bu fon aracılığıyla ekonomi tarihi alanında çalışan araştırmacıların, toplumsal dönüşümleri çok yönlü bakış açılarıyla ele alması ve elde edilen bulguların herkesin erişimine açık bir zemine taşınması hedefleniyor.",14a11a5c90426f0845fcf920e0a3ef1e12297c5ac0bd3b209b7abd1d02a9ea4f,2026-06-15T08:16:12.945141+00:00,detail_page_fetch,İlgisiz,Good,2026-05-22,Yüksek,announcement_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-05-22,Ürün / Özellik Gelişmesi,True,"Ürün, API, POS, ödeme, tahsilat veya dijital özellik gelişmesi sinyali içeriyor.",,2026-05-22,,,Duyuru Tarihi,2026-05-22,Duyuru/basın tarihi bulundu; recency için kullanıldı.,False,,,
+RI-cf2e45aea800,DOC-REG-003-20260609085925,REG-003,Tier 1,garanti_bbva,Garanti BBVA,Garanti BBVA Kurumsal communication / press releases,Resmi Basın Bülteni Sayfası,https://www.garantibbva.com.tr/kurumsal-iletisim,Global Finance Türkiye’nin En İyi Bankası Ödülü,20 Mayıs 2026,https://www.garantibbva.com.tr/content/public-website/kurumsal-iletisim/global-finance-turkiye-nin-en-iyi-bankasi-odulu-2026,"Global Finance Türkiye’nin En İyi Bankası Ödülü
+20 Mayıs 2026
+Garanti BBVA, Global Finance tarafından Türkiye’nin en iyi bankası seçildi
+Garanti BBVA, uluslararası finans dünyasının saygın yayınlarından Global Finance tarafından düzenlenen “World’s Best Bank Awards 2026” kapsamında Türkiye’nin en iyi bankası seçildi. Banka; güçlü finansal performansı, sürdürülebilir büyüme yaklaşımı ve müşteri odaklı inovasyonlarıyla bu ödüle layık görüldü.
+Bu yıl 33’üncüsü düzenlenen ödül programında, dünya genelinde 150’den fazla ülke ve bölgedeki bankalar; kârlılık, büyüme, stratejik vizyon, inovasyon kapasitesi ve müşteri ihtiyaçlarına yanıt verme becerisi gibi kriterlere göre değerlendiriliyor. Garanti BBVA, bu kapsamlı değerlendirme sonucunda Türkiye’nin en iyi bankası unvanını elde etti.
+“Hem ülkemiz hem de müşterilerimiz için değer yaratmayı sürdürüyoruz.”
+Garanti BBVA Genel Müdürü Mahmut Akten
+, konuya ilişkin değerlendirmesinde şunları söyledi:
+“Böylesine saygın bir programda Türkiye’nin en iyi bankası seçilmekten büyük gurur duyuyoruz. Bu ödül; güçlü finansal performansımızın, sürdürülebilir büyüme yaklaşımımızın ve müşterilerimize sunduğumuz yenilikçi deneyimin bir yansıması. Türk lirası kredilerdeki lider konumumuz, kredi kartları ve tüketici finansmanındaki öncü rolümüzle ekonomiye değer yaratmayı sürdürüyoruz.
+30 milyonu aşan müşteri tabanımız ve 18 milyonu aşan aktif mobil müşterimizle, dijital bankacılığı büyüme stratejimizin merkezine alıyoruz. Perakende satışlarımızın %89’unu dijital kanallar üzerinden gerçekleştiriyor olmamız, bu dönüşümün en somut göstergelerinden biri.
+Tüm bu dönüşümü, müşterilerimizin ihtiyaçlarını merkeze alan
+Radikal Müşteri Perspektifimiz
+doğrultusunda; empati, kişiselleştirme ve akıcı deneyim odağıyla şekillendiriyoruz. Yapay zekâ ve veri odaklı teknolojilerle müşteri deneyimini ve iş yapış şekillerimizi dönüştürmeye devam ediyoruz.
+Sürdürülebilirliği büyümenin temel itici gücü olarak konumlarken, 2018-2029 dönemi için belirlediğimiz 3,5 trilyon TL sürdürülebilir finansman hedefimiz doğrultusunda ilerliyoruz. Kadın girişimcilere sağladığımız finansman desteğiyle kapsayıcı büyümeye katkı sunmayı sürdürüyoruz.
+Bu başarıda emeği geçen tüm çalışma arkadaşlarımıza ve bize güvenen müşterilerimize teşekkür ediyorum. ‘Birlikte Yaparız’ diyerek çıktığımız bu yolda, ülkemiz ve müşterilerimiz için değer yaratmaya kararlılıkla devam edeceğiz.”",fba42b7cdc0e4ca57700dbe802c3ea46d832f1c446577b81e3ad6b15184d78a2,2026-06-15T08:16:14.607101+00:00,detail_page_fetch,İlgisiz,Good,2026-05-20,Yüksek,announcement_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-05-20,Ürün / Özellik Gelişmesi,True,"Ürün, API, POS, ödeme, tahsilat veya dijital özellik gelişmesi sinyali içeriyor.",,2026-05-20,,,Duyuru Tarihi,2026-05-20,Duyuru/basın tarihi bulundu; recency için kullanıldı.,False,,,
+RI-fd14e4703f56,DOC-REG-003-20260609085925,REG-003,Tier 1,garanti_bbva,Garanti BBVA,Garanti BBVA Kurumsal communication / press releases,Resmi Basın Bülteni Sayfası,https://www.garantibbva.com.tr/kurumsal-iletisim,Türkiye 2025 İklim Değişikliği ve Doğa Raporu,20 Mayıs 2026,https://www.garantibbva.com.tr/content/public-website/kurumsal-iletisim/dunyadaki-27-triple-a-seviyesindeki-sirketten-5i-turkiyeden,"Türkiye 2025 İklim Değişikliği ve Doğa Raporu
+20 Mayıs 2026
+Dünyadaki 27 Triple A Seviyesindeki Şirketten 5'i Türkiye'den
+Türkiye çalışmalarını Sabancı Üniversitesi Kurumsal Yönetim Forumu’nun üstlendiği CDP, “Türkiye 2025 İklim Değişikliği ve Doğa Raporu”nun sonuçlarını ve lider şirketleri 15 Mayıs’ta gerçekleştirilen CDP Türkiye 16. İklim Değişikliği & Doğa Konferansı ve Ödül Töreni’nde kamuoyuyla paylaştı. Bu yıl konferans, “COP31’e Doğru: Raporlama İvmesini Küresel Rekabet Gücüne Dönüştürmek” temasıyla düzenlendi.
+Rapora göre Türkiye, çevresel raporlama ve performans alanında küresel ölçekte güçlü bir konuma ulaştı. CDP’nin küresel derecelendirme metodolojisine göre Türkiye’den toplam 45 şirket en az bir Küresel A Listesi’nde yer aldı. Dünyada yalnızca 27 şirketin ulaşabildiği Triple A seviyesine ise Türkiye’den 5 şirket ulaştı.
+Derecelendirme dağılımına bakıldığında, tüm temalarda “Yönetim” ve “Liderlik” seviyelerinde yer alan şirket oranı iklimde %82, ormansızlaşmada %70 ve su yönetimi temasında %87’ye ulaştı. Bu oranlar şirketlerin, Avrupa ve küresel ortalamaların üzerinde güçlü bir performans sergilediğini ve Türkiye’nin öne çıkan pazarlardan biri haline geldiğini gösteriyor.
+Türkiye operasyonlarını Sabancı Üniversitesi Kurumsal Yönetim Forumu çatısı altında yürüten, dünyanın en büyük çevre raporlama platformu CDP, Türkiye’deki şirketlerin 2025 yılı iklim değişikliği ve doğa raporlaması kapsamındaki performansını CDP Türkiye 16. İklim Değişikliği ve Doğa Konferansı’nda paylaştı. Garanti BBVA’nın ana sponsorluğunda Türkiye faaliyetlerini gerçekleştiren CDP Türkiye, 2025 yılına ait analiz ve bulguları içeren “CDP Türkiye 2025 İklim Değişikliği ve Doğa Raporu”nun sonuçlarını ve CDP’nin Global Derecelendirme Metodolojisine göre belirlenen CDP Liderleri’ni, 15 Mayıs’ta gerçekleştirilen 16. Türkiye konferansında açıkladı.
+Bu yıl, Türkiye’nin ev sahipliği yapacağı Birleşmiş Milletler İklim Değişikliği Çerçeve Sözleşmesi 31. Taraflar Konferansı (COP31) öncesi çevresel verinin kalitesi, karşılaştırılabilirliği ve karar alma süreçlerine entegrasyonu iş dünyasının dönüşümünde belirleyici bir rol oynuyor. Bu noktada CDP, yalnızca bir raporlama platformu olmanın ötesinde, şirketlerin uygulama kapasitesini görünür kılabilecek ve hesap verebilirliği güçlendirebilecek önemli bir araç olarak öne çıkıyor. “CDP Türkiye 2025 İklim Değişikliği ve Doğa Raporu”, Türkiye’deki şirketlerin çevresel raporlamayı rekabet gücüne dönüştürebilme kapasitesini ortaya koyuyor. Rapor, COP31 öncesinde şirketlerin raporlamadan uygulamaya geçişteki hazırlık seviyesini ortaya koyan güçlü bir çerçeve sunuyor.
+Türkiye çevresel raporlamada güçlü bir konuma ulaştı
+CDP aracılığıyla 2025 yılında 22.100’den fazla şirket, çevresel verilerini raporlarken bu sürece 1.000’den fazla şehir ve bölge de eklendi. 2025 yılında, neredeyse 900 şirket CDP’nin en yüksek derecelendirme seviyesi olan Küresel A Listesi’ne girdi. Türkiye’den ise toplam 45 şirket en az bir Küresel A Listesi’nde yer aldı. İklim, su ve ormansızlaşma kategorilerinin üçünde birden en yüksek liderlik seviyesi olan “Triple A” listesine giren dünyadaki 27 şirketten 5’i ise Türkiye’den. Diğer 17 şirket şirket ise iki ayrı kategoride liderlik sergileyerek “Double A” statüsü elde etti. Türkiye bu başarısıyla, CDP ekosisteminde çevresel raporlama ve performans alanında küresel ölçekteki en güçlü pazarlardan biri haline geldi.
+Türkiye’nin liderlik performansı ortalamaların üzerinde
+CDP Türkiye 2025 İklim Değişikliği ve Doğa Raporu’na göre, Türkiye’den raporlama yapan şirketler Avrupa ve küresel ortalamaların üzerinde performans göstererek “Yönetim” ve “Liderlik” seviyelerinde iklim değişikliğinde %82, su güvenliğinde %87 ve ormansızlaşma temasında %70’e ulaştı. Bu tablo, çevresel yönetimin artık yalnızca öncü şirketlere özgü bir alan olmadığını, giderek daha geniş bir şirket grubunun kurumsal sistemlerine entegre edildiğini gösteriyor.
+Çevresel liderlik ile finansal performans arasındaki ilişki giderek güçleniyor
+Bu yılki raporun bir kısmı, A ve A– notu alan lider şirketlerin çevresel risk ve fırsatları finansal açıdan nasıl yönettiğini, daha düşük derecelendirme notlarına sahip şirketlerle karşılaştırmalı olarak analiz ediyor. Bu fark özellikle fırsatlar tarafında daha net görülüyor. Lider şirketler, çevresel girişimler kapsamında yaptıkları her 1 dolarlık yatırımın yaklaşık 4 dolar finansal değer yaratma potansiyeli olduğunu raporlarken, daha düşük performans gösteren şirketlerde bu değer yaklaşık 0,07 dolar seviyesinde. Bu durum, fırsatların belirlenmesi ve finansal değere dönüştürülmesi konusunda ciddi bir verimlilik farkına işaret ediyor. Benzer bir ayrışma risk yönetiminde de görülüyor. Lider şirketlerde maliyet-risk oranına bakıldığında, maliyeti 1 dolar olan bir riski yönetmek için yaklaşık 0,43 dolar harcamanın yeterli olacağı görülüyor. Buna karşılık, daha düşük performans gösteren şirketlerde aynı riski yönetmek için yaklaşık 5,9 dolar harcamak gerektiği görülmekte. Bu durum, lider şirketlerin finansal açıdan önemli riskleri görece daha düşük maliyetle yönetebildiğini ve potansiyel olarak daha hedefli bir risk yönetimi yaklaşımına sahip olduğunu gösteriyor.
+Raporlamaların derinlik ve uygulama düzeyi artırılmalı
+Temel iklim raporlama göstergeleri açısından bakıldığında, Türkiye’deki şirketler yüksek ve tutarlı bir olgunluk düzeyi sergiliyor. Ancak taahhütlerin derinliği ve düşük karbonlu ekonomiye geçiş araçlarının uygulanma düzeyi incelendiğinde daha farklı bir tablo ortaya çıkıyor. Şirketlerin %70’i 1,5°C ile uyumlu bir iklim geçiş planı raporlarken, yalnızca %33’ü fosil yakıtlardan çıkışa yönelik açık bir taahhütte bulunuyor. Net-sıfır hedefleri yaygın olmakla birlikte (%62), bunların yalnızca %12’si Bilim Temelli Hedefler Girişimi (SBTi) tarafından doğrulanmış vaziyette. Bu durum, hedef koyma ile bilim temelli uyum arasında önemli bir fark olduğunu gösteriyor. Benzer şekilde, dahili karbon fiyatlandırması giderek yaygınlaşsa da uygulama kapsamı halen sınırlı; çoğu zaman tüm karar süreçlerini kapsayan zorunlu bir mekanizma olarak kullanılmıyor. Yenilenebilir enerji kullanımı önemli ölçüde artmış olsa da toplam enerji tüketimi içinde yenilenemeyen kaynaklar hala baskın durumda. Genel olarak bu tablo, iklim yönetimi için gerekli temel yapıların kurulduğunu; ancak bu yapıların karar alma süreçlerine tutarlı, kapsamlı ve bağlayıcı şekilde yansıtılması için daha fazla ilerlemeye ihtiyaç duyulduğunu gösteriyor.
+İklim teması şirket yönetim sistemlerine entegre edilirken doğa ile ilgili konularda ilerleme sınırlı kaldı
+Rapor genelinde ortaya çıkan en önemli yapısal bulgulardan biri, iklim değişikliği konusundaki olgunluk ile diğer doğa temelli konular arasındaki belirgin fark. İklim değişikliği için riskleri belirleme ve yönetmeye yönelik yaklaşımlar tüm şirketlerde (%100) yerleşmiş durumdayken, bu oran su yönetimi alanında %78’e, biyoçeşitlilikte %36’ya, plastiklerde %24’e ve ormansızlaşmada %11’e kadar düştü. Benzer bir ayrışma değer zinciri etkileşiminde de görüldü. Bu oran iklimde %98 iken, plastiklerde %18 ve ormansızlaşmada %10 seviyesinde kaldı. Bu tablo, iklim konularının şirket sistemlerine derinlemesine entegre edildiğini, buna karşılık doğa ile ilgili konuların halen sınırlı bir kapsamda ele alındığını gösterdi. Genel olarak doğa temelli raporlamalar farkındalık aşamasından daha yapılandırılmış bir yönetime doğru ilerliyor. İklim ve su alanlarında görülen olgunluk seviyesine ulaşabilmek için özellikle veri altyapısının güçlendirilmesi, hedef belirleme yaklaşımlarının geliştirilmesi ve doğa ile ilgili konuların stratejik karar alma süreçlerine daha fazla entegre edilmesi gerekiyor.
+Türkiye’deki şirketlerin zorunlu raporlama çerçeveleriyle uyumu giderek artıyor
+Türkiye’de CDP kapsamında yapılan raporlamalar, zorunlu sürdürülebilirlik çerçeveleriyle yüksek ve artan bir uyuma işaret ediyor. 2025 itibarıyla Türkiye Sürdürülebilirlik Raporlaması Standartları (TSRS) ile uyum %83’e, Avrupa Sürdürülebilirlik Raporlaması Standartları (ESRS) ile uyum ise %71’e ulaştı. Zorunlu raporlama çerçevelerine hazırlık açısından Türkiye iyi bir konumda, ancak şirketlerin önünde üç temel gelişim alanı bulunuyor: üretilen bilgiyi finansal sistemlerle ilişkilendirmek, karar alma süreçlerine dahil etmek ve geçiş planlarıyla bağlantılı hale getirmek. Bu aşamalar raporlamadan uygulamaya geçiş için kritik önem taşıyor.
+CDP verileri COP31 öncesinde güçlü bir referans
+Türkiye’nin ev sahipliği yapacağı COP31’e yaklaşırken, kurumsal çevresel raporlamaların önemi daha da artıyor. CDP verileri, şirketlerin uygulama kapasitesini değerlendirmek için güçlü ve güvenilir bir referans sunuyor. Enerji dönüşümü, su, doğa, döngüsel ekonomi, geçiş planlaması ve iklim finansmanı gibi CDP raporlamasında öne çıkan başlıklar, COP31 eylem gündeminin temel öncelikleriyle doğrudan örtüşüyor. Bulgular, Türkiye’den raporlama yapan şirketlerin yalnızca raporlama ölçeğini büyütmekle kalmayıp, bunu istikrarlı biçimde güçlü bir performansa dönüştürdüğünü ortaya koyuyor. Bu çerçevede CDP verileri, şirketlerin uygulamaya ne ölçüde hazır olduğunu değerlendirmek, ulusal ve küresel iklim hedefleriyle uyum düzeyini analiz etmek açısından somut ve pratik bir referans niteliği taşıyor.
+Ana konuşmacılar ve Rapor Sunumu
+“COP31’e Doğru: Raporlama İvmesini Küresel Rekabet Avantajına Dönüştürmek” temasıyla düzenlenen konferansın açılışında konuşan Garanti BBVA Genel Müdür Yardımcısı Cemal Onaran “Garanti BBVA’da sürdürülebilirlik, iş modelimizin ayrılmaz bir parçası. 2025 CDP değerlendirmesinde iklim değişikliği, su güvenliği ve ormansızlaşma alanlarının tamamında A notu alarak Triple A seviyesine ulaşmamız bu yaklaşımın bir sonucu. İklim, su ve doğa artık ekonomik dayanıklılığın belirleyicisi. Bu doğrultuda finansman gücümüzle dönüşümü desteklemeyi sürdürüyoruz.” dedi.
+COP30 Yüksek Düzeyli İklim Şampiyonu Dan Ioschpe konferansa video mesajla katıldı. Ioschpe mesajında “25 yıl önce niş olan çevresel raporlama, bugün iş dünyası için küresel bir standart ve temel gereklilik haline gelmiş; veri, şeffaflık ve raporlama sürdürülebilir kalkınmayı ve etkili karar almayı mümkün kılmıştır. Bu yapı sayesinde, bugün CDP tarafından ödüllendirilen kuruluşlar yalnızca bir standardı karşılamıyor, aynı zamanda uygulamanın nasıl hayata geçtiğini gösteren öncüler olarak öne çıkıyor.” ifadelerini kullandı.
+Deloitte Global Sürdürülebilir Finans Lideri Hans-Juergen Walter konuya küresel bir perspektiften bakarak “Şirketler yalnızca mevzuata uyumla sınırlı kalmamalı. Raporlamayı bir zorunluluk olarak değil, rekabet avantajı yaratmanın bir aracı olarak görmeliler. Nitelikli çevresel raporlama; sermayeyi cezbeden, pazardaki konumu güçlendiren ve hızla dönüşen küresel ortamda gerçekten dayanıklı, geleceğe hazır iş modelleri inşa etmeyi mümkün kılan stratejik bir kaldıraçtır.” dedi.
+CDP Politika ve Büyüme Direktörü Pietro Bertazzi ise, “Yaklaşan COP31’in uygulama odağıyla birlikte, Türkiye’deki şirketlerin CDP aracılığıyla yaptığı raporlamalar, lider şirketlerin çevresel performans konusunda yüksek bir standart belirlerken aynı zamanda ticari kazanımlar da elde ettiğini gösteriyor. Hızla değişen küresel ekonomide geleceğe en güçlü şekilde hazırlanan şirketler; şeffaflığı somut aksiyona dönüştürebilen, çevresel verileri stratejik karar alma süreçlerine entegre eden ve dünyamız için olumlu büyümeyi yönlendiren şirketler olacak.” dedi.
+CDP Türkiye 2025 İklim ve Doğa Raporu’nun sonuçlarını paylaşan CDP Türkiye Ülke Yöneticisi Mirhan Köroğlu Göğüş şu değerlendirmede bulundu: “Raporun sonuçlarına baktığımızda, Türkiye’de çevresel yönetim yapılarının güçlü bir kurumsal temele oturduğu açıkça görülmekte, fakat bu yapının tüm çevresel temalar ve şirketler genelinde henüz dengeli ve bütüncül bir şekilde yaygınlaşmadığı görülüyor. Önümüzdeki dönemde şirketlerin önceliği, mevcut raporlama altyapısını daha derin entegrasyon, daha geniş çevresel kapsama ve daha tutarlı uygulama çıktılarıyla güçlendirmek olmalı.”
+2026 Triple A Liderler Paneli
+Konferans kapsamında Sabancı Üniversitesi Kurumsal Yönetim Forumu Türkiye Direktörü Ozan Duygulu moderatörlüğünde “2026 Triple A Liderler Paneli” düzenlendi. Panele, Garanti BBVA Yönetim Kurulu Üyesi Mevhibe Canan Özsoy, Akbank CFO’su Türker Tunalı ve CarrefourSA CEO’su Kutay Kartallıoğlu katıldı.
+Sürdürülebilir finansman ve sürdürülebilirliğin stratejik yönetimi konularının ele alındığı panelde Mevhibe Canan Özsoy, iklim krizinin yalnızca çevresel bir sorun değil; fiziksel, finansal ve itibara yönelik riskler barındıran küresel bir dönüşüm meselesi olduğunu belirtti. Türker Tunalı, düşük karbonlu ekonomiye geçişte finans sektörü, reel sektör ve teknoloji ekosisteminin birlikte hareket etmesinin kritik önem taşıdığını söyledi. Kutay Kartallıoğlu ise konuşmasında gıda perakendesinin iklim değişikliğinden kaynaklanan risklerden doğrudan etkilendiğine dikkat çekerek Türkiye’nin Akdeniz havzasındaki konumu nedeniyle gıda güvenliği ve tedarik zincirleri açısından önemli çevresel risklerle karşı karşıya olduğunu vurguladı.
+CDP Türkiye 2026 Ödül Töreni
+Programın sonunda gerçekleştirilen CDP Türkiye 2026 Ödül Töreni’nde CDP Global A listelerine girmeyi başaran 45 şirket ödüllerini aldı.
+Ödül töreninde TÜSİAD Yönetim Kurulu Başkan Yardımcısı Dr. Fatih Kemal Ebiçlioğlu, ve Kamu Gözetimi Muhasebe ve Denetim Standartları Kurumu’ndan Başkan Yardımcısı Murat Yünlü birer konuşma gerçekleştirdi ve şirketlere ödüllerini takdim etti.
+TÜSİAD Yönetim Kurulu Başkan Yardımcısı Dr. Fatih Kemal Ebiçlioğlu konuşmasında “Jeopolitik gelişmelerin yoğunlaştığı bu dönemde iklim krizinin bilimsel bir gerçek olduğunu göz ardı etmemek gerekiyor. Önümüzdeki COP31 sürecini Paris Anlaşması kapsamında gündeme getirilen başlıkların yeniden canlandırılması açısından kıymetli görüyoruz. Bu süreçte, iş dünyasının sürdürülebilirlik raporlamalarına güçlü biçimde eğilmesini ve odağına almasını kritik önemde görüyoruz. Bugün bu önemli gelişmelere tanıklık etmemizi sağlayan CDP Türkiye’ye ülkemizde sürdürülebilirlik raporlaması konusunda bilinçlendirme ve iş dünyasının dönüşümü alanında sağladığı katkılar için teşekkür ediyorum” dedi.
+Kamu Gözetimi Muhasebe ve Denetim Standartları Kurumu’ndan Başkan Yardımcısı Murat Yünlü ise ""Sürdürülebilirlik raporlaması, finansal raporlama ile sürdürülebilirlik yönetimi disiplinlerinin entegrasyonu sonucunda ortaya çıkmıştır. Bu entegrasyonun temelinde, çevresel ve sosyal faktörlerin operasyonel riskler ve finansal fırsatlar üzerindeki belirleyici rolü yatmaktadır. Bu perspektifle hazırlanan raporlar, yatırımcıların sermaye tahsisi kararlarında kullandığı 'önemlilik' arz eden bilgilere odaklanmaktadır."" dedi.
+Triple A ödülleri (5 şirket)
+Double A ödülleri (17 şirket)
+Global A ödülleri (23 şirket)
+CDP Şehirler A Liderleri ödülleri
+Konferans kapsamında ayrıca “CDP Cities A List”e girmeyi başaran iki belediyeye de ödülleri takdim edildi. Ödüllerini almak üzere törene, Ankara Büyükşehir Belediyesi Genel Sekreteri Serhat Taşkınsu ve İstanbul Büyükşehir Belediyesi Çevre Koruma ve Kontrol Daire Başkanı Prof. Dr. Ayşen Erdinçler katıldı.",e849e2d6138b02b700c6836a8552a36f52f4e13a6d0fd399bfa4e0f033b91470,2026-06-15T08:16:14.932307+00:00,detail_page_fetch,Belirsiz,Good,2026-05-20,Yüksek,announcement_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-05-20,Kampanya,True,Kampanya veya müşteri teklifi sinyali içeriyor.,,2026-05-20,,,Duyuru Tarihi,2026-05-20,Duyuru/basın tarihi bulundu; recency için kullanıldı.,False,,,
+RI-68c3cca031e7,DOC-REG-003-20260609085925,REG-003,Tier 1,garanti_bbva,Garanti BBVA,Garanti BBVA Kurumsal communication / press releases,Resmi Basın Bülteni Sayfası,https://www.garantibbva.com.tr/kurumsal-iletisim,Global Finance Yatırım Bankaları Ödülleri,15 Mayıs 2026,https://www.garantibbva.com.tr/content/public-website/kurumsal-iletisim/global-finance-yatirim-bankalari-odulleri-2026,"Global Finance Yatırım Bankaları Ödülleri
+15 Mayıs 2026
+Garanti BBVA’ya Global Finance’in Dünyanın En İyi Yatırım Bankaları 2026 Ödülleri’nde 3 Ödül Birden
+Garanti BBVA, Global Finance tarafından açıklanan Dünyanın En İyi Yatırım Bankaları Orta ve Doğu Avrupa 2026 Ödülleri kapsamında üç farklı kategoride ödül kazandı. Banka borçlanma araçları ve altyapı finansmanı alanındaki güçlü performansı, uluslararası yatırımcılarla kurduğu güçlü ilişki ve gerçekleştirdiği işlemlerle bölgedeki konumunu pekiştirdi.
+Global Finance tarafından açıklanan “Dünyanın En İyi Yatırım Bankaları Orta ve Doğu Avrupa 2026 Ödülleri” (World’s Best Investment Banks 2026: Central & Eastern Europe) kapsamında Garanti BBVA, üç farklı kategoride ödüle layık görüldü. Yatırım bankalarının 2025 yılı performanslarının değerlendirildiği listede Garanti BBVA;
+En İyi Borçlanma Araçları Bankası, Altyapı Finansmanı Alanında En İyi Banka
+Türkiye’nin En İyi Yatırım Bankası
+ödüllerinin sahibi oldu.
+Konuya ilişkin değerlendirmede bulunan
+Garanti BBVA Genel Müdür Yardımcısı Sinem Edige
+, “Orta ve Doğu Avrupa bölgesinde üç farklı kategoride kazandığımız bu ödülleri, yatırım bankacılığı alanındaki uzmanlığımızın ve uluslararası yatırımcılarla kurduğumuz güçlü ilişkilerin bir yansıması olarak görüyoruz. Borçlanma araçları ve yapılandırılmış finansman alanındaki çözümlerimizle müşterilerimizin ihtiyaçlarına uygun, sürdürülebilir ve uzun vadeli değer yaratan finansman modelleri geliştiriyoruz. Türkiye’nin uluslararası piyasalardaki konumuna katkı sağlamayı ve yatırımcı güvenini desteklemeyi sürdüreceğiz,” dedi.
+Yatırım alanında güçlü performans
+Banka, 2025 yılı boyunca gerçekleştirdiği borçlanma araçları ihraçlarında uluslararası yatırımcılardan güçlü talep gördü. 500 milyon dolar tutarındaki Tier-2 ihraç yaklaşık 2 milyar dolar talep toplarken, yıl içinde gerçekleştirilen 700 milyon dolar tutarındaki ikinci ihraç da yaklaşık 1,8 milyar dolar talep gördü. Tier-2 ihraçları başta olmak üzere gerçekleştirilen işlemler, yüksek talep ve talep fazlasıyla öne çıktı.
+Garanti BBVA ayrıca enerji, altyapı ve sanayi sektörlerinde toplam 20 işlemde yaklaşık 890 milyon dolar finansman sağlayarak çok sayıda büyük ölçekli işlemde aktif rol aldı.",eb69a2576caaa77bfb87deb511da7f6290f42465e06a8d6f0c852e9223b57466,2026-06-15T08:16:15.319727+00:00,detail_page_fetch,İlgisiz,Good,2026-05-15,Yüksek,announcement_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-05-15,Ürün / Özellik Gelişmesi,True,"Ürün, API, POS, ödeme, tahsilat veya dijital özellik gelişmesi sinyali içeriyor.",,2026-05-15,,,Duyuru Tarihi,2026-05-15,Duyuru/basın tarihi bulundu; recency için kullanıldı.,False,,,
+RI-df8bef731c3f,DOC-REG-006-20260610124523,REG-006,Tier 1,is_bankasi,İş Bankası,İş Bankası Duyurular,Resmi Basın Bülteni Sayfası,https://www.isbank.com.tr/duyurular,Avantajlı Çalışma Koşullarıyla Anında POS İş Bankası'nda! | Türkiye İş Bankası A.Ş.,01 Mayıs 2026,https://www.isbank.com.tr/kampanyalar/aninda-pos-kampanyasi,"Ana Sayfa
+Kampanyalar
+> POS/Yazarkasa/ÖKC Kampanyaları
+Siz İşinizin Başında Anında POS İş Bankası’nda!
+İşCep'ten Anında POS'a başvurun, ilk 3 ay %2,29 POS komisyon oranı avantajından faydalanın!
+Hemen Başvur
+%2,29 komisyon oranı ilk kez POS alacak müşterilerimiz için ilk 3 ay boyunca ve toplam 3 milyon TL ciro tutarına kadar geçerlidir.
+İşCep üzerinden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle toplam 3 Milyon TL tutarına kadar, peşin işlemlerde yurtiçi tüm kredi kartlarına %2,29 komisyon oranı, yurtiçi tüm banka kartlarına %1,092 komisyon oranı ve 3 ay süreyle aylık 399 TL POS yazılım/donanım/bakım ücreti sunulacaktır.
+Kampanyaya kimler başvurabilir?
+Bankamızdan ilk kez POS alacak Esnaf ve KOBİ müşterilerimiz İşCep'ten kampanya başvurusunda bulunabilir.
+Kampanya hangi POS cihazlarında geçerlidir?
+Kampanya fiziki ve sanal POS’larda geçerlidir.
+Kampanyadan sağlanan avantajlar nelerdir?
+Anında POS başvurularında, başvuruyu izleyen 3 ay boyunca peşin işlemlerde yurtiçi tüm kredi kartlarına %2,29 komisyon oranı, yurtiçi tüm banka kartlarına %1,092 komisyon oranı ve 3 ay süreyle aylık 399 TL POS yazılım/donanım/bakım ücreti avantajı sunulacaktır. POS kullanım ücreti avantajı Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır.
+Bir müşteri indirimli POS kullanım ücreti avantajından en fazla 1 POS cihazı için yararlanabilir.
+Kampanyaya nasıl başvurabilirim?
+Bireysel İşCep’ten Ticari İşlemlerim > Anında POS Başvuru
+Ticari İşCep’ten Başvurular veya POS İşlemleri > Anında POS Başvuru
+adımları üzerinden Anında POS başvurunuzu gerçekleştirebilirsiniz.
+Kampanyaya katılmak için Anında POS başvuru ekranlarında “Fiyatlama Türü” seçeneklerinin gösterildiği alanın altında yer alan
+“Aktif kampanyalardan yararlanmak istiyorum”
+kutucuğunun mutlaka işaretlenmesi gerekmektedir.
+Anında POS tahsisi sürecimiz uçtan uca dijital kanallarımız üzerinden gerçekleşmekte olup, başvurunuz onaylandığında POS'unuz iş adresinize ulaştırılmaktadır.
+Gerekli durumlarda ise en yakın şubemizden destek alabilirsiniz.
+Ek Koşullar
+%2,29 komisyon oranı ilk 3 ay ve toplam 3 milyon TL ciro tutarına kadar geçerlidir.
+Kampanyaya kuyumculuk, akaryakıt, toptancı ve eğitim sektöründe faaliyet gösteren firmalar dahil değildir.
+Yurtiçi kredi kartlarına %2,29 komisyon oranı ve yurtiçi banka kartlarına %1,092 komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+3 ay süreyle POS yazılım/donanım/bakım ücreti avantajı Anında POS başvurusuna istinaden açılan terminale tanımlanacaktır.
+2026 yılındaki Anında POS kampanyalarından bir müşteri indirimli POS kullanım ücreti avantajından en fazla 1 POS cihazı için yararlanabilir.
+İndirimli POS kullanım ücreti avantajına Sanal POS, Linkle Tahsilat, QR POS ve İŞİM POS tarifeleri dahil değildir.
+Tüzel kişi adına, firma tek imza ile temsil ediliyorsa yalnızca Ticari Anında Bankacılık yetkisi olan imza yetkilisi Anında POS başvurusunu gerçekleştirebilmektedir. Müşterek imza ile temsil edilen firma kullanıcıları Anında POS’a dijital kanallarımız üzerinden başvuruda bulunamamaktadır.
+İş Bankası kampanyayı herhangi bir zamanda sonlandırma ve kampanya şartlarında değişiklik yapma hakkını saklı tutar.
+Geçmiş Kampanyalarımız
+01 Mayıs 2026
+ampanyaya kuyumculuk, akaryakıt, toptancı ve eğitim sektöründe faaliyet gösteren firmalar dahil değildir.
+01 Nisan 2026
+Anında POS başvurusunu yaptıktan sonra şubeye gidilmesi gerekiyor mu?
+Anında POS tahsisi sürecimiz uçtan uca dijital kanallarımız üzerinden gerçekleşmekte olup Şubelerimize gidilmeden süreç tamamlanmakta ve başvurunuz onaylandığında POS'unuz iş adresinize ulaştırılmaktadır.
+02 Mart 2026
+%2,04 komisyon oranı ilk kez POS alacak müşterilerimiz için ilk 3 ay boyunca ve toplam 3 milyon TL ciro tutarına kadar geçerlidir.
+İşCep üzerinden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle toplam 3 Milyon TL tutarına kadar, peşin işlemlerde yurtiçi tüm kredi kartlarına %2,04 komisyon oranı, yurtiçi tüm banka kartlarına %1,092 komisyon oranı ve 3 ay süreyle aylık 400 TL POS yazılım/donanım/bakım ücreti sunulacaktır.
+Anında POS başvurularında, başvuruyu izleyen 3 ay boyunca peşin işlemlerde yurtiçi tüm kredi kartlarına %2,04 komisyon oranı, yurtiçi tüm banka kartlarına %1,092 komisyon oranı ve 3 ay süreyle aylık 400 TL POS yazılım/donanım/bakım ücreti avantajı sunulacaktır. POS kullanım ücreti avantajı Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır.
+%2,04 komisyon oranı ilk 3 ay ve toplam 3 milyon TL ciro tutarına kadar geçerlidir.
+Yurtiçi kredi kartlarına %2,04 komisyon oranı ve yurtiçi banka kartlarına %1,092 komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+01 Şubat 2026
+İşCep üzerinden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle toplam 3 Milyon TL tutarına kadar, peşin işlemlerde yurtiçi tüm kredi kartlarına %2,04 komisyon oranı, yurtiçi tüm banka kartlarına %1,092 komisyon oranı ve 3 ay süreyle aylık 599 TL POS yazılım/donanım/bakım ücreti sunulacaktır.
+Anında POS başvurularında, başvuruyu izleyen 3 ay boyunca peşin işlemlerde yurtiçi tüm kredi kartlarına %2,04 komisyon oranı, yurtiçi tüm banka kartlarına %1,092 komisyon oranı ve 3 ay süreyle aylık 599 TL POS yazılım/donanım/bakım ücreti avantajı sunulacaktır. POS kullanım ücreti avantajı Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır.
+01 Ocak 2026
+İşCep üzerinden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle toplam 3 Milyon TL tutarına kadar, peşin işlemlerde yurtiçi tüm kredi kartlarına %2,040 komisyon oranı, yurtiçi tüm banka kartlarına %1,092 komisyon oranı ve 3 ay süreyle aylık 599 TL POS yazılım/donanım/bakım ücreti sunulacaktır.
+Anında POS başvurularında, başvuruyu izleyen 3 ay boyunca peşin işlemlerde yurtiçi tüm kredi kartlarına %2,040 komisyon oranı, yurtiçi tüm banka kartlarına %1,092 komisyon oranı ve 3 ay süreyle aylık 599 TL POS yazılım/donanım/bakım ücreti avantajı sunulacaktır. POS kullanım ücreti avantajı Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır.
+Yurtiçi kredi kartlarına %2,040 komisyon oranı ve yurtiçi banka kartlarına %1,092 komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+01 Aralık 2025
+İşCep üzerinden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle toplam 3 Milyon TL tutarına kadar, peşin işlemlerde yurtiçi tüm kredi kartlarına %2,040 komisyon oranı, yurtiçi tüm banka kartlarına %1,092 komisyon oranı ve 3 ay süreyle aylık 450 TL POS yazılım/donanım/bakım ücreti sunulacaktır.
+Anında POS başvurularında, başvuruyu izleyen 3 ay boyunca peşin işlemlerde yurtiçi tüm kredi kartlarına %2,040 komisyon oranı, yurtiçi tüm banka kartlarına %1,092 komisyon oranı ve 3 ay süreyle aylık 450 TL POS yazılım/donanım/bakım ücreti avantajı sunulacaktır. POS kullanım ücreti avantajı Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır.
+Kampanyaya kuyumculuk, akaryakıt ve eğitim sektöründe faaliyet gösteren firmalar dahil değildir.
+2025 yılındaki Anında POS kampanyalarından bir müşteri indirimli POS kullanım ücreti avantajından en fazla 1 POS cihazı için yararlanabilir.
+01 Kasım 2025
+01 Ekim 2025
+İşCep üzerinden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle yurt içi tek çekim işlemlerde toplam 3 Milyon TL ciro tutarına kadar, ertesi gün ödeme %2,04 POS komisyon oranı ve 3 ay süreyle aylık 450 TL POS yazılım/donanım/bakım ücreti sunulacaktır.
+Anında POS başvurularında, başvuruyu izleyen 3 ay boyunca yurt içi tek çekim işlemlerde ertesi gün ödeme %2,04 POS komisyon oranı ve 3 ay süreyle aylık 450 TL POS yazılım/donanım/bakım ücreti avantajı sunulacaktır. POS kullanım ücreti avantajı Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır.
+Kampanyaya kuyumculuk ve akaryakıt sektöründe faaliyet gösteren firmalar dahil değildir.
+Yurt içi tek çekim işlemlerde ertesi gün ödeme %2,04 POS komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+01 Eylül 2025
+%1,99 komisyon oranı ilk kez POS alacak müşterilerimiz için ilk 3 ay boyunca ve toplam 3 milyon TL ciro tutarına kadar geçerlidir.
+İşCep üzerinden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle yurt içi tek çekim işlemlerde toplam 3 Milyon TL ciro tutarına kadar, ertesi gün ödeme %1,99 POS komisyon oranı ve 3 ay süreyle aylık 450 TL POS yazılım/donanım/bakım ücreti sunulacaktır.
+Anında POS başvurularında, başvuruyu izleyen 3 ay boyunca yurt içi tek çekim işlemlerde ertesi gün ödeme %1,99 POS komisyon oranı ve 3 ay süreyle aylık 450 TL POS yazılım/donanım/bakım ücreti avantajı sunulacaktır. POS kullanım ücreti avantajı Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır.
+Kampanyaya katılmak için Anında POS başvuru ekranlarında “Fiyatlama Türü” seçeneklerinin gösterildiği alanın altında yer alan “Aktif kampanyalardan yararlanmak istiyorum” kutucuğunun mutlaka işaretlenmesi gerekmektedir.
+%1,99 komisyon oranı ilk 3 ay ve toplam 3 milyon TL ciro tutarına kadar geçerlidir.
+Yurt içi tek çekim işlemlerde ertesi gün ödeme %1,99 POS komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+ay süreyle POS yazılım/donanım/bakım ücreti avantajı Anında POS başvurusuna istinaden açılan terminale tanımlanacaktır.
+ndirimli POS kullanım ücreti avantajına Sanal POS, Linkle Tahsilat, QR POS ve İŞİM POS tarifeleri dahil değildir.
+ş Bankası kampanyayı herhangi bir zamanda sonlandırma ve kampanya şartlarında değişiklik yapma hakkını saklı tutar.
+01 Ağustos 2025
+İşCep veya İnternet Şubesi’nden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle yurt içi tek çekim işlemlerde toplam 3 Milyon TL ciro tutarına kadar, ertesi gün ödeme %1,99 POS komisyon oranı ve 3 ay süreyle aylık 450 TL POS yazılım/donanım/bakım ücreti sunulacaktır.
+Bankamızdan ilk kez POS alacak Esnaf ve KOBİ müşterilerimiz İşCep ve İnternet Şubesi’nden kampanya başvurusunda bulunabilir.
+- Bireysel İşCep’ten Ticari İşlemlerim > Anında POS Başvuru
+- Ticari İşCep’ten Başvurular veya POS İşlemleri > Anında POS Başvuru
+- Bireysel İnternet Şube uygulamasında Başvurularım veya Üye İş yeri > Anında POS Başvuru
+- Ticari İnternet Şube uygulamasında Başvurularım > Anında POS Başvuru
+urt içi tek çekim işlemlerde ertesi gün ödeme %1,99 POS komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+01 Temmuz 2025
+İşCep veya İnternet Şubesi’nden yapılan Anında POS başvurunuz onaylandığında,
+3 ay
+süreyle yurt içi tek çekim işlemlerde toplam 3 Milyon TL ciro tutarına kadar, ertesi gün ödeme
+%1,99
+POS komisyon oranı ve
+süreyle aylık
+450 TL
+POS yazılım/donanım/bakım ücreti sunulacaktır.
+- Ticari İnternet Şube uygulamasında Başvurularım > Anında POS Başvuru adımları üzerinden Anında POS başvurunuzu gerçekleştirebilirsiniz.
+- Kampanyaya katılmak için Anında POS başvuru ekranlarında “Fiyatlama Türü” seçeneklerinin gösterildiği alanın altında yer alan “Aktif kampanyalardan yararlanmak istiyorum” kutucuğunun mutlaka işaretlenmesi gerekmektedir.
+Tüzel kişi adına, firma tek imza ile temsil ediliyorsa yalnızca Ticari Anında Bankacılık yetkisi olan imza yetkilisi Anında POS başvurusunu gerçekleştirebilmektedir.​
+01 Haziran 2025
+Tüzel kişi adına, firma tek imza ile temsil ediliyorsa yalnızca Ticari Anında Bankacılık yetkisi olan imza yetkilisi Anında POS başvurusunu gerçekleştirebilmektedir.
+Müşterek imza ile temsil edilen firma kullanıcıları Anında POS’a dijital kanallarımız üzerinden başvuruda bulunamamaktadır.
+01 Mayıs 2025
+süreyle yurt içi tek çekim işlemlerde ertesi gün ödeme
+%2,20
+Kampanya fiziki POS’larda geçerlidir (Mobil POS, Sabit POS ve Yazar Kasa POS’lar).
+Anında POS başvurularında, başvuruyu izleyen 3 ay boyunca yurt içi tek çekim işlemlerde ertesi gün ödeme %2,20 POS komisyon oranı ve 3 ay süreyle aylık 450 TL POS yazılım/donanım/bakım ücreti avantajı sunulacaktır. POS kullanım ücreti avantajı Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır.
+Kampanyaya katılmak için Anında POS başvuru ekranlarında
+“Fiyatlama Türü”
+seçeneklerinin gösterildiği alanın altında yer alan
+• Kampanyaya kuyumculuk ve akaryakıt sektöründe faaliyet gösteren firmalar dahil değildir.
+• Yurt içi tek çekim işlemlerde ertesi gün ödeme %2,20 POS komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+• 3 ay süreyle POS yazılım/donanım/bakım ücreti avantajı Anında POS başvurusuna istinaden açılan terminale tanımlanacaktır.
+• 2025 yılındaki Anında POS kampanyalarından bir müşteri indirimli POS kullanım ücreti avantajından en fazla 1 POS cihazı için yararlanabilir.
+• İndirimli POS kullanım ücreti avantajına Sanal POS, Linkle Tahsilat, QR POS ve İŞİM POS tarifeleri dahil değildir.
+• Tüzel kişi adına, firma tek imza ile temsil ediliyorsa yalnızca Ticari Anında Bankacılık yetkisi olan imza yetkilisi Anında POS başvurusunu gerçekleştirebilmektedir. Müşterek imza ile temsil edilen firma kullanıcıları Anında POS’a dijital kanallarımız üzerinden başvuruda bulunamamaktadır.
+• İş Bankası kampanyayı herhangi bir zamanda sonlandırma ve kampanya şartlarında değişiklik yapma hakkını saklı tutar.
+01 Nisan 2025
+İşCep veya İnternet Şubesi’nden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle yurt içi tek çekim işlemlerde ertesi gün ödeme %2,20 POS komisyon oranı ve 3 ay süreyle aylık 450 TL POS yazılım/donanım/bakım ücreti sunulacaktır.
+Bireysel İnternet Şube uygulamasında Başvurularım veya Üye İş yeri > Anında POS Başvuru
+Ticari İnternet Şube uygulamasında Başvurularım > Anında POS Başvuru
+•Kampanyaya kuyumculuk ve akaryakıt sektöründe faaliyet gösteren firmalar dahil değildir.
+•Yurt içi tek çekim işlemlerde ertesi gün ödeme %2,20 POS komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+•3 ay süreyle POS yazılım/donanım/bakım ücreti avantajı Anında POS başvurusuna istinaden açılan terminale tanımlanacaktır.
+•2025 yılındaki Anında POS kampanyalarından bir müşteri indirimli POS kullanım ücreti avantajından en fazla 1 POS cihazı için yararlanabilir.
+•İndirimli POS kullanım ücreti avantajına Sanal POS, Linkle Tahsilat, QR POS ve İŞİM POS tarifeleri dahil değildir.
+•Tüzel kişi adına, firma tek imza ile temsil ediliyorsa yalnızca Ticari Anında Bankacılık yetkisi olan imza yetkilisi Anında POS başvurusunu gerçekleştirebilmektedir. Müşterek imza ile temsil edilen firma kullanıcıları Anında POS’a dijital kanallarımız üzerinden başvuruda bulunamamaktadır.
+•İş Bankası kampanyayı herhangi bir zamanda sonlandırma ve kampanya şartlarında değişiklik yapma hakkını saklı tutar.
+01 Mart 2025
+01 Şubat 2025
+01 Ocak 2025
+İşCep veya İnternet Şubesi’nden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle yurt içi tek çekim işlemlerde ertesi gün ödeme %2,20 POS komisyon oranı ve 3 ay süreyle aylık 399 TL POS yazılım/donanım/bakım ücreti sunulacaktır.
+Anında POS başvurularında, başvuruyu izleyen
+3 ay boyunca yurt içi tek çekim işlemlerde ertesi gün ödeme %2,20 POS komisyon oranı ve 3 ay süreyle aylık 399 TL POS yazılım/donanım/bakım ücreti avantajı sunulacaktır.
+POS kullanım ücreti avantajı Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır.
+Yurt içi tek çekim işlemlerde ertesi gün ödeme %2,20 POS komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+2024 yılındaki Anında POS kampanyalarından bir müşteri indirimli POS kullanım ücreti avantajından en fazla 1 POS cihazı için yararlanabilir.
+01 Aralık 2024
+İşCep veya İnternet Şubesi’nden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle yurt içi tek çekim işlemlerde ertesi gün ödeme %2,20 POS komisyon oranı ve 3 ay süreyle aylık 119 TL POS yazılım/donanım/bakım ücreti sunulacaktır.
+3 ay boyunca yurt içi tek çekim işlemlerde ertesi gün ödeme %2,20 POS komisyon oranı ve 3 ay süreyle aylık 119 TL POS yazılım/donanım/bakım ücreti avantajı sunulacaktır.
+01 Kasım 2024
+İşCep veya İnternet Şubesi’nden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle yurt içi tek çekim işlemlerde ertesi gün ödeme %2,15 POS komisyon oranı ve 3 ay süreyle aylık 119 TL POS yazılım/donanım/bakım ücreti sunulacaktır.
+Bankamızda POS’u olmayan Esnaf ve KOBİ müşterilerimiz İşCep ve İnternet Şubesi’nden kampanya başvurusunda bulunabilir.
+3 ay boyunca yurt içi tek çekim işlemlerde ertesi gün ödeme %2,15 POS komisyon oranı ve 3 ay süreyle aylık 119 TL POS yazılım/donanım/bakım ücreti avantajı sunulacaktır.
+Yurt içi tek çekim işlemlerde ertesi gün ödeme %2,15 POS komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+01 Ekim 2024
+3 ay süreyle POS yazılım/donanım/bakım ücreti avantajı
+Anında POS başvurusuna istinaden açılan terminale tanımlanacaktır.
+2024 yılındaki Anında POS kampanyalarından bir müşteri indirimli POS kullanım ücreti avantajından
+en fazla 1 POS cihazı için yararlanabilir.
+02 Eylül 2024
+İşCep veya İnternet Şubesi’nden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle yurt içi tek çekim işlemlerde ertesi gün ödeme %2,10 POS komisyon oranı ve 3 ay süreyle aylık 119 TL POS yazılım/donanım/bakım ücreti sunulacaktır.
+Esnaf ve KOBİ müşterilerimiz İşCep ve İnternet Şubesi’nden kampanya başvurusunda bulunabilir.
+Anında POS başvurularında, başvuruyu izleyen 3 ay boyunca yurt içi tek çekim işlemlerde ertesi gün ödeme %2,10 POS komisyon oranı ve 3 ay süreyle aylık 119 TL POS yazılım/donanım/bakım ücreti avantajı sunulacaktır. POS kullanım ücreti avantajı Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır.
+• Yurt içi tek çekim işlemlerde ertesi gün ödeme %2,10 POS komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+• 2024 yılındaki Anında POS kampanyalarından bir müşteri indirimli POS kullanım ücreti avantajından en fazla 1 POS cihazı için yararlanabilir.
+• İş Bankası kampanyayı herhangi bir zamanda sonlandırma ve kampanya şartlarında değişiklik yapma hakkını saklı tutar.​
+01 Ağustos 2024
+İşCep veya İnternet Şubesi’nden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle yurt içi tek çekim işlemlerde ertesi gün ödeme %1,95 POS komisyon oranı ve 3 ay süreyle POS kullanım ücreti indirimi sunulacaktır.
+*31 Ekim 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmine sahip olan üye işyerlerinde ücret avantajını takiben, ilave 6 ay 119 TL indirimli POS kullanım ücreti sunulacak olup, toplamda 9 ay avantajlı kullanım ücreti imkânı sağlanacaktır.
+3 ay boyunca yurt içi tek çekim işlemlerde ertesi gün ödeme %1,95 POS komisyon oranı ve 3 ay süreyle indirimli POS kullanım ücreti avantajı sunulacaktır.
+POS kullanım ücreti avantajı Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır. 31 Ekim 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmi gerçekleştiren müşterilerimize ilave 6 ay 119 TL indirimli kullanım ücreti sunulacak olup, toplamda 9 ay avantajlı kullanım ücreti imkânı sağlanacaktır.
+Bir müşteri indirimli POS kullanım ücreti avantajından en fazla 3 POS cihazı için yararlanabilir.
+ireysel İşCep’ten Ticari İşlemlerim > Anında POS Başvuru
+ireysel İnternet Şube uygulamasında Başvurularım veya Üye İş yeri > Anında POS Başvuru
+urt içi tek çekim işlemlerde ertesi gün ödeme %1,95 POS komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+31 Ekim 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmi gerçekleştiren müşterilerimize ilave 6 ay 119 TL indirimli POS yazılım/donanım/bakım ücreti sunulacak olup, toplamda 9 ay avantajlı kullanım ücreti imkanı sağlanacaktır.
+en fazla 3 POS cihazı için yararlanabilir.
+02 Temmuz 2024
+*30 Eylül 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmine sahip olan üye işyerlerinde ücret avantajını takiben, ilave 6 ay 119 TL indirimli POS kullanım ücreti sunulacak olup, toplamda 9 ay avantajlı kullanım ücreti imkânı sağlanacaktır.
+POS kullanım ücreti avantajı Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır. 30 Eylül 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmi gerçekleştiren müşterilerimize ilave 6 ay 119 TL indirimli kullanım ücreti sunulacak olup, toplamda 9 ay avantajlı kullanım ücreti imkânı sağlanacaktır.
+“Aktif kampanyalardan yararlanmak istiyorum” kutucuğunun mutlaka işaretlenmesi gerekmektedir.
+• Yurt içi tek çekim işlemlerde ertesi gün ödeme %1,95 POS komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+• 3 ay süreyle POS yazılım/donanım/bakım ücreti avantajı
+• 30 Eylül 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmi gerçekleştiren müşterilerimize ilave 6 ay 119 TL indirimli POS yazılım/donanım/bakım ücreti sunulacak olup, toplamda 9 ay avantajlı kullanım ücreti imkanı sağlanacaktır.
+• 2024 yılındaki Anında POS kampanyalarından bir müşteri indirimli POS kullanım ücreti avantajından
+04 Haziran 2024
+İşCep veya İnternet Şubesi’nden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle yurt içi tek çekim işlemlerde ertesi gün ödeme %2,29 POS komisyon oranı ve 3 ay süreyle POS kullanım ücreti istisnası sunulacaktır.
+*31 Ağustos 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmine sahip olan üye işyerlerinde ücret istisnası avantajını takiben, ilave 6 ay 119 TL indirimli POS kullanım ücreti sunulacak olup, toplamda 9 ay avantajlı kullanım ücreti imkanı sağlanacaktır.
+Anında POS başvurularında, başvuruyu izleyen 3 ay boyunca yurt içi tek çekim işlemlerde ertesi gün ödeme %2,29 POS komisyon oranı ve
+3 ay süreyle indirimli POS kullanım ücreti avantajı sunulacaktır.
+POS kullanım ücreti istisnası Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır.
+31 Ağustos 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmi gerçekleştiren
+müşterilerimize ilave 6 ay 119 TL indirimli kullanım ücreti sunulacak olup, toplamda 9 ay avantajlı kullanım ücreti imkanı sağlanacaktır.
+Yurt içi tek çekim işlemlerde ertesi gün ödeme %2,29 POS komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+3 ay süreyle POS yazılım/donanım/bakım ücreti istisnası
+avantajı Anında POS başvurusuna istinaden açılan terminale tanımlanacaktır.
+31 Ağustos 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmi gerçekleştiren müşterilerimize ilave 6 ay 119 TL indirimli POS yazılım/donanım/bakım ücreti sunulacak olup, toplamda 9 ay avantajlı kullanım ücreti imkanı sağlanacaktır.
+en fazla 3 POS cihazı için
+yararlanabilir.
+02 Mayıs 2024
+*31 Temmuz 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmine sahip olan üye işyerlerinde ücret istisnası avantajını takiben, ilave 6 ay 119 TL indirimli POS kullanım ücreti sunulacak olup, toplamda 9 ay avantajlı kullanım ücreti imkanı sağlanacaktır.
+3 ay süreyle POS kullanım ücreti istisnası sunulacaktır.
+31 Temmuz 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmi gerçekleştiren
+31 Temmuz 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmi gerçekleştiren müşterilerimize ilave 6 ay 119 TL indirimli POS yazılım/donanım/bakım ücreti sunulacak olup, toplamda 9 ay avantajlı kullanım ücreti imkanı sağlanacaktır.
+en fazla 1 POS cihazı için
+01 Nisan 2024
+İşCep veya İnternet Şubesi’nden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle yurt içi tek çekim işlemlerde ertesi gün ödeme %2,29 POS komisyon oranı ve 3 ay süreyle 119 TL POS kullanım ücreti avantajından faydalanırsınız.
+*30 Haziran 2024 tarihine kadar 250 bin TL ve üzeri işlem hacmi gerçekleştiren müşterilerimize POS kullanım ücreti indirim süresi 6 ay daha uzatılacak olup, toplam 9 ay indirimli POS kullanım ücreti avantajı sunulacaktır.
+3 ay süreyle terminal başına 119 TL
+POS kullanım ücreti avantajı sunulacaktır. İndirimli POS kullanım ücreti Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır.
+30 Haziran 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmi gerçekleştiren
+müşterilerimize indirim süresi 6 ay daha uzatılacak olup, toplam 9 ay indirimli POS kullanım ücreti avantajı sunulacaktır.
+3 ay süreyle 119 TL POS kullanım ücreti avantajı Anında POS başvurusuna istinaden açılan terminale tanımlanacaktır.
+30 Haziran 2024 tarihine kadar toplam 250 bin TL ve üzeri işlem hacmi gerçekleştiren müşterilerimize indirim süresi 6 ay daha uzatılacak olup, toplam 9 ay indirimli POS kullanım ücreti avantajı sunulacaktır.
+2024 yılındaki Anında POS kampanyalarından bir müşteri indirimli POS kullanım ücreti avantajından en fazla 3 POS cihazı için yararlanabilir.
+01 Mart 2024
+*31 Mayıs 2024 tarihine kadar 150 bin TL ve üzeri işlem hacmi gerçekleştiren müşterilerimize POS kullanım ücreti indirim süresi 6 ay daha uzatılacak olup, toplam 9 ay indirimli POS kullanım ücreti avantajı sunulacaktır.
+31 Mayıs 2024 tarihine kadar toplam 150 bin TL ve üzeri işlem hacmi gerçekleştiren
+31 Mayıs 2024 tarihine kadar toplam 150 bin TL ve üzeri işlem hacmi gerçekleştiren müşterilerimize indirim süresi 6 ay daha uzatılacak olup, toplam 9 ay indirimli POS kullanım ücreti avantajı sunulacaktır.
+10 Kasım 2023
+İşCep veya İnternet Şubesi’nden yapılan Anında POS başvurunuz onaylandığında, 3 ay süreyle yurt içi tek çekim işlemlerde ertesi gün %2,39 POS komisyon oranından yararlanır ve 3 ay süreyle POS kullanım ücreti ödemezsiniz.
+Anında POS başvurularında,
+başvuruyu izleyen 3 ay boyunca yurt içi tek çekim işlemlerde ertesi gün %2,39 POS komisyon oranı uygulanacak ve 3 ay süreyle aylık POS kullanım ücreti alınmayacaktır.
+3 ay POS Kullanım Ücreti istisnası, Anında POS başvurusuna istinaden açılan POS cihazına tanımlanacaktır. Bir müşteri POS kullanım ücreti istisnasından
+en fazla bir POS cihazı için
+“Anında POS Kampanyası oranından yararlanmak istiyorum (Kampanya Oranı: Yurtiçi Peşin İşlemler %2,39)”
+Yurt içi tek çekim işlemlerde ertesi gün %2,39 POS komisyon oranı sadece Anında POS başvurusundan açılan üye iş yerinde geçerli olacaktır.
+ay POS kullanım ücreti istisnası sadece Anında POS başvurusuna istinaden a
+çılan bir terminale tanımlanacaktır.
+ay süre ile POS kullanım ücreti istisnasına Sanal POS, Linkle Tahsilat, QR POS ve İŞİM POS tarifeleri dahil değildir.
+X Kapat",ef03940af09f9260abe3438dc47b8744641612f8998f7ec7f8ec127e5d03664f,2026-06-15T08:18:57.559533+00:00,detail_page_fetch,İlgili,Good,2026-05-01,Yüksek,campaign_start_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-05-01,Kampanya,True,Kampanya veya müşteri teklifi sinyali içeriyor.,,,2026-05-01,,Kampanya Başlangıç Tarihi,2026-05-01,Kampanya başlangıç tarihi bulundu; recency için kullanıldı.,False,,,
+RI-0bb5bbacb9fe,DOC-REG-006-20260610124523,REG-006,Tier 1,is_bankasi,İş Bankası,İş Bankası Duyurular,Resmi Basın Bülteni Sayfası,https://www.isbank.com.tr/duyurular,Maximum’un 25.Yılına Özel Ticari Kredi Kartınız ile Yapacağınız Harcamalara MaxiPuan Fırsatı! | Türkiye İş Bankası A.Ş.,30 Haziran 2026,https://www.isbank.com.tr/kampanyalar/maximumun-25-yilina-ozel-ticari-kredi-kartiniz-ile-yapacaginiz-harcamalara-maxipuan,"Ana Sayfa
+Kampanyalar
+> Ticari Kredi Kartı Kampanyaları
+Maximum’un 25.Yılına Özel Ticari Kredi Kartınız ile Yapacağınız Harcamalara 2.500 TL’ye Varan MaxiPuan!
+İşCep Ticari’den kampanyaya katılın, 1 – 30 Haziran 2026 tarihleri arasında ticari kredi kartları ile yurt içinde tek seferde ve farklı günlerde yapacağınız 25.000 TL ve üzeri her harcamanız için 250 TL, toplamda 2.500 TL MaxiPuan kazanın!
+Ticari Kredi Kartı Başvurusu
+Kampanyaya katılmak için:
+İşCep Ticari > Kampanyalar > Kart Fırsatları bölümünden ilgili kampanyadaki
+“KATIL”
+butonuna tıklamanız yeterlidir. Katılımınızı kampanya dönemi içinde dilediğiniz zaman (alışverişinizden önce veya sonra) yapabilirsiniz.
+Uygulamayı telefonunuza indirin:
+İşCep Ticari
+Kampanya geçerlilik tarihi:
+1 – 30 Haziran 2026
+Kampanyaya dâhil olan kartlar:
+İş Bankası ticari kredi kartları (İş Bankası Vergi Kart, Maximum Business Aidatsız Kart, KOSGEB Kart, KGF Kredileri ve Turizm Destek Kredisi kapsamında tahsis edilen ticari kredi kartları, Maximum Business + Kartlar, İmece Kartlar, Tarım Kartlar ve Bayi Kartlar hariç)
+Kampanyaya dâhil olmayan kartlar ve işlemler:
+Yurt dışı online ve fiziki alışverişler, İş Bankası Maximum Business Aidatsız Kart, İş Bankası Vergi Kart, KOSGEB Kart, KGF Kredileri kapsamında tahsis edilen ticari kredi kartları, Maximum Business + Kartlar, Bayi Kartlar, İmece Kartlar, Ticari Bankamatik Kartları, İş Bankası bireysel kredi kartları, İş Bankası bireysel Bankamatik kartları, aidatsız kartlar, İş’te Üniversiteli Aidatsız Kredi Kartı, ürün iptal ve iade işlemleri, Maximum Fırsat ve MaxiPuan kullanılarak yapılan alışverişler kampanyaya dahil değildir.
+Ödül kullanımı:
+MaxiPuan’larınız 10 Temmuz 2026 tarihinde kullanıma açık, puan kullanımına uygun, ticari kredi kartınıza yüklenecektir. Kampanya kapsamında kullanılan kredi kartının Maximiles özellikli kredi kartı olması durumunda ise MaxiPuan, MaxiMil’e dönüştürülebilir MaxiPuan olarak yüklenecek ve tercihe bağlı olarak MaxiPuan veya MaxiMil olarak kullanılabilecektir. MaxiPuan’ların son kullanma tarihi 31 Ağustos 2026’dır. Kampanya, kart bazında değil, müşteri bazındadır. Kampanya kapsamında tek seferde ve farklı günlerde yapılacak 25.000 TL ve üzeri her harcamanız için 1., 2., 3., 4., 5., 6., 7., 8., 9. ve 10. harcamaya 250’şer TL, toplamda 2.500 TL MaxiPuan hediye edilecektir. Bir müşteri kampanyadan bir kere yararlanabilir ve en fazla 2.500 TL MaxiPuan kazanabilir.
+Ek Koşullar:
+Kampanyaya ilişkin iletilen katılım talepleri İş Bankası tarafından değerlendirilecektir. Ödül MaxiPuan yüklenmesinde Bankamız kayıtları esas alınacaktır. Aynı gün yapılan alışverişlerden sadece ilki kampanya kapsamında değerlendirilecektir. K.K.T.C. harcamaları, Maximum işyerleri dışında yapılan alışverişler ve internet üzerinden yapılan alışverişler kampanyaya dahildir. Nakit benzeri, casino, kumarhane, online bahis ve kumar sitelerinde yapılacak işlemler dikkate alınmayacaktır. Yurt dışı harcamaları, farklı ürün kategorilerinde satış yapan sanal mağazalardan ve/veya e-ticaret sitelerinden yapılacak alışverişler kampanyaya dahil değildir. Bu kampanya diğer kampanya, çek, indirim ve promosyonlarla birleştirilemez. Kampanya dönemi içerisinde gerçekleştirilen alışverişlerin iptal edilmesi veya satın alınan ürünlerin iade edilmesi durumunda, Maxipuan yüklenmeyecek veya yüklenen MaxiPuan’lar geri alınacaktır.
+Türkiye İş Bankası, kampanyayı herhangi bir zamanda sonlandırma ve kampanya şartlarında değişiklik yapma hakkını saklı tutar.
+X Kapat",3e3378d61923a08628bd857e47fea9fc926f39d0d3c4230d1c2c8e8b068350d7,2026-06-15T08:19:08.738452+00:00,detail_page_fetch,Beklemede,Good,2026-06-01,Yüksek,campaign_start_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-06-01,Kampanya,True,Kampanya veya müşteri teklifi sinyali içeriyor.,,,2026-06-01,2026-06-30,Kampanya Başlangıç Tarihi,2026-06-01,Kampanya başlangıç tarihi bulundu; recency için kullanıldı.,True,Kampanya tarih aralığı bulundu.,,
+RI-7d2f863550f3,DOC-REG-006-20260610124523,REG-006,Tier 1,is_bankasi,İş Bankası,İş Bankası Duyurular,Resmi Basın Bülteni Sayfası,https://www.isbank.com.tr/duyurular,Maximum’un 25.Yılına Özel Ticari Kredi Kartlara Seçili Sektörlerde Taksit Fırsatı! | Türkiye İş Bankası A.Ş.,30 Haziran 2026,https://www.isbank.com.tr/kampanyalar/maximumun-25-yilina-ozel-ticari-kredi-kartlara-secili-sektorlerde-taksit-firsati,"Ana Sayfa
+Kampanyalar
+> Ticari Kredi Kartı Kampanyaları
+Maximum’un 25.Yılına Özel Ticari Kredi Kartlara Seçili Sektörlerde 2 Taksit Fırsatı!
+Maximum’un 25.Yılına Özel 1 - 30 Haziran tarihleri arasında ticari kredi kartı ile 100.000 TL ve üzeri, toplamda 250.000 TL'ye kadar gıda, elektronik-beyaz eşya, cep telefonu, giyim, mobilya, yapı-inşaat, araç bakım sektörlerinde yapacakları peşin alışverişleri İşCep uygulamasında faizsiz ve masrafsız olarak sonradan 2 ay vade ile taksitlendirme fırsatı!
+Ticari Kredi Kartı Başvurusu
+Kampanya detayları:
+Ticari kredi kartı ile 1 - 30 Haziran 2026 tarihleri arasında 100.000 TL ve üzeri, toplamda 250.000 TL'ye kadar gıda, elektronik-beyaz eşya, cep telefonu, giyim, mobilya, yapı-inşaat, araç bakım sektörlerinde yapacakları peşin alışverişleri İşCep uygulamasından faizsiz ve masrafsız olarak sonradan 2 ay vade ile taksitlendirebilecektir.
+Kampanya geçerlilik tarihi:
+1 - 30 Haziran 2026
+Kampanyaya dahil olan kartlar:
+Maximum ve Maximiles ticari kredi kartlar
+Kampanyaya Dahil Olmayan Kartlar:
+İş Bankası Vergi Kart, Maximum Business Aidatsız kartlar, Tacir Olmayan Tüzel Kişilerin Kredi Kartları, KGF Nefes Kredisi , KOSGEB ve Turizm Destek Kredisi kapsamında tahsis edilen Ticari Kredi Kartları, Maximum Business+ ve Bayi Kartlar, İmece Kartlar, Ticari Bankamatik Kartlar, Bireysel kredi kartları ve Bireysel Bankamatik Kartlar
+Kampanyaya dahil olan işlemler:
+Ticari kredi kartları ile yapılan 100.000 TL ve üzeri, toplamda 250.000 TL'ye kadar gıda, elektronik-beyaz eşya, cep telefonu, giyim, mobilya, yapı-inşaat, araç bakım sektörlerinde yapılacak peşin alışverişlerin İşCep uygulamasında sonradan 2 ay vade ile taksitlendirilmesi
+Kampanya dönemi boyunca yapacağınız işlem bazında veya toplamda 250.000 TL sınırını aşan taksitlendirme işlemlerinde yürürlükte olan faiz oranı ve ücretler kullanılmaya devam edilecektir.
+Ticari Kredi Kartı Başvuru Kanalları:
+İşCep, Şubelerimiz
+Peşin alışverişlerinizi sonradan taksitlendirme işlemlerinizi İşCep’ten hemen yapabilirsiniz.
+Kampanya kapsamında sonradan taksitlendirme talebinizi;
+İşCep > Kartlarım > Harcama Taksitlendirme/Erteleme
+seçeneği seçerek iletebilirsiniz.
+Ek koşullar:
+- 30 Haziran 2026 tarihleri arasında ticari kredi kartı ile yapılan
+100.000 TL ve üzeri, toplamda 250.000 TL'ye kadar yapılacak peşin alışverişleri İşCep uygulamasında faizsiz ve masrafsız olarak 2 ay vade ile sonradan taksitlendirebilecektir.
+Kampanya dönemi boyunca yapacağınız işlem bazında veya toplamda 250.000 TL sınırını aşan taksitlendirme işlemlerinde yürürlükte olan faiz oranı ve ücretler kullanılmaya devam edilecektir. Kampanya kapsamında 250.000 TL'yi aşan işlemlerde kısmi olarak faizsiz taksitlendirme yapılamamaktadır. Güncel ürün ve hizmet ücretlerine
+buradan​
+ulaşabilirsiniz.
+Kampanya sadece gıda, elektronik-beyaz eşya, cep telefonu, giyim, mobilya, yapı-inşaat, araç bakım sektörlerinde yapılan alışverişlerde geçerlidir. Bu sektörler dışında yapılacak sonradan taksitlendirme işlemlerinde yürürlükte olan faiz oranı ve ücretler kullanılmaya devam edilecektir.
+Sonradan taksitlendirme talebinizi, alışverişinizi takip eden iş günü ve alışverişi gerçekleştirdiğiniz kredi kartınızın hesap kesim tarihine kadar iletmeniz gerekmektedir. Sonradan taksitlendirme, peşin alışveriş işlem tarihini izleyen ilk hesap kesim tarihine kadar yapılabilmekte olup, söz konusu tarihe kadar dönem içi hareketlerine yansımayan işlemler sonradan taksitlendirilemeyecektir. 1 - 30 Haziran 2026 tarihleri arasında yapacağınız peşin işlemlerinizi hesap kesim tarihinden önce olmak kaydı ile kampanya kapsamında sonradan taksitlendirebileceğiniz son tarih 05.07.2026'dır.
+Sonradan taksitlendirme işlemi yapılan kredi kartının hesap kesim tarihi, ancak son taksit ödendikten sonra değiştirilebilmektedir. Talebiniz, alışveriş tutarının ilgili kredi kartınıza borç kaydedilmesinden sonra gerçekleştirilebilmektedir. Bu süreç; İş Bankası POS cihazları üzerinden gerçekleştirilen alışverişler için en erken takip eden gün, başka Banka POS cihazları üzerinden gerçekleştirilen alışverişlerde ise, alışverişiniz bankalararası takas sistemi aracılığıyla kartınıza borç kaydedileceğinden, alışveriş tarihini takip eden 2 iş gününü bulabilmektedir. Talebinizi bu süre sonunda iletmeniz halinde işleminiz gerçekleştirilebilecektir.
+Kampanya İşCep kanalına özel olup ticari kredi kartınız ile yapılan peşin alışverişlerin İşCep dışındaki kanallardan sonradan taksitlendirilmesi işlemlerinde yürürlükte olan faiz oranı ve ücretler kullanılmaya devam edilecektir.
+Sonradan taksitlendirme işlemlerinde 3 - 18 ay arası vade seçenekleri kampanya kapsamında değildir, 3 - 18 ay arası vade seçeneklerinde sonradan taksitlendirme işlemlerinde yürürlükte olan faiz oranı ve ücretler kullanılmaya devam edilecektir.
+Banka kayıtlarında gıda, elektronik-beyaz eşya, cep telefonu, giyim, mobilya, yapı-inşaat, araç bakım sektörleri altına tanımlı listedeki
+MCC koduna
+sahip üye işyerlerinden yapacağınız alışverişler kampanyaya dahildir.
+Türkiye İş Bankası, kampanyayı herhangi bir zamanda sonlandırma ve kampanya şartlarında değişiklik yapma hakkını saklı tutar. Bu durumda katılımcılar hiçbir hak iddia etmeyeceklerini kabul eder.
+X Kapat",b1b58485b79c7e57de0a13c09676b5d75cff2244c1021d0503448344e86af346,2026-06-15T08:19:12.153212+00:00,detail_page_fetch,İlgili,Good,2026-06-01,Yüksek,campaign_start_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-06-01,Kampanya,True,Kampanya veya müşteri teklifi sinyali içeriyor.,,,2026-06-01,2026-06-30,Kampanya Başlangıç Tarihi,2026-06-01,Kampanya başlangıç tarihi bulundu; recency için kullanıldı.,True,Kampanya tarih aralığı bulundu.,,
+RI-614fd1462ddb,DOC-REG-006-20260610124523,REG-006,Tier 1,is_bankasi,İş Bankası,İş Bankası Duyurular,Resmi Basın Bülteni Sayfası,https://www.isbank.com.tr/duyurular,Ticari Bankamatik Kartınız ile Yapacağınız Harcamalara MaxiPuan Fırsatı! | Türkiye İş Bankası A.Ş.,30 Haziran 2026,https://www.isbank.com.tr/kampanyalar/ticari-bankamatik-kartiniz-ile-yapacaginiz-harcamalara-maxipuan-kampanyasi,"Ana Sayfa
+Kampanyalar
+> Bankamatik Kartı Kampanyaları
+Maximum’un 25.Yılına Özel Ticari Bankamatik Kartınız ile Yapacağınız Harcamalara 2.500 TL’ye Varan MaxiPuan
+İşCep Ticari’den kampanyaya katılın, 1 – 30 Haziran 2026 tarihleri arasında Ticari Bankamatik Kartları ile tek seferde ve farklı günlerde yapacağınız 1.000 TL ve üzeri her harcamanız için 100 TL, toplamda 2.500 TL MaxiPuan kazanın!
+Kampanyaya katılmak için: İşCep Ticari > Kampanyalar > Kart Fırsatları bölümünden ilgili kampanyadaki
+“KATIL”
+butonuna tıklamanız yeterlidir. Katılımınızı kampanya dönemi içinde dilediğiniz zaman (alışverişinizden önce veya sonra) yapabilirsiniz.
+Uygulamayı telefonunuza indirin
+İşCep Ticari
+Kampanya geçerlilik tarihi:
+1 – 30 Haziran 2026
+Kampanyaya dâhil olan kartlar:
+İş Bankası Ticari Bankamatik Kartları
+Kampanyaya dâhil olmayan kartlar ve işlemler:
+Bayi Kartlar, İmece Kartlar, Tarımsal Ürün Kartı (TMO), ürün iptal ve iade işlemleri, Maximum Fırsat ve MaxiPuan kullanılarak yapılan alışverişler kampanyaya dahil değildir.
+Ödül kullanımı:
+MaxiPuan’larınız 10 Temmuz 2026 tarihinde kullanıma açık, puan kullanımına uygun, Ticari Bankamatik kartınıza yüklenecektir. MaxiPuan’ların son kullanma tarihi 31 Ağustos 2026’dır. Kampanya, kart bazında değil, müşteri bazındadır. Kampanya kapsamında tek seferde ve farklı günlerde yapılacak 1.000 TL ve üzeri her harcamanız için 100’er TL, toplamda 2.500 TL MaxiPuan hediye edilecektir. Bir müşteri kampanyadan bir kere yararlanabilir ve en fazla 2.500 TL MaxiPuan kazanabilir.
+Ek Koşullar:
+Kampanyaya ilişkin iletilen katılım talepleri İş Bankası tarafından değerlendirilecektir. Ödül MaxiPuan yüklenmesinde Bankamız kayıtları esas alınacaktır. Aynı gün yapılan alışverişlerden sadece ilki kampanya kapsamında değerlendirilecektir. K.K.T.C. harcamaları, Maximum işyerleri dışında yapılan alışverişler ve internet üzerinden yapılan alışverişler kampanyaya dahildir. Nakit benzeri, casino, kumarhane, online bahis ve kumar sitelerinde yapılacak işlemler ve toptan alım olduğu değerlendirilen işlemler dikkate alınmayacaktır. Yurt dışı harcamaları, farklı ürün kategorilerinde satış yapan sanal mağazalardan ve/veya e-ticaret sitelerinden yapılacak alışverişler kampanyaya dahil değildir. Kampanya dönemi içerisinde gerçekleştirilen alışverişlerin iptal edilmesi veya satın alınan ürünlerin iade edilmesi durumunda, Maxipuan yüklenmeyecek veya yüklenen MaxiPuan’lar geri alınacaktır. Bu kampanya diğer kampanya, çek, indirim ve promosyonlarla birleştirilemez. İş Bankası kampanyayı durdurma veya kampanya koşullarını değiştirme hakkına sahiptir.
+X Kapat",10338afa2c1431b79f23fd86ef0f58dffadb8c2809050664d8109b8823a5a073,2026-06-15T08:19:16.772204+00:00,detail_page_fetch,Beklemede,Good,2026-06-01,Yüksek,campaign_start_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-06-01,Kampanya,True,Kampanya veya müşteri teklifi sinyali içeriyor.,,,2026-06-01,2026-06-30,Kampanya Başlangıç Tarihi,2026-06-01,Kampanya başlangıç tarihi bulundu; recency için kullanıldı.,True,Kampanya tarih aralığı bulundu.,,
+RI-456ca7232153,DOC-REG-006-20260610124523,REG-006,Tier 1,is_bankasi,İş Bankası,İş Bankası Duyurular,Resmi Basın Bülteni Sayfası,https://www.isbank.com.tr/duyurular,Ticari Kredi Kartları ile Yurt Dışı Harcamalara MaxiPuan Fırsatı! | Türkiye İş Bankası A.Ş.,30 Haziran 2026,https://www.isbank.com.tr/kampanyalar/ticari-kredi-karti-ile-yurt-disi-harcamalara-maxipuan-firsati,"Ana Sayfa
+Kampanyalar
+> Ticari Kredi Kartı Kampanyaları
+Maximum'un 25. Yılına Özel Ticari Kartlar ile Yapacağınız Yurt Dışı Harcamalarınıza 2.500 TL’ye Varan MaxiPuan!
+İşCep Ticari'den kampanyaya katılın, 1 – 30 Haziran 2026 tarihleri arasında ticari kredi kartları ve ticari Bankamatik kartı ile yurt dışı online ve fiziki alışverişlerinizde her 2.500 TL ve üzeri harcamanıza %5, toplamda 2.500 TL MaxiPuan kazanın!
+Ticari Kredi Kartı Başvurusu
+Kampanyaya katılmak için:
+İşCep Ticari > Kampanyalar > Kart Fırsatları bölümünden ilgili kampanyadaki
+“KATIL”
+butonuna tıklamanız yeterlidir. Katılımınızı kampanya dönemi içinde dilediğiniz zaman (alışverişinizden önce veya sonra) yapabilirsiniz.
+Uygulamayı telefonunuza indirin:
+İşCep Ticari
+Kampanya geçerlilik tarihi:
+1 – 30 Haziran 2026
+Kampanyaya dâhil olan kartlar:
+İş Bankası Ticari Kredi Kartları ve Ticari Bankamatik Kartları (İş Bankası Vergi Kart, Maximum Business Aidatsız Kart, KOSGEB Kart, KGF Kredileri ve Turizm Destek Kredisi kapsamında tahsis edilen ticari kredi kartları, Maximum Business + Kartlar, İmece Kartlar, Tarım Kartlar ve Bayi Kartlar hariç)
+Kampanyaya dâhil olmayan kartlar ve işlemler:
+Yurt içi ve K.K.T.C.’de yapılan fiziki ve online alışverişler, İş Bankası Maximum Business Aidatsız Kart, İş Bankası Vergi Kart, KOSGEB Kart, KGF Kredileri kapsamında tahsis edilen ticari kredi kartları, Maximum Business + Kartlar, Bayi Kartlar, İmece Kartlar, İş Bankası bireysel kredi kartları, İş Bankası Bireysel Bankamatik Kartları, Aidatsız Kartlar, İş’te Üniversiteli Aidatsız Kredi Kartı, ürün iptal ve iade işlemleri, Maximum Fırsat ve MaxiPuan kullanılarak yapılan alışverişler kampanyaya dahil değildir.
+Ödül kullanımı:
+MaxiPuan’larınız 10 Temmuz 2026 tarihinde kullanıma açık ve puan kullanımına uygun ticari kartınıza yüklenecektir. Kampanya kapsamında kullanılan kredi kartının Maximiles özellikli kredi kartı olması durumunda ise MaxiPuan, MaxiMil’e dönüştürülebilir MaxiPuan olarak yüklenecek ve tercihe bağlı olarak MaxiPuan veya MaxiMil olarak kullanılabilecektir. MaxiPuan’ların son kullanma tarihi 31 Ağustos 2026’dır. Kampanya, kart bazında değil, müşteri bazındadır. Bir müşteri kampanyadan bir kere yararlanabilir ve işlem bazında azami 500 TL, aylık azami müşteri bazında 2.500 TL MaxiPuan kazanabilir.
+Ek Koşullar:
+Kampanyaya ilişkin iletilen katılım talepleri İş Bankası tarafından değerlendirilecektir. Ödül MaxiPuan yüklenmesinde Bankamız kayıtları esas alınacaktır. Aynı gün yapılan alışverişlerden sadece ilki kampanya kapsamında değerlendirilecektir. Maximum işyerleri dışında yapılan alışverişler kampanyaya dahildir. Nakit benzeri, casino, kumarhane, online bahis ve kumar sitelerinde yapılacak işlemler dikkate alınmayacaktır. Yurt içi ve K.K.T.C. harcamaları, farklı ürün kategorilerinde satış yapan sanal mağazalardan ve/veya e-ticaret sitelerinden yapılacak alışverişler kampanyaya dahil değildir. Bu kampanya diğer kampanya, çek, indirim ve promosyonlarla birleştirilemez. Kampanya dönemi içerisinde gerçekleştirilen alışverişlerin iptal edilmesi veya satın alınan ürünlerin iade edilmesi durumunda, Maxipuan yüklenmeyecek veya yüklenen MaxiPuan’lar geri alınacaktır.
+Türkiye İş Bankası kampanyayı durdurma veya kampanya koşullarını değiştirme hakkına sahiptir.
+X Kapat",106cbd40bcdbcbaea7bde01e0945f0875fea6216f635e8e9a66da6d669569662,2026-06-15T08:19:21.373383+00:00,detail_page_fetch,Beklemede,Good,2026-06-01,Yüksek,campaign_start_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-06-01,Kampanya,True,Kampanya veya müşteri teklifi sinyali içeriyor.,,,2026-06-01,2026-06-30,Kampanya Başlangıç Tarihi,2026-06-01,Kampanya başlangıç tarihi bulundu; recency için kullanıldı.,True,Kampanya tarih aralığı bulundu.,,
+RI-ff12f0e27583,DOC-REG-006-20260610124523,REG-006,Tier 1,is_bankasi,İş Bankası,İş Bankası Duyurular,Resmi Basın Bülteni Sayfası,https://www.isbank.com.tr/duyurular,Suya Değer Kredisi Kampanyası | Türkiye İş Bankası A.Ş.,30.06.2026,https://www.isbank.com.tr/kampanyalar/suya-deger-kredisi,"Ana Sayfa
+Kampanyalar
+> Çevreye Duyarlı Kredi Kampanyaları
+Suya Değer Kredisi Kampanyası
+İş Bankası atık su arıtma ve atık su geri kazanım tesisi yatırımı yapmak veya mevcut tesislerini iyileştirmek isteyen firmalara finansman desteği sunuyor.
+Suya Değer Kredisi ile son dönemlerde yaşanan deniz kirliliği vakalarının azaltılması, önlenmesi ve denizlerimizin korunması amacıyla atık su arıtma, atık su geri kazanım tesisi yatırımı yapmak veya var olan bu tesislerini iyileştirmek isteyen işletmelerin yatırımlarına finansman desteği sağlıyoruz.
+Suya Değer Kredisi’nden üretim süreçleri neticesinde atık su oluşan ve su kaynaklarını verimli kullanmak isteyen tüm ticari müşterilerimiz yararlanabilecektir.
+Bir yatırımcı, yatırım harcamalarının en fazla %70’i oranında kredi kullanabilir.
+Kredi kullandırımı için fatura ibrazı gerekmektedir.
+Krediye konu yatırım ve harcamaların faturaları Şubelerimize ibraz edilmelidir. ​
+Kredi talepleri için son karar İş Bankası tarafından verilecektir. İş Bankası, kredi talebini reddetme ya da gerekli gördüğü takdirde farklı şartlarda kredi tahsis etme ve teminat talep etme hakkına sahiptir.
+Daha fazla bilgi ve detaylar için sizleri en yakın İş Bankası
+şubemize​
+​ bekliyoruz. ​
+X Kapat",dd9f08411364418d9f26fcaa7c84909aef96e8b2526c8e10320518f8a0ae64a8,2026-06-15T08:19:24.277237+00:00,detail_page_fetch,İlgili,Good,2026-06-30,Yüksek,campaign_start_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-06-30,Kampanya,True,Kampanya veya müşteri teklifi sinyali içeriyor.,,,2026-06-30,,Kampanya Başlangıç Tarihi,2026-06-30,Kampanya başlangıç tarihi bulundu; recency için kullanıldı.,False,,,
+RI-354499460a8c,DOC-REG-006-20260610124523,REG-006,Tier 1,is_bankasi,İş Bankası,İş Bankası Duyurular,Resmi Basın Bülteni Sayfası,https://www.isbank.com.tr/duyurular,Paygo SP630 ECR Mobil ÖKC ve Hugin Tiger T300 Mobil ÖKC Kampanyası | Türkiye İş Bankası A.Ş.,31.12.2026,https://www.isbank.com.tr/kampanyalar/hugin-paygo-mobil-okc-kampanyasi,"Ana Sayfa
+Kampanyalar
+> POS/Yazarkasa/ÖKC Kampanyaları
+Ingenico MOVE/5000 F, Paygo SP630 ECR 4G Mobil ÖKC ve Hugin Tiger T300 4G Mobil ÖKC Kampanyası
+Kampanya kapsamında; Ingenico MOVE/5000 F marka mobil ÖKC'lere 14.500 TL'ye, Hugin Tiger T300 4G marka mobil ÖKC’lere 5.500 TL’ye ve Paygo SP630 ECR 4G ÖKC’lere 6.000 TL’ye vade farksız 9 taksit imkanıyla sahip olabilirsiniz.
+Şube ve Bankamatikler
+Kampanya Detayları:
+Kampanya avantajından faydalanılabilmesi için Bankamız Şubeleri aracılığı ile satın alınacak; Ingenico MOVE/5000 F, Paygo SP630 ECR 4G ve Hugin Tiger T300 4G Mobil ÖKC Yazarkasa POS (ÖKC) üzerinde Bankamız POS uygulamasının kullanılması gerekmektedir.
+Taksit avantajının geçerli olabilmesi için satın alımlarda Bankamız kredi kartının kullanılması gerekmektedir. Kampanya kapsamındaki cihaz satışları şubelerimiz aracılığıyla İŞ MERKEZLERİ YÖNETİM VE İŞLETİM A.Ş. (İŞMER A.Ş) tarafından yapılmakta olup satıcı firma İŞMER A.Ş.’nin stoklarıyla sınırlıdır.
+Ingenico, Paygo, Hugin ve İş Bankası dilediği zaman kampanya şartlarında değişiklik yapma ve kampanyayı sona erdirme hakkına sahiptir.​
+X Kapat",5c1dcacc29d978a177c31669392da6706c30ca4a92a9e9361e6f9bb3f07684ee,2026-06-15T08:19:25.422325+00:00,detail_page_fetch,İlgili,Good,2026-12-31,Yüksek,campaign_start_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-12-31,Kampanya,True,Kampanya veya müşteri teklifi sinyali içeriyor.,,,2026-12-31,,Kampanya Başlangıç Tarihi,2026-12-31,Kampanya başlangıç tarihi bulundu; recency için kullanıldı.,False,,,
+RI-8482ec58947a,DOC-REG-011-20260615082134,REG-011,Tier 1,yapi_kredi,Yapı Kredi,Yapı Kredi KOBİ Kampanyaları,Resmi Kampanya Sayfası,https://www.yapikredi.com.tr/kampanyalar/kategori/kobi/,Yapı Kredi'den firmalara özel 48.000 TL değerinde hoş geldin paketi! | Kampanyalar | Yapı Kredi,15.06.2026,https://www.yapikredi.com.tr/kampanyalar/detay/253386,"Şu anda
+sayfasına yönlendiriliyorsunuz. Devam etmek istiyor musunuz?
+Evet
+Hayır
+Firmalara Özel Hoş Geldin Paketi Yapı Kredi'de!
+Yapı Kredi'den firmalara özel 48.000 TL değerinde hoş geldin paketi!
+Yapı Kredi Mobil'den müşteri olup ticari üyelik açılışı yapın, EFT/havale, çek tahsilatı gibi birçok işlemin ücretsiz sunulduğu 48.000 TL değerindeki hoş geldin paketinden faydalanın.
+Kampanyaya katılmak ve hem bireysel hem firmanızın bankacılık işlemlerini kolayca gerçekleştirmek için Yapı Kredili Ol butonuna tıklayarak Yapı Kredi Mobil’i akıllı telefonunuza anında indirebilirsiniz.
+YAPI KREDİLİ OL
+Kampanyadan Yapı Kredi Mobil’den ilk defa müşteri olan ve sonrasında Yapı Kredi Mobil’den ticari üyelik açılışını tamamlayan şahıs işletmesi sahibi müşteriler ve limited şirketler yararlanabilecektir.
+Kampanyadan yararlanabilmek için kullanıcılar Yapı Kredi Mobil’de yer alan “Tüzel Müşteri Ol” adımından ilk defa Yapı Kredili olmalıdır.
+Yukarıdaki adımlardan ilerleyerek hesap açılışını tamamlayan müşteriler Yapı Kredi Mobil’e devam ettikten sonra ticari üyelik açılışı için yönlendirilecektir.
+Müşterilerimiz ticari üyelik açılışını tamamladıktan sonraki günden itibaren 1 adet tl çek karnesi, 50 adet başka banka çek tahsilatı, 15 adet dış ticaret işlemi, 15 adet swift haberleşme masrafı ve 10 adet gelen döviz havale 6 ay boyunca ücretsiz olarak sunulacaktır. Eft ve havale işlemleri ise 1 yıl boyunca ücretsiz olacaktır.
+Yapı Kredi Mobil üzerinden Yapı Kredi müşterisi olunduktan sonra ticari kredi kartı başvurusunda bulunan müşterilerin, başvurusu Yapı Kredi tarafından değerlendirildikten sonra onaylanması ve kartının kullanıma açılması durumunda kampanyadan yararlanabilecektir.
+Kampanyadan ilgili firmanın yalnızca bir kez faydalanabilme hakkı bulunmaktadır.
+Geç ve mesai dışı saatlerinde yapılan EFT / FAST işlemleri kampanya kapsamı dışındadır.
+Yapı Kredi, kampanyayı durdurma ve kampanyada değişiklik yapma hakkını saklı tutar.
+Bu sayfadaki bilgiler size yardımcı oldu mu?
+Biraz
+Geri bildiriminiz için teşekkür ederiz.
+İşleminiz yapılamadı.
+PDF dosyalarını okumak için bilgisayarınızda Adobe Acrobat Reader kurulu olmalıdır.
+Bilgisayarınıza Adobe Acrobat Reader kurmak için
+tıklayınız
+Yardıma mı ihtiyacınız var?
+Müşteri temsilcisine bağlanarak hemen destek alabilirsiniz.
+ONLINE HİZMET
+Bu alanda paylaşılan BIST 30 ve BIST100 endeks bilgileri, FOREKS Bilgi İletişim
+Hizmetleri
+A.Ş. tarafından sağlanmaktadır. Söz konusu veriler Borsa İstanbul A.Ş. ve FOREKS
+Bilgi İletişim Hizmetleri A.Ş. tarafından Yapı Kredi Bankası A.Ş.’ne 15 dakika gecikmeli
+olarak verilmektedir. Söz konusu süre uzayabilir ve gecikme nedeniyle fiyatlar güncel
+fiyatları yansıtmayabilir. Bunun dışındaki yatırım ürünlerinde ise Yapı ve Kredi
+Bankası A.Ş. sisteminde yer alan işlem fiyatları kullanılmaktadır. Verilen bilgiler
+SPK Yatırım Hizmetleri Tebliği’nin 80. maddesi uyarınca finansal bilgi sunulması
+kapsamında yatırımcının yatırım aracı bazında fikir edinmesi amacıyla paylaşılmıştır.
+Finansal bilgi, sermaye piyasası araçları hakkında yönlendirici nitelikte olmayan
+bilgi olup, finansal bilginin sunulması yatırım danışmanlığı faaliyeti ya da genel
+yatırım tavsiyesi sunulması kapsamında sayılmamaktadır. Hiçbir şekilde herhangi
+bir yatırım aracının alımı veya satılması için teklif, herhangi bir yatırım aracının
+alım-satım önerisi veya aracılık teklifi olarak değerlendirilmemelidir. Bu nedenle,
+sadece burada yer alan bilgilere dayanılarak yatırım kararı verilmesi beklentilerinize
+uygun sonuçlar doğurmayabilir. Ayrıca Yapı Kredi Bankası A.Ş. söz konusu işlem fiyatlarını
+oluşturmak için kulandığı Foreks Bilgi İletişim Hizmetleri A.Ş. tarafından sağlanan
+bilgilerin tam veya doğru olmamasından, bu kaynakların kullanılması nedeni ile ortaya
+çıkabilecek yanlışlık,hata ve eksikliklerden kaynaklı doğabilecek zararlardan Yapı
+ve Kredi Bankası A.Ş. ve çalışanları sorumlu değildir. Bu alanda paylaşılan bilgilerin
+tümü veya bir kısmı Yapı ve Kredi Bankası A.Ş.’nin yazılı izni olmadan çoğaltılamaz,
+yayınlanamaz veya üçüncü kişilere gösterilemez.
+Tarih
+15.06.2026
+Kredi Tutarı
+Döviz Cinsi
+Kredi Taksit Sayısı
+Faiz Oranı (Aylık)
+KKDF Oranı
+BSMV Oranı
+İlk Taksit Tutarı
+Aylık Maliyet Oranı
+Yıllık Maliyet Oranı
+Müşteri Tipi
+Kredi Türü
+Kampanya
+Toplam Geri Ödeme Tutarı
+Masraf ve Komisyonlar
+* Ödemesiz dönemlerin faizi, ilk taksit tutarına yansıtılmaktadır.
+Taksit No
+Taksit Tarihi
+Taksit Tutarı
+Taksit İçindeki Anapara
+Taksit İçindeki Faiz
+KKDF
+BSMV
+Kalan Anapara
+Bu ödeme planında yer alan faiz oranı, ücret ve komisyon tutarları, tüketicilerin
+bilgi edinmeleri amacıyla ve Bankamızca özel bir yükümlülük içermeksizin, bilgi
+niteliğindedir. Bu ödeme planında yer alan bilgiler Ödeme Planının hazırlandığı
+tarih itibarıyla geçerli değerleri yansıtmaktadır. Örnek ödeme planı oluşturduğunuz
+ürünü Yapı Kredi’den kullanmaya karar verdiğinizde, Bankamızın ilan etmiş olduğu
+güncel faiz, ücret ve komisyon tutarları geçerli olacaktır. Yapı Kredi faiz oranı,
+ücret ve komisyon tutarlarında değişiklik yapma hakkını saklı tutar.
+Bu ödeme planı, seçtiğiniz kredi ürününde sizi bilgilendirmek amacıyla hazırlanmış
+olup, başvurunuza kesin onay taahhüdü içermemektedir. Başvurunuzun kesin onay alması,
+sunacağınız bilgi ve belgeler üzerinden Bankamızca başvurunuza istinaden yapılacak
+değerlendirme sonucunda belirlenecektir.
+Toplam masraflara kredi açılış ücreti ve vergiler dahil edilmiş olup, krediye göre
+farklılık gösterecek olan “sigorta masrafları” bu formda yer alan aylık ve yıllık
+maliyet oranlarına dahil edilmemiştir.
+Bu ödeme planında yer alan faiz oranı, ücret ve komisyon tutarları, Bankamızca özel
+bir yükümlülük içermeksizin tüketicileri bilgilendirme amaçlı oluşturulmuştur. Örnek
+ödeme planında yer alan bilgiler Ödeme Planının hazırlandığı tarih itibarıyla geçerli
+değerleri yansıtmaktadır. Ödeme planı oluşturduğunuz ürünü Yapı Kredi’den kullanmaya
+karar verdiğinizde, Bankamızın ilan etmiş olduğu güncel faiz, ücret ve komisyon
+tutarları geçerli olacaktır. Yapı Kredi faiz oranı, ücret ve komisyon tutarlarında
+değişiklik yapma hakkını saklı tutar.
+Toplam masraflara tahsis, ekspertiz ve ipotek tesis ücreti dahil edilmiş olup, konutun
+özelliğine göre farklılık gösterecek olan “sigorta masrafları” bu formda yer alan
+aylık ve yıllık maliyet oranlarına dahil edilmemiştir.
+Bu ödeme planı, seçtiğiniz eşit taksitli kredi ürününde sizi bilgilendirmek amacıyla
+hazırlanmış olup, başvurunuza kesin onay taahhüdü içermemektedir. Başvurunuzun kesin
+onay alması, sunacağınız bilgi ve belgeler üzerinden Bankamızca başvurunuza istinaden
+yapılacak değerlendirme sonucunda belirlenecektir. Farklı ödeme planlarına sahip
+ürünler için Yapıkredi şubelerinden bilgi alabilirsiniz.
+Toplam masraflara tahsis, ekspertiz ve ipotek tesis ücreti dahil edilmiş olup, işyerinin
+Başvurunuzu dilediğiniz
+Yapı Kredi şubesinden
+yapabilirsiniz.
+Konut Kredisi başvurularınızı İnternet,SMS veya tüm
+Yapı Kredi ATM
+'leri üzerinden kolayca yapabilirsiniz. SMS ile başvurmak
+için
+KONUT (boşluk) TCKN (boşluk) Aylık Net Gelirinizi yazıp 4411’e gönderebilirsiniz.
+Bireysel ihtiyaç kredisi başvurularınızı
+hemen başvur butonuna tıklayarak, internet şubesi, SMS veya tüm
+’leri üzerinden kolayca yapabilirsiniz. SMS ile başvurmak
+için BIREYSEL (Boşluk) TCKN (Boşluk) Aylık Net Gelirinizi yazıp 4411’e gönderebilirsiniz.
+HEMEN BAŞVUR
+EN YAKIN ŞUBE & ATM
+Vade(Ay)
+Aylık Taksit Tutarı
+Faiz Oranı
+2.515,00 TL
+% 0.01790
+Seçiniz
+Geri Ödeme Planını görmek için
+HEMEN
+BAŞVUR
+Yükleniyor...
+Dijitalden Bireysel İhtiyaç Kredisi
+İnternet ve Mobil Şubeyi Tanıyın
+YAPI KREDİLİ OLUN!",6e610060ce12e79f81afeda84b9565feb78ed3c74b9bfa4e2a91e362d9aa6797,2026-06-15T08:24:13.322891+00:00,detail_page_fetch,Beklemede,Good,2026-06-15,Yüksek,campaign_start_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-06-15,Kampanya,True,Kampanya veya müşteri teklifi sinyali içeriyor.,,,2026-06-15,,Kampanya Başlangıç Tarihi,2026-06-15,Kampanya başlangıç tarihi bulundu; recency için kullanıldı.,False,,,
+RI-fa752682107e,DOC-REG-012-20260610125201,REG-012,Tier 1,yapi_kredi,Yapı Kredi,Yapı Kredi Basın Bültenleri,Resmi Basın Bülteni Sayfası,https://www.yapikredi.com.tr/yapi-kredi-hakkinda/basin-bultenleri,"YAPI KREDİ’YE YAKLAŞIK 1,1 MİLYAR DOLARLIK SENDİKASYON KREDİSİ",04.06.2026,https://www.yapikredi.com.tr/medium/file/yapi-krediye-yaklasik-11-milyar-dolarlik-sendikasyon-kredisi_72541/download,"YAPI KREDİ’YE YAKLAŞIK 1,1 MİLYAR DOLARLIK SENDİKASYON KREDİSİ
+Yapı Kredi, uluslararası piyasalardaki güçlü konumunu bir kez daha teyit ederek yaklaşık 1,1 milyar dolar
+tutarında sendikasyon kredisi anlaşması imzaladı. Sendikasyon kredisinin 2 ve 3 yıllık dilimleri Yapı
+Kredi’nin Sürdürülebilir Finans Çerçevesi kapsamında kullandırılacak. 25 ülkeden 49 finansal kurumun
+katılımıyla sağlanan kredi; 255,5 milyon dolar ve 482,25 milyon euro tutarında 367 gün vadeli, 178
+milyon dolar ve 65 milyon euro tutarında 734 gün vadeli, ayrıca 33,5 milyon dolar tutarında 1.101 gün
+vadeli olmak üzere beş ayrı dilimden oluşuyor.
+Sürdürülebilir büyümeyi desteklemeye devam ediyoruz.
+Uluslararası piyasalardan sağlanan yaklaşık 1,1 milyar dolarlık kaynağın Yapı Kredi’ye ve ülkemiz
+ekonomisine duyulan güvenin en somut göstergelerinden biri olduğunu belirten Yapı Kredi CEO’su
+Gökhan Erün , şunları söyledi: “ Yapı Kredi olarak ülkemizin kalkınmasına katkı sağlama hedefiyle
+müşterilerimizin finansman ihtiyaçlarını desteklemeye devam ediyoruz. Böylece ülkemiz ekonomisinin
+gelişimi için kaynaklarımızı çeşitlendirirken uluslararası alan daki öncü rolümüzü daha da
+güçlendiriyoruz. Önümüzdeki dönemde de güçlü bilanço yapımız, etkin risk yönetimimiz ve müşteri
+odaklı yaklaşımımızla ülkemize uzun vadeli kaynak sağlamaya ve ekonomik büyümenin finansmanına
+sürdürülebilir katkıda bulunmaya devam edeceğiz.”
+367 gün vadeli dilimlerin toplam maliyeti dolar ve euro için sırasıyla SOFR + yüzde 1,25 ve Euribor +
+yüzde 1,10 olarak gerçekleşirken, 734 gün vadeli dilimlerin toplam maliyeti dolar ve euro için sırasıyla
+SOFR + yüzde 1,75 ve Euribor + yüzde 1,60 oldu. 1 .101 gün vadeli dolar diliminin toplam maliyeti ise
+SOFR + yüzde 2 olarak belirlendi.",7e0b6ec184a81dd41e39ad94478a9715b9943bc93cd03da165770aea311a1af8,2026-06-15T08:24:13.727944+00:00,detail_page_fetch,İlgisiz,Good,2026-06-04,Yüksek,announcement_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-06-04,İş Birliği,True,"İş birliği, mutabakat veya entegrasyon duyurusu içeriyor.",,2026-06-04,,,Duyuru Tarihi,2026-06-04,Duyuru/basın tarihi bulundu; recency için kullanıldı.,False,,,
+RI-be1d18409d03,DOC-REG-012-20260610125201,REG-012,Tier 1,yapi_kredi,Yapı Kredi,Yapı Kredi Basın Bültenleri,Resmi Basın Bülteni Sayfası,https://www.yapikredi.com.tr/yapi-kredi-hakkinda/basin-bultenleri,YAPI KREDİ 500 MİLYON DOLARLIK İLAVE ANA SERMAYE TAHVİL İHRACINI BAŞARIYLA TAMAMLADI,20.05.2026,https://www.yapikredi.com.tr/medium/file/yapi-kredi-500-milyon-dolarlik-ilave-ana-sermaye-tahvil-ihracini-basariyla-tamamladi_72516/download,"YAPI KREDİ 500 MİLYON DOLARLIK İLAVE ANA SERMAYE TAHVİL
+İHRACINI BAŞARIYLA TAMAMLADI
+Yapı Kredi, uluslararası piyasalarda gerçekleştirdiği 500 milyon dolar tutarındaki İlave Ana Sermaye Tahvil
+(AT1) ihracını başarıyla tamamladı. Banka’nın sermaye tabanını destekleyen işlem, Yapı Kredi’nin güçlü
+finansal yapısına, disiplinli bilanço yönetimine ve Türkiye ekonomisine duyulan uluslararası yatırımcı
+güvenini bir kez daha ortaya koydu.
+Güçlü ve dinamik bilanço yapımıza duyulan güvenin göstergesi
+Yapı Kredi CEO’su Gökhan Erün, gerçekleştirilen tahvil ihracına ilişkin değerlendirmesinde şunları
+söyledi: “Uluslararası piyasalarda başarıyla tamamladığımız 500 milyon dolarlık İlave Ana Sermaye
+Tahvil ihracı, Bankamızın güçlü finansal yapısına ve sürdürülebilir büyüme stratejisine duyulan güvenin
+önemli bir göstergesi oldu. Küresel piyasalardaki dalgalanmalara rağmen yatırımcıların işlemimize
+gösterdiği yoğun ilgi; güçlü ve dinamik bilanço yapımızı, disiplinli risk yönetimi yaklaşımımızı ve uzun
+vadeli değer üretme kapasitemizi bir kez daha teyit etti.
+Yapı Kredi olarak, geçtiğimiz yılın ilk çeyreğinden bu yana uluslararası piyasalardan 6,25 milyar dolar
+tutarında kaynak sağlamayı başardık. Bu başarılı işlemlerle bir yandan sermaye yapımızı desteklerken,
+diğer yandan müşterilerimiz, paydaşlarımız ve ülkemiz ekonomisi için sürdürülebilir değer yaratmaya
+devam ediyoruz.”
+Bankaların Özkaynaklarına İlişkin Yönetmelik’in İlave Ana Sermaye başlıklı 7. maddesi kapsamında
+gerçekleştirilen işlemde; Abu Dhabi Commercial Bank, Citibank, Emirates NBD, First Abu Dhabi Bank, J.P.
+Morgan, Société Générale ve Standard Chartered yetkili bankalar olarak görev aldı.",d5a5001eb8de20b8cf64dcc4eca986eac10825aa79cb3d6e1c647ce5cc2d944e,2026-06-15T08:24:13.986170+00:00,detail_page_fetch,İlgisiz,Good,2026-05-20,Yüksek,announcement_date,True,2026-05-01,Kesim tarihi ve tarih güveni uygun: 2026-05-20,Ürün / Özellik Gelişmesi,True,"Ürün, API, POS, ödeme, tahsilat veya dijital özellik gelişmesi sinyali içeriyor.",,2026-05-20,,,Duyuru Tarihi,2026-05-20,Duyuru/basın tarihi bulundu; recency için kullanıldı.,False,,,

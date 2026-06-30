@@ -1,0 +1,20 @@
+﻿institution_id,feature_name,product_area,availability,description,settlement_notes,pricing_notes,merchant_analytics_available,reconciliation_available,last_updated
+garanti_bbva,Merchant POS,Fiziki POS,Sunuluyor,Established POS acquiring with business banking linkage.,Next-day and relationship-based settlement options.,Tariff and campaign based.,Evet,Evet,2026-06-09
+yapi_kredi,POS and Sanal POS,Çok kanallı üye işyeri edinimi,Sunuluyor,Strong card acquiring footprint across physical and online merchants.,Flexible settlement by merchant agreement.,Commission varies by plan.,Evet,Evet,2026-06-09
+akbank,Akbank POS,Fiziki POS,Sunuluyor,POS proposition integrated with KOBİ bankacılığı products.,Standard settlement cycles.,Campaign based.,Kısmi,Evet,2026-06-09
+is_bankasi,Maximum POS,Fiziki POS,Sunuluyor,Merchant acceptance product linked to card ecosystem.,Standard and accelerated settlement options.,Relationship pricing.,Kısmi,Evet,2026-06-09
+qnb_finansbank,Sanal POS,Sanal POS,Sunuluyor,Online payment acceptance for SME merchants.,Standard payout schedule.,Plan-based commission.,Kısmi,Kısmi,2026-06-09
+iyzico,iyzico Checkout,Sanal POS,Sunuluyor,"Online checkout, marketplace payments and payment links.",Payout schedule depends on merchant settings.,Published ranges and merchant-specific pricing.,Evet,Evet,2026-06-09
+paytr,PayTR Sanal POS,Sanal POS,Sunuluyor,Fast online payment collection and installment options.,Standard scheduled settlement.,Commission and installment based.,Kısmi,Evet,2026-06-09
+moka,Moka Sanal POS,Sanal POS,Sunuluyor,SME-oriented Sanal POS and payment collection.,Scheduled settlement.,Merchant-specific pricing.,Kısmi,Evet,2026-06-09
+sipay,Sipay POS API,API ödemeleri,Sunuluyor,"Payment API, Sanal POS and wallet capabilities.",Configurable by agreement.,Merchant-specific pricing.,Evet,Evet,2026-06-09
+param,Param POS,Sanal POS,Sunuluyor,"Sanal POS, cards and payment services.",Scheduled settlement.,Merchant-specific pricing.,Kısmi,Kısmi,2026-06-09
+paycell,Paycell QR,QR ödemeleri,Sunuluyor,QR and wallet-based payment acceptance.,Wallet and merchant cycle dependent.,Partner pricing.,Kısmi,Kısmi,2026-06-09
+visa,Acceptance services,Kart Şeması,İş ortağı üzerinden,"Global acceptance, tokenization and SME enablement programs.",Issuer/acquirer dependent.,Scheme economics.,Evet,Evet,2026-06-09
+mastercard,Acceptance and services,Kart Şeması,İş ortağı üzerinden,Global acceptance network plus data and cyber services.,Issuer/acquirer dependent.,Scheme economics.,Evet,Evet,2026-06-09
+troy,Domestic card acceptance,Kart Şeması,İş ortağı üzerinden,Yerli Şema acceptance for Turkish merchants.,Issuer/acquirer dependent.,Yerli Şema economics.,Kısmi,Kısmi,2026-06-09
+stripe,Stripe Payments,API ödemeleri,Sunuluyor,Developer-first online payments with broad method coverage.,Configurable payout schedule.,Transparent published pricing in many markets.,Evet,Evet,2026-06-09
+adyen,Unified Commerce,Çok kanallı üye işyeri edinimi,Sunuluyor,"Single platform for online, in-store and marketplace payments.",İleri settlement and reconciliation.,Enterprise negotiated pricing.,Evet,Evet,2026-06-09
+square,Square POS,SoftPOS ve POS,Sunuluyor,"POS, payment acceptance and merchant operations in one app.",Fast payout options in eligible markets.,Simple published pricing.,Evet,Evet,2026-06-09
+sumup,SumUp Card Reader,Mobil POS,Sunuluyor,Simple card reader and mobile merchant acquiring.,Scheduled settlement.,Simple Halka Açık pricing.,Kısmi,Kısmi,2026-06-09
+shopify_payments,Shopify Payments,E-ticaret üye işyeri edinimi,Sunuluyor,Native checkout and merchant payout inside commerce platform.,Platform payout schedule.,Plan and market based pricing.,Evet,Evet,2026-06-09

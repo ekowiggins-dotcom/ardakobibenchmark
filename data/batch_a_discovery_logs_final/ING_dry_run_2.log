@@ -1,0 +1,49 @@
+
+CANDIDATE REPORT
+source_id: REG-083
+source_name: ING Basın Bültenleri 2026
+source_url: https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2026
+total links found: 116
+candidate links found: 6
+- score=30 | title=ING’den KOBİ’lere masrafsız bankacılık desteği | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGden_KOBIlere_masrafsiz_bankacilik_destegi.pdf | reason=ing_press_pdf_card
+- score=30 | title=ING’nin araştırmasına göre masrafsız bankacılık temel beklenti haline geldi | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGnin_arastirmasina_gore_masrafsiz_bankacilik_temel_beklenti_haline_geldi.pdf | reason=ing_press_pdf_card
+- score=30 | title=Masrafsız bankacılıkta öncü adım: ING’de sonsuza kadar masraf yok | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGde_sonsuza_kadar_masraf_yok.pdf | reason=ing_press_pdf_card
+- score=30 | title=Dijital Öğretmenler Projesi yenilendi: Daha geniş etki alanı, güçlü yapı ve zengin içerik | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_DOP_BB_Subat2025.pdf | reason=ing_press_pdf_card
+- score=30 | title=ING Türkiye'den dijital altyapı dönüşümü | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_Turkiye'den_dijital_altyapi_donusumu.pdf | reason=ing_press_pdf_card
+- score=30 | title=ING Leasing’den 500 milyon TL’lik sermaye artışı: Sanayi dönüşümüne güçlü destek | url=https://www.ing.com.tr/F/Documents/INGLeasing_SermayeArtisi_2026.pdf | reason=ing_press_pdf_card
+2026-06-25 15:11:07,288 INFO Documents considered: 1
+2026-06-25 15:11:07,288 INFO Recency cutoff: 2026-05-01
+2026-06-25 15:11:07,288 INFO Allow undated: False
+2026-06-25 15:11:07,288 INFO Allow low date confidence: False
+2026-06-25 15:11:07,288 INFO Allow end-date recency: False
+2026-06-25 15:11:07,299 INFO Extracted item RI-b461fe1c2787 | Medium | ING’den KOBİ’lere masrafsız bankacılık desteği
+2026-06-25 15:11:07,301 INFO Extracted item RI-11a75c9dc055 | Medium | ING’nin araştırmasına göre masrafsız bankacılık temel beklenti haline geldi
+2026-06-25 15:11:07,302 INFO Rejected candidate | Kesim tarihinden eski: 2026-03-16 < 2026-05-01 | Masrafsız bankacılıkta öncü adım: ING’de sonsuza kadar masraf yok | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGde_sonsuza_kadar_masraf_yok.pdf
+2026-06-25 15:11:07,302 INFO Rejected candidate | Kesim tarihinden eski: 2026-02-18 < 2026-05-01 | Dijital Öğretmenler Projesi yenilendi: Daha geniş etki alanı, güçlü yapı ve zengin içerik | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_DOP_BB_Subat2025.pdf
+2026-06-25 15:11:07,302 INFO Rejected candidate | Kesim tarihinden eski: 2026-01-14 < 2026-05-01 | ING Türkiye'den dijital altyapı dönüşümü | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_Turkiye'den_dijital_altyapi_donusumu.pdf
+2026-06-25 15:11:07,303 INFO Rejected candidate | Kesim tarihinden eski: 2026-01-06 < 2026-05-01 | ING Leasing’den 500 milyon TL’lik sermaye artışı: Sanayi dönüşümüne güçlü destek | https://www.ing.com.tr/F/Documents/INGLeasing_SermayeArtisi_2026.pdf
+2026-06-25 15:11:07,303 INFO Dry run: 2 items would be written
+2026-06-25 15:11:07,312 INFO Total links found: 116
+2026-06-25 15:11:07,312 INFO Candidate links found: 6
+2026-06-25 15:11:07,312 INFO Detail pages fetched: 0
+2026-06-25 15:11:07,312 INFO Recent items created: 2
+2026-06-25 15:11:07,312 INFO Saved recent developments: 2
+2026-06-25 15:11:07,313 INFO Rejected old items: 4
+2026-06-25 15:11:07,313 INFO Rejected undated items: 0
+2026-06-25 15:11:07,313 INFO Rejected low-confidence dates: 0
+2026-06-25 15:11:07,313 INFO Rejected non-developments: 0
+2026-06-25 15:11:07,313 INFO Saved by publication_date: 0
+2026-06-25 15:11:07,313 INFO Saved by announcement_date: 2
+2026-06-25 15:11:07,313 INFO Saved by campaign_start_date: 0
+2026-06-25 15:11:07,313 INFO Rejected because only campaign_end_date existed: 0
+2026-06-25 15:11:07,313 INFO passed_by_publication_date_count: 0
+2026-06-25 15:11:07,313 INFO passed_by_announcement_date_count: 2
+2026-06-25 15:11:07,313 INFO passed_by_campaign_start_date_count: 0
+2026-06-25 15:11:07,313 INFO passed_by_end_date_manual_override_count: 0
+2026-06-25 15:11:07,313 INFO rejected_only_campaign_end_date_count: 0
+2026-06-25 15:11:07,313 INFO Active old campaigns detected: 0
+2026-06-25 15:11:07,313 INFO Poor items skipped: 0
+2026-06-25 15:11:07,313 INFO Duplicates skipped: 0
+2026-06-25 15:11:07,313 INFO Errors: 0
+2026-06-25 15:11:07,313 INFO First saved items: ING’den KOBİ’lere masrafsız bankacılık desteği [2026-06-03] https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGden_KOBIlere_masrafsiz_bankacilik_destegi.pdf | ING’nin araştırmasına göre masrafsız bankacılık temel beklenti haline geldi [2026-05-20] https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGnin_arastirmasina_gore_masrafsiz_bankacilik_temel_beklenti_haline_geldi.pdf
+2026-06-25 15:11:07,313 INFO First rejected items: Masrafsız bankacılıkta öncü adım: ING’de sonsuza kadar masraf yok :: Kesim tarihinden eski: 2026-03-16 < 2026-05-01 :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGde_sonsuza_kadar_masraf_yok.pdf | Dijital Öğretmenler Projesi yenilendi: Daha geniş etki alanı, güçlü yapı ve zengin içerik :: Kesim tarihinden eski: 2026-02-18 < 2026-05-01 :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_DOP_BB_Subat2025.pdf | ING Türkiye'den dijital altyapı dönüşümü :: Kesim tarihinden eski: 2026-01-14 < 2026-05-01 :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_Turkiye'den_dijital_altyapi_donusumu.pdf | ING Leasing’den 500 milyon TL’lik sermaye artışı: Sanayi dönüşümüne güçlü destek :: Kesim tarihinden eski: 2026-01-06 < 2026-05-01 :: https://www.ing.com.tr/F/Documents/INGLeasing_SermayeArtisi_2026.pdf

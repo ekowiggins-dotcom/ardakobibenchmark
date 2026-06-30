@@ -1,0 +1,17 @@
+﻿institution_id,feature_name,embedded_context,partner_or_channel,description,target_segment,maturity_level,strategic_relevance,last_updated
+stripe,Stripe Connect,marketplace,Platform API,"Embedded payment acceptance, onboarding and funds akışı for platform sellers.",Platform SME,İleri,Çok Yüksek,2026-06-09
+stripe,Treasury API,API,Platform partners,Banking-like balances and money movement embedded into software workakışları.,Platform SME,İleri,Çok Yüksek,2026-06-09
+shopify_payments,Native checkout and payouts,e-commerce,Shopify admin,Payments embedded directly into store operations and payout workakışı.,E-commerce SME,İleri,Çok Yüksek,2026-06-09
+square,Square ecosystem banking,POS,Square app,"Payments, POS, banking and capital combined in one merchant operating environment.",Micro merchant,İleri,Çok Yüksek,2026-06-09
+adyen,Adyen for Platforms,marketplace,Platform partners,Unified acquiring and payout infrastructure for marketplaces and platforms.,Marketplace seller,İleri,Yüksek,2026-06-09
+revolut_business,Accounting integrations,accounting software,Xero and business tools,Business account feeds and expense akışları connected to SME software.,Digital SME,Gelişmekte,Yüksek,2026-06-09
+wise_business,Batch and API ödemeleri,API,Treasury and finance tools,International payments and FX APIs for SME finance workakışları.,Cross-border SME,Gelişmekte,Orta,2026-06-09
+iyzico,Marketplace payments,marketplace,E-commerce marketplaces,Seller onboarding and split payment collection for marketplaces.,Online seller,Gelişmekte,Yüksek,2026-06-09
+paytr,Payment links for sellers,e-commerce,Merchant panel,Fast payment collection for online and social sellers.,Small online merchant,Gelişmekte,Orta,2026-06-09
+sipay,Wallet and acquiring APIs,API,Merchant and wallet channels,API-led payment services for merchants and partners.,Digital merchant,Gelişmekte,Orta,2026-06-09
+param,Param business services,POS,Param channels,"Card, wallet and merchant acceptance capabilities for business customers.",SME merchant,Gelişmekte,Orta,2026-06-09
+garanti_bbva,Merchant banking integration,POS,POS and business banking,Merchant acquiring data can support banking conversations and Nakit Yönetimi.,Merchant SME,Gelişmekte,Yüksek,2026-06-09
+akbank,Digital SME iş birlikleri,accounting software,Partner ecosystem,İş Birliği-led services that can be expanded into Gömülü Finans.,Digital SME,Yeni Gelişen,Orta,2026-06-09
+yapi_kredi,POS-led SME relationship,POS,Merchant acquiring,Payments and banking channels create hooks for SME engagement.,Merchant SME,Gelişmekte,Yüksek,2026-06-09
+halkbank,Halka Açık support linkage,invoice financing,Halka Açık SME programs,Credit and support programs can be positioned around SME receivables.,Small business,Yeni Gelişen,Orta,2026-06-09
+mastercard,SME partner programs,payroll,Fintech partners,Scheme capabilities and partner network enable embedded SME services.,SME platform,Gelişmekte,Orta,2026-06-09

@@ -1,0 +1,4 @@
+object_type,object_id,decision,analyst_note,reviewer
+individual,RIRQ-example,Onaylandı,Demo radarı için stratejik BD sinyali olarak seçildi.,Demo Radar
+cluster,CL-example,Onaylandı,Tekil haberlerden daha anlamlı bir rekabet paterni olduğu için seçildi.,Demo Radar
+management_awareness,MAQ-example,Yönetici Bilgilendirme,İtibar ve yönetici farkındalığı sinyali olarak ayrı bölümde gösterilmeli.,Demo Radar

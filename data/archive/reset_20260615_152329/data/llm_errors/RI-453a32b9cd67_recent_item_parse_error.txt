@@ -1,0 +1,30 @@
+```json
+{
+  "relevance_status": "İlgisiz",
+  "strategic_theme": "Kurumsal Konumlandırma",
+  "product_area": "Diğer",
+  "development_type": "İlgili Gelişme Yok",
+  "headline": "Garanti BBVA Salt Kültür Kurumunun 15. Yılını Kutluyor",
+  "summary": "Garanti BBVA tarafından 2011'de kurulan Salt kültür ve araştırma kurumu, 15. yılını geride bırakırken 5 milyon ziyaretçiye ulaştığını duyurmuştur. Kurum, sanat, mimarlık ve tasarım alanında araştırma fonları ve dijital platformlar aracılığıyla kültürel üretimi desteklemektedir.",
+  "core_assessment": "Bu gelişme Garanti BBVA'nın kurumsal sosyal sorumluluk ve kültür yatırımı konusundaki konumlandırmasını güçlendiren bir duyuru olup, KOBİ bankacılığı ürünleri, hizmetleri veya stratejisine doğrudan etkisi bulunmamaktadır.",
+  "strategic_relevance": "Gelişme, Garanti BBVA'nın kurumsal marka değerini ve sosyal yatırım taahhüdünü pekiştirmek amacıyla tasarlanmış bir PR aktivitesidir. KOBİ müşteri tabanı, ürün portföyü, fiyatlandırma, dijital yolculuk veya rekabet dinamikleri açısından herhangi bir strateji sinyali içermemektedir.",
+  "impact_on_us": "Düşük",
+  "recommended_action": "Önceliklendirme",
+  "importance_level": "Düşük",
+  "confidence_level": "Yüksek",
+  "extracted_facts": [
+    "Salt 2011 yılında Garanti BBVA tarafından kurulmuştur",
+    "15 yılda yaklaşık 5 milyon ziyaretçiye ulaşmıştır",
+    "2 milyonu aşkın belge ve kaynaktan oluşan arşiv koleksiyonları kamusal erişime açılmıştır",
+    "Salt Araştırma Fonları 2013'ten bu yana 80'in üzerinde projeyi desteklemiştir",
+    "2025'te Garanti BBVA Ekonomi Tarihi Fonu kurulmuştur",
+    "Salt Beyoğlu ve Salt Galata mekânlarında tüm giriş ve programlar ücretsizdir"
+  ],
+  "open_questions": [
+    "Bu duyuru Garanti BBVA'nın KOBİ segmentine yönelik yeni bir strateji değişikliğini işaret ediyor mu?",
+    "Salt platformunun KOBİ müşterilerine yönelik herhangi bir finansal ürün veya hizmet entegrasyonu planlanıyor mu?"
+  ],
+  "detailed_assessment": {
+    "neden_bu_gelişme_yok": "Bu, Garanti BBVA'nın kurumsal kimliğini ve sosyal yatırım portföyünü güçlendirmek amacıyla yayınlanan bir duyurudur. Salt kültür kurumunun 15. yılı kutlanmakta, başarıları (ziyaretçi sayısı, arşiv erişimi, araştırma fonları) vurgulanmaktadır. Ancak bu, KOBİ bankacılığı açısından yeni bir ürün, hizmet, fiyat değişikliği, iş birliği veya pazar sinyali değildir.",
+    "kobi_acisından_anlami": "Doğrudan KOBİ mevduat, kredileri, ödemeler, POS, nakit yönetimi, gömülü finans veya dijital yolculuk açısından hiçbir anlamı yoktur. Salt, Garanti BBVA'nın kurumsal sosyal sorumluluk portföyünün bir parçasıdır ve KOBİ müşteri tabanıyla operasyonel bağlantısı bulunmamaktadır.",
+    "rakip_neden_yapiyor": "Garanti BBVA, kurumsal marka değerini, sosyal yatırım taahhüdünü ve kültürel lider

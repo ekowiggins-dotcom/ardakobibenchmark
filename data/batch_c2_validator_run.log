@@ -1,0 +1,38 @@
+T-Bank | T-Bank Hakkında | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=3 legal=0
+T-Bank | T-Bank Duyurular | Manual inspection needed | manual | dated=24 recent=0 commercial=2 legal=45
+T-Bank | T-Bank Haberler | Manual inspection needed | manual | dated=7 recent=0 commercial=7 legal=15
+T-Bank | T-Bank Nakit Krediler | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=3 legal=0
+T-Bank | T-Bank Gayrinakdi Krediler | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=3 legal=0
+T-Bank | T-Bank Nakit Yönetimi | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=3 legal=2
+T-Bank | T-Bank Yatırım Ürünleri | Valid benchmark-only source | activate_benchmark_fact | dated=2 recent=0 commercial=3 legal=2
+T-Bank | T-Bank Diğer Ticari Ürünler | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=3 legal=0
+T-Bank | T-Bank Faaliyet Raporları | Structural / ignored | ignore | dated=112 recent=1 commercial=3 legal=0
+T-Bank | T-Bank Mali Tablolar | Structural / ignored | ignore | dated=512 recent=13 commercial=3 legal=0
+T-Bank | T-Bank Genel Kurul Duyurusu Örneği | Structural / ignored | ignore | dated=2 recent=0 commercial=2 legal=2
+TurkishBank | TurkishBank Ana Site | Structural / ignored | ignore | dated=0 recent=0 commercial=6 legal=0
+TurkishBank | TurkishBank Bizden Haberler | Manual inspection needed | manual | dated=0 recent=0 commercial=0 legal=0
+TurkishBank | TurkishBank Raporlar | Structural / ignored | ignore | dated=0 recent=0 commercial=0 legal=0
+TurkishBank | TurkishBank Ticari / Kurumsal Bankacılık | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=5 legal=0
+TurkishBank | TurkishBank İlişki Bankacılığı | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=7 legal=0
+TurkishBank | TurkishBank Finansal Kurumlar | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=7 legal=0
+TurkishBank | TurkishBank Teknoloji Bankacılığı | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=5 legal=0
+TurkishBank | T-Gate | Manual inspection needed | manual | dated=0 recent=0 commercial=0 legal=0
+TurkishBank | AÇIK YATIRIM | Structural / ignored | ignore | dated=0 recent=0 commercial=2 legal=0
+TurkishBank | TurkishBank Historical Award Example | Structural / ignored | ignore | dated=3 recent=0 commercial=1 legal=0
+Türk Ticaret Bankası | Türk Ticaret Bankası Ana Site | Structural / ignored | ignore | dated=13 recent=0 commercial=11 legal=0
+Türk Ticaret Bankası | Türk Ticaret Bankası Duyurular | Manual inspection needed | manual | dated=170 recent=2 commercial=0 legal=23
+Türk Ticaret Bankası | Türk Ticaret Bankası Haberler Guess | Invalid guessed route | ignore | dated=0 recent=0 commercial=0 legal=0
+Türk Ticaret Bankası | Türk Ticaret Bankası Basın Guess | Invalid guessed route | ignore | dated=0 recent=0 commercial=0 legal=0
+Türk Ticaret Bankası | Türk Ticaret Bankası Haberler | Valid weekly source | activate_weekly_development | dated=37 recent=1 commercial=6 legal=0
+Türk Ticaret Bankası | Türk Ticaret Bankası Basın Bültenleri | Promising but not current | manual | dated=19 recent=0 commercial=9 legal=0
+Türk Ticaret Bankası | Türk Ticaret Bankası Bankamız | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=0 legal=0
+Türk Ticaret Bankası | Türk Ticaret Bankası Dış Ticaret Finansmanı | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=0 legal=0
+Türk Ticaret Bankası | Türk Ticaret Bankası İşletme Sermayesi Kredileri | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=0 legal=0
+Türk Ticaret Bankası | Türk Ticaret Bankası Teminat Mektupları | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=0 legal=0
+Türk Ticaret Bankası | Türk Ticaret Bankası Ürün ve Hizmet Ücretleri | Valid benchmark-only source | activate_benchmark_fact | dated=4 recent=0 commercial=1 legal=0
+Türk Ticaret Bankası | Türk Ticaret Bankası Şubeler | Valid benchmark-only source | activate_benchmark_fact | dated=0 recent=0 commercial=0 legal=0
+Türk Ticaret Bankası | Türk Ticaret Bankası Lansman Tarihsel Örnek | Structural / ignored | ignore | dated=0 recent=0 commercial=0 legal=0
+Updated registry: data/source_registry.csv
+Candidate validation CSV: data/batch_c2_source_validation_candidates.csv
+Candidate inspection CSV: data/batch_c2_candidate_inspection_table.csv
+Candidate quality report: data/batch_c2_candidate_quality_report_20260626_141929.md

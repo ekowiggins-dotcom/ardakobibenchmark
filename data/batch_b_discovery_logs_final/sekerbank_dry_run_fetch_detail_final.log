@@ -1,0 +1,57 @@
+2026-06-26 09:04:42,858 INFO Documents considered: 1
+2026-06-26 09:04:42,858 INFO Recency cutoff: 2026-05-01
+2026-06-26 09:04:42,858 INFO Allow undated: False
+2026-06-26 09:04:42,858 INFO Allow low date confidence: False
+2026-06-26 09:04:42,858 INFO Allow end-date recency: False
+2026-06-26 09:04:43,192 INFO Extracted item RI-25a788170d4d | Good | Şekerbank’ın “Yerinde Kredi” platformuna The Banker’dan ödül
+2026-06-26 09:04:43,562 INFO Rejected candidate | Kesim tarihinden eski: 2026-04-07 < 2026-05-01 | Şekerbank'a yeni genel müdür yardımcısı | https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbanka-yeni-genel-mudur-yardimcisi
+2026-06-26 09:04:43,831 INFO Rejected candidate | Kesim tarihinden eski: 2026-04-02 < 2026-05-01 | Şekerbank’ın dijital bankacılık uygulamalarına üç uluslararası ödül | https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-dijital-bankacilik-uygulamalarina-uc-uluslararasi-odul
+2026-06-26 09:04:44,174 INFO Rejected candidate | Kesim tarihinden eski: 2026-03-30 < 2026-05-01 | Şekerbank’a kalkınma odaklı Avrupa Fonu EFSE’den 50 milyon euroluk yeni kaynak | https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbanka-kalkinma-odakli-avrupa-fonu-efseden--50-milyon-euroluk-yeni-kaynak
+2026-06-26 09:04:44,506 INFO Rejected candidate | Kesim tarihinden eski: 2026-02-24 < 2026-05-01 | Visa’nın kadın girişimcilere yönelik küresel destek programı She is Next, Şekerbank ve GİRVAK iş bir | https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/visanin-kadin-girisimcilere-yonelik-kuresel-destek-programi-she-is-next-sekerbank-ve-girvak-is-birligiyle-anadoluya-ulasiyor
+2026-06-26 09:04:44,872 INFO Rejected candidate | Kesim tarihinden eski: 2026-02-12 < 2026-05-01 | Şekerbank’ın yeni platformu “Yerinde Kredi” ile çiftçilere anında finansman desteği | https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-yeni-platformu-yerinde-kredi-ile-ciftcilere-aninda-finansman-destegi
+2026-06-26 09:04:45,309 INFO Rejected candidate | Kesim tarihinden eski: 2025-12-26 < 2026-05-01 | Şekerbank, CDP’de üç kategoride “A” skoruyla küresel sürdürülebilirlik liderleri arasında | https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2025/sekerbank-cdpde-uc-kategoride-a-skoruyla--kuresel-surdurulebilirlik-liderleri-arasinda
+2026-06-26 09:04:45,566 INFO Rejected candidate | Kesim tarihinden eski: 2025-12-16 < 2026-05-01 | Şekerbank ve EBRD’den kadın KOBİ’lere ve genç girişimcilere finansman desteği | https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2025/sekerbank-ve-ebrdden-kadin-kobilere-ve-genc-girisimcilere-finansman-destegi
+2026-06-26 09:04:45,566 INFO Dry run: 1 items would be written
+2026-06-26 09:04:45,596 INFO Total links found: 241
+2026-06-26 09:04:45,596 INFO Candidate links found: 8
+2026-06-26 09:04:45,596 INFO Detail pages fetched: 8
+2026-06-26 09:04:45,596 INFO Recent items created: 1
+2026-06-26 09:04:45,596 INFO Saved recent developments: 1
+2026-06-26 09:04:45,596 INFO Rejected old items: 7
+2026-06-26 09:04:45,596 INFO Rejected undated items: 0
+2026-06-26 09:04:45,596 INFO Rejected low-confidence dates: 0
+2026-06-26 09:04:45,596 INFO Rejected non-developments: 0
+2026-06-26 09:04:45,596 INFO Saved by publication_date: 0
+2026-06-26 09:04:45,596 INFO Saved by announcement_date: 1
+2026-06-26 09:04:45,596 INFO Saved by campaign_start_date: 0
+2026-06-26 09:04:45,596 INFO Rejected because only campaign_end_date existed: 0
+2026-06-26 09:04:45,596 INFO passed_by_publication_date_count: 0
+2026-06-26 09:04:45,596 INFO passed_by_announcement_date_count: 1
+2026-06-26 09:04:45,596 INFO passed_by_campaign_start_date_count: 0
+2026-06-26 09:04:45,596 INFO passed_by_end_date_manual_override_count: 0
+2026-06-26 09:04:45,596 INFO rejected_only_campaign_end_date_count: 0
+2026-06-26 09:04:45,596 INFO Active old campaigns detected: 0
+2026-06-26 09:04:45,596 INFO Content role Bağımsız Gelişme: 5
+2026-06-26 09:04:45,596 INFO Content role Bağlamsal Veri: 0
+2026-06-26 09:04:45,596 INFO Content role Yönetici Bilgilendirme: 3
+2026-06-26 09:04:45,596 INFO Content role Kapsam Dışı/Benchmark: 0
+2026-06-26 09:04:45,596 INFO Poor items skipped: 0
+2026-06-26 09:04:45,596 INFO Duplicates skipped: 0
+2026-06-26 09:04:45,596 INFO Errors: 0
+2026-06-26 09:04:45,596 INFO First saved items: Şekerbank’ın “Yerinde Kredi” platformuna The Banker’dan ödül [2026-05-15] https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-yerinde-kredi-platformuna-the-bankerdan-odul
+2026-06-26 09:04:45,596 INFO First rejected items: Şekerbank'a yeni genel müdür yardımcısı :: Kesim tarihinden eski: 2026-04-07 < 2026-05-01 :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbanka-yeni-genel-mudur-yardimcisi | Şekerbank’ın dijital bankacılık uygulamalarına üç uluslararası ödül :: Kesim tarihinden eski: 2026-04-02 < 2026-05-01 :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-dijital-bankacilik-uygulamalarina-uc-uluslararasi-odul | Şekerbank’a kalkınma odaklı Avrupa Fonu EFSE’den 50 milyon euroluk yeni kaynak :: Kesim tarihinden eski: 2026-03-30 < 2026-05-01 :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbanka-kalkinma-odakli-avrupa-fonu-efseden--50-milyon-euroluk-yeni-kaynak | Visa’nın kadın girişimcilere yönelik küresel destek programı She is Next, Şekerbank ve GİRVAK iş birliğiyle Anadolu’ya ulaşıyor… :: Kesim tarihinden eski: 2026-02-24 < 2026-05-01 :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/visanin-kadin-girisimcilere-yonelik-kuresel-destek-programi-she-is-next-sekerbank-ve-girvak-is-birligiyle-anadoluya-ulasiyor | Şekerbank’ın yeni platformu “Yerinde Kredi” ile çiftçilere anında finansman desteği :: Kesim tarihinden eski: 2026-02-12 < 2026-05-01 :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-yeni-platformu-yerinde-kredi-ile-ciftcilere-aninda-finansman-destegi | Şekerbank, CDP’de üç kategoride “A” skoruyla küresel sürdürülebilirlik liderleri arasında :: Kesim tarihinden eski: 2025-12-26 < 2026-05-01 :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2025/sekerbank-cdpde-uc-kategoride-a-skoruyla--kuresel-surdurulebilirlik-liderleri-arasinda | Şekerbank ve EBRD’den kadın KOBİ’lere ve genç girişimcilere finansman desteği :: Kesim tarihinden eski: 2025-12-16 < 2026-05-01 :: https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2025/sekerbank-ve-ebrdden-kadin-kobilere-ve-genc-girisimcilere-finansman-destegi
+
+CANDIDATE REPORT
+source_id: REG-140
+source_name: Şekerbank Basın Odası
+source_url: https://www.sekerbank.com.tr/hakkimizda/basin-odasi
+total links found: 241
+candidate links found: 8
+- score=28 | title=Şekerbank’ın “Yerinde Kredi” platformuna The Banker’dan ödül | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-yerinde-kredi-platformuna-the-bankerdan-odul | reason=sekerbank_next_announcement,award_candidate
+- score=28 | title=Şekerbank'a yeni genel müdür yardımcısı | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbanka-yeni-genel-mudur-yardimcisi | reason=sekerbank_next_announcement
+- score=28 | title=Şekerbank’ın dijital bankacılık uygulamalarına üç uluslararası ödül | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-dijital-bankacilik-uygulamalarina-uc-uluslararasi-odul | reason=sekerbank_next_announcement,award_candidate
+- score=28 | title=Şekerbank’a kalkınma odaklı Avrupa Fonu EFSE’den 50 milyon euroluk yeni kaynak | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbanka-kalkinma-odakli-avrupa-fonu-efseden--50-milyon-euroluk-yeni-kaynak | reason=sekerbank_next_announcement
+- score=28 | title=Visa’nın kadın girişimcilere yönelik küresel destek programı She is Next, Şekerbank ve GİRVAK iş birliğiyle Anadolu’ya u | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/visanin-kadin-girisimcilere-yonelik-kuresel-destek-programi-she-is-next-sekerbank-ve-girvak-is-birligiyle-anadoluya-ulasiyor | reason=sekerbank_next_announcement
+- score=28 | title=Şekerbank’ın yeni platformu “Yerinde Kredi” ile çiftçilere anında finansman desteği | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2026/sekerbankin-yeni-platformu-yerinde-kredi-ile-ciftcilere-aninda-finansman-destegi | reason=sekerbank_next_announcement
+- score=28 | title=Şekerbank, CDP’de üç kategoride “A” skoruyla küresel sürdürülebilirlik liderleri arasında | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2025/sekerbank-cdpde-uc-kategoride-a-skoruyla--kuresel-surdurulebilirlik-liderleri-arasinda | reason=sekerbank_next_announcement
+- score=28 | title=Şekerbank ve EBRD’den kadın KOBİ’lere ve genç girişimcilere finansman desteği | url=https://www.sekerbank.com.tr/hakkimizda/basin-odasi/basin-bultenlerimiz/2025/sekerbank-ve-ebrdden-kadin-kobilere-ve-genc-girisimcilere-finansman-destegi | reason=sekerbank_next_announcement

@@ -1,0 +1,45 @@
+2026-06-26 09:03:40,681 INFO Documents considered: 1
+2026-06-26 09:03:40,682 INFO Recency cutoff: 2026-05-01
+2026-06-26 09:03:40,682 INFO Allow undated: False
+2026-06-26 09:03:40,682 INFO Allow low date confidence: False
+2026-06-26 09:03:40,682 INFO Allow end-date recency: False
+2026-06-26 09:03:40,726 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Efsane KOBİ Kredisi – 1.500.000 TL’ye kadar %2,99’dan Başlayan Faiz Oranlarıyla İşletmenizin nakit i | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/efsane-kredi/efsane-kobi-kredi-kampanyasi
+2026-06-26 09:03:40,726 INFO Poor item skipped | item_url_equals_source_url | Guncel Ozel Kampanyalar | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar
+2026-06-26 09:03:40,726 INFO Rejected candidate | item_url_equals_source_url | Guncel Ozel Kampanyalar | https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar
+2026-06-26 09:03:40,726 INFO Dry run: 0 items would be written
+2026-06-26 09:03:40,744 INFO Total links found: 624
+2026-06-26 09:03:40,744 INFO Candidate links found: 2
+2026-06-26 09:03:40,744 INFO Detail pages fetched: 0
+2026-06-26 09:03:40,744 INFO Recent items created: 0
+2026-06-26 09:03:40,744 INFO Saved recent developments: 0
+2026-06-26 09:03:40,744 INFO Rejected old items: 0
+2026-06-26 09:03:40,744 INFO Rejected undated items: 2
+2026-06-26 09:03:40,744 INFO Rejected low-confidence dates: 0
+2026-06-26 09:03:40,744 INFO Rejected non-developments: 0
+2026-06-26 09:03:40,744 INFO Saved by publication_date: 0
+2026-06-26 09:03:40,744 INFO Saved by announcement_date: 0
+2026-06-26 09:03:40,744 INFO Saved by campaign_start_date: 0
+2026-06-26 09:03:40,744 INFO Rejected because only campaign_end_date existed: 0
+2026-06-26 09:03:40,744 INFO passed_by_publication_date_count: 0
+2026-06-26 09:03:40,744 INFO passed_by_announcement_date_count: 0
+2026-06-26 09:03:40,744 INFO passed_by_campaign_start_date_count: 0
+2026-06-26 09:03:40,744 INFO passed_by_end_date_manual_override_count: 0
+2026-06-26 09:03:40,745 INFO rejected_only_campaign_end_date_count: 0
+2026-06-26 09:03:40,745 INFO Active old campaigns detected: 0
+2026-06-26 09:03:40,745 INFO Content role Bağımsız Gelişme: 1
+2026-06-26 09:03:40,745 INFO Content role Bağlamsal Veri: 0
+2026-06-26 09:03:40,745 INFO Content role Yönetici Bilgilendirme: 0
+2026-06-26 09:03:40,745 INFO Content role Kapsam Dışı/Benchmark: 1
+2026-06-26 09:03:40,745 INFO Poor items skipped: 1
+2026-06-26 09:03:40,745 INFO Duplicates skipped: 0
+2026-06-26 09:03:40,745 INFO Errors: 0
+2026-06-26 09:03:40,745 INFO First rejected items: Efsane KOBİ Kredisi – 1.500.000 TL’ye kadar %2,99’dan Başlayan Faiz Oranlarıyla İşletmenizin nakit ihtiyacını hızlı ve kolay şekilde karşılayın! Fibabanka’nın KOBİ’lere özel avanta :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/efsane-kredi/efsane-kobi-kredi-kampanyasi | Guncel Ozel Kampanyalar :: item_url_equals_source_url :: https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar
+
+CANDIDATE REPORT
+source_id: REG-148
+source_name: Fibabanka Güncel Özel Kampanyalar
+source_url: https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar
+total links found: 624
+candidate links found: 2
+- score=24 | title=Efsane KOBİ Kredisi – 1.500.000 TL’ye kadar %2,99’dan Başlayan Faiz Oranlarıyla İşletmenizin nakit ihtiyacını hızlı ve k | url=https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar/efsane-kredi/efsane-kobi-kredi-kampanyasi | reason=fibabanka_campaign_card
+- score=24 | title=Guncel Ozel Kampanyalar | url=https://www.fibabanka.com.tr/kampanyalar/guncel-ozel-kampanyalar | reason=fibabanka_campaign_card

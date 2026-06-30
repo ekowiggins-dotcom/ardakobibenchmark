@@ -1,0 +1,22 @@
+Hazine | Burgan Bank
+Spot Döviz İşlemleri
+Takası işlem tarihinde yapılan döviz işlemleridir. Hem TRY'ye karşı (FX/TL), hem de çapraz para birimlerinde (FX/FX) spot işlem yapılabilmektedir.
+Hazine Bonosu ve Devlet Tahvili Alım Satımı
+Hazine Bonoları, T.C. Hazinesi'nin çıkarmış olduğu, bir yıldan kısa vadeli; Devlet Tahvilleri ise bir yıl ve daha uzun vadeli Türk Lirası veya döviz cinsinden devlet iç borçlanma senetleridir. Hazine Bonosu iskontolu olarak satılır, vade sonunda elde edilecek kazanç bellidir. Devlet Tahvili iskontolu ya da kupon ödemeli olabilir. Kuponlu Tahviller sabit veya değişken kupon faizi ile ihraç edilebilir. Her iki senedi de, vade tarihine kadar elinizde tutarsanız, ana paranın ve faizinin size geri ödenmesi T.C. Hazine'si garantisi altındadır.
+Türev Ürünler ve Risk Yönetimi
+Döviz Risklerinin Yönetimi
+Kur Riski
+Bir işletmenin bilançosunun aktifinde ve pasifinde aynı tutarda ve cinste yabancı para bulunmamasından kaynaklanan zarara uğrama riskidir.
+Forward (İleri vadeli döviz alım/satım anlaşması)
+Belirli miktarda bir dövizi, belirli bir vade tarihinde, önceden anlaşılan bir fiyattan, alım veya satım sözleşmesidir. İşlem vadesinde, piyasadaki cari kurlar ne olursa olsun tarafların işlemi gerçekleştirmesi zorunludur.
+Döviz Değişim İşlemleri (Swap)
+Biri spot biri vadede yapılan iki işlem ile iki farklı döviz cinsi arasında değişim işlemidir.
+Döviz Opsiyonları
+Opsiyonu satın alan tarafa, ödeyeceği bir prim karşılığında, belirli bir tutarda dövizi önceden kararlaştırılmış vade ve kurdan alma ya da satma hakkı veren işlemlerdir. Opsiyon, satan tarafa ise dövizi satma ya da satın alma yükümlülüğü getirir.
+Faiz Risklerinin Yönetimi
+Faiz Riski
+Finansal varlığın veya borcun, faiz oranları değiştikçe, değerinde gözlenen dalgalanma riskidir. Bu riskin ortadan kaldırılmaması firmaların borçlanmalarından veya yatırımlarından kaynaklanan maliyetlerin tam olarak ölçülememesine sebep olur.
+Faiz Swap İşlemleri
+Faiz Swap İşlemi banka ve müşteri arasında daha önceden belirlenen miktarlar ve ödeme dönemleri için faiz ödemelerinin el değiştirmesidir.
+Faiz Opsiyonları
+Firmaların faiz riskinden korunmak için belli bir prim ödeyerek önceden kararlaştırılmış olan belli bir faiz oranı ve nakit akışı için satın aldıkları opsiyonlardır.

@@ -1,0 +1,57 @@
+2026-06-26 14:54:12,197 INFO Documents considered: 1
+2026-06-26 14:54:12,198 INFO Recency cutoff: 2026-05-01
+2026-06-26 14:54:12,198 INFO Allow undated: False
+2026-06-26 14:54:12,198 INFO Allow low date confidence: False
+2026-06-26 14:54:12,198 INFO Allow end-date recency: False
+2026-06-26 14:54:12,458 INFO Duplicate candidate | duplicate_canonical_item_url | duplicate_of=RI-690d9a275508 | 2026 yılı ilk çeyreğini güçlü finansal sonuçlarla tamamladık
+2026-06-26 14:54:12,682 INFO Rejected candidate | Kesim tarihinden eski: 2026-04-01 < 2026-05-01 | Erzurum Şubemiz Hizmete Açıldı | https://www.turkticaretbankasi.com.tr/icerik/erzurum-subemiz-hizmete-acildi
+2026-06-26 14:54:12,896 INFO Rejected candidate | Kesim tarihinden eski: 2026-04-01 < 2026-05-01 | Samsun Şubemiz Açıldı | https://www.turkticaretbankasi.com.tr/icerik/samsun-subemiz-acildi
+2026-06-26 14:54:13,111 INFO Rejected candidate | Kesim tarihinden eski: 2026-04-01 < 2026-05-01 | Trabzon Şubemiz Hizmete Açıldı | https://www.turkticaretbankasi.com.tr/icerik/trabzon-subemiz-hizmete-acildi
+2026-06-26 14:54:13,295 INFO Rejected candidate | Kesim tarihinden eski: 2026-02-01 < 2026-05-01 | Türk Ticaret Bankası, 2025 yılını güçlü finansal sonuçlarla tamamladı | https://www.turkticaretbankasi.com.tr/icerik/turk-ticaret-bankasi-2025-yilini-guclu-finansal-sonuclarla-tamamladi
+2026-06-26 14:54:13,522 INFO Rejected candidate | Kesim tarihinden eski: 2026-04-01 < 2026-05-01 | IFCO Fuarı’na Katıldık | https://www.turkticaretbankasi.com.tr/icerik/ifco-fuarina-katildik
+2026-06-26 14:54:13,733 INFO Rejected candidate | Kesim tarihinden eski: 2025-11-01 < 2026-05-01 | Bankamızın 2025 3. Çeyrek Sonuçları | https://www.turkticaretbankasi.com.tr/icerik/bankamizin-2025-3-ceyrek-sonuclari
+2026-06-26 14:54:13,981 INFO Rejected candidate | Kesim tarihinden eski: 2025-05-06 < 2026-05-01 | Ülke İhracatını Büyütme Hedefiyle Yeniden Faaliyetteyiz | https://www.turkticaretbankasi.com.tr/icerik/turk-ticaret-bankasi-basin-lansmani-yapildi
+2026-06-26 14:54:14,176 INFO Rejected candidate | Kesim tarihinden eski: 2024-11-03 < 2026-05-01 | TİM Delegeler Çalıştayı’ndaydık | https://www.turkticaretbankasi.com.tr/icerik/tim-delegeler-calistayindaydik
+2026-06-26 14:54:14,223 INFO Total links found: 105
+2026-06-26 14:54:14,223 INFO Candidate links found: 9
+2026-06-26 14:54:14,223 INFO Detail pages fetched: 9
+2026-06-26 14:54:14,223 INFO Recent items created: 0
+2026-06-26 14:54:14,223 INFO Saved recent developments: 0
+2026-06-26 14:54:14,223 INFO Rejected old items: 8
+2026-06-26 14:54:14,223 INFO Rejected undated items: 0
+2026-06-26 14:54:14,223 INFO Rejected low-confidence dates: 0
+2026-06-26 14:54:14,223 INFO Rejected non-developments: 0
+2026-06-26 14:54:14,223 INFO Saved by publication_date: 0
+2026-06-26 14:54:14,223 INFO Saved by announcement_date: 0
+2026-06-26 14:54:14,223 INFO Saved by campaign_start_date: 0
+2026-06-26 14:54:14,223 INFO Rejected because only campaign_end_date existed: 0
+2026-06-26 14:54:14,223 INFO passed_by_publication_date_count: 0
+2026-06-26 14:54:14,223 INFO passed_by_announcement_date_count: 0
+2026-06-26 14:54:14,223 INFO passed_by_campaign_start_date_count: 0
+2026-06-26 14:54:14,223 INFO passed_by_end_date_manual_override_count: 0
+2026-06-26 14:54:14,223 INFO rejected_only_campaign_end_date_count: 0
+2026-06-26 14:54:14,223 INFO Active old campaigns detected: 0
+2026-06-26 14:54:14,223 INFO Content role Bağımsız Gelişme: 6
+2026-06-26 14:54:14,223 INFO Content role Bağlamsal Veri: 0
+2026-06-26 14:54:14,223 INFO Content role Yönetici Bilgilendirme: 3
+2026-06-26 14:54:14,223 INFO Content role Kapsam Dışı/Benchmark: 0
+2026-06-26 14:54:14,223 INFO Poor items skipped: 0
+2026-06-26 14:54:14,223 INFO Duplicates skipped: 1
+2026-06-26 14:54:14,223 INFO Errors: 0
+2026-06-26 14:54:14,223 INFO First rejected items: 2026 yılı ilk çeyreğini güçlü finansal sonuçlarla tamamladık :: duplicate_canonical_item_url :: https://www.turkticaretbankasi.com.tr/icerik/2026-yili-ilk-ceyregini-guclu-finansal-sonuclarla-tamamladik | Erzurum Şubemiz Hizmete Açıldı :: Kesim tarihinden eski: 2026-04-01 < 2026-05-01 :: https://www.turkticaretbankasi.com.tr/icerik/erzurum-subemiz-hizmete-acildi | Samsun Şubemiz Açıldı :: Kesim tarihinden eski: 2026-04-01 < 2026-05-01 :: https://www.turkticaretbankasi.com.tr/icerik/samsun-subemiz-acildi | Trabzon Şubemiz Hizmete Açıldı :: Kesim tarihinden eski: 2026-04-01 < 2026-05-01 :: https://www.turkticaretbankasi.com.tr/icerik/trabzon-subemiz-hizmete-acildi | Türk Ticaret Bankası, 2025 yılını güçlü finansal sonuçlarla tamamladı :: Kesim tarihinden eski: 2026-02-01 < 2026-05-01 :: https://www.turkticaretbankasi.com.tr/icerik/turk-ticaret-bankasi-2025-yilini-guclu-finansal-sonuclarla-tamamladi | IFCO Fuarı’na Katıldık :: Kesim tarihinden eski: 2026-04-01 < 2026-05-01 :: https://www.turkticaretbankasi.com.tr/icerik/ifco-fuarina-katildik | Bankamızın 2025 3. Çeyrek Sonuçları :: Kesim tarihinden eski: 2025-11-01 < 2026-05-01 :: https://www.turkticaretbankasi.com.tr/icerik/bankamizin-2025-3-ceyrek-sonuclari | Ülke İhracatını Büyütme Hedefiyle Yeniden Faaliyetteyiz :: Kesim tarihinden eski: 2025-05-06 < 2026-05-01 :: https://www.turkticaretbankasi.com.tr/icerik/turk-ticaret-bankasi-basin-lansmani-yapildi | TİM Delegeler Çalıştayı’ndaydık :: Kesim tarihinden eski: 2024-11-03 < 2026-05-01 :: https://www.turkticaretbankasi.com.tr/icerik/tim-delegeler-calistayindaydik
+
+CANDIDATE REPORT
+source_id: REG-191
+source_name: Türk Ticaret Bankası Haberler
+source_url: https://www.turkticaretbankasi.com.tr/icerikler/haberler
+total links found: 105
+candidate links found: 9
+- score=34 | title=2026 yılı ilk çeyreğini güçlü finansal sonuçlarla tamamladık | url=https://www.turkticaretbankasi.com.tr/icerik/2026-yili-ilk-ceyregini-guclu-finansal-sonuclarla-tamamladik | reason=turk_ticaret_export_news
+- score=34 | title=Erzurum Şubemiz Hizmete Açıldı | url=https://www.turkticaretbankasi.com.tr/icerik/erzurum-subemiz-hizmete-acildi | reason=turk_ticaret_export_news
+- score=34 | title=Samsun Şubemiz Açıldı | url=https://www.turkticaretbankasi.com.tr/icerik/samsun-subemiz-acildi | reason=turk_ticaret_export_news
+- score=34 | title=Trabzon Şubemiz Hizmete Açıldı | url=https://www.turkticaretbankasi.com.tr/icerik/trabzon-subemiz-hizmete-acildi | reason=turk_ticaret_export_news
+- score=34 | title=Türk Ticaret Bankası, 2025 yılını güçlü finansal sonuçlarla tamamladı | url=https://www.turkticaretbankasi.com.tr/icerik/turk-ticaret-bankasi-2025-yilini-guclu-finansal-sonuclarla-tamamladi | reason=turk_ticaret_export_news
+- score=34 | title=IFCO Fuarı’na Katıldık | url=https://www.turkticaretbankasi.com.tr/icerik/ifco-fuarina-katildik | reason=turk_ticaret_export_news
+- score=34 | title=Bankamızın 2025 3. Çeyrek Sonuçları | url=https://www.turkticaretbankasi.com.tr/icerik/bankamizin-2025-3-ceyrek-sonuclari | reason=turk_ticaret_export_news
+- score=34 | title=Ülke İhracatını Büyütme Hedefiyle Yeniden Faaliyetteyiz | url=https://www.turkticaretbankasi.com.tr/icerik/turk-ticaret-bankasi-basin-lansmani-yapildi | reason=turk_ticaret_export_news
+- score=34 | title=TİM Delegeler Çalıştayı’ndaydık | url=https://www.turkticaretbankasi.com.tr/icerik/tim-delegeler-calistayindaydik | reason=turk_ticaret_export_news

@@ -1,0 +1,4 @@
+Akbank KOBİ Rekabet Gelişmeleri Radarı MVP reset
+institutions=Garanti BBVA,İş Bankası,Yapı Kredi,QNB Finansbank
+include_weekly_developments=True
+include_raw_files=False

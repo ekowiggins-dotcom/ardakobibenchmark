@@ -1,0 +1,12 @@
+﻿institution_id,journey_step,digital_capability,description,friction_level,branch_dependency,documents_required,estimated_completion_time,last_updated
+garanti_bbva,Account opening,Dijital başvuru,SME can start account and product journeys digitally with branch completion for some cases.,Orta,Kısmi,Company documents and signatory records,Same day to 2 days,2026-06-09
+akbank,Product discovery,Dijital KOBİ merkezi,Clear digital product discovery and application pathways for many SME needs.,Düşük,Kısmi,Varies by product,Same day,2026-06-09
+yapi_kredi,Merchant onboarding,POS başvurusu,Digital inquiry and merchant service application supported by relationship team.,Orta,Kısmi,Merchant and company documents,1 to 3 days,2026-06-09
+halkbank,SME credit linkage,Program application,Halka Açık support and SME credit programs remain document-heavy but relevant.,Yüksek,Yüksek,"Tax, registry and collateral documents",Several days,2026-06-09
+iyzico,Merchant onboarding,Online KYC,Fast online merchant application for payment acceptance.,Düşük,,Company and bank account documents,Same day to 2 days,2026-06-09
+paytr,Sanal POS setup,Online onboarding,Online application for payment acceptance and merchant panel access.,Düşük,,Company documents and website details,Same day to 2 days,2026-06-09
+stripe,Platform onboarding,API ve barındırılan onboarding,yüksek ölçüde digital onboarding with developer and platform workakışları.,Düşük,,KYC and business verification,Minutes to 2 days,2026-06-09
+square,Merchant setup,Uygulama öncelikli onboarding,Micro merchants can start with app and POS device workakışı.,Düşük,,Business identity verification,Minutes to 1 day,2026-06-09
+revolut_business,Business account opening,Digital KYC,"Digital-first onboarding for business account, cards and payments.",Düşük,,Company registration and identity documents,Same day to several days,2026-06-09
+wise_business,International account opening,Digital KYC,Digital account setup with transparent documentation steps.,Düşük,,Company and director documents,Same day to several days,2026-06-09
+shopify_payments,Payment activation,Gömülü aktivasyon,Merchant activates payments inside store admin workakışı.,Düşük,,Business and payout details,Minutes to 2 days,2026-06-09

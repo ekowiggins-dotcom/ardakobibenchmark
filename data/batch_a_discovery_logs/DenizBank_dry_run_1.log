@@ -1,0 +1,68 @@
+
+CANDIDATE REPORT
+source_id: REG-080
+source_name: DenizBank Medya Merkezi / Basında DenizBank
+source_url: https://www.denizbank.com/hakkimizda/medya-merkezi/basinda-denizbank
+total links found: 245
+candidate links found: 15
+- score=6 | title=İçeriğe Git | url=https://www.denizbank.com/hakkimizda/medya-merkezi/basinda-denizbank#content | reason=positive_keyword,detail_path
+- score=6 | title=Basinda Denizbank | url=https://www.denizbank.com/hakkimizda/medya-merkezi/basinda-denizbank | reason=positive_keyword,detail_path
+- score=4 | title=Yeni Müşterilere Faizsiz 100.000 TL’ye Varan Nakit! | url=https://www.denizbank.com/kampanya/mobildeniz-firsatlari/denizbankli-olanlara-nakit-firsati-103651 | reason=title_length,positive_keyword
+- score=4 | title=Birikimlerinize Hoş Geldin Faizi ile değer katın! | url=https://www.denizbank.com/kampanya/mobildeniz-firsatlari/tl-mevduatiniza-hos-geldin-faizi-40738 | reason=title_length,positive_keyword
+- score=4 | title=Kampanyaları Keşfedin | url=https://www.denizbank.com/kampanya/kart-kampanyalari | reason=title_length,positive_keyword
+- score=4 | title=Para Transferi ve Ödemeler | url=https://www.denizbank.com/odemeler | reason=title_length,positive_keyword
+- score=4 | title=Vergi ve SGK Ödemeleri Ödemeleriniz şimdi çok dijital! | url=https://www.denizbank.com/odemeler/sgk-borc | reason=title_length,positive_keyword
+- score=4 | title=Fatura Ödeme Online fatura ödemeleriniz DenizBank’ta! | url=https://www.denizbank.com/odemeler/fatura-odeme | reason=title_length,positive_keyword
+- score=4 | title=Trafik Cezası Ödemeleri Sorgulama ve ödeme işlemlerinizi yapın! | url=https://www.denizbank.com/odemeler/trafik-cezasi-odemeleri | reason=title_length,positive_keyword
+- score=4 | title=HGS (Hızlı Geçiş Sistemi) İşlemlerinizi anında gerçekleştirin. | url=https://www.denizbank.com/odemeler/hizli-gecis-sistemi | reason=title_length,positive_keyword
+- score=4 | title=Güvenli Ödeme Sistemi 2. el araç alım-satımında hız ve güven! | url=https://www.denizbank.com/isim-icin/kobi-bankaciligi/nakit-yonetimi-ve-dis-ticaret/nakit-yonetimi/guvenli-arac-alim-satim-sistemi | reason=title_length,positive_keyword
+- score=4 | title=Yabancı Para Transferleri Tek tıkla tüm dünyaya para transferi! | url=https://www.denizbank.com/odemeler/moneygram | reason=title_length,positive_keyword
+- score=4 | title=Günlük Bülten Piyasa gelişmelerini günlük takip edin. | url=https://www.denizbank.com/kendim-icin/afili-bankacilik/gunluk-bulten | reason=title_length,positive_keyword
+- score=4 | title=Kampanyalar Afili avantajlarla öne geçin. | url=https://www.denizbank.com/kampanya/afililere-ozel-kampanyalar | reason=title_length,positive_keyword
+- score=4 | title=Pasaport Defter Bedeli Ödeme | url=https://www.denizbank.com/odemeler/pasaport-odemeleri | reason=title_length,positive_keyword
+2026-06-25 15:08:10,322 INFO Documents considered: 1
+2026-06-25 15:08:10,322 INFO Recency cutoff: 2026-05-01
+2026-06-25 15:08:10,322 INFO Allow undated: False
+2026-06-25 15:08:10,322 INFO Allow low date confidence: False
+2026-06-25 15:08:10,322 INFO Allow end-date recency: False
+2026-06-25 15:08:10,357 INFO Poor item skipped | title_too_short | İçeriğe Git | https://www.denizbank.com/hakkimizda/medya-merkezi/basinda-denizbank#content
+2026-06-25 15:08:10,357 INFO Rejected candidate | title_too_short | İçeriğe Git | https://www.denizbank.com/hakkimizda/medya-merkezi/basinda-denizbank#content
+2026-06-25 15:08:10,357 INFO Poor item skipped | title_too_short | Basinda Denizbank | https://www.denizbank.com/hakkimizda/medya-merkezi/basinda-denizbank
+2026-06-25 15:08:10,357 INFO Rejected candidate | title_too_short | Basinda Denizbank | https://www.denizbank.com/hakkimizda/medya-merkezi/basinda-denizbank
+2026-06-25 15:08:10,358 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Yeni Müşterilere Faizsiz 100.000 TL’ye Varan Nakit! | https://www.denizbank.com/kampanya/mobildeniz-firsatlari/denizbankli-olanlara-nakit-firsati-103651
+2026-06-25 15:08:10,358 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Birikimlerinize Hoş Geldin Faizi ile değer katın! | https://www.denizbank.com/kampanya/mobildeniz-firsatlari/tl-mevduatiniza-hos-geldin-faizi-40738
+2026-06-25 15:08:10,358 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Kampanyaları Keşfedin | https://www.denizbank.com/kampanya/kart-kampanyalari
+2026-06-25 15:08:10,358 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Para Transferi ve Ödemeler | https://www.denizbank.com/odemeler
+2026-06-25 15:08:10,359 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Vergi ve SGK Ödemeleri Ödemeleriniz şimdi çok dijital! | https://www.denizbank.com/odemeler/sgk-borc
+2026-06-25 15:08:10,359 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Fatura Ödeme Online fatura ödemeleriniz DenizBank’ta! | https://www.denizbank.com/odemeler/fatura-odeme
+2026-06-25 15:08:10,359 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Trafik Cezası Ödemeleri Sorgulama ve ödeme işlemlerinizi yapın! | https://www.denizbank.com/odemeler/trafik-cezasi-odemeleri
+2026-06-25 15:08:10,359 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | HGS (Hızlı Geçiş Sistemi) İşlemlerinizi anında gerçekleştirin. | https://www.denizbank.com/odemeler/hizli-gecis-sistemi
+2026-06-25 15:08:10,360 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Güvenli Ödeme Sistemi 2. el araç alım-satımında hız ve güven! | https://www.denizbank.com/isim-icin/kobi-bankaciligi/nakit-yonetimi-ve-dis-ticaret/nakit-yonetimi/guvenli-arac-alim-satim-sistemi
+2026-06-25 15:08:10,360 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Yabancı Para Transferleri Tek tıkla tüm dünyaya para transferi! | https://www.denizbank.com/odemeler/moneygram
+2026-06-25 15:08:10,360 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Günlük Bülten Piyasa gelişmelerini günlük takip edin. | https://www.denizbank.com/kendim-icin/afili-bankacilik/gunluk-bulten
+2026-06-25 15:08:10,360 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Kampanyalar Afili avantajlarla öne geçin. | https://www.denizbank.com/kampanya/afililere-ozel-kampanyalar
+2026-06-25 15:08:10,361 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Pasaport Defter Bedeli Ödeme | https://www.denizbank.com/odemeler/pasaport-odemeleri
+2026-06-25 15:08:10,361 INFO Dry run: 0 items would be written
+2026-06-25 15:08:10,369 INFO Total links found: 245
+2026-06-25 15:08:10,369 INFO Candidate links found: 15
+2026-06-25 15:08:10,369 INFO Detail pages fetched: 0
+2026-06-25 15:08:10,369 INFO Recent items created: 0
+2026-06-25 15:08:10,369 INFO Saved recent developments: 0
+2026-06-25 15:08:10,369 INFO Rejected old items: 0
+2026-06-25 15:08:10,369 INFO Rejected undated items: 15
+2026-06-25 15:08:10,369 INFO Rejected low-confidence dates: 0
+2026-06-25 15:08:10,369 INFO Rejected non-developments: 0
+2026-06-25 15:08:10,369 INFO Saved by publication_date: 0
+2026-06-25 15:08:10,369 INFO Saved by announcement_date: 0
+2026-06-25 15:08:10,369 INFO Saved by campaign_start_date: 0
+2026-06-25 15:08:10,369 INFO Rejected because only campaign_end_date existed: 0
+2026-06-25 15:08:10,369 INFO passed_by_publication_date_count: 0
+2026-06-25 15:08:10,369 INFO passed_by_announcement_date_count: 0
+2026-06-25 15:08:10,369 INFO passed_by_campaign_start_date_count: 0
+2026-06-25 15:08:10,369 INFO passed_by_end_date_manual_override_count: 0
+2026-06-25 15:08:10,369 INFO rejected_only_campaign_end_date_count: 0
+2026-06-25 15:08:10,369 INFO Active old campaigns detected: 0
+2026-06-25 15:08:10,369 INFO Poor items skipped: 2
+2026-06-25 15:08:10,369 INFO Duplicates skipped: 0
+2026-06-25 15:08:10,369 INFO Errors: 0
+2026-06-25 15:08:10,369 INFO First rejected items: İçeriğe Git :: title_too_short :: https://www.denizbank.com/hakkimizda/medya-merkezi/basinda-denizbank#content | Basinda Denizbank :: title_too_short :: https://www.denizbank.com/hakkimizda/medya-merkezi/basinda-denizbank | Yeni Müşterilere Faizsiz 100.000 TL’ye Varan Nakit! :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.denizbank.com/kampanya/mobildeniz-firsatlari/denizbankli-olanlara-nakit-firsati-103651 | Birikimlerinize Hoş Geldin Faizi ile değer katın! :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.denizbank.com/kampanya/mobildeniz-firsatlari/tl-mevduatiniza-hos-geldin-faizi-40738 | Kampanyaları Keşfedin :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.denizbank.com/kampanya/kart-kampanyalari | Para Transferi ve Ödemeler :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.denizbank.com/odemeler | Vergi ve SGK Ödemeleri Ödemeleriniz şimdi çok dijital! :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.denizbank.com/odemeler/sgk-borc | Fatura Ödeme Online fatura ödemeleriniz DenizBank’ta! :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.denizbank.com/odemeler/fatura-odeme | Trafik Cezası Ödemeleri Sorgulama ve ödeme işlemlerinizi yapın! :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.denizbank.com/odemeler/trafik-cezasi-odemeleri | HGS (Hızlı Geçiş Sistemi) İşlemlerinizi anında gerçekleştirin. :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.denizbank.com/odemeler/hizli-gecis-sistemi

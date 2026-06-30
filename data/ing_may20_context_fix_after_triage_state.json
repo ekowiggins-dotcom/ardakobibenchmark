@@ -1,0 +1,18 @@
+{
+  "data/recent_item_review_queue.csv": {
+    "rows": 12,
+    "sha": "293c02e015471934d30cb938bc2890065597e4a5efe023e8d688d7f20465f70b"
+  },
+  "data/recent_item_archive.csv": {
+    "rows": 13,
+    "sha": "4a5843332ffa9fdee4a971176374f70f85972bfbaaaee3c5e4036be26b0aaeed"
+  },
+  "data/recent_item_summaries.csv": {
+    "rows": 32,
+    "sha": "812c9ae127e652582f14b4b6ff7cc00e6bc7aecd4226208eeec040ef51d94b12"
+  },
+  "data/weekly_developments.csv": {
+    "rows": 16,
+    "sha": "35927fe252fbbbb743902943fcecf153523efe447341ad5fa05fc985da074a33"
+  }
+}

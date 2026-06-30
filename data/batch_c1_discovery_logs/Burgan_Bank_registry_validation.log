@@ -1,0 +1,20 @@
+Sources checked: 9
+valid sources: 9
+failed sources: 0
+redirected sources: 3
+blocked sources: 0
+static-only sources: 0
+weekly-development eligible sources: 1
+
+source | REG-098 | Burgan Bank Basın Odası | status=200 | length=105103 | links=409 | useful_links=174 | turkish_ok=True | redirected=False | blocked=False | eligible=True | category=weekly-development eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Historical archive only | collector=static_scrape
+source | REG-159 | Burgan Bank Kurumsal ve Ticari Bankacılık | status=200 | length=31668 | links=124 | useful_links=40 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-160 | Burgan Bank Ürün ve Hizmet Ücretleri | status=200 | length=100311 | links=127 | useful_links=26 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-172 | Burgan Bank Proje Finansmanı | status=200 | length=38788 | links=170 | useful_links=88 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-173 | Burgan Bank Mevduat | status=200 | length=39203 | links=172 | useful_links=90 | turkish_ok=True | redirected=True | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+  final_url: https://www.burgan.com.tr/kurumsal-ve-ticari-bankacilik/mevduat-ve-yatirim/mevduat/vadesiz-mevduat
+source | REG-174 | Burgan Bank Yatırım | status=200 | length=42358 | links=172 | useful_links=90 | turkish_ok=True | redirected=True | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+  final_url: https://www.burgan.com.tr/kurumsal-ve-ticari-bankacilik/mevduat-ve-yatirim/yatirim/hazine
+source | REG-175 | Burgan Bank Dış Ticaret | status=200 | length=30731 | links=121 | useful_links=39 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+source | REG-176 | Burgan Bank Sigorta | status=200 | length=44705 | links=171 | useful_links=89 | turkish_ok=True | redirected=True | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape
+  final_url: https://www.burgan.com.tr/kurumsal-ve-ticari-bankacilik/sigorta/sigorta-ve-emeklilik
+source | REG-177 | Burgan Bank Masraf Komisyon Listesi | status=200 | length=65428 | links=118 | useful_links=36 | turkish_ok=True | redirected=False | blocked=False | eligible=False | category=not eligible | coverage=KOBİ Rakip Banka | priority=C | mvp_active=- | validation=Valid benchmark-only source | collector=static_scrape

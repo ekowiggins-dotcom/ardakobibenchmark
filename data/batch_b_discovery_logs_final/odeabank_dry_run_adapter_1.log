@@ -1,0 +1,86 @@
+2026-06-26 09:03:49,974 INFO Documents considered: 1
+2026-06-26 09:03:49,974 INFO Recency cutoff: 2026-05-01
+2026-06-26 09:03:49,975 INFO Allow undated: False
+2026-06-26 09:03:49,975 INFO Allow low date confidence: False
+2026-06-26 09:03:49,975 INFO Allow end-date recency: False
+2026-06-26 09:03:50,023 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank’ın ticari bankacılık projesine Qorus’tan 1’incilik ödülü | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabankin-ticari-bankacilik-projesine-qorustan-1incilik-odulu
+2026-06-26 09:03:50,023 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Sürdürülebilir Kalkınma için Odeabank ve İGE’den kadın girişimcilere ve yeşil dönüşüme destek | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/surdurulebilir-kalkinma-icin-odeabank-ige-isbirligi
+2026-06-26 09:03:50,024 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank, İzmir Firmaları ile Dış Ticareti Konuştu | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-izmir-firmalari-ile-dis-ticareti-konustu
+2026-06-26 09:03:50,024 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank, Mersinli İş İnsanları İle Dış Ticareti Konuştu | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-mersinli-is-insanlari-ile-dis-ticareti-konustu
+2026-06-26 09:03:50,025 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank, Konyalı İş İnsanları İle Bir Araya Geldi | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/konya-dis-ticaret-bulusmasi-21-mayis-2021
+2026-06-26 09:03:50,025 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank, Gaziantep’li İş İnsanlarıyla Bir Araya Geldi | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/gaziantep-dis-ticaret-bulusmasi
+2026-06-26 09:03:50,026 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank, İskenderunlu İhracatçılarla Dış Ticareti Konuştu | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/basin-bultenleriiskenderun-dis-ticaret-bulusmasi
+2026-06-26 09:03:50,026 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank'tan "Dış Ticaret ve Nakit Yönetimi Uzman Hattı" | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/basin-bultenleridis-ticaret-ve-nakit-yonetimi-uzman-hatti
+2026-06-26 09:03:50,027 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank, Mersinli İş İnsanları ile Dış Ticarette Fırsatları Konuştu | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/mersin-dis-ticaret-bulusmasi
+2026-06-26 09:03:50,027 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank 2020’de TL Ticari Kredilerde Yüzde 50 Büyüdü | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-ticari-kredilerde-yuzde-50-buyudu
+2026-06-26 09:03:50,027 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank, İzmir İş İnsanları İle Dış Ticareti Konuştu | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/izmir-dis-ticaret-bulusmasi
+2026-06-26 09:03:50,028 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank’tan Pandemide İhracatçılara 11,7 Milyar TL’lik Kaynak | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/dis-ticaret-bulusmasi-degerlendirme
+2026-06-26 09:03:50,028 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank, Konyalı İş İnsanları İle Dış Ticareti Konuştu | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/konya-dis-ticaret-bulusmasi
+2026-06-26 09:03:50,029 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Denizli İş İnsanları Dış Ticaret Buluşması | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/denizli-dis-ticaret-bulusmasi
+2026-06-26 09:03:50,029 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank, Bursalı İhracatçılarla Dış Ticareti Konuştu | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/basin-bultenleri-bursa-dis-ticaret-bulusmasi
+2026-06-26 09:03:50,030 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank pandemi sürecinde 500’ü aşkın ihracatçıyla bir araya geldi | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-pandemi-surecinde-besyuzu-askin-ihracatciyla-bir-araya-geldi
+2026-06-26 09:03:50,030 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank, Kayserili İş İnsanları Ile Dış Ticareti Konuştu Paylaş | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-kayserili-is-insanlari-ile-dis-ticareti-konustu
+2026-06-26 09:03:50,031 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank, Osmaniye ve Hataylı İhracatçılarla Buluştu | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-osmaniye-ve-hatayli-ihracatcilarla-bulustu
+2026-06-26 09:03:50,031 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank: Zor Dönemde İhracatçılarımızın Yanındayız | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/zor-donemde-ihracatcilarimizin-yanindayiz
+2026-06-26 09:03:50,032 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank, Gaziantepli İhracatçılarla Video Konferansta Buluştu | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-gaziantepli-ihracatcilarla-video-konferansta-bulustu
+2026-06-26 09:03:50,032 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank, İhracatçılara Kılavuzluk Yapmaya Devam Ediyor | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-ihracatcilara-kilavuzluk-yapmaya-devam-ediyor
+2026-06-26 09:03:50,033 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank’tan Dış Ticarete Uzun Vadeli Finansman Desteği | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabanktan-dis-ticarete-uzun-vadeli-finansman-destegi
+2026-06-26 09:03:50,033 INFO Poor item skipped | title_too_short | Kamuoyuna Duyuru... | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/yapilandirilmis-vergi-borc-tahsilatlari
+2026-06-26 09:03:50,033 INFO Rejected candidate | title_too_short | Kamuoyuna Duyuru... | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/yapilandirilmis-vergi-borc-tahsilatlari
+2026-06-26 09:03:50,033 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Odeabank KOBİ’ler için AYB ile €100 Milyon Tutarında Kredi Anlaşması İmzaladı | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-kobiler-icin-ayb-ile-100-milyon-tuarinda-kredi-anlasmasi-imzaladi
+2026-06-26 09:03:50,034 INFO Rejected candidate | Tarih yok; varsayılan kapıdan geçmedi | Mikro İşletmelere ve Yenilenebilir Enerjiye Destek | https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/mikro-isletmelere-ve-yenilebilir-enerjiye-destek
+2026-06-26 09:03:50,034 INFO Dry run: 0 items would be written
+2026-06-26 09:03:50,054 INFO Total links found: 388
+2026-06-26 09:03:50,054 INFO Candidate links found: 25
+2026-06-26 09:03:50,054 INFO Detail pages fetched: 0
+2026-06-26 09:03:50,054 INFO Recent items created: 0
+2026-06-26 09:03:50,054 INFO Saved recent developments: 0
+2026-06-26 09:03:50,054 INFO Rejected old items: 0
+2026-06-26 09:03:50,054 INFO Rejected undated items: 25
+2026-06-26 09:03:50,054 INFO Rejected low-confidence dates: 0
+2026-06-26 09:03:50,054 INFO Rejected non-developments: 0
+2026-06-26 09:03:50,054 INFO Saved by publication_date: 0
+2026-06-26 09:03:50,054 INFO Saved by announcement_date: 0
+2026-06-26 09:03:50,054 INFO Saved by campaign_start_date: 0
+2026-06-26 09:03:50,054 INFO Rejected because only campaign_end_date existed: 0
+2026-06-26 09:03:50,054 INFO passed_by_publication_date_count: 0
+2026-06-26 09:03:50,054 INFO passed_by_announcement_date_count: 0
+2026-06-26 09:03:50,054 INFO passed_by_campaign_start_date_count: 0
+2026-06-26 09:03:50,054 INFO passed_by_end_date_manual_override_count: 0
+2026-06-26 09:03:50,054 INFO rejected_only_campaign_end_date_count: 0
+2026-06-26 09:03:50,054 INFO Active old campaigns detected: 0
+2026-06-26 09:03:50,054 INFO Content role Bağımsız Gelişme: 24
+2026-06-26 09:03:50,054 INFO Content role Bağlamsal Veri: 0
+2026-06-26 09:03:50,054 INFO Content role Yönetici Bilgilendirme: 1
+2026-06-26 09:03:50,054 INFO Content role Kapsam Dışı/Benchmark: 0
+2026-06-26 09:03:50,054 INFO Poor items skipped: 1
+2026-06-26 09:03:50,054 INFO Duplicates skipped: 0
+2026-06-26 09:03:50,054 INFO Errors: 0
+2026-06-26 09:03:50,054 INFO First rejected items: Odeabank’ın ticari bankacılık projesine Qorus’tan 1’incilik ödülü :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabankin-ticari-bankacilik-projesine-qorustan-1incilik-odulu | Sürdürülebilir Kalkınma için Odeabank ve İGE’den kadın girişimcilere ve yeşil dönüşüme destek :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/surdurulebilir-kalkinma-icin-odeabank-ige-isbirligi | Odeabank, İzmir Firmaları ile Dış Ticareti Konuştu :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-izmir-firmalari-ile-dis-ticareti-konustu | Odeabank, Mersinli İş İnsanları İle Dış Ticareti Konuştu :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-mersinli-is-insanlari-ile-dis-ticareti-konustu | Odeabank, Konyalı İş İnsanları İle Bir Araya Geldi :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/konya-dis-ticaret-bulusmasi-21-mayis-2021 | Odeabank, Gaziantep’li İş İnsanlarıyla Bir Araya Geldi :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/gaziantep-dis-ticaret-bulusmasi | Odeabank, İskenderunlu İhracatçılarla Dış Ticareti Konuştu :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/basin-bultenleriiskenderun-dis-ticaret-bulusmasi | Odeabank'tan "Dış Ticaret ve Nakit Yönetimi Uzman Hattı" :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/basin-bultenleridis-ticaret-ve-nakit-yonetimi-uzman-hatti | Odeabank, Mersinli İş İnsanları ile Dış Ticarette Fırsatları Konuştu :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/mersin-dis-ticaret-bulusmasi | Odeabank 2020’de TL Ticari Kredilerde Yüzde 50 Büyüdü :: Tarih yok; varsayılan kapıdan geçmedi :: https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-ticari-kredilerde-yuzde-50-buyudu
+
+CANDIDATE REPORT
+source_id: REG-096
+source_name: Odeabank Basın Bültenleri
+source_url: https://www.odeabank.com.tr/hakkimizda/basin-bultenleri
+total links found: 388
+candidate links found: 25
+- score=24 | title=Odeabank’ın ticari bankacılık projesine Qorus’tan 1’incilik ödülü | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabankin-ticari-bankacilik-projesine-qorustan-1incilik-odulu | reason=odeabank_press_archive,award_candidate
+- score=24 | title=Sürdürülebilir Kalkınma için Odeabank ve İGE’den kadın girişimcilere ve yeşil dönüşüme destek | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/surdurulebilir-kalkinma-icin-odeabank-ige-isbirligi | reason=odeabank_press_archive
+- score=24 | title=Odeabank, İzmir Firmaları ile Dış Ticareti Konuştu | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-izmir-firmalari-ile-dis-ticareti-konustu | reason=odeabank_press_archive
+- score=24 | title=Odeabank, Mersinli İş İnsanları İle Dış Ticareti Konuştu | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-mersinli-is-insanlari-ile-dis-ticareti-konustu | reason=odeabank_press_archive
+- score=24 | title=Odeabank, Konyalı İş İnsanları İle Bir Araya Geldi | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/konya-dis-ticaret-bulusmasi-21-mayis-2021 | reason=odeabank_press_archive
+- score=24 | title=Odeabank, Gaziantep’li İş İnsanlarıyla Bir Araya Geldi | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/gaziantep-dis-ticaret-bulusmasi | reason=odeabank_press_archive
+- score=24 | title=Odeabank, İskenderunlu İhracatçılarla Dış Ticareti Konuştu | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/basin-bultenleriiskenderun-dis-ticaret-bulusmasi | reason=odeabank_press_archive
+- score=24 | title=Odeabank'tan "Dış Ticaret ve Nakit Yönetimi Uzman Hattı" | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/basin-bultenleridis-ticaret-ve-nakit-yonetimi-uzman-hatti | reason=odeabank_press_archive
+- score=24 | title=Odeabank, Mersinli İş İnsanları ile Dış Ticarette Fırsatları Konuştu | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/mersin-dis-ticaret-bulusmasi | reason=odeabank_press_archive
+- score=24 | title=Odeabank 2020’de TL Ticari Kredilerde Yüzde 50 Büyüdü | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-ticari-kredilerde-yuzde-50-buyudu | reason=odeabank_press_archive
+- score=24 | title=Odeabank, İzmir İş İnsanları İle Dış Ticareti Konuştu | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/izmir-dis-ticaret-bulusmasi | reason=odeabank_press_archive
+- score=24 | title=Odeabank’tan Pandemide İhracatçılara 11,7 Milyar TL’lik Kaynak | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/dis-ticaret-bulusmasi-degerlendirme | reason=odeabank_press_archive
+- score=24 | title=Odeabank, Konyalı İş İnsanları İle Dış Ticareti Konuştu | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/konya-dis-ticaret-bulusmasi | reason=odeabank_press_archive
+- score=24 | title=Denizli İş İnsanları Dış Ticaret Buluşması | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/denizli-dis-ticaret-bulusmasi | reason=odeabank_press_archive
+- score=24 | title=Odeabank, Bursalı İhracatçılarla Dış Ticareti Konuştu | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/basin-bultenleri-bursa-dis-ticaret-bulusmasi | reason=odeabank_press_archive
+- score=24 | title=Odeabank pandemi sürecinde 500’ü aşkın ihracatçıyla bir araya geldi | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-pandemi-surecinde-besyuzu-askin-ihracatciyla-bir-araya-geldi | reason=odeabank_press_archive
+- score=24 | title=Odeabank, Kayserili İş İnsanları Ile Dış Ticareti Konuştu Paylaş | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-kayserili-is-insanlari-ile-dis-ticareti-konustu | reason=odeabank_press_archive
+- score=24 | title=Odeabank, Osmaniye ve Hataylı İhracatçılarla Buluştu | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-osmaniye-ve-hatayli-ihracatcilarla-bulustu | reason=odeabank_press_archive
+- score=24 | title=Odeabank: Zor Dönemde İhracatçılarımızın Yanındayız | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/zor-donemde-ihracatcilarimizin-yanindayiz | reason=odeabank_press_archive
+- score=24 | title=Odeabank, Gaziantepli İhracatçılarla Video Konferansta Buluştu | url=https://www.odeabank.com.tr/hakkimizda/basin-bultenleri/odeabank-gaziantepli-ihracatcilarla-video-konferansta-bulustu | reason=odeabank_press_archive

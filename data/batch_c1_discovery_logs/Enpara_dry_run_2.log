@@ -1,0 +1,54 @@
+2026-06-26 11:43:19,272 INFO Documents considered: 1
+2026-06-26 11:43:19,272 INFO Recency cutoff: 2026-05-01
+2026-06-26 11:43:19,272 INFO Allow undated: False
+2026-06-26 11:43:19,272 INFO Allow low date confidence: False
+2026-06-26 11:43:19,272 INFO Allow end-date recency: False
+2026-06-26 11:43:19,508 INFO Rejected candidate | Kesim tarihinden eski: 2022-04-01 < 2026-05-01 | Enpara Şirketim’i tavsiye edin, 50.000 TL’ye kadar ödül kazanın! | Enpara Şirketim | https://www.enpara.com/sirketim/kampanyalar/sirketim-tavsiye-kampanyasi
+2026-06-26 11:43:19,714 INFO Rejected candidate | Kesim tarihinden eski: 2026-01-07 < 2026-05-01 | Enpara Şirketim’de SGK talimatlarınız ücretsiz! | https://www.enpara.com/sirketim/kampanyalar/sgk-talimat-kampanyasi
+2026-06-26 11:43:19,959 INFO Rejected candidate | Kesim tarihinden eski: 2024-09-09 < 2026-05-01 | Petrol Ofisi'nde %3 İndirim Kampanyası! | Enpara Şirketim | https://www.enpara.com/sirketim/kampanyalar/enpara.com-sirketim-kredi-karti-ile-petrol-ofisinde-indirim
+2026-06-26 11:43:20,189 INFO Rejected candidate | Kesim tarihinden eski: 2022-05-01 < 2026-05-01 | Harcamalarınızı faizsiz ve ücretsiz olarak sonradan taksitlendirin! | Enpara Şirketim | https://www.enpara.com/sirketim/kampanyalar/sonradan-taksitlendirme-kampanyasi
+2026-06-26 11:43:20,411 INFO Rejected candidate | Kesim tarihinden eski: 2025-02-01 < 2026-05-01 | Otopark Harcamalarınız Enpara Şirketim’den! | Enpara Şirketim | https://www.enpara.com/sirketim/kampanyalar/otopark-harcamalariniz-enpara-sirketimden
+2026-06-26 11:43:20,692 INFO Rejected candidate | Kesim tarihinden eski: 2020-12-18 < 2026-05-01 | Çalışanlarınızın maaş ödemesi sizden, her biri için 1.000 TL bizden! | Enpara Şirketim | https://www.enpara.com/sirketim/kampanyalar/calisanlarinizin-maas-odemesi-sizden-her-biri-icin-1000-tl-bizden
+2026-06-26 11:43:20,933 INFO Rejected candidate | Kesim tarihinden eski: 2021-11-04 < 2026-05-01 | Günlük hesabınıza +%1 ek faiz avantajı! | Enpara Şirketim | https://www.enpara.com/sirketim/kampanyalar/gunlukhesap
+2026-06-26 11:43:20,933 INFO Dry run: 0 items would be written
+2026-06-26 11:43:20,959 INFO Total links found: 195
+2026-06-26 11:43:20,959 INFO Candidate links found: 7
+2026-06-26 11:43:20,959 INFO Detail pages fetched: 7
+2026-06-26 11:43:20,959 INFO Recent items created: 0
+2026-06-26 11:43:20,959 INFO Saved recent developments: 0
+2026-06-26 11:43:20,959 INFO Rejected old items: 7
+2026-06-26 11:43:20,959 INFO Rejected undated items: 0
+2026-06-26 11:43:20,959 INFO Rejected low-confidence dates: 0
+2026-06-26 11:43:20,959 INFO Rejected non-developments: 0
+2026-06-26 11:43:20,959 INFO Saved by publication_date: 0
+2026-06-26 11:43:20,959 INFO Saved by announcement_date: 0
+2026-06-26 11:43:20,959 INFO Saved by campaign_start_date: 0
+2026-06-26 11:43:20,959 INFO Rejected because only campaign_end_date existed: 0
+2026-06-26 11:43:20,959 INFO passed_by_publication_date_count: 0
+2026-06-26 11:43:20,959 INFO passed_by_announcement_date_count: 0
+2026-06-26 11:43:20,959 INFO passed_by_campaign_start_date_count: 0
+2026-06-26 11:43:20,959 INFO passed_by_end_date_manual_override_count: 0
+2026-06-26 11:43:20,959 INFO rejected_only_campaign_end_date_count: 0
+2026-06-26 11:43:20,959 INFO Active old campaigns detected: 6
+2026-06-26 11:43:20,959 INFO Content role Bağımsız Gelişme: 3
+2026-06-26 11:43:20,959 INFO Content role Bağlamsal Veri: 0
+2026-06-26 11:43:20,959 INFO Content role Yönetici Bilgilendirme: 2
+2026-06-26 11:43:20,959 INFO Content role Kapsam Dışı/Benchmark: 2
+2026-06-26 11:43:20,959 INFO Poor items skipped: 0
+2026-06-26 11:43:20,959 INFO Duplicates skipped: 0
+2026-06-26 11:43:20,959 INFO Errors: 0
+2026-06-26 11:43:20,959 INFO First rejected items: Enpara Şirketim’i tavsiye edin, 50.000 TL’ye kadar ödül kazanın! | Enpara Şirketim :: Kesim tarihinden eski: 2022-04-01 < 2026-05-01 :: https://www.enpara.com/sirketim/kampanyalar/sirketim-tavsiye-kampanyasi | Enpara Şirketim’de SGK talimatlarınız ücretsiz! :: Kesim tarihinden eski: 2026-01-07 < 2026-05-01 :: https://www.enpara.com/sirketim/kampanyalar/sgk-talimat-kampanyasi | Petrol Ofisi'nde %3 İndirim Kampanyası! | Enpara Şirketim :: Kesim tarihinden eski: 2024-09-09 < 2026-05-01 :: https://www.enpara.com/sirketim/kampanyalar/enpara.com-sirketim-kredi-karti-ile-petrol-ofisinde-indirim | Harcamalarınızı faizsiz ve ücretsiz olarak sonradan taksitlendirin! | Enpara Şirketim :: Kesim tarihinden eski: 2022-05-01 < 2026-05-01 :: https://www.enpara.com/sirketim/kampanyalar/sonradan-taksitlendirme-kampanyasi | Otopark Harcamalarınız Enpara Şirketim’den! | Enpara Şirketim :: Kesim tarihinden eski: 2025-02-01 < 2026-05-01 :: https://www.enpara.com/sirketim/kampanyalar/otopark-harcamalariniz-enpara-sirketimden | Çalışanlarınızın maaş ödemesi sizden, her biri için 1.000 TL bizden! | Enpara Şirketim :: Kesim tarihinden eski: 2020-12-18 < 2026-05-01 :: https://www.enpara.com/sirketim/kampanyalar/calisanlarinizin-maas-odemesi-sizden-her-biri-icin-1000-tl-bizden | Günlük hesabınıza +%1 ek faiz avantajı! | Enpara Şirketim :: Kesim tarihinden eski: 2021-11-04 < 2026-05-01 :: https://www.enpara.com/sirketim/kampanyalar/gunlukhesap
+
+CANDIDATE REPORT
+source_id: REG-101
+source_name: Enpara Şirketim Kampanyalar
+source_url: https://www.enpara.com/sirketim/kampanyalar
+total links found: 195
+candidate links found: 7
+- score=26 | title=Sirketim Tavsiye Kampanyasi | url=https://www.enpara.com/sirketim/kampanyalar/sirketim-tavsiye-kampanyasi | reason=enpara_sirketim_campaign_link
+- score=26 | title=Sgk Talimat Kampanyasi | url=https://www.enpara.com/sirketim/kampanyalar/sgk-talimat-kampanyasi | reason=enpara_sirketim_campaign_link
+- score=26 | title=Enpara.Com Sirketim Kredi Karti Ile Petrol Ofisinde Indirim | url=https://www.enpara.com/sirketim/kampanyalar/enpara.com-sirketim-kredi-karti-ile-petrol-ofisinde-indirim | reason=enpara_sirketim_campaign_link
+- score=26 | title=Sonradan Taksitlendirme Kampanyasi | url=https://www.enpara.com/sirketim/kampanyalar/sonradan-taksitlendirme-kampanyasi | reason=enpara_sirketim_campaign_link
+- score=26 | title=Otopark Harcamalariniz Enpara Sirketimden | url=https://www.enpara.com/sirketim/kampanyalar/otopark-harcamalariniz-enpara-sirketimden | reason=enpara_sirketim_campaign_link
+- score=26 | title=Calisanlarinizin Maas Odemesi Sizden Her Biri Icin 1000 Tl Bizden | url=https://www.enpara.com/sirketim/kampanyalar/calisanlarinizin-maas-odemesi-sizden-her-biri-icin-1000-tl-bizden | reason=enpara_sirketim_campaign_link
+- score=26 | title=Gunlukhesap | url=https://www.enpara.com/sirketim/kampanyalar/gunlukhesap | reason=enpara_sirketim_campaign_link

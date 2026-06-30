@@ -1,0 +1,124 @@
+{
+  "run_id": "final_readiness_20260629T133423",
+  "created_at": "2026-06-29T13:57:21+00:00",
+  "snapshot_path": "data/rehearsal_snapshots/final_readiness_20260629T133423",
+  "files_changed": {
+    "recent_items.csv": {
+      "before_hash": "1a6c96bf003a33077946828dfefceec84247a00ff9532a0278d1868a8166792b",
+      "after_hash": "2e1bedb90ade11fd7027760b0223df3ff48fd193c0945fa9d60ecd33e4a3c565"
+    },
+    "recent_item_summaries.csv": {
+      "before_hash": "0c3509a9418ae364b5238cd8963248eb6e1c6ec27cf9c2b3967cb80c11a3fcbb",
+      "after_hash": "cb78a9f3b47fe214547720f5cd83554f44a4994daed121a8e281ac7c61e58b2f"
+    },
+    "recent_item_review_queue.csv": {
+      "before_hash": "293c02e015471934d30cb938bc2890065597e4a5efe023e8d688d7f20465f70b",
+      "after_hash": "6ce3499cf14fc0b6435fabaec743ac1b9a7c401d42e79bbf43dce5172fe73a89"
+    },
+    "management_awareness_queue.csv": {
+      "before_hash": "159e3567ec038f4deb1af3b158203dffaaf0dbe815977a45961fda58b860b9bd",
+      "after_hash": "f4cacc6ca70534432f1b24d6759478684eff7819de98d310c7c53255d047b154"
+    },
+    "recent_item_archive.csv": {
+      "before_hash": "9dfadae87cc650a03cb19e2e98b031b181bdf87e8942a4259c70b3bcff5d61cb",
+      "after_hash": "a7f73524c253b538a94ab4e2d8b36ba837ba70d085233ba66ef308c26a5ba812"
+    },
+    "raw_documents_metadata.csv": {
+      "before_hash": "54d2a646ffac6d2438a25e1cbd4b8e65f4846315926ed8c1a9c26f34ad928c9f",
+      "after_hash": "e835c4b3d49ecdfd862b6558d854530187d2361ce68d4ed72d20f19752554ae5"
+    },
+    "seen_item_index.csv": {
+      "before_hash": "4422657222c7f0fb92c5270e2901a2c5ff2d9785d49a4c428a6270a472feb014",
+      "after_hash": "a3c45e9600b2c5bd7523ab2bbbac59271fbbb96720fde8465f2b5476394d8581"
+    },
+    "pipeline_runs.csv": {
+      "before_hash": "3b52c4df3b8de3814881e74663e2bcb44346946a7d51ad44dee2541440c04d65",
+      "after_hash": "79011775ad5d18a063790b500bd9ba9d4809459ace53121baf09ea86f2d939b2"
+    },
+    "pipeline_run_state.json": {
+      "before_hash": "0f3e18623651dc264a5dffda0dfbb596ffb8e010713e20d48b8fbdf13c45a7bc",
+      "after_hash": "c33c66418e39cc6d507e58ff40b3c2c21aa5d53fa0704b3aaec27655c147dea6"
+    }
+  },
+  "rows_added": {
+    "source_registry.csv": 0,
+    "recent_items.csv": 0,
+    "recent_item_summaries.csv": 3,
+    "recent_item_review_queue.csv": 1,
+    "management_awareness_queue.csv": 1,
+    "recent_item_archive.csv": 2,
+    "weekly_developments.csv": 0,
+    "benchmark_facts.csv": 0,
+    "raw_documents_metadata.csv": 0,
+    "seen_item_index.csv": 0,
+    "recent_item_revisions.csv": 0,
+    "pipeline_runs.csv": 0,
+    "pipeline_run_state.json": 0,
+    "development_clusters.csv": 0,
+    "development_cluster_review_queue.csv": 0,
+    "mastercard_source_recovery_watch.csv": 0,
+    "mastercard_manual_official_evidence_inbox.csv": 0,
+    "mastercard_manual_verified_candidates.csv": 0
+  },
+  "rows_removed": {
+    "source_registry.csv": 0,
+    "recent_items.csv": 0,
+    "recent_item_summaries.csv": 0,
+    "recent_item_review_queue.csv": 0,
+    "management_awareness_queue.csv": 0,
+    "recent_item_archive.csv": 0,
+    "weekly_developments.csv": 0,
+    "benchmark_facts.csv": 0,
+    "raw_documents_metadata.csv": 0,
+    "seen_item_index.csv": 0,
+    "recent_item_revisions.csv": 0,
+    "pipeline_runs.csv": 0,
+    "pipeline_run_state.json": 0,
+    "development_clusters.csv": 0,
+    "development_cluster_review_queue.csv": 0,
+    "mastercard_source_recovery_watch.csv": 0,
+    "mastercard_manual_official_evidence_inbox.csv": 0,
+    "mastercard_manual_verified_candidates.csv": 0
+  },
+  "hashes_before": {
+    "source_registry.csv": "cf79ac4489a1be3e834d09330d0fd69f33437952e40793d9c7fd9a6ab6fd49be",
+    "recent_items.csv": "1a6c96bf003a33077946828dfefceec84247a00ff9532a0278d1868a8166792b",
+    "recent_item_summaries.csv": "0c3509a9418ae364b5238cd8963248eb6e1c6ec27cf9c2b3967cb80c11a3fcbb",
+    "recent_item_review_queue.csv": "293c02e015471934d30cb938bc2890065597e4a5efe023e8d688d7f20465f70b",
+    "management_awareness_queue.csv": "159e3567ec038f4deb1af3b158203dffaaf0dbe815977a45961fda58b860b9bd",
+    "recent_item_archive.csv": "9dfadae87cc650a03cb19e2e98b031b181bdf87e8942a4259c70b3bcff5d61cb",
+    "weekly_developments.csv": "9642e24de8088c0a5ee3cae2a4c1afaa72caaac08b1dee8af7bebd8b07305eba",
+    "benchmark_facts.csv": "14992c3b32db06f0048cc5fcdc07384be3a3bcadf62770b7648e253c03244d7b",
+    "raw_documents_metadata.csv": "54d2a646ffac6d2438a25e1cbd4b8e65f4846315926ed8c1a9c26f34ad928c9f",
+    "seen_item_index.csv": "4422657222c7f0fb92c5270e2901a2c5ff2d9785d49a4c428a6270a472feb014",
+    "recent_item_revisions.csv": "abda811a15dd11cc34da93114f5f73c145e1b661cb4495800aa431dd89449b3a",
+    "pipeline_runs.csv": "3b52c4df3b8de3814881e74663e2bcb44346946a7d51ad44dee2541440c04d65",
+    "pipeline_run_state.json": "0f3e18623651dc264a5dffda0dfbb596ffb8e010713e20d48b8fbdf13c45a7bc",
+    "development_clusters.csv": "05ad73f2fb38cee6967b22049e4401fbaa1b724a10e1e82a90f5f04870ef8a90",
+    "development_cluster_review_queue.csv": "621b25c9fabeb28bcb4da830d859e31dfc07e5d3704319160766b698ced62c88",
+    "mastercard_source_recovery_watch.csv": "6b7b36359dcb2c669c7d006c29d1540bf09a6c138f6aca8f0a58d7732e964c5c",
+    "mastercard_manual_official_evidence_inbox.csv": "21ee4aba51deaf2d086b6f43606c77a360bc8e82c0c4bcdd006153fec688f3ff",
+    "mastercard_manual_verified_candidates.csv": "de68ea0bb1cc59d67828828dc318b478458a5f93abf9ccaf55d2f979e4ca7ade"
+  },
+  "hashes_after": {
+    "source_registry.csv": "cf79ac4489a1be3e834d09330d0fd69f33437952e40793d9c7fd9a6ab6fd49be",
+    "recent_items.csv": "2e1bedb90ade11fd7027760b0223df3ff48fd193c0945fa9d60ecd33e4a3c565",
+    "recent_item_summaries.csv": "cb78a9f3b47fe214547720f5cd83554f44a4994daed121a8e281ac7c61e58b2f",
+    "recent_item_review_queue.csv": "6ce3499cf14fc0b6435fabaec743ac1b9a7c401d42e79bbf43dce5172fe73a89",
+    "management_awareness_queue.csv": "f4cacc6ca70534432f1b24d6759478684eff7819de98d310c7c53255d047b154",
+    "recent_item_archive.csv": "a7f73524c253b538a94ab4e2d8b36ba837ba70d085233ba66ef308c26a5ba812",
+    "weekly_developments.csv": "9642e24de8088c0a5ee3cae2a4c1afaa72caaac08b1dee8af7bebd8b07305eba",
+    "benchmark_facts.csv": "14992c3b32db06f0048cc5fcdc07384be3a3bcadf62770b7648e253c03244d7b",
+    "raw_documents_metadata.csv": "e835c4b3d49ecdfd862b6558d854530187d2361ce68d4ed72d20f19752554ae5",
+    "seen_item_index.csv": "a3c45e9600b2c5bd7523ab2bbbac59271fbbb96720fde8465f2b5476394d8581",
+    "recent_item_revisions.csv": "abda811a15dd11cc34da93114f5f73c145e1b661cb4495800aa431dd89449b3a",
+    "pipeline_runs.csv": "79011775ad5d18a063790b500bd9ba9d4809459ace53121baf09ea86f2d939b2",
+    "pipeline_run_state.json": "c33c66418e39cc6d507e58ff40b3c2c21aa5d53fa0704b3aaec27655c147dea6",
+    "development_clusters.csv": "05ad73f2fb38cee6967b22049e4401fbaa1b724a10e1e82a90f5f04870ef8a90",
+    "development_cluster_review_queue.csv": "621b25c9fabeb28bcb4da830d859e31dfc07e5d3704319160766b698ced62c88",
+    "mastercard_source_recovery_watch.csv": "6b7b36359dcb2c669c7d006c29d1540bf09a6c138f6aca8f0a58d7732e964c5c",
+    "mastercard_manual_official_evidence_inbox.csv": "21ee4aba51deaf2d086b6f43606c77a360bc8e82c0c4bcdd006153fec688f3ff",
+    "mastercard_manual_verified_candidates.csv": "de68ea0bb1cc59d67828828dc318b478458a5f93abf9ccaf55d2f979e4ca7ade"
+  },
+  "safe_rollback_instruction": "Restore required tracked files from data/rehearsal_snapshots/final_readiness_20260629T133423/ after preserving any analyst decisions made after the snapshot. No weekly_developments publish occurred in this rehearsal."
+}

@@ -1,0 +1,4 @@
+﻿recent_item_id,institution_name,title,content_role,relevance_status,expected_lane,actual_lane,lane_count,valid_single_lane,review_row_id,awareness_row_id,archive_row_id,error_reason
+RI-4bd38c2acf44,Garanti BBVA,Global Finance Türkiye’nin En İyi Nakit Yönetimi Bankası Ödülü,Bağımsız Gelişme,İlgili,Yönetici Bilgilendirme,Yönetici Bilgilendirme,1,True,,MAQ-5b11a686050b,,
+RI-486659a98116,Garanti BBVA,TÜRKONFED ve Garanti BBVA’dan Ankara’da İkiz Dönüşüm Buluşması,Bağımsız Gelişme,İlgili,Analist Onay Kuyruğu,Analist Onay Kuyruğu,1,True,RIRQ-10056bae3152,,,
+RI-402f008bdb89,Garanti BBVA,Miles&Smiles Garanti BBVA Diamond Limited Edition Kredi Kartı,Bağımsız Gelişme,İlgisiz,Düşük Öncelik / Arşiv,Düşük Öncelik / Arşiv,1,True,,,RIA-58b0d3b98d75,

@@ -1,0 +1,16 @@
+2026-06-26 14:08:28,039 INFO Total sources loaded: 199
+2026-06-26 14:08:28,039 INFO Active sources: 164
+2026-06-26 14:08:28,039 INFO collection_method == static_scrape olan kaynak sayısı: 162
+2026-06-26 14:08:28,039 INFO Eligible active static_scrape sources: 155
+2026-06-26 14:08:28,039 INFO --institution TurkishBank uygulanıyor. Kontrol edilecek kaynak sayısı: 4
+2026-06-26 14:08:28,041 INFO Fetching REG-186 | TurkishBank İlişki Bankacılığı | https://www.turkishbank.com/ticari-kurumsal-bankacilik/iliski-bankaciligi/
+2026-06-26 14:08:28,311 INFO Collected REG-186 from https://www.turkishbank.com/ticari-kurumsal-bankacilik/iliski-bankaciligi/
+2026-06-26 14:08:28,312 INFO Fetching REG-187 | TurkishBank Finansal Kurumlar | https://www.turkishbank.com/ticari-kurumsal-bankacilik/finansal-kurumlar/
+2026-06-26 14:08:28,574 INFO Collected REG-187 from https://www.turkishbank.com/ticari-kurumsal-bankacilik/finansal-kurumlar/
+2026-06-26 14:08:28,574 INFO Fetching REG-188 | TurkishBank Teknoloji Bankacılığı | https://www.turkishbank.com/teknoloji-bankaciligi/
+2026-06-26 14:08:28,831 INFO Collected REG-188 from https://www.turkishbank.com/teknoloji-bankaciligi/
+2026-06-26 14:08:28,831 INFO Fetching REG-198 | TurkishBank Ticari / Kurumsal Bankacılık | https://www.turkishbank.com/ticari-kurumsal-bankacilik/
+2026-06-26 14:08:29,099 INFO Collected REG-198 from https://www.turkishbank.com/ticari-kurumsal-bankacilik/
+2026-06-26 14:08:29,102 INFO Wrote 146 metadata rows
+2026-06-26 14:08:29,102 INFO Successfully fetched this run: 4
+2026-06-26 14:08:29,102 INFO Failed this run: 0

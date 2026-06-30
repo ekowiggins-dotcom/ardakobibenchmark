@@ -1,0 +1,32 @@
+﻿institution_name,institution_id,institution_group,coverage_priority,coverage_scope,sme_relevance,sources_total,valid_weekly_sources,valid_benchmark_sources,browser_required_sources,manual_sources,mvp_active_sources,coverage_status,worked_source_pages,needs_refinement
+Alternatif Bank,alternatif_bank,Orta/Küçük Ölçekli Özel Bankalar,A,KOBİ Rakip Banka,Orta,5,1,2,0,2,1,MVP active,https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular,Kampanya ve üst basın odası sayfaları manuel; aktif weekly kaynak REG-118 ile sınırlı.
+ING,ing,Orta/Küçük Ölçekli Özel Bankalar,A,KOBİ Rakip Banka,Orta,10,1,9,0,0,1,MVP active,https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2026,POS ürün sayfaları benchmark_fact; haftalık akış yalnızca REG-083 2026 basın bültenleri.
+Anadolubank,anadolubank,Orta/Küçük Ölçekli Özel Bankalar,B,KOBİ Rakip Banka,Orta,2,0,1,0,0,0,Benchmark only,,Anadolubank Kampanyalar
+Fibabanka,fibabanka,Orta/Küçük Ölçekli Özel Bankalar,B,KOBİ Rakip Banka,Orta,2,1,1,0,0,1,MVP active,https://www.fibabanka.com.tr/kampanyalar,
+Odeabank,odeabank,Orta/Küçük Ölçekli Özel Bankalar,B,KOBİ Rakip Banka,Orta,2,1,1,0,0,1,MVP active,https://www.odeabank.com.tr/hakkimizda/basin-bultenleri,
+Şekerbank,sekerbank,Orta/Küçük Ölçekli Özel Bankalar,B,KOBİ Rakip Banka,Orta,3,2,1,0,0,2,MVP active,https://www.sekerbank.com.tr/esnaf-kobi/kampanyalar; https://www.sekerbank.com.tr/esnaf-kobi/uye-isyeri-pos/pos-kampanyalari,
+Burgan Bank,burgan_bank,Orta/Küçük Ölçekli Özel Bankalar,C,KOBİ Rakip Banka,Düşük,1,1,0,0,0,1,MVP active,https://www.burgan.com.tr/basin-odasi,
+Enpara,enpara,Dijital/Gelişen Oyuncular,C,KOBİ Rakip Banka,Orta,2,0,1,0,0,0,Benchmark only,,Enpara Şirketim Kampanyalar
+HSBC,hsbc,Orta/Küçük Ölçekli Özel Bankalar,C,KOBİ Rakip Banka,Düşük,1,0,1,0,0,0,Benchmark only,,
+T-Bank,tbank,Orta/Küçük Ölçekli Özel Bankalar,C,KOBİ Rakip Banka,Düşük,1,0,1,0,0,0,Benchmark only,,
+Turkish Bank,turkish_bank,Orta/Küçük Ölçekli Özel Bankalar,C,KOBİ Rakip Banka,Düşük,1,0,1,0,0,0,Benchmark only,,
+Türk Ticaret Bankası,turk_ticaret_bankasi,Orta/Küçük Ölçekli Özel Bankalar,C,KOBİ Rakip Banka,Düşük,1,0,1,0,0,0,Benchmark only,,
+DenizBank,denizbank,Büyük Ölçekli Bankalar,Existing,KOBİ Rakip Banka,Yüksek,11,0,9,0,2,0,Kaynak Geliştirme Gerekli,,Resmi medya sayfası static extraction ile temiz dated item üretmedi; browser/manual kaynak geliştirme gerekli.
+Garanti BBVA,garanti_bbva,Büyük Ölçekli Bankalar,Existing,KOBİ Rakip Banka,Yüksek,3,1,0,0,0,1,MVP active,https://www.garantibbva.com.tr/kurumsal-iletisim,
+QNB Finansbank,qnb_finansbank,Büyük Ölçekli Bankalar,Existing,KOBİ Rakip Banka,Yüksek,9,8,0,0,0,8,MVP active,https://www.qnb.com.tr/kampanyalar; https://www.qnbcard.com.tr/kartlar/ticari-kartlar/qnb-kobi-ticari-kredi-karti/qnb-kobi-ticari-kredi-karti-kampanyalari; https://www.qnb.com.tr/isim-icin/kobi/kobi-pos-cozumleri; https://www.qnb.com.tr/isim-icin/kobi/kobi-pos-cozumleri/pos; https://www.qnb.com.tr/isim-icin/kobi/kobi-pos-cozumleri/yazar-kasa-pos,
+TEB,teb,Orta/Küçük Ölçekli Özel Bankalar,Existing,KOBİ Rakip Banka,Yüksek,10,0,7,0,3,0,Kaynak Geliştirme Gerekli,,Basın/KOBİ sayfaları temiz dated item üretmedi; KOBİ root FileNotFound yönleniyor; browser/manual kaynak geliştirme gerekli.
+Yapı Kredi,yapi_kredi,Büyük Ölçekli Bankalar,Existing,KOBİ Rakip Banka,Yüksek,3,2,0,0,0,2,MVP active,https://www.yapikredi.com.tr/kampanyalar/kategori/kobi/; https://www.yapikredi.com.tr/yapi-kredi-hakkinda/basin-bultenleri,
+İş Bankası,is_bankasi,Büyük Ölçekli Bankalar,Existing,KOBİ Rakip Banka,Yüksek,3,1,0,0,0,1,MVP active,https://www.isbank.com.tr/duyurular,
+Bank Mellat,bank_mellat,Diğer,Manual-only,Wholesale / Manual,Düşük,1,0,0,0,1,0,Manual only,,
+Citibank,citibank,Diğer,Manual-only,Wholesale / Manual,Düşük,1,0,0,0,1,0,Manual only,,
+Deutsche Bank,deutsche_bank,Diğer,Manual-only,Wholesale / Manual,Düşük,1,0,0,0,1,0,Manual only,,
+Intesa Sanpaolo,intesa_sanpaolo,Diğer,Manual-only,Wholesale / Manual,Düşük,1,0,0,0,1,0,Manual only,,
+JPMorgan Chase Bank,jpmorgan_chase_bank,Diğer,Manual-only,Wholesale / Manual,Düşük,1,0,0,0,1,0,Manual only,,
+MUFG Bank Turkey,mufg_bank_turkey,Diğer,Manual-only,Wholesale / Manual,Düşük,1,0,0,0,1,0,Manual only,,
+Rabobank,rabobank,Diğer,Manual-only,Wholesale / Manual,Düşük,1,0,0,0,1,0,Manual only,,
+Société Générale,soci_t_g_n_rale,Diğer,Manual-only,Wholesale / Manual,Düşük,1,0,0,0,1,0,Manual only,,
+Arap Türk Bankası,arap_turk_bankasi,Diğer,Validate-only,KOBİ Rakip Banka,Belirsiz,1,0,1,0,0,0,Benchmark only,,
+Bank of China Turkey,bank_of_china_turkey,Diğer,Validate-only,KOBİ Rakip Banka,Belirsiz,1,0,1,0,0,0,Benchmark only,,
+Colendi Bank,colendi_bank,Dijital/Gelişen Oyuncular,Validate-only,KOBİ Rakip Banka,Belirsiz,1,1,0,0,0,0,Weekly validated but inactive,https://www.colendibank.com/basinda-biz/,
+FUPS Bank,fups_bank,Dijital/Gelişen Oyuncular,Validate-only,KOBİ Rakip Banka,Belirsiz,1,0,1,0,0,0,Benchmark only,,
+ICBC Turkey,icbc_turkey,Diğer,Validate-only,KOBİ Rakip Banka,Belirsiz,1,0,0,0,1,0,Manual only,,

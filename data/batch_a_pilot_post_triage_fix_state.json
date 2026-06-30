@@ -1,0 +1,18 @@
+{
+  "data/recent_item_review_queue.csv": {
+    "rows": 13,
+    "sha256": "cb3625d25a5b01516fdb3338e9fa334f9ea6a721cbb121a36eae1e4507d16eae"
+  },
+  "data/management_awareness_queue.csv": {
+    "rows": 2,
+    "sha256": "9d35b048639352d8f449a6ac3be610c69c6aa77abafa63a36e77c87423e51073"
+  },
+  "data/recent_item_archive.csv": {
+    "rows": 12,
+    "sha256": "880bdd84e93d1ece82c1060cfee726f026c6e1978ecb00e188b3133439190683"
+  },
+  "data/recent_item_summaries.csv": {
+    "rows": 32,
+    "sha256": "45c37eb433622cf35bb684e8ab036ad48c21f7fd8d372bdb48ae1d86c33ba4d7"
+  }
+}

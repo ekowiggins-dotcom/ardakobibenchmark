@@ -1,0 +1,10 @@
+object_type,object_id,decision,analyst_note,reviewer
+individual,RIRQ-66753b2a0039,Onaylandı,Kadın girişimcilere kefalet desteği KOBİ kredileri ve segment stratejisi açısından yönetici radarına alınmalı.,Demo Radar
+individual,RIRQ-fd5e71157025,Onaylandı,Ödeme İste API canlıya geçişi tahsilat ve KOBİ nakit akışı odağında Akbank için izlenmesi gereken ürün sinyali.,Demo Radar
+individual,RIRQ-2692f47b34e7,Onaylandı,TOBFED iş birliği gömülü finans ve sektör kanalı üzerinden kredi dağıtımı için BD konuşma notuna alınmalı.,Demo Radar
+individual,RIRQ-58bc54dddcd6,Onaylandı,Yeni firma müşteri kazanımı ve işlem paketi kurgusu KOBİ kampanya rekabeti için izlenmeli.,Demo Radar
+individual,RIRQ-b054836979b8,Onaylandı,QNB'nin kadın girişimcilere yazılım indirimi KOBİ ekosistem faydaları açısından sınırlı ama kullanılabilir bir rekabet sinyali.,Demo Radar
+individual,RIRQ-26a662990fa8,Reddedildi,Sanal ofis indirimi düşük etkili yan fayda niteliğinde; demo radarında yayınlanmamalı.,Demo Radar
+cluster,CL-7c4d694ed217,Onaylandı,İş Bankası'nın ticari kart kampanyaları tekil haberden daha anlamlı bir aktivasyon paterni oluşturuyor.,Demo Radar
+cluster,CL-03c6dd9f69f3,Ek Araştırma Gerekli,Sürdürülebilirlik finansmanı kurumsal konumlandırma açısından anlamlı ancak KOBİ/BD aksiyonuna dönüşmesi için ek kanıt gerekiyor.,Demo Radar
+management_awareness,MAQ-1c5332b26f62,Yönetici Bilgilendirme,Ödül haberi doğrudan BD aksiyonu değil; yönetici farkındalığı ve itibar sinyali olarak ayrı bölümde gösterilmeli.,Demo Radar

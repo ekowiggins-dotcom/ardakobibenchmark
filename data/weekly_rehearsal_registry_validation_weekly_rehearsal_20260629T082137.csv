@@ -1,0 +1,35 @@
+﻿severity,source_id,institution_name,issue_type,details
+warning,REG-035,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-036,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-053,KAP,manual_source_skipped_from_automation,manual source should not be fetched automatically
+warning,REG-071,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-072,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-073,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-161,HSBC,manual_source_skipped_from_automation,manual source should not be fetched automatically
+warning,REG-166,Enpara,manual_source_skipped_from_automation,manual source should not be fetched automatically
+warning,REG-178,T-Bank,manual_source_skipped_from_automation,manual source should not be fetched automatically
+warning,REG-179,T-Bank,manual_source_skipped_from_automation,manual source should not be fetched automatically
+warning,REG-185,TurkishBank,manual_source_skipped_from_automation,manual source should not be fetched automatically
+warning,REG-189,TurkishBank,manual_source_skipped_from_automation,manual source should not be fetched automatically
+warning,REG-190,Türk Ticaret Bankası,manual_source_skipped_from_automation,manual source should not be fetched automatically
+warning,REG-192,Türk Ticaret Bankası,manual_source_skipped_from_automation,manual source should not be fetched automatically
+warning,REG-200,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-222,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-202,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-203,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-204,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-205,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-206,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-207,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-208,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-209,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-211,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-219,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-220,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-223,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-224,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-225,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-226,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-227,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-228,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection
+warning,REG-229,Mastercard,browser_source_skipped_from_static_collection,browser_required source should not enter static collection

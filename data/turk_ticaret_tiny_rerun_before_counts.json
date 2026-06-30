@@ -1,0 +1,30 @@
+{
+  "data/recent_items.csv": {
+    "rows": 34,
+    "target_rows": 1
+  },
+  "data/recent_item_summaries.csv": {
+    "rows": 34,
+    "target_rows": 1
+  },
+  "data/recent_item_review_queue.csv": {
+    "rows": 12,
+    "target_rows": 0
+  },
+  "data/management_awareness_queue.csv": {
+    "rows": 4,
+    "target_rows": 1
+  },
+  "data/recent_item_archive.csv": {
+    "rows": 13,
+    "target_rows": 0
+  },
+  "data/weekly_developments.csv": {
+    "rows": 17,
+    "target_rows": 0
+  },
+  "data/source_registry.csv": {
+    "rows": 199,
+    "reg_191_claude_eligible": "True"
+  }
+}

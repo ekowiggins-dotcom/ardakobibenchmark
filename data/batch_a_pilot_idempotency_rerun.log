@@ -1,0 +1,134 @@
+2026-06-25 15:28:33,557 INFO Documents considered: 1
+2026-06-25 15:28:33,557 INFO Recency cutoff: 2026-05-01
+2026-06-25 15:28:33,557 INFO Allow undated: False
+2026-06-25 15:28:33,557 INFO Allow low date confidence: False
+2026-06-25 15:28:33,557 INFO Allow end-date recency: False
+2026-06-25 15:28:34,098 INFO Duplicate candidate | duplicate_canonical_item_url | duplicate_of=RI-f6167c763174 | Alternatif Bank’a Kurumsal, Ticari Bankacılık ve Dış Ticarette 3 Uluslararası Ödül!
+2026-06-25 15:28:34,817 INFO Rejected candidate | Kesim tarihinden eski: 2026-02-26 < 2026-05-01 | Alternatif Bank, Kurumsal ve Ticari Bankacılıkta 2025 Yılını Güçlü Büyümeyle Tamamladı | https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-kurumsal-ve-ticari-bankacilikta-2025-yilini-guclu-buyumeyle-tamamladi
+2026-06-25 15:28:35,824 INFO Rejected candidate | Kesim tarihinden eski: 2026-02-20 < 2026-05-01 | Alternatif Bank'tan Dış Ticaret Finansmanında Asya Kalkınma Bankası'yla Önemli İş Birliği | https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-dis-ticaret-finansmaninda-asya-kalkinma-bankasiyla-onemli-is-birligi
+2026-06-25 15:28:36,913 INFO Rejected candidate | Kesim tarihinden eski: 2026-01-21 < 2026-05-01 | Alternatif Bank, Dijital/Mobil Kanallarda Masrafsız Bankacılık Deneyimi Sunmaya Devam Ediyor | https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-masrafsiz-bankacilik-deneyimi
+2026-06-25 15:28:36,935 INFO Total links found: 130
+2026-06-25 15:28:36,935 INFO Candidate links found: 4
+2026-06-25 15:28:36,935 INFO Detail pages fetched: 4
+2026-06-25 15:28:36,935 INFO Recent items created: 0
+2026-06-25 15:28:36,935 INFO Saved recent developments: 0
+2026-06-25 15:28:36,935 INFO Rejected old items: 3
+2026-06-25 15:28:36,935 INFO Rejected undated items: 0
+2026-06-25 15:28:36,935 INFO Rejected low-confidence dates: 0
+2026-06-25 15:28:36,935 INFO Rejected non-developments: 0
+2026-06-25 15:28:36,935 INFO Saved by publication_date: 0
+2026-06-25 15:28:36,935 INFO Saved by announcement_date: 0
+2026-06-25 15:28:36,935 INFO Saved by campaign_start_date: 0
+2026-06-25 15:28:36,935 INFO Rejected because only campaign_end_date existed: 0
+2026-06-25 15:28:36,935 INFO passed_by_publication_date_count: 0
+2026-06-25 15:28:36,935 INFO passed_by_announcement_date_count: 0
+2026-06-25 15:28:36,935 INFO passed_by_campaign_start_date_count: 0
+2026-06-25 15:28:36,935 INFO passed_by_end_date_manual_override_count: 0
+2026-06-25 15:28:36,935 INFO rejected_only_campaign_end_date_count: 0
+2026-06-25 15:28:36,935 INFO Active old campaigns detected: 0
+2026-06-25 15:28:36,935 INFO Poor items skipped: 0
+2026-06-25 15:28:36,935 INFO Duplicates skipped: 1
+2026-06-25 15:28:36,935 INFO Errors: 0
+2026-06-25 15:28:36,935 INFO First rejected items: Alternatif Bank’a Kurumsal, Ticari Bankacılık ve Dış Ticarette 3 Uluslararası Ödül! :: duplicate_canonical_item_url :: https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-banka-uc-uluslararasi-odul | Alternatif Bank, Kurumsal ve Ticari Bankacılıkta 2025 Yılını Güçlü Büyümeyle Tamamladı :: Kesim tarihinden eski: 2026-02-26 < 2026-05-01 :: https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-kurumsal-ve-ticari-bankacilikta-2025-yilini-guclu-buyumeyle-tamamladi | Alternatif Bank'tan Dış Ticaret Finansmanında Asya Kalkınma Bankası'yla Önemli İş Birliği :: Kesim tarihinden eski: 2026-02-20 < 2026-05-01 :: https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-dis-ticaret-finansmaninda-asya-kalkinma-bankasiyla-onemli-is-birligi | Alternatif Bank, Dijital/Mobil Kanallarda Masrafsız Bankacılık Deneyimi Sunmaya Devam Ediyor :: Kesim tarihinden eski: 2026-01-21 < 2026-05-01 :: https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-masrafsiz-bankacilik-deneyimi
+
+CANDIDATE REPORT
+source_id: REG-118
+source_name: Alternatif Bank Basın Bültenleri ve Duyurular
+source_url: https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular
+total links found: 130
+candidate links found: 4
+- score=28 | title=Alternatif Bank’a Kurumsal, Ticari Bankacılık ve Dış Ticarette 3 Uluslararası Ödül! | url=https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-banka-uc-uluslararasi-odul | reason=alternatif_bank_press_card
+- score=28 | title=Alternatif Bank, Kurumsal ve Ticari Bankacılıkta 2025 Yılını Güçlü Büyümeyle Tamamladı | url=https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-kurumsal-ve-ticari-bankacilikta-2025-yilini-guclu-buyumeyle-tamamladi | reason=alternatif_bank_press_card
+- score=28 | title=Alternatif Bank'tan Dış Ticaret Finansmanında Asya Kalkınma Bankası'yla Önemli İş Birliği | url=https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-dis-ticaret-finansmaninda-asya-kalkinma-bankasiyla-onemli-is-birligi | reason=alternatif_bank_press_card
+- score=28 | title=Alternatif Bank, Dijital/Mobil Kanallarda Masrafsız Bankacılık Deneyimi Sunmaya Devam Ediyor | url=https://www.alternatifbank.com.tr/hakkimizda/basin-odasi/basin-bultenleri-ve-duyurular/alternatif-bank-masrafsiz-bankacilik-deneyimi | reason=alternatif_bank_press_card
+2026-06-25 15:28:37,379 INFO Documents considered: 1
+2026-06-25 15:28:37,380 INFO Recency cutoff: 2026-05-01
+2026-06-25 15:28:37,380 INFO Allow undated: False
+2026-06-25 15:28:37,380 INFO Allow low date confidence: False
+2026-06-25 15:28:37,380 INFO Allow end-date recency: False
+2026-06-25 15:28:37,989 INFO Duplicate candidate | duplicate_canonical_item_url | duplicate_of=RI-b461fe1c2787 | ING’den KOBİ’lere masrafsız bankacılık desteği
+2026-06-25 15:28:38,824 INFO Duplicate candidate | duplicate_canonical_item_url | duplicate_of=RI-11a75c9dc055 | ING’nin araştırmasına göre masrafsız bankacılık temel beklenti haline geldi
+2026-06-25 15:28:39,266 INFO Rejected candidate | Kesim tarihinden eski: 2026-03-16 < 2026-05-01 | Masrafsız bankacılıkta öncü adım: ING’de sonsuza kadar masraf yok | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGde_sonsuza_kadar_masraf_yok.pdf
+2026-06-25 15:28:39,714 INFO Rejected candidate | Kesim tarihinden eski: 2026-02-18 < 2026-05-01 | Dijital Öğretmenler Projesi yenilendi: Daha geniş etki alanı, güçlü yapı ve zengin içerik | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_DOP_BB_Subat2025.pdf
+2026-06-25 15:28:40,051 INFO Rejected candidate | Kesim tarihinden eski: 2026-01-14 < 2026-05-01 | ING Türkiye'den dijital altyapı dönüşümü | https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_Turkiye'den_dijital_altyapi_donusumu.pdf
+2026-06-25 15:28:40,236 INFO Rejected candidate | Kesim tarihinden eski: 2026-01-06 < 2026-05-01 | ING Leasing’den 500 milyon TL’lik sermaye artışı: Sanayi dönüşümüne güçlü destek | https://www.ing.com.tr/F/Documents/INGLeasing_SermayeArtisi_2026.pdf
+2026-06-25 15:28:40,255 INFO Total links found: 116
+2026-06-25 15:28:40,255 INFO Candidate links found: 6
+2026-06-25 15:28:40,255 INFO Detail pages fetched: 6
+2026-06-25 15:28:40,255 INFO Recent items created: 0
+2026-06-25 15:28:40,255 INFO Saved recent developments: 0
+2026-06-25 15:28:40,255 INFO Rejected old items: 4
+2026-06-25 15:28:40,255 INFO Rejected undated items: 0
+2026-06-25 15:28:40,255 INFO Rejected low-confidence dates: 0
+2026-06-25 15:28:40,255 INFO Rejected non-developments: 0
+2026-06-25 15:28:40,255 INFO Saved by publication_date: 0
+2026-06-25 15:28:40,255 INFO Saved by announcement_date: 0
+2026-06-25 15:28:40,255 INFO Saved by campaign_start_date: 0
+2026-06-25 15:28:40,255 INFO Rejected because only campaign_end_date existed: 0
+2026-06-25 15:28:40,255 INFO passed_by_publication_date_count: 0
+2026-06-25 15:28:40,255 INFO passed_by_announcement_date_count: 0
+2026-06-25 15:28:40,255 INFO passed_by_campaign_start_date_count: 0
+2026-06-25 15:28:40,255 INFO passed_by_end_date_manual_override_count: 0
+2026-06-25 15:28:40,255 INFO rejected_only_campaign_end_date_count: 0
+2026-06-25 15:28:40,255 INFO Active old campaigns detected: 0
+2026-06-25 15:28:40,255 INFO Poor items skipped: 0
+2026-06-25 15:28:40,255 INFO Duplicates skipped: 2
+2026-06-25 15:28:40,255 INFO Errors: 0
+2026-06-25 15:28:40,255 INFO First rejected items: ING’den KOBİ’lere masrafsız bankacılık desteği :: duplicate_canonical_item_url :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGden_KOBIlere_masrafsiz_bankacilik_destegi.pdf | ING’nin araştırmasına göre masrafsız bankacılık temel beklenti haline geldi :: duplicate_canonical_item_url :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGnin_arastirmasina_gore_masrafsiz_bankacilik_temel_beklenti_haline_geldi.pdf | Masrafsız bankacılıkta öncü adım: ING’de sonsuza kadar masraf yok :: Kesim tarihinden eski: 2026-03-16 < 2026-05-01 :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGde_sonsuza_kadar_masraf_yok.pdf | Dijital Öğretmenler Projesi yenilendi: Daha geniş etki alanı, güçlü yapı ve zengin içerik :: Kesim tarihinden eski: 2026-02-18 < 2026-05-01 :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_DOP_BB_Subat2025.pdf | ING Türkiye'den dijital altyapı dönüşümü :: Kesim tarihinden eski: 2026-01-14 < 2026-05-01 :: https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_Turkiye'den_dijital_altyapi_donusumu.pdf | ING Leasing’den 500 milyon TL’lik sermaye artışı: Sanayi dönüşümüne güçlü destek :: Kesim tarihinden eski: 2026-01-06 < 2026-05-01 :: https://www.ing.com.tr/F/Documents/INGLeasing_SermayeArtisi_2026.pdf
+
+CANDIDATE REPORT
+source_id: REG-083
+source_name: ING Basın Bültenleri 2026
+source_url: https://www.ing.com.tr/tr/ing/basin-odasi/basin-bultenleri/2026
+total links found: 116
+candidate links found: 6
+- score=30 | title=ING’den KOBİ’lere masrafsız bankacılık desteği | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGden_KOBIlere_masrafsiz_bankacilik_destegi.pdf | reason=ing_press_pdf_card
+- score=30 | title=ING’nin araştırmasına göre masrafsız bankacılık temel beklenti haline geldi | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGnin_arastirmasina_gore_masrafsiz_bankacilik_temel_beklenti_haline_geldi.pdf | reason=ing_press_pdf_card
+- score=30 | title=Masrafsız bankacılıkta öncü adım: ING’de sonsuza kadar masraf yok | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/INGde_sonsuza_kadar_masraf_yok.pdf | reason=ing_press_pdf_card
+- score=30 | title=Dijital Öğretmenler Projesi yenilendi: Daha geniş etki alanı, güçlü yapı ve zengin içerik | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_DOP_BB_Subat2025.pdf | reason=ing_press_pdf_card
+- score=30 | title=ING Türkiye'den dijital altyapı dönüşümü | url=https://www.ing.com.tr/F/Documents/pdf/Basin_Odasi/2026/ING_Turkiye'den_dijital_altyapi_donusumu.pdf | reason=ing_press_pdf_card
+- score=30 | title=ING Leasing’den 500 milyon TL’lik sermaye artışı: Sanayi dönüşümüne güçlü destek | url=https://www.ing.com.tr/F/Documents/INGLeasing_SermayeArtisi_2026.pdf | reason=ing_press_pdf_card
+2026-06-25 15:28:40,824 INFO LLM provider: anthropic
+2026-06-25 15:28:40,824 INFO LLM model: claude-haiku-4-5-20251001
+2026-06-25 15:28:40,824 INFO Anthropic API key bulundu: Evet
+2026-06-25 15:28:40,824 INFO MAX_LLM_ITEMS_PER_RUN: 5
+2026-06-25 15:28:40,824 INFO MAX_CHARS_PER_ITEM: 8000
+2026-06-25 15:28:40,824 INFO Recency cutoff: 2026-05-01
+2026-06-25 15:28:40,824 INFO Allow undated: False
+2026-06-25 15:28:40,824 INFO Allow low date confidence: False
+2026-06-25 15:28:40,824 INFO Allow end-date recency: False
+2026-06-25 15:28:40,841 INFO Recent item candidates: 0
+2026-06-25 15:28:40,845 INFO Summaries created: 0
+2026-06-25 15:28:40,845 INFO Total summaries stored: 32
+2026-06-25 15:28:40,845 INFO JSON parse failures: 0
+2026-06-25 15:28:40,845 INFO Language rewrite attempts: 0
+2026-06-25 15:28:40,845 INFO Language rewrite failures: 0
+2026-06-25 15:28:40,845 INFO Items processed: 0
+2026-06-25 15:28:40,845 INFO Items skipped by recency/accuracy gate: 0
+2026-06-25 15:28:40,845 INFO Estimated item chars used: 0
+2026-06-25 15:28:40,845 INFO Estimated prompt/repair chars used: 0
+2026-06-25 15:28:41,255 INFO LLM provider: anthropic
+2026-06-25 15:28:41,255 INFO LLM model: claude-haiku-4-5-20251001
+2026-06-25 15:28:41,256 INFO Anthropic API key bulundu: Evet
+2026-06-25 15:28:41,256 INFO MAX_LLM_ITEMS_PER_RUN: 5
+2026-06-25 15:28:41,256 INFO MAX_CHARS_PER_ITEM: 8000
+2026-06-25 15:28:41,256 INFO Recency cutoff: 2026-05-01
+2026-06-25 15:28:41,256 INFO Allow undated: False
+2026-06-25 15:28:41,256 INFO Allow low date confidence: False
+2026-06-25 15:28:41,256 INFO Allow end-date recency: False
+2026-06-25 15:28:41,272 INFO Recent item candidates: 0
+2026-06-25 15:28:41,276 INFO Summaries created: 0
+2026-06-25 15:28:41,276 INFO Total summaries stored: 32
+2026-06-25 15:28:41,276 INFO JSON parse failures: 0
+2026-06-25 15:28:41,276 INFO Language rewrite attempts: 0
+2026-06-25 15:28:41,276 INFO Language rewrite failures: 0
+2026-06-25 15:28:41,276 INFO Items processed: 0
+2026-06-25 15:28:41,276 INFO Items skipped by recency/accuracy gate: 0
+2026-06-25 15:28:41,276 INFO Estimated item chars used: 0
+2026-06-25 15:28:41,276 INFO Estimated prompt/repair chars used: 0
+2026-06-25 15:28:41,591 INFO Summaries read: 32
+2026-06-25 15:28:41,591 INFO Sent to review queue: 13
+2026-06-25 15:28:41,591 INFO Sent to management awareness queue: 2
+2026-06-25 15:28:41,591 INFO Archived as low priority: 0
+2026-06-25 15:28:41,591 INFO Suppressed individual review items: 5
+2026-06-25 15:28:41,591 INFO Skipped duplicates: 24

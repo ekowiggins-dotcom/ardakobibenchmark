@@ -1,0 +1,6 @@
+2026-06-26 14:53:33,146 INFO Summaries read: 34
+2026-06-26 14:53:33,146 INFO Sent to review queue: 12
+2026-06-26 14:53:33,146 INFO Sent to management awareness queue: 4
+2026-06-26 14:53:33,146 INFO Archived as low priority: 0
+2026-06-26 14:53:33,146 INFO Suppressed individual review items: 5
+2026-06-26 14:53:33,146 INFO Skipped duplicates: 28

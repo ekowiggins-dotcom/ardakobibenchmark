@@ -1,0 +1,224 @@
+﻿institution,source_id,source_name,monitoring_mode,collector_capability,attempted,skipped,success,latest_item_date,current_candidates,unchanged,error,health_status,action_required
+Garanti BBVA,REG-001,Garanti BBVA İşim İçin / KOBİ bankacılığı,,static_scrape,True,False,True,2026-06-16T12:50:38.356435+00:00,,False,,Sağlıklı,
+Garanti BBVA,REG-002,Garanti BBVA Kartlar & POS,,static_scrape,True,False,True,2026-06-16T12:50:38.586714+00:00,,False,,Sağlıklı,
+Garanti BBVA,REG-003,Garanti BBVA Kurumsal communication / press releases,,static_scrape,True,False,True,2026-06-29T08:30:27.918836+00:00,,True,,Sağlıklı,
+İş Bankası,REG-004,İş Bankası İş Ticari,,static_scrape,True,False,True,2026-06-16T12:50:39.377661+00:00,,False,,Sağlıklı,
+İş Bankası,REG-005,İş Bankası Sanal POS,,static_scrape,True,False,True,2026-06-16T12:50:39.870396+00:00,,False,,Sağlıklı,
+İş Bankası,REG-006,İş Bankası Duyurular,,static_scrape,True,False,True,2026-06-29T08:30:28.726906+00:00,,True,,Sağlıklı,
+Akbank,REG-007,Akbank Kurumsal,,static_scrape,False,False,False,,,False,,Uyarı,
+Akbank,REG-008,Akbank Cebe POS,,static_scrape,False,False,False,,,False,,Uyarı,
+Akbank,REG-009,Akbank Dövizli POS,,static_scrape,False,False,False,,,False,,Uyarı,
+Yapı Kredi,REG-010,Yapı Kredi KOBİ,,static_scrape,True,False,True,2026-06-16T12:50:42.957532+00:00,,False,,Sağlıklı,
+Yapı Kredi,REG-011,Yapı Kredi KOBİ Kampanyaları,,static_scrape,True,False,True,2026-06-29T08:30:29.960288+00:00,,True,,Sağlıklı,
+Yapı Kredi,REG-012,Yapı Kredi Basın Bültenleri,,static_scrape,True,False,True,2026-06-29T08:30:36.654532+00:00,,True,,Sağlıklı,
+QNB Finansbank,REG-013,QNB Finansbank KOBİ / KOBİ sayfası,,static_scrape,True,False,True,2026-06-16T12:50:46.070437+00:00,,False,,Sağlıklı,
+DenizBank,REG-014,DenizBank İşim İçin / KOBİ Banking,,static_scrape,False,False,False,,,False,,Uyarı,
+DenizBank,REG-015,DenizBank Üye İşyeri ve POS İşlemleri,,static_scrape,False,False,False,,,False,,Uyarı,
+TEB,REG-016,TEB Firmaniz Icin,,static_scrape,False,False,False,,,False,,Uyarı,
+VakifBank,REG-017,VakifBank POS / Üye İşyeri Hizmetleri,,static_scrape,False,False,False,,,False,,Uyarı,
+VakifBank,REG-018,VakifBank POS Kampanyaları,,static_scrape,False,False,False,,,False,,Uyarı,
+Ziraat Bankasi,REG-019,Ziraat Bankasi Üye İşyeri ve POS Hizmetleri,,static_scrape,False,False,False,,,False,,Uyarı,
+Bankkart POS,REG-020,Bankkart POS,,static_scrape,False,False,False,,,False,,Uyarı,
+Halkbank,REG-021,Halkbank Üye İşyeri ve POS Hizmetleri,,static_scrape,False,False,False,,,False,,Uyarı,
+Halkbank,REG-022,Halkbank Üye İşyeri Ucret ve Komisyonlari,,static_scrape,False,False,False,,,False,,Uyarı,
+Kuveyt Türk,REG-023,Kuveyt Türk İşim İçin,,static_scrape,False,False,False,,,False,,Uyarı,
+Kuveyt Türk,REG-024,Kuveyt Türk POS Hizmetleri,,static_scrape,False,False,False,,,False,,Uyarı,
+Kuveyt Türk,REG-025,Kuveyt Türk KOBİ Kampanyaları,,static_scrape,False,False,False,,,False,,Uyarı,
+iyzico,REG-026,iyzico İşim İçin Ödeme Çözümleri,,static_scrape,False,False,False,,,False,,Uyarı,
+iyzico,REG-027,iyzico Basın,,static_scrape,False,False,False,,,False,,Uyarı,
+iyzico,REG-028,iyzico Blog,,static_scrape,False,False,False,,,False,,Uyarı,
+PayTR,REG-029,PayTR Blog,,static_scrape,False,False,False,,,False,,Uyarı,
+PayTR,REG-030,PayTR Link ile Ödeme,,static_scrape,False,False,False,,,False,,Uyarı,
+Param,REG-031,Param Sanal POS,,static_scrape,False,False,False,,,False,,Uyarı,
+Param,REG-032,Param Basın,,static_scrape,False,False,False,,,False,,Uyarı,
+Sipay,REG-033,Sipay Link ile Ödeme,,static_scrape,False,False,False,,,False,,Uyarı,
+Visa,REG-034,Visa Small Business / Visa & Main,,static_scrape,True,False,True,2026-06-29T08:30:37.785519+00:00,,True,,Sağlıklı,
+Mastercard,REG-035,Mastercard Türkiye SME digitalization article,benchmark_monitoring,browser_required,False,True,False,,,False,,Benchmark İzleme,Benchmark/context only; recent item üretmez.
+Mastercard,REG-036,Mastercard EEMEA Press Releases,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+BKM,REG-037,BKM Ödeme Çözümleri / TechPOS,,static_scrape,False,False,False,,,False,,Uyarı,
+BKM,REG-038,BKM TROY,,static_scrape,False,False,False,,,False,,Uyarı,
+TROY,REG-039,TROY,,static_scrape,False,False,False,,,False,,Uyarı,
+Stripe,REG-040,Stripe Gömülü Finans,,static_scrape,False,False,False,,,False,,Uyarı,
+Stripe,REG-041,Stripe Newsroom,,static_scrape,False,False,False,,,False,,Uyarı,
+Stripe,REG-042,Stripe Embedded payments for small businesses,,static_scrape,False,False,False,,,False,,Uyarı,
+Adyen,REG-043,Adyen Unified Commerce,,static_scrape,False,False,False,,,False,,Uyarı,
+Adyen,REG-044,Adyen Press and Media,,static_scrape,False,False,False,,,False,,Uyarı,
+Revolut Business,REG-045,Revolut Business Accept Payments,,static_scrape,False,False,False,,,False,,Uyarı,
+Revolut Business,REG-046,Revolut İşletme API,,static_scrape,False,False,False,,,False,,Uyarı,
+Wise Business,REG-047,Wise Platform,,static_scrape,False,False,False,,,False,,Uyarı,
+Wise Business,REG-048,Wise Platform API Docs,,static_scrape,False,False,False,,,False,,Uyarı,
+Rekabet Kurumu,REG-049,Rekabet Kurumu Güncel,,static_scrape,False,False,False,,,False,,Uyarı,
+Rekabet Kurumu,REG-050,Rekabet Kurumu Mastercard and Visa investigation,,static_scrape,False,False,False,,,False,,Uyarı,
+TCMB,REG-051,TCMB Duyurular,,static_scrape,False,False,False,,,False,,Uyarı,
+BDDK,REG-052,BDDK Duyurular,,static_scrape,False,False,False,,,False,,Uyarı,
+KAP,REG-053,KAP Bank announcements search page,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Türkiye Bankalar Birligi,REG-054,Türkiye Bankalar Birligi Duyurular,,static_scrape,False,False,False,,,False,,Uyarı,
+TODEB,REG-055,TODEB Duyurular,,static_scrape,False,False,False,,,False,,Uyarı,
+Webrazzi,REG-056,Webrazzi Fintech,,static_scrape,False,False,False,,,False,,Uyarı,
+FinTech Istanbul,REG-057,FinTech Istanbul,,static_scrape,False,False,False,,,False,,Uyarı,
+Dünya Gazetesi,REG-058,Dünya Gazetesi Finans,,static_scrape,False,False,False,,,False,,Uyarı,
+Bloomberg HT,REG-059,Bloomberg HT Finans,,static_scrape,False,False,False,,,False,,Uyarı,
+Anadolu Ajansı,REG-060,Anadolu Ajansı Economy,,static_scrape,False,False,False,,,False,,Uyarı,
+QNB Finansbank,REG-061,QNB Finansbank Kampanyalar,,static_scrape,True,False,True,2026-06-29T08:30:41.425900+00:00,,True,,Sağlıklı,
+QNB Finansbank,REG-062,QNB Card KOBİ Ticari Kredi Kartı Kampanyaları,,static_scrape,True,False,True,2026-06-29T08:30:42.234798+00:00,,True,,Sağlıklı,
+QNB Finansbank,REG-063,QNB KOBİ POS Çözümleri,,static_scrape,True,False,True,2026-06-29T08:30:42.946482+00:00,,True,,Sağlıklı,
+QNB Finansbank,REG-064,QNB POS,,static_scrape,True,False,True,2026-06-29T08:30:43.754536+00:00,,True,,Sağlıklı,
+QNB Finansbank,REG-065,QNB Yazar Kasa POS,,static_scrape,True,False,True,2026-06-29T08:30:44.521646+00:00,,True,,Sağlıklı,
+QNB Finansbank,REG-066,QNB KOBİ Kredileri,,static_scrape,True,False,True,2026-06-29T08:30:45.219075+00:00,,True,,Sağlıklı,
+QNB Finansbank,REG-067,QNB KOBİ Rahat,,static_scrape,True,False,True,2026-06-29T08:30:46.023778+00:00,,True,,Sağlıklı,
+QNB Finansbank,REG-068,QNB KOBİ Ticari Kredi Kartları,,static_scrape,True,False,True,2026-06-29T08:30:46.695312+00:00,,True,,Sağlıklı,
+Visa,REG-069,Visa Türkiye KOBİ Araçları,,static_scrape,True,False,True,2026-06-22T12:00:15.482472+00:00,,False,,Sağlıklı,
+Visa,REG-070,Visa Global Newsroom,,static_scrape,True,False,True,2026-06-29T08:30:47.366315+00:00,,True,,Sağlıklı,
+Mastercard,REG-071,Mastercard EEMEA Newsroom,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-072,Mastercard EEMEA News Briefs,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-073,Mastercard EEMEA Perspectives,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+BKM,REG-074,BKM Basın Bültenleri,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+BKM,REG-075,BKM Haberler,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+BKM,REG-076,BKM Duyurular,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+TROY,REG-077,TROY Haberler,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Alternatif Bank,REG-078,Alternatif Bank Basın Odası,,manual,False,True,True,2026-06-25T12:07:30.736977+00:00,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Alternatif Bank,REG-079,Alternatif Bank Kampanyalar,,manual,False,True,True,2026-06-25T12:07:31.387932+00:00,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+DenizBank,REG-080,DenizBank Medya Merkezi / Basında DenizBank,,manual,False,True,True,2026-06-25T12:07:32.019045+00:00,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+DenizBank,REG-081,DenizBank Kampanyalar,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+DenizBank,REG-082,DenizBank POS Ürünleri,,static_scrape,False,False,False,,,False,,Uyarı,
+ING,REG-083,ING Basın Bültenleri 2026,,static_scrape,True,False,True,2026-06-29T08:30:50.406119+00:00,,True,,Sağlıklı,
+ING,REG-084,ING Üye İşyeri,,static_scrape,False,False,False,,,False,,Uyarı,
+ING,REG-085,ING POS Ürünleri,,static_scrape,False,False,False,,,False,,Uyarı,
+TEB,REG-086,TEB Basın Açıklamaları,,manual,False,True,True,2026-06-25T12:07:33.276153+00:00,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+TEB,REG-087,CEPTETEB İşte Kampanyaları,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+TEB,REG-088,TEB POS,,static_scrape,False,False,False,,,False,,Uyarı,
+Şekerbank,REG-089,Şekerbank Esnaf KOBİ Kampanyalar,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Şekerbank,REG-090,Şekerbank POS Kampanyaları,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Şekerbank,REG-091,Şekerbank Ticari Kartlar,,static_scrape,False,False,False,,,False,,Uyarı,
+Fibabanka,REG-092,Fibabanka Kampanyalar,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Fibabanka,REG-093,Fibabanka Business Kredi Kartı,,static_scrape,False,False,False,,,False,,Uyarı,
+Anadolubank,REG-094,Anadolubank Kampanyalar,,static_scrape,False,True,False,,,False,,Uyarı,
+Anadolubank,REG-095,Anadolubank POS,,static_scrape,False,False,False,,,False,,Uyarı,
+Odeabank,REG-096,Odeabank Basın Bültenleri,,static_scrape,True,False,True,2026-06-26T05:58:24.584259+00:00,,False,,Sağlıklı,
+Odeabank,REG-097,Odeabank Ticari,,static_scrape,False,False,False,,,False,,Uyarı,
+Burgan Bank,REG-098,Burgan Bank Basın Odası,,static_scrape,True,False,True,2026-06-26T08:39:39.453730+00:00,,True,,Sağlıklı,
+HSBC,REG-099,HSBC Türkiye,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Enpara,REG-100,Enpara Şirketim,,static_scrape,True,False,True,2026-06-26T08:40:18.248573+00:00,,False,,Sağlıklı,
+Enpara,REG-101,Enpara Şirketim Kampanyalar,,static_scrape,True,False,True,2026-06-29T08:30:51.545231+00:00,,True,,Sağlıklı,
+T-Bank,REG-102,T-Bank Hakkında,,static_scrape,True,False,True,2026-06-26T11:08:09.179076+00:00,,False,,Sağlıklı,
+TurkishBank,REG-103,TurkishBank Ana Site,,static_scrape,False,True,False,,,False,,Uyarı,
+Türk Ticaret Bankası,REG-104,Türk Ticaret Bankası Ana Site,,static_scrape,False,True,False,,,False,,Uyarı,
+Colendi Bank,REG-105,Colendi Bank Basında Biz,,static_scrape,False,True,False,,,False,,Uyarı,
+FUPS Bank,REG-106,FUPS Bank,,static_scrape,False,True,False,,,False,,Uyarı,
+ICBC Turkey,REG-107,ICBC Turkey,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Arap Türk Bankası,REG-108,Arap Türk Bankası,,static_scrape,False,True,False,,,False,,Uyarı,
+Bank of China Turkey,REG-109,Bank of China Turkey,,static_scrape,False,True,False,,,False,,Uyarı,
+Citibank,REG-110,Citibank manual registry placeholder,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Deutsche Bank,REG-111,Deutsche Bank manual registry placeholder,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+JPMorgan Chase Bank,REG-112,JPMorgan Chase Bank manual registry placeholder,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+MUFG Bank Turkey,REG-113,MUFG Bank Turkey manual registry placeholder,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Intesa Sanpaolo,REG-114,Intesa Sanpaolo manual registry placeholder,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Rabobank,REG-115,Rabobank manual registry placeholder,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Société Générale,REG-116,Société Générale manual registry placeholder,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Bank Mellat,REG-117,Bank Mellat manual registry placeholder,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Alternatif Bank,REG-118,Alternatif Bank Basın Bültenleri ve Duyurular,,static_scrape,True,False,True,2026-06-29T08:30:52.365078+00:00,,True,,Sağlıklı,
+Alternatif Bank,REG-119,Alternatif Bank Tahsilat Çözümleri,,static_scrape,False,False,False,,,False,,Uyarı,
+Alternatif Bank,REG-120,Alternatif Bank POS ve Üye İşyeri Hizmetleri,,static_scrape,False,False,False,,,False,,Uyarı,
+DenizBank,REG-121,DenizBank İşim İçin,,static_scrape,False,False,False,,,False,,Uyarı,
+DenizBank,REG-122,DenizBank KOBİ Kredileri,,static_scrape,False,False,False,,,False,,Uyarı,
+DenizBank,REG-123,DenizBank Üye İşyeri Hizmetleri,,static_scrape,False,False,False,,,False,,Uyarı,
+DenizBank,REG-124,DenizBank Hesap Hareketi Entegrasyonu,,static_scrape,False,False,False,,,False,,Uyarı,
+DenizBank,REG-125,DenizBank Doğrudan Borçlandırma Sistemi,,static_scrape,False,False,False,,,False,,Uyarı,
+DenizBank,REG-126,DenizBank Güvenli Araç Alım Satım Sistemi,,static_scrape,False,False,False,,,False,,Uyarı,
+ING,REG-127,ING İşiniz İçin,,static_scrape,False,False,False,,,False,,Uyarı,
+ING,REG-128,ING Üye İşyeri Hizmetleri,,static_scrape,False,False,False,,,False,,Uyarı,
+ING,REG-129,ING Cebimde POS,,static_scrape,False,False,False,,,False,,Uyarı,
+ING,REG-130,ING POS Ekstra,,static_scrape,False,False,False,,,False,,Uyarı,
+ING,REG-131,ING KOBİ Nakit POS,,static_scrape,False,False,False,,,False,,Uyarı,
+ING,REG-132,ING Sağlık POS,,static_scrape,False,False,False,,,False,,Uyarı,
+ING,REG-133,ING Karekod Ödeme,,static_scrape,False,False,False,,,False,,Uyarı,
+TEB,REG-134,TEB KOBİ'yim,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+TEB,REG-135,TEB Tahsilat Çözümleri,,static_scrape,False,False,False,,,False,,Uyarı,
+TEB,REG-136,TEB CEPTETEB Kurumsal Şube,,static_scrape,False,False,False,,,False,,Uyarı,
+TEB,REG-137,TEB Bonus Business Card,,static_scrape,False,False,False,,,False,,Uyarı,
+TEB,REG-138,TEB OSB Ürün,,static_scrape,False,False,False,,,False,,Uyarı,
+TEB,REG-139,TEB Kamu Finansmanı,,static_scrape,False,False,False,,,False,,Uyarı,
+Şekerbank,REG-140,Şekerbank Basın Odası,,static_scrape,True,False,True,2026-06-29T08:30:53.941026+00:00,,True,,Sağlıklı,
+Şekerbank,REG-141,Şekerbank Esnaf KOBİ,,static_scrape,False,False,False,,,False,,Uyarı,
+Şekerbank,REG-142,Şekerbank KOBİ,,static_scrape,False,False,False,,,False,,Uyarı,
+Şekerbank,REG-143,Şekerbank Üye İşyeri POS,,static_scrape,False,False,False,,,False,,Uyarı,
+Şekerbank,REG-144,Şekerbank ÖKC Yazar Kasa POS,,static_scrape,False,False,False,,,False,,Uyarı,
+Şekerbank,REG-145,Şekerbank NarPOS,,static_scrape,False,False,False,,,False,,Uyarı,
+Şekerbank,REG-146,Şekerbank e-Fatura Finansmanı,,static_scrape,False,False,False,,,False,,Uyarı,
+Fibabanka,REG-147,Fibabanka Duyuru ve Haberler 2026,,manual,False,True,True,2026-06-26T05:58:18.872428+00:00,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Fibabanka,REG-148,Fibabanka Güncel Özel Kampanyalar,,static_scrape,True,False,True,2026-06-26T05:58:19.972966+00:00,,False,,Sağlıklı,
+Fibabanka,REG-149,Fibabanka KOBİ Kredileri,,static_scrape,False,False,False,,,False,,Uyarı,
+Fibabanka,REG-150,Fibabanka İşletme ve Tarım Kredi Başvuru,,static_scrape,False,False,False,,,False,,Uyarı,
+Fibabanka,REG-151,Fibabanka Ticari Müşteri Olmak İstiyorum,,static_scrape,False,False,False,,,False,,Uyarı,
+Fibabanka,REG-152,Fibabanka Nakit Yönetim Ürünleri,,static_scrape,False,False,False,,,False,,Uyarı,
+Anadolubank,REG-153,Anadolubank Basın Bültenleri ve Röportajlar,,static_scrape,True,False,True,2026-06-26T05:58:21.144896+00:00,,False,,Sağlıklı,
+Anadolubank,REG-154,Anadolubank Açık Bankacılık Çözümleri,,static_scrape,False,False,False,,,False,,Uyarı,
+Anadolubank,REG-155,Anadolubank Doğrudan Borçlandırma Sistemi,,static_scrape,False,False,False,,,False,,Uyarı,
+Anadolubank,REG-156,Anadolubank Nakit Yönetimi,,static_scrape,False,False,False,,,False,,Uyarı,
+Odeabank,REG-157,Odeabank Nakit Yönetimi,,static_scrape,False,False,False,,,False,,Uyarı,
+Odeabank,REG-158,Odeabank Dış Ticaret ve Nakit Yönetimi Uzman Hattı,,static_scrape,False,False,False,,,False,,Uyarı,
+Burgan Bank,REG-159,Burgan Bank Kurumsal ve Ticari Bankacılık,,static_scrape,True,False,True,2026-06-26T08:39:41.225921+00:00,,True,,Sağlıklı,
+Burgan Bank,REG-160,Burgan Bank Ürün ve Hizmet Ücretleri,,static_scrape,True,False,True,2026-06-26T08:39:41.379667+00:00,,True,,Sağlıklı,
+HSBC,REG-161,HSBC Haberler,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+HSBC,REG-162,HSBC Business Türkiye,,static_scrape,True,False,True,2026-06-26T08:39:58.079138+00:00,,False,,Sağlıklı,
+HSBC,REG-163,HSBC Credit and Lending,,static_scrape,True,False,True,2026-06-26T08:39:58.317655+00:00,,False,,Sağlıklı,
+HSBC,REG-164,HSBC Business Expansion,,static_scrape,True,False,True,2026-06-26T08:39:58.491661+00:00,,False,,Sağlıklı,
+HSBC,REG-165,HSBC Business Investments / Liquidity,,static_scrape,True,False,True,2026-06-26T08:39:58.587906+00:00,,False,,Sağlıklı,
+Enpara,REG-166,Enpara Şirketim Duyurular,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Enpara,REG-167,Enpara Şirketim POS,,static_scrape,True,False,True,2026-06-26T08:40:19.277722+00:00,,False,,Sağlıklı,
+Enpara,REG-168,Enpara Şirketim Ticari Kredi Kartı,,static_scrape,True,False,True,2026-06-26T08:40:19.628204+00:00,,False,,Sağlıklı,
+Enpara,REG-169,Enpara Şirketim Ödemeler,,static_scrape,True,False,True,2026-06-26T08:40:19.959515+00:00,,False,,Sağlıklı,
+Enpara,REG-170,Enpara Şirketim Oranlar ve Kurlar,,static_scrape,True,False,True,2026-06-26T08:40:20.322210+00:00,,False,,Sağlıklı,
+Enpara,REG-171,Enpara Şirketim Ücretler,,static_scrape,True,False,True,2026-06-26T08:40:20.671058+00:00,,False,,Sağlıklı,
+Burgan Bank,REG-172,Burgan Bank Proje Finansmanı,,static_scrape,True,False,True,2026-06-26T08:39:41.861541+00:00,,True,,Sağlıklı,
+Burgan Bank,REG-173,Burgan Bank Mevduat,,static_scrape,True,False,True,2026-06-26T08:39:42.150660+00:00,,True,,Sağlıklı,
+Burgan Bank,REG-174,Burgan Bank Yatırım,,static_scrape,True,False,True,2026-06-26T08:39:42.488391+00:00,,True,,Sağlıklı,
+Burgan Bank,REG-175,Burgan Bank Dış Ticaret,,static_scrape,True,False,True,2026-06-26T08:39:42.846079+00:00,,True,,Sağlıklı,
+Burgan Bank,REG-176,Burgan Bank Sigorta,,static_scrape,True,False,True,2026-06-26T08:39:43.166060+00:00,,True,,Sağlıklı,
+Burgan Bank,REG-177,Burgan Bank Masraf Komisyon Listesi,,static_scrape,True,False,True,2026-06-26T08:39:43.430556+00:00,,True,,Sağlıklı,
+T-Bank,REG-178,T-Bank Duyurular,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+T-Bank,REG-179,T-Bank Haberler,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+T-Bank,REG-180,T-Bank Nakit Krediler,,static_scrape,True,False,True,2026-06-26T11:08:09.572776+00:00,,False,,Sağlıklı,
+T-Bank,REG-181,T-Bank Gayrinakdi Krediler,,static_scrape,True,False,True,2026-06-26T11:08:10.077667+00:00,,False,,Sağlıklı,
+T-Bank,REG-182,T-Bank Nakit Yönetimi,,static_scrape,True,False,True,2026-06-26T11:08:10.487971+00:00,,False,,Sağlıklı,
+T-Bank,REG-183,T-Bank Yatırım Ürünleri,,static_scrape,True,False,True,2026-06-26T11:08:10.897093+00:00,,False,,Sağlıklı,
+T-Bank,REG-184,T-Bank Diğer Ticari Ürünler,,static_scrape,True,False,True,2026-06-26T11:08:11.251793+00:00,,False,,Sağlıklı,
+TurkishBank,REG-185,TurkishBank Bizden Haberler,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+TurkishBank,REG-186,TurkishBank İlişki Bankacılığı,,static_scrape,True,False,True,2026-06-26T11:08:28.041136+00:00,,False,,Sağlıklı,
+TurkishBank,REG-187,TurkishBank Finansal Kurumlar,,static_scrape,True,False,True,2026-06-26T11:08:28.312103+00:00,,False,,Sağlıklı,
+TurkishBank,REG-188,TurkishBank Teknoloji Bankacılığı,,static_scrape,True,False,True,2026-06-26T11:08:28.574490+00:00,,False,,Sağlıklı,
+TurkishBank,REG-189,T-Gate,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Türk Ticaret Bankası,REG-190,Türk Ticaret Bankası Duyurular,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Türk Ticaret Bankası,REG-191,Türk Ticaret Bankası Haberler,,static_scrape,True,False,True,2026-06-26T11:08:49.162695+00:00,,False,,Sağlıklı,
+Türk Ticaret Bankası,REG-192,Türk Ticaret Bankası Basın Bültenleri,,manual,False,True,False,,,False,,Manuel İzleme,Manuel kaynak; otomatik fetch yok.
+Türk Ticaret Bankası,REG-193,Türk Ticaret Bankası Bankamız,,static_scrape,True,False,True,2026-06-26T11:08:49.408791+00:00,,False,,Sağlıklı,
+Türk Ticaret Bankası,REG-194,Türk Ticaret Bankası Dış Ticaret Finansmanı,,static_scrape,True,False,True,2026-06-26T11:08:49.613981+00:00,,False,,Sağlıklı,
+Türk Ticaret Bankası,REG-195,Türk Ticaret Bankası İşletme Sermayesi Kredileri,,static_scrape,True,False,True,2026-06-26T11:08:49.853161+00:00,,False,,Sağlıklı,
+Türk Ticaret Bankası,REG-196,Türk Ticaret Bankası Teminat Mektupları,,static_scrape,True,False,True,2026-06-26T11:08:50.074962+00:00,,False,,Sağlıklı,
+Türk Ticaret Bankası,REG-197,Türk Ticaret Bankası Şubeler,,static_scrape,True,False,True,2026-06-26T11:08:50.267638+00:00,,False,,Sağlıklı,
+TurkishBank,REG-198,TurkishBank Ticari / Kurumsal Bankacılık,,static_scrape,True,False,True,2026-06-26T11:08:28.831812+00:00,,False,,Sağlıklı,
+Türk Ticaret Bankası,REG-199,Türk Ticaret Bankası Ürün ve Hizmet Ücretleri,,static_scrape,True,False,True,2026-06-26T11:08:50.487036+00:00,,False,,Sağlıklı,
+Mastercard,REG-200,Mastercard Global Newsroom,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-222,Mastercard Digital Assets / Multi-Rail News,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-202,Mastercard Türkiye Official Site,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-203,Mastercard Business Overview,benchmark_monitoring,browser_required,False,True,False,,,False,,Benchmark İzleme,Benchmark/context only; recent item üretmez.
+Mastercard,REG-204,Mastercard Commercial Cards,benchmark_monitoring,browser_required,False,True,False,,,False,,Benchmark İzleme,Benchmark/context only; recent item üretmez.
+Mastercard,REG-205,Mastercard Small Business Solutions,benchmark_monitoring,browser_required,False,True,False,,,False,,Benchmark İzleme,Benchmark/context only; recent item üretmez.
+Mastercard,REG-206,Mastercard Virtual Cards,benchmark_monitoring,browser_required,False,True,False,,,False,,Benchmark İzleme,Benchmark/context only; recent item üretmez.
+Mastercard,REG-207,Mastercard Accounts Payable,benchmark_monitoring,browser_required,False,True,False,,,False,,Benchmark İzleme,Benchmark/context only; recent item üretmez.
+Mastercard,REG-208,Mastercard Accounts Receivable,benchmark_monitoring,browser_required,False,True,False,,,False,,Benchmark İzleme,Benchmark/context only; recent item üretmez.
+Mastercard,REG-209,Mastercard Cross-Border Services,benchmark_monitoring,browser_required,False,True,False,,,False,,Benchmark İzleme,Benchmark/context only; recent item üretmez.
+Mastercard,REG-211,Mastercard Click to Pay / Merchant Acceptance,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-216,Mastercard Agentic Commerce Advisory,benchmark_monitoring,static_scrape,False,True,True,2026-06-26T12:18:25.294242+00:00,,False,,Benchmark İzleme,Benchmark/context only; recent item üretmez.
+Mastercard,REG-219,Mastercard Cybersecurity Services,benchmark_monitoring,browser_required,False,True,False,,,False,,Benchmark İzleme,Benchmark/context only; recent item üretmez.
+Mastercard,REG-220,Mastercard Open Finance Advisory,benchmark_monitoring,browser_required,False,True,False,,,False,,Benchmark İzleme,Benchmark/context only; recent item üretmez.
+Mastercard,REG-221,Mastercard Data and Analytics for Financial Institutions,benchmark_monitoring,static_scrape,False,True,True,2026-06-26T12:18:25.466949+00:00,,False,,Benchmark İzleme,Benchmark/context only; recent item üretmez.
+Mastercard,REG-223,Mastercard Global Press,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-224,Mastercard Commercial Payments News,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-225,Mastercard Receivables Manager Search Surface,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-226,Mastercard Embedded Finance Search Surface,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-227,Mastercard Agent Pay Official News,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-228,Mastercard Tokenization / Network Credentials,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-229,Mastercard Identity Check / Authentication,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-230,Mastercard US Press Releases,blocked_source_watch,browser_required,False,True,False,,,False,,Erişim Engelli,Mastercard için manuel resmî kanıt + periyodik recovery.
+Mastercard,REG-231,Mastercard Legacy Newsroom Press,historical_resolution,static_scrape,False,True,False,,,False,,Tarihsel Çözümleme,Recent discovery dışı; canonical/history resolver.

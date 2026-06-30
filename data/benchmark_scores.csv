@@ -1,0 +1,281 @@
+﻿institution_id,dimension,score_1_to_5,confidence_level,last_updated,analyst_notes
+garanti_bbva,KOBİ Mevduat Önermesi,4.5,Yüksek,2026-05-28,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+garanti_bbva,Gömülü Finans Olgunluğu,3.5,Yüksek,2026-05-21,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+garanti_bbva,Ödemeler ve Üye İşyeri Edinimi,4.4,Yüksek,2026-05-14,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+garanti_bbva,Dijital KOBİ Yolculuğu,4.2,Yüksek,2026-05-07,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+garanti_bbva,Nakit Yönetimi,4.1,Yüksek,2026-04-30,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+garanti_bbva,KOBİ Kredi Bağlantısı,4.0,Yüksek,2026-04-23,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+garanti_bbva,Ekosistem İş Birlikleri,3.7,Yüksek,2026-04-16,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+garanti_bbva,Fiyatlama Şeffaflığı,3.3,Yüksek,2026-04-09,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+garanti_bbva,BD Kullanılabilirliği,4.5,Yüksek,2026-04-02,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+garanti_bbva,Stratejik Tehdit Seviyesi,4.2,Yüksek,2026-03-26,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+is_bankasi,KOBİ Mevduat Önermesi,4.4,Yüksek,2026-05-30,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+is_bankasi,Gömülü Finans Olgunluğu,3.3,Yüksek,2026-05-23,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+is_bankasi,Ödemeler ve Üye İşyeri Edinimi,4.0,Yüksek,2026-05-16,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+is_bankasi,Dijital KOBİ Yolculuğu,3.9,Yüksek,2026-05-09,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+is_bankasi,Nakit Yönetimi,4.2,Yüksek,2026-05-02,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+is_bankasi,KOBİ Kredi Bağlantısı,4.1,Yüksek,2026-04-25,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+is_bankasi,Ekosistem İş Birlikleri,3.6,Yüksek,2026-04-18,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+is_bankasi,Fiyatlama Şeffaflığı,3.2,Yüksek,2026-04-11,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+is_bankasi,BD Kullanılabilirliği,4.4,Yüksek,2026-04-04,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+is_bankasi,Stratejik Tehdit Seviyesi,4.0,Yüksek,2026-03-28,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+akbank,KOBİ Mevduat Önermesi,4.1,Yüksek,2026-06-03,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+akbank,Gömülü Finans Olgunluğu,3.8,Yüksek,2026-05-27,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+akbank,Ödemeler ve Üye İşyeri Edinimi,4.1,Yüksek,2026-05-20,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+akbank,Dijital KOBİ Yolculuğu,4.3,Yüksek,2026-05-13,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+akbank,Nakit Yönetimi,3.8,Yüksek,2026-05-06,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+akbank,KOBİ Kredi Bağlantısı,3.9,Yüksek,2026-04-29,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+akbank,Ekosistem İş Birlikleri,4.0,Yüksek,2026-04-22,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+akbank,Fiyatlama Şeffaflığı,3.4,Yüksek,2026-04-15,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+akbank,BD Kullanılabilirliği,4.2,Yüksek,2026-04-08,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+akbank,Stratejik Tehdit Seviyesi,4.1,Yüksek,2026-04-01,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+yapi_kredi,KOBİ Mevduat Önermesi,4.3,Yüksek,2026-05-30,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+yapi_kredi,Gömülü Finans Olgunluğu,3.6,Yüksek,2026-05-23,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+yapi_kredi,Ödemeler ve Üye İşyeri Edinimi,4.5,Yüksek,2026-05-16,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+yapi_kredi,Dijital KOBİ Yolculuğu,4.1,Yüksek,2026-05-09,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+yapi_kredi,Nakit Yönetimi,4.0,Yüksek,2026-05-02,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+yapi_kredi,KOBİ Kredi Bağlantısı,4.0,Yüksek,2026-04-25,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+yapi_kredi,Ekosistem İş Birlikleri,3.8,Yüksek,2026-04-18,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+yapi_kredi,Fiyatlama Şeffaflığı,3.2,Yüksek,2026-04-11,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+yapi_kredi,BD Kullanılabilirliği,4.3,Yüksek,2026-04-04,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+yapi_kredi,Stratejik Tehdit Seviyesi,4.2,Yüksek,2026-03-28,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+qnb_finansbank,KOBİ Mevduat Önermesi,3.8,Orta,2026-05-26,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+qnb_finansbank,Gömülü Finans Olgunluğu,3.4,Orta,2026-05-19,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+qnb_finansbank,Ödemeler ve Üye İşyeri Edinimi,3.7,Orta,2026-05-12,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+qnb_finansbank,Dijital KOBİ Yolculuğu,3.8,Orta,2026-05-05,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+qnb_finansbank,Nakit Yönetimi,3.5,Orta,2026-04-28,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+qnb_finansbank,KOBİ Kredi Bağlantısı,3.7,Orta,2026-04-21,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+qnb_finansbank,Ekosistem İş Birlikleri,3.4,Orta,2026-04-14,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+qnb_finansbank,Fiyatlama Şeffaflığı,3.3,Orta,2026-04-07,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+qnb_finansbank,BD Kullanılabilirliği,3.8,Orta,2026-03-31,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+qnb_finansbank,Stratejik Tehdit Seviyesi,3.6,Orta,2026-03-24,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+denizbank,KOBİ Mevduat Önermesi,3.9,Orta,2026-05-31,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+denizbank,Gömülü Finans Olgunluğu,3.2,Orta,2026-05-24,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+denizbank,Ödemeler ve Üye İşyeri Edinimi,3.6,Orta,2026-05-17,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+denizbank,Dijital KOBİ Yolculuğu,3.5,Orta,2026-05-10,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+denizbank,Nakit Yönetimi,3.7,Orta,2026-05-03,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+denizbank,KOBİ Kredi Bağlantısı,3.8,Orta,2026-04-26,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+denizbank,Ekosistem İş Birlikleri,3.3,Orta,2026-04-19,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+denizbank,Fiyatlama Şeffaflığı,3.1,Orta,2026-04-12,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+denizbank,BD Kullanılabilirliği,3.7,Orta,2026-04-05,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+denizbank,Stratejik Tehdit Seviyesi,3.5,Orta,2026-03-29,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+teb,KOBİ Mevduat Önermesi,3.6,Orta,2026-06-06,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+teb,Gömülü Finans Olgunluğu,3.1,Orta,2026-05-30,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+teb,Ödemeler ve Üye İşyeri Edinimi,3.4,Orta,2026-05-23,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+teb,Dijital KOBİ Yolculuğu,3.5,Orta,2026-05-16,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+teb,Nakit Yönetimi,3.5,Orta,2026-05-09,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+teb,KOBİ Kredi Bağlantısı,3.6,Orta,2026-05-02,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+teb,Ekosistem İş Birlikleri,3.2,Orta,2026-04-25,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+teb,Fiyatlama Şeffaflığı,3.2,Orta,2026-04-18,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+teb,BD Kullanılabilirliği,3.6,Orta,2026-04-11,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+teb,Stratejik Tehdit Seviyesi,3.3,Orta,2026-04-04,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+vakifbank,KOBİ Mevduat Önermesi,4.2,Yüksek,2026-05-31,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+vakifbank,Gömülü Finans Olgunluğu,2.9,Düşük,2026-05-24,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+vakifbank,Ödemeler ve Üye İşyeri Edinimi,3.7,Orta,2026-05-17,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+vakifbank,Dijital KOBİ Yolculuğu,3.3,Orta,2026-05-10,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+vakifbank,Nakit Yönetimi,3.9,Orta,2026-05-03,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+vakifbank,KOBİ Kredi Bağlantısı,4.0,Orta,2026-04-26,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+vakifbank,Ekosistem İş Birlikleri,3.0,Orta,2026-04-19,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+vakifbank,Fiyatlama Şeffaflığı,3.0,Orta,2026-04-12,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+vakifbank,BD Kullanılabilirliği,4.1,Yüksek,2026-04-05,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+vakifbank,Stratejik Tehdit Seviyesi,3.7,Orta,2026-03-29,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+ziraat,KOBİ Mevduat Önermesi,4.5,Yüksek,2026-06-03,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+ziraat,Gömülü Finans Olgunluğu,2.8,Düşük,2026-05-27,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+ziraat,Ödemeler ve Üye İşyeri Edinimi,3.6,Orta,2026-05-20,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+ziraat,Dijital KOBİ Yolculuğu,3.2,Orta,2026-05-13,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+ziraat,Nakit Yönetimi,4.0,Orta,2026-05-06,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+ziraat,KOBİ Kredi Bağlantısı,4.2,Yüksek,2026-04-29,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+ziraat,Ekosistem İş Birlikleri,3.1,Orta,2026-04-22,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+ziraat,Fiyatlama Şeffaflığı,2.9,Düşük,2026-04-15,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+ziraat,BD Kullanılabilirliği,4.2,Yüksek,2026-04-08,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+ziraat,Stratejik Tehdit Seviyesi,3.8,Orta,2026-04-01,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+halkbank,KOBİ Mevduat Önermesi,4.1,Yüksek,2026-06-01,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+halkbank,Gömülü Finans Olgunluğu,2.9,Düşük,2026-05-25,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+halkbank,Ödemeler ve Üye İşyeri Edinimi,3.5,Orta,2026-05-18,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+halkbank,Dijital KOBİ Yolculuğu,3.2,Orta,2026-05-11,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+halkbank,Nakit Yönetimi,3.7,Orta,2026-05-04,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+halkbank,KOBİ Kredi Bağlantısı,4.3,Yüksek,2026-04-27,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+halkbank,Ekosistem İş Birlikleri,3.0,Orta,2026-04-20,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+halkbank,Fiyatlama Şeffaflığı,2.9,Düşük,2026-04-13,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+halkbank,BD Kullanılabilirliği,4.4,Yüksek,2026-04-06,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+halkbank,Stratejik Tehdit Seviyesi,3.7,Orta,2026-03-30,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+kuveyt_turk,KOBİ Mevduat Önermesi,3.8,Orta,2026-05-29,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+kuveyt_turk,Gömülü Finans Olgunluğu,3.4,Orta,2026-05-22,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+kuveyt_turk,Ödemeler ve Üye İşyeri Edinimi,3.5,Orta,2026-05-15,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+kuveyt_turk,Dijital KOBİ Yolculuğu,3.7,Orta,2026-05-08,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+kuveyt_turk,Nakit Yönetimi,3.6,Orta,2026-05-01,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+kuveyt_turk,KOBİ Kredi Bağlantısı,3.5,Orta,2026-04-24,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+kuveyt_turk,Ekosistem İş Birlikleri,3.4,Orta,2026-04-17,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+kuveyt_turk,Fiyatlama Şeffaflığı,3.2,Orta,2026-04-10,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+kuveyt_turk,BD Kullanılabilirliği,3.7,Orta,2026-04-03,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+kuveyt_turk,Stratejik Tehdit Seviyesi,3.5,Orta,2026-03-27,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+iyzico,KOBİ Mevduat Önermesi,1.8,Düşük,2026-06-03,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+iyzico,Gömülü Finans Olgunluğu,4.2,Yüksek,2026-05-27,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+iyzico,Ödemeler ve Üye İşyeri Edinimi,4.4,Yüksek,2026-05-20,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+iyzico,Dijital KOBİ Yolculuğu,4.1,Yüksek,2026-05-13,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+iyzico,Nakit Yönetimi,2.5,Düşük,2026-05-06,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+iyzico,KOBİ Kredi Bağlantısı,2.2,Düşük,2026-04-29,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+iyzico,Ekosistem İş Birlikleri,4.3,Yüksek,2026-04-22,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+iyzico,Fiyatlama Şeffaflığı,3.6,Orta,2026-04-15,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+iyzico,BD Kullanılabilirliği,4.0,Orta,2026-04-08,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+iyzico,Stratejik Tehdit Seviyesi,4.0,Orta,2026-04-01,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+paytr,KOBİ Mevduat Önermesi,1.6,Düşük,2026-06-04,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+paytr,Gömülü Finans Olgunluğu,3.6,Orta,2026-05-28,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+paytr,Ödemeler ve Üye İşyeri Edinimi,4.2,Yüksek,2026-05-21,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+paytr,Dijital KOBİ Yolculuğu,3.7,Orta,2026-05-14,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+paytr,Nakit Yönetimi,2.3,Düşük,2026-05-07,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+paytr,KOBİ Kredi Bağlantısı,2.0,Düşük,2026-04-30,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+paytr,Ekosistem İş Birlikleri,3.7,Orta,2026-04-23,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+paytr,Fiyatlama Şeffaflığı,3.5,Orta,2026-04-16,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+paytr,BD Kullanılabilirliği,3.7,Orta,2026-04-09,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+paytr,Stratejik Tehdit Seviyesi,3.7,Orta,2026-04-02,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+param,KOBİ Mevduat Önermesi,2.2,Düşük,2026-06-04,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+param,Gömülü Finans Olgunluğu,3.7,Orta,2026-05-28,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+param,Ödemeler ve Üye İşyeri Edinimi,3.8,Orta,2026-05-21,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+param,Dijital KOBİ Yolculuğu,3.5,Orta,2026-05-14,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+param,Nakit Yönetimi,2.6,Düşük,2026-05-07,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+param,KOBİ Kredi Bağlantısı,2.3,Düşük,2026-04-30,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+param,Ekosistem İş Birlikleri,3.6,Orta,2026-04-23,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+param,Fiyatlama Şeffaflığı,3.3,Orta,2026-04-16,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+param,BD Kullanılabilirliği,3.4,Orta,2026-04-09,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+param,Stratejik Tehdit Seviyesi,3.5,Orta,2026-04-02,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+sipay,KOBİ Mevduat Önermesi,1.7,Düşük,2026-06-04,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+sipay,Gömülü Finans Olgunluğu,3.8,Orta,2026-05-28,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+sipay,Ödemeler ve Üye İşyeri Edinimi,3.9,Orta,2026-05-21,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+sipay,Dijital KOBİ Yolculuğu,3.5,Orta,2026-05-14,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+sipay,Nakit Yönetimi,2.4,Düşük,2026-05-07,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+sipay,KOBİ Kredi Bağlantısı,2.1,Düşük,2026-04-30,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+sipay,Ekosistem İş Birlikleri,3.8,Orta,2026-04-23,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+sipay,Fiyatlama Şeffaflığı,3.4,Orta,2026-04-16,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+sipay,BD Kullanılabilirliği,3.5,Orta,2026-04-09,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+sipay,Stratejik Tehdit Seviyesi,3.6,Orta,2026-04-02,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+papara,KOBİ Mevduat Önermesi,2.4,Düşük,2026-06-03,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+papara,Gömülü Finans Olgunluğu,3.4,Orta,2026-05-27,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+papara,Ödemeler ve Üye İşyeri Edinimi,3.2,Orta,2026-05-20,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+papara,Dijital KOBİ Yolculuğu,4.0,Orta,2026-05-13,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+papara,Nakit Yönetimi,2.2,Düşük,2026-05-06,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+papara,KOBİ Kredi Bağlantısı,2.0,Düşük,2026-04-29,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+papara,Ekosistem İş Birlikleri,3.5,Orta,2026-04-22,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+papara,Fiyatlama Şeffaflığı,3.7,Orta,2026-04-15,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+papara,BD Kullanılabilirliği,3.2,Orta,2026-04-08,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+papara,Stratejik Tehdit Seviyesi,3.3,Orta,2026-04-01,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+paycell,KOBİ Mevduat Önermesi,2.0,Düşük,2026-06-02,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+paycell,Gömülü Finans Olgunluğu,3.4,Orta,2026-05-26,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+paycell,Ödemeler ve Üye İşyeri Edinimi,3.6,Orta,2026-05-19,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+paycell,Dijital KOBİ Yolculuğu,3.6,Orta,2026-05-12,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+paycell,Nakit Yönetimi,2.4,Düşük,2026-05-05,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+paycell,KOBİ Kredi Bağlantısı,2.0,Düşük,2026-04-28,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+paycell,Ekosistem İş Birlikleri,3.5,Orta,2026-04-21,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+paycell,Fiyatlama Şeffaflığı,3.2,Orta,2026-04-14,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+paycell,BD Kullanılabilirliği,3.2,Orta,2026-04-07,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+paycell,Stratejik Tehdit Seviyesi,3.3,Orta,2026-03-31,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+moka,KOBİ Mevduat Önermesi,1.7,Düşük,2026-06-05,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+moka,Gömülü Finans Olgunluğu,3.3,Orta,2026-05-29,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+moka,Ödemeler ve Üye İşyeri Edinimi,3.8,Orta,2026-05-22,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+moka,Dijital KOBİ Yolculuğu,3.3,Orta,2026-05-15,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+moka,Nakit Yönetimi,2.2,Düşük,2026-05-08,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+moka,KOBİ Kredi Bağlantısı,2.0,Düşük,2026-05-01,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+moka,Ekosistem İş Birlikleri,3.3,Orta,2026-04-24,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+moka,Fiyatlama Şeffaflığı,3.2,Orta,2026-04-17,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+moka,BD Kullanılabilirliği,3.3,Orta,2026-04-10,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+moka,Stratejik Tehdit Seviyesi,3.4,Orta,2026-04-03,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+visa,KOBİ Mevduat Önermesi,1.5,Düşük,2026-06-05,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+visa,Gömülü Finans Olgunluğu,4.0,Orta,2026-05-29,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+visa,Ödemeler ve Üye İşyeri Edinimi,4.7,Yüksek,2026-05-22,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+visa,Dijital KOBİ Yolculuğu,3.6,Orta,2026-05-15,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+visa,Nakit Yönetimi,2.4,Düşük,2026-05-08,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+visa,KOBİ Kredi Bağlantısı,2.3,Düşük,2026-05-01,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+visa,Ekosistem İş Birlikleri,4.5,Yüksek,2026-04-24,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+visa,Fiyatlama Şeffaflığı,3.1,Orta,2026-04-17,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+visa,BD Kullanılabilirliği,3.6,Orta,2026-04-10,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+visa,Stratejik Tehdit Seviyesi,3.8,Orta,2026-04-03,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+mastercard,KOBİ Mevduat Önermesi,1.5,Düşük,2026-05-30,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+mastercard,Gömülü Finans Olgunluğu,4.1,Yüksek,2026-05-23,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+mastercard,Ödemeler ve Üye İşyeri Edinimi,4.7,Yüksek,2026-05-16,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+mastercard,Dijital KOBİ Yolculuğu,3.7,Orta,2026-05-09,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+mastercard,Nakit Yönetimi,2.5,Düşük,2026-05-02,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+mastercard,KOBİ Kredi Bağlantısı,2.4,Düşük,2026-04-25,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+mastercard,Ekosistem İş Birlikleri,4.6,Yüksek,2026-04-18,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+mastercard,Fiyatlama Şeffaflığı,3.1,Orta,2026-04-11,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+mastercard,BD Kullanılabilirliği,3.7,Orta,2026-04-04,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+mastercard,Stratejik Tehdit Seviyesi,3.9,Orta,2026-03-28,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+troy,KOBİ Mevduat Önermesi,1.4,Düşük,2026-06-05,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+troy,Gömülü Finans Olgunluğu,3.0,Orta,2026-05-29,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+troy,Ödemeler ve Üye İşyeri Edinimi,3.8,Orta,2026-05-22,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+troy,Dijital KOBİ Yolculuğu,3.0,Orta,2026-05-15,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+troy,Nakit Yönetimi,2.0,Düşük,2026-05-08,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+troy,KOBİ Kredi Bağlantısı,2.0,Düşük,2026-05-01,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+troy,Ekosistem İş Birlikleri,3.2,Orta,2026-04-24,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+troy,Fiyatlama Şeffaflığı,3.0,Orta,2026-04-17,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+troy,BD Kullanılabilirliği,3.2,Orta,2026-04-10,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+troy,Stratejik Tehdit Seviyesi,3.3,Orta,2026-04-03,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+stripe,KOBİ Mevduat Önermesi,2.8,Yüksek,2026-06-03,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+stripe,Gömülü Finans Olgunluğu,4.9,Yüksek,2026-05-27,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+stripe,Ödemeler ve Üye İşyeri Edinimi,4.9,Yüksek,2026-05-20,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+stripe,Dijital KOBİ Yolculuğu,4.8,Yüksek,2026-05-13,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+stripe,Nakit Yönetimi,4.3,Yüksek,2026-05-06,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+stripe,KOBİ Kredi Bağlantısı,4.0,Yüksek,2026-04-29,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+stripe,Ekosistem İş Birlikleri,4.8,Yüksek,2026-04-22,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+stripe,Fiyatlama Şeffaflığı,4.1,Yüksek,2026-04-15,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+stripe,BD Kullanılabilirliği,4.5,Yüksek,2026-04-08,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+stripe,Stratejik Tehdit Seviyesi,4.8,Yüksek,2026-04-01,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+adyen,KOBİ Mevduat Önermesi,2.5,Yüksek,2026-06-04,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+adyen,Gömülü Finans Olgunluğu,4.4,Yüksek,2026-05-28,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+adyen,Ödemeler ve Üye İşyeri Edinimi,4.9,Yüksek,2026-05-21,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+adyen,Dijital KOBİ Yolculuğu,4.4,Yüksek,2026-05-14,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+adyen,Nakit Yönetimi,4.5,Yüksek,2026-05-07,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+adyen,KOBİ Kredi Bağlantısı,3.5,Yüksek,2026-04-30,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+adyen,Ekosistem İş Birlikleri,4.6,Yüksek,2026-04-23,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+adyen,Fiyatlama Şeffaflığı,3.5,Yüksek,2026-04-16,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+adyen,BD Kullanılabilirliği,4.2,Yüksek,2026-04-09,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+adyen,Stratejik Tehdit Seviyesi,4.6,Yüksek,2026-04-02,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+square,KOBİ Mevduat Önermesi,4.2,Yüksek,2026-06-03,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+square,Gömülü Finans Olgunluğu,4.6,Yüksek,2026-05-27,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+square,Ödemeler ve Üye İşyeri Edinimi,4.7,Yüksek,2026-05-20,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+square,Dijital KOBİ Yolculuğu,4.6,Yüksek,2026-05-13,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+square,Nakit Yönetimi,4.1,Yüksek,2026-05-06,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+square,KOBİ Kredi Bağlantısı,4.4,Yüksek,2026-04-29,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+square,Ekosistem İş Birlikleri,4.5,Yüksek,2026-04-22,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+square,Fiyatlama Şeffaflığı,3.8,Yüksek,2026-04-15,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+square,BD Kullanılabilirliği,4.6,Yüksek,2026-04-08,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+square,Stratejik Tehdit Seviyesi,4.7,Yüksek,2026-04-01,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+sumup,KOBİ Mevduat Önermesi,3.1,Orta,2026-06-04,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+sumup,Gömülü Finans Olgunluğu,3.9,Orta,2026-05-28,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+sumup,Ödemeler ve Üye İşyeri Edinimi,4.4,Yüksek,2026-05-21,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+sumup,Dijital KOBİ Yolculuğu,4.2,Yüksek,2026-05-14,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+sumup,Nakit Yönetimi,3.4,Orta,2026-05-07,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+sumup,KOBİ Kredi Bağlantısı,3.2,Orta,2026-04-30,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+sumup,Ekosistem İş Birlikleri,3.8,Orta,2026-04-23,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+sumup,Fiyatlama Şeffaflığı,3.9,Orta,2026-04-16,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+sumup,BD Kullanılabilirliği,4.0,Orta,2026-04-09,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+sumup,Stratejik Tehdit Seviyesi,4.1,Yüksek,2026-04-02,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+revolut_business,KOBİ Mevduat Önermesi,4.3,Yüksek,2026-05-24,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+revolut_business,Gömülü Finans Olgunluğu,4.2,Yüksek,2026-05-17,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+revolut_business,Ödemeler ve Üye İşyeri Edinimi,4.0,Orta,2026-05-10,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+revolut_business,Dijital KOBİ Yolculuğu,4.6,Yüksek,2026-05-03,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+revolut_business,Nakit Yönetimi,4.2,Yüksek,2026-04-26,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+revolut_business,KOBİ Kredi Bağlantısı,3.4,Orta,2026-04-19,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+revolut_business,Ekosistem İş Birlikleri,4.1,Yüksek,2026-04-12,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+revolut_business,Fiyatlama Şeffaflığı,4.3,Yüksek,2026-04-05,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+revolut_business,BD Kullanılabilirliği,4.4,Yüksek,2026-03-29,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+revolut_business,Stratejik Tehdit Seviyesi,4.5,Yüksek,2026-03-22,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+wise_business,KOBİ Mevduat Önermesi,4.0,Orta,2026-05-27,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+wise_business,Gömülü Finans Olgunluğu,3.6,Orta,2026-05-20,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+wise_business,Ödemeler ve Üye İşyeri Edinimi,3.4,Orta,2026-05-13,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+wise_business,Dijital KOBİ Yolculuğu,4.4,Yüksek,2026-05-06,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+wise_business,Nakit Yönetimi,3.8,Orta,2026-04-29,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+wise_business,KOBİ Kredi Bağlantısı,2.8,Düşük,2026-04-22,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+wise_business,Ekosistem İş Birlikleri,3.7,Orta,2026-04-15,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+wise_business,Fiyatlama Şeffaflığı,4.8,Yüksek,2026-04-08,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+wise_business,BD Kullanılabilirliği,4.0,Orta,2026-04-01,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+wise_business,Stratejik Tehdit Seviyesi,4.0,Orta,2026-03-25,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
+shopify_payments,KOBİ Mevduat Önermesi,3.6,Orta,2026-05-24,Mock benchmark estimate for KOBİ Mevduat Önermesi based on visible proposition signals and analyst judgement.
+shopify_payments,Gömülü Finans Olgunluğu,4.8,Yüksek,2026-05-17,Mock benchmark estimate for Gömülü Finans Olgunluğu based on visible proposition signals and analyst judgement.
+shopify_payments,Ödemeler ve Üye İşyeri Edinimi,4.7,Yüksek,2026-05-10,Mock benchmark estimate for Ödemeler ve Üye İşyeri Edinimi based on visible proposition signals and analyst judgement.
+shopify_payments,Dijital KOBİ Yolculuğu,4.5,Yüksek,2026-05-03,Mock benchmark estimate for Dijital KOBİ Yolculuğu based on visible proposition signals and analyst judgement.
+shopify_payments,Nakit Yönetimi,3.9,Orta,2026-04-26,Mock benchmark estimate for Nakit Yönetimi based on visible proposition signals and analyst judgement.
+shopify_payments,KOBİ Kredi Bağlantısı,4.0,Orta,2026-04-19,Mock benchmark estimate for KOBİ Kredi Bağlantısı based on visible proposition signals and analyst judgement.
+shopify_payments,Ekosistem İş Birlikleri,4.8,Yüksek,2026-04-12,Mock benchmark estimate for Ekosistem İş Birlikleri based on visible proposition signals and analyst judgement.
+shopify_payments,Fiyatlama Şeffaflığı,3.7,Orta,2026-04-05,Mock benchmark estimate for Fiyatlama Şeffaflığı based on visible proposition signals and analyst judgement.
+shopify_payments,BD Kullanılabilirliği,4.6,Yüksek,2026-03-29,Mock benchmark estimate for BD Kullanılabilirliği based on visible proposition signals and analyst judgement.
+shopify_payments,Stratejik Tehdit Seviyesi,4.7,Yüksek,2026-03-22,Mock benchmark estimate for Stratejik Tehdit Seviyesi based on visible proposition signals and analyst judgement.
