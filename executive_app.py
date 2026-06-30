@@ -56,6 +56,41 @@ st.markdown(
         align-items: end;
     }
 
+    .st-key-executive_page_switcher {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .st-key-executive_page_switcher [data-baseweb="button-group"] {
+        border-bottom: 1px solid var(--ak-border);
+        gap: 0.75rem;
+    }
+
+    .st-key-executive_page_switcher [data-baseweb="button-group"] button {
+        background: transparent !important;
+        border: 0 !important;
+        border-bottom: 2px solid transparent !important;
+        border-radius: 0 !important;
+        color: var(--ak-muted) !important;
+        min-height: 2rem;
+        padding: 0 0 0.38rem !important;
+        font-size: 0.72rem !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.08em !important;
+        text-transform: uppercase !important;
+    }
+
+    .st-key-executive_page_switcher [data-baseweb="button-group"] button[aria-pressed="true"],
+    .st-key-executive_page_switcher [data-baseweb="button-group"] button[aria-selected="true"],
+    .st-key-executive_page_switcher [data-baseweb="button-group"] button[kind="segmented_controlActive"] {
+        color: var(--ak-text) !important;
+        border-bottom-color: var(--ak-red) !important;
+    }
+
+    .st-key-executive_page_switcher [data-baseweb="button-group"] button[kind="segmented_controlActive"] p {
+        color: var(--ak-text) !important;
+    }
+
     .st-key-executive_page_switcher .stButton > button[kind="secondary"] {
         background: transparent !important;
         border: 0 !important;
@@ -90,6 +125,28 @@ st.markdown(
     .st-key-executive_page_switcher .stButton > button[kind="secondary"]:disabled p {
         color: var(--ak-text) !important;
     }
+
+    @media (max-width: 700px) {
+        .st-key-executive_page_switcher {
+            justify-content: center;
+            margin: 0.65rem 0 1.05rem;
+            padding: 0 1rem;
+        }
+
+        .st-key-executive_page_switcher [data-baseweb="button-group"] {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.5rem;
+        }
+
+        .st-key-executive_page_switcher [data-baseweb="button-group"] button {
+            justify-content: center;
+            font-size: 0.68rem;
+            letter-spacing: 0.06em;
+            white-space: nowrap;
+        }
+    }
     """
     + f"""
 
@@ -109,20 +166,17 @@ st.markdown(
 )
 
 with st.container(key="executive_page_switcher"):
-    spacer, nav_col_1, nav_col_2 = st.columns([1, 0.14, 0.16])
-    with nav_col_1:
-        if st.button(
-            "Yönetici Özeti",
-            key="executive_nav_radar",
-            use_container_width=True,
-        ):
-            st.switch_page(yonetici_page)
-    with nav_col_2:
-        if st.button(
-            "Tüm Gelişmeler",
-            key="executive_nav_all",
-            use_container_width=True,
-        ):
-            st.switch_page(tum_gelismeler_page)
+    selected_page = st.segmented_control(
+        "Sayfa",
+        ["Yönetici Özeti", "Tüm Gelişmeler"],
+        default=current_title,
+        key="executive_nav_segment",
+        label_visibility="collapsed",
+    )
+
+if selected_page == "Yönetici Özeti" and current_title != "Yönetici Özeti":
+    st.switch_page(yonetici_page)
+if selected_page == "Tüm Gelişmeler" and current_title != "Tüm Gelişmeler":
+    st.switch_page(tum_gelismeler_page)
 
 page.run()

@@ -189,6 +189,69 @@ def apply_akbank_theme() -> None:
             line-height: 1.55;
         }}
 
+        @media (max-width: 700px) {{
+            .block-container {{
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+                padding-top: 1.15rem !important;
+            }}
+
+            .ak-page-header {{
+                border-radius: 14px;
+                padding: 1.15rem 1.15rem 1.2rem;
+                margin-bottom: 1rem;
+            }}
+
+            .ak-page-header-inner {{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 0.85rem;
+            }}
+
+            .ak-page-header-main {{
+                width: 100%;
+            }}
+
+            .ak-product-chip {{
+                max-width: 100%;
+                align-items: flex-start;
+                font-size: 0.68rem;
+                letter-spacing: 0.09em;
+                line-height: 1.35;
+                margin-bottom: 0.65rem;
+                overflow-wrap: normal;
+                word-break: normal;
+            }}
+
+            .ak-page-header h1 {{
+                font-size: clamp(2rem, 11vw, 2.55rem);
+                line-height: 1.08;
+                overflow-wrap: normal;
+                word-break: normal;
+                hyphens: none;
+            }}
+
+            .ak-page-header p {{
+                max-width: 100%;
+                font-size: 0.92rem;
+                line-height: 1.48;
+                overflow-wrap: normal;
+                word-break: normal;
+                hyphens: none;
+            }}
+
+            .ak-page-meta {{
+                text-align: left;
+                white-space: normal;
+                font-size: 0.58rem;
+                letter-spacing: 0.12em;
+                line-height: 1.6;
+                padding-top: 0;
+                border-top: 1px solid var(--ak-border);
+                padding-top: 0.75rem;
+            }}
+        }}
+
         [data-testid="stMetric"] {{
             background: var(--ak-surface);
             border: 1px solid var(--ak-border);
