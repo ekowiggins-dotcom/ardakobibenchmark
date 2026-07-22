@@ -148,7 +148,7 @@ def apply_akbank_theme() -> None:
             font-weight: 800;
             letter-spacing: 0.18em;
             line-height: 1.75;
-            text-transform: uppercase;
+            text-transform: none;
             white-space: nowrap;
         }}
 
@@ -419,8 +419,8 @@ def render_page_header(title: str, subtitle: str = "", updated_at: str = "Canlı
               {subtitle_html}
             </div>
             <div class="ak-page-meta">
-              <div>Analiz Ekibi: KOBİ İş Geliştirme</div>
-              <div>Son Güncelleme: {updated_at_text}</div>
+              <div>ANALİZ EKİBİ: KOBİ İŞ GELİŞTİRME</div>
+              <div>SON YAYIN: {updated_at_text}</div>
             </div>
           </div>
         </div>

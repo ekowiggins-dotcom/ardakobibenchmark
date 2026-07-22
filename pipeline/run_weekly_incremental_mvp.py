@@ -23,7 +23,7 @@ from utils.source_health import classify_source_health
 from utils.mastercard_blocked_mode import DATA_DIR as BLOCKED_DATA_DIR, read_csv as read_blocked_csv, should_skip_mastercard_weekly_source
 
 
-DEFAULT_INSTITUTIONS = ["Garanti BBVA", "İş Bankası", "Yapı Kredi", "QNB Finansbank", "Visa"]
+FALLBACK_INSTITUTIONS = ["Garanti BBVA", "İş Bankası", "Yapı Kredi", "QNB Finansbank", "Visa"]
 PERMANENT_CUTOFF = date(2026, 5, 1)
 STATE_PATH = DATA_DIR / "pipeline_run_state.json"
 RUNS_PATH = DATA_DIR / "pipeline_runs.csv"
@@ -235,9 +235,38 @@ def read_state() -> dict:
         return {"global": {}, "pipeline": {}, "sources": {}}
 
 
-def split_institutions(value: str | None) -> list[str]:
+def active_weekly_institutions(registry: pd.DataFrame) -> list[str]:
+    if registry.empty:
+        return FALLBACK_INSTITUTIONS.copy()
+    required = [
+        "active",
+        "mvp_active",
+        "collection_method",
+        "extraction_mode",
+        "source_type",
+        "institution_name",
+    ]
+    for column in required:
+        if column not in registry.columns:
+            registry[column] = ""
+    eligible = registry[
+        registry["active"].apply(lambda value: is_active(value) or truthy(value))
+        & registry["mvp_active"].apply(truthy)
+        & registry["collection_method"].astype(str).str.strip().str.casefold().eq("static_scrape")
+        & registry["extraction_mode"].astype(str).str.strip().str.casefold().isin(["weekly_development", "both"])
+        & registry["source_type"].astype(str).isin(WEEKLY_SOURCE_TYPES)
+    ].copy()
+    institutions = [
+        clean(value)
+        for value in eligible["institution_name"].dropna().astype(str).drop_duplicates().tolist()
+        if clean(value)
+    ]
+    return institutions or FALLBACK_INSTITUTIONS.copy()
+
+
+def split_institutions(value: str | None, registry: pd.DataFrame | None = None) -> list[str]:
     if not value:
-        return DEFAULT_INSTITUTIONS.copy()
+        return active_weekly_institutions(registry if registry is not None else pd.DataFrame())
     return [item.strip() for item in value.split(",") if item.strip()]
 
 
@@ -275,7 +304,7 @@ def eligible_sources(registry: pd.DataFrame, institutions: list[str], force_sour
         registry["active"].apply(lambda value: is_active(value) or truthy(value))
         & registry["mvp_active"].apply(truthy)
         & registry["collection_method"].astype(str).str.strip().str.casefold().eq("static_scrape")
-        & registry["extraction_mode"].astype(str).str.strip().isin(["weekly_development", "both"])
+        & registry["extraction_mode"].astype(str).str.strip().str.casefold().isin(["weekly_development", "both"])
         & registry["source_type"].astype(str).isin(WEEKLY_SOURCE_TYPES)
         & (
             registry["institution_name"].astype(str).str.casefold().isin(institution_keys)
@@ -737,7 +766,7 @@ def latest_summary_model_info() -> tuple[str, str, bool]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run the safe incremental weekly MVP pipeline.")
-    parser.add_argument("--institutions", default=None, help="Comma-separated institution list.")
+    parser.add_argument("--institutions", default=None, help="Comma-separated institution list. Defaults to all active weekly static sources in source_registry.csv.")
     parser.add_argument("--start-date", default=None, help="Override extraction start date, preserving the 2026-05-01 MVP cutoff.")
     parser.add_argument("--lookback-days", type=int, default=45, help="Rolling lookback days for default extraction start date.")
     parser.add_argument("--source-limit", type=int, default=None, help="Process only first N eligible sources.")
@@ -760,7 +789,8 @@ def main() -> None:
     ensure_operational_files()
 
     run_id = args.run_id or run_id_default()
-    institutions = split_institutions(args.institutions)
+    registry = read_csv("source_registry.csv")
+    institutions = split_institutions(args.institutions, registry)
     start_dt = effective_start_date(args)
     started_at = now_iso()
     metrics = RunMetrics()
@@ -773,7 +803,6 @@ def main() -> None:
     before_items = read_csv("recent_items.csv")
     before_item_ids = set(before_items.get("recent_item_id", pd.Series(dtype=str)).astype(str)) if not before_items.empty else set()
 
-    registry = read_csv("source_registry.csv")
     sources = eligible_sources(registry, institutions, args.force_source)
     if args.source_limit is not None:
         sources = sources.head(args.source_limit)
