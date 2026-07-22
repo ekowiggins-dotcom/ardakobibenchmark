@@ -91,10 +91,6 @@ def publish_approved_clusters() -> int:
             suffixes=("", "_cluster"),
         )
     existing_cluster_ids = set(weekly.get("cluster_id", pd.Series(dtype=str)).dropna().astype(str))
-    existing_related_ids = set()
-    if "related_item_ids" in weekly.columns:
-        for value in weekly["related_item_ids"].dropna().astype(str):
-            existing_related_ids.update(token.strip().strip('"[]') for token in value.replace(",", " ").split())
 
     new_rows = []
     published_item_updates: list[tuple[str, str]] = []
@@ -104,8 +100,6 @@ def publish_approved_clusters() -> int:
         if not cluster_id or cluster_id in existing_cluster_ids:
             continue
         item_ids = str(row.get("item_ids", ""))
-        if item_ids and any(item_id in existing_related_ids for item_id in item_ids.replace("[", "").replace("]", "").replace('"', "").split(",")):
-            continue
         development_id = f"DEV-{cluster_id}"
         new_rows.append(
             {
