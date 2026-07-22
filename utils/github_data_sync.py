@@ -4,6 +4,7 @@ import hashlib
 import os
 import re
 import subprocess
+import time
 from pathlib import Path
 from typing import Iterable
 
@@ -98,7 +99,7 @@ def _git_blob_sha(content: bytes) -> str:
 
 
 def _request_json(method: str, url: str, token: str, **kwargs) -> dict:
-    response = requests.request(method, url, headers=_github_headers(token), timeout=20, **kwargs)
+    response = requests.request(method, url, headers=_github_headers(token), timeout=12, **kwargs)
     response.raise_for_status()
     return response.json()
 
@@ -120,6 +121,7 @@ def sync_files_to_github(
     api = f"https://api.github.com/repos/{repo}"
 
     try:
+        files = list(dict.fromkeys(files))
         ref = _request_json("GET", f"{api}/git/ref/heads/{branch}", token)
         base_commit_sha = ref["object"]["sha"]
         base_commit = _request_json("GET", f"{api}/git/commits/{base_commit_sha}", token)
@@ -138,7 +140,7 @@ def sync_files_to_github(
                 f"{api}/contents/{relative_path}",
                 headers=_github_headers(token),
                 params={"ref": branch},
-                timeout=20,
+                timeout=12,
             )
             if remote.status_code == 200:
                 remote_sha = str(remote.json().get("sha", ""))
@@ -181,5 +183,17 @@ def sync_files_to_github(
         return False, f"GitHub veri senkronu başarısız: {exc}"
 
 
-def sync_review_outputs_to_github(reason: str) -> tuple[bool, str]:
-    return sync_files_to_github(commit_message=f"Update analyst review decisions: {reason}")
+def sync_review_outputs_to_github(reason: str, files: Iterable[str] | None = None) -> tuple[bool, str]:
+    sync_files = DEFAULT_SYNC_FILES if files is None else files
+    last_message = ""
+    for attempt in range(3):
+        ok, message = sync_files_to_github(
+            sync_files,
+            commit_message=f"Update analyst review decisions: {reason}",
+        )
+        if ok:
+            return ok, message
+        last_message = message
+        if attempt < 2:
+            time.sleep(0.8 * (attempt + 1))
+    return False, last_message

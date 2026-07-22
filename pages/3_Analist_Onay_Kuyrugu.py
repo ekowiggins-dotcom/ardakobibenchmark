@@ -47,6 +47,34 @@ awareness_queue = read_csv_safe("management_awareness_queue.csv", MANAGEMENT_AWA
 
 CLOSED_REVIEW_STATUSES = {"Onaylandı", "Reddedildi", "Arşivlendi", "Düşük Öncelik / Arşiv"}
 OPEN_REVIEW_STATUSES = {"", "Beklemede", "Ek Araştırma Gerekli"}
+RECENT_APPROVAL_SYNC_FILES = [
+    "data/recent_item_review_queue.csv",
+    "data/recent_item_summaries.csv",
+    "data/weekly_developments.csv",
+]
+RECENT_STATUS_SYNC_FILES = [
+    "data/recent_item_review_queue.csv",
+    "data/recent_item_summaries.csv",
+]
+RECENT_ARCHIVE_SYNC_FILES = [
+    "data/recent_item_review_queue.csv",
+    "data/recent_item_summaries.csv",
+    "data/recent_item_archive.csv",
+]
+CLUSTER_APPROVAL_SYNC_FILES = [
+    "data/development_cluster_review_queue.csv",
+    "data/recent_items.csv",
+    "data/weekly_developments.csv",
+]
+AWARENESS_APPROVAL_SYNC_FILES = [
+    "data/management_awareness_queue.csv",
+    "data/recent_item_summaries.csv",
+    "data/weekly_developments.csv",
+]
+AWARENESS_STATUS_SYNC_FILES = [
+    "data/management_awareness_queue.csv",
+    "data/recent_item_summaries.csv",
+]
 
 
 def open_review_mask(df: pd.DataFrame) -> pd.Series:
@@ -74,9 +102,6 @@ show_closed_reviews = st.toggle(
     help="Kapalıyken Onaylandı, Reddedildi ve Arşivlendi durumları gizlenir; kuyruk sadece açık işleri gösterir.",
 )
 
-single_tab, cluster_tab, awareness_tab = st.tabs(["Stratejik / BD Gelişmeleri", "Patern / Küme Gelişmeler", "Yönetici Notları"])
-
-
 def publish_after_approval(publish_fn, label: str) -> None:
     try:
         published_count = publish_fn()
@@ -95,13 +120,23 @@ def publish_after_approval(publish_fn, label: str) -> None:
         )
 
 
-def sync_after_decision(label: str) -> None:
-    ok, message = sync_review_outputs_to_github(label)
+def sync_after_decision(label: str, files: list[str] | None = None) -> None:
+    ok, message = sync_review_outputs_to_github(label, files)
     existing = st.session_state.get("approval_publish_message", "")
     if ok and message:
         st.session_state["approval_publish_message"] = f"{existing} {message}".strip()
     if not ok:
         st.session_state["approval_sync_warning"] = message
+
+
+if st.button("Yönetici Özeti senkronunu toparla", help="Onaylanmış ama Executive app'e düşmemiş kayıtları yeniden publish edip GitHub'a gönderir."):
+    publish_after_approval(publish_approved_recent_items, "tekil gelişme")
+    publish_after_approval(publish_approved_clusters, "patern/küme gelişmesi")
+    publish_after_approval(publish_approved_management_awareness, "yönetici notu")
+    sync_after_decision("manuel toparlama")
+    st.rerun()
+
+single_tab, cluster_tab, awareness_tab = st.tabs(["Stratejik / BD Gelişmeleri", "Patern / Küme Gelişmeler", "Yönetici Notları"])
 
 
 def update_review(row: pd.Series, status: str, reviewer: str, note: str) -> None:
@@ -121,7 +156,9 @@ def update_review(row: pd.Series, status: str, reviewer: str, note: str) -> None
     write_csv_safe(summaries_disk, "recent_item_summaries.csv", SUMMARY_COLUMNS)
     if status == "Onaylandı":
         publish_after_approval(publish_approved_recent_items, "tekil gelişme")
-    sync_after_decision(f"tekil gelişme {status}")
+        sync_after_decision(f"tekil gelişme {status}", RECENT_APPROVAL_SYNC_FILES)
+    else:
+        sync_after_decision(f"tekil gelişme {status}", RECENT_STATUS_SYNC_FILES)
     st.success(f"{row['review_id']} için karar kaydedildi: {status}")
     st.rerun()
 
@@ -169,7 +206,7 @@ def archive_from_queue(row: pd.Series, reviewer: str, note: str) -> None:
     write_csv_safe(queue_disk, "recent_item_review_queue.csv", QUEUE_COLUMNS)
     write_csv_safe(archive_disk, "recent_item_archive.csv", ARCHIVE_COLUMNS)
     write_csv_safe(summaries_disk, "recent_item_summaries.csv", SUMMARY_COLUMNS)
-    sync_after_decision("tekil gelişme arşiv")
+    sync_after_decision("tekil gelişme arşiv", RECENT_ARCHIVE_SYNC_FILES)
     st.success(f"{row['review_id']} arşive taşındı.")
     st.rerun()
 
@@ -184,7 +221,9 @@ def update_cluster_review(row: pd.Series, status: str, reviewer: str, note: str)
     write_csv_safe(queue_disk, "development_cluster_review_queue.csv", CLUSTER_QUEUE_COLUMNS)
     if status == "Onaylandı":
         publish_after_approval(publish_approved_clusters, "patern/küme gelişmesi")
-    sync_after_decision(f"patern/küme gelişmesi {status}")
+        sync_after_decision(f"patern/küme gelişmesi {status}", CLUSTER_APPROVAL_SYNC_FILES)
+    else:
+        sync_after_decision(f"patern/küme gelişmesi {status}", ["data/development_cluster_review_queue.csv"])
     st.success(f"{row['cluster_id']} için karar kaydedildi: {status}")
     st.rerun()
 
@@ -204,7 +243,9 @@ def update_awareness_review(row: pd.Series, status: str, reviewer: str, note: st
     write_csv_safe(summaries_disk, "recent_item_summaries.csv", SUMMARY_COLUMNS)
     if status == "Onaylandı":
         publish_after_approval(publish_approved_management_awareness, "yönetici notu")
-    sync_after_decision(f"yönetici notu {status}")
+        sync_after_decision(f"yönetici notu {status}", AWARENESS_APPROVAL_SYNC_FILES)
+    else:
+        sync_after_decision(f"yönetici notu {status}", AWARENESS_STATUS_SYNC_FILES)
     st.success(f"{row['awareness_id']} için karar kaydedildi: {status}")
     st.rerun()
 
