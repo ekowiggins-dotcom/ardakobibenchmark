@@ -14,6 +14,7 @@ from pipeline.extract_recent_items import (
     classify_content_role_for_candidate,
     duplicate_index,
     extract_is_bankasi_duyuru_links,
+    extract_global_payments_links,
     find_duplicate,
     has_financial_results_export_evidence,
     should_fetch_detail_for_candidate,
@@ -119,6 +120,44 @@ class GitHubDataSyncTests(unittest.TestCase):
 
     def test_git_blob_sha_matches_known_empty_blob(self) -> None:
         self.assertEqual(_git_blob_sha(b""), "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391")
+
+
+class GlobalPaymentsExtractionTests(unittest.TestCase):
+    def test_checkout_newsroom_keeps_dated_merchant_payment_item(self) -> None:
+        soup = BeautifulSoup(
+            """
+            <a href="/newsroom/checkout-com-scales-stablecoin-settlement-for-us-merchants-in-partnership-with-fireblocks">
+              <div>Product Jun 3, 2026</div>
+              <h3>Checkout.com scales stablecoin settlement for US merchants in partnership with Fireblocks</h3>
+              <span>Read more</span>
+            </a>
+            """,
+            "html.parser",
+        )
+        candidates = extract_global_payments_links(soup, "https://www.checkout.com/newsroom", "REG-238")
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(candidates[0].raw_date_text, "2026-06-03")
+
+    def test_wise_newsroom_rejects_listing_but_keeps_payment_infrastructure(self) -> None:
+        soup = BeautifulSoup(
+            """
+            <li>
+              <a href="/en-NAM/265506-wise-debuts-us-listing-on-nasdaq/">
+                May 11, 2026 Wise debuts US listing on Nasdaq
+              </a>
+            </li>
+            <li>
+              <a href="/en-NAM/260024-wise-strengthens-its-canadian-market-investment-with-payments-canada-membership/">
+                January 27, 2026 Wise strengthens its Canadian market investment with Payments Canada membership
+                expansion of global infrastructure to enable faster international payments for businesses
+              </a>
+            </li>
+            """,
+            "html.parser",
+        )
+        candidates = extract_global_payments_links(soup, "https://newsroom.wise.com/releases/", "REG-239")
+        self.assertEqual(len(candidates), 1)
+        self.assertIn("Payments Canada", candidates[0].title)
 
 
 class SeenIndexTests(unittest.TestCase):

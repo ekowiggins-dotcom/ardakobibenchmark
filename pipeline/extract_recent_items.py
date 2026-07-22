@@ -344,13 +344,15 @@ ENGLISH_DMY_DATE_RE = re.compile(
     r"\s+(?P<year>20\d{2})\b",
     re.IGNORECASE,
 )
-GLOBAL_PAYMENTS_SOURCE_IDS = {"REG-041", "REG-232", "REG-233", "REG-234", "REG-235", "REG-236"}
+GLOBAL_PAYMENTS_SOURCE_IDS = {"REG-041", "REG-232", "REG-233", "REG-234", "REG-235", "REG-236", "REG-238", "REG-239"}
 STRIPE_NEWSROOM_SOURCE_IDS = {"REG-041"}
 BLOCK_PRESS_SOURCE_IDS = {"REG-232"}
 SQUARE_PRESS_SOURCE_IDS = {"REG-233"}
 PAYPAL_NEWSROOM_SOURCE_IDS = {"REG-234"}
 SHOPIFY_NEWSROOM_SOURCE_IDS = {"REG-235"}
 AIRWALLEX_NEWSROOM_SOURCE_IDS = {"REG-236"}
+CHECKOUT_NEWSROOM_SOURCE_IDS = {"REG-238"}
+WISE_NEWSROOM_SOURCE_IDS = {"REG-239"}
 GLOBAL_PAYMENT_RELEVANCE_RE = re.compile(
     r"(small business|sme|merchant|seller|business ownership|businesses|commercial|commerce|"
     r"payments?|checkout|pos|point of sale|acquiring|card|stablecoin|agentic|ai agent|"
@@ -867,6 +869,17 @@ def should_keep_global_payment_candidate(source_id: str, title: str, context: st
     blob = normalize_text(f"{title} {context} {urlparse(url).path.replace('-', ' ')}")
     if not GLOBAL_PAYMENT_RELEVANCE_RE.search(blob):
         return False
+    if source_id in WISE_NEWSROOM_SOURCE_IDS:
+        if re.search(r"(nasdaq|listing|stock|investor|consumer help|personal account)", blob, re.IGNORECASE):
+            return False
+        return bool(
+            re.search(
+                r"(wise platform|partner|partnership|bank|payments canada|payment infrastructure|"
+                r"international payments?|business|businesses|api|embedded|cross-border)",
+                blob,
+                re.IGNORECASE,
+            )
+        )
     if source_id in PAYPAL_NEWSROOM_SOURCE_IDS and "european payments council" in blob.casefold():
         return True
     if GLOBAL_PAYMENT_NOISE_RE.search(blob) and not re.search(
@@ -886,6 +899,8 @@ def extract_global_payments_links(soup: BeautifulSoup, base_url: str, source_id:
         "REG-234": re.compile(r"/20\d{2}-[^/]+/?$", re.IGNORECASE),
         "REG-235": re.compile(r"/news/[^/]+/?$", re.IGNORECASE),
         "REG-236": re.compile(r"/global/newsroom/[^/]+/?$", re.IGNORECASE),
+        "REG-238": re.compile(r"/newsroom/[^/]+/?$", re.IGNORECASE),
+        "REG-239": re.compile(r"/en-[^/]+/\d+-[^/]+/?$", re.IGNORECASE),
     }
     path_rule = path_rules.get(source_id)
     if not path_rule:
@@ -901,7 +916,9 @@ def extract_global_payments_links(soup: BeautifulSoup, base_url: str, source_id:
         if not path_rule.search(parsed.path):
             continue
 
-        anchor_text = normalize_text(anchor.get_text(" ", strip=True))
+        heading = anchor.find(["h1", "h2", "h3", "h4"])
+        title_attr = normalize_text(anchor.get("title", ""))
+        anchor_text = normalize_text(heading.get_text(" ", strip=True)) if heading else title_attr or normalize_text(anchor.get_text(" ", strip=True))
         parent_text = normalize_text(anchor.parent.get_text(" ", strip=True)) if anchor.parent else anchor_text
         context = normalize_text(f"{anchor_text} {parent_text} {parsed.path.replace('-', ' ')}")
         raw_date = english_date_to_iso(context) or date_from_global_url(url)
@@ -940,7 +957,10 @@ def extract_global_payments_links(soup: BeautifulSoup, base_url: str, source_id:
         and value["raw_date"]
         and should_keep_global_payment_candidate(source_id, value["title"], value["context"], url)
     ]
-    return sorted(candidates, key=lambda item: (item.raw_date_text, item.score), reverse=True)
+    candidates = sorted(candidates, key=lambda item: (item.raw_date_text, item.score), reverse=True)
+    if source_id in CHECKOUT_NEWSROOM_SOURCE_IDS:
+        return candidates[:25]
+    return candidates
 
 
 def extract_bddk_duyuru_links(soup: BeautifulSoup, base_url: str) -> list[CandidateLink]:
@@ -1784,6 +1804,7 @@ def visa_us_date_semantics(*texts: str) -> dict[str, str]:
 
 def title_from_detail(detail_title: str, link_title: str, url: str) -> str:
     cleaned_detail_title = re.sub(r"\s*\|\s*Garanti BBVA\s*$", "", detail_title or "").strip()
+    cleaned_detail_title = re.sub(r"\s*\|\s*(Wise Newsroom|Checkout\\.com)\s*$", "", cleaned_detail_title).strip()
     generic_detail_re = re.compile(
         r"^(basın bültenleri ve duyurular|basın bültenleri|basın odası|kampanyalar|"
         r"duyuru detay|duyuru listesi|duyuru kategorileri)"
@@ -1794,7 +1815,7 @@ def title_from_detail(detail_title: str, link_title: str, url: str) -> str:
         title = link_title
     else:
         title = cleaned_detail_title or link_title
-    title = re.sub(r"\s*\|\s*Garanti BBVA\s*$", "", title).strip()
+    title = re.sub(r"\s*\|\s*(Garanti BBVA|Wise Newsroom|Checkout\\.com)\s*$", "", title).strip()
     if not title or is_generic_link_title(title):
         title = title_from_url_filename(url) if urlparse(url).path.casefold().endswith(".pdf") else title_from_slug(url)
     return title
