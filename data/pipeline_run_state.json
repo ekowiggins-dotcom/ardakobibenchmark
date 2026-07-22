@@ -1,19 +1,19 @@
 {
   "global": {
-    "last_successful_weekly_run": "daily_29915111950",
-    "last_run_duration_seconds": 121.22,
-    "last_new_items_count": 1,
-    "last_new_summaries_count": 1,
+    "last_successful_weekly_run": "july_global_payments_pilot_20260722",
+    "last_run_duration_seconds": 12.41,
+    "last_new_items_count": 0,
+    "last_new_summaries_count": 0,
     "last_queue_additions_count": 0,
-    "last_cluster_additions_count": 2
+    "last_cluster_additions_count": 0
   },
   "pipeline": {
-    "last_run_id": "daily_29915111950",
-    "last_started_at": "2026-07-22T11:17:35.544541+00:00",
-    "last_completed_at": "2026-07-22T11:19:36.765343+00:00",
-    "last_status": "Kısmi Başarılı",
-    "last_error": "Arşiv oranı %90 üzerinde; kaynak gürültüsü artmış olabilir.",
-    "last_successful_at": "2026-07-22T11:19:36.765343+00:00"
+    "last_run_id": "july_global_payments_pilot_20260722",
+    "last_started_at": "2026-07-22T11:35:06.750958+00:00",
+    "last_completed_at": "2026-07-22T11:35:19.159968+00:00",
+    "last_status": "Başarılı — Değişiklik Yok",
+    "last_error": "",
+    "last_successful_at": "2026-07-22T11:35:19.159968+00:00"
   },
   "sources": {
     "REG-003": {
@@ -491,6 +491,74 @@
       "source_health": "Sağlıklı",
       "last_success_at": "2026-07-22T11:19:36.765343+00:00",
       "last_changed_at": "2026-07-22T11:19:36.765343+00:00"
+    },
+    "REG-041": {
+      "last_run_id": "july_global_payments_pilot_20260722",
+      "last_started_at": "2026-07-22T11:35:06.750958+00:00",
+      "last_completed_at": "2026-07-22T11:35:19.159968+00:00",
+      "last_status": "fetched",
+      "last_error": "",
+      "last_document_hash": "43e718df4eb861357f412ea4742b467e4d127e35461d34f9ce6ffc98b87ebff6",
+      "last_source_content_hash": "43e718df4eb861357f412ea4742b467e4d127e35461d34f9ce6ffc98b87ebff6",
+      "last_seen_item_date": "",
+      "consecutive_failures": 0,
+      "items_discovered_total": 0,
+      "items_created_total": 0,
+      "last_http_status": "200.0",
+      "source_health": "Sağlıklı",
+      "last_success_at": "2026-07-22T11:35:19.159968+00:00",
+      "last_changed_at": ""
+    },
+    "REG-233": {
+      "last_run_id": "july_global_payments_pilot_20260722",
+      "last_started_at": "2026-07-22T11:35:06.750958+00:00",
+      "last_completed_at": "2026-07-22T11:35:19.159968+00:00",
+      "last_status": "fetched",
+      "last_error": "",
+      "last_document_hash": "49c64d95bdfb996a73322eb1a7094b6f5bafda92777237fac6f8ed77477f4cce",
+      "last_source_content_hash": "49c64d95bdfb996a73322eb1a7094b6f5bafda92777237fac6f8ed77477f4cce",
+      "last_seen_item_date": "",
+      "consecutive_failures": 0,
+      "items_discovered_total": 0,
+      "items_created_total": 0,
+      "last_http_status": "200.0",
+      "source_health": "Sağlıklı",
+      "last_success_at": "2026-07-22T11:35:19.159968+00:00",
+      "last_changed_at": ""
+    },
+    "REG-234": {
+      "last_run_id": "july_global_payments_pilot_20260722",
+      "last_started_at": "2026-07-22T11:35:06.750958+00:00",
+      "last_completed_at": "2026-07-22T11:35:19.159968+00:00",
+      "last_status": "fetched",
+      "last_error": "",
+      "last_document_hash": "65b3f1b33e49dbe83a26d292c141df27626ececd60b6a0aff8c7f77dc7b47708",
+      "last_source_content_hash": "65b3f1b33e49dbe83a26d292c141df27626ececd60b6a0aff8c7f77dc7b47708",
+      "last_seen_item_date": "",
+      "consecutive_failures": 0,
+      "items_discovered_total": 0,
+      "items_created_total": 0,
+      "last_http_status": "200.0",
+      "source_health": "Sağlıklı",
+      "last_success_at": "2026-07-22T11:35:19.159968+00:00",
+      "last_changed_at": ""
+    },
+    "REG-236": {
+      "last_run_id": "july_global_payments_pilot_20260722",
+      "last_started_at": "2026-07-22T11:35:06.750958+00:00",
+      "last_completed_at": "2026-07-22T11:35:19.159968+00:00",
+      "last_status": "fetched",
+      "last_error": "",
+      "last_document_hash": "734f251789c41a160e02779f31f9336a45a25b974579f0a18ab0f4d51a83f1cb",
+      "last_source_content_hash": "734f251789c41a160e02779f31f9336a45a25b974579f0a18ab0f4d51a83f1cb",
+      "last_seen_item_date": "",
+      "consecutive_failures": 0,
+      "items_discovered_total": 0,
+      "items_created_total": 0,
+      "last_http_status": "200.0",
+      "source_health": "Sağlıklı",
+      "last_success_at": "2026-07-22T11:35:19.159968+00:00",
+      "last_changed_at": ""
     }
   }
 }

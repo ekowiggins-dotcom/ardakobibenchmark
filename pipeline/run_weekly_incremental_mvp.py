@@ -37,6 +37,7 @@ WEEKLY_SOURCE_TYPES = {
     "News Site",
     "Fintech News",
     "Business News",
+    "Resmi Haber Sayfası",
     "Resmi Basın Bülteni Sayfası",
     "Resmi Kampanya Sayfası",
     "Regülatör",

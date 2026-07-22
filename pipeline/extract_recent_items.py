@@ -305,6 +305,66 @@ DATE_RE = re.compile(
     re.IGNORECASE,
 )
 US_SLASH_DATE_RE = re.compile(r"\b(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<year>\d{4})\b")
+ENGLISH_MONTHS = {
+    "jan": 1,
+    "january": 1,
+    "feb": 2,
+    "february": 2,
+    "mar": 3,
+    "march": 3,
+    "apr": 4,
+    "april": 4,
+    "may": 5,
+    "jun": 6,
+    "june": 6,
+    "jul": 7,
+    "july": 7,
+    "aug": 8,
+    "august": 8,
+    "sep": 9,
+    "sept": 9,
+    "september": 9,
+    "oct": 10,
+    "october": 10,
+    "nov": 11,
+    "november": 11,
+    "dec": 12,
+    "december": 12,
+}
+ENGLISH_MDY_DATE_RE = re.compile(
+    r"\b(?P<month>Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|"
+    r"Aug(?:ust)?|Sep(?:t)?(?:ember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
+    r"\s+(?P<day>\d{1,2}),\s*(?P<year>20\d{2})\b",
+    re.IGNORECASE,
+)
+ENGLISH_DMY_DATE_RE = re.compile(
+    r"\b(?P<day>\d{1,2})\s+"
+    r"(?P<month>Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|"
+    r"Aug(?:ust)?|Sep(?:t)?(?:ember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
+    r"\s+(?P<year>20\d{2})\b",
+    re.IGNORECASE,
+)
+GLOBAL_PAYMENTS_SOURCE_IDS = {"REG-041", "REG-232", "REG-233", "REG-234", "REG-235", "REG-236"}
+STRIPE_NEWSROOM_SOURCE_IDS = {"REG-041"}
+BLOCK_PRESS_SOURCE_IDS = {"REG-232"}
+SQUARE_PRESS_SOURCE_IDS = {"REG-233"}
+PAYPAL_NEWSROOM_SOURCE_IDS = {"REG-234"}
+SHOPIFY_NEWSROOM_SOURCE_IDS = {"REG-235"}
+AIRWALLEX_NEWSROOM_SOURCE_IDS = {"REG-236"}
+GLOBAL_PAYMENT_RELEVANCE_RE = re.compile(
+    r"(small business|sme|merchant|seller|business ownership|businesses|commercial|commerce|"
+    r"payments?|checkout|pos|point of sale|acquiring|card|stablecoin|agentic|ai agent|"
+    r"openai|chatgpt|claude|embedded finance|banking|cash flow|working capital|treasury|"
+    r"accounts payable|accounts receivable|reconciliation|global payments?|cross-border|"
+    r"digital commerce|retail operation|commerce platform)",
+    re.IGNORECASE,
+)
+GLOBAL_PAYMENT_NOISE_RE = re.compile(
+    r"(investor day|quarter results|annual letter|tender offer|board of directors|chief revenue officer|"
+    r"chief financial officer|appointment|appointed|conference|stock|football|soccer|seahawks|arsenal|"
+    r"jersey|sponsorship|climate|child safety|teen advisory|ipo|valuation|funding round)",
+    re.IGNORECASE,
+)
 BAD_TITLE_RE = re.compile(
     r"(tekil gelişme kontrol|fallback|source page|communication / press releases için)",
     re.IGNORECASE,
@@ -749,6 +809,8 @@ def extract_source_specific_candidates_from_soup(soup: BeautifulSoup, base_url: 
         return extract_is_bankasi_duyuru_links(soup, base_url), total_links
     if source_id in BDDK_SOURCE_IDS:
         return extract_bddk_duyuru_links(soup, base_url), total_links
+    if source_id in GLOBAL_PAYMENTS_SOURCE_IDS:
+        return extract_global_payments_links(soup, base_url, source_id), total_links
     if source_id == "REG-011":
         scope = soup.select_one("main") or soup.select_one(".content") or soup
         return extract_yapi_kredi_campaign_candidates(scope, base_url), total_links
@@ -759,6 +821,126 @@ def extract_source_specific_candidates_from_soup(soup: BeautifulSoup, base_url: 
     if source_id in QNB_SOURCE_IDS:
         return extract_qnb_candidates(soup, base_url, source_id), total_links
     return [], total_links
+
+
+def english_date_to_iso(text: str) -> str:
+    value = normalize_text(text)
+    for regex in [ENGLISH_MDY_DATE_RE, ENGLISH_DMY_DATE_RE]:
+        match = regex.search(value)
+        if not match:
+            continue
+        month = ENGLISH_MONTHS.get(match.group("month").casefold())
+        if not month:
+            continue
+        try:
+            return datetime(int(match.group("year")), month, int(match.group("day"))).date().isoformat()
+        except ValueError:
+            return ""
+    match = re.search(r"\b(?P<year>20\d{2})-(?P<month>\d{2})-(?P<day>\d{2})\b", value)
+    if match:
+        try:
+            return datetime(int(match.group("year")), int(match.group("month")), int(match.group("day"))).date().isoformat()
+        except ValueError:
+            return ""
+    return ""
+
+
+def strip_global_date_and_cta(text: str) -> str:
+    cleaned = normalize_text(text)
+    cleaned = ENGLISH_MDY_DATE_RE.sub("", cleaned)
+    cleaned = ENGLISH_DMY_DATE_RE.sub("", cleaned)
+    cleaned = re.sub(r"\b20\d{2}-\d{2}-\d{2}\b", "", cleaned)
+    cleaned = re.sub(r"\b(?:read article|read more|learn more)\b", "", cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r"^(product|corporate|company|pov|insights|press releases?)\s+", "", cleaned, flags=re.IGNORECASE)
+    return normalize_text(cleaned.strip(" -–|"))
+
+
+def date_from_global_url(url: str) -> str:
+    path = urlparse(url).path
+    match = re.search(r"/(?P<year>20\d{2})-(?P<month>\d{2})-(?P<day>\d{2})-", path)
+    if match:
+        return f"{match.group('year')}-{match.group('month')}-{match.group('day')}"
+    return ""
+
+
+def should_keep_global_payment_candidate(source_id: str, title: str, context: str, url: str) -> bool:
+    blob = normalize_text(f"{title} {context} {urlparse(url).path.replace('-', ' ')}")
+    if not GLOBAL_PAYMENT_RELEVANCE_RE.search(blob):
+        return False
+    if source_id in PAYPAL_NEWSROOM_SOURCE_IDS and "european payments council" in blob.casefold():
+        return True
+    if GLOBAL_PAYMENT_NOISE_RE.search(blob) and not re.search(
+        r"(seller|merchant|small business|sme|payment|checkout|commerce|stablecoin|agentic|pos|working capital|treasury)",
+        blob,
+        re.IGNORECASE,
+    ):
+        return False
+    return True
+
+
+def extract_global_payments_links(soup: BeautifulSoup, base_url: str, source_id: str) -> list[CandidateLink]:
+    path_rules = {
+        "REG-041": re.compile(r"/newsroom/news/[^/]+/?$", re.IGNORECASE),
+        "REG-232": re.compile(r"/inside/[^/]+/?$", re.IGNORECASE),
+        "REG-233": re.compile(r"/us/en/press/[^/]+/?$", re.IGNORECASE),
+        "REG-234": re.compile(r"/20\d{2}-[^/]+/?$", re.IGNORECASE),
+        "REG-235": re.compile(r"/news/[^/]+/?$", re.IGNORECASE),
+        "REG-236": re.compile(r"/global/newsroom/[^/]+/?$", re.IGNORECASE),
+    }
+    path_rule = path_rules.get(source_id)
+    if not path_rule:
+        return []
+
+    by_url: dict[str, dict[str, str]] = {}
+    for anchor in soup.find_all("a", href=True):
+        href = normalize_text(anchor.get("href", ""))
+        url = canonicalize_url(href, base_url)
+        parsed = urlparse(url)
+        if parsed.scheme not in {"http", "https"} or not is_same_or_subdomain(base_url, url):
+            continue
+        if not path_rule.search(parsed.path):
+            continue
+
+        anchor_text = normalize_text(anchor.get_text(" ", strip=True))
+        parent_text = normalize_text(anchor.parent.get_text(" ", strip=True)) if anchor.parent else anchor_text
+        context = normalize_text(f"{anchor_text} {parent_text} {parsed.path.replace('-', ' ')}")
+        raw_date = english_date_to_iso(context) or date_from_global_url(url)
+        title = strip_global_date_and_cta(anchor_text)
+        if not title or title.casefold() in {"product", "corporate", "company", "pov", "insights", "press releases"}:
+            title = strip_global_date_and_cta(parent_text)
+        if len(title) > 180:
+            title = normalize_text(title[:177]).rstrip(" ,.;:") + "..."
+
+        score = 30
+        if re.search(r"(small business|sme|merchant|seller|pos|checkout|commercial|working capital|treasury)", context, re.IGNORECASE):
+            score += 8
+        if re.search(r"(stablecoin|agentic|openai|chatgpt|claude|embedded|api|reconciliation)", context, re.IGNORECASE):
+            score += 5
+        current = by_url.setdefault(url, {"title": "", "raw_date": "", "score": "0", "context": ""})
+        if title and len(title) >= 12 and (
+            not current["title"] or score > int(current["score"]) or len(title) > len(current["title"])
+        ):
+            current["title"] = title
+            current["score"] = str(score)
+        if raw_date and not current["raw_date"]:
+            current["raw_date"] = raw_date
+        current["context"] = normalize_text(f"{current['context']} {context}")[:1400]
+
+    candidates = [
+        CandidateLink(
+            title=value["title"],
+            url=url,
+            score=int(value["score"]),
+            reason="global_payments_news_card",
+            raw_date_text=value["raw_date"],
+            date_source_hint="listing_page_nearby_date",
+        )
+        for url, value in by_url.items()
+        if value["title"]
+        and value["raw_date"]
+        and should_keep_global_payment_candidate(source_id, value["title"], value["context"], url)
+    ]
+    return sorted(candidates, key=lambda item: (item.raw_date_text, item.score), reverse=True)
 
 
 def extract_bddk_duyuru_links(soup: BeautifulSoup, base_url: str) -> list[CandidateLink]:
