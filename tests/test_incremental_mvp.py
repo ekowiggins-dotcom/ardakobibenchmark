@@ -58,6 +58,7 @@ from utils.mastercard_blocked_mode import (
     should_skip_mastercard_weekly_source,
 )
 from utils.date_utils import extract_date_semantics
+from utils.github_data_sync import _git_blob_sha, _repo_from_remote_url
 from utils.recency import evaluate_recency
 from utils.source_health import ERROR, HEALTHY, MANUAL, WARNING, classify_source_health
 from utils.triage import TRIAGE_MANAGEMENT_AWARENESS, triage_recent_item_summary
@@ -101,6 +102,23 @@ class SourceHealthTests(unittest.TestCase):
     def test_manual_source_is_manual(self) -> None:
         health = classify_source_health(collection_method="browser_required")
         self.assertEqual(health.status, MANUAL)
+
+
+class GitHubDataSyncTests(unittest.TestCase):
+    def test_repo_slug_parses_https_remote(self) -> None:
+        self.assertEqual(
+            _repo_from_remote_url("https://github.com/ekowiggins-dotcom/ardakobibenchmark.git"),
+            "ekowiggins-dotcom/ardakobibenchmark",
+        )
+
+    def test_repo_slug_parses_ssh_remote(self) -> None:
+        self.assertEqual(
+            _repo_from_remote_url("git@github.com:ekowiggins-dotcom/ardakobibenchmark.git"),
+            "ekowiggins-dotcom/ardakobibenchmark",
+        )
+
+    def test_git_blob_sha_matches_known_empty_blob(self) -> None:
+        self.assertEqual(_git_blob_sha(b""), "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391")
 
 
 class SeenIndexTests(unittest.TestCase):

@@ -129,6 +129,20 @@ Onaylı recent item gelişmelerini yönetici radarına yayınlama:
 python3 pipeline/publish_recent_items_to_weekly_developments.py
 ```
 
+## Streamlit Analyst -> Executive Veri Senkronu
+
+Streamlit Community Cloud üzerinde analyst ve executive app ayrı runtime dosya sistemlerinde çalışır. Bu yüzden analyst app içinde onaylanan bir kayıt, sadece lokal CSV'ye yazılırsa executive app tarafından otomatik görülmez. Analyst app onay sonrası değişen CSV'leri GitHub'a commit edebilir; executive app aynı repo'dan beslendiği için güncel yönetici özetini alır.
+
+Analyst app secrets içine şu değerleri ekleyin:
+
+```toml
+GITHUB_SYNC_TOKEN = "github_pat_..."
+GITHUB_SYNC_REPOSITORY = "ekowiggins-dotcom/ardakobibenchmark"
+GITHUB_SYNC_BRANCH = "main"
+```
+
+`GITHUB_SYNC_TOKEN` repo içeriğine yazma yetkisi olan bir GitHub personal access token olmalıdır. Bu değer `.env`, CSV veya koda yazılmamalıdır.
+
 `run_llm_extraction.py` haftalık gelişme çıkarım akışıdır. Yalnızca `extraction_mode` değeri `weekly_development` veya `both` olan kaynakları işler; sadece benchmark amaçlı ürün sayfalarını haftalık radar taslağına almaz.
 
 `run_benchmark_fact_extraction.py` benchmark bulgusu çıkarım akışıdır. KOBİ sayfaları, POS sayfaları, resmi ürün sayfaları, fiyatlama sayfaları ve geliştirici/API dokümanları gibi `benchmark_fact` veya `both` kaynakları işler.

@@ -6,6 +6,7 @@ import streamlit as st
 from pipeline.publish_approved_clusters_to_weekly_developments import publish_approved_clusters
 from pipeline.publish_management_awareness_to_weekly_developments import publish_approved_management_awareness
 from pipeline.publish_recent_items_to_weekly_developments import publish_approved_recent_items
+from utils.github_data_sync import sync_review_outputs_to_github
 from utils.recent_mvp import (
     ARCHIVE_COLUMNS,
     CLUSTER_QUEUE_COLUMNS,
@@ -34,6 +35,9 @@ render_page_header(
 publish_message = st.session_state.pop("approval_publish_message", "")
 if publish_message:
     st.success(publish_message)
+sync_warning = st.session_state.pop("approval_sync_warning", "")
+if sync_warning:
+    st.warning(sync_warning)
 
 queue = read_csv_safe("recent_item_review_queue.csv", QUEUE_COLUMNS)
 summaries = read_csv_safe("recent_item_summaries.csv", SUMMARY_COLUMNS)
@@ -91,6 +95,15 @@ def publish_after_approval(publish_fn, label: str) -> None:
         )
 
 
+def sync_after_decision(label: str) -> None:
+    ok, message = sync_review_outputs_to_github(label)
+    existing = st.session_state.get("approval_publish_message", "")
+    if ok and message:
+        st.session_state["approval_publish_message"] = f"{existing} {message}".strip()
+    if not ok:
+        st.session_state["approval_sync_warning"] = message
+
+
 def update_review(row: pd.Series, status: str, reviewer: str, note: str) -> None:
     queue_disk = read_csv_safe("recent_item_review_queue.csv", QUEUE_COLUMNS)
     summaries_disk = read_csv_safe("recent_item_summaries.csv", SUMMARY_COLUMNS)
@@ -108,6 +121,7 @@ def update_review(row: pd.Series, status: str, reviewer: str, note: str) -> None
     write_csv_safe(summaries_disk, "recent_item_summaries.csv", SUMMARY_COLUMNS)
     if status == "Onaylandı":
         publish_after_approval(publish_approved_recent_items, "tekil gelişme")
+    sync_after_decision(f"tekil gelişme {status}")
     st.success(f"{row['review_id']} için karar kaydedildi: {status}")
     st.rerun()
 
@@ -155,6 +169,7 @@ def archive_from_queue(row: pd.Series, reviewer: str, note: str) -> None:
     write_csv_safe(queue_disk, "recent_item_review_queue.csv", QUEUE_COLUMNS)
     write_csv_safe(archive_disk, "recent_item_archive.csv", ARCHIVE_COLUMNS)
     write_csv_safe(summaries_disk, "recent_item_summaries.csv", SUMMARY_COLUMNS)
+    sync_after_decision("tekil gelişme arşiv")
     st.success(f"{row['review_id']} arşive taşındı.")
     st.rerun()
 
@@ -169,6 +184,7 @@ def update_cluster_review(row: pd.Series, status: str, reviewer: str, note: str)
     write_csv_safe(queue_disk, "development_cluster_review_queue.csv", CLUSTER_QUEUE_COLUMNS)
     if status == "Onaylandı":
         publish_after_approval(publish_approved_clusters, "patern/küme gelişmesi")
+    sync_after_decision(f"patern/küme gelişmesi {status}")
     st.success(f"{row['cluster_id']} için karar kaydedildi: {status}")
     st.rerun()
 
@@ -188,6 +204,7 @@ def update_awareness_review(row: pd.Series, status: str, reviewer: str, note: st
     write_csv_safe(summaries_disk, "recent_item_summaries.csv", SUMMARY_COLUMNS)
     if status == "Onaylandı":
         publish_after_approval(publish_approved_management_awareness, "yönetici notu")
+    sync_after_decision(f"yönetici notu {status}")
     st.success(f"{row['awareness_id']} için karar kaydedildi: {status}")
     st.rerun()
 

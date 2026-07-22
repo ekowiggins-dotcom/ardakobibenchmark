@@ -1,5 +1,6 @@
 .env
 .env.local
+.streamlit/secrets.toml
 *.key
 data/llm_errors/*.txt
 data/raw_documents/
