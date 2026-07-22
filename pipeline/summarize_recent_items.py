@@ -524,9 +524,15 @@ def read_source_registry() -> pd.DataFrame:
 
 def enrich_items_with_source_readiness(items: pd.DataFrame) -> pd.DataFrame:
     registry = read_source_registry()
-    out = items.copy()
+    stale_columns = [
+        "source_active",
+        "source_mvp_active",
+        "source_claude_eligible",
+        "registry_source_url",
+    ]
+    out = items.drop(columns=[column for column in stale_columns if column in items.columns], errors="ignore").copy()
     if registry.empty:
-        for column in ["source_active", "source_mvp_active", "source_claude_eligible", "registry_source_url"]:
+        for column in stale_columns:
             out[column] = ""
         return out
     source = registry[["source_id", "active", "mvp_active", "claude_eligible", "url"]].drop_duplicates("source_id")
@@ -864,8 +870,19 @@ def build_summary_row(
     }
 
 
+def flag_text(value) -> str:
+    if value is None:
+        return ""
+    try:
+        if pd.isna(value):
+            return ""
+    except Exception:
+        pass
+    return str(value).strip()
+
+
 def truthy(value) -> bool:
-    return str(value).strip().casefold() in {"true", "1", "yes", "evet"}
+    return flag_text(value).casefold() in {"true", "1", "yes", "evet"}
 
 
 def ensure_gate_columns(
@@ -963,11 +980,8 @@ def gate_skip_reason(
         return "kaynak active=True değil"
     if not truthy(row.get("source_mvp_active", "")):
         return "kaynak mvp_active=True değil"
-    if (
-        str(row.get("source_claude_eligible", "")).strip()
-        and not truthy(row.get("source_claude_eligible", ""))
-        and not allow_source_claude_override
-    ):
+    source_claude_eligible = flag_text(row.get("source_claude_eligible", ""))
+    if source_claude_eligible and not truthy(source_claude_eligible) and not allow_source_claude_override:
         return "kaynak claude_eligible=True değil"
     if str(row.get("item_quality", "")).strip() not in {"Good", "Medium"}:
         return f"item_quality uygun değil: {row.get('item_quality', '')}"

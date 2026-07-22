@@ -2,5 +2,8 @@
 .env.local
 *.key
 data/llm_errors/*.txt
+data/raw_documents/
+data/run_backups/
+data/snapshots/
 __pycache__/
 .DS_Store

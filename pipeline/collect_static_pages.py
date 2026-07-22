@@ -12,6 +12,7 @@ from pathlib import Path
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+from urllib3.exceptions import InsecureRequestWarning
 
 try:
     import trafilatura
@@ -25,6 +26,7 @@ RAW_HTML_DIR = DATA_DIR / "raw_documents" / "raw_html"
 CLEANED_TEXT_DIR = DATA_DIR / "raw_documents" / "cleaned_text"
 REGISTRY_PATH = DATA_DIR / "source_registry.csv"
 METADATA_PATH = DATA_DIR / "raw_documents_metadata.csv"
+SSL_VERIFY_FALLBACK_HOSTS = {"www.bddk.org.tr"}
 
 METADATA_COLUMNS = [
     "document_id",
@@ -72,6 +74,15 @@ def is_active(value) -> bool:
 
 def normalized_method(value) -> str:
     return str(value).strip().lower()
+
+
+def ssl_fallback_allowed(url: str) -> bool:
+    try:
+        from urllib.parse import urlparse
+
+        return urlparse(url).netloc.casefold() in SSL_VERIFY_FALLBACK_HOSTS
+    except Exception:
+        return False
 
 
 def clean_with_bs4(html: str) -> tuple[str, str]:
@@ -204,6 +215,19 @@ def collect_row(row: pd.Series) -> dict[str, str]:
             try:
                 response = requests.get(row["url"], timeout=20, headers=headers)
                 break
+            except requests.exceptions.SSLError as exc:
+                last_exc = exc
+                if ssl_fallback_allowed(str(row["url"])):
+                    logging.warning(
+                        "SSL verification failed for %s; retrying with source-specific fallback.",
+                        row["source_id"],
+                    )
+                    requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
+                    response = requests.get(row["url"], timeout=20, headers=headers, verify=False)
+                    break
+                logging.warning("Fetch attempt %s failed for %s: %s", attempt, row["source_id"], exc)
+                if attempt < 3:
+                    time.sleep(1.5 * attempt)
             except requests.RequestException as exc:
                 last_exc = exc
                 logging.warning("Fetch attempt %s failed for %s: %s", attempt, row["source_id"], exc)

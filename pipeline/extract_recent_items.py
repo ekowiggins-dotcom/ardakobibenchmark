@@ -16,6 +16,7 @@ from urllib.parse import parse_qsl, unquote, urlencode, urljoin, urlparse, urlun
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+from urllib3.exceptions import InsecureRequestWarning
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT_DIR / "data"
@@ -30,6 +31,7 @@ METADATA_PATH = DATA_DIR / "raw_documents_metadata.csv"
 REGISTRY_PATH = DATA_DIR / "source_registry.csv"
 RECENT_ITEMS_PATH = DATA_DIR / "recent_items.csv"
 AUDIT_PATH = DATA_DIR / "recent_item_extraction_audit.csv"
+SSL_VERIFY_FALLBACK_HOSTS = {"www.bddk.org.tr"}
 
 RECENT_ITEM_COLUMNS = [
     "recent_item_id",
@@ -207,6 +209,7 @@ ODEABANK_WEEKLY_SOURCE_IDS = {"REG-096"}
 BURGAN_WEEKLY_SOURCE_IDS = {"REG-098"}
 ENPARA_WEEKLY_SOURCE_IDS = {"REG-101"}
 IS_BANKASI_DUYURU_SOURCE_IDS = {"REG-006"}
+BDDK_SOURCE_IDS = {"REG-052"}
 HSBC_WEEKLY_SOURCE_IDS: set[str] = set()
 ENPARA_QNB_ALIAS_NAMES = {"enpara", "enpara.com", "enpara bank", "enpara bank a.ş.", "qnb finansbank", "qnb bank", "qnb"}
 QNB_CAMPAIGN_API_URL = "https://www.qnb.com.tr/api/Campaigns?categorySeoName=kobi-kampanyalari&isArchived=false"
@@ -316,6 +319,21 @@ HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
 }
+
+
+def ssl_fallback_allowed(url: str) -> bool:
+    return urlparse(url).netloc.casefold() in SSL_VERIFY_FALLBACK_HOSTS
+
+
+def get_with_source_ssl_fallback(url: str, timeout: int) -> requests.Response:
+    try:
+        return requests.get(url, timeout=timeout, headers=HEADERS)
+    except requests.exceptions.SSLError:
+        if not ssl_fallback_allowed(url):
+            raise
+        logging.warning("SSL verification failed for detail URL; retrying with source-specific fallback: %s", url)
+        requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
+        return requests.get(url, timeout=timeout, headers=HEADERS, verify=False)
 TRACKING_QUERY_PARAMS = {
     "utm_source",
     "utm_medium",
@@ -729,6 +747,8 @@ def extract_source_specific_candidates_from_soup(soup: BeautifulSoup, base_url: 
         return extract_enpara_links(soup, base_url), total_links
     if source_id in IS_BANKASI_DUYURU_SOURCE_IDS:
         return extract_is_bankasi_duyuru_links(soup, base_url), total_links
+    if source_id in BDDK_SOURCE_IDS:
+        return extract_bddk_duyuru_links(soup, base_url), total_links
     if source_id == "REG-011":
         scope = soup.select_one("main") or soup.select_one(".content") or soup
         return extract_yapi_kredi_campaign_candidates(scope, base_url), total_links
@@ -739,6 +759,32 @@ def extract_source_specific_candidates_from_soup(soup: BeautifulSoup, base_url: 
     if source_id in QNB_SOURCE_IDS:
         return extract_qnb_candidates(soup, base_url, source_id), total_links
     return [], total_links
+
+
+def extract_bddk_duyuru_links(soup: BeautifulSoup, base_url: str) -> list[CandidateLink]:
+    candidates: dict[str, CandidateLink] = {}
+    for anchor in soup.find_all("a", href=True):
+        url = urljoin(base_url, normalize_text(anchor.get("href", "")))
+        parsed = urlparse(url)
+        if not is_same_or_subdomain(base_url, url):
+            continue
+        if not re.search(r"/Duyuru/Detay/\d+$", parsed.path, re.IGNORECASE):
+            continue
+        text = normalize_text(anchor.get_text(" ", strip=True))
+        date_match = re.match(r"^(\d{1,2}\.\d{1,2}\.\d{4})\s+(.+)$", text)
+        raw_date = date_match.group(1) if date_match else ""
+        title = date_match.group(2).strip() if date_match else text
+        if not raw_date or len(title) < 12:
+            continue
+        candidates[url] = CandidateLink(
+            title=title,
+            url=url,
+            score=28,
+            reason="bddk_duyuru_detail",
+            raw_date_text=raw_date,
+            date_source_hint="listing_page_nearby_date",
+        )
+    return sorted(candidates.values(), key=lambda item: item.score, reverse=True)
 
 
 def extract_is_bankasi_duyuru_links(soup: BeautifulSoup, base_url: str) -> list[CandidateLink]:
@@ -1432,13 +1478,13 @@ def extract_candidate_links_from_soup(soup: BeautifulSoup, base_url: str) -> tup
 
 
 def fetch_html(url: str) -> str:
-    response = requests.get(url, timeout=20, headers=HEADERS)
+    response = get_with_source_ssl_fallback(url, timeout=20)
     response.raise_for_status()
     return response.text
 
 
 def fetch_detail_text(url: str) -> tuple[str, str]:
-    response = requests.get(url, timeout=25, headers=HEADERS)
+    response = get_with_source_ssl_fallback(url, timeout=25)
     response.raise_for_status()
     content_type = response.headers.get("content-type", "").casefold()
     content = response.content
@@ -1557,7 +1603,8 @@ def visa_us_date_semantics(*texts: str) -> dict[str, str]:
 def title_from_detail(detail_title: str, link_title: str, url: str) -> str:
     cleaned_detail_title = re.sub(r"\s*\|\s*Garanti BBVA\s*$", "", detail_title or "").strip()
     generic_detail_re = re.compile(
-        r"^(basın bültenleri ve duyurular|basın bültenleri|basın odası|kampanyalar)"
+        r"^(basın bültenleri ve duyurular|basın bültenleri|basın odası|kampanyalar|"
+        r"duyuru detay|duyuru listesi|duyuru kategorileri)"
         r"(\s*\|\s*[^|]+)?$",
         re.IGNORECASE,
     )
