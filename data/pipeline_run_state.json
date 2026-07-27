@@ -1,19 +1,19 @@
 {
   "global": {
-    "last_successful_weekly_run": "daily_30270671907",
-    "last_run_duration_seconds": 184.02,
-    "last_new_items_count": 3,
-    "last_new_summaries_count": 3,
-    "last_queue_additions_count": 0,
-    "last_cluster_additions_count": 2
+    "last_successful_weekly_run": "batch2_global_payments_20260727",
+    "last_run_duration_seconds": 94.69,
+    "last_new_items_count": 6,
+    "last_new_summaries_count": 5,
+    "last_queue_additions_count": 2,
+    "last_cluster_additions_count": 0
   },
   "pipeline": {
-    "last_run_id": "daily_30270671907",
-    "last_started_at": "2026-07-27T13:31:56.941363+00:00",
-    "last_completed_at": "2026-07-27T13:35:00.956922+00:00",
+    "last_run_id": "batch2_global_payments_20260727",
+    "last_started_at": "2026-07-27T14:54:15.417720+00:00",
+    "last_completed_at": "2026-07-27T14:55:50.103224+00:00",
     "last_status": "Kısmi Başarılı",
-    "last_error": "Aday link hacmi önceki başarılı koşuların 3 katından fazla.; Arşiv oranı %90 üzerinde; kaynak gürültüsü artmış olabilir.",
-    "last_successful_at": "2026-07-27T13:35:00.956922+00:00"
+    "last_error": "",
+    "last_successful_at": "2026-07-27T14:55:50.103224+00:00"
   },
   "sources": {
     "REG-003": {
@@ -627,6 +627,91 @@
       "source_health": "Sağlıklı",
       "last_success_at": "2026-07-27T13:35:00.956922+00:00",
       "last_changed_at": ""
+    },
+    "REG-240": {
+      "last_run_id": "batch2_global_payments_20260727",
+      "last_started_at": "2026-07-27T14:54:15.417720+00:00",
+      "last_completed_at": "2026-07-27T14:55:50.103224+00:00",
+      "last_status": "fetched",
+      "last_error": "",
+      "last_document_hash": "74468e34f9892f35da62e04ce8cdb4e6e0da1e80623a31f886c17bf93c62e75d",
+      "last_source_content_hash": "74468e34f9892f35da62e04ce8cdb4e6e0da1e80623a31f886c17bf93c62e75d",
+      "last_seen_item_date": "",
+      "consecutive_failures": 0,
+      "items_discovered_total": 2,
+      "items_created_total": 0,
+      "last_http_status": "200.0",
+      "source_health": "Sağlıklı",
+      "last_success_at": "2026-07-27T14:55:50.103224+00:00",
+      "last_changed_at": "2026-07-27T14:55:50.103224+00:00"
+    },
+    "REG-241": {
+      "last_run_id": "batch2_global_payments_20260727",
+      "last_started_at": "2026-07-27T14:54:15.417720+00:00",
+      "last_completed_at": "2026-07-27T14:55:50.103224+00:00",
+      "last_status": "fetched",
+      "last_error": "",
+      "last_document_hash": "3ffb8c3fa63e622a2e32535e56aacdfb26a1bfce7307042c6c4c76b6c0148eca",
+      "last_source_content_hash": "3ffb8c3fa63e622a2e32535e56aacdfb26a1bfce7307042c6c4c76b6c0148eca",
+      "last_seen_item_date": "",
+      "consecutive_failures": 0,
+      "items_discovered_total": 8,
+      "items_created_total": 0,
+      "last_http_status": "200.0",
+      "source_health": "Sağlıklı",
+      "last_success_at": "2026-07-27T14:55:50.103224+00:00",
+      "last_changed_at": "2026-07-27T14:55:50.103224+00:00"
+    },
+    "REG-242": {
+      "last_run_id": "batch2_global_payments_20260727",
+      "last_started_at": "2026-07-27T14:54:15.417720+00:00",
+      "last_completed_at": "2026-07-27T14:55:50.103224+00:00",
+      "last_status": "fetched",
+      "last_error": "",
+      "last_document_hash": "7813500c88e42a2ab5fdaaefee6fffef048dc017ad6100bd84ee80d6774e085c",
+      "last_source_content_hash": "7813500c88e42a2ab5fdaaefee6fffef048dc017ad6100bd84ee80d6774e085c",
+      "last_seen_item_date": "",
+      "consecutive_failures": 0,
+      "items_discovered_total": 12,
+      "items_created_total": 0,
+      "last_http_status": "200.0",
+      "source_health": "Sağlıklı",
+      "last_success_at": "2026-07-27T14:55:50.103224+00:00",
+      "last_changed_at": "2026-07-27T14:55:50.103224+00:00"
+    },
+    "REG-243": {
+      "last_run_id": "batch2_global_payments_20260727",
+      "last_started_at": "2026-07-27T14:54:15.417720+00:00",
+      "last_completed_at": "2026-07-27T14:55:50.103224+00:00",
+      "last_status": "error",
+      "last_error": "403 Client Error: Forbidden for url: https://www.pymnts.com/category/news/b2b-payments/",
+      "last_document_hash": "",
+      "last_source_content_hash": "",
+      "last_seen_item_date": "",
+      "consecutive_failures": 1,
+      "items_discovered_total": 0,
+      "items_created_total": 0,
+      "last_http_status": "403.0",
+      "source_health": "Uyarı",
+      "last_success_at": "",
+      "last_changed_at": ""
+    },
+    "REG-244": {
+      "last_run_id": "batch2_global_payments_20260727",
+      "last_started_at": "2026-07-27T14:54:15.417720+00:00",
+      "last_completed_at": "2026-07-27T14:55:50.103224+00:00",
+      "last_status": "fetched",
+      "last_error": "",
+      "last_document_hash": "8fea5c9494d8176a792b1aa42a7695360507a35c104a535f8c22f29fbc2e3888",
+      "last_source_content_hash": "8fea5c9494d8176a792b1aa42a7695360507a35c104a535f8c22f29fbc2e3888",
+      "last_seen_item_date": "",
+      "consecutive_failures": 0,
+      "items_discovered_total": 14,
+      "items_created_total": 0,
+      "last_http_status": "200.0",
+      "source_health": "Sağlıklı",
+      "last_success_at": "2026-07-27T14:55:50.103224+00:00",
+      "last_changed_at": "2026-07-27T14:55:50.103224+00:00"
     }
   }
 }

@@ -344,7 +344,21 @@ ENGLISH_DMY_DATE_RE = re.compile(
     r"\s+(?P<year>20\d{2})\b",
     re.IGNORECASE,
 )
-GLOBAL_PAYMENTS_SOURCE_IDS = {"REG-041", "REG-232", "REG-233", "REG-234", "REG-235", "REG-236", "REG-238", "REG-239"}
+GLOBAL_PAYMENTS_SOURCE_IDS = {
+    "REG-041",
+    "REG-232",
+    "REG-233",
+    "REG-234",
+    "REG-235",
+    "REG-236",
+    "REG-238",
+    "REG-239",
+    "REG-240",
+    "REG-241",
+    "REG-242",
+    "REG-243",
+    "REG-244",
+}
 STRIPE_NEWSROOM_SOURCE_IDS = {"REG-041"}
 BLOCK_PRESS_SOURCE_IDS = {"REG-232"}
 SQUARE_PRESS_SOURCE_IDS = {"REG-233"}
@@ -353,18 +367,48 @@ SHOPIFY_NEWSROOM_SOURCE_IDS = {"REG-235"}
 AIRWALLEX_NEWSROOM_SOURCE_IDS = {"REG-236"}
 CHECKOUT_NEWSROOM_SOURCE_IDS = {"REG-238"}
 WISE_NEWSROOM_SOURCE_IDS = {"REG-239"}
+FINEXTRA_PAYMENTS_SOURCE_IDS = {"REG-240"}
+PAYMENTS_DIVE_SOURCE_IDS = {"REG-241"}
+THE_PAYPERS_SOURCE_IDS = {"REG-242"}
+PYMNTS_B2B_SOURCE_IDS = {"REG-243"}
+BANKING_DIVE_PAYMENTS_SOURCE_IDS = {"REG-244"}
+GLOBAL_PAYMENTS_DETAIL_DATE_SOURCE_IDS = (
+    FINEXTRA_PAYMENTS_SOURCE_IDS
+    | PAYMENTS_DIVE_SOURCE_IDS
+    | PYMNTS_B2B_SOURCE_IDS
+    | BANKING_DIVE_PAYMENTS_SOURCE_IDS
+)
+GLOBAL_PAYMENTS_EXTERNAL_NEWS_SOURCE_IDS = (
+    FINEXTRA_PAYMENTS_SOURCE_IDS
+    | PAYMENTS_DIVE_SOURCE_IDS
+    | THE_PAYPERS_SOURCE_IDS
+    | PYMNTS_B2B_SOURCE_IDS
+    | BANKING_DIVE_PAYMENTS_SOURCE_IDS
+)
 GLOBAL_PAYMENT_RELEVANCE_RE = re.compile(
     r"(small business|sme|merchant|seller|business ownership|businesses|commercial|commerce|"
     r"payments?|checkout|pos|point of sale|acquiring|card|stablecoin|agentic|ai agent|"
     r"openai|chatgpt|claude|embedded finance|banking|cash flow|working capital|treasury|"
     r"accounts payable|accounts receivable|reconciliation|global payments?|cross-border|"
-    r"digital commerce|retail operation|commerce platform)",
+    r"digital commerce|retail operation|commerce platform|b2b|smb|middle market|"
+    r"virtual card|commercial card|supplier payments?|procurement|invoice|billing|"
+    r"disbursements?|payment infrastructure|acceptance|freight payments?|swift|wero|fednow|rtp)",
     re.IGNORECASE,
 )
 GLOBAL_PAYMENT_NOISE_RE = re.compile(
     r"(investor day|quarter results|annual letter|tender offer|board of directors|chief revenue officer|"
     r"chief financial officer|appointment|appointed|conference|stock|football|soccer|seahawks|arsenal|"
-    r"jersey|sponsorship|climate|child safety|teen advisory|ipo|valuation|funding round)",
+    r"jersey|sponsorship|climate|child safety|teen advisory|ipo|valuation|funding round|"
+    r"podcasts?|consumer fraud|chip-enabled ebt|personal wallet|personal account|"
+    r"raises? \$|raises? usd|series [abc]|funding|digital bank service|discontinue)",
+    re.IGNORECASE,
+)
+GLOBAL_PAYMENT_EXTERNAL_STRONG_RE = re.compile(
+    r"(small business|sme|smb|merchant|seller|commercial|b2b|middle market|treasury|"
+    r"cash flow|working capital|accounts payable|accounts receivable|reconciliation|"
+    r"cross-border|global payments?|stablecoin|embedded|api|open banking|payment infrastructure|"
+    r"virtual card|commercial card|supplier payments?|procurement|invoice|billing|"
+    r"acceptance|acquiring|pos|freight payments?|swift|wero|fednow|rtp)",
     re.IGNORECASE,
 )
 BAD_TITLE_RE = re.compile(
@@ -852,6 +896,8 @@ def strip_global_date_and_cta(text: str) -> str:
     cleaned = ENGLISH_MDY_DATE_RE.sub("", cleaned)
     cleaned = ENGLISH_DMY_DATE_RE.sub("", cleaned)
     cleaned = re.sub(r"\b20\d{2}-\d{2}-\d{2}\b", "", cleaned)
+    cleaned = re.sub(r"\s*/\s*\d+\s*min\s*read\b", "", cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r"\s*/\s*(news|fintech|payments?|b2b payments?|expert views)\b", "", cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r"\b(?:read article|read more|learn more)\b", "", cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r"^(product|corporate|company|pov|insights|press releases?)\s+", "", cleaned, flags=re.IGNORECASE)
     return normalize_text(cleaned.strip(" -–|"))
@@ -867,7 +913,20 @@ def date_from_global_url(url: str) -> str:
 
 def should_keep_global_payment_candidate(source_id: str, title: str, context: str, url: str) -> bool:
     blob = normalize_text(f"{title} {context} {urlparse(url).path.replace('-', ' ')}")
+    title_blob = normalize_text(title)
     if not GLOBAL_PAYMENT_RELEVANCE_RE.search(blob):
+        return False
+    if source_id in GLOBAL_PAYMENTS_EXTERNAL_NEWS_SOURCE_IDS and not GLOBAL_PAYMENT_EXTERNAL_STRONG_RE.search(blob):
+        return False
+    if source_id in GLOBAL_PAYMENTS_EXTERNAL_NEWS_SOURCE_IDS and re.search(
+        r"(raises? \$|raises? usd|series [abc]|funding)",
+        title_blob,
+        re.IGNORECASE,
+    ) and not re.search(
+        r"(payments?|cross-border|stablecoin|treasury|merchant|sme|smb|commercial|working capital)",
+        title_blob,
+        re.IGNORECASE,
+    ):
         return False
     if source_id in WISE_NEWSROOM_SOURCE_IDS:
         if re.search(r"(nasdaq|listing|stock|investor|consumer help|personal account)", blob, re.IGNORECASE):
@@ -888,6 +947,12 @@ def should_keep_global_payment_candidate(source_id: str, title: str, context: st
         re.IGNORECASE,
     ):
         return False
+    if re.search(r"(consumer|wallet|retail payments?)", blob, re.IGNORECASE) and not re.search(
+        r"(merchant|business|commercial|b2b|sme|smb|supplier|treasury|acceptance|acquiring|pos|ecommerce|online payments?)",
+        blob,
+        re.IGNORECASE,
+    ):
+        return False
     return True
 
 
@@ -901,6 +966,11 @@ def extract_global_payments_links(soup: BeautifulSoup, base_url: str, source_id:
         "REG-236": re.compile(r"/global/newsroom/[^/]+/?$", re.IGNORECASE),
         "REG-238": re.compile(r"/newsroom/[^/]+/?$", re.IGNORECASE),
         "REG-239": re.compile(r"/en-[^/]+/\d+-[^/]+/?$", re.IGNORECASE),
+        "REG-240": re.compile(r"/newsarticle/\d+/[^/]+/?$", re.IGNORECASE),
+        "REG-241": re.compile(r"/news/[^/]+/\d+/?$", re.IGNORECASE),
+        "REG-242": re.compile(r"/[^/]+/news/[^/]+/?$", re.IGNORECASE),
+        "REG-243": re.compile(r"/news/b2b-payments/20\d{2}/[^/]+/?$", re.IGNORECASE),
+        "REG-244": re.compile(r"/news/[^/]+/\d+/?$", re.IGNORECASE),
     }
     path_rule = path_rules.get(source_id)
     if not path_rule:
@@ -954,12 +1024,14 @@ def extract_global_payments_links(soup: BeautifulSoup, base_url: str, source_id:
         )
         for url, value in by_url.items()
         if value["title"]
-        and value["raw_date"]
+        and (value["raw_date"] or source_id in GLOBAL_PAYMENTS_DETAIL_DATE_SOURCE_IDS)
         and should_keep_global_payment_candidate(source_id, value["title"], value["context"], url)
     ]
     candidates = sorted(candidates, key=lambda item: (item.raw_date_text, item.score), reverse=True)
     if source_id in CHECKOUT_NEWSROOM_SOURCE_IDS:
         return candidates[:25]
+    if source_id in GLOBAL_PAYMENTS_EXTERNAL_NEWS_SOURCE_IDS:
+        return candidates[:20]
     return candidates
 
 
@@ -1802,9 +1874,36 @@ def visa_us_date_semantics(*texts: str) -> dict[str, str]:
     return {}
 
 
+def english_publication_date_semantics(*texts: str) -> dict[str, str]:
+    for text in texts:
+        normalized = english_date_to_iso(str(text or ""))
+        if not normalized:
+            continue
+        raw_match = ENGLISH_MDY_DATE_RE.search(str(text or "")) or ENGLISH_DMY_DATE_RE.search(str(text or ""))
+        raw = raw_match.group(0) if raw_match else normalized
+        return {
+            "publication_date": normalized,
+            "announcement_date": "",
+            "campaign_start_date": "",
+            "campaign_end_date": "",
+            "event_date_type": "Yayın Tarihi",
+            "recency_basis_date": normalized,
+            "recency_basis_reason": "English publication date extracted from listing/detail text",
+            "date_confidence": "Yüksek",
+            "raw_date_text": raw,
+            "normalized_date": normalized,
+            "date_source": "english_publication_date",
+        }
+    return {}
+
+
 def title_from_detail(detail_title: str, link_title: str, url: str) -> str:
     cleaned_detail_title = re.sub(r"\s*\|\s*Garanti BBVA\s*$", "", detail_title or "").strip()
-    cleaned_detail_title = re.sub(r"\s*\|\s*(Wise Newsroom|Checkout\\.com)\s*$", "", cleaned_detail_title).strip()
+    cleaned_detail_title = re.sub(
+        r"\s*\|\s*(Wise Newsroom|Checkout\\.com|The Paypers|Payments Dive|Banking Dive|PYMNTS(?:\\.com)?)\s*$",
+        "",
+        cleaned_detail_title,
+    ).strip()
     generic_detail_re = re.compile(
         r"^(basın bültenleri ve duyurular|basın bültenleri|basın odası|kampanyalar|"
         r"duyuru detay|duyuru listesi|duyuru kategorileri)"
@@ -1815,7 +1914,11 @@ def title_from_detail(detail_title: str, link_title: str, url: str) -> str:
         title = link_title
     else:
         title = cleaned_detail_title or link_title
-    title = re.sub(r"\s*\|\s*(Garanti BBVA|Wise Newsroom|Checkout\\.com)\s*$", "", title).strip()
+    title = re.sub(
+        r"\s*\|\s*(Garanti BBVA|Wise Newsroom|Checkout\\.com|The Paypers|Payments Dive|Banking Dive|PYMNTS(?:\\.com)?)\s*$",
+        "",
+        title,
+    ).strip()
     if not title or is_generic_link_title(title):
         title = title_from_url_filename(url) if urlparse(url).path.casefold().endswith(".pdf") else title_from_slug(url)
     return title
@@ -2048,6 +2151,16 @@ def date_meta_for_candidate(candidate: CandidateLink, detail_title: str, detail_
         visa_result = visa_us_date_semantics(item_date, detail_title, detail_text, candidate.title)
         if visa_result:
             return visa_result
+    if str(row.get("source_id", "")) in GLOBAL_PAYMENTS_SOURCE_IDS:
+        english_result = english_publication_date_semantics(
+            candidate.raw_date_text,
+            item_date,
+            detail_title,
+            detail_text[:2500],
+            candidate.title,
+        )
+        if english_result:
+            return english_result
     listing_text = candidate.raw_date_text or candidate.title
     if candidate.raw_date_text:
         result = parse_turkish_date(candidate.raw_date_text, candidate.date_source_hint or "listing_page_nearby_date", "Orta")

@@ -159,6 +159,44 @@ class GlobalPaymentsExtractionTests(unittest.TestCase):
         self.assertEqual(len(candidates), 1)
         self.assertIn("Payments Canada", candidates[0].title)
 
+    def test_the_paypers_keeps_dated_commercial_payment_item(self) -> None:
+        soup = BeautifulSoup(
+            """
+            <a href="/payments/news/mastercard-adds-new-controls-to-virtual-card-platform">
+              Mastercard adds new controls to virtual card platform 24 Jul 2026 / 5 min read / News
+            </a>
+            <a href="/fintech/news/western-union-to-discontinue-its-western-union-digital-bank-service">
+              Western Union to discontinue its Western Union Digital Bank service 27 Jul 2026 / News / Fintech
+            </a>
+            """,
+            "html.parser",
+        )
+        candidates = extract_global_payments_links(soup, "https://thepaypers.com/news", "REG-242")
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(candidates[0].raw_date_text, "2026-07-24")
+        self.assertEqual(candidates[0].title, "Mastercard adds new controls to virtual card platform")
+
+    def test_pymnts_keeps_relevant_undated_candidate_for_detail_date_validation(self) -> None:
+        soup = BeautifulSoup(
+            """
+            <a href="/news/b2b-payments/2026/ramp-opens-stablecoin-accounts-and-payments-to-business-clients/">
+              Ramp Opens Stablecoin Accounts and Payments to Business Clients
+            </a>
+            <a href="/news/b2b-payments/2026/passionfroot-raises-15-million-dollars-connect-b2b-tech-companies-with-vetted-creators/">
+              Passionfroot Raises $15 Million to Connect B2B Tech Companies With Vetted Creators
+            </a>
+            """,
+            "html.parser",
+        )
+        candidates = extract_global_payments_links(
+            soup,
+            "https://www.pymnts.com/category/news/b2b-payments/",
+            "REG-243",
+        )
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(candidates[0].raw_date_text, "")
+        self.assertIn("Stablecoin", candidates[0].title)
+
 
 class SeenIndexTests(unittest.TestCase):
     def test_title_normalization_is_stable(self) -> None:
