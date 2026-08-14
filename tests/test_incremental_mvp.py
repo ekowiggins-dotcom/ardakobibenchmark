@@ -20,7 +20,7 @@ from pipeline.extract_recent_items import (
     should_fetch_detail_for_candidate,
 )
 from pipeline.rebuild_seen_item_index import normalize_title
-from pipeline.summarize_recent_items import gate_skip_reason
+from pipeline.summarize_recent_items import failed_summary_item_ids, gate_skip_reason, retryable_blocked_item_ids, successful_summary_item_ids
 from pipeline.run_weekly_incremental_mvp import RunMetrics, add_anomaly_alerts, eligible_sources, final_status_for
 from pipeline.update_recent_item_review_queue import route_summaries
 from pipeline.update_recent_item_review_queue import (
@@ -88,6 +88,21 @@ class SourceHealthTests(unittest.TestCase):
             consecutive_failures=3,
         )
         self.assertEqual(health.status, ERROR)
+
+
+class SummaryRetryTests(unittest.TestCase):
+    def test_failed_llm_summaries_are_retryable(self) -> None:
+        summaries = pd.DataFrame(
+            [
+                {"recent_item_id": "RI-ok", "llm_model": "claude-haiku-4-5-20251001", "error_message": ""},
+                {"recent_item_id": "RI-error", "llm_model": "llm-error-dry-run", "error_message": "NotFoundError"},
+                {"recent_item_id": "RI-parse", "llm_model": "parse-error-dry-run", "error_message": "JSON parse hatası"},
+            ]
+        )
+
+        self.assertEqual(successful_summary_item_ids(summaries), {"RI-ok"})
+        self.assertEqual(failed_summary_item_ids(summaries), {"RI-error", "RI-parse"})
+        self.assertEqual(retryable_blocked_item_ids({"RI-ok", "RI-error", "RI-parse"}, summaries), {"RI-ok"})
 
     def test_zero_candidates_warns_for_weekly_source(self) -> None:
         health = classify_source_health(

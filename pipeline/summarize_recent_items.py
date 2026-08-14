@@ -571,6 +571,27 @@ def read_blocked_recent_item_ids() -> set[str]:
     return blocked
 
 
+def failed_summary_item_ids(summaries: pd.DataFrame) -> set[str]:
+    if summaries.empty or "recent_item_id" not in summaries.columns:
+        return set()
+    error_messages = summaries.get("error_message", pd.Series("", index=summaries.index)).fillna("").astype(str).str.strip()
+    llm_models = summaries.get("llm_model", pd.Series("", index=summaries.index)).fillna("").astype(str).str.strip()
+    failed = error_messages.ne("") | llm_models.isin({"dry-run", "llm-error-dry-run", "parse-error-dry-run"})
+    return set(summaries.loc[failed, "recent_item_id"].dropna().astype(str))
+
+
+def successful_summary_item_ids(summaries: pd.DataFrame) -> set[str]:
+    if summaries.empty or "recent_item_id" not in summaries.columns:
+        return set()
+    failed_ids = failed_summary_item_ids(summaries)
+    ids = set(summaries["recent_item_id"].dropna().astype(str))
+    return ids - failed_ids
+
+
+def retryable_blocked_item_ids(blocked_item_ids: set[str], summaries: pd.DataFrame) -> set[str]:
+    return blocked_item_ids - failed_summary_item_ids(summaries)
+
+
 def coerce_value(value, allowed: set[str], fallback: str) -> str:
     raw = "" if value is None else str(value).strip()
     translated = CONTROLLED_VALUE_TRANSLATIONS.get(raw, to_tr(raw))
@@ -1124,9 +1145,9 @@ def main() -> None:
     existing_item_ids = (
         set()
         if args.force or reprocess_item_ids
-        else set(summaries["recent_item_id"].dropna()) if not summaries.empty else set()
+        else successful_summary_item_ids(summaries)
     )
-    blocked_item_ids = read_blocked_recent_item_ids()
+    blocked_item_ids = retryable_blocked_item_ids(read_blocked_recent_item_ids(), summaries)
     duplicate_item_ids = set(
         items.loc[items["recent_item_id"].astype(str).duplicated(keep=False), "recent_item_id"].dropna().astype(str)
     )
