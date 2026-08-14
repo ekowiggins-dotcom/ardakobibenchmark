@@ -19,7 +19,7 @@ except ImportError:
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 DEFAULT_PROVIDER = "anthropic"
-DEFAULT_MODEL = "claude-3-5-haiku-latest"
+DEFAULT_MODEL = "claude-haiku-4-5-20251001"
 DEFAULT_MAX_ITEMS = 5
 DEFAULT_MAX_CHARS = 8000
 DEFAULT_TIMEOUT_SECONDS = 60
