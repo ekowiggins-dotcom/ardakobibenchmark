@@ -1276,10 +1276,16 @@ def main() -> None:
         new_rows.append(build_summary_row(row, payload, llm_model, raw_path, error_message, lint_result))
 
     latest_summaries = read_summaries()
-    if (args.force or reprocess_item_ids) and new_rows:
-        force_ids = {row["recent_item_id"] for row in new_rows}
-        latest_summaries = latest_summaries[~latest_summaries["recent_item_id"].isin(force_ids)]
-    elif new_rows and not latest_summaries.empty:
+    if new_rows:
+        new_item_ids = {row["recent_item_id"] for row in new_rows}
+        failed_existing_ids = failed_summary_item_ids(latest_summaries)
+        replace_ids = new_item_ids if args.force or reprocess_item_ids else new_item_ids & failed_existing_ids
+        if replace_ids:
+            latest_summaries = latest_summaries[~latest_summaries["recent_item_id"].isin(replace_ids)]
+        elif not latest_summaries.empty:
+            latest_ids = set(latest_summaries["recent_item_id"].dropna().astype(str))
+            new_rows = [row for row in new_rows if str(row.get("recent_item_id", "")) not in latest_ids]
+    elif not latest_summaries.empty:
         latest_ids = set(latest_summaries["recent_item_id"].dropna().astype(str))
         new_rows = [row for row in new_rows if str(row.get("recent_item_id", "")) not in latest_ids]
     updated = pd.concat([latest_summaries, pd.DataFrame(new_rows)], ignore_index=True)
