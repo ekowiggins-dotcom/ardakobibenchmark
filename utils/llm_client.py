@@ -97,7 +97,12 @@ def summarize_with_anthropic(prompt: str, model: str | None = None, max_tokens: 
             return getattr(first, "text", "") or ""
         except Exception as exc:
             last_error = exc
-            logger.warning("Anthropic çağrısı başarısız oldu; deneme=%s, hata=%s", attempt + 1, type(exc).__name__)
+            logger.warning(
+                "Anthropic çağrısı başarısız oldu; deneme=%s, hata=%s: %s",
+                attempt + 1,
+                type(exc).__name__,
+                exc,
+            )
             if attempt == 0:
                 time.sleep(1)
-    raise RuntimeError(f"Anthropic çağrısı tamamlanamadı: {type(last_error).__name__}")
+    raise RuntimeError(f"Anthropic çağrısı tamamlanamadı: {type(last_error).__name__}: {last_error}")
