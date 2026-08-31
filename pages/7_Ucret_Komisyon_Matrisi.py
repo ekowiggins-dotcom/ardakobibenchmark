@@ -74,14 +74,10 @@ def matrix_bucket(row: pd.Series) -> str:
 def compact_fee_label(row: pd.Series) -> str:
     item = str(row.get("fee_item", "")).strip()
     value = str(row.get("fee_value", "")).strip()
-    basis = str(row.get("fee_basis", "")).strip()
     if not item and not value:
         return ""
     parts = [part for part in [item, value] if part]
-    label = " — ".join(parts)
-    if basis and basis not in value:
-        label = f"{label} ({basis})"
-    return label
+    return " — ".join(parts)
 
 
 def inject_css() -> None:
@@ -237,8 +233,8 @@ def inject_css() -> None:
         }
 
         .pricing-matrix-cell {
-            min-height: 96px;
-            padding: 0.85rem 0.95rem;
+            min-height: 76px;
+            padding: 0.72rem 0.82rem;
             border-right: 1px solid var(--ak-border);
             border-bottom: 1px solid var(--ak-border);
         }
@@ -272,16 +268,16 @@ def inject_css() -> None:
 
         .pricing-matrix-items {
             display: grid;
-            gap: 0.45rem;
+            gap: 0.36rem;
         }
 
         .pricing-matrix-item {
             color: var(--ak-text);
-            font-size: 0.78rem;
+            font-size: 0.76rem;
             font-weight: 750;
-            line-height: 1.35;
+            line-height: 1.28;
             border-bottom: 1px solid var(--ak-border);
-            padding-bottom: 0.42rem;
+            padding-bottom: 0.34rem;
         }
 
         .pricing-matrix-item:last-child {
