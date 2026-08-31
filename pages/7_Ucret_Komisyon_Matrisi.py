@@ -56,17 +56,22 @@ def zero_or_free(value: object) -> bool:
 
 
 def matrix_bucket(row: pd.Series) -> str:
+    fee_family = str(row.get("fee_family", "")).casefold()
+    if "kredi" in fee_family or "paket" in fee_family:
+        return "Paket / Kredi"
     text = " ".join(
         str(row.get(column, ""))
         for column in ["fee_family", "fee_item", "product_or_channel", "fee_basis", "notes"]
     ).casefold()
     if "pos" in text or "üye işyeri" in text:
         return "POS"
+    if "paket" in text or "kredi tahsis" in text or "taksitli ticari kredi" in text or "faizsiz" in text:
+        return "Paket / Kredi"
     if "swift" in text or "yurt dış" in text or "uluslararası" in text or "döviz" in text or "yabancı para" in text:
         return "Yurt dışı / SWIFT"
     if "havale" in text or "transfer" in text or "eft" in text:
         return "Yurt içi transfer"
-    if "paket" in text or "kredi tahsis" in text or "maaş" in text:
+    if "maaş" in text:
         return "Paket / Kredi"
     return "Kartlar"
 
