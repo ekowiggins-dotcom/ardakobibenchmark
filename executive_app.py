@@ -18,6 +18,10 @@ def render_tum_gelismeler() -> None:
     run_streamlit_page_without_page_config(ROOT / "pages" / "2_Tum_Gelismeler.py")
 
 
+def render_yeni_musteri_teklifleri() -> None:
+    run_streamlit_page_without_page_config(ROOT / "pages" / "6_Yeni_Musteri_Teklifleri.py")
+
+
 st.set_page_config(
     page_title="Akbank Yönetici Özeti",
     layout="wide",
@@ -35,15 +39,24 @@ tum_gelismeler_page = st.Page(
     title="Tüm Gelişmeler",
     url_path="tum-gelismeler",
 )
+yeni_musteri_teklifleri_page = st.Page(
+    render_yeni_musteri_teklifleri,
+    title="Yeni Müşteri Teklifleri",
+    url_path="yeni-musteri-teklifleri",
+)
 
 page = st.navigation(
-    [yonetici_page, tum_gelismeler_page],
+    [yonetici_page, tum_gelismeler_page, yeni_musteri_teklifleri_page],
     position="sidebar",
     expanded=True,
 )
 
 current_title = getattr(page, "title", "") or "Yönetici Özeti"
-active_nav_key = "executive_nav_radar" if current_title == "Yönetici Özeti" else "executive_nav_all"
+active_nav_key = {
+    "Yönetici Özeti": "executive_nav_radar",
+    "Tüm Gelişmeler": "executive_nav_all",
+    "Yeni Müşteri Teklifleri": "executive_nav_new_customer",
+}.get(current_title, "executive_nav_radar")
 
 st.markdown(
     """
@@ -136,7 +149,7 @@ st.markdown(
         .st-key-executive_page_switcher [data-baseweb="button-group"] {
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 0.5rem;
         }
 
@@ -168,7 +181,7 @@ st.markdown(
 with st.container(key="executive_page_switcher"):
     selected_page = st.segmented_control(
         "Sayfa",
-        ["Yönetici Özeti", "Tüm Gelişmeler"],
+        ["Yönetici Özeti", "Tüm Gelişmeler", "Yeni Müşteri Teklifleri"],
         default=current_title,
         key="executive_nav_segment",
         label_visibility="collapsed",
@@ -178,5 +191,7 @@ if selected_page == "Yönetici Özeti" and current_title != "Yönetici Özeti":
     st.switch_page(yonetici_page)
 if selected_page == "Tüm Gelişmeler" and current_title != "Tüm Gelişmeler":
     st.switch_page(tum_gelismeler_page)
+if selected_page == "Yeni Müşteri Teklifleri" and current_title != "Yeni Müşteri Teklifleri":
+    st.switch_page(yeni_musteri_teklifleri_page)
 
 page.run()
