@@ -26,6 +26,7 @@ BANK_ORDER = [
     "Odeabank",
     "Alternatif Bank",
 ]
+MATRIX_BUCKETS = ["Kartlar", "POS", "Transfer", "Paket / Kredi"]
 
 
 def esc(value: object) -> str:
@@ -52,6 +53,30 @@ def tl_amount(value: object) -> float | None:
 def zero_or_free(value: object) -> bool:
     text = str(value or "").casefold()
     return "ücretsiz" in text or "0 tl" in text or text.strip() == "0"
+
+
+def matrix_bucket(fee_family: object) -> str:
+    text = str(fee_family or "").casefold()
+    if "pos" in text or "üye işyeri" in text:
+        return "POS"
+    if "havale" in text or "transfer" in text or "eft" in text:
+        return "Transfer"
+    if "paket" in text or "kredi tahsis" in text or "maaş" in text:
+        return "Paket / Kredi"
+    return "Kartlar"
+
+
+def compact_fee_label(row: pd.Series) -> str:
+    item = str(row.get("fee_item", "")).strip()
+    value = str(row.get("fee_value", "")).strip()
+    basis = str(row.get("fee_basis", "")).strip()
+    if not item and not value:
+        return ""
+    parts = [part for part in [item, value] if part]
+    label = " — ".join(parts)
+    if basis and basis not in value:
+        label = f"{label} ({basis})"
+    return label
 
 
 def inject_css() -> None:
@@ -170,6 +195,101 @@ def inject_css() -> None:
             margin-bottom: 1.15rem;
         }
 
+        .pricing-tier-panel {
+            background: var(--ak-surface);
+            border: 1px solid var(--ak-border);
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+            margin: 0 0 1.2rem;
+            overflow: hidden;
+        }
+
+        .pricing-tier-head {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1rem 1.15rem;
+            border-bottom: 1px solid var(--ak-border);
+        }
+
+        .pricing-tier-title {
+            color: var(--ak-text);
+            font-size: 1.05rem;
+            font-weight: 900;
+        }
+
+        .pricing-tier-copy {
+            color: var(--ak-secondary);
+            font-size: 0.82rem;
+            margin-top: 0.18rem;
+        }
+
+        .pricing-matrix {
+            display: grid;
+            grid-template-columns: minmax(140px, 0.85fr) repeat(4, minmax(150px, 1fr));
+            overflow-x: auto;
+        }
+
+        .pricing-matrix-cell {
+            min-height: 96px;
+            padding: 0.85rem 0.95rem;
+            border-right: 1px solid var(--ak-border);
+            border-bottom: 1px solid var(--ak-border);
+        }
+
+        .pricing-matrix-cell:nth-child(5n) {
+            border-right: 0;
+        }
+
+        .pricing-matrix-header {
+            min-height: auto;
+            background: var(--ak-soft);
+            color: var(--ak-muted);
+            font-size: 0.68rem;
+            font-weight: 900;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .pricing-matrix-bank {
+            color: var(--ak-text);
+            font-size: 0.93rem;
+            font-weight: 900;
+        }
+
+        .pricing-matrix-tier {
+            color: var(--ak-muted);
+            font-size: 0.7rem;
+            font-weight: 800;
+            margin-top: 0.18rem;
+        }
+
+        .pricing-matrix-items {
+            display: grid;
+            gap: 0.45rem;
+        }
+
+        .pricing-matrix-item {
+            color: var(--ak-text);
+            font-size: 0.78rem;
+            font-weight: 750;
+            line-height: 1.35;
+        }
+
+        .pricing-matrix-empty {
+            color: var(--ak-muted);
+            font-size: 0.78rem;
+            font-weight: 750;
+        }
+
+        .pricing-section-label {
+            color: var(--ak-text);
+            font-size: 1.15rem;
+            font-weight: 900;
+            margin: 1.4rem 0 0.35rem;
+        }
+
         .pricing-panel-title {
             color: var(--ak-text);
             font-size: 1.18rem;
@@ -206,6 +326,10 @@ def inject_css() -> None:
             .pricing-kpi-grid,
             .pricing-bank-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .pricing-matrix {
+                grid-template-columns: minmax(132px, 0.8fr) repeat(4, minmax(190px, 1fr));
             }
         }
         </style>
@@ -270,6 +394,52 @@ def render_bank_cards(df: pd.DataFrame, selected_banks: list[str]) -> None:
     st.markdown(f'<div class="pricing-bank-grid">{"".join(cards)}</div>', unsafe_allow_html=True)
 
 
+def render_tier_matrix(df: pd.DataFrame, tier: str) -> None:
+    tier_df = df[df["institution_tier"].eq(tier)].copy()
+    if tier_df.empty:
+        return
+    tier_df["matrix_bucket"] = tier_df["fee_family"].apply(matrix_bucket)
+    banks = [bank for bank in BANK_ORDER if bank in set(tier_df["institution_name"])]
+    cells = ['<div class="pricing-matrix-cell pricing-matrix-header">Banka</div>']
+    cells.extend(
+        f'<div class="pricing-matrix-cell pricing-matrix-header">{esc(bucket)}</div>'
+        for bucket in MATRIX_BUCKETS
+    )
+    for bank in banks:
+        bank_df = tier_df[tier_df["institution_name"].eq(bank)]
+        cells.append(
+            '<div class="pricing-matrix-cell">'
+            f'<div class="pricing-matrix-bank">{esc(bank)}</div>'
+            f'<div class="pricing-matrix-tier">{esc(tier)}</div>'
+            '</div>'
+        )
+        for bucket in MATRIX_BUCKETS:
+            bucket_df = bank_df[bank_df["matrix_bucket"].eq(bucket)]
+            if bucket_df.empty:
+                cells.append('<div class="pricing-matrix-cell"><span class="pricing-matrix-empty">Kayıt yok</span></div>')
+                continue
+            items = "".join(
+                f'<div class="pricing-matrix-item">{esc(compact_fee_label(row))}</div>'
+                for _, row in bucket_df.head(3).iterrows()
+            )
+            remaining = len(bucket_df) - 3
+            more = f'<div class="pricing-matrix-empty">+{remaining} kayıt</div>' if remaining > 0 else ""
+            cells.append(f'<div class="pricing-matrix-cell"><div class="pricing-matrix-items">{items}{more}</div></div>')
+    st.markdown(
+        (
+            '<div class="pricing-tier-panel">'
+            '<div class="pricing-tier-head">'
+            f'<div><div class="pricing-tier-title">{esc(tier)} ücret-komisyon matrisi</div>'
+            '<div class="pricing-tier-copy">Banka satırları; kart, POS, transfer ve paket/kredi kalemleri yan yana okunur.</div></div>'
+            f'<span class="pricing-pill">{len(banks)} banka · {len(tier_df)} satır</span>'
+            '</div>'
+            f'<div class="pricing-matrix">{"".join(cells)}</div>'
+            '</div>'
+        ),
+        unsafe_allow_html=True,
+    )
+
+
 inject_css()
 render_page_header(
     "Ücret Komisyon Matrisi",
@@ -306,6 +476,12 @@ if filtered.empty:
     raise SystemExit
 
 render_kpis(filtered)
+
+st.markdown('<div class="pricing-section-label">Tier bazlı ana matris</div>', unsafe_allow_html=True)
+for tier in TIER_ORDER:
+    render_tier_matrix(filtered, tier)
+
+st.markdown('<div class="pricing-section-label">Banka bazlı hızlı okuma</div>', unsafe_allow_html=True)
 render_bank_cards(filtered, selected_banks)
 
 st.subheader("Ücret-Komisyon Karşılaştırması")
