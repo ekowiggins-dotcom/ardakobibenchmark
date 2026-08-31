@@ -85,6 +85,21 @@ def compact_fee_label(row: pd.Series) -> str:
     return " — ".join(parts)
 
 
+def sync_multiselect_options(key: str, options: list[str]) -> None:
+    options_key = f"{key}__options"
+    previous_options = st.session_state.get(options_key)
+    selected = st.session_state.get(key)
+    if not isinstance(selected, list):
+        st.session_state[options_key] = options
+        return
+    selected = [option for option in selected if option in options]
+    if isinstance(previous_options, list):
+        newly_added = [option for option in options if option not in previous_options]
+        selected.extend(option for option in newly_added if option not in selected)
+    st.session_state[key] = selected
+    st.session_state[options_key] = options
+
+
 def inject_css() -> None:
     st.markdown(
         """
@@ -466,13 +481,17 @@ if pricing.empty:
 with st.sidebar:
     st.header("ÜVEK Filtreleri")
     tiers = [tier for tier in TIER_ORDER if tier in set(pricing["institution_tier"])]
-    selected_tiers = st.multiselect("Banka grubu", tiers, default=tiers)
+    sync_multiselect_options("pricing_tier_filter", tiers)
+    selected_tiers = st.multiselect("Banka grubu", tiers, default=tiers, key="pricing_tier_filter")
     banks = [bank for bank in BANK_ORDER if bank in set(pricing.loc[pricing["institution_tier"].isin(selected_tiers), "institution_name"])]
     families = sorted(pricing["fee_family"].unique())
     confidence = sorted(pricing["confidence_level"].unique())
-    selected_banks = st.multiselect("Banka", banks, default=banks)
-    selected_families = st.multiselect("Ücret ailesi", families, default=families)
-    selected_confidence = st.multiselect("Güven", confidence, default=confidence)
+    sync_multiselect_options("pricing_bank_filter", banks)
+    sync_multiselect_options("pricing_fee_family_filter", families)
+    sync_multiselect_options("pricing_confidence_filter", confidence)
+    selected_banks = st.multiselect("Banka", banks, default=banks, key="pricing_bank_filter")
+    selected_families = st.multiselect("Ücret ailesi", families, default=families, key="pricing_fee_family_filter")
+    selected_confidence = st.multiselect("Güven", confidence, default=confidence, key="pricing_confidence_filter")
 
 filtered = pricing[
     pricing["institution_tier"].isin(selected_tiers)
