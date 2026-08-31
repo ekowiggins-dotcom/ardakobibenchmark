@@ -27,6 +27,7 @@ BANK_ORDER = [
     "Alternatif Bank",
 ]
 MATRIX_BUCKETS = ["Kartlar", "POS", "Yurt içi transfer", "Yurt dışı / SWIFT", "Paket / Kredi"]
+MATRIX_PREVIEW_LIMIT = 3
 
 
 def esc(value: object) -> str:
@@ -83,6 +84,27 @@ def compact_fee_label(row: pd.Series) -> str:
         return ""
     parts = [part for part in [item, value] if part]
     return " — ".join(parts)
+
+
+def render_matrix_items(rows: list[pd.Series]) -> str:
+    visible = rows[:MATRIX_PREVIEW_LIMIT]
+    hidden = rows[MATRIX_PREVIEW_LIMIT:]
+    items = "".join(
+        f'<div class="pricing-matrix-item">{esc(compact_fee_label(row))}</div>'
+        for row in visible
+    )
+    if hidden:
+        hidden_items = "".join(
+            f'<div class="pricing-matrix-item pricing-matrix-item-muted">{esc(compact_fee_label(row))}</div>'
+            for row in hidden
+        )
+        items += (
+            '<details class="pricing-matrix-more">'
+            f'<summary>+{len(hidden)} kalem</summary>'
+            f'<div class="pricing-matrix-hidden">{hidden_items}</div>'
+            '</details>'
+        )
+    return items
 
 
 def sync_multiselect_options(key: str, options: list[str]) -> None:
@@ -248,19 +270,15 @@ def inject_css() -> None:
 
         .pricing-matrix {
             display: grid;
-            grid-template-columns: minmax(140px, 0.85fr) repeat(5, minmax(150px, 1fr));
+            grid-template-columns: minmax(140px, 0.75fr) repeat(var(--pricing-column-count, 5), minmax(175px, 1fr));
             overflow-x: auto;
         }
 
         .pricing-matrix-cell {
-            min-height: 76px;
-            padding: 0.72rem 0.82rem;
+            min-height: 68px;
+            padding: 0.64rem 0.76rem;
             border-right: 1px solid var(--ak-border);
             border-bottom: 1px solid var(--ak-border);
-        }
-
-        .pricing-matrix-cell:nth-child(6n) {
-            border-right: 0;
         }
 
         .pricing-matrix-header {
@@ -288,21 +306,58 @@ def inject_css() -> None:
 
         .pricing-matrix-items {
             display: grid;
-            gap: 0.36rem;
+            gap: 0.3rem;
         }
 
         .pricing-matrix-item {
             color: var(--ak-text);
-            font-size: 0.76rem;
+            font-size: 0.72rem;
             font-weight: 750;
-            line-height: 1.28;
+            line-height: 1.22;
             border-bottom: 1px solid var(--ak-border);
-            padding-bottom: 0.34rem;
+            padding-bottom: 0.3rem;
         }
 
         .pricing-matrix-item:last-child {
             border-bottom: 0;
             padding-bottom: 0;
+        }
+
+        .pricing-matrix-item-muted {
+            color: var(--ak-secondary);
+        }
+
+        .pricing-matrix-more {
+            margin-top: 0.12rem;
+        }
+
+        .pricing-matrix-more summary {
+            cursor: pointer;
+            color: var(--ak-text);
+            font-size: 0.68rem;
+            font-weight: 900;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            list-style: none;
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid var(--ak-border);
+            border-radius: 999px;
+            background: var(--ak-soft);
+            padding: 0.18rem 0.5rem;
+        }
+
+        .pricing-matrix-more summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .pricing-matrix-more[open] summary {
+            margin-bottom: 0.36rem;
+        }
+
+        .pricing-matrix-hidden {
+            display: grid;
+            gap: 0.3rem;
         }
 
         .pricing-matrix-empty {
@@ -343,6 +398,20 @@ def inject_css() -> None:
             text-decoration: underline !important;
         }
 
+        section[data-testid="stSidebar"] [data-baseweb="tag"] {
+            background: var(--ak-soft) !important;
+            border: 1px solid var(--ak-border) !important;
+            color: var(--ak-text) !important;
+        }
+
+        section[data-testid="stSidebar"] [data-baseweb="tag"] span {
+            color: var(--ak-text) !important;
+        }
+
+        section[data-testid="stSidebar"] [data-baseweb="tag"] svg {
+            fill: var(--ak-muted) !important;
+        }
+
         @media (max-width: 1200px) {
             .pricing-kpi-grid,
             .pricing-bank-grid {
@@ -357,7 +426,7 @@ def inject_css() -> None:
             }
 
             .pricing-matrix {
-                grid-template-columns: minmax(132px, 0.8fr) repeat(5, minmax(190px, 1fr));
+                grid-template-columns: minmax(132px, 0.8fr) repeat(var(--pricing-column-count, 5), minmax(190px, 1fr));
             }
         }
         </style>
@@ -422,16 +491,17 @@ def render_bank_cards(df: pd.DataFrame, selected_banks: list[str]) -> None:
     st.markdown(f'<div class="pricing-bank-grid">{"".join(cards)}</div>', unsafe_allow_html=True)
 
 
-def render_tier_matrix(df: pd.DataFrame, tier: str) -> None:
+def render_tier_matrix(df: pd.DataFrame, tier: str, buckets: list[str]) -> None:
     tier_df = df[df["institution_tier"].eq(tier)].copy()
     if tier_df.empty:
         return
     tier_df["matrix_bucket"] = tier_df.apply(matrix_bucket, axis=1)
     banks = [bank for bank in BANK_ORDER if bank in set(tier_df["institution_name"])]
+    visible_row_count = len(tier_df[tier_df["matrix_bucket"].isin(buckets)])
     cells = ['<div class="pricing-matrix-cell pricing-matrix-header">Banka</div>']
     cells.extend(
         f'<div class="pricing-matrix-cell pricing-matrix-header">{esc(bucket)}</div>'
-        for bucket in MATRIX_BUCKETS
+        for bucket in buckets
     )
     for bank in banks:
         bank_df = tier_df[tier_df["institution_name"].eq(bank)]
@@ -441,15 +511,12 @@ def render_tier_matrix(df: pd.DataFrame, tier: str) -> None:
             f'<div class="pricing-matrix-tier">{esc(tier)}</div>'
             '</div>'
         )
-        for bucket in MATRIX_BUCKETS:
+        for bucket in buckets:
             bucket_df = bank_df[bank_df["matrix_bucket"].eq(bucket)]
             if bucket_df.empty:
                 cells.append('<div class="pricing-matrix-cell"><span class="pricing-matrix-empty">Kayıt yok</span></div>')
                 continue
-            items = "".join(
-                f'<div class="pricing-matrix-item">{esc(compact_fee_label(row))}</div>'
-                for _, row in bucket_df.iterrows()
-            )
+            items = render_matrix_items([row for _, row in bucket_df.iterrows()])
             cells.append(f'<div class="pricing-matrix-cell"><div class="pricing-matrix-items">{items}</div></div>')
     st.markdown(
         (
@@ -457,9 +524,9 @@ def render_tier_matrix(df: pd.DataFrame, tier: str) -> None:
             '<div class="pricing-tier-head">'
             f'<div><div class="pricing-tier-title">{esc(tier)} ücret-komisyon matrisi</div>'
             '<div class="pricing-tier-copy">Banka satırları; kart, POS, transfer ve paket/kredi kalemleri yan yana okunur.</div></div>'
-            f'<span class="pricing-pill">{len(banks)} banka · {len(tier_df)} satır</span>'
+            f'<span class="pricing-pill">{len(banks)} banka · {visible_row_count} görünür satır</span>'
             '</div>'
-            f'<div class="pricing-matrix">{"".join(cells)}</div>'
+            f'<div class="pricing-matrix" style="--pricing-column-count: {len(buckets)};">{"".join(cells)}</div>'
             '</div>'
         ),
         unsafe_allow_html=True,
@@ -508,8 +575,15 @@ if filtered.empty:
 render_kpis(filtered)
 
 st.markdown('<div class="pricing-section-label">Tier bazlı ana matris</div>', unsafe_allow_html=True)
+matrix_focus = st.radio(
+    "Matris odağı",
+    ["Tüm kalemler", *MATRIX_BUCKETS],
+    horizontal=True,
+    label_visibility="collapsed",
+)
+visible_buckets = MATRIX_BUCKETS if matrix_focus == "Tüm kalemler" else [matrix_focus]
 for tier in TIER_ORDER:
-    render_tier_matrix(filtered, tier)
+    render_tier_matrix(filtered, tier, visible_buckets)
 
 st.markdown('<div class="pricing-section-label">Banka bazlı hızlı okuma</div>', unsafe_allow_html=True)
 render_bank_cards(filtered, selected_banks)
