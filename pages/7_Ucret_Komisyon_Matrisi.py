@@ -17,6 +17,7 @@ apply_akbank_theme()
 DATA_PATH = Path("data/pricing_matrix.csv")
 TIER_ORDER = ["Tier 1", "Tier 2"]
 BANK_ORDER = [
+    "Akbank",
     "Garanti BBVA",
     "İş Bankası",
     "Yapı Kredi",
