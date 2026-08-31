@@ -95,18 +95,29 @@ def compact_fee_label(row: pd.Series) -> str:
     return " — ".join(parts)
 
 
+def render_matrix_item(row: pd.Series, muted: bool = False) -> str:
+    label = esc(compact_fee_label(row))
+    source_url = str(row.get("source_url", "")).strip()
+    classes = "pricing-matrix-item"
+    if muted:
+        classes += " pricing-matrix-item-muted"
+    if source_url:
+        return (
+            f'<a class="{classes} pricing-matrix-link" '
+            f'href="{esc(source_url)}" target="_blank" rel="noopener noreferrer">'
+            f"<span>{label}</span>"
+            '<span class="pricing-matrix-link-icon">↗</span>'
+            "</a>"
+        )
+    return f'<div class="{classes}">{label}</div>'
+
+
 def render_matrix_items(rows: list[pd.Series]) -> str:
     visible = rows[:MATRIX_PREVIEW_LIMIT]
     hidden = rows[MATRIX_PREVIEW_LIMIT:]
-    items = "".join(
-        f'<div class="pricing-matrix-item">{esc(compact_fee_label(row))}</div>'
-        for row in visible
-    )
+    items = "".join(render_matrix_item(row) for row in visible)
     if hidden:
-        hidden_items = "".join(
-            f'<div class="pricing-matrix-item pricing-matrix-item-muted">{esc(compact_fee_label(row))}</div>'
-            for row in hidden
-        )
+        hidden_items = "".join(render_matrix_item(row, muted=True) for row in hidden)
         items += (
             '<details class="pricing-matrix-more">'
             f'<summary>+{len(hidden)} kalem</summary>'
@@ -330,6 +341,33 @@ def inject_css() -> None:
         .pricing-matrix-item:last-child {
             border-bottom: 0;
             padding-bottom: 0;
+        }
+
+        .pricing-matrix-link {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            gap: 0.45rem;
+            text-decoration: none !important;
+            transition: color 120ms ease;
+        }
+
+        .pricing-matrix-link:hover {
+            color: var(--ak-red-dark);
+            text-decoration: underline !important;
+            text-underline-offset: 3px;
+        }
+
+        .pricing-matrix-link-icon {
+            color: var(--ak-muted);
+            flex: 0 0 auto;
+            font-size: 0.66rem;
+            line-height: 1;
+            margin-top: 0.08rem;
+        }
+
+        .pricing-matrix-link:hover .pricing-matrix-link-icon {
+            color: var(--ak-red-dark);
         }
 
         .pricing-matrix-item-muted {
