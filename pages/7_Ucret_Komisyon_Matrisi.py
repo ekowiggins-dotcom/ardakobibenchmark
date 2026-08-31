@@ -275,6 +275,13 @@ def inject_css() -> None:
             font-size: 0.78rem;
             font-weight: 750;
             line-height: 1.35;
+            border-bottom: 1px solid var(--ak-border);
+            padding-bottom: 0.42rem;
+        }
+
+        .pricing-matrix-item:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
         }
 
         .pricing-matrix-empty {
@@ -420,11 +427,9 @@ def render_tier_matrix(df: pd.DataFrame, tier: str) -> None:
                 continue
             items = "".join(
                 f'<div class="pricing-matrix-item">{esc(compact_fee_label(row))}</div>'
-                for _, row in bucket_df.head(3).iterrows()
+                for _, row in bucket_df.iterrows()
             )
-            remaining = len(bucket_df) - 3
-            more = f'<div class="pricing-matrix-empty">+{remaining} kayıt</div>' if remaining > 0 else ""
-            cells.append(f'<div class="pricing-matrix-cell"><div class="pricing-matrix-items">{items}{more}</div></div>')
+            cells.append(f'<div class="pricing-matrix-cell"><div class="pricing-matrix-items">{items}</div></div>')
     st.markdown(
         (
             '<div class="pricing-tier-panel">'
