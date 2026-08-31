@@ -56,7 +56,7 @@ def inject_css() -> None:
         <style>
         .offer-kpi-grid {
             display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-template-columns: repeat(5, minmax(0, 1fr));
             gap: 1rem;
             margin: 0.2rem 0 1.35rem;
         }
@@ -131,7 +131,8 @@ def inject_css() -> None:
 
         .offer-count-pill,
         .offer-type-pill,
-        .offer-status-pill {
+        .offer-status-pill,
+        .offer-dob-pill {
             display: inline-flex;
             align-items: center;
             border: 1px solid var(--ak-border);
@@ -148,6 +149,12 @@ def inject_css() -> None:
             background: var(--ak-chip-bg);
             color: var(--ak-chip-text);
             border-color: var(--ak-chip-border);
+        }
+
+        .offer-dob-pill {
+            background: var(--ak-surface);
+            color: var(--ak-text);
+            border-color: var(--ak-border);
         }
 
         .offer-bank-list {
@@ -242,10 +249,12 @@ def render_kpis(df: pd.DataFrame) -> None:
     active_count = int(df.apply(offer_is_active, axis=1).sum()) if not df.empty else 0
     faizsiz_count = int(df["offer_type"].str.contains("Faizsiz", case=False, na=False).sum())
     free_tx_count = int(df["fee_waiver"].str.strip().astype(bool).sum())
+    dob_count = int(df["dob_required"].str.strip().str.casefold().eq("evet").sum())
     checked = sorted({format_date(value) for value in df["last_checked"] if str(value).strip()})
     checked_label = checked[-1] if checked else "Tarih yok"
     cards = [
         ("Aktif teklif", f"{active_count:02d}", "Üç banka kapsamında"),
+        ("DOB şartlı", f"{dob_count:02d}", "Dijital müşteri olma akışı"),
         ("Faizsiz finansman", f"{faizsiz_count:02d}", "Kredi / avans odağı"),
         ("Ücret muafiyeti", f"{free_tx_count:02d}", "EFT, havale, çek, kart"),
         ("Son kontrol", checked_label, "Kaynak doğrulama tarihi"),
@@ -273,6 +282,7 @@ def render_bank_cards(df: pd.DataFrame) -> None:
         for _, row in bank_df.iterrows():
             items.append(
                 '<div class="offer-bank-item">'
+                f'<div class="offer-dob-pill">DOB: {esc(row.get("dob_required"))}</div>'
                 f'<div class="offer-title">{esc(row.get("offer_title"))}</div>'
                 f'<div class="offer-summary">{esc(row.get("value_summary"))}</div>'
                 '</div>'
@@ -314,6 +324,7 @@ def render_offer_details(df: pd.DataFrame) -> None:
                     <div style="display:flex; gap:.45rem; flex-wrap:wrap; justify-content:flex-end;">
                       <span class="offer-type-pill">{esc(row.get("offer_type"))}</span>
                       <span class="offer-status-pill">{esc(row.get("status"))}</span>
+                      <span class="offer-dob-pill">DOB: {esc(row.get("dob_required"))}</span>
                     </div>
                   </div>
                   <div class="offer-detail-grid">
@@ -326,6 +337,8 @@ def render_offer_details(df: pd.DataFrame) -> None:
                     </div>
                     <div class="offer-detail-block">
                       <div class="offer-detail-label">Koşul ve Akbank notu</div>
+                      <div class="offer-detail-copy"><strong>DOB şartı:</strong> {esc(row.get("dob_required"))} · {esc(row.get("dob_channel"))}</div>
+                      <div class="offer-detail-copy"><strong>DOB kanıtı:</strong> {esc(row.get("dob_evidence"))}</div>
                       <div class="offer-detail-copy"><strong>Gerekli aksiyon:</strong> {esc(row.get("required_action"))}</div>
                       <div class="offer-detail-copy"><strong>Uygunluk:</strong> {esc(row.get("eligibility"))}</div>
                       <div class="offer-detail-copy"><strong>Akbank için:</strong> {esc(row.get("akbank_implication"))}</div>
@@ -359,14 +372,17 @@ with st.sidebar:
     banks = sorted(offers["institution_name"].unique())
     types = sorted(offers["offer_type"].unique())
     statuses = sorted(offers["status"].unique())
+    dob_options = sorted(offers["dob_required"].unique())
     selected_banks = st.multiselect("Banka", banks, default=banks)
     selected_types = st.multiselect("Teklif tipi", types, default=types)
     selected_statuses = st.multiselect("Durum", statuses, default=statuses)
+    selected_dob = st.multiselect("DOB şartı", dob_options, default=dob_options)
 
 filtered = offers[
     offers["institution_name"].isin(selected_banks)
     & offers["offer_type"].isin(selected_types)
     & offers["status"].isin(selected_statuses)
+    & offers["dob_required"].isin(selected_dob)
 ].copy()
 
 if filtered.empty:
@@ -386,6 +402,8 @@ matrix_cols = [
     "institution_name",
     "offer_type",
     "target_segment",
+    "dob_required",
+    "dob_channel",
     "amount",
     "term",
     "fee_waiver",
@@ -398,6 +416,8 @@ st.dataframe(
             "institution_name": "Banka",
             "offer_type": "Teklif tipi",
             "target_segment": "Hedef segment",
+            "dob_required": "DOB şartı",
+            "dob_channel": "DOB kanalı",
             "amount": "Tutar / fayda",
             "term": "Süre",
             "fee_waiver": "Ücret muafiyeti",
