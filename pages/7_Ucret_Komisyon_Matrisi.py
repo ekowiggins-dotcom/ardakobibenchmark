@@ -1,0 +1,358 @@
+from __future__ import annotations
+
+import html
+import re
+from pathlib import Path
+
+import pandas as pd
+import streamlit as st
+
+from utils.ui_theme import apply_akbank_theme, render_page_header
+
+
+st.set_page_config(page_title="Ücret Komisyon Matrisi", layout="wide")
+apply_akbank_theme()
+
+
+DATA_PATH = Path("data/pricing_matrix.csv")
+TIER_ORDER = ["Tier 1", "Tier 2"]
+BANK_ORDER = [
+    "Garanti BBVA",
+    "İş Bankası",
+    "Yapı Kredi",
+    "DenizBank",
+    "Enpara",
+    "QNB Finansbank",
+    "Odeabank",
+    "Alternatif Bank",
+]
+
+
+def esc(value: object) -> str:
+    return html.escape(str(value or "").strip())
+
+
+def read_pricing() -> pd.DataFrame:
+    if not DATA_PATH.exists():
+        return pd.DataFrame()
+    df = pd.read_csv(DATA_PATH, dtype=str).fillna("")
+    return df[df["institution_name"].isin(BANK_ORDER)].copy()
+
+
+def tl_amount(value: object) -> float | None:
+    text = str(value or "")
+    if "%" in text or "Ücretsiz" in text or "ücretsiz" in text:
+        return None
+    match = re.search(r"(\d+(?:[.,]\d+)?)", text.replace(".", ""))
+    if not match:
+        return None
+    return float(match.group(1).replace(",", "."))
+
+
+def zero_or_free(value: object) -> bool:
+    text = str(value or "").casefold()
+    return "ücretsiz" in text or "0 tl" in text or text.strip() == "0"
+
+
+def inject_css() -> None:
+    st.markdown(
+        """
+        <style>
+        .pricing-kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 1rem;
+            margin: 0.2rem 0 1.35rem;
+        }
+
+        .pricing-kpi,
+        .pricing-panel,
+        .pricing-bank-card {
+            background: var(--ak-surface);
+            border: 1px solid var(--ak-border);
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+        }
+
+        .pricing-kpi {
+            min-height: 118px;
+            padding: 1.1rem 1.2rem;
+        }
+
+        .pricing-label,
+        .pricing-card-label {
+            color: var(--ak-muted);
+            font-size: 0.7rem;
+            font-weight: 850;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
+        }
+
+        .pricing-value {
+            color: var(--ak-text);
+            font-size: 2.35rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-top: 0.55rem;
+        }
+
+        .pricing-note {
+            color: var(--ak-secondary);
+            font-size: 0.82rem;
+            line-height: 1.45;
+            margin-top: 0.55rem;
+        }
+
+        .pricing-bank-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 1rem;
+            margin: 0.8rem 0 1.45rem;
+        }
+
+        .pricing-bank-card {
+            padding: 1.05rem 1.1rem;
+        }
+
+        .pricing-bank-head {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            align-items: start;
+            margin-bottom: 0.9rem;
+        }
+
+        .pricing-bank-name {
+            color: var(--ak-text);
+            font-size: 1rem;
+            font-weight: 850;
+        }
+
+        .pricing-pill {
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid var(--ak-border);
+            border-radius: 999px;
+            background: var(--ak-soft);
+            color: var(--ak-text);
+            font-size: 0.72rem;
+            font-weight: 800;
+            padding: 0.18rem 0.52rem;
+            white-space: nowrap;
+        }
+
+        .pricing-bank-list {
+            display: grid;
+            gap: 0.72rem;
+        }
+
+        .pricing-bank-item {
+            border-top: 1px solid var(--ak-border);
+            padding-top: 0.72rem;
+        }
+
+        .pricing-item-title {
+            color: var(--ak-text);
+            font-size: 0.9rem;
+            font-weight: 850;
+            line-height: 1.35;
+        }
+
+        .pricing-item-meta {
+            color: var(--ak-secondary);
+            font-size: 0.82rem;
+            line-height: 1.45;
+            margin-top: 0.28rem;
+        }
+
+        .pricing-panel {
+            padding: 1.2rem 1.3rem;
+            margin-bottom: 1.15rem;
+        }
+
+        .pricing-panel-title {
+            color: var(--ak-text);
+            font-size: 1.18rem;
+            font-weight: 900;
+            margin-bottom: 0.25rem;
+        }
+
+        .pricing-panel-copy {
+            color: var(--ak-secondary);
+            font-size: 0.92rem;
+            line-height: 1.55;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-source a {
+            color: var(--ak-text) !important;
+            font-weight: 800;
+            text-decoration: none !important;
+        }
+
+        .pricing-source a:hover {
+            color: var(--ak-red-dark) !important;
+            text-decoration: underline !important;
+        }
+
+        @media (max-width: 1200px) {
+            .pricing-kpi-grid,
+            .pricing-bank-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 700px) {
+            .pricing-kpi-grid,
+            .pricing-bank-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def render_kpis(df: pd.DataFrame) -> None:
+    bank_count = df["institution_name"].nunique()
+    row_count = len(df)
+    free_count = int(df["fee_value"].apply(zero_or_free).sum())
+    card_fees = [amount for amount in df["fee_value"].apply(tl_amount).tolist() if amount is not None]
+    max_fee = max(card_fees) if card_fees else 0
+    latest_checked = sorted({value for value in df["update_date"] if str(value).strip()})
+    latest_label = latest_checked[-1] if latest_checked else "Canlı kaynak"
+    cards = [
+        ("Banka kapsamı", f"{bank_count:02d}", "Tier 1 + Tier 2"),
+        ("Ücret satırı", f"{row_count:02d}", "Kaynak destekli kayıt"),
+        ("0 TL / ücretsiz", f"{free_count:02d}", "Masrafsız avantaj"),
+        ("En yüksek TL ücret", f"{max_fee:,.0f} TL".replace(",", "."), "Liste ücretleri içinde"),
+        ("Son kaynak tarihi", latest_label, "ÜVEK güncelleme"),
+    ]
+    html_cards = "".join(
+        (
+            '<div class="pricing-kpi">'
+            f'<div class="pricing-label">{esc(label)}</div>'
+            f'<div class="pricing-value">{esc(value)}</div>'
+            f'<div class="pricing-note">{esc(note)}</div>'
+            '</div>'
+        )
+        for label, value, note in cards
+    )
+    st.markdown(f'<div class="pricing-kpi-grid">{html_cards}</div>', unsafe_allow_html=True)
+
+
+def render_bank_cards(df: pd.DataFrame, selected_banks: list[str]) -> None:
+    cards: list[str] = []
+    for bank in selected_banks:
+        bank_df = df[df["institution_name"].eq(bank)]
+        if bank_df.empty:
+            continue
+        free_count = int(bank_df["fee_value"].apply(zero_or_free).sum())
+        rows = []
+        for _, row in bank_df.head(3).iterrows():
+            rows.append(
+                '<div class="pricing-bank-item">'
+                f'<div class="pricing-item-title">{esc(row.get("fee_item"))}</div>'
+                f'<div class="pricing-item-meta">{esc(row.get("fee_value"))} · {esc(row.get("fee_period"))}</div>'
+                '</div>'
+            )
+        cards.append(
+            '<div class="pricing-bank-card">'
+            '<div class="pricing-bank-head">'
+            f'<div><div class="pricing-card-label">{esc(bank_df.iloc[0].get("institution_tier"))}</div>'
+            f'<div class="pricing-bank-name">{esc(bank)}</div></div>'
+            f'<span class="pricing-pill">{len(bank_df)} satır · {free_count} ücretsiz</span>'
+            '</div>'
+            f'<div class="pricing-bank-list">{"".join(rows)}</div>'
+            '</div>'
+        )
+    st.markdown(f'<div class="pricing-bank-grid">{"".join(cards)}</div>', unsafe_allow_html=True)
+
+
+inject_css()
+render_page_header(
+    "Ücret Komisyon Matrisi",
+    "Tier 1 ve Tier 2 bankalarda KOBİ/ticari müşteri maliyetlerini etkileyen kart, transfer, POS ve paket ücretleri.",
+)
+
+pricing = read_pricing()
+if pricing.empty:
+    st.info("Henüz ücret-komisyon verisi yok.")
+    st.stop()
+    raise SystemExit
+
+with st.sidebar:
+    st.header("ÜVEK Filtreleri")
+    tiers = [tier for tier in TIER_ORDER if tier in set(pricing["institution_tier"])]
+    selected_tiers = st.multiselect("Banka grubu", tiers, default=tiers)
+    banks = [bank for bank in BANK_ORDER if bank in set(pricing.loc[pricing["institution_tier"].isin(selected_tiers), "institution_name"])]
+    families = sorted(pricing["fee_family"].unique())
+    confidence = sorted(pricing["confidence_level"].unique())
+    selected_banks = st.multiselect("Banka", banks, default=banks)
+    selected_families = st.multiselect("Ücret ailesi", families, default=families)
+    selected_confidence = st.multiselect("Güven", confidence, default=confidence)
+
+filtered = pricing[
+    pricing["institution_tier"].isin(selected_tiers)
+    & pricing["institution_name"].isin(selected_banks)
+    & pricing["fee_family"].isin(selected_families)
+    & pricing["confidence_level"].isin(selected_confidence)
+].copy()
+
+if filtered.empty:
+    st.warning("Seçili filtrelerle eşleşen ücret satırı yok.")
+    st.stop()
+    raise SystemExit
+
+render_kpis(filtered)
+render_bank_cards(filtered, selected_banks)
+
+st.subheader("Ücret-Komisyon Karşılaştırması")
+display_cols = [
+    "institution_name",
+    "institution_tier",
+    "fee_family",
+    "fee_item",
+    "product_or_channel",
+    "fee_value",
+    "fee_basis",
+    "fee_period",
+    "update_date",
+    "confidence_level",
+]
+st.dataframe(
+    filtered[display_cols].rename(
+        columns={
+            "institution_name": "Banka",
+            "institution_tier": "Grup",
+            "fee_family": "Ücret ailesi",
+            "fee_item": "Ücret kalemi",
+            "product_or_channel": "Ürün / kanal",
+            "fee_value": "Ücret / oran",
+            "fee_basis": "Baz",
+            "fee_period": "Periyot",
+            "update_date": "Güncelleme",
+            "confidence_level": "Güven",
+        }
+    ),
+    use_container_width=True,
+    hide_index=True,
+)
+
+st.subheader("Kaynak ve Okuma Notları")
+for _, row in filtered.iterrows():
+    source = str(row.get("source_url", "")).strip()
+    with st.expander(f'{row.get("institution_name")} · {row.get("fee_item")} · {row.get("fee_value")}', expanded=False):
+        st.markdown(
+            f"""
+            <div class="pricing-panel">
+              <div class="pricing-panel-title">{esc(row.get("fee_item"))}</div>
+              <div class="pricing-panel-copy">{esc(row.get("market_read"))}</div>
+              <div class="pricing-item-meta"><strong>Kapsam:</strong> {esc(row.get("customer_segment"))}</div>
+              <div class="pricing-item-meta"><strong>Not:</strong> {esc(row.get("notes"))}</div>
+              <div class="pricing-item-meta pricing-source"><strong>Kaynak:</strong> {f'<a href="{esc(source)}" target="_blank">resmi kaynağı aç</a>' if source else "Kaynak yok"}</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )

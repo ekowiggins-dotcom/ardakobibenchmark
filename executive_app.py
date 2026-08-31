@@ -22,6 +22,10 @@ def render_yeni_musteri_teklifleri() -> None:
     run_streamlit_page_without_page_config(ROOT / "pages" / "6_Yeni_Musteri_Teklifleri.py")
 
 
+def render_ucret_komisyon_matrisi() -> None:
+    run_streamlit_page_without_page_config(ROOT / "pages" / "7_Ucret_Komisyon_Matrisi.py")
+
+
 st.set_page_config(
     page_title="Akbank Yönetici Özeti",
     layout="wide",
@@ -44,9 +48,14 @@ yeni_musteri_teklifleri_page = st.Page(
     title="Yeni Müşteri Teklifleri",
     url_path="yeni-musteri-teklifleri",
 )
+ucret_komisyon_matrisi_page = st.Page(
+    render_ucret_komisyon_matrisi,
+    title="Ücret Komisyon Matrisi",
+    url_path="ucret-komisyon-matrisi",
+)
 
 page = st.navigation(
-    [yonetici_page, tum_gelismeler_page, yeni_musteri_teklifleri_page],
+    [yonetici_page, tum_gelismeler_page, yeni_musteri_teklifleri_page, ucret_komisyon_matrisi_page],
     position="sidebar",
     expanded=True,
 )
@@ -56,6 +65,7 @@ active_nav_key = {
     "Yönetici Özeti": "executive_nav_radar",
     "Tüm Gelişmeler": "executive_nav_all",
     "Yeni Müşteri Teklifleri": "executive_nav_new_customer",
+    "Ücret Komisyon Matrisi": "executive_nav_pricing",
 }.get(current_title, "executive_nav_radar")
 
 st.markdown(
@@ -149,7 +159,7 @@ st.markdown(
         .st-key-executive_page_switcher [data-baseweb="button-group"] {
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 0.5rem;
         }
 
@@ -181,7 +191,7 @@ st.markdown(
 with st.container(key="executive_page_switcher"):
     selected_page = st.segmented_control(
         "Sayfa",
-        ["Yönetici Özeti", "Tüm Gelişmeler", "Yeni Müşteri Teklifleri"],
+        ["Yönetici Özeti", "Tüm Gelişmeler", "Yeni Müşteri Teklifleri", "Ücret Komisyon Matrisi"],
         default=current_title,
         key="executive_nav_segment",
         label_visibility="collapsed",
@@ -193,5 +203,7 @@ if selected_page == "Tüm Gelişmeler" and current_title != "Tüm Gelişmeler":
     st.switch_page(tum_gelismeler_page)
 if selected_page == "Yeni Müşteri Teklifleri" and current_title != "Yeni Müşteri Teklifleri":
     st.switch_page(yeni_musteri_teklifleri_page)
+if selected_page == "Ücret Komisyon Matrisi" and current_title != "Ücret Komisyon Matrisi":
+    st.switch_page(ucret_komisyon_matrisi_page)
 
 page.run()
