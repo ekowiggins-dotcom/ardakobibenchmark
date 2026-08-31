@@ -26,7 +26,7 @@ BANK_ORDER = [
     "Odeabank",
     "Alternatif Bank",
 ]
-MATRIX_BUCKETS = ["Kartlar", "POS", "Transfer", "Paket / Kredi"]
+MATRIX_BUCKETS = ["Kartlar", "POS", "Yurt içi transfer", "Yurt dışı / SWIFT", "Paket / Kredi"]
 
 
 def esc(value: object) -> str:
@@ -55,12 +55,17 @@ def zero_or_free(value: object) -> bool:
     return "ücretsiz" in text or "0 tl" in text or text.strip() == "0"
 
 
-def matrix_bucket(fee_family: object) -> str:
-    text = str(fee_family or "").casefold()
+def matrix_bucket(row: pd.Series) -> str:
+    text = " ".join(
+        str(row.get(column, ""))
+        for column in ["fee_family", "fee_item", "product_or_channel", "fee_basis", "notes"]
+    ).casefold()
     if "pos" in text or "üye işyeri" in text:
         return "POS"
+    if "swift" in text or "yurt dış" in text or "uluslararası" in text or "döviz" in text or "yabancı para" in text:
+        return "Yurt dışı / SWIFT"
     if "havale" in text or "transfer" in text or "eft" in text:
-        return "Transfer"
+        return "Yurt içi transfer"
     if "paket" in text or "kredi tahsis" in text or "maaş" in text:
         return "Paket / Kredi"
     return "Kartlar"
@@ -227,7 +232,7 @@ def inject_css() -> None:
 
         .pricing-matrix {
             display: grid;
-            grid-template-columns: minmax(140px, 0.85fr) repeat(4, minmax(150px, 1fr));
+            grid-template-columns: minmax(140px, 0.85fr) repeat(5, minmax(150px, 1fr));
             overflow-x: auto;
         }
 
@@ -238,7 +243,7 @@ def inject_css() -> None:
             border-bottom: 1px solid var(--ak-border);
         }
 
-        .pricing-matrix-cell:nth-child(5n) {
+        .pricing-matrix-cell:nth-child(6n) {
             border-right: 0;
         }
 
@@ -336,7 +341,7 @@ def inject_css() -> None:
             }
 
             .pricing-matrix {
-                grid-template-columns: minmax(132px, 0.8fr) repeat(4, minmax(190px, 1fr));
+                grid-template-columns: minmax(132px, 0.8fr) repeat(5, minmax(190px, 1fr));
             }
         }
         </style>
@@ -405,7 +410,7 @@ def render_tier_matrix(df: pd.DataFrame, tier: str) -> None:
     tier_df = df[df["institution_tier"].eq(tier)].copy()
     if tier_df.empty:
         return
-    tier_df["matrix_bucket"] = tier_df["fee_family"].apply(matrix_bucket)
+    tier_df["matrix_bucket"] = tier_df.apply(matrix_bucket, axis=1)
     banks = [bank for bank in BANK_ORDER if bank in set(tier_df["institution_name"])]
     cells = ['<div class="pricing-matrix-cell pricing-matrix-header">Banka</div>']
     cells.extend(
