@@ -15,6 +15,9 @@ apply_akbank_theme()
 
 DATA_PATH = Path("data/new_customer_offers.csv")
 TIER_1_BANKS = ["Garanti BBVA", "İş Bankası", "Yapı Kredi"]
+TIER_2_BANKS = ["DenizBank", "Enpara", "QNB Finansbank", "Odeabank", "Alternatif Bank"]
+BANK_TIERS = {bank: "Tier 1" for bank in TIER_1_BANKS} | {bank: "Tier 2" for bank in TIER_2_BANKS}
+ALL_BANKS = TIER_1_BANKS + TIER_2_BANKS
 
 
 def esc(value: object) -> str:
@@ -25,7 +28,9 @@ def read_offers() -> pd.DataFrame:
     if not DATA_PATH.exists():
         return pd.DataFrame()
     df = pd.read_csv(DATA_PATH, dtype=str).fillna("")
-    return df[df["institution_name"].isin(TIER_1_BANKS)].copy()
+    if "institution_tier" not in df.columns:
+        df["institution_tier"] = df["institution_name"].map(BANK_TIERS).fillna("Belirsiz")
+    return df[df["institution_name"].isin(ALL_BANKS)].copy()
 
 
 def status_rank(status: str) -> int:
@@ -130,6 +135,7 @@ def inject_css() -> None:
         }
 
         .offer-count-pill,
+        .offer-tier-pill,
         .offer-type-pill,
         .offer-status-pill,
         .offer-dob-pill {
@@ -149,6 +155,10 @@ def inject_css() -> None:
             background: var(--ak-chip-bg);
             color: var(--ak-chip-text);
             border-color: var(--ak-chip-border);
+        }
+
+        .offer-tier-pill {
+            background: var(--ak-soft);
         }
 
         .offer-dob-pill {
@@ -245,15 +255,16 @@ def inject_css() -> None:
     )
 
 
-def render_kpis(df: pd.DataFrame) -> None:
+def render_kpis(df: pd.DataFrame, selected_tiers: list[str]) -> None:
     active_count = int(df.apply(offer_is_active, axis=1).sum()) if not df.empty else 0
     faizsiz_count = int(df["offer_type"].str.contains("Faizsiz", case=False, na=False).sum())
     free_tx_count = int(df["fee_waiver"].str.strip().astype(bool).sum())
     dob_count = int(df["dob_required"].str.strip().str.casefold().eq("evet").sum())
     checked = sorted({format_date(value) for value in df["last_checked"] if str(value).strip()})
     checked_label = checked[-1] if checked else "Tarih yok"
+    tier_label = " + ".join(selected_tiers) if selected_tiers else "Seçili kapsam"
     cards = [
-        ("Aktif teklif", f"{active_count:02d}", "Üç banka kapsamında"),
+        ("Aktif teklif", f"{active_count:02d}", tier_label),
         ("DOB şartlı", f"{dob_count:02d}", "Dijital müşteri olma akışı"),
         ("Faizsiz finansman", f"{faizsiz_count:02d}", "Kredi / avans odağı"),
         ("Ücret muafiyeti", f"{free_tx_count:02d}", "EFT, havale, çek, kart"),
@@ -272,9 +283,9 @@ def render_kpis(df: pd.DataFrame) -> None:
     st.markdown(f'<div class="offer-kpi-grid">{html_cards}</div>', unsafe_allow_html=True)
 
 
-def render_bank_cards(df: pd.DataFrame) -> None:
+def render_bank_cards(df: pd.DataFrame, bank_order: list[str]) -> None:
     cards: list[str] = []
-    for bank in TIER_1_BANKS:
+    for bank in bank_order:
         bank_df = df[df["institution_name"].eq(bank)].copy()
         bank_df["_status_rank"] = bank_df["status"].apply(status_rank)
         bank_df = bank_df.sort_values(["_status_rank", "offer_type"], ascending=[False, True])
@@ -292,7 +303,10 @@ def render_bank_cards(df: pd.DataFrame) -> None:
             '<div class="offer-bank-card">'
             '<div class="offer-bank-head">'
             f'<div><div class="offer-card-label">Banka</div><div class="offer-bank-name">{esc(bank)}</div></div>'
+            '<div style="display:flex; gap:.45rem; flex-wrap:wrap; justify-content:flex-end;">'
+            f'<div class="offer-tier-pill">{esc(BANK_TIERS.get(bank, "Belirsiz"))}</div>'
             f'<div class="offer-count-pill">{len(bank_df)} teklif</div>'
+            '</div>'
             '</div>'
             f'<div class="offer-bank-list">{body}</div>'
             '</div>'
@@ -354,7 +368,7 @@ def render_offer_details(df: pd.DataFrame) -> None:
 inject_css()
 render_page_header(
     "Yeni Müşteri Teklifleri",
-    "Tier 1 bankaların yeni tüzel/KOBİ müşteri kazanımı için sunduğu faizsiz finansman, işlem muafiyeti ve ticari kart hoş geldin teklifleri.",
+    "Tier 1 ve Tier 2 bankaların yeni tüzel/KOBİ müşteri kazanımı için sunduğu faizsiz finansman, işlem muafiyeti ve ticari kart teklifleri.",
 )
 
 offers = read_offers()
@@ -369,7 +383,10 @@ offers["_valid_until_dt"] = pd.to_datetime(offers["valid_until"], errors="coerce
 
 with st.sidebar:
     st.header("Teklif Filtreleri")
-    banks = sorted(offers["institution_name"].unique())
+    tiers = [tier for tier in ["Tier 1", "Tier 2"] if tier in set(offers["institution_tier"])]
+    selected_tiers = st.multiselect("Banka grubu", tiers, default=tiers)
+    tier_banks = [bank for bank in ALL_BANKS if BANK_TIERS.get(bank) in selected_tiers]
+    banks = [bank for bank in tier_banks if bank in set(offers["institution_name"])]
     types = sorted(offers["offer_type"].unique())
     statuses = sorted(offers["status"].unique())
     dob_options = sorted(offers["dob_required"].unique())
@@ -379,7 +396,8 @@ with st.sidebar:
     selected_dob = st.multiselect("DOB şartı", dob_options, default=dob_options)
 
 filtered = offers[
-    offers["institution_name"].isin(selected_banks)
+    offers["institution_tier"].isin(selected_tiers)
+    & offers["institution_name"].isin(selected_banks)
     & offers["offer_type"].isin(selected_types)
     & offers["status"].isin(selected_statuses)
     & offers["dob_required"].isin(selected_dob)
@@ -390,8 +408,8 @@ if filtered.empty:
     st.stop()
     raise SystemExit
 
-render_kpis(filtered)
-render_bank_cards(filtered)
+render_kpis(filtered, selected_tiers)
+render_bank_cards(filtered, selected_banks)
 
 st.subheader("Teklif Detayları")
 filtered = filtered.sort_values(["_status_rank", "institution_name", "offer_type"], ascending=[False, True, True])
@@ -400,6 +418,7 @@ render_offer_details(filtered)
 st.subheader("Karşılaştırma Matrisi")
 matrix_cols = [
     "institution_name",
+    "institution_tier",
     "offer_type",
     "target_segment",
     "dob_required",
@@ -414,6 +433,7 @@ st.dataframe(
     filtered[matrix_cols].rename(
         columns={
             "institution_name": "Banka",
+            "institution_tier": "Grup",
             "offer_type": "Teklif tipi",
             "target_segment": "Hedef segment",
             "dob_required": "DOB şartı",
