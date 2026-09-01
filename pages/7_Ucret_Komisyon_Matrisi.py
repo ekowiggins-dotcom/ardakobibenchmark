@@ -127,6 +127,31 @@ def render_matrix_items(rows: list[pd.Series]) -> str:
     return items
 
 
+def matrix_item_sort_key(row: pd.Series, bucket: str, fallback_order: int) -> tuple[int, int]:
+    if bucket != "POS":
+        return (fallback_order, 0)
+    text = " ".join(
+        str(row.get(column, ""))
+        for column in ["fee_family", "fee_item", "product_or_channel", "fee_basis"]
+    ).casefold()
+    if any(token in text for token in ["kampanya", "hoş geldin", "yeni kazanım", "pos'um cepte"]):
+        return (0, fallback_order)
+    if any(token in text for token in ["peşin", "azami", "standart"]):
+        return (1, fallback_order)
+    if "taksit" in text:
+        return (2, fallback_order)
+    return (3, fallback_order)
+
+
+def sort_matrix_bucket(bucket_df: pd.DataFrame, bucket: str) -> pd.DataFrame:
+    ordered = bucket_df.copy()
+    ordered["_matrix_order"] = [
+        matrix_item_sort_key(row, bucket, index)
+        for index, (_, row) in enumerate(ordered.iterrows())
+    ]
+    return ordered.sort_values("_matrix_order").drop(columns=["_matrix_order"])
+
+
 def sync_multiselect_options(key: str, options: list[str]) -> None:
     options_key = f"{key}__options"
     previous_options = st.session_state.get(options_key)
@@ -563,6 +588,7 @@ def render_tier_matrix(df: pd.DataFrame, tier: str, buckets: list[str]) -> None:
             if bucket_df.empty:
                 cells.append('<div class="pricing-matrix-cell"><span class="pricing-matrix-empty">Kayıt yok</span></div>')
                 continue
+            bucket_df = sort_matrix_bucket(bucket_df, bucket)
             items = render_matrix_items([row for _, row in bucket_df.iterrows()])
             cells.append(f'<div class="pricing-matrix-cell"><div class="pricing-matrix-items">{items}</div></div>')
     st.markdown(
