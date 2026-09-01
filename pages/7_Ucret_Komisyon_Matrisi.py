@@ -116,7 +116,7 @@ def matrix_preview_limit(bucket: str) -> int:
     if bucket == "Yurt içi transfer":
         return 6
     if bucket == "Yurt dışı / SWIFT":
-        return 4
+        return 6
     return MATRIX_PREVIEW_LIMIT
 
 
@@ -160,21 +160,27 @@ def matrix_item_sort_key(row: pd.Series, bucket: str, fallback_order: int) -> tu
     if bucket == "Yurt dışı / SWIFT":
         if "gelen" in text:
             return (9, fallback_order)
-        if "0-10.000" in text or "0-12.000" in text or "15.000 tl ve alt" in text:
+        if "şube" in text or "pahalı kanal" in text:
+            return (8, fallback_order)
+        if "visa" in text:
             return (0, fallback_order)
-        if "12.000,01-40.000" in text:
+        if "yurt dışı fast" in text:
             return (1, fallback_order)
-        if "40.000,01-80.000" in text:
+        if "0-10.000" in text or "0-12.000" in text or "15.000 tl ve alt" in text or "0-12 bin" in text:
             return (2, fallback_order)
-        if "80.000,01" in text or "10.000 tl üzeri" in text or "15.000,01" in text:
+        if "12.000,01-40.000" in text or "12-40 bin" in text:
             return (3, fallback_order)
+        if "40.000,01-80.000" in text or "40-80 bin" in text:
+            return (4, fallback_order)
+        if "80.000,01" in text or "80 bin" in text or "10.000 tl üzeri" in text or "15.000,01" in text:
+            return (5, fallback_order)
         if "aynı gün" in text:
-            return (0, fallback_order)
-        if "1 gün" in text:
-            return (1, fallback_order)
-        if "ileri gün" in text:
             return (2, fallback_order)
-        return (4, fallback_order)
+        if "1 gün" in text:
+            return (3, fallback_order)
+        if "ileri gün" in text:
+            return (4, fallback_order)
+        return (6, fallback_order)
     if bucket != "POS":
         return (fallback_order, 0)
     if any(token in text for token in ["kampanya", "hoş geldin", "yeni kazanım", "pos'um cepte"]):
