@@ -57,6 +57,46 @@ def zero_or_free(value: object) -> bool:
     return "ücretsiz" in text or "0 tl" in text or text.strip() == "0"
 
 
+def parse_date(value: object) -> pd.Timestamp | pd.NaT:
+    return pd.to_datetime(str(value or "").strip(), errors="coerce")
+
+
+def format_short_date(value: object) -> str:
+    parsed = parse_date(value)
+    if pd.isna(parsed):
+        return "Tarih yok"
+    return f"{parsed.day:02d}.{parsed.month:02d}"
+
+
+def first_percentage(value: object) -> float | None:
+    match = re.search(r"%\s*(\d+(?:[.,]\d+)?)", str(value or ""))
+    if not match:
+        return None
+    return float(match.group(1).replace(",", "."))
+
+
+def best_new_acquiring_rate(df: pd.DataFrame) -> str:
+    candidates = []
+    for _, row in df.iterrows():
+        if matrix_bucket(row) != "POS":
+            continue
+        text = " ".join(
+            str(row.get(column, ""))
+            for column in ["fee_family", "fee_item", "fee_basis", "product_or_channel"]
+        ).casefold()
+        if "yeni kazanım" not in text or "kredi kart" not in text or "peşin" not in text:
+            continue
+        if "sektör" in text:
+            continue
+        rate = first_percentage(row.get("fee_value"))
+        if rate is not None:
+            candidates.append(rate)
+    if not candidates:
+        return "Veri yok"
+    best = min(candidates)
+    return f"%{best:.2f}".replace(".", ",")
+
+
 def matrix_bucket(row: pd.Series) -> str:
     fee_family = str(row.get("fee_family", "")).casefold()
     if "pos" in fee_family or "üye işyeri" in fee_family:
@@ -602,16 +642,15 @@ def render_kpis(df: pd.DataFrame) -> None:
     bank_count = df["institution_name"].nunique()
     row_count = len(df)
     free_count = int(df["fee_value"].apply(zero_or_free).sum())
-    card_fees = [amount for amount in df["fee_value"].apply(tl_amount).tolist() if amount is not None]
-    max_fee = max(card_fees) if card_fees else 0
-    latest_checked = sorted({value for value in df["update_date"] if str(value).strip()})
-    latest_label = latest_checked[-1] if latest_checked else "Canlı kaynak"
+    checked_dates = [parse_date(value) for value in df["update_date"] if str(value).strip()]
+    latest_checked = max((value for value in checked_dates if not pd.isna(value)), default=pd.NaT)
+    latest_label = format_short_date(latest_checked)
     cards = [
-        ("Banka kapsamı", f"{bank_count:02d}", "Tier 1 + Tier 2"),
-        ("Ücret satırı", f"{row_count:02d}", "Kaynak destekli kayıt"),
+        ("Bakılan banka adedi", f"{bank_count:02d}", "Tier 1 + Tier 2"),
+        ("Kıyas noktası adedi", f"{row_count:02d}", "Kaynak destekli kayıt"),
         ("0 TL / ücretsiz", f"{free_count:02d}", "Masrafsız avantaj"),
-        ("En yüksek TL ücret", f"{max_fee:,.0f} TL".replace(",", "."), "Liste ücretleri içinde"),
-        ("Son kaynak tarihi", latest_label, "ÜVEK güncelleme"),
+        ("En iyi POS oranı", best_new_acquiring_rate(df), "Yeni kazanım peşin"),
+        ("Son kontrol", latest_label, "Kaynak kontrol tarihi"),
     ]
     html_cards = "".join(
         (
