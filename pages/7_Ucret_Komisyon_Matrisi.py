@@ -747,56 +747,64 @@ matrix_focus = st.radio(
 )
 visible_buckets = MATRIX_BUCKETS if matrix_focus == "Tüm kalemler" else [matrix_focus]
 for tier in TIER_ORDER:
-    render_tier_matrix(filtered, tier, visible_buckets)
+    if tier == "Tier 1":
+        render_tier_matrix(filtered, tier, visible_buckets)
+    else:
+        with st.expander(f"{tier} ücret-komisyon matrisi", expanded=False):
+            render_tier_matrix(filtered, tier, visible_buckets)
 
-st.markdown('<div class="pricing-section-label">Banka bazlı hızlı okuma</div>', unsafe_allow_html=True)
-render_bank_cards(filtered, selected_banks)
+with st.expander("Banka bazlı hızlı okuma", expanded=False):
+    render_bank_cards(filtered, selected_banks)
 
-st.subheader("Ücret-Komisyon Karşılaştırması")
-display_cols = [
-    "institution_name",
-    "institution_tier",
-    "fee_family",
-    "fee_item",
-    "product_or_channel",
-    "fee_value",
-    "fee_basis",
-    "fee_period",
-    "update_date",
-    "confidence_level",
-]
-st.dataframe(
-    filtered[display_cols].rename(
-        columns={
-            "institution_name": "Banka",
-            "institution_tier": "Grup",
-            "fee_family": "Ücret ailesi",
-            "fee_item": "Ücret kalemi",
-            "product_or_channel": "Ürün / kanal",
-            "fee_value": "Ücret / oran",
-            "fee_basis": "Baz",
-            "fee_period": "Periyot",
-            "update_date": "Güncelleme",
-            "confidence_level": "Güven",
-        }
-    ),
-    use_container_width=True,
-    hide_index=True,
-)
+with st.expander("Ücret-komisyon karşılaştırması", expanded=False):
+    display_cols = [
+        "institution_name",
+        "institution_tier",
+        "fee_family",
+        "fee_item",
+        "product_or_channel",
+        "fee_value",
+        "fee_basis",
+        "fee_period",
+        "update_date",
+        "confidence_level",
+    ]
+    st.dataframe(
+        filtered[display_cols].rename(
+            columns={
+                "institution_name": "Banka",
+                "institution_tier": "Grup",
+                "fee_family": "Ücret ailesi",
+                "fee_item": "Ücret kalemi",
+                "product_or_channel": "Ürün / kanal",
+                "fee_value": "Ücret / oran",
+                "fee_basis": "Baz",
+                "fee_period": "Periyot",
+                "update_date": "Güncelleme",
+                "confidence_level": "Güven",
+            }
+        ),
+        use_container_width=True,
+        hide_index=True,
+    )
 
-st.subheader("Kaynak ve Okuma Notları")
-for _, row in filtered.iterrows():
-    source = str(row.get("source_url", "")).strip()
-    with st.expander(f'{row.get("institution_name")} · {row.get("fee_item")} · {row.get("fee_value")}', expanded=False):
-        st.markdown(
+with st.expander("Kaynak ve okuma notları", expanded=False):
+    detail_rows = []
+    for _, row in filtered.iterrows():
+        source = str(row.get("source_url", "")).strip()
+        source_html = f'<a href="{esc(source)}" target="_blank">resmi kaynağı aç</a>' if source else "Kaynak yok"
+        detail_rows.append(
             f"""
-            <div class="pricing-panel">
-              <div class="pricing-panel-title">{esc(row.get("fee_item"))}</div>
-              <div class="pricing-panel-copy">{esc(row.get("market_read"))}</div>
-              <div class="pricing-item-meta"><strong>Kapsam:</strong> {esc(row.get("customer_segment"))}</div>
-              <div class="pricing-item-meta"><strong>Not:</strong> {esc(row.get("notes"))}</div>
-              <div class="pricing-item-meta pricing-source"><strong>Kaynak:</strong> {f'<a href="{esc(source)}" target="_blank">resmi kaynağı aç</a>' if source else "Kaynak yok"}</div>
-            </div>
-            """,
-            unsafe_allow_html=True,
+            <details class="pricing-source-detail">
+              <summary>{esc(row.get("institution_name"))} · {esc(row.get("fee_item"))} · {esc(row.get("fee_value"))}</summary>
+              <div class="pricing-panel">
+                <div class="pricing-panel-title">{esc(row.get("fee_item"))}</div>
+                <div class="pricing-panel-copy">{esc(row.get("market_read"))}</div>
+                <div class="pricing-item-meta"><strong>Kapsam:</strong> {esc(row.get("customer_segment"))}</div>
+                <div class="pricing-item-meta"><strong>Not:</strong> {esc(row.get("notes"))}</div>
+                <div class="pricing-item-meta pricing-source"><strong>Kaynak:</strong> {source_html}</div>
+              </div>
+            </details>
+            """
         )
+    st.markdown("".join(detail_rows), unsafe_allow_html=True)
