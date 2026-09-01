@@ -112,9 +112,16 @@ def render_matrix_item(row: pd.Series, muted: bool = False) -> str:
     return f'<div class="{classes}">{label}</div>'
 
 
-def render_matrix_items(rows: list[pd.Series]) -> str:
-    visible = rows[:MATRIX_PREVIEW_LIMIT]
-    hidden = rows[MATRIX_PREVIEW_LIMIT:]
+def matrix_preview_limit(bucket: str) -> int:
+    if bucket == "Yurt içi transfer":
+        return 6
+    return MATRIX_PREVIEW_LIMIT
+
+
+def render_matrix_items(rows: list[pd.Series], bucket: str) -> str:
+    preview_limit = matrix_preview_limit(bucket)
+    visible = rows[:preview_limit]
+    hidden = rows[preview_limit:]
     items = "".join(render_matrix_item(row) for row in visible)
     if hidden:
         hidden_items = "".join(render_matrix_item(row, muted=True) for row in hidden)
@@ -142,6 +149,12 @@ def matrix_item_sort_key(row: pd.Series, bucket: str, fallback_order: int) -> tu
         if "nakit avans" in text:
             return (3, fallback_order)
         return (4, fallback_order)
+    if bucket == "Yurt içi transfer":
+        if any(token in text for token in ["pahalı kanal", "atm", "şube", "müşteri iletişim", "çözüm merkezi"]):
+            return (2, fallback_order)
+        if "havale" in text:
+            return (1, fallback_order)
+        return (0, fallback_order)
     if bucket != "POS":
         return (fallback_order, 0)
     if any(token in text for token in ["kampanya", "hoş geldin", "yeni kazanım", "pos'um cepte"]):
@@ -599,7 +612,7 @@ def render_tier_matrix(df: pd.DataFrame, tier: str, buckets: list[str]) -> None:
                 cells.append('<div class="pricing-matrix-cell"><span class="pricing-matrix-empty">Kayıt yok</span></div>')
                 continue
             bucket_df = sort_matrix_bucket(bucket_df, bucket)
-            items = render_matrix_items([row for _, row in bucket_df.iterrows()])
+            items = render_matrix_items([row for _, row in bucket_df.iterrows()], bucket)
             cells.append(f'<div class="pricing-matrix-cell"><div class="pricing-matrix-items">{items}</div></div>')
     st.markdown(
         (
