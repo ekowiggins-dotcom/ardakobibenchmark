@@ -53,6 +53,11 @@ jobs:
             --run-id "daily_${{ github.run_id }}" \
             --lookback-days 45
 
+      - name: Check new customer offer sources
+        run: |
+          python pipeline/check_new_customer_offers.py \
+            --run-id "new_customer_daily_${{ github.run_id }}"
+
       - name: Validate Python files
         run: python -m py_compile executive_app.py pages/*.py pipeline/*.py utils/*.py
 
