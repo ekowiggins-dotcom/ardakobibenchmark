@@ -48,6 +48,13 @@ def format_date(value: object) -> str:
     return f"{parsed.day:02d}.{parsed.month:02d}.{parsed.year}"
 
 
+def format_short_date(value: object) -> str:
+    parsed = parse_date(value)
+    if pd.isna(parsed):
+        return "Tarih yok"
+    return f"{parsed.day:02d}.{parsed.month:02d}"
+
+
 def offer_is_active(row: pd.Series) -> bool:
     status = str(row.get("status", "")).strip()
     valid_until = parse_date(row.get("valid_until"))
@@ -260,8 +267,9 @@ def render_kpis(df: pd.DataFrame, selected_tiers: list[str]) -> None:
     faizsiz_count = int(df["offer_type"].str.contains("Faizsiz", case=False, na=False).sum())
     free_tx_count = int(df["fee_waiver"].str.strip().astype(bool).sum())
     dob_count = int(df["dob_required"].str.strip().str.casefold().eq("evet").sum())
-    checked = sorted({format_date(value) for value in df["last_checked"] if str(value).strip()})
-    checked_label = checked[-1] if checked else "Tarih yok"
+    checked_dates = [parse_date(value) for value in df["last_checked"] if str(value).strip()]
+    latest_checked = max((value for value in checked_dates if not pd.isna(value)), default=pd.NaT)
+    checked_label = format_short_date(latest_checked)
     tier_label = " + ".join(selected_tiers) if selected_tiers else "Seçili kapsam"
     cards = [
         ("Aktif teklif", f"{active_count:02d}", tier_label),

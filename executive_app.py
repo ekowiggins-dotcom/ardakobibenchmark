@@ -72,7 +72,7 @@ st.markdown(
     """
     <style>
     .st-key-executive_page_switcher {
-        margin: 1rem 0 1.15rem;
+        margin: 1.65rem 0 1.15rem;
     }
 
     .st-key-executive_page_switcher div[data-testid="stHorizontalBlock"] {
@@ -152,7 +152,7 @@ st.markdown(
     @media (max-width: 700px) {
         .st-key-executive_page_switcher {
             justify-content: center;
-            margin: 1rem 0 1.05rem;
+            margin: 1.4rem 0 1.05rem;
             padding: 0 1rem;
         }
 
