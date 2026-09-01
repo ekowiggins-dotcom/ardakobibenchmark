@@ -166,13 +166,13 @@ def matrix_item_sort_key(row: pd.Series, bucket: str, fallback_order: int) -> tu
             return (0, fallback_order)
         if "yurt dışı fast" in text:
             return (1, fallback_order)
-        if "0-10.000" in text or "0-12.000" in text or "15.000 tl ve alt" in text or "0-12 bin" in text:
+        if "0-10.000" in text or "0-10 bin" in text or "0-12.000" in text or "15.000 tl ve alt" in text or "0-12 bin" in text:
             return (2, fallback_order)
         if "12.000,01-40.000" in text or "12-40 bin" in text:
             return (3, fallback_order)
         if "40.000,01-80.000" in text or "40-80 bin" in text:
             return (4, fallback_order)
-        if "80.000,01" in text or "80 bin" in text or "10.000 tl üzeri" in text or "15.000,01" in text:
+        if "80.000,01" in text or "80 bin" in text or "10.000 tl üzeri" in text or "10 bin+" in text or "15.000,01" in text:
             return (5, fallback_order)
         if "aynı gün" in text:
             return (2, fallback_order)
