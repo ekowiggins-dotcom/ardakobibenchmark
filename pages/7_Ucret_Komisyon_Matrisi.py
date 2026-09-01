@@ -200,17 +200,29 @@ def matrix_item_sort_key(row: pd.Series, bucket: str, fallback_order: int) -> tu
             return (4, fallback_order)
         return (6, fallback_order)
     if bucket == "Paket / Kredi":
-        if "hoş geldin" in text or "yeni müşteri" in text:
+        if "hoş geldin" in text or "yeni müşteri" in text or "faizsiz" in text:
             return (0, fallback_order)
-        if "dış ticaret paketi" in text or "ithalat paket" in text or "ihracat paket" in text or "karma dış ticaret" in text:
+        if "nakit akışınla kazan" in text:
             return (1, fallback_order)
-        if "genç kobi" in text or "genciz kobi" in text or "osb" in text or "çek" in text or "senet" in text:
+        if (
+            "dış ticaret paketi" in text
+            or "ithalat paket" in text
+            or "ihracat paket" in text
+            or "karma dış ticaret" in text
+            or "kota" in text
+            or "swift paketi" in text
+            or "swift paketleri" in text
+        ):
             return (2, fallback_order)
-        if "kgf" in text or "kobi ihtiyaç" in text or "anında ticari" in text:
+        if "genç kobi" in text or "genciz kobi" in text or "kadın kobi" in text or "kadın girişimci" in text:
             return (3, fallback_order)
-        if "pos'una kredi" in text or "posuna kredi" in text:
+        if "çek" in text or "senet" in text:
             return (4, fallback_order)
-        return (5, fallback_order)
+        if "kgf" in text or "kobi ihtiyaç" in text or "anında ticari" in text or "ticari kredili" in text:
+            return (5, fallback_order)
+        if "pos'una kredi" in text or "posuna kredi" in text:
+            return (6, fallback_order)
+        return (7, fallback_order)
     if bucket != "POS":
         return (fallback_order, 0)
     if any(token in text for token in ["kampanya", "hoş geldin", "yeni kazanım", "pos'um cepte"]):
