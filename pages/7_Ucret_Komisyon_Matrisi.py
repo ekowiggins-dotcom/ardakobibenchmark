@@ -133,12 +133,12 @@ def matrix_item_sort_key(row: pd.Series, bucket: str, fallback_order: int) -> tu
         for column in ["fee_family", "fee_item", "product_or_channel", "fee_basis"]
     ).casefold()
     if bucket == "Kartlar":
-        if "aidatsız" in text or "free" in text or "0 tl" in text:
-            return (1, fallback_order)
-        if "yıllık ücret" in text and "banka kart" not in text:
-            return (0, fallback_order)
         if "banka kart" in text or "paracard" in text:
             return (2, fallback_order)
+        if "aidatsız" in text or "free" in text or "0 tl" in text:
+            return (1, fallback_order)
+        if "yıllık ücret" in text:
+            return (0, fallback_order)
         if "nakit avans" in text:
             return (3, fallback_order)
         return (4, fallback_order)
