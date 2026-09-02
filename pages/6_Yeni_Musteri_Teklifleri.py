@@ -16,8 +16,14 @@ apply_akbank_theme()
 DATA_PATH = Path("data/new_customer_offers.csv")
 TIER_1_BANKS = ["Garanti BBVA", "İş Bankası", "Yapı Kredi"]
 TIER_2_BANKS = ["DenizBank", "Enpara", "QNB Finansbank", "Odeabank", "Alternatif Bank"]
-BANK_TIERS = {bank: "Tier 1" for bank in TIER_1_BANKS} | {bank: "Tier 2" for bank in TIER_2_BANKS}
-ALL_BANKS = TIER_1_BANKS + TIER_2_BANKS
+GLOBAL_BANKS = ["HSBC UK", "Santander UK", "ING Germany", "DBS Singapore", "JPMorgan Chase"]
+LOCAL_BANKS = TIER_1_BANKS + TIER_2_BANKS
+BANK_TIERS = (
+    {bank: "Tier 1" for bank in TIER_1_BANKS}
+    | {bank: "Tier 2" for bank in TIER_2_BANKS}
+    | {bank: "Global Tier 1" for bank in GLOBAL_BANKS}
+)
+ALL_BANKS = LOCAL_BANKS + GLOBAL_BANKS
 
 
 def esc(value: object) -> str:
@@ -30,6 +36,11 @@ def read_offers() -> pd.DataFrame:
     df = pd.read_csv(DATA_PATH, dtype=str).fillna("")
     if "institution_tier" not in df.columns:
         df["institution_tier"] = df["institution_name"].map(BANK_TIERS).fillna("Belirsiz")
+    if "market_scope" not in df.columns:
+        df["market_scope"] = df["institution_name"].apply(lambda value: "Global" if value in GLOBAL_BANKS else "Türkiye")
+    df.loc[df["market_scope"].str.strip().eq(""), "market_scope"] = df["institution_name"].apply(
+        lambda value: "Global" if value in GLOBAL_BANKS else "Türkiye"
+    )
     return df[df["institution_name"].isin(ALL_BANKS)].copy()
 
 
@@ -62,10 +73,51 @@ def offer_is_active(row: pd.Series) -> bool:
     return status == "Aktif" and (pd.isna(valid_until) or valid_until >= today)
 
 
-def inject_css() -> None:
+def inject_css(scope: str) -> None:
+    global_css = ""
+    if scope == "Global":
+        global_css = """
+        html, body, .stApp, [data-testid="stAppViewContainer"] {
+            background: var(--ak-global-bg) !important;
+        }
+
+        [data-testid="stHeader"] {
+            background: color-mix(in srgb, var(--ak-global-bg) 94%, transparent) !important;
+        }
+
+        .offer-kpi,
+        .offer-bank-card,
+        .offer-panel,
+        .ak-page-header {
+            border-color: var(--ak-global-border);
+        }
+
+        .offer-tier-pill,
+        .offer-count-pill,
+        .offer-type-pill {
+            background: var(--ak-global-chip);
+            border-color: var(--ak-global-border);
+            color: var(--ak-global-text);
+        }
+
+        .offer-detail-block {
+            background: var(--ak-global-soft);
+            border-color: var(--ak-global-border);
+        }
+        """
     st.markdown(
         """
         <style>
+        """
+        + global_css
+        + """
+
+        .offer-scope-toggle {
+            display: flex;
+            justify-content: center;
+            margin: 0.2rem 0 1rem;
+        }
+
         .offer-kpi-grid {
             display: grid;
             grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -373,17 +425,27 @@ def render_offer_details(df: pd.DataFrame) -> None:
             )
 
 
-inject_css()
-render_page_header(
-    "Yeni Müşteri Teklifleri",
-    "Tier 1 ve Tier 2 bankaların yeni tüzel/KOBİ müşteri kazanımı için sunduğu faizsiz finansman, işlem muafiyeti ve ticari kart teklifleri.",
-)
-
 offers = read_offers()
 if offers.empty:
     st.info("Henüz yeni müşteri teklifi verisi yok.")
     st.stop()
     raise SystemExit
+
+scope = st.radio("Kapsam", ["Türkiye", "Global"], horizontal=True, label_visibility="collapsed")
+inject_css(scope)
+if scope == "Global":
+    render_page_header(
+        "Global Yeni Müşteri Teklifleri",
+        "Global Tier 1 bankaların yeni business/SME müşteri kazanımı için sunduğu hesap açılışı, ücret muafiyeti ve ödül teklifleri.",
+    )
+else:
+    render_page_header(
+        "Yeni Müşteri Teklifleri",
+        "Tier 1 ve Tier 2 bankaların yeni tüzel/KOBİ müşteri kazanımı için sunduğu faizsiz finansman, işlem muafiyeti ve ticari kart teklifleri.",
+    )
+
+offers = offers[offers["market_scope"].eq(scope)].copy()
+bank_order = GLOBAL_BANKS if scope == "Global" else LOCAL_BANKS
 
 offers["_is_active"] = offers.apply(offer_is_active, axis=1)
 offers["_status_rank"] = offers["status"].apply(status_rank)
@@ -391,9 +453,10 @@ offers["_valid_until_dt"] = pd.to_datetime(offers["valid_until"], errors="coerce
 
 with st.sidebar:
     st.header("Teklif Filtreleri")
-    tiers = [tier for tier in ["Tier 1", "Tier 2"] if tier in set(offers["institution_tier"])]
+    tier_order = ["Global Tier 1"] if scope == "Global" else ["Tier 1", "Tier 2"]
+    tiers = [tier for tier in tier_order if tier in set(offers["institution_tier"])]
     selected_tiers = st.multiselect("Banka grubu", tiers, default=tiers)
-    tier_banks = [bank for bank in ALL_BANKS if BANK_TIERS.get(bank) in selected_tiers]
+    tier_banks = [bank for bank in bank_order if BANK_TIERS.get(bank) in selected_tiers]
     banks = [bank for bank in tier_banks if bank in set(offers["institution_name"])]
     types = sorted(offers["offer_type"].unique())
     statuses = sorted(offers["status"].unique())

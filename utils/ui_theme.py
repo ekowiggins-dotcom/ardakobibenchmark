@@ -20,6 +20,11 @@ PALETTE = {
     "chip_bg": "#FFF5F5",
     "chip_border": "#FFD9DE",
     "chip_text": "#B9000C",
+    "global_bg": "#E8F0F4",
+    "global_soft": "#F2F7FA",
+    "global_chip": "#EEF6FA",
+    "global_border": "#C9D8E3",
+    "global_text": "#23475A",
 }
 
 
@@ -44,6 +49,11 @@ def apply_akbank_theme() -> None:
             --ak-chip-bg: {PALETTE["chip_bg"]};
             --ak-chip-border: {PALETTE["chip_border"]};
             --ak-chip-text: {PALETTE["chip_text"]};
+            --ak-global-bg: {PALETTE["global_bg"]};
+            --ak-global-soft: {PALETTE["global_soft"]};
+            --ak-global-chip: {PALETTE["global_chip"]};
+            --ak-global-border: {PALETTE["global_border"]};
+            --ak-global-text: {PALETTE["global_text"]};
             --primary-color: {PALETTE["primary_red"]};
         }}
 
