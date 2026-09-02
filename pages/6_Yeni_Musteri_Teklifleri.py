@@ -16,12 +16,15 @@ apply_akbank_theme()
 DATA_PATH = Path("data/new_customer_offers.csv")
 TIER_1_BANKS = ["Garanti BBVA", "İş Bankası", "Yapı Kredi"]
 TIER_2_BANKS = ["DenizBank", "Enpara", "QNB Finansbank", "Odeabank", "Alternatif Bank"]
-GLOBAL_BANKS = ["HSBC UK", "Santander UK", "ING Germany", "DBS Singapore", "JPMorgan Chase"]
+GLOBAL_TIER_1_BANKS = ["HSBC UK", "Santander UK", "ING Germany", "DBS Singapore", "JPMorgan Chase"]
+GLOBAL_TIER_2_BANKS = ["Wise Business", "Tide", "Starling Bank", "Monzo Business", "Airwallex"]
+GLOBAL_BANKS = GLOBAL_TIER_1_BANKS + GLOBAL_TIER_2_BANKS
 LOCAL_BANKS = TIER_1_BANKS + TIER_2_BANKS
 BANK_TIERS = (
     {bank: "Tier 1" for bank in TIER_1_BANKS}
     | {bank: "Tier 2" for bank in TIER_2_BANKS}
-    | {bank: "Global Tier 1" for bank in GLOBAL_BANKS}
+    | {bank: "Global Tier 1" for bank in GLOBAL_TIER_1_BANKS}
+    | {bank: "Global Tier 2" for bank in GLOBAL_TIER_2_BANKS}
 )
 ALL_BANKS = LOCAL_BANKS + GLOBAL_BANKS
 
@@ -453,7 +456,7 @@ offers["_valid_until_dt"] = pd.to_datetime(offers["valid_until"], errors="coerce
 
 with st.sidebar:
     st.header("Teklif Filtreleri")
-    tier_order = ["Global Tier 1"] if scope == "Global" else ["Tier 1", "Tier 2"]
+    tier_order = ["Global Tier 1", "Global Tier 2"] if scope == "Global" else ["Tier 1", "Tier 2"]
     tiers = [tier for tier in tier_order if tier in set(offers["institution_tier"])]
     selected_tiers = st.multiselect("Banka grubu", tiers, default=tiers)
     tier_banks = [bank for bank in bank_order if BANK_TIERS.get(bank) in selected_tiers]
