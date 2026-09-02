@@ -8,12 +8,12 @@ import streamlit as st
 PALETTE = {
     "primary_red": "#E30613",
     "primary_red_dark": "#B9000C",
-    "bg_main": "#ECEFF3",
+    "bg_main": "#E9EDF2",
     "bg_surface": "#FFFFFF",
-    "bg_soft": "#F5F6F8",
-    "bg_sidebar": "#F8F9FB",
-    "border": "#D0D7DE",
-    "border_strong": "#BCC5D0",
+    "bg_soft": "#F7F8FA",
+    "bg_sidebar": "#F3F6FA",
+    "border": "#C8D0DA",
+    "border_strong": "#B7C0CC",
     "text_main": "#17212F",
     "text_secondary": "#566273",
     "text_muted": "#727D8E",
@@ -54,6 +54,8 @@ def apply_akbank_theme() -> None:
             --ak-global-chip: {PALETTE["global_chip"]};
             --ak-global-border: {PALETTE["global_border"]};
             --ak-global-text: {PALETTE["global_text"]};
+            --ak-shadow-soft: 0 6px 18px rgba(15, 23, 42, 0.075);
+            --ak-shadow-lift: 0 10px 28px rgba(15, 23, 42, 0.095);
             --primary-color: {PALETTE["primary_red"]};
         }}
 
@@ -63,19 +65,34 @@ def apply_akbank_theme() -> None:
         }}
 
         [data-testid="stHeader"] {{
-            background: rgba(236, 239, 243, 0.94) !important;
+            background: color-mix(in srgb, var(--ak-bg) 94%, white) !important;
             border-bottom: 1px solid var(--ak-border-strong);
         }}
 
         .block-container {{
-            padding-top: 2rem;
-            padding-bottom: 3rem;
-            max-width: 1420px;
+            padding-top: 2.15rem;
+            padding-bottom: 3.25rem;
+            max-width: 1500px;
         }}
 
         h1, h2, h3 {{
             color: var(--ak-text) !important;
             letter-spacing: 0 !important;
+        }}
+
+        .block-container h2 {{
+            margin-top: 1.35rem;
+            margin-bottom: 0.55rem;
+        }}
+
+        .block-container h3 {{
+            margin-top: 1.05rem;
+            margin-bottom: 0.45rem;
+        }}
+
+        hr {{
+            border-color: var(--ak-border) !important;
+            margin: 1.25rem 0 !important;
         }}
 
         p, li, label, span, div {{
@@ -133,7 +150,7 @@ def apply_akbank_theme() -> None:
             border-bottom: 1px solid var(--ak-border-strong);
             border-left: 1px solid var(--ak-border);
             border-radius: 16px;
-            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+            box-shadow: var(--ak-shadow-soft);
             padding: 1.35rem 1.75rem;
             margin-bottom: 1.65rem;
         }}
@@ -267,7 +284,7 @@ def apply_akbank_theme() -> None:
             border: 1px solid var(--ak-border);
             border-radius: 14px;
             padding: 1rem 1.05rem;
-            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+            box-shadow: var(--ak-shadow-soft);
             min-height: 116px;
         }}
 
@@ -329,20 +346,21 @@ def apply_akbank_theme() -> None:
             background: var(--ak-surface) !important;
             border: 1px solid var(--ak-border) !important;
             border-radius: 14px !important;
-            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+            box-shadow: var(--ak-shadow-soft);
         }}
 
         div[data-testid="stExpander"] summary,
         details summary {{
             color: var(--ak-text) !important;
             font-weight: 750;
+            padding-block: 0.22rem;
         }}
 
         div[data-testid="stVerticalBlockBorderWrapper"] {{
             background: var(--ak-surface) !important;
             border-color: var(--ak-border) !important;
             border-radius: 14px !important;
-            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+            box-shadow: var(--ak-shadow-soft);
         }}
 
         [data-testid="stSidebar"] div[data-testid="stExpander"] details,
@@ -359,11 +377,13 @@ def apply_akbank_theme() -> None:
             border-radius: 14px;
             overflow: hidden;
             background: var(--ak-surface);
+            box-shadow: var(--ak-shadow-soft);
         }}
 
         .stTabs [data-baseweb="tab-list"] {{
             gap: 0.45rem;
             border-bottom: 1px solid var(--ak-border);
+            margin-bottom: 0.9rem;
         }}
 
         .stTabs [data-baseweb="tab"] {{
@@ -383,6 +403,7 @@ def apply_akbank_theme() -> None:
         [data-testid="stAlert"] {{
             border-radius: 12px;
             border: 1px solid var(--ak-border);
+            box-shadow: var(--ak-shadow-soft);
         }}
 
         .stMultiSelect [data-baseweb="tag"],
@@ -398,6 +419,21 @@ def apply_akbank_theme() -> None:
             border-color: var(--ak-border) !important;
             color: var(--ak-text) !important;
             border-radius: 0 !important;
+        }}
+
+        [data-testid="stRadio"] [role="radiogroup"] {{
+            gap: 0.6rem;
+            row-gap: 0.45rem;
+        }}
+
+        [data-testid="stRadio"] label {{
+            color: var(--ak-text) !important;
+            font-weight: 650;
+        }}
+
+        [data-testid="stCheckbox"] label {{
+            color: var(--ak-text) !important;
+            font-weight: 650;
         }}
 
         a {{

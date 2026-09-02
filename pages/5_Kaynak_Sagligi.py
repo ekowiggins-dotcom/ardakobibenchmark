@@ -77,7 +77,7 @@ st.markdown(
         background: var(--ak-surface);
         border: 1px solid var(--ak-border);
         border-radius: 14px;
-        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+        box-shadow: var(--ak-shadow-soft);
         padding: 1rem 1.1rem;
         min-height: 112px;
     }
@@ -105,7 +105,7 @@ st.markdown(
         background: var(--ak-surface);
         border: 1px solid var(--ak-border);
         border-radius: 14px;
-        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+        box-shadow: var(--ak-shadow-soft);
         padding: 1.15rem 1.25rem;
         margin: 0.5rem 0 1rem;
     }

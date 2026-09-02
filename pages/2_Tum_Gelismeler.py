@@ -250,7 +250,7 @@ def inject_page_css() -> None:
             border: 1px solid var(--ak-border);
             border-left: 2px solid var(--ak-border);
             border-radius: 14px;
-            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+            box-shadow: var(--ak-shadow-soft);
             padding: 1.15rem 1.2rem;
             min-height: 116px;
             display: flex;
@@ -307,7 +307,7 @@ def inject_page_css() -> None:
             background: var(--ak-surface);
             border: 1px solid var(--ak-border);
             border-radius: 14px;
-            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+            box-shadow: var(--ak-shadow-soft);
             padding: 0.75rem 0.75rem 0.25rem;
         }}
 
@@ -315,7 +315,7 @@ def inject_page_css() -> None:
             background: var(--ak-surface);
             border: 1px solid var(--ak-border);
             border-radius: 14px;
-            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+            box-shadow: var(--ak-shadow-soft);
             padding: 1.1rem;
             margin-bottom: 1rem;
         }}

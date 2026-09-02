@@ -41,8 +41,8 @@ st.markdown(
         --radar-secondary-text: #667085;
         --radar-border: #D9DEE7;
         --radar-soft-border: #E7EAF0;
-        --radar-card-shadow: 0 4px 16px rgba(16, 24, 40, 0.06);
-        --radar-card-shadow-open: 0 8px 22px rgba(16, 24, 40, 0.08);
+        --radar-card-shadow: var(--ak-shadow-soft);
+        --radar-card-shadow-open: var(--ak-shadow-lift);
     }
 
     .stApp,

@@ -315,11 +315,11 @@ def inject_css() -> None:
             background: var(--ak-surface);
             border: 1px solid var(--ak-border);
             border-radius: 14px;
-            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+            box-shadow: var(--ak-shadow-soft);
         }
 
         .pricing-kpi {
-            min-height: 118px;
+            min-height: 112px;
             padding: 1.1rem 1.2rem;
         }
 
@@ -334,10 +334,11 @@ def inject_css() -> None:
 
         .pricing-value {
             color: var(--ak-text);
-            font-size: 2.35rem;
+            font-size: clamp(1.9rem, 2.4vw, 2.35rem);
             font-weight: 900;
             line-height: 1;
             margin-top: 0.55rem;
+            white-space: nowrap;
         }
 
         .pricing-note {
@@ -418,9 +419,9 @@ def inject_css() -> None:
             background: var(--ak-surface);
             border: 1px solid var(--ak-border);
             border-radius: 14px;
-            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+            box-shadow: var(--ak-shadow-soft);
             margin: 0 0 1.2rem;
-            overflow: hidden;
+            overflow-x: auto;
         }
 
         .pricing-tier-head {
@@ -446,13 +447,13 @@ def inject_css() -> None:
 
         .pricing-matrix {
             display: grid;
-            grid-template-columns: minmax(140px, 0.75fr) repeat(var(--pricing-column-count, 5), minmax(175px, 1fr));
-            overflow-x: auto;
+            grid-template-columns: minmax(150px, 0.75fr) repeat(var(--pricing-column-count, 5), minmax(220px, 1fr));
+            min-width: 1260px;
         }
 
         .pricing-matrix-cell {
             min-height: 68px;
-            padding: 0.64rem 0.76rem;
+            padding: 0.72rem 0.84rem;
             border-right: 1px solid var(--ak-border);
             border-bottom: 1px solid var(--ak-border);
         }
@@ -487,7 +488,7 @@ def inject_css() -> None:
 
         .pricing-matrix-item {
             color: var(--ak-text);
-            font-size: 0.72rem;
+            font-size: 0.74rem;
             font-weight: 750;
             line-height: 1.22;
             border-bottom: 1px solid var(--ak-border);
