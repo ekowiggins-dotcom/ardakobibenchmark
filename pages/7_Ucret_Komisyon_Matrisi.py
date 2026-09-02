@@ -15,8 +15,9 @@ apply_akbank_theme()
 
 
 DATA_PATH = Path("data/pricing_matrix.csv")
-TIER_ORDER = ["Tier 1", "Tier 2"]
-BANK_ORDER = [
+LOCAL_TIER_ORDER = ["Tier 1", "Tier 2"]
+GLOBAL_TIER_ORDER = ["Global Tier 1"]
+LOCAL_BANK_ORDER = [
     "Akbank",
     "Garanti BBVA",
     "İş Bankası",
@@ -27,6 +28,21 @@ BANK_ORDER = [
     "Odeabank",
     "Alternatif Bank",
 ]
+GLOBAL_BANK_ORDER = [
+    "HSBC UK",
+    "Santander UK",
+    "JPMorgan Chase",
+    "DBS Singapore",
+]
+BANK_ORDER_BY_SCOPE = {
+    "Türkiye": LOCAL_BANK_ORDER,
+    "Global": GLOBAL_BANK_ORDER,
+}
+TIER_ORDER_BY_SCOPE = {
+    "Türkiye": LOCAL_TIER_ORDER,
+    "Global": GLOBAL_TIER_ORDER,
+}
+BANK_ORDER = [*LOCAL_BANK_ORDER, *GLOBAL_BANK_ORDER]
 MATRIX_BUCKETS = ["Kartlar", "POS", "Yurt içi transfer", "Yurt dışı / SWIFT", "Paket / Kredi"]
 MATRIX_PREVIEW_LIMIT = 3
 
@@ -39,6 +55,13 @@ def read_pricing() -> pd.DataFrame:
     if not DATA_PATH.exists():
         return pd.DataFrame()
     df = pd.read_csv(DATA_PATH, dtype=str).fillna("")
+    if "market_scope" not in df.columns:
+        df["market_scope"] = df["institution_name"].apply(
+            lambda value: "Global" if value in GLOBAL_BANK_ORDER else "Türkiye"
+        )
+    df.loc[df["market_scope"].str.strip().eq(""), "market_scope"] = df["institution_name"].apply(
+        lambda value: "Global" if value in GLOBAL_BANK_ORDER else "Türkiye"
+    )
     return df[df["institution_name"].isin(BANK_ORDER)].copy()
 
 
@@ -84,9 +107,16 @@ def best_new_acquiring_rate(df: pd.DataFrame) -> str:
             str(row.get(column, ""))
             for column in ["fee_family", "fee_item", "fee_basis", "product_or_channel"]
         ).casefold()
-        if "yeni kazanım" not in text or "kredi kart" not in text or "peşin" not in text:
+        scope = str(row.get("market_scope", "Türkiye")).strip()
+        has_card_signal = any(
+            token in text
+            for token in ["kredi kart", "credit card", "card-present", "card payment", "merchant", "acquiring"]
+        )
+        if scope == "Türkiye" and ("yeni kazanım" not in text or "kredi kart" not in text or "peşin" not in text):
             continue
-        if "sektör" in text:
+        if not has_card_signal:
+            continue
+        if scope == "Türkiye" and "sektör" in text:
             continue
         rate = first_percentage(row.get("fee_value"))
         if rate is not None:
@@ -99,27 +129,27 @@ def best_new_acquiring_rate(df: pd.DataFrame) -> str:
 
 def matrix_bucket(row: pd.Series) -> str:
     fee_family = str(row.get("fee_family", "")).casefold()
-    if "pos" in fee_family or "üye işyeri" in fee_family:
+    if any(token in fee_family for token in ["pos", "üye işyeri", "merchant", "acquiring"]):
         return "POS"
-    if "kart" in fee_family:
+    if any(token in fee_family for token in ["kart", "card"]):
         return "Kartlar"
-    if "kredi" in fee_family or "paket" in fee_family:
+    if any(token in fee_family for token in ["kredi", "paket", "lending", "overdraft", "account", "package"]):
         return "Paket / Kredi"
-    if "swift" in fee_family or "yurt dış" in fee_family or "yabancı para" in fee_family or "uluslararası" in fee_family or "döviz" in fee_family:
+    if any(token in fee_family for token in ["swift", "yurt dış", "yabancı para", "uluslararası", "döviz", "international", "wire", "cross-border", "fx", "telegraphic"]):
         return "Yurt dışı / SWIFT"
-    if "havale" in fee_family or "eft" in fee_family or "fast" in fee_family:
+    if any(token in fee_family for token in ["havale", "eft", "fast", "ach", "paynow", "faster payment", "domestic transfer"]):
         return "Yurt içi transfer"
     text = " ".join(
         str(row.get(column, ""))
         for column in ["fee_family", "fee_item", "product_or_channel", "fee_basis", "notes"]
     ).casefold()
-    if "pos" in text or "üye işyeri" in text:
+    if any(token in text for token in ["pos", "üye işyeri", "merchant", "acquiring", "card-present", "card payment"]):
         return "POS"
-    if "paket" in text or "kredi tahsis" in text or "taksitli ticari kredi" in text or "faizsiz" in text:
+    if any(token in text for token in ["paket", "kredi tahsis", "taksitli ticari kredi", "faizsiz", "business account", "checking", "overdraft", "lending", "package"]):
         return "Paket / Kredi"
-    if "swift" in text or "yurt dış" in text or "uluslararası" in text or "döviz" in text or "yabancı para" in text:
+    if any(token in text for token in ["swift", "yurt dış", "uluslararası", "döviz", "yabancı para", "international", "wire", "cross-border", "fx", "telegraphic"]):
         return "Yurt dışı / SWIFT"
-    if "havale" in text or "transfer" in text or "eft" in text:
+    if any(token in text for token in ["havale", "transfer", "eft", "ach", "paynow", "faster payment", "domestic"]):
         return "Yurt içi transfer"
     if "maaş" in text:
         return "Paket / Kredi"
@@ -194,15 +224,15 @@ def matrix_item_sort_key(row: pd.Series, bucket: str, fallback_order: int) -> tu
             return (3, fallback_order)
         return (4, fallback_order)
     if bucket == "Yurt içi transfer":
-        if any(token in text for token in ["pahalı kanal", "atm", "şube", "müşteri iletişim", "çözüm merkezi"]):
+        if any(token in text for token in ["pahalı kanal", "atm", "şube", "branch", "müşteri iletişim", "çözüm merkezi"]):
             return (2, fallback_order)
-        if "havale" in text:
+        if any(token in text for token in ["havale", "paynow", "faster payment", "ach"]):
             return (1, fallback_order)
         return (0, fallback_order)
     if bucket == "Yurt dışı / SWIFT":
         if "gelen" in text:
             return (9, fallback_order)
-        if "şube" in text or "pahalı kanal" in text:
+        if any(token in text for token in ["şube", "branch", "pahalı kanal"]):
             return (8, fallback_order)
         if "visa" in text:
             return (0, fallback_order)
@@ -232,7 +262,7 @@ def matrix_item_sort_key(row: pd.Series, bucket: str, fallback_order: int) -> tu
             or "30 bin tl üst" in text
         ):
             return (5, fallback_order)
-        if "aynı gün" in text:
+        if "same-day" in text or "aynı gün" in text:
             return (2, fallback_order)
         if "1 gün" in text:
             return (3, fallback_order)
@@ -240,7 +270,7 @@ def matrix_item_sort_key(row: pd.Series, bucket: str, fallback_order: int) -> tu
             return (4, fallback_order)
         return (6, fallback_order)
     if bucket == "Paket / Kredi":
-        if "hoş geldin" in text or "yeni müşteri" in text or "faizsiz" in text:
+        if any(token in text for token in ["hoş geldin", "yeni müşteri", "faizsiz", "account", "checking"]):
             return (0, fallback_order)
         if "nakit akışınla kazan" in text:
             return (1, fallback_order)
@@ -298,15 +328,85 @@ def sync_multiselect_options(key: str, options: list[str]) -> None:
     st.session_state[options_key] = options
 
 
-def inject_css() -> None:
+def render_scope_switcher() -> str:
+    if st.session_state.get("pricing_scope") not in ["Türkiye", "Global"]:
+        st.session_state["pricing_scope"] = "Türkiye"
+
+    st.markdown('<div class="pricing-scope-caption">Benchmark kapsamı</div>', unsafe_allow_html=True)
+    tr_col, global_col, spacer = st.columns([1.15, 1.15, 7.7])
+    with tr_col:
+        if st.button(
+            "Türkiye",
+            key="pricing_scope_turkiye",
+            type="primary" if st.session_state["pricing_scope"] == "Türkiye" else "secondary",
+            use_container_width=True,
+        ):
+            st.session_state["pricing_scope"] = "Türkiye"
+            st.rerun()
+    with global_col:
+        if st.button(
+            "Global",
+            key="pricing_scope_global",
+            type="primary" if st.session_state["pricing_scope"] == "Global" else "secondary",
+            use_container_width=True,
+        ):
+            st.session_state["pricing_scope"] = "Global"
+            st.rerun()
+    with spacer:
+        st.empty()
+    return st.session_state["pricing_scope"]
+
+
+def inject_css(scope: str) -> None:
+    global_css = ""
+    if scope == "Global":
+        global_css = """
+        html, body, .stApp, [data-testid="stAppViewContainer"] {
+            background: var(--ak-global-bg) !important;
+        }
+
+        [data-testid="stHeader"] {
+            background: color-mix(in srgb, var(--ak-global-bg) 94%, white) !important;
+        }
+
+        .pricing-kpi,
+        .pricing-panel,
+        .pricing-bank-card,
+        .pricing-tier-panel {
+            border-color: var(--ak-global-border) !important;
+        }
+
+        .pricing-pill {
+            background: var(--ak-global-chip) !important;
+            border-color: var(--ak-global-border) !important;
+            color: var(--ak-global-text) !important;
+        }
+
+        .pricing-matrix-header {
+            background: var(--ak-global-soft) !important;
+        }
+        """
     st.markdown(
         """
         <style>
+        """
+        + global_css
+        + """
         .pricing-kpi-grid {
             display: grid;
             grid-template-columns: repeat(5, minmax(0, 1fr));
             gap: 1rem;
             margin: 0.2rem 0 1.35rem;
+        }
+
+        .pricing-scope-caption {
+            color: var(--ak-muted);
+            font-size: 0.68rem;
+            font-weight: 850;
+            letter-spacing: 0.12em;
+            line-height: 1;
+            margin: 0.25rem 0 0.45rem;
+            text-transform: uppercase;
         }
 
         .pricing-kpi,
@@ -694,12 +794,12 @@ def render_bank_cards(df: pd.DataFrame, selected_banks: list[str]) -> None:
     st.markdown(f'<div class="pricing-bank-grid">{"".join(cards)}</div>', unsafe_allow_html=True)
 
 
-def render_tier_matrix(df: pd.DataFrame, tier: str, buckets: list[str]) -> None:
+def render_tier_matrix(df: pd.DataFrame, tier: str, buckets: list[str], bank_order: list[str]) -> None:
     tier_df = df[df["institution_tier"].eq(tier)].copy()
     if tier_df.empty:
         return
     tier_df["matrix_bucket"] = tier_df.apply(matrix_bucket, axis=1)
-    banks = [bank for bank in BANK_ORDER if bank in set(tier_df["institution_name"])]
+    banks = [bank for bank in bank_order if bank in set(tier_df["institution_name"])]
     visible_row_count = len(tier_df[tier_df["matrix_bucket"].isin(buckets)])
     cells = ['<div class="pricing-matrix-cell pricing-matrix-header">Banka</div>']
     cells.extend(
@@ -737,24 +837,39 @@ def render_tier_matrix(df: pd.DataFrame, tier: str, buckets: list[str]) -> None:
     )
 
 
-inject_css()
-render_page_header(
-    "Ücret Komisyon Matrisi",
-    "Tier 1 ve Tier 2 bankalarda KOBİ/ticari müşteri maliyetlerini etkileyen kart, transfer, POS ve paket ücretleri.",
-)
-
 pricing = read_pricing()
 if pricing.empty:
     st.info("Henüz ücret-komisyon verisi yok.")
     st.stop()
     raise SystemExit
 
+scope = render_scope_switcher()
+inject_css(scope)
+if scope == "Global":
+    render_page_header(
+        "Global Ücret Komisyon Benchmarkı",
+        "Global Tier 1 bankalarda KOBİ/ticari müşteri maliyetlerini etkileyen hesap, kart, POS ve transfer uygulamaları.",
+    )
+else:
+    render_page_header(
+        "Ücret Komisyon Matrisi",
+        "Tier 1 ve Tier 2 bankalarda KOBİ/ticari müşteri maliyetlerini etkileyen kart, transfer, POS ve paket ücretleri.",
+    )
+
+pricing = pricing[pricing["market_scope"].eq(scope)].copy()
+bank_order = BANK_ORDER_BY_SCOPE[scope]
+tier_order = TIER_ORDER_BY_SCOPE[scope]
+if pricing.empty:
+    st.info(f"{scope} kapsamında ücret-komisyon verisi yok.")
+    st.stop()
+    raise SystemExit
+
 with st.sidebar:
     st.header("ÜVEK Filtreleri")
-    tiers = [tier for tier in TIER_ORDER if tier in set(pricing["institution_tier"])]
+    tiers = [tier for tier in tier_order if tier in set(pricing["institution_tier"])]
     sync_multiselect_options("pricing_tier_filter", tiers)
     selected_tiers = st.multiselect("Banka grubu", tiers, default=tiers, key="pricing_tier_filter")
-    banks = [bank for bank in BANK_ORDER if bank in set(pricing.loc[pricing["institution_tier"].isin(selected_tiers), "institution_name"])]
+    banks = [bank for bank in bank_order if bank in set(pricing.loc[pricing["institution_tier"].isin(selected_tiers), "institution_name"])]
     families = sorted(pricing["fee_family"].unique())
     confidence = sorted(pricing["confidence_level"].unique())
     sync_multiselect_options("pricing_bank_filter", banks)
@@ -786,12 +901,12 @@ matrix_focus = st.radio(
     label_visibility="collapsed",
 )
 visible_buckets = MATRIX_BUCKETS if matrix_focus == "Tüm kalemler" else [matrix_focus]
-for tier in TIER_ORDER:
-    if tier == "Tier 1":
-        render_tier_matrix(filtered, tier, visible_buckets)
+for tier in tier_order:
+    if tier in ["Tier 1", "Global Tier 1"]:
+        render_tier_matrix(filtered, tier, visible_buckets, bank_order)
     else:
         with st.expander(f"{tier} ücret-komisyon matrisi", expanded=False):
-            render_tier_matrix(filtered, tier, visible_buckets)
+            render_tier_matrix(filtered, tier, visible_buckets, bank_order)
 
 with st.expander("Banka bazlı hızlı okuma", expanded=False):
     render_bank_cards(filtered, selected_banks)
