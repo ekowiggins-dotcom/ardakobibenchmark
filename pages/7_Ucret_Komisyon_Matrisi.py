@@ -328,35 +328,6 @@ def sync_multiselect_options(key: str, options: list[str]) -> None:
     st.session_state[options_key] = options
 
 
-def render_scope_switcher() -> str:
-    if st.session_state.get("pricing_scope") not in ["Türkiye", "Global"]:
-        st.session_state["pricing_scope"] = "Türkiye"
-
-    st.markdown('<div class="pricing-scope-caption">Benchmark kapsamı</div>', unsafe_allow_html=True)
-    tr_col, global_col, spacer = st.columns([1.15, 1.15, 7.7])
-    with tr_col:
-        if st.button(
-            "Türkiye",
-            key="pricing_scope_turkiye",
-            type="primary" if st.session_state["pricing_scope"] == "Türkiye" else "secondary",
-            use_container_width=True,
-        ):
-            st.session_state["pricing_scope"] = "Türkiye"
-            st.rerun()
-    with global_col:
-        if st.button(
-            "Global",
-            key="pricing_scope_global",
-            type="primary" if st.session_state["pricing_scope"] == "Global" else "secondary",
-            use_container_width=True,
-        ):
-            st.session_state["pricing_scope"] = "Global"
-            st.rerun()
-    with spacer:
-        st.empty()
-    return st.session_state["pricing_scope"]
-
-
 def inject_css(scope: str) -> None:
     global_css = ""
     if scope == "Global":
@@ -397,16 +368,6 @@ def inject_css(scope: str) -> None:
             grid-template-columns: repeat(5, minmax(0, 1fr));
             gap: 1rem;
             margin: 0.2rem 0 1.35rem;
-        }
-
-        .pricing-scope-caption {
-            color: var(--ak-muted);
-            font-size: 0.68rem;
-            font-weight: 850;
-            letter-spacing: 0.12em;
-            line-height: 1;
-            margin: 0.25rem 0 0.45rem;
-            text-transform: uppercase;
         }
 
         .pricing-kpi,
@@ -843,7 +804,7 @@ if pricing.empty:
     st.stop()
     raise SystemExit
 
-scope = render_scope_switcher()
+scope = st.radio("Kapsam", ["Türkiye", "Global"], horizontal=True, label_visibility="collapsed")
 inject_css(scope)
 if scope == "Global":
     render_page_header(
