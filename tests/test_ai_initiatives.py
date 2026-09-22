@@ -80,3 +80,28 @@ def test_is_bankasi_earnado_offer_is_tracked_as_direct_sme_ai_saas() -> None:
     assert earnado.iloc[0]["sme_relevance"] == "Yüksek"
     assert earnado.iloc[0]["initiative_type"] == "SaaS / İş Birliği"
     assert earnado.iloc[0]["partner_name"] == "Earnado"
+
+
+def test_global_ai_ecosystem_has_official_coverage_for_every_bank() -> None:
+    frame = read_ai_initiatives()
+    ecosystem = frame[
+        frame["institution_tier"].eq("Global")
+        & frame["ai_category"].eq("Ekosistem & Girişimcilik")
+    ]
+
+    assert set(ecosystem["institution_name"]) == EXPECTED_GLOBAL_BANKS
+    assert ecosystem.groupby("institution_name").size().min() >= 1
+
+
+def test_tier_two_ecosystem_records_only_use_independent_official_evidence() -> None:
+    frame = read_ai_initiatives()
+    ecosystem = frame[
+        frame["institution_tier"].eq("Tier 2")
+        & frame["ai_category"].eq("Ekosistem & Girişimcilik")
+    ]
+
+    assert {"DenizBank", "QNB Finansbank", "Odeabank", "Alternatif Bank"}.issubset(
+        set(ecosystem["institution_name"])
+    )
+    assert "Enpara" not in set(ecosystem["institution_name"])
+    assert ecosystem["evidence_level"].eq("Yüksek").all()
