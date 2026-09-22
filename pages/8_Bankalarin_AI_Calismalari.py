@@ -14,7 +14,11 @@ apply_akbank_theme()
 
 
 DATA_PATH = Path("data/bank_ai_initiatives.csv")
-BANK_ORDER = ["Akbank", "Garanti BBVA", "İş Bankası", "Yapı Kredi"]
+BANK_ORDER_BY_TIER = {
+    "Tier 1": ["Akbank", "Garanti BBVA", "İş Bankası", "Yapı Kredi"],
+    "Tier 2": ["DenizBank", "Enpara", "QNB Finansbank", "Odeabank", "Alternatif Bank"],
+}
+ALL_BANKS = [bank for banks in BANK_ORDER_BY_TIER.values() for bank in banks]
 MATRIX_BUCKETS = [
     "KOBİ & SaaS",
     "Müşteri AI",
@@ -33,7 +37,7 @@ def read_initiatives() -> pd.DataFrame:
     if not DATA_PATH.exists():
         return pd.DataFrame()
     frame = pd.read_csv(DATA_PATH, dtype=str).fillna("")
-    return frame[frame["institution_name"].isin(BANK_ORDER)].copy()
+    return frame[frame["institution_name"].isin(ALL_BANKS)].copy()
 
 
 def parse_date(value: object) -> pd.Timestamp | pd.NaT:
@@ -426,13 +430,13 @@ def inject_css() -> None:
     )
 
 
-def render_kpis(frame: pd.DataFrame) -> None:
+def render_kpis(frame: pd.DataFrame, tier_label: str) -> None:
     customer_products = frame[frame["delivery_model"].isin(["Banka ürünü", "Platform entegrasyonu"])]
     sme_items = frame[frame["sme_relevance"].eq("Yüksek")]
     saas_items = frame[frame["delivery_model"].eq("Partner SaaS")]
     latest_checked = max((parse_date(value) for value in frame["last_verified"]), default=pd.NaT)
     cards = [
-        ("Bakılan banka", f"{frame['institution_name'].nunique():02d}", "Tier 1 Türkiye"),
+        ("Bakılan banka", f"{frame['institution_name'].nunique():02d}", f"{tier_label} Türkiye"),
         ("AI çalışması", f"{len(frame):02d}", "Doğrulanmış kayıt"),
         ("Müşteri ürünü", f"{len(customer_products):02d}", "Ürün ve kanal"),
         ("KOBİ ilgisi yüksek", f"{len(sme_items):02d}", f"SaaS iş birliği: {len(saas_items):02d}"),
@@ -464,7 +468,7 @@ def render_section_header(title: str, copy: str, count: int) -> None:
     )
 
 
-def render_bank_cards(frame: pd.DataFrame, banks: list[str]) -> None:
+def render_bank_cards(frame: pd.DataFrame, banks: list[str], tier_label: str) -> None:
     cards: list[str] = []
     for bank in banks:
         bank_frame = frame[frame["institution_name"].eq(bank)].copy()
@@ -479,7 +483,7 @@ def render_bank_cards(frame: pd.DataFrame, banks: list[str]) -> None:
         cards.append(
             '<div class="ai-bank-card">'
             '<div class="ai-bank-head">'
-            f'<div><div class="ai-label">Tier 1</div><div class="ai-bank-name">{esc(bank)}</div></div>'
+            f'<div><div class="ai-label">{esc(tier_label)}</div><div class="ai-bank-name">{esc(bank)}</div></div>'
             f'<span class="ai-count-pill">{len(bank_frame)} çalışma</span>'
             "</div>"
             '<div class="ai-bank-stat-grid">'
@@ -493,12 +497,12 @@ def render_bank_cards(frame: pd.DataFrame, banks: list[str]) -> None:
     st.markdown(f'<div class="ai-bank-grid">{"".join(cards)}</div>', unsafe_allow_html=True)
 
 
-def render_insights(frame: pd.DataFrame) -> None:
+def render_insights(frame: pd.DataFrame, bank_order: list[str]) -> None:
     customer_ai = frame[frame.apply(matrix_bucket, axis=1).eq("Müşteri AI")]
     customer_banks = customer_ai["institution_name"].nunique()
     direct_sme = frame[frame["sme_relevance"].eq("Yüksek")]
     direct_sme_banks = ", ".join(
-        bank for bank in BANK_ORDER if bank in set(direct_sme["institution_name"])
+        bank for bank in bank_order if bank in set(direct_sme["institution_name"])
     ) or "Henüz doğrulanmış banka yok"
     partner_saas = frame[frame["delivery_model"].eq("Partner SaaS")]
     campaign_count = int(frame["initiative_type"].eq("AI Kampanyası").sum())
@@ -534,6 +538,42 @@ def render_insights(frame: pd.DataFrame) -> None:
         for label, title, copy, featured in insights
     )
     st.markdown(f'<div class="ai-insight-grid">{cards}</div>', unsafe_allow_html=True)
+
+
+def render_tier_view(frame: pd.DataFrame, tier_label: str, banks: list[str]) -> None:
+    if frame.empty:
+        st.info(f"Seçili filtrelerle {tier_label} için eşleşen AI çalışması yok.")
+        return
+
+    render_kpis(frame, tier_label)
+
+    render_section_header(
+        "Benchmark özeti",
+        f"{tier_label} taramasından çıkan ortak paternler ve Akbank için açık alanlar.",
+        3,
+    )
+    render_insights(frame, banks)
+
+    render_section_header(
+        f"{tier_label} görünümü",
+        "Banka bazında müşteri AI, kurum içi kullanım ve KOBİ bağlantısının hızlı özeti.",
+        len(frame),
+    )
+    render_bank_cards(frame, banks, tier_label)
+
+    render_section_header(
+        "AI yetenek matrisi",
+        "Aynı yetenek alanındaki çalışmalar bankalar arasında yan yana okunur; başlıklar resmî kaynağa gider.",
+        len(frame),
+    )
+    render_matrix(frame, banks)
+
+    render_section_header(
+        "Çalışma detayları",
+        "Her kayıtta çözüm, AI yetkinliği, KOBİ ilgisi ve Akbank benchmark notu birlikte gösterilir.",
+        len(frame),
+    )
+    render_details(frame)
 
 
 def render_matrix(frame: pd.DataFrame, banks: list[str]) -> None:
@@ -632,14 +672,21 @@ inject_css()
 latest_verified = max((parse_date(value) for value in initiatives["last_verified"]), default=pd.NaT)
 render_page_header(
     "Bankaların AI Çalışmaları",
-    "Tier 1 bankaların AI ürünleri, KOBİ çözümleri, SaaS iş birlikleri, kampanyaları ve kurum içi yetkinlikleri.",
+    "Tier 1 ve Tier 2 bankaların AI ürünleri, KOBİ çözümleri, SaaS iş birlikleri, kampanyaları ve kurum içi yetkinlikleri.",
     updated_at=format_date(latest_verified),
 )
 
 with st.sidebar:
     st.header("AI Benchmark Filtreleri")
-    available_banks = [bank for bank in BANK_ORDER if bank in set(initiatives["institution_name"])]
-    selected_banks = st.multiselect("Banka", available_banks, default=available_banks)
+    selected_banks_by_tier: dict[str, list[str]] = {}
+    for tier_label, tier_banks in BANK_ORDER_BY_TIER.items():
+        available_banks = [bank for bank in tier_banks if bank in set(initiatives["institution_name"])]
+        selected_banks_by_tier[tier_label] = st.multiselect(
+            f"{tier_label} bankalar",
+            available_banks,
+            default=available_banks,
+            key=f"ai_banks_{tier_label.lower().replace(' ', '_')}",
+        )
     categories = sorted(initiatives["ai_category"].unique())
     selected_categories = st.multiselect("AI alanı", categories, default=categories)
     initiative_types = sorted(initiatives["initiative_type"].unique())
@@ -650,44 +697,24 @@ with st.sidebar:
     selected_evidence = st.multiselect("Kanıt seviyesi", evidence_options, default=evidence_options)
 
 filtered = initiatives[
-    initiatives["institution_name"].isin(selected_banks)
-    & initiatives["ai_category"].isin(selected_categories)
+    initiatives["ai_category"].isin(selected_categories)
     & initiatives["initiative_type"].isin(selected_types)
     & initiatives["sme_relevance"].isin(selected_relevance)
     & initiatives["evidence_level"].isin(selected_evidence)
 ].copy()
 
-if filtered.empty:
-    st.warning("Seçili filtrelerle eşleşen AI çalışması yok.")
-    st.stop()
-    raise SystemExit
-
-render_kpis(filtered)
-
-render_section_header(
-    "Benchmark özeti",
-    "İlk Tier 1 taramasından çıkan ortak paternler ve Akbank için açık alanlar.",
-    3,
+tier_tabs = st.tabs(
+    [
+        f"Tier 1 · {len(BANK_ORDER_BY_TIER['Tier 1'])} banka",
+        f"Tier 2 · {len(BANK_ORDER_BY_TIER['Tier 2'])} banka",
+    ]
 )
-render_insights(filtered)
 
-render_section_header(
-    "Tier 1 görünümü",
-    "Banka bazında müşteri AI, kurum içi kullanım ve KOBİ bağlantısının hızlı özeti.",
-    len(filtered),
-)
-render_bank_cards(filtered, selected_banks)
-
-render_section_header(
-    "AI yetenek matrisi",
-    "Aynı yetenek alanındaki çalışmalar bankalar arasında yan yana okunur; başlıklar resmî kaynağa gider.",
-    len(filtered),
-)
-render_matrix(filtered, selected_banks)
-
-render_section_header(
-    "Çalışma detayları",
-    "Her kayıtta çözüm, AI yetkinliği, KOBİ ilgisi ve Akbank benchmark notu birlikte gösterilir.",
-    len(filtered),
-)
-render_details(filtered)
+for tab, tier_label in zip(tier_tabs, BANK_ORDER_BY_TIER):
+    with tab:
+        selected_banks = selected_banks_by_tier[tier_label]
+        tier_frame = filtered[
+            filtered["institution_tier"].eq(tier_label)
+            & filtered["institution_name"].isin(selected_banks)
+        ].copy()
+        render_tier_view(tier_frame, tier_label, selected_banks)

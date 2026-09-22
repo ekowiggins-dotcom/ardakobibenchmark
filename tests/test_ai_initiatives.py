@@ -4,7 +4,8 @@ import pandas as pd
 
 
 DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "bank_ai_initiatives.csv"
-EXPECTED_BANKS = {"Akbank", "Garanti BBVA", "İş Bankası", "Yapı Kredi"}
+EXPECTED_TIER_ONE_BANKS = {"Akbank", "Garanti BBVA", "İş Bankası", "Yapı Kredi"}
+EXPECTED_TIER_TWO_BANKS = {"DenizBank", "Enpara", "QNB Finansbank", "Odeabank", "Alternatif Bank"}
 REQUIRED_COLUMNS = {
     "initiative_id",
     "institution_name",
@@ -37,13 +38,16 @@ def test_ai_initiative_schema_and_ids_are_valid() -> None:
     assert not frame[list(REQUIRED_COLUMNS)].eq("").any().any()
 
 
-def test_tier_one_bank_coverage_is_balanced() -> None:
+def test_tier_one_and_tier_two_bank_coverage_is_present() -> None:
     frame = read_ai_initiatives()
-    counts = frame.groupby("institution_name").size()
+    tier_one = frame[frame["institution_tier"].eq("Tier 1")].groupby("institution_name").size()
+    tier_two = frame[frame["institution_tier"].eq("Tier 2")].groupby("institution_name").size()
 
-    assert set(counts.index) == EXPECTED_BANKS
-    assert counts.min() >= 5
-    assert frame["institution_tier"].eq("Tier 1").all()
+    assert set(tier_one.index) == EXPECTED_TIER_ONE_BANKS
+    assert set(tier_two.index) == EXPECTED_TIER_TWO_BANKS
+    assert tier_one.min() >= 5
+    assert tier_two.min() >= 1
+    assert frame["institution_tier"].isin({"Tier 1", "Tier 2"}).all()
 
 
 def test_every_ai_initiative_has_an_official_source() -> None:
