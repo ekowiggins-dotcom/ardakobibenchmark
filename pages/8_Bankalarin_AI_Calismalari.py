@@ -20,6 +20,22 @@ BANK_ORDER_BY_TIER = {
     "Global": ["DBS", "Bank of America", "Santander", "HSBC", "BBVA"],
 }
 ALL_BANKS = [bank for banks in BANK_ORDER_BY_TIER.values() for bank in banks]
+BANK_MONOGRAMS = {
+    "Akbank": "AK",
+    "Garanti BBVA": "GB",
+    "İş Bankası": "İB",
+    "Yapı Kredi": "YK",
+    "DenizBank": "DB",
+    "Enpara": "EN",
+    "QNB Finansbank": "QF",
+    "Odeabank": "OD",
+    "Alternatif Bank": "AB",
+    "DBS": "DB",
+    "Bank of America": "BA",
+    "Santander": "SA",
+    "HSBC": "HS",
+    "BBVA": "BV",
+}
 MATRIX_BUCKETS = [
     "KOBİ & SaaS",
     "Müşteri AI",
@@ -96,34 +112,40 @@ def inject_css() -> None:
         }
 
         .stTabs [data-baseweb="tab-list"] {
-            background: var(--ak-surface);
-            border: 1px solid var(--ak-border);
-            border-radius: 10px;
-            box-shadow: var(--ak-shadow-soft);
-            gap: 0.25rem;
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid var(--ak-border);
+            border-radius: 0;
+            box-shadow: none;
+            gap: 1.25rem;
             margin: 0 0 1.25rem;
-            padding: 0.25rem;
+            padding: 0;
             width: fit-content;
         }
 
         .stTabs [data-baseweb="tab"] {
             background: transparent;
             border: 0;
-            border-radius: 7px;
+            border-bottom: 2px solid transparent;
+            border-radius: 0;
             color: var(--ak-secondary);
             font-size: 0.82rem;
             font-weight: 800;
             min-height: 2.35rem;
-            padding-inline: 1rem;
+            padding-inline: 0.1rem;
+            transition: border-color 140ms ease, color 140ms ease;
         }
 
         .stTabs [aria-selected="true"] {
-            background: var(--ak-text);
-            color: var(--ak-surface) !important;
+            background: transparent;
+            border-bottom-color: var(--ak-red);
+            color: var(--ak-text) !important;
         }
 
         .stTabs [data-baseweb="tab"]:nth-child(3)[aria-selected="true"] {
-            background: var(--ak-global-text);
+            background: transparent;
+            border-bottom-color: var(--ak-global-text);
+            color: var(--ak-global-text) !important;
         }
 
         .ai-kpi {
@@ -247,6 +269,13 @@ def inject_css() -> None:
             transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
         }
 
+        .ai-bank-card-anchor {
+            background: color-mix(in srgb, var(--ak-surface) 96%, var(--ak-chip-bg));
+            border-left: 3px solid var(--ak-red);
+            border-top-color: var(--ak-red);
+            box-shadow: var(--ak-shadow-lift);
+        }
+
         .ai-bank-card:hover {
             border-color: var(--ak-border-strong);
             box-shadow: var(--ak-shadow-soft);
@@ -259,6 +288,50 @@ def inject_css() -> None:
             justify-content: space-between;
             gap: 0.8rem;
             margin-bottom: 0.9rem;
+        }
+
+        .ai-bank-identity {
+            align-items: center;
+            display: flex;
+            gap: 0.65rem;
+            min-width: 0;
+        }
+
+        .ai-bank-monogram {
+            align-items: center;
+            background: var(--ak-text);
+            border: 1px solid var(--ak-text);
+            border-radius: 4px;
+            color: var(--ak-surface);
+            display: inline-flex;
+            flex: 0 0 auto;
+            font-family: var(--ak-font-display);
+            font-size: 0.7rem;
+            font-weight: 800;
+            height: 2rem;
+            justify-content: center;
+            letter-spacing: 0.02em;
+            width: 2rem;
+        }
+
+        .ai-bank-card-anchor .ai-bank-monogram {
+            background: var(--ak-red);
+            border-color: var(--ak-red);
+        }
+
+        .ai-report-badge {
+            background: var(--ak-chip-bg);
+            border: 1px solid var(--ak-chip-border);
+            border-radius: 999px;
+            color: var(--ak-chip-text);
+            display: inline-flex;
+            font-size: 0.6rem;
+            font-weight: 850;
+            letter-spacing: 0.08em;
+            margin-left: 0.35rem;
+            padding: 0.14rem 0.4rem;
+            text-transform: uppercase;
+            vertical-align: middle;
         }
 
         .ai-bank-name {
@@ -564,6 +637,10 @@ def render_bank_cards(frame: pd.DataFrame, banks: list[str], tier_label: str) ->
     cards: list[str] = []
     for bank in banks:
         bank_frame = frame[frame["institution_name"].eq(bank)].copy()
+        is_anchor = bank == "Akbank"
+        card_class = "ai-bank-card ai-bank-card-anchor" if is_anchor else "ai-bank-card"
+        report_badge = '<span class="ai-report-badge">Bu rapor</span>' if is_anchor else ""
+        monogram = BANK_MONOGRAMS.get(bank, bank[:2].upper())
         direct_sme = int(bank_frame["sme_relevance"].eq("Yüksek").sum())
         customer = int(bank_frame["delivery_model"].isin(["Banka ürünü", "Platform entegrasyonu"]).sum())
         internal = int(bank_frame["delivery_model"].eq("İç kullanım").sum())
@@ -573,9 +650,13 @@ def render_bank_cards(frame: pd.DataFrame, banks: list[str], tier_label: str) ->
         )
         highlight = highlight_rows.iloc[0]["initiative_name"] if not highlight_rows.empty else "Kayıt yok"
         cards.append(
-            '<div class="ai-bank-card">'
+            f'<div class="{card_class}">'
             '<div class="ai-bank-head">'
-            f'<div><div class="ai-label">{esc(tier_label)}</div><div class="ai-bank-name">{esc(bank)}</div></div>'
+            '<div class="ai-bank-identity">'
+            f'<span class="ai-bank-monogram">{esc(monogram)}</span>'
+            f'<div><div class="ai-label">{esc(tier_label)}{report_badge}</div>'
+            f'<div class="ai-bank-name">{esc(bank)}</div></div>'
+            '</div>'
             f'<span class="ai-count-pill">{len(bank_frame)} çalışma</span>'
             "</div>"
             '<div class="ai-bank-stat-grid">'

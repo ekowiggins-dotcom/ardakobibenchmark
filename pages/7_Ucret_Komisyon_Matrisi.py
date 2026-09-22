@@ -165,21 +165,30 @@ def compact_fee_label(row: pd.Series) -> str:
     return " — ".join(parts)
 
 
-def render_matrix_item(row: pd.Series, muted: bool = False) -> str:
-    label = esc(compact_fee_label(row))
+def render_matrix_item(row: pd.Series, muted: bool = False, best: bool = False) -> str:
+    item = esc(row.get("fee_item"))
+    value = esc(row.get("fee_value"))
     source_url = str(row.get("source_url", "")).strip()
     classes = "pricing-matrix-item"
     if muted:
         classes += " pricing-matrix-item-muted"
+    if best:
+        classes += " pricing-matrix-item-best"
+    content = (
+        f'<span class="pricing-matrix-item-copy">{item}</span>'
+        '<span class="pricing-matrix-item-end">'
+        f'<span class="pricing-matrix-item-value">{value}</span>'
+        + ('<span class="pricing-matrix-link-icon">↗</span>' if source_url else "")
+        + "</span>"
+    )
     if source_url:
         return (
             f'<a class="{classes} pricing-matrix-link" '
             f'href="{esc(source_url)}" target="_blank" rel="noopener noreferrer">'
-            f"<span>{label}</span>"
-            '<span class="pricing-matrix-link-icon">↗</span>'
+            f"{content}"
             "</a>"
         )
-    return f'<div class="{classes}">{label}</div>'
+    return f'<div class="{classes}">{content}</div>'
 
 
 def matrix_preview_limit(bucket: str) -> int:
@@ -192,13 +201,23 @@ def matrix_preview_limit(bucket: str) -> int:
     return MATRIX_PREVIEW_LIMIT
 
 
-def render_matrix_items(rows: list[pd.Series], bucket: str) -> str:
+def render_matrix_items(rows: list[pd.Series], bucket: str, best_fee_ids: set[str]) -> str:
     preview_limit = matrix_preview_limit(bucket)
     visible = rows[:preview_limit]
     hidden = rows[preview_limit:]
-    items = "".join(render_matrix_item(row) for row in visible)
+    items = "".join(
+        render_matrix_item(row, best=str(row.get("fee_id", "")) in best_fee_ids)
+        for row in visible
+    )
     if hidden:
-        hidden_items = "".join(render_matrix_item(row, muted=True) for row in hidden)
+        hidden_items = "".join(
+            render_matrix_item(
+                row,
+                muted=True,
+                best=str(row.get("fee_id", "")) in best_fee_ids,
+            )
+            for row in hidden
+        )
         items += (
             '<details class="pricing-matrix-more">'
             f'<summary>+{len(hidden)} kalem</summary>'
@@ -206,6 +225,42 @@ def render_matrix_items(rows: list[pd.Series], bucket: str) -> str:
             '</details>'
         )
     return items
+
+
+def matrix_best_fee_ids(tier_df: pd.DataFrame, buckets: list[str]) -> set[str]:
+    """Mark only directly comparable public prices; avoid false cross-product rankings."""
+
+    best_ids: set[str] = set()
+    for bucket in buckets:
+        candidates: list[tuple[float, str]] = []
+        bucket_df = tier_df[tier_df["matrix_bucket"].eq(bucket)]
+        for _, row in bucket_df.iterrows():
+            text = " ".join(
+                str(row.get(column, ""))
+                for column in ["fee_family", "fee_item", "product_or_channel", "fee_basis"]
+            ).casefold()
+            value: float | None = None
+            if bucket == "POS":
+                if str(row.get("market_scope", "Türkiye")) == "Türkiye":
+                    comparable = (
+                        "yeni kazanım" in text
+                        and "kredi kart" in text
+                        and "peşin" in text
+                        and "sektör" not in text
+                    )
+                else:
+                    comparable = any(token in text for token in ["merchant", "acquiring", "card payment"])
+                if comparable:
+                    value = first_percentage(row.get("fee_value"))
+            elif bucket == "Kartlar" and any(token in text for token in ["yıllık ücret", "annual fee"]):
+                value = 0.0 if zero_or_free(row.get("fee_value")) else tl_amount(row.get("fee_value"))
+            if value is not None:
+                candidates.append((value, str(row.get("fee_id", ""))))
+        if not candidates:
+            continue
+        best_value = min(value for value, _ in candidates)
+        best_ids.update(fee_id for value, fee_id in candidates if value == best_value)
+    return best_ids
 
 
 def matrix_item_sort_key(row: pd.Series, bucket: str, fallback_order: int) -> tuple[int, int]:
@@ -479,8 +534,8 @@ def inject_css(scope: str) -> None:
         .pricing-tier-panel {
             background: var(--ak-surface);
             border: 1px solid var(--ak-border);
-            border-radius: 14px;
-            box-shadow: var(--ak-shadow-soft);
+            border-radius: 4px;
+            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.055);
             margin: 0 0 1.2rem;
             overflow-x: auto;
         }
@@ -492,6 +547,37 @@ def inject_css(scope: str) -> None:
             gap: 1rem;
             padding: 1rem 1.15rem;
             border-bottom: 1px solid var(--ak-border);
+        }
+
+        .pricing-matrix-legend {
+            align-items: center;
+            background: var(--ak-soft);
+            border-bottom: 1px solid var(--ak-border);
+            color: var(--ak-muted);
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 0.67rem;
+            font-weight: 700;
+            gap: 1rem;
+            padding: 0.55rem 1.15rem;
+        }
+
+        .pricing-matrix-legend span {
+            align-items: center;
+            display: inline-flex;
+            gap: 0.38rem;
+        }
+
+        .pricing-matrix-legend i {
+            background: var(--ak-border-strong);
+            border-radius: 999px;
+            display: inline-block;
+            height: 0.42rem;
+            width: 0.42rem;
+        }
+
+        .pricing-matrix-legend .pricing-legend-best {
+            background: var(--ak-red);
         }
 
         .pricing-tier-title {
@@ -508,15 +594,20 @@ def inject_css(scope: str) -> None:
 
         .pricing-matrix {
             display: grid;
-            grid-template-columns: minmax(150px, 0.75fr) repeat(var(--pricing-column-count, 5), minmax(220px, 1fr));
-            min-width: 1260px;
+            grid-template-columns: minmax(160px, 0.72fr) repeat(var(--pricing-column-count, 5), minmax(250px, 1fr));
+            min-width: 1420px;
         }
 
         .pricing-matrix-cell {
             min-height: 68px;
-            padding: 0.72rem 0.84rem;
+            padding: 0.85rem 0.9rem;
             border-right: 1px solid var(--ak-border);
             border-bottom: 1px solid var(--ak-border);
+            background: var(--ak-surface);
+        }
+
+        .pricing-matrix-cell.pricing-row-even {
+            background: var(--ak-soft);
         }
 
         .pricing-matrix-header {
@@ -526,7 +617,20 @@ def inject_css(scope: str) -> None:
             font-size: 0.68rem;
             font-weight: 900;
             letter-spacing: 0.1em;
+            position: sticky;
+            top: 0;
             text-transform: uppercase;
+            z-index: 4;
+        }
+
+        .pricing-matrix-bank-cell {
+            left: 0;
+            position: sticky;
+            z-index: 3;
+        }
+
+        .pricing-matrix-header.pricing-matrix-bank-cell {
+            z-index: 5;
         }
 
         .pricing-matrix-bank {
@@ -550,10 +654,42 @@ def inject_css(scope: str) -> None:
         .pricing-matrix-item {
             color: var(--ak-text);
             font-size: 0.74rem;
-            font-weight: 750;
+            font-weight: 650;
             line-height: 1.22;
             border-bottom: 1px solid var(--ak-border);
+            display: grid;
+            gap: 0.55rem;
+            grid-template-columns: minmax(0, 1fr) auto;
             padding-bottom: 0.3rem;
+        }
+
+        .pricing-matrix-item-copy {
+            min-width: 0;
+        }
+
+        .pricing-matrix-item-end {
+            align-items: flex-start;
+            display: inline-flex;
+            gap: 0.28rem;
+            justify-content: flex-end;
+        }
+
+        .pricing-matrix-item-value {
+            color: var(--ak-secondary);
+            font-variant-numeric: tabular-nums;
+            font-weight: 800;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .pricing-matrix-item-best {
+            border-left: 2px solid var(--ak-red);
+            padding-left: 0.45rem;
+        }
+
+        .pricing-matrix-item-best .pricing-matrix-item-value {
+            color: var(--ak-text);
+            font-weight: 900;
         }
 
         .pricing-matrix-item:last-child {
@@ -562,10 +698,6 @@ def inject_css(scope: str) -> None:
         }
 
         .pricing-matrix-link {
-            display: flex;
-            align-items: start;
-            justify-content: space-between;
-            gap: 0.45rem;
             text-decoration: none !important;
             transition: color 120ms ease;
         }
@@ -691,7 +823,7 @@ def inject_css(scope: str) -> None:
             }
 
             .pricing-matrix {
-                grid-template-columns: minmax(132px, 0.8fr) repeat(var(--pricing-column-count, 5), minmax(190px, 1fr));
+                grid-template-columns: minmax(140px, 0.8fr) repeat(var(--pricing-column-count, 5), minmax(220px, 1fr));
             }
         }
         </style>
@@ -762,15 +894,17 @@ def render_tier_matrix(df: pd.DataFrame, tier: str, buckets: list[str], bank_ord
     tier_df["matrix_bucket"] = tier_df.apply(matrix_bucket, axis=1)
     banks = [bank for bank in bank_order if bank in set(tier_df["institution_name"])]
     visible_row_count = len(tier_df[tier_df["matrix_bucket"].isin(buckets)])
-    cells = ['<div class="pricing-matrix-cell pricing-matrix-header">Banka</div>']
+    best_fee_ids = matrix_best_fee_ids(tier_df, buckets)
+    cells = ['<div class="pricing-matrix-cell pricing-matrix-header pricing-matrix-bank-cell">Banka</div>']
     cells.extend(
         f'<div class="pricing-matrix-cell pricing-matrix-header">{esc(bucket)}</div>'
         for bucket in buckets
     )
-    for bank in banks:
+    for row_index, bank in enumerate(banks):
+        row_class = "pricing-row-even" if row_index % 2 else "pricing-row-odd"
         bank_df = tier_df[tier_df["institution_name"].eq(bank)]
         cells.append(
-            '<div class="pricing-matrix-cell">'
+            f'<div class="pricing-matrix-cell pricing-matrix-bank-cell {row_class}">'
             f'<div class="pricing-matrix-bank">{esc(bank)}</div>'
             f'<div class="pricing-matrix-tier">{esc(tier)}</div>'
             '</div>'
@@ -778,11 +912,15 @@ def render_tier_matrix(df: pd.DataFrame, tier: str, buckets: list[str], bank_ord
         for bucket in buckets:
             bucket_df = bank_df[bank_df["matrix_bucket"].eq(bucket)]
             if bucket_df.empty:
-                cells.append('<div class="pricing-matrix-cell"><span class="pricing-matrix-empty">Kayıt yok</span></div>')
+                cells.append(f'<div class="pricing-matrix-cell {row_class}"><span class="pricing-matrix-empty">Kayıt yok</span></div>')
                 continue
             bucket_df = sort_matrix_bucket(bucket_df, bucket)
-            items = render_matrix_items([row for _, row in bucket_df.iterrows()], bucket)
-            cells.append(f'<div class="pricing-matrix-cell"><div class="pricing-matrix-items">{items}</div></div>')
+            items = render_matrix_items(
+                [row for _, row in bucket_df.iterrows()],
+                bucket,
+                best_fee_ids,
+            )
+            cells.append(f'<div class="pricing-matrix-cell {row_class}"><div class="pricing-matrix-items">{items}</div></div>')
     st.markdown(
         (
             '<div class="pricing-tier-panel">'
@@ -790,6 +928,10 @@ def render_tier_matrix(df: pd.DataFrame, tier: str, buckets: list[str], bank_ord
             f'<div><div class="pricing-tier-title">{esc(tier)} ücret-komisyon matrisi</div>'
             '<div class="pricing-tier-copy">Banka satırları; kart, POS, transfer ve paket/kredi kalemleri yan yana okunur.</div></div>'
             f'<span class="pricing-pill">{len(banks)} banka · {visible_row_count} görünür satır</span>'
+            '</div>'
+            '<div class="pricing-matrix-legend">'
+            '<span><i class="pricing-legend-best"></i>Doğrudan karşılaştırılabilen en iyi yayımlanmış değer</span>'
+            '<span><i></i>Kapsamı farklı veya standart değer</span>'
             '</div>'
             f'<div class="pricing-matrix" style="--pricing-column-count: {len(buckets)};">{"".join(cells)}</div>'
             '</div>'

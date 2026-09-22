@@ -88,7 +88,7 @@ st.markdown(
     """
     <style>
     .st-key-executive_page_switcher {
-        margin: 1.65rem 0 1.15rem;
+        margin: 1.5rem 0 1.25rem;
     }
 
     .st-key-executive_page_switcher div[data-testid="stHorizontalBlock"] {
@@ -101,8 +101,10 @@ st.markdown(
     }
 
     .st-key-executive_page_switcher [data-baseweb="button-group"] {
+        background: var(--ak-surface);
         border-bottom: 1px solid var(--ak-border);
-        gap: 0.75rem;
+        gap: 1.2rem;
+        padding: 0 1rem;
     }
 
     .st-key-executive_page_switcher [data-baseweb="button-group"] button {
@@ -112,11 +114,12 @@ st.markdown(
         border-radius: 0 !important;
         color: var(--ak-muted) !important;
         min-height: 2rem;
-        padding: 0 0 0.38rem !important;
-        font-size: 0.72rem !important;
-        font-weight: 800 !important;
-        letter-spacing: 0.08em !important;
-        text-transform: uppercase !important;
+        padding: 0.7rem 0 0.58rem !important;
+        font-size: 0.76rem !important;
+        font-weight: 700 !important;
+        letter-spacing: 0 !important;
+        text-transform: none !important;
+        transition: color 140ms ease, border-color 140ms ease !important;
     }
 
     .st-key-executive_page_switcher [data-baseweb="button-group"] button[aria-pressed="true"],
@@ -138,15 +141,15 @@ st.markdown(
         box-shadow: none !important;
         color: var(--ak-muted) !important;
         min-height: 2rem !important;
-        padding: 0 0 0.38rem !important;
+        padding: 0.7rem 0 0.58rem !important;
     }
 
     .st-key-executive_page_switcher .stButton > button[kind="secondary"] p {
         color: inherit !important;
-        font-size: 0.72rem;
-        font-weight: 800;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
+        font-size: 0.76rem;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: none;
     }
 
     .st-key-executive_page_switcher .stButton > button[kind="secondary"]:hover {

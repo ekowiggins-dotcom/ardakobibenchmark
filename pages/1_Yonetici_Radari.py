@@ -71,9 +71,10 @@ st.markdown(
     }
 
     .ak-page-header {
-        border-color: var(--radar-border) !important;
-        box-shadow: var(--radar-card-shadow) !important;
-        margin-bottom: 1.25rem !important;
+        border-top-color: var(--ak-red) !important;
+        border-bottom-color: var(--radar-border) !important;
+        box-shadow: none !important;
+        margin-bottom: 1.5rem !important;
     }
 
     [data-testid="stMain"] hr {

@@ -34,6 +34,8 @@ def apply_akbank_theme() -> None:
     st.markdown(
         f"""
         <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&display=swap');
+
         :root {{
             --ak-red: {PALETTE["primary_red"]};
             --ak-red-dark: {PALETTE["primary_red_dark"]};
@@ -56,12 +58,33 @@ def apply_akbank_theme() -> None:
             --ak-global-text: {PALETTE["global_text"]};
             --ak-shadow-soft: 0 6px 18px rgba(15, 23, 42, 0.075);
             --ak-shadow-lift: 0 10px 28px rgba(15, 23, 42, 0.095);
+            --ak-font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            --ak-font-display: "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            --ak-space-1: 0.5rem;
+            --ak-space-2: 1rem;
+            --ak-space-3: 1.5rem;
+            --ak-space-4: 2rem;
+            --ak-space-5: 2.5rem;
             --primary-color: {PALETTE["primary_red"]};
         }}
 
         html, body, .stApp, [data-testid="stAppViewContainer"] {{
             background: var(--ak-bg) !important;
             color: var(--ak-text) !important;
+            font-family: var(--ak-font-body) !important;
+            font-variant-numeric: tabular-nums;
+        }}
+
+        button, input, textarea, select, [data-baseweb] {{
+            font-family: var(--ak-font-body) !important;
+        }}
+
+        #MainMenu,
+        [data-testid="stToolbar"],
+        [data-testid="stDecoration"],
+        [data-testid="stStatusWidget"],
+        footer {{
+            display: none !important;
         }}
 
         [data-testid="stHeader"] {{
@@ -73,10 +96,17 @@ def apply_akbank_theme() -> None:
             padding-top: 2.15rem;
             padding-bottom: 3.25rem;
             max-width: 1500px;
+            animation: ak-content-in 180ms ease-out both;
+        }}
+
+        @keyframes ak-content-in {{
+            from {{ opacity: 0; transform: translateY(3px); }}
+            to {{ opacity: 1; transform: translateY(0); }}
         }}
 
         h1, h2, h3 {{
             color: var(--ak-text) !important;
+            font-family: var(--ak-font-display) !important;
             letter-spacing: 0 !important;
         }}
 
@@ -145,14 +175,14 @@ def apply_akbank_theme() -> None:
 
         .ak-page-header {{
             background: var(--ak-surface);
-            border-top: 1px solid var(--ak-border);
-            border-right: 1px solid var(--ak-border);
+            border-top: 2px solid var(--ak-red);
+            border-right: 0;
             border-bottom: 1px solid var(--ak-border-strong);
-            border-left: 1px solid var(--ak-border);
-            border-radius: 16px;
-            box-shadow: var(--ak-shadow-soft);
-            padding: 1.35rem 1.75rem;
-            margin-bottom: 1.65rem;
+            border-left: 0;
+            border-radius: 2px;
+            box-shadow: none;
+            padding: var(--ak-space-3) var(--ak-space-2) var(--ak-space-4);
+            margin-bottom: var(--ak-space-4);
         }}
 
         .ak-page-header-inner {{
@@ -164,6 +194,7 @@ def apply_akbank_theme() -> None:
 
         .ak-page-header-main {{
             min-width: 0;
+            max-width: 70ch;
         }}
 
         .ak-page-meta {{
@@ -184,17 +215,17 @@ def apply_akbank_theme() -> None:
             align-items: center;
             gap: 0.45rem;
             color: var(--ak-red-dark);
-            font-size: 0.78rem;
+            font-size: 0.68rem;
             font-weight: 800;
-            letter-spacing: 0.12em;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
-            margin-bottom: 0.5rem;
+            margin-bottom: var(--ak-space-2);
         }}
 
         .ak-product-chip::before {{
             content: "";
-            width: 0.55rem;
-            height: 0.55rem;
+            width: 0.42rem;
+            height: 0.42rem;
             border-radius: 999px;
             background: var(--ak-red);
             display: inline-block;
@@ -202,15 +233,15 @@ def apply_akbank_theme() -> None:
 
         .ak-page-header h1 {{
             margin: 0;
-            font-size: clamp(2rem, 3vw, 3rem);
-            line-height: 1.08;
-            font-weight: 850;
+            font-size: clamp(2.35rem, 4vw, 3.85rem);
+            line-height: 1;
+            font-weight: 800;
             color: var(--ak-text) !important;
         }}
 
         .ak-page-header p {{
-            margin: 0.75rem 0 0;
-            max-width: 820px;
+            margin: var(--ak-space-2) 0 0;
+            max-width: 70ch;
             color: var(--ak-secondary) !important;
             font-size: 1rem;
             line-height: 1.55;
@@ -224,9 +255,9 @@ def apply_akbank_theme() -> None:
             }}
 
             .ak-page-header {{
-                border-radius: 14px;
-                padding: 1.15rem 1.15rem 1.2rem;
-                margin-bottom: 1rem;
+                border-radius: 2px;
+                padding: 1.25rem 0.25rem 1.5rem;
+                margin-bottom: 1.5rem;
             }}
 
             .ak-page-header-inner {{
@@ -341,16 +372,19 @@ def apply_akbank_theme() -> None:
             border-color: var(--ak-border-strong) !important;
         }}
 
-        div[data-testid="stExpander"] details,
-        details {{
+        div[data-testid="stExpander"] details {{
             background: var(--ak-surface) !important;
             border: 1px solid var(--ak-border) !important;
-            border-radius: 14px !important;
-            box-shadow: var(--ak-shadow-soft);
+            border-radius: 4px !important;
+            box-shadow: none;
         }}
 
-        div[data-testid="stExpander"] summary,
-        details summary {{
+        div[data-testid="stExpander"] details[open] {{
+            border-color: var(--ak-border-strong) !important;
+            box-shadow: 0 3px 12px rgba(15, 23, 42, 0.055);
+        }}
+
+        div[data-testid="stExpander"] summary {{
             color: var(--ak-text) !important;
             font-weight: 750;
             padding-block: 0.22rem;
@@ -364,7 +398,6 @@ def apply_akbank_theme() -> None:
         }}
 
         [data-testid="stSidebar"] div[data-testid="stExpander"] details,
-        [data-testid="stSidebar"] details,
         [data-testid="stSidebar"] div[data-testid="stVerticalBlockBorderWrapper"] {{
             border-radius: 0 !important;
             box-shadow: none !important;
@@ -381,23 +414,29 @@ def apply_akbank_theme() -> None:
         }}
 
         .stTabs [data-baseweb="tab-list"] {{
-            gap: 0.45rem;
+            gap: 1.25rem;
             border-bottom: 1px solid var(--ak-border);
-            margin-bottom: 0.9rem;
+            margin-bottom: 1rem;
         }}
 
         .stTabs [data-baseweb="tab"] {{
-            background: var(--ak-surface);
-            border: 1px solid var(--ak-border);
-            border-bottom: 0;
-            border-radius: 10px 10px 0 0;
+            background: transparent;
+            border: 0;
+            border-bottom: 2px solid transparent;
+            border-radius: 0;
             color: var(--ak-secondary);
             font-weight: 700;
+            padding-inline: 0.1rem;
+            transition: color 140ms ease, border-color 140ms ease;
         }}
 
         .stTabs [aria-selected="true"] {{
             color: var(--ak-text) !important;
-            border-top: 1px solid var(--ak-border-strong);
+            border-bottom-color: var(--ak-red) !important;
+        }}
+
+        .stTabs [data-baseweb="tab-highlight"] {{
+            display: none;
         }}
 
         [data-testid="stAlert"] {{
