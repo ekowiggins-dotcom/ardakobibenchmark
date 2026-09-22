@@ -36,6 +36,22 @@ BANK_MONOGRAMS = {
     "HSBC": "HS",
     "BBVA": "BV",
 }
+BANK_STYLE_CLASSES = {
+    "Akbank": "ai-bank-akbank",
+    "Garanti BBVA": "ai-bank-garanti",
+    "İş Bankası": "ai-bank-isbank",
+    "Yapı Kredi": "ai-bank-yapikredi",
+    "DenizBank": "ai-bank-denizbank",
+    "Enpara": "ai-bank-enpara",
+    "QNB Finansbank": "ai-bank-qnb",
+    "Odeabank": "ai-bank-odeabank",
+    "Alternatif Bank": "ai-bank-alternatif",
+    "DBS": "ai-bank-dbs",
+    "Bank of America": "ai-bank-bofa",
+    "Santander": "ai-bank-santander",
+    "HSBC": "ai-bank-hsbc",
+    "BBVA": "ai-bank-bbva",
+}
 MATRIX_BUCKETS = [
     "KOBİ & SaaS",
     "Müşteri AI",
@@ -264,20 +280,22 @@ def inject_css() -> None:
 
         .ai-bank-card {
             border-top: 2px solid var(--ak-border-strong);
+            border-left: 3px solid var(--ai-bank-accent, var(--ak-border-strong));
             min-height: 186px;
             padding: 1.1rem 1.15rem;
             transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
         }
 
         .ai-bank-card-anchor {
-            background: color-mix(in srgb, var(--ak-surface) 96%, var(--ak-chip-bg));
-            border-left: 3px solid var(--ak-red);
-            border-top-color: var(--ak-red);
+            background: color-mix(in srgb, var(--ak-surface) 96%, var(--ai-bank-soft, var(--ak-chip-bg)));
+            border-left-color: var(--ai-bank-accent, var(--ak-red));
+            border-top-color: var(--ai-bank-accent, var(--ak-red));
             box-shadow: var(--ak-shadow-lift);
         }
 
         .ai-bank-card:hover {
             border-color: var(--ak-border-strong);
+            border-left-color: var(--ai-bank-accent, var(--ak-border-strong));
             box-shadow: var(--ak-shadow-soft);
             transform: translateY(-1px);
         }
@@ -299,8 +317,8 @@ def inject_css() -> None:
 
         .ai-bank-monogram {
             align-items: center;
-            background: var(--ak-text);
-            border: 1px solid var(--ak-text);
+            background: var(--ai-bank-accent, var(--ak-text));
+            border: 1px solid var(--ai-bank-accent, var(--ak-text));
             border-radius: 4px;
             color: var(--ak-surface);
             display: inline-flex;
@@ -314,10 +332,20 @@ def inject_css() -> None:
             width: 2rem;
         }
 
-        .ai-bank-card-anchor .ai-bank-monogram {
-            background: var(--ak-red);
-            border-color: var(--ak-red);
-        }
+        .ai-bank-akbank { --ai-bank-accent: #e30613; --ai-bank-soft: #fff2f2; }
+        .ai-bank-garanti { --ai-bank-accent: #00854a; --ai-bank-soft: #f1faf5; }
+        .ai-bank-isbank { --ai-bank-accent: #0057a8; --ai-bank-soft: #f1f7fc; }
+        .ai-bank-yapikredi { --ai-bank-accent: #234b88; --ai-bank-soft: #f2f5fa; }
+        .ai-bank-denizbank { --ai-bank-accent: #005daa; --ai-bank-soft: #f1f7fc; }
+        .ai-bank-enpara { --ai-bank-accent: #742b8f; --ai-bank-soft: #f8f2fa; }
+        .ai-bank-qnb { --ai-bank-accent: #6d1b54; --ai-bank-soft: #faf2f7; }
+        .ai-bank-odeabank { --ai-bank-accent: #007f7b; --ai-bank-soft: #f0f9f8; }
+        .ai-bank-alternatif { --ai-bank-accent: #d05a2a; --ai-bank-soft: #fcf4f0; }
+        .ai-bank-dbs { --ai-bank-accent: #c9202f; --ai-bank-soft: #fcf2f3; }
+        .ai-bank-bofa { --ai-bank-accent: #1a4f9c; --ai-bank-soft: #f1f5fb; }
+        .ai-bank-santander { --ai-bank-accent: #cc0000; --ai-bank-soft: #fcf1f1; }
+        .ai-bank-hsbc { --ai-bank-accent: #db0011; --ai-bank-soft: #fcf1f2; }
+        .ai-bank-bbva { --ai-bank-accent: #004481; --ai-bank-soft: #f1f6fa; }
 
         .ai-report-badge {
             background: var(--ak-chip-bg);
@@ -419,6 +447,7 @@ def inject_css() -> None:
         .ai-matrix-row {
             background: var(--ak-surface);
             border: 1px solid var(--ak-border);
+            border-left: 3px solid var(--ai-bank-accent, var(--ak-border-strong));
             border-radius: 10px;
             box-shadow: var(--ak-shadow-soft);
             gap: 0.8rem;
@@ -428,6 +457,7 @@ def inject_css() -> None:
 
         .ai-matrix-row:hover {
             border-color: var(--ak-border-strong);
+            border-left-color: var(--ai-bank-accent, var(--ak-border-strong));
             box-shadow: var(--ak-shadow-soft);
         }
 
@@ -453,6 +483,28 @@ def inject_css() -> None:
             font-size: 0.92rem;
             font-weight: 900;
             line-height: 1.3;
+        }
+
+        .ai-matrix-bank-identity {
+            align-items: center;
+            display: flex;
+            gap: 0.55rem;
+            margin-top: 0.38rem;
+        }
+
+        .ai-matrix-monogram {
+            align-items: center;
+            background: var(--ai-bank-accent, var(--ak-text));
+            border-radius: 4px;
+            color: var(--ak-surface);
+            display: inline-flex;
+            flex: 0 0 auto;
+            font-family: var(--ak-font-display);
+            font-size: 0.58rem;
+            font-weight: 800;
+            height: 1.65rem;
+            justify-content: center;
+            width: 1.65rem;
         }
 
         .ai-matrix-cell {
@@ -638,7 +690,10 @@ def render_bank_cards(frame: pd.DataFrame, banks: list[str], tier_label: str) ->
     for bank in banks:
         bank_frame = frame[frame["institution_name"].eq(bank)].copy()
         is_anchor = bank == "Akbank"
-        card_class = "ai-bank-card ai-bank-card-anchor" if is_anchor else "ai-bank-card"
+        bank_style_class = BANK_STYLE_CLASSES.get(bank, "")
+        card_class = f"ai-bank-card {bank_style_class}"
+        if is_anchor:
+            card_class += " ai-bank-card-anchor"
         report_badge = '<span class="ai-report-badge">Bu rapor</span>' if is_anchor else ""
         monogram = BANK_MONOGRAMS.get(bank, bank[:2].upper())
         direct_sme = int(bank_frame["sme_relevance"].eq("Yüksek").sum())
@@ -778,6 +833,8 @@ def render_matrix(frame: pd.DataFrame, banks: list[str]) -> None:
     for bank in banks:
         bank_frame = frame[frame["institution_name"].eq(bank)].copy()
         bank_frame["_bucket"] = bank_frame.apply(matrix_bucket, axis=1)
+        bank_style_class = BANK_STYLE_CLASSES.get(bank, "")
+        monogram = BANK_MONOGRAMS.get(bank, bank[:2].upper())
         cells: list[str] = []
         for bucket in MATRIX_BUCKETS:
             bucket_frame = bank_frame[bank_frame["_bucket"].eq(bucket)]
@@ -800,8 +857,11 @@ def render_matrix(frame: pd.DataFrame, banks: list[str]) -> None:
                 '</div>'
             )
         rows.append(
-            '<div class="ai-matrix-row">'
-            f'<div class="ai-matrix-bank"><span>Banka</span><strong>{esc(bank)}</strong></div>'
+            f'<div class="ai-matrix-row {bank_style_class}">'
+            '<div class="ai-matrix-bank"><span>Banka</span>'
+            '<div class="ai-matrix-bank-identity">'
+            f'<span class="ai-matrix-monogram">{esc(monogram)}</span>'
+            f'<strong>{esc(bank)}</strong></div></div>'
             f'<div class="ai-matrix-cells">{"".join(cells)}</div>'
             '</div>'
         )
