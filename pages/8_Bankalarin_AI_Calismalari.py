@@ -170,6 +170,41 @@ def inject_css() -> None:
             gap: 1rem;
         }
 
+        .ai-insight-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .ai-insight-card {
+            background: var(--ak-surface);
+            border: 1px solid var(--ak-border);
+            border-top: 2px solid var(--ak-border-strong);
+            border-radius: 14px;
+            box-shadow: var(--ak-shadow-soft);
+            min-height: 148px;
+            padding: 1rem 1.1rem;
+        }
+
+        .ai-insight-card-featured {
+            border-top-color: var(--ak-red);
+        }
+
+        .ai-insight-title {
+            color: var(--ak-text);
+            font-size: 0.98rem;
+            font-weight: 900;
+            line-height: 1.35;
+            margin-top: 0.4rem;
+        }
+
+        .ai-insight-copy {
+            color: var(--ak-secondary);
+            font-size: 0.84rem;
+            line-height: 1.55;
+            margin-top: 0.5rem;
+        }
+
         .ai-bank-card {
             min-height: 186px;
             padding: 1.1rem 1.15rem;
@@ -374,6 +409,7 @@ def inject_css() -> None:
         @media (max-width: 1100px) {
             .ai-kpi-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
             .ai-bank-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .ai-insight-grid { grid-template-columns: 1fr; }
         }
 
         @media (max-width: 700px) {
@@ -455,6 +491,49 @@ def render_bank_cards(frame: pd.DataFrame, banks: list[str]) -> None:
             "</div>"
         )
     st.markdown(f'<div class="ai-bank-grid">{"".join(cards)}</div>', unsafe_allow_html=True)
+
+
+def render_insights(frame: pd.DataFrame) -> None:
+    customer_ai = frame[frame.apply(matrix_bucket, axis=1).eq("Müşteri AI")]
+    customer_banks = customer_ai["institution_name"].nunique()
+    direct_sme = frame[frame["sme_relevance"].eq("Yüksek")]
+    direct_sme_banks = ", ".join(
+        bank for bank in BANK_ORDER if bank in set(direct_sme["institution_name"])
+    ) or "Henüz doğrulanmış banka yok"
+    partner_saas = frame[frame["delivery_model"].eq("Partner SaaS")]
+    campaign_count = int(frame["initiative_type"].eq("AI Kampanyası").sum())
+
+    insights = [
+        (
+            "Patern",
+            "Asistan yarışı ürünleşiyor",
+            f"{customer_banks} banka müşteri asistanı veya mesajlaşma tabanlı AI sunuyor. Ayrışma artık chatbot sahibi olmaktan çok işlem tamamlama ve üçüncü taraf kanallara taşınma derinliğinde.",
+            False,
+        ),
+        (
+            "KOBİ fırsat alanı",
+            "Doğrudan KOBİ AI teklifi hâlâ sınırlı",
+            f"KOBİ ilgisi yüksek {len(direct_sme)} çalışma {direct_sme_banks} tarafında görülüyor. Nakit akışı, tahsilat ve muhasebe copilot'ı için belirgin ürün boşluğu var.",
+            True,
+        ),
+        (
+            "Dağıtım modeli",
+            "SaaS ortaklıkları yeni rekabet katmanı",
+            f"İlk taramada {len(partner_saas)} partner SaaS kaydı ve {campaign_count} doğrulanmış AI harcama kampanyası var. Akbank'ın Usersdot modeli farklı KOBİ yazılımlarına genişletilebilir.",
+            False,
+        ),
+    ]
+    cards = "".join(
+        (
+            f'<div class="ai-insight-card{" ai-insight-card-featured" if featured else ""}">'
+            f'<div class="ai-label">{esc(label)}</div>'
+            f'<div class="ai-insight-title">{esc(title)}</div>'
+            f'<div class="ai-insight-copy">{esc(copy)}</div>'
+            "</div>"
+        )
+        for label, title, copy, featured in insights
+    )
+    st.markdown(f'<div class="ai-insight-grid">{cards}</div>', unsafe_allow_html=True)
 
 
 def render_matrix(frame: pd.DataFrame, banks: list[str]) -> None:
@@ -584,6 +663,13 @@ if filtered.empty:
     raise SystemExit
 
 render_kpis(filtered)
+
+render_section_header(
+    "Benchmark özeti",
+    "İlk Tier 1 taramasından çıkan ortak paternler ve Akbank için açık alanlar.",
+    3,
+)
+render_insights(filtered)
 
 render_section_header(
     "Tier 1 görünümü",
