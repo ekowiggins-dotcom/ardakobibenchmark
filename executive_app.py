@@ -26,6 +26,10 @@ def render_ucret_komisyon_matrisi() -> None:
     run_streamlit_page_without_page_config(ROOT / "pages" / "7_Ucret_Komisyon_Matrisi.py")
 
 
+def render_bankalarin_ai_calismalari() -> None:
+    run_streamlit_page_without_page_config(ROOT / "pages" / "8_Bankalarin_AI_Calismalari.py")
+
+
 st.set_page_config(
     page_title="Akbank Yönetici Özeti",
     layout="wide",
@@ -53,9 +57,20 @@ ucret_komisyon_matrisi_page = st.Page(
     title="Ücret Komisyon Matrisi",
     url_path="ucret-komisyon-matrisi",
 )
+bankalarin_ai_calismalari_page = st.Page(
+    render_bankalarin_ai_calismalari,
+    title="Bankaların AI Çalışmaları",
+    url_path="bankalarin-ai-calismalari",
+)
 
 page = st.navigation(
-    [yonetici_page, tum_gelismeler_page, yeni_musteri_teklifleri_page, ucret_komisyon_matrisi_page],
+    [
+        yonetici_page,
+        tum_gelismeler_page,
+        yeni_musteri_teklifleri_page,
+        ucret_komisyon_matrisi_page,
+        bankalarin_ai_calismalari_page,
+    ],
     position="sidebar",
     expanded=True,
 )
@@ -66,6 +81,7 @@ active_nav_key = {
     "Tüm Gelişmeler": "executive_nav_all",
     "Yeni Müşteri Teklifleri": "executive_nav_new_customer",
     "Ücret Komisyon Matrisi": "executive_nav_pricing",
+    "Bankaların AI Çalışmaları": "executive_nav_ai",
 }.get(current_title, "executive_nav_radar")
 
 st.markdown(
@@ -191,7 +207,13 @@ st.markdown(
 with st.container(key="executive_page_switcher"):
     selected_page = st.segmented_control(
         "Sayfa",
-        ["Yönetici Özeti", "Tüm Gelişmeler", "Yeni Müşteri Teklifleri", "Ücret Komisyon Matrisi"],
+        [
+            "Yönetici Özeti",
+            "Tüm Gelişmeler",
+            "Yeni Müşteri Teklifleri",
+            "Ücret Komisyon Matrisi",
+            "Bankaların AI Çalışmaları",
+        ],
         default=current_title,
         key="executive_nav_segment",
         label_visibility="collapsed",
@@ -205,5 +227,7 @@ if selected_page == "Yeni Müşteri Teklifleri" and current_title != "Yeni Müş
     st.switch_page(yeni_musteri_teklifleri_page)
 if selected_page == "Ücret Komisyon Matrisi" and current_title != "Ücret Komisyon Matrisi":
     st.switch_page(ucret_komisyon_matrisi_page)
+if selected_page == "Bankaların AI Çalışmaları" and current_title != "Bankaların AI Çalışmaları":
+    st.switch_page(bankalarin_ai_calismalari_page)
 
 page.run()
