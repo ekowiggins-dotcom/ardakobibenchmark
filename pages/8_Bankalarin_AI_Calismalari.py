@@ -87,12 +87,38 @@ def inject_css() -> None:
 
         .ai-kpi,
         .ai-bank-card,
-        .ai-panel,
-        .ai-matrix-wrap {
+        .ai-panel {
             background: var(--ak-surface);
             border: 1px solid var(--ak-border);
-            border-radius: 14px;
+            border-radius: 10px;
             box-shadow: var(--ak-shadow-soft);
+        }
+
+        .stTabs [data-baseweb="tab-list"] {
+            background: var(--ak-surface);
+            border: 1px solid var(--ak-border);
+            border-radius: 10px;
+            box-shadow: var(--ak-shadow-soft);
+            gap: 0.25rem;
+            margin: 0 0 1.25rem;
+            padding: 0.25rem;
+            width: fit-content;
+        }
+
+        .stTabs [data-baseweb="tab"] {
+            background: transparent;
+            border: 0;
+            border-radius: 7px;
+            color: var(--ak-secondary);
+            font-size: 0.82rem;
+            font-weight: 800;
+            min-height: 2.35rem;
+            padding-inline: 1rem;
+        }
+
+        .stTabs [aria-selected="true"] {
+            background: var(--ak-text);
+            color: var(--ak-surface) !important;
         }
 
         .ai-kpi {
@@ -184,7 +210,7 @@ def inject_css() -> None:
             background: var(--ak-surface);
             border: 1px solid var(--ak-border);
             border-top: 2px solid var(--ak-border-strong);
-            border-radius: 14px;
+            border-radius: 10px;
             box-shadow: var(--ak-shadow-soft);
             min-height: 148px;
             padding: 1rem 1.1rem;
@@ -210,8 +236,16 @@ def inject_css() -> None:
         }
 
         .ai-bank-card {
+            border-top: 2px solid var(--ak-border-strong);
             min-height: 186px;
             padding: 1.1rem 1.15rem;
+            transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+        }
+
+        .ai-bank-card:hover {
+            border-color: var(--ak-border-strong);
+            box-shadow: var(--ak-shadow-soft);
+            transform: translateY(-1px);
         }
 
         .ai-bank-head {
@@ -268,75 +302,118 @@ def inject_css() -> None:
         }
 
         .ai-matrix-wrap {
+            margin-inline: -0.15rem;
             overflow-x: auto;
+            padding: 0.15rem;
         }
 
-        .ai-matrix {
-            border-collapse: collapse;
-            min-width: 1160px;
-            table-layout: fixed;
-            width: 100%;
+        .ai-matrix-board {
+            display: grid;
+            gap: 0.65rem;
         }
 
-        .ai-matrix th {
-            background: var(--ak-soft);
-            border-bottom: 1px solid var(--ak-border-strong);
+        .ai-matrix-header,
+        .ai-matrix-row {
+            display: grid;
+            grid-template-columns: 145px minmax(0, 1fr);
+        }
+
+        .ai-matrix-header {
+            gap: 0.8rem;
+            padding: 0 0.9rem 0.15rem;
+        }
+
+        .ai-matrix-header-labels,
+        .ai-matrix-cells {
+            display: grid;
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+            gap: 0.55rem;
+        }
+
+        .ai-matrix-header span {
             color: var(--ak-muted);
             font-size: 0.65rem;
             font-weight: 850;
             letter-spacing: 0.09em;
-            padding: 0.75rem;
-            text-align: left;
             text-transform: uppercase;
         }
 
-        .ai-matrix td {
-            border-bottom: 1px solid var(--ak-border);
-            border-right: 1px solid var(--ak-border);
-            color: var(--ak-text);
-            padding: 0.75rem;
-            vertical-align: top;
+        .ai-matrix-row {
+            background: var(--ak-surface);
+            border: 1px solid var(--ak-border);
+            border-radius: 10px;
+            box-shadow: var(--ak-shadow-soft);
+            gap: 0.8rem;
+            padding: 0.85rem 0.9rem;
+            transition: border-color 150ms ease, box-shadow 150ms ease;
         }
 
-        .ai-matrix tr:last-child td {
-            border-bottom: 0;
-        }
-
-        .ai-matrix td:last-child,
-        .ai-matrix th:last-child {
-            border-right: 0;
+        .ai-matrix-row:hover {
+            border-color: var(--ak-border-strong);
+            box-shadow: var(--ak-shadow-soft);
         }
 
         .ai-matrix-bank {
-            font-size: 0.88rem;
+            border-right: 1px solid var(--ak-border);
+            padding: 0.3rem 0.75rem 0.3rem 0.1rem;
+        }
+
+        .ai-matrix-bank span,
+        .ai-matrix-cell-label {
+            color: var(--ak-muted);
+            display: block;
+            font-size: 0.61rem;
+            font-weight: 850;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.3rem;
+            text-transform: uppercase;
+        }
+
+        .ai-matrix-bank strong {
+            color: var(--ak-text);
+            display: block;
+            font-size: 0.92rem;
             font-weight: 900;
-            width: 130px;
+            line-height: 1.3;
+        }
+
+        .ai-matrix-cell {
+            min-width: 0;
+        }
+
+        .ai-matrix-cell-label {
+            display: none;
         }
 
         .ai-matrix-item {
+            background: var(--ak-soft);
+            border: 1px solid transparent;
+            border-radius: 7px;
             color: var(--ak-text) !important;
             display: block;
-            font-size: 0.75rem;
+            font-size: 0.73rem;
             font-weight: 750;
-            line-height: 1.38;
-            padding: 0.25rem 0;
+            line-height: 1.4;
+            margin-bottom: 0.35rem;
+            padding: 0.45rem 0.5rem;
             text-decoration: none !important;
         }
 
         .ai-matrix-item + .ai-matrix-item {
-            border-top: 1px solid var(--ak-border);
-            margin-top: 0.25rem;
-            padding-top: 0.48rem;
+            margin-top: 0;
         }
 
         .ai-matrix-item:hover {
+            border-color: var(--ak-border-strong);
             color: var(--ak-red-dark) !important;
-            text-decoration: underline !important;
+            text-decoration: none !important;
         }
 
         .ai-matrix-empty {
             color: var(--ak-muted);
-            font-size: 0.75rem;
+            display: inline-block;
+            font-size: 0.72rem;
+            padding: 0.45rem 0.1rem;
         }
 
         .ai-panel {
@@ -414,6 +491,10 @@ def inject_css() -> None:
             .ai-kpi-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
             .ai-bank-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
             .ai-insight-grid { grid-template-columns: 1fr; }
+            .ai-matrix-header { display: none; }
+            .ai-matrix-row { grid-template-columns: 130px minmax(0, 1fr); }
+            .ai-matrix-cells { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+            .ai-matrix-cell-label { display: block; }
         }
 
         @media (max-width: 700px) {
@@ -423,6 +504,11 @@ def inject_css() -> None:
             .ai-section-head,
             .ai-panel-head { align-items: flex-start; flex-direction: column; }
             .ai-tags { justify-content: flex-start; }
+            .stTabs [data-baseweb="tab-list"] { width: 100%; }
+            .stTabs [data-baseweb="tab"] { flex: 1; padding-inline: 0.5rem; }
+            .ai-matrix-row { grid-template-columns: 1fr; }
+            .ai-matrix-bank { border-bottom: 1px solid var(--ak-border); border-right: 0; padding-bottom: 0.65rem; }
+            .ai-matrix-cells { grid-template-columns: 1fr; }
         }
         </style>
         """,
@@ -577,7 +663,7 @@ def render_tier_view(frame: pd.DataFrame, tier_label: str, banks: list[str]) -> 
 
 
 def render_matrix(frame: pd.DataFrame, banks: list[str]) -> None:
-    header = "".join(f"<th>{esc(bucket)}</th>" for bucket in MATRIX_BUCKETS)
+    header = "".join(f"<span>{esc(bucket)}</span>" for bucket in MATRIX_BUCKETS)
     rows: list[str] = []
     for bank in banks:
         bank_frame = frame[frame["institution_name"].eq(bank)].copy()
@@ -596,13 +682,25 @@ def render_matrix(frame: pd.DataFrame, banks: list[str]) -> None:
                 )
             if len(bucket_frame) > 2:
                 links.append(f'<span class="ai-matrix-empty">+{len(bucket_frame) - 2} çalışma</span>')
-            cells.append(f'<td>{"".join(links) if links else "<span class=\"ai-matrix-empty\">Kayıt yok</span>"}</td>')
-        rows.append(f'<tr><td class="ai-matrix-bank">{esc(bank)}</td>{"".join(cells)}</tr>')
+            content = "".join(links) if links else '<span class="ai-matrix-empty">Kayıt yok</span>'
+            cells.append(
+                '<div class="ai-matrix-cell">'
+                f'<div class="ai-matrix-cell-label">{esc(bucket)}</div>'
+                f'{content}'
+                '</div>'
+            )
+        rows.append(
+            '<div class="ai-matrix-row">'
+            f'<div class="ai-matrix-bank"><span>Banka</span><strong>{esc(bank)}</strong></div>'
+            f'<div class="ai-matrix-cells">{"".join(cells)}</div>'
+            '</div>'
+        )
     st.markdown(
         (
-            '<div class="ai-matrix-wrap"><table class="ai-matrix">'
-            f'<thead><tr><th>Banka</th>{header}</tr></thead>'
-            f'<tbody>{"".join(rows)}</tbody></table></div>'
+            '<div class="ai-matrix-wrap"><div class="ai-matrix-board">'
+            '<div class="ai-matrix-header"><span>Banka</span>'
+            f'<div class="ai-matrix-header-labels">{header}</div></div>'
+            f'{"".join(rows)}</div></div>'
         ),
         unsafe_allow_html=True,
     )
