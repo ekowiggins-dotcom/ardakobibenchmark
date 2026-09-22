@@ -17,6 +17,7 @@ DATA_PATH = Path("data/bank_ai_initiatives.csv")
 BANK_ORDER_BY_TIER = {
     "Tier 1": ["Akbank", "Garanti BBVA", "İş Bankası", "Yapı Kredi"],
     "Tier 2": ["DenizBank", "Enpara", "QNB Finansbank", "Odeabank", "Alternatif Bank"],
+    "Global": ["DBS", "Bank of America", "Santander", "HSBC", "BBVA"],
 }
 ALL_BANKS = [bank for banks in BANK_ORDER_BY_TIER.values() for bank in banks]
 MATRIX_BUCKETS = [
@@ -119,6 +120,10 @@ def inject_css() -> None:
         .stTabs [aria-selected="true"] {
             background: var(--ak-text);
             color: var(--ak-surface) !important;
+        }
+
+        .stTabs [data-baseweb="tab"]:nth-child(3)[aria-selected="true"] {
+            background: var(--ak-global-text);
         }
 
         .ai-kpi {
@@ -521,8 +526,9 @@ def render_kpis(frame: pd.DataFrame, tier_label: str) -> None:
     sme_items = frame[frame["sme_relevance"].eq("Yüksek")]
     saas_items = frame[frame["delivery_model"].eq("Partner SaaS")]
     latest_checked = max((parse_date(value) for value in frame["last_verified"]), default=pd.NaT)
+    scope_note = "Global benchmark" if tier_label == "Global" else f"{tier_label} Türkiye"
     cards = [
-        ("Bakılan banka", f"{frame['institution_name'].nunique():02d}", f"{tier_label} Türkiye"),
+        ("Bakılan banka", f"{frame['institution_name'].nunique():02d}", scope_note),
         ("AI çalışması", f"{len(frame):02d}", "Doğrulanmış kayıt"),
         ("Müşteri ürünü", f"{len(customer_products):02d}", "Ürün ve kanal"),
         ("KOBİ ilgisi yüksek", f"{len(sme_items):02d}", f"SaaS iş birliği: {len(saas_items):02d}"),
@@ -583,7 +589,7 @@ def render_bank_cards(frame: pd.DataFrame, banks: list[str], tier_label: str) ->
     st.markdown(f'<div class="ai-bank-grid">{"".join(cards)}</div>', unsafe_allow_html=True)
 
 
-def render_insights(frame: pd.DataFrame, bank_order: list[str]) -> None:
+def render_insights(frame: pd.DataFrame, bank_order: list[str], tier_label: str) -> None:
     customer_ai = frame[frame.apply(matrix_bucket, axis=1).eq("Müşteri AI")]
     customer_banks = customer_ai["institution_name"].nunique()
     direct_sme = frame[frame["sme_relevance"].eq("Yüksek")]
@@ -592,27 +598,50 @@ def render_insights(frame: pd.DataFrame, bank_order: list[str]) -> None:
     ) or "Henüz doğrulanmış banka yok"
     partner_saas = frame[frame["delivery_model"].eq("Partner SaaS")]
     campaign_count = int(frame["initiative_type"].eq("AI Kampanyası").sum())
+    internal_items = frame[frame["delivery_model"].eq("İç kullanım")]
 
-    insights = [
-        (
-            "Patern",
-            "Asistan yarışı ürünleşiyor",
-            f"{customer_banks} banka müşteri asistanı veya mesajlaşma tabanlı AI sunuyor. Ayrışma artık chatbot sahibi olmaktan çok işlem tamamlama ve üçüncü taraf kanallara taşınma derinliğinde.",
-            False,
-        ),
-        (
-            "KOBİ fırsat alanı",
-            "Doğrudan KOBİ AI teklifi hâlâ sınırlı",
-            f"KOBİ ilgisi yüksek {len(direct_sme)} çalışma {direct_sme_banks} tarafında görülüyor. Nakit akışı, tahsilat ve muhasebe copilot'ı için belirgin ürün boşluğu var.",
-            True,
-        ),
-        (
-            "Dağıtım modeli",
-            "SaaS ortaklıkları yeni rekabet katmanı",
-            f"İlk taramada {len(partner_saas)} partner SaaS kaydı ve {campaign_count} doğrulanmış AI harcama kampanyası var. Akbank'ın Usersdot modeli farklı KOBİ yazılımlarına genişletilebilir.",
-            False,
-        ),
-    ]
+    if tier_label == "Global":
+        insights = [
+            (
+                "Patern",
+                "Konuşmalı ticari bankacılık ürünleşiyor",
+                f"{customer_banks} banka AI asistanını ticari müşteri, ilişki yöneticisi veya harici AI kanallarına taşıyor. Ayrışma, soru yanıtlamadan işlem ve karar desteğine geçiyor.",
+                False,
+            ),
+            (
+                "KOBİ fırsat alanı",
+                "Kredi ve nakit yönetimi öne çıkıyor",
+                f"KOBİ ilgisi yüksek {len(direct_sme)} çalışma {direct_sme_banks} tarafında görülüyor. Kredi dokümanı analizi, nakit tahmini ve AI dönüşüm rehberliği öne çıkan üç model.",
+                True,
+            ),
+            (
+                "Ölçek modeli",
+                "Copilot ve agentic AI birlikte ilerliyor",
+                f"Global örneklerde {len(internal_items)} kurum içi kullanım var. Çalışan copilot'ları hızla yayılırken agentic AI kontrollü arka ofis otomasyonuna taşınıyor.",
+                False,
+            ),
+        ]
+    else:
+        insights = [
+            (
+                "Patern",
+                "Asistan yarışı ürünleşiyor",
+                f"{customer_banks} banka müşteri asistanı veya mesajlaşma tabanlı AI sunuyor. Ayrışma artık chatbot sahibi olmaktan çok işlem tamamlama ve üçüncü taraf kanallara taşınma derinliğinde.",
+                False,
+            ),
+            (
+                "KOBİ fırsat alanı",
+                "Doğrudan KOBİ AI teklifi hâlâ sınırlı",
+                f"KOBİ ilgisi yüksek {len(direct_sme)} çalışma {direct_sme_banks} tarafında görülüyor. Nakit akışı, tahsilat ve muhasebe copilot'ı için belirgin ürün boşluğu var.",
+                True,
+            ),
+            (
+                "Dağıtım modeli",
+                "SaaS ortaklıkları yeni rekabet katmanı",
+                f"İlk taramada {len(partner_saas)} partner SaaS kaydı ve {campaign_count} doğrulanmış AI harcama kampanyası var. Akbank'ın Usersdot modeli farklı KOBİ yazılımlarına genişletilebilir.",
+                False,
+            ),
+        ]
     cards = "".join(
         (
             f'<div class="ai-insight-card{" ai-insight-card-featured" if featured else ""}">'
@@ -638,7 +667,7 @@ def render_tier_view(frame: pd.DataFrame, tier_label: str, banks: list[str]) -> 
         f"{tier_label} taramasından çıkan ortak paternler ve Akbank için açık alanlar.",
         3,
     )
-    render_insights(frame, banks)
+    render_insights(frame, banks, tier_label)
 
     render_section_header(
         f"{tier_label} görünümü",
@@ -770,7 +799,7 @@ inject_css()
 latest_verified = max((parse_date(value) for value in initiatives["last_verified"]), default=pd.NaT)
 render_page_header(
     "Bankaların AI Çalışmaları",
-    "Tier 1 ve Tier 2 bankaların AI ürünleri, KOBİ çözümleri, SaaS iş birlikleri, kampanyaları ve kurum içi yetkinlikleri.",
+    "Türkiye ve global bankaların AI ürünleri, KOBİ çözümleri, SaaS iş birlikleri, kampanyaları ve kurum içi yetkinlikleri.",
     updated_at=format_date(latest_verified),
 )
 
@@ -802,10 +831,7 @@ filtered = initiatives[
 ].copy()
 
 tier_tabs = st.tabs(
-    [
-        f"Tier 1 · {len(BANK_ORDER_BY_TIER['Tier 1'])} banka",
-        f"Tier 2 · {len(BANK_ORDER_BY_TIER['Tier 2'])} banka",
-    ]
+    [f"{tier_label} · {len(banks)} banka" for tier_label, banks in BANK_ORDER_BY_TIER.items()]
 )
 
 for tab, tier_label in zip(tier_tabs, BANK_ORDER_BY_TIER):
