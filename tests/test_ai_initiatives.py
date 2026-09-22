@@ -60,3 +60,15 @@ def test_ai_dataset_includes_direct_sme_and_saas_signals() -> None:
     assert frame["sme_relevance"].eq("Yüksek").any()
     assert frame["delivery_model"].eq("Partner SaaS").any()
     assert frame["ai_category"].eq("KOBİ AI Çözümü").any()
+
+
+def test_is_bankasi_earnado_offer_is_tracked_as_direct_sme_ai_saas() -> None:
+    frame = read_ai_initiatives()
+    earnado = frame[frame["initiative_name"].str.contains("Earnado", case=False)]
+
+    assert len(earnado) == 1
+    assert earnado.iloc[0]["institution_name"] == "İş Bankası"
+    assert earnado.iloc[0]["target_segment"] == "KOBİ"
+    assert earnado.iloc[0]["sme_relevance"] == "Yüksek"
+    assert earnado.iloc[0]["initiative_type"] == "SaaS / İş Birliği"
+    assert earnado.iloc[0]["partner_name"] == "Earnado"
