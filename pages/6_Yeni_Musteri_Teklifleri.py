@@ -6,7 +6,7 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-from utils.ui_theme import apply_akbank_theme, render_page_header
+from utils.ui_theme import apply_akbank_theme, neutralize_benchmark_copy, render_page_header
 
 
 st.set_page_config(page_title="Yeni Müşteri Teklifleri", layout="wide")
@@ -423,12 +423,12 @@ def render_offer_details(df: pd.DataFrame) -> None:
                       <div class="offer-detail-copy"><strong>Geçerlilik:</strong> {esc(date_text)}</div>
                     </div>
                     <div class="offer-detail-block">
-                      <div class="offer-detail-label">Koşul ve Akbank notu</div>
+                      <div class="offer-detail-label">Koşullar ve benchmark notu</div>
                       <div class="offer-detail-copy"><strong>DOB şartı:</strong> {esc(row.get("dob_required"))} · {esc(row.get("dob_channel"))}</div>
                       <div class="offer-detail-copy"><strong>DOB kanıtı:</strong> {esc(row.get("dob_evidence"))}</div>
                       <div class="offer-detail-copy"><strong>Gerekli aksiyon:</strong> {esc(row.get("required_action"))}</div>
                       <div class="offer-detail-copy"><strong>Uygunluk:</strong> {esc(row.get("eligibility"))}</div>
-                      <div class="offer-detail-copy"><strong>Akbank için:</strong> {esc(row.get("akbank_implication"))}</div>
+                      <div class="offer-detail-copy"><strong>Benchmark yorumu:</strong> {esc(neutralize_benchmark_copy(row.get("akbank_implication"), strict=True))}</div>
                       <div class="offer-detail-copy offer-source-link"><strong>Kaynak:</strong> {f'<a href="{esc(source)}" target="_blank">resmi sayfayı aç</a>' if source else "Kaynak yok"}</div>
                     </div>
                   </div>

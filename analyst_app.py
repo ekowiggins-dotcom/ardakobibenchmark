@@ -23,7 +23,7 @@ def render_source_health() -> None:
 
 
 st.set_page_config(
-    page_title="Akbank Analist Operasyon Paneli",
+    page_title="Rekabet Benchmarkı Analist Paneli",
     layout="wide",
     initial_sidebar_state="expanded",
 )

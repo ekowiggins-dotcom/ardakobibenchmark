@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import html
+import re
 
 import streamlit as st
 
@@ -491,6 +492,32 @@ def apply_akbank_theme() -> None:
     )
 
 
+def neutralize_benchmark_copy(value: object, *, strict: bool = False) -> str:
+    """Remove internal ownership language while preserving real bank references."""
+
+    text = str(value or "").strip()
+    replacements = (
+        (r"\bAkbank için asıl soru\b", "Benchmark açısından temel soru"),
+        (r"\bAkbank için doğrudan\b", "Benchmark açısından doğrudan"),
+        (r"\bAkbank için\b", "Benchmark açısından"),
+    )
+    for pattern, replacement in replacements:
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+    if strict:
+        strict_replacements = (
+            (r"\bAkbank KOBİ(?:'de|’de)\b", "KOBİ bankacılığında"),
+            (r"\bAkbank KOBİ için\b", "KOBİ bankacılığı açısından"),
+            (r"\bAkbank(?:'ın|’ın)\b", "Benchmark kapsamındaki"),
+            (r"\bAkbank tarafında\b", "Benchmark kapsamında"),
+            (r"\bAkbank(?:'ta|’ta)\b", "Benchmark kapsamında"),
+            (r"\bAkbank(?:'a|’a)\b", "Benchmarka"),
+            (r"\bAkbank\b", "Benchmark"),
+        )
+        for pattern, replacement in strict_replacements:
+            text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+    return text
+
+
 def render_page_header(title: str, subtitle: str = "", updated_at: str = "Canlı veri") -> None:
     subtitle_html = f"<p>{html.escape(subtitle)}</p>" if subtitle else ""
     updated_at_text = html.escape(updated_at or "Canlı veri")
@@ -499,12 +526,12 @@ def render_page_header(title: str, subtitle: str = "", updated_at: str = "Canlı
         <div class="ak-page-header">
           <div class="ak-page-header-inner">
             <div class="ak-page-header-main">
-              <div class="ak-product-chip">Akbank KOBİ Rekabet Radarı</div>
+              <div class="ak-product-chip">KOBİ Bankacılığı Rekabet Benchmarkı</div>
               <h1>{html.escape(title)}</h1>
               {subtitle_html}
             </div>
             <div class="ak-page-meta">
-              <div>ANALİZ EKİBİ: KOBİ İŞ GELİŞTİRME</div>
+              <div>ARAŞTIRMA: KOBİ BANKACILIĞI</div>
               <div>SON YAYIN: {updated_at_text}</div>
             </div>
           </div>

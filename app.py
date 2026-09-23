@@ -4,7 +4,7 @@ from utils.ui_theme import apply_akbank_theme, render_page_header
 
 
 st.set_page_config(
-    page_title="Akbank KOBİ Rekabet Radarı",
+    page_title="KOBİ Bankacılığı Rekabet Benchmarkı",
     page_icon="🔴",
     layout="wide",
     initial_sidebar_state="auto",
@@ -24,7 +24,7 @@ python3 pipeline/publish_recent_items_to_weekly_developments.py""",
     )
 
 render_page_header(
-    "Akbank KOBİ Rekabet Gelişmeleri Radarı",
+    "KOBİ Bankacılığı Rekabet Benchmarkı",
     "Analist onayından geçmiş haftalık rekabet gelişmeleri ve yönetici notları.",
 )
 

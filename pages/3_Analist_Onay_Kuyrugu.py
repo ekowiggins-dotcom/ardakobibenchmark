@@ -21,7 +21,7 @@ from utils.recent_mvp import (
     utc_now,
     write_csv_safe,
 )
-from utils.ui_theme import apply_akbank_theme, render_page_header
+from utils.ui_theme import apply_akbank_theme, neutralize_benchmark_copy, render_page_header
 
 
 st.set_page_config(page_title="Analist Onay Kuyruğu", layout="wide")
@@ -308,9 +308,9 @@ with single_tab:
                 if warnings:
                     st.warning("Dil kontrolü: " + " | ".join(warnings))
                 if clean_text(row.get("core_assessment"), ""):
-                    st.write(f"**Kısa yorum:** {clean_text(row.get('core_assessment'))}")
+                    st.write(f"**Kısa yorum:** {neutralize_benchmark_copy(row.get('core_assessment'), strict=True)}")
                 st.write(f"**Özet:** {clean_text(row.get('summary'))}")
-                st.write(f"**Neden önemli?** {clean_text(row.get('strategic_relevance'))}")
+                st.write(f"**Neden önemli?** {neutralize_benchmark_copy(row.get('strategic_relevance'), strict=True)}")
                 st.write(f"**Ne yapalım?** {clean_text(row.get('recommended_action'))}")
                 st.write(f"**Etki:** {clean_text(row.get('impact_on_us'))}")
                 facts = parse_json_list(row.get("extracted_facts_json", ""))
@@ -369,9 +369,9 @@ with cluster_tab:
                 warnings = parse_json_list(row.get("language_lint_warnings", ""))
                 if warnings:
                     st.warning("Dil kontrolü: " + " | ".join(warnings))
-                st.write(f"**Kısa yorum:** {clean_text(row.get('cluster_core_assessment'))}")
+                st.write(f"**Kısa yorum:** {neutralize_benchmark_copy(row.get('cluster_core_assessment'), strict=True)}")
                 st.write(f"**Özet:** {clean_text(row.get('cluster_summary'))}")
-                st.write(f"**Neden önemli:** {clean_text(row.get('why_it_matters'))}")
+                st.write(f"**Neden önemli:** {neutralize_benchmark_copy(row.get('why_it_matters'), strict=True)}")
                 st.write(f"**Rakip niyeti:** {clean_text(row.get('competitor_intent'))}")
                 st.write(f"**Yönetici mesajı:** {clean_text(row.get('management_takeaway'))}")
                 st.write(f"**Aksiyon / Etki / Önem:** {clean_text(row.get('recommended_action'))} / {clean_text(row.get('impact_on_us'))} / {clean_text(row.get('importance_level'))}")
@@ -424,9 +424,9 @@ with awareness_tab:
                 st.caption(f"{clean_text(row.get('institution_name'))} · {clean_text(row.get('strategic_theme'))} · {clean_text(row.get('review_status'))}")
                 st.markdown(f"### {clean_text(row.get('headline'))}")
                 if clean_text(row.get("core_assessment"), ""):
-                    st.write(f"**Kısa yorum:** {clean_text(row.get('core_assessment'))}")
+                    st.write(f"**Kısa yorum:** {neutralize_benchmark_copy(row.get('core_assessment'), strict=True)}")
                 st.write(f"**Özet:** {clean_text(row.get('summary'))}")
-                st.write(f"**Neden önemli?** {clean_text(row.get('strategic_relevance'))}")
+                st.write(f"**Neden önemli?** {neutralize_benchmark_copy(row.get('strategic_relevance'), strict=True)}")
                 st.write(f"**Bilgilendirme nedeni:** {clean_text(row.get('awareness_reason'))}")
                 st.write(f"**Aksiyon / Etki / Önem:** {clean_text(row.get('recommended_action'))} / {clean_text(row.get('impact_on_us'))} / {clean_text(row.get('importance_level'))}")
                 links = " · ".join(

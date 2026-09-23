@@ -6,7 +6,7 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-from utils.ui_theme import apply_akbank_theme, render_page_header
+from utils.ui_theme import apply_akbank_theme, neutralize_benchmark_copy, render_page_header
 
 
 st.set_page_config(page_title="Bankaların AI Çalışmaları", layout="wide")
@@ -689,12 +689,9 @@ def render_bank_cards(frame: pd.DataFrame, banks: list[str], tier_label: str) ->
     cards: list[str] = []
     for bank in banks:
         bank_frame = frame[frame["institution_name"].eq(bank)].copy()
-        is_anchor = bank == "Akbank"
         bank_style_class = BANK_STYLE_CLASSES.get(bank, "")
         card_class = f"ai-bank-card {bank_style_class}"
-        if is_anchor:
-            card_class += " ai-bank-card-anchor"
-        report_badge = '<span class="ai-report-badge">Bu rapor</span>' if is_anchor else ""
+        report_badge = ""
         monogram = BANK_MONOGRAMS.get(bank, bank[:2].upper())
         direct_sme = int(bank_frame["sme_relevance"].eq("Yüksek").sum())
         customer = int(bank_frame["delivery_model"].isin(["Banka ürünü", "Platform entegrasyonu"]).sum())
@@ -800,7 +797,7 @@ def render_tier_view(frame: pd.DataFrame, tier_label: str, banks: list[str]) -> 
 
     render_section_header(
         "Benchmark özeti",
-        f"{tier_label} taramasından çıkan ortak paternler ve Akbank için açık alanlar.",
+        f"{tier_label} taramasından çıkan ortak paternler ve rekabet boşlukları.",
         3,
     )
     render_insights(frame, banks, tier_label)
@@ -821,7 +818,7 @@ def render_tier_view(frame: pd.DataFrame, tier_label: str, banks: list[str]) -> 
 
     render_section_header(
         "Çalışma detayları",
-        "Her kayıtta çözüm, AI yetkinliği, KOBİ ilgisi ve Akbank benchmark notu birlikte gösterilir.",
+        "Her kayıtta çözüm, AI yetkinliği, KOBİ ilgisi ve benchmark notu birlikte gösterilir.",
         len(frame),
     )
     render_details(frame)
@@ -918,7 +915,7 @@ def render_details(frame: pd.DataFrame) -> None:
                     </div>
                     <div class="ai-detail-block">
                       <div class="ai-detail-label">Benchmark notu</div>
-                      <div class="ai-detail-copy">{esc(row.get("akbank_relevance"))}</div>
+                      <div class="ai-detail-copy">{esc(neutralize_benchmark_copy(row.get("akbank_relevance"), strict=True))}</div>
                       <div class="ai-detail-copy"><strong>Partner:</strong> {esc(row.get("partner_name") or "Yok / belirtilmemiş")}</div>
                       <div class="ai-detail-copy"><strong>Lansman:</strong> {esc(format_date(row.get("launch_date")))}</div>
                       <div class="ai-detail-copy ai-source"><strong>Kaynak:</strong> {f'<a href="{esc(source)}" target="_blank" rel="noopener noreferrer">resmî kaynağı aç</a>' if source else "Kaynak yok"}</div>

@@ -22,7 +22,7 @@ from utils.recent_mvp import (
     real_published_weekly,
 )
 from utils.institution_aliases import institution_group
-from utils.ui_theme import apply_akbank_theme, render_page_header
+from utils.ui_theme import apply_akbank_theme, neutralize_benchmark_copy, render_page_header
 
 
 st.set_page_config(page_title="Yönetici Özeti", layout="wide")
@@ -749,7 +749,11 @@ def render_watchlist(df: pd.DataFrame) -> None:
         for _, row in top.iterrows():
             institution = clean_text(row.get("institution_name"))
             headline = display_title_for(clean_text(row.get("headline")), institution)
-            summary = compact_text(clean_text(row.get("core_assessment")) or clean_text(row.get("summary")), 170)
+            summary = compact_text(
+                neutralize_benchmark_copy(row.get("core_assessment"), strict=True)
+                or clean_text(row.get("summary")),
+                170,
+            )
             items.append(
                 '<div class="radar-watchlist-item">'
                 f'<div class="radar-watchlist-item-title">{esc(institution)} — {esc(headline)}</div>'
@@ -789,7 +793,10 @@ def render_radar_section(title: str, subtitle: str, df: pd.DataFrame, max_date: 
             theme = clean_text(row.get("strategic_theme"))
             date_label = clean_text(row.get("display_date_label")) or format_date(row.get("date"))
             summary = clean_text(row.get("summary"))
-            why = build_executive_why_it_matters(row.get("core_assessment"), row.get("strategic_relevance"))
+            why = neutralize_benchmark_copy(
+                build_executive_why_it_matters(row.get("core_assessment"), row.get("strategic_relevance")),
+                strict=True,
+            )
             url = source_url_for(row)
             domain = source_domain(url)
             section = clean_display_text(row.get("section"))
@@ -827,7 +834,7 @@ def render_radar_section(title: str, subtitle: str, df: pd.DataFrame, max_date: 
                         <div class="radar-detail-copy">{esc(summary or "-")}</div>
                       </div>
                       <div class="radar-detail-block">
-                        <div class="radar-detail-label important">Neden önemli? <span style="opacity: 0.62; color: inherit;">— Akbank için</span></div>
+                        <div class="radar-detail-label important">Neden önemli?</div>
                         <div class="radar-detail-copy">{esc(why or "-")}</div>
                         {related_html}
                       </div>

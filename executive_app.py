@@ -31,7 +31,7 @@ def render_bankalarin_ai_calismalari() -> None:
 
 
 st.set_page_config(
-    page_title="Akbank Yönetici Özeti",
+    page_title="KOBİ Rekabet Benchmarkı",
     layout="wide",
     initial_sidebar_state="collapsed",
 )

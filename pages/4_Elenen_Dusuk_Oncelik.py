@@ -17,7 +17,7 @@ from utils.recent_mvp import (
     utc_now,
     write_csv_safe,
 )
-from utils.ui_theme import apply_akbank_theme, render_page_header
+from utils.ui_theme import apply_akbank_theme, neutralize_benchmark_copy, render_page_header
 
 
 st.set_page_config(page_title="Elenen düşük öncelik", layout="wide")
@@ -152,7 +152,7 @@ for _, row in filtered.sort_values("date_dt", ascending=False).iterrows():
         st.caption(f"{clean_text(row.get('institution_name'))} · {clean_text(row.get('strategic_theme'))} · {clean_text(row.get('item_date'))}")
         st.markdown(f"### {clean_text(row.get('item_title'))}")
         if clean_text(row.get("core_assessment"), ""):
-            st.write(f"**Kısa yorum:** {clean_text(row.get('core_assessment'))}")
+            st.write(f"**Kısa yorum:** {neutralize_benchmark_copy(row.get('core_assessment'), strict=True)}")
         st.write(f"**Özet:** {clean_text(row.get('summary'))}")
         st.write(f"**Arşiv nedeni:** {clean_text(row.get('triage_reason'))}")
         st.write(f"**Etki / Aksiyon:** {clean_text(row.get('impact_on_us'))} / {clean_text(row.get('recommended_action'))}")
