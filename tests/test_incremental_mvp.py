@@ -60,6 +60,7 @@ from utils.mastercard_blocked_mode import (
 )
 from utils.date_utils import extract_date_semantics
 from utils.github_data_sync import _git_blob_sha, _repo_from_remote_url
+from utils.institution_aliases import market_scope
 from utils.recency import evaluate_recency
 from utils.source_health import ERROR, HEALTHY, MANUAL, WARNING, classify_source_health
 from utils.triage import TRIAGE_MANAGEMENT_AWARENESS, triage_recent_item_summary
@@ -135,6 +136,18 @@ class GitHubDataSyncTests(unittest.TestCase):
 
     def test_git_blob_sha_matches_known_empty_blob(self) -> None:
         self.assertEqual(_git_blob_sha(b""), "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391")
+
+
+class MarketScopeTests(unittest.TestCase):
+    def test_turkish_banks_and_local_ecosystem_are_domestic(self) -> None:
+        self.assertEqual(market_scope("Garanti BBVA"), "Türkiye Bankacılığı")
+        self.assertEqual(market_scope("BKM"), "Türkiye Bankacılığı")
+        self.assertEqual(market_scope("Webrazzi"), "Türkiye Bankacılığı")
+
+    def test_global_payment_publishers_are_global(self) -> None:
+        self.assertEqual(market_scope("Visa"), "Global Gelişmeler")
+        self.assertEqual(market_scope("The Paypers"), "Global Gelişmeler")
+        self.assertEqual(market_scope("Checkout.com"), "Global Gelişmeler")
 
 
 class GlobalPaymentsExtractionTests(unittest.TestCase):

@@ -783,7 +783,7 @@ def main() -> None:
     parser.add_argument("--rehearsal-allow-claude", action="store_true", help="Allow controlled Claude calls during rehearsal; otherwise rehearsal skips Claude.")
     parser.add_argument("--max-claude-calls", type=int, default=3, help="Maximum controlled Claude calls when --rehearsal-allow-claude is used.")
     parser.add_argument("--include-browser", action="store_true", help="Accepted for rehearsal compatibility; only production-ready browser sources may run.")
-    parser.add_argument("--llm-limit", type=int, default=None, help="Separate summarization limit; defaults to 10 in rehearsal mode.")
+    parser.add_argument("--llm-limit", type=int, default=None, help="Total summarization budget across institutions; defaults to 10 in rehearsal mode.")
     parser.add_argument("--debug", action="store_true", help="Print extra rehearsal/debug context.")
     args = parser.parse_args()
 
@@ -907,9 +907,13 @@ def main() -> None:
             print("[skip] Rehearsal Claude summarization disabled; pass --rehearsal-allow-claude for controlled calls.")
         if not args.dry_run and allow_llm_this_run:
             remaining_controlled_calls = max(0, args.max_claude_calls)
+            remaining_llm_items = max(0, args.llm_limit) if args.llm_limit is not None else None
             for institution in institutions:
                 if args.rehearsal and args.rehearsal_allow_claude and remaining_controlled_calls <= 0:
                     print("[skip] Controlled rehearsal Claude call cap reached.")
+                    break
+                if remaining_llm_items is not None and remaining_llm_items <= 0:
+                    print("[skip] Run-level Claude item budget reached.")
                     break
                 if institution.casefold() == "mastercard":
                     print("[skip] Mastercard Claude summarization skipped; source is in blocked/manual-evidence mode.")
@@ -926,8 +930,8 @@ def main() -> None:
                     summary_args.append("--rehearsal-allow-source-override")
                 elif args.item_limit is not None:
                     summary_args.extend(["--limit", str(args.item_limit)])
-                elif args.llm_limit is not None:
-                    summary_args.extend(["--limit", str(args.llm_limit)])
+                elif remaining_llm_items is not None:
+                    summary_args.extend(["--limit", str(remaining_llm_items)])
                 elif args.rehearsal:
                     summary_args.extend(["--limit", "10"])
                 if args.save_raw:
@@ -943,6 +947,8 @@ def main() -> None:
                 update_metrics_from_summary(metrics, summary.output)
                 if args.rehearsal and args.rehearsal_allow_claude:
                     remaining_controlled_calls -= created_this_summary
+                if remaining_llm_items is not None:
+                    remaining_llm_items -= created_this_summary
                 if summary.failed:
                     metrics.stage_failures.append(f"summarize:{institution}")
         elif args.skip_llm:

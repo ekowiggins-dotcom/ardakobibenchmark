@@ -41,17 +41,33 @@ jobs:
               print(f"{package}=={metadata.version(package)}")
           PY
 
-      - name: Run daily incremental collection
+      - name: Run Turkish banking collection
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           LLM_PROVIDER: anthropic
           LLM_MODEL: claude-haiku-4-5-20251001
-          MAX_LLM_ITEMS_PER_RUN: "5"
+          MAX_LLM_ITEMS_PER_RUN: "10"
           LLM_TIMEOUT_SECONDS: "60"
         run: |
           python pipeline/run_weekly_incremental_mvp.py \
-            --run-id "daily_${{ github.run_id }}" \
-            --lookback-days 45
+            --run-id "daily_tr_${{ github.run_id }}" \
+            --institutions "Garanti BBVA,İş Bankası,Yapı Kredi,QNB Finansbank,DenizBank,TEB,ING,Enpara,Alternatif Bank,Şekerbank,Fibabanka,Anadolubank,Odeabank,Türk Ticaret Bankası,BKM,TROY,TCMB,BDDK,Türkiye Bankalar Birligi,TODEB,Rekabet Kurumu,Webrazzi,FinTech Istanbul" \
+            --lookback-days 45 \
+            --llm-limit 10
+
+      - name: Run lower-volume global signals collection
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LLM_PROVIDER: anthropic
+          LLM_MODEL: claude-haiku-4-5-20251001
+          MAX_LLM_ITEMS_PER_RUN: "2"
+          LLM_TIMEOUT_SECONDS: "60"
+        run: |
+          python pipeline/run_weekly_incremental_mvp.py \
+            --run-id "daily_global_${{ github.run_id }}" \
+            --institutions "Visa,Mastercard,Stripe,Square,PayPal,Shopify,Airwallex,Checkout.com,Wise,Payments Dive,The Paypers" \
+            --lookback-days 45 \
+            --llm-limit 2
 
       - name: Check new customer offer sources
         run: |

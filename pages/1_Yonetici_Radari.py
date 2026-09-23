@@ -21,7 +21,7 @@ from utils.recent_mvp import (
     read_csv_safe,
     real_published_weekly,
 )
-from utils.institution_aliases import institution_group
+from utils.institution_aliases import institution_group, market_scope
 from utils.ui_theme import apply_akbank_theme, neutralize_benchmark_copy, render_page_header
 
 
@@ -686,10 +686,12 @@ def week_delta_text(current_count: int, previous_count: int) -> str:
     return f"{prefix}{abs(delta)} geçen haftaya göre"
 
 
-def render_kpi_cards(df: pd.DataFrame, global_count: int) -> None:
+def render_kpi_cards(df: pd.DataFrame, scope_label: str) -> None:
     max_date = df["display_date_dt"].max()
     current_week_start = max_date - pd.Timedelta(days=int(max_date.weekday()))
     current = df[(df["display_date_dt"] >= current_week_start) & (df["display_date_dt"] < current_week_start + pd.Timedelta(days=7))]
+    recent_start = max_date - pd.Timedelta(days=29)
+    recent_count = int(df["display_date_dt"].ge(recent_start).sum())
     top_banks_this_week = current["institution_name"].value_counts().head(3)
     top_banks_all_time = df["institution_name"].value_counts().head(3)
     top_bank_week_html = "".join(
@@ -714,8 +716,8 @@ def render_kpi_cards(df: pd.DataFrame, global_count: int) -> None:
             <div class="radar-kpi-range">Bu hafta</div>
           </div>
           <div class="radar-kpi-card">
-            <div class="radar-kpi-label">Global Gelişmeler</div>
-            <div class="radar-kpi-value">{global_count:02d}</div>
+            <div class="radar-kpi-label">{esc(scope_label)}</div>
+            <div class="radar-kpi-value">{recent_count:02d}</div>
             <div class="radar-kpi-range">Son 30 gün</div>
           </div>
           <div class="radar-kpi-card">
@@ -880,6 +882,7 @@ weekly["section"] = weekly["section"].fillna("").astype(str)
 weekly["display_date_label"] = weekly.apply(lambda row: display_date(row)[0], axis=1)
 weekly["display_date_dt"] = weekly.apply(lambda row: display_date(row)[1], axis=1)
 weekly["institution_group"] = weekly["institution_name"].apply(institution_group)
+weekly["market_scope"] = weekly["institution_name"].apply(market_scope)
 weekly["_impact_rank"] = weekly["impact_on_us"].apply(impact_rank)
 weekly["_importance_rank"] = weekly["importance_level"].apply(impact_rank)
 weekly = add_sort_columns(weekly, "display_date_dt")
@@ -887,14 +890,6 @@ weekly = add_sort_columns(weekly, "display_date_dt")
 archive_count = len(archive)
 rejected_count = int(review_queue["review_status"].astype(str).eq("Reddedildi").sum()) if not review_queue.empty else 0
 archived_total = archive_count + rejected_count
-
-current_max_date = weekly["display_date_dt"].max()
-current_week_start = current_max_date - pd.Timedelta(days=int(current_max_date.weekday()))
-global_count = int(
-    summaries["institution_name"].astype(str).str.casefold().isin(["visa", "mastercard"]).sum()
-) if not summaries.empty and "institution_name" in summaries.columns else 0
-
-render_kpi_cards(weekly, global_count)
 
 with st.sidebar:
     st.header("Gelişme Filtreleri")
@@ -949,26 +944,44 @@ if start_date != min_date or end_date != max_date:
 if len(tokens) > 1:
     st.caption(" · ".join(tokens))
 
-render_watchlist(filtered[filtered["section"].eq(SECTION_STRATEGIC)].copy())
+def render_scope(scope_df: pd.DataFrame, scope_label: str) -> None:
+    if scope_df.empty:
+        st.info(f"Seçili filtrelerle {scope_label.casefold()} kapsamında yayınlanmış gelişme yok.")
+        return
 
-st.divider()
-render_radar_section(
-    "Stratejik / BD Gündemi",
-    "Yönetimin ve BD ekiplerinin aksiyon veya yakın takip gerektiren maddeleri",
-    filtered[filtered["section"].eq(SECTION_STRATEGIC)].copy(),
-    current_max_date,
-)
+    scope_max_date = scope_df["display_date_dt"].max()
+    render_kpi_cards(scope_df, scope_label)
+    render_watchlist(scope_df[scope_df["section"].eq(SECTION_STRATEGIC)].copy())
 
-render_radar_section(
-    "Patern & Küme Sinyalleri",
-    "Tekil haberlerden ziyade birden fazla gelişmeyi bağlayan rekabet sinyalleri",
-    filtered[filtered["section"].eq(SECTION_CLUSTER)].copy(),
-    current_max_date,
-)
+    st.divider()
+    render_radar_section(
+        "Stratejik / BD Gündemi",
+        "Yönetimin ve BD ekiplerinin aksiyon veya yakın takip gerektiren maddeleri",
+        scope_df[scope_df["section"].eq(SECTION_STRATEGIC)].copy(),
+        scope_max_date,
+    )
+    render_radar_section(
+        "Patern & Küme Sinyalleri",
+        "Tekil haberlerden ziyade birden fazla gelişmeyi bağlayan rekabet sinyalleri",
+        scope_df[scope_df["section"].eq(SECTION_CLUSTER)].copy(),
+        scope_max_date,
+    )
+    render_radar_section(
+        "KOBİ Departmanlarının İmaj Çalışmaları",
+        "Bankaların tüzel çalışmalarıyla aldığı ödüller",
+        scope_df[scope_df["section"].eq(SECTION_AWARENESS)].copy(),
+        scope_max_date,
+    )
 
-render_radar_section(
-    "KOBİ Departmanlarının İmaj Çalışmaları",
-    "Bankaların tüzel çalışmalarıyla aldığı ödüller",
-    filtered[filtered["section"].eq(SECTION_AWARENESS)].copy(),
-    current_max_date,
-)
+
+turkiye_tab, global_tab = st.tabs(["Türkiye Bankacılığı", "Global Gelişmeler"])
+with turkiye_tab:
+    render_scope(
+        filtered[filtered["market_scope"].eq("Türkiye Bankacılığı")].copy(),
+        "Türkiye Bankacılığı",
+    )
+with global_tab:
+    render_scope(
+        filtered[filtered["market_scope"].eq("Global Gelişmeler")].copy(),
+        "Global Gelişmeler",
+    )

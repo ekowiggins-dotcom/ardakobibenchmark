@@ -114,6 +114,31 @@ GROUP_BY_ID = {
 }
 
 
+GLOBAL_INSTITUTION_IDS = {
+    "adyen",
+    "airwallex",
+    "bank_of_america",
+    "barclays",
+    "checkout_com",
+    "dbs",
+    "jpmorgan_chase_bank",
+    "klarna",
+    "mastercard",
+    "payments_dive",
+    "paypal",
+    "plaid",
+    "revolut",
+    "shopify",
+    "square",
+    "stripe",
+    "the_paypers",
+    "visa",
+    "wells_fargo",
+    "wise",
+    "worldpay",
+}
+
+
 def canonical_institution(value: str) -> tuple[str, str]:
     key = _key(value)
     if key in ALIASES:
@@ -137,3 +162,9 @@ def canonical_institution_name(value: str) -> str:
 def institution_group(value: str) -> str:
     institution_id = canonical_institution_id(value)
     return GROUP_BY_ID.get(institution_id, "Diğer")
+
+
+def market_scope(value: str) -> str:
+    """Split executive reporting into domestic banking and global signals."""
+    institution_id = canonical_institution_id(value)
+    return "Global Gelişmeler" if institution_id in GLOBAL_INSTITUTION_IDS else "Türkiye Bankacılığı"
