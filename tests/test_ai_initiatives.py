@@ -105,3 +105,33 @@ def test_tier_two_ecosystem_records_only_use_independent_official_evidence() -> 
     )
     assert "Enpara" not in set(ecosystem["institution_name"])
     assert ecosystem["evidence_level"].eq("Yüksek").all()
+
+
+def test_tier_one_kobi_saas_has_official_coverage_for_every_bank() -> None:
+    frame = read_ai_initiatives()
+    kobi_saas = frame[
+        frame["institution_tier"].eq("Tier 1")
+        & (
+            frame["ai_category"].eq("KOBİ AI Çözümü")
+            | frame["initiative_type"].eq("SaaS / İş Birliği")
+        )
+    ]
+
+    assert set(kobi_saas["institution_name"]) == EXPECTED_TIER_ONE_BANKS
+    assert kobi_saas["source_url"].str.startswith("https://").all()
+    assert kobi_saas["evidence_level"].isin({"Yüksek", "Orta"}).all()
+
+
+def test_tier_two_kobi_saas_only_uses_verified_customer_offers() -> None:
+    frame = read_ai_initiatives()
+    kobi_saas = frame[
+        frame["institution_tier"].eq("Tier 2")
+        & (
+            frame["ai_category"].eq("KOBİ AI Çözümü")
+            | frame["initiative_type"].eq("SaaS / İş Birliği")
+        )
+    ]
+
+    assert set(kobi_saas["institution_name"]) == {"DenizBank", "QNB Finansbank"}
+    assert kobi_saas["evidence_level"].eq("Yüksek").all()
+    assert kobi_saas["sme_relevance"].eq("Yüksek").all()
