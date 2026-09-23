@@ -21,8 +21,26 @@ from utils.recent_mvp import (
     read_csv_safe,
     real_published_weekly,
 )
-from utils.institution_aliases import institution_group, market_scope
+from utils import institution_aliases as institution_aliases_utils
 from utils.ui_theme import apply_akbank_theme, neutralize_benchmark_copy, render_page_header
+
+
+institution_group = institution_aliases_utils.institution_group
+
+
+def market_scope(value: str) -> str:
+    scope_resolver = getattr(institution_aliases_utils, "market_scope", None)
+    if callable(scope_resolver):
+        return scope_resolver(value)
+
+    global_ids = {
+        "adyen", "airwallex", "bank_of_america", "barclays", "checkout_com",
+        "dbs", "jpmorgan_chase_bank", "klarna", "mastercard", "payments_dive",
+        "paypal", "plaid", "revolut", "shopify", "square", "stripe",
+        "the_paypers", "visa", "wells_fargo", "wise", "worldpay",
+    }
+    institution_id = institution_aliases_utils.canonical_institution_id(value)
+    return "Global Gelişmeler" if institution_id in global_ids else "Türkiye Bankacılığı"
 
 
 st.set_page_config(page_title="Yönetici Özeti", layout="wide")
