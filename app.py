@@ -18,7 +18,7 @@ with st.sidebar:
         """python3 pipeline/run_bank_recent_flow.py --institution "Garanti BBVA"
 python3 pipeline/run_bank_recent_flow.py --institution "İş Bankası"
 python3 pipeline/run_bank_recent_flow.py --institution "Yapı Kredi"
-python3 pipeline/run_bank_recent_flow.py --institution "QNB Finansbank"
+python3 pipeline/run_bank_recent_flow.py --institution "QNB"
 python3 pipeline/publish_recent_items_to_weekly_developments.py""",
         language="bash",
     )

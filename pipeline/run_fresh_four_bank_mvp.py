@@ -18,7 +18,7 @@ REPORT_PREFIX = "production_rehearsal_report"
 LANGUAGE_REPORT_PREFIX = "language_quality_report"
 sys.path.insert(0, str(ROOT_DIR))
 
-DEFAULT_INSTITUTIONS = ["Garanti BBVA", "İş Bankası", "Yapı Kredi", "QNB Finansbank"]
+DEFAULT_INSTITUTIONS = ["Garanti BBVA", "İş Bankası", "Yapı Kredi", "QNB"]
 WEEKLY_SOURCE_TYPES = {
     "Official Press Release Page",
     "Official Campaign Page",
@@ -415,7 +415,7 @@ def build_report(
                 "",
             ]
         )
-        if institution == "QNB Finansbank":
+        if institution == "QNB":
             lines.extend(["#### QNB Source Diagnostics", *source_status_block(registry, metadata, institution), ""])
             lines.extend(["#### QNB Candidate Rejection Diagnostics", *rejection_reason_block(audit, institution), ""])
 

@@ -23,7 +23,7 @@ from utils.source_health import classify_source_health
 from utils.mastercard_blocked_mode import DATA_DIR as BLOCKED_DATA_DIR, read_csv as read_blocked_csv, should_skip_mastercard_weekly_source
 
 
-FALLBACK_INSTITUTIONS = ["Garanti BBVA", "İş Bankası", "Yapı Kredi", "QNB Finansbank", "Visa"]
+FALLBACK_INSTITUTIONS = ["Garanti BBVA", "İş Bankası", "Yapı Kredi", "QNB", "Visa"]
 PERMANENT_CUTOFF = date(2026, 5, 1)
 STATE_PATH = DATA_DIR / "pipeline_run_state.json"
 RUNS_PATH = DATA_DIR / "pipeline_runs.csv"

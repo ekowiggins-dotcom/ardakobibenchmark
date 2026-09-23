@@ -16,7 +16,7 @@ apply_akbank_theme()
 DATA_PATH = Path("data/bank_ai_initiatives.csv")
 BANK_ORDER_BY_TIER = {
     "Tier 1": ["Akbank", "Garanti BBVA", "İş Bankası", "Yapı Kredi"],
-    "Tier 2": ["DenizBank", "Enpara", "QNB Finansbank", "Odeabank", "Alternatif Bank"],
+    "Tier 2": ["DenizBank", "Enpara", "QNB", "Odeabank", "Alternatif Bank"],
     "Global": ["DBS", "Bank of America", "Santander", "HSBC", "BBVA"],
 }
 ALL_BANKS = [bank for banks in BANK_ORDER_BY_TIER.values() for bank in banks]
@@ -27,7 +27,7 @@ BANK_MONOGRAMS = {
     "Yapı Kredi": "YK",
     "DenizBank": "DB",
     "Enpara": "EN",
-    "QNB Finansbank": "QF",
+    "QNB": "QF",
     "Odeabank": "OD",
     "Alternatif Bank": "AB",
     "DBS": "DB",
@@ -43,7 +43,7 @@ BANK_STYLE_CLASSES = {
     "Yapı Kredi": "ai-bank-yapikredi",
     "DenizBank": "ai-bank-denizbank",
     "Enpara": "ai-bank-enpara",
-    "QNB Finansbank": "ai-bank-qnb",
+    "QNB": "ai-bank-qnb",
     "Odeabank": "ai-bank-odeabank",
     "Alternatif Bank": "ai-bank-alternatif",
     "DBS": "ai-bank-dbs",

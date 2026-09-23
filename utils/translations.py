@@ -17,7 +17,7 @@ CANONICAL_TRANSLATIONS = {
     "Garanti BBVA Isim Icin": "Garanti BBVA İşim İçin",
     "Garanti BBVA Isim Icin / SME banking": "Garanti BBVA İşim İçin / KOBİ bankacılığı",
     "Kuveyt Turk": "Kuveyt Türk",
-    "QNB Finansbank SME page": "QNB Finansbank KOBİ Sayfası",
+    "QNB SME page": "QNB KOBİ Sayfası",
     "SME banking": "KOBİ bankacılığı",
     "SME page": "KOBİ sayfası",
     "Business API": "İşletme API",

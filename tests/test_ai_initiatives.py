@@ -5,7 +5,7 @@ import pandas as pd
 
 DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "bank_ai_initiatives.csv"
 EXPECTED_TIER_ONE_BANKS = {"Akbank", "Garanti BBVA", "İş Bankası", "Yapı Kredi"}
-EXPECTED_TIER_TWO_BANKS = {"DenizBank", "Enpara", "QNB Finansbank", "Odeabank", "Alternatif Bank"}
+EXPECTED_TIER_TWO_BANKS = {"DenizBank", "Enpara", "QNB", "Odeabank", "Alternatif Bank"}
 EXPECTED_GLOBAL_BANKS = {"DBS", "Bank of America", "Santander", "HSBC", "BBVA"}
 REQUIRED_COLUMNS = {
     "initiative_id",
@@ -100,7 +100,7 @@ def test_tier_two_ecosystem_records_only_use_independent_official_evidence() -> 
         & frame["ai_category"].eq("Ekosistem & Girişimcilik")
     ]
 
-    assert {"DenizBank", "QNB Finansbank", "Odeabank", "Alternatif Bank"}.issubset(
+    assert {"DenizBank", "QNB", "Odeabank", "Alternatif Bank"}.issubset(
         set(ecosystem["institution_name"])
     )
     assert "Enpara" not in set(ecosystem["institution_name"])
@@ -132,6 +132,6 @@ def test_tier_two_kobi_saas_only_uses_verified_customer_offers() -> None:
         )
     ]
 
-    assert set(kobi_saas["institution_name"]) == {"DenizBank", "QNB Finansbank"}
+    assert set(kobi_saas["institution_name"]) == {"DenizBank", "QNB"}
     assert kobi_saas["evidence_level"].eq("Yüksek").all()
     assert kobi_saas["sme_relevance"].eq("Yüksek").all()

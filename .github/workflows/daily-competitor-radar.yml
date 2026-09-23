@@ -51,7 +51,7 @@ jobs:
         run: |
           python pipeline/run_weekly_incremental_mvp.py \
             --run-id "daily_tr_${{ github.run_id }}" \
-            --institutions "Garanti BBVA,İş Bankası,Yapı Kredi,QNB Finansbank,DenizBank,TEB,ING,Enpara,Alternatif Bank,Şekerbank,Fibabanka,Anadolubank,Odeabank,Türk Ticaret Bankası,BKM,TROY,TCMB,BDDK,Türkiye Bankalar Birligi,TODEB,Rekabet Kurumu,Webrazzi,FinTech Istanbul" \
+            --institutions "Garanti BBVA,İş Bankası,Yapı Kredi,QNB,DenizBank,TEB,ING,Enpara,Alternatif Bank,Şekerbank,Fibabanka,Anadolubank,Odeabank,Türk Ticaret Bankası,BKM,TROY,TCMB,BDDK,Türkiye Bankalar Birligi,TODEB,Rekabet Kurumu,Webrazzi,FinTech Istanbul" \
             --lookback-days 45 \
             --llm-limit 10
 

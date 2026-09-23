@@ -348,7 +348,7 @@ class BatchC1GuardrailTests(unittest.TestCase):
             pd.DataFrame(
                 [
                     {
-                        "institution_name": "QNB Finansbank",
+                        "institution_name": "QNB",
                         "canonical_item_url": url,
                         "recent_item_id": "RI-existing",
                     }

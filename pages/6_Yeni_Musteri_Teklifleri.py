@@ -15,7 +15,7 @@ apply_akbank_theme()
 
 DATA_PATH = Path("data/new_customer_offers.csv")
 TIER_1_BANKS = ["Garanti BBVA", "İş Bankası", "Yapı Kredi"]
-TIER_2_BANKS = ["DenizBank", "Enpara", "QNB Finansbank", "Odeabank", "Alternatif Bank"]
+TIER_2_BANKS = ["DenizBank", "Enpara", "QNB", "Odeabank", "Alternatif Bank"]
 GLOBAL_TIER_1_BANKS = [
     "HSBC UK",
     "Santander UK",

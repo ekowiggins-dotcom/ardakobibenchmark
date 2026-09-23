@@ -454,7 +454,7 @@ TRACKING_QUERY_PARAMS = {
     "mc_eid",
 }
 TITLE_SUFFIX_RE = re.compile(
-    r"\s*\|\s*(Türkiye İş Bankası(?: A\.Ş\.)?|İş Bankası(?: A\.Ş\.)?|Garanti BBVA|Yapı Kredi|QNB Finansbank|Enpara Şirketim|Enpara|HSBC|Burgan Bank|T-Bank|TurkishBank|Türk Ticaret Bankası)\s*$",
+    r"\s*\|\s*(Türkiye İş Bankası(?: A\.Ş\.)?|İş Bankası(?: A\.Ş\.)?|Garanti BBVA|Yapı Kredi|QNB(?: Finansbank)?|Enpara Şirketim|Enpara|HSBC|Burgan Bank|T-Bank|TurkishBank|Türk Ticaret Bankası)\s*$",
     re.IGNORECASE,
 )
 

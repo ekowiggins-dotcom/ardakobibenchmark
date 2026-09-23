@@ -88,7 +88,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Archive and reset recent-development MVP outputs.")
     parser.add_argument(
         "--institutions",
-        default="Garanti BBVA,İş Bankası,Yapı Kredi,QNB Finansbank",
+        default="Garanti BBVA,İş Bankası,Yapı Kredi,QNB",
         help="Comma-separated institutions for audit context.",
     )
     parser.add_argument(

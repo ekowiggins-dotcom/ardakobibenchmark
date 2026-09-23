@@ -24,7 +24,7 @@ LOCAL_BANK_ORDER = [
     "Yapı Kredi",
     "DenizBank",
     "Enpara",
-    "QNB Finansbank",
+    "QNB",
     "Odeabank",
     "Alternatif Bank",
 ]

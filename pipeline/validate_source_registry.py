@@ -230,7 +230,7 @@ def print_results(results: list[ValidationResult]) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Validate source_registry.csv URLs and recent-development eligibility.")
-    parser.add_argument("--institution", default=None, help='Institution name/id filter, e.g. "QNB Finansbank".')
+    parser.add_argument("--institution", default=None, help='Institution name/id filter, e.g. "QNB".')
     args = parser.parse_args()
 
     registry = pd.read_csv(REGISTRY_PATH, encoding="utf-8-sig")
