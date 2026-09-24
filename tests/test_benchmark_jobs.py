@@ -1,4 +1,5 @@
 import json
+import pytest
 
 from utils import benchmark_jobs as jobs
 from pipeline.run_custom_benchmark import run, validate_findings, parse_response
@@ -110,3 +111,26 @@ def test_external_launch_only_enqueues(tmp_path, monkeypatch):
     jobs.launch(job_id)
     assert jobs.next_queued() == job_id
     assert jobs.get(job_id)['status'] == 'Sırada'
+
+
+def test_ci_worker_refuses_missing_shared_database(monkeypatch):
+    from pipeline import benchmark_worker
+    monkeypatch.setattr('sys.argv', ['worker', '--once', '--require-shared-db'])
+    monkeypatch.setattr(jobs, 'database_url', lambda: '')
+    with pytest.raises(SystemExit, match='BENCHMARK_DATABASE_URL'):
+        benchmark_worker.main()
+
+
+def test_ci_worker_exits_without_research_on_empty_queue(monkeypatch):
+    from pipeline import benchmark_worker
+    from types import SimpleNamespace
+    monkeypatch.setattr('sys.argv', ['worker', '--once', '--require-shared-db'])
+    monkeypatch.setattr(jobs, 'database_url', lambda: 'configured')
+    monkeypatch.setattr(jobs, 'recover_interrupted', lambda: 0)
+    monkeypatch.setattr(jobs, 'next_queued', lambda: None)
+    monkeypatch.setattr(benchmark_worker, 'get_llm_config', lambda: SimpleNamespace(has_api_key=True))
+    monkeypatch.setattr(benchmark_worker.signal, 'signal', lambda *args: None)
+    def unexpected(*args):
+        raise AssertionError('Empty queue must not run research')
+    monkeypatch.setattr(benchmark_worker, 'run', unexpected)
+    benchmark_worker.main()

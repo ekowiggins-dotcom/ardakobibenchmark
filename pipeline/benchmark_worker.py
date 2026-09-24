@@ -12,8 +12,11 @@ from pipeline.run_custom_benchmark import run
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--once', action='store_true', help='Process at most one queued job and exit')
+    parser.add_argument('--require-shared-db', action='store_true', help='Refuse ephemeral local storage on CI')
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
+    if args.require_shared_db and not jobs.database_url():
+        raise SystemExit('BENCHMARK_DATABASE_URL must be configured for this worker.')
     if not get_llm_config().has_api_key:
         raise SystemExit('ANTHROPIC_API_KEY must be configured on the worker.')
     stop = threading.Event()
@@ -27,6 +30,10 @@ def main():
                 logging.info('Processing job %s', job_id)
                 run(job_id)
                 logging.info('Job %s: %s', job_id, jobs.get(job_id)['status'])
+                if args.once and jobs.get(job_id)['status'] == 'Hata':
+                    raise SystemExit(1)
+            elif args.once:
+                logging.info('Queue is empty; no research calls were made.')
             elif not args.once:
                 stop.wait(5)
         except Exception as exc:

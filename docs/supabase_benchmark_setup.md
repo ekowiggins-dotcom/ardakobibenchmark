@@ -28,19 +28,25 @@ kullanici bazli ayirma veya executive yayinlama henuz yoktur.
 
 ## 3. Arastirma servisi
 
-Depodaki `render.yaml` bir Render Background Worker tanimlar. Render'da repoyu
-baglayip Blueprint ile worker olusturun. Hizmetin gosterdigi ucreti onaylamadan
-kurulum baslamis sayilmaz. Gercek bir worker bu calisma sirasinda kurulmamisti.
+Render gerekmez. `.github/workflows/benchmark-research.yml` GitHub Actions
+uzerinde kuyrugu 15 dakikalik araliklarla kontrol eder. Zamanlama gecikebilir;
+bu bir baslama suresi garantisi degildir. Her calistirma bir is alir, kuyruk
+bossa AI cagrisi yapmadan biter. Isler ayni anda calistirilmaz. Actions dakika
+kullanimi hesabin mevcut kotasina/tabi oldugu fiyatlandirmaya dahildir.
 
-Worker ortam degiskenleri:
+GitHub repo > Settings > Secrets and variables > Actions > New repository secret:
 
 - `BENCHMARK_DATABASE_URL`: Streamlit ile ayni URI.
 - `ANTHROPIC_API_KEY`: AI ve web aramasi icin.
-- `BENCHMARK_WORKER_MODE`: `external`.
-- `MAX_LLM_ITEMS_PER_RUN`: `5` (iki serviste tutarli tutun).
 
-Baslatma komutu: `python -m pipeline.benchmark_worker`.
-Kaynak: https://render.com/docs/background-workers
+Streamlit secrets GitHub'a aktarilmaz: veritabani URI'sini burada da ekleyin.
+Mevcut `ANTHROPIC_API_KEY` secret'ini tekrar olusturmaniz gerekmez.
+Workflow `BENCHMARK_WORKER_MODE=external` ve banka siniri 5 ayarlarini belirler.
+
+Ilk kontrol: GitHub > Actions > Benchmark Research Queue > Run workflow.
+Calisan komut: `python -m pipeline.benchmark_worker --once --require-shared-db`.
+Eksik baglanti adresi varsa yerel bos veritabanina dusmek yerine hata verir.
+Kaynak: https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow
 
 Birden fazla worker ayni isi alamaz. Worker 30 saniyede bir yasam sinyali
 gonderir. 180 saniye yenilenmeyen isler sonraki kuyruk kontrolunde `Kesildi`
@@ -65,4 +71,4 @@ baslatin: once `Sirada`, sonra `Arastiriliyor` gorunmeli. App kapaliyken worker
 logunda is tamamlanabilmeli. Sonucu tekrar acip kaynaklari kontrol edin.
 
 Yerel SQLite kuyruk ve eszamanlilik testleri mevcuttur. Supabase projesi ve
-worker hesabi baglanmadan canli PostgreSQL/Cloud testi tamamlanmis sayilmaz.
+Actions secrets baglanmadan canli PostgreSQL/Cloud testi tamamlanmis sayilmaz.

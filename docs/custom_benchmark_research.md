@@ -47,9 +47,12 @@ cancel the interrupted job and create a new version.
 
 SQLite persists across browser sessions and local app restarts on the same
 disk. Streamlit Cloud rebuilds can discard local files. Shared PostgreSQL storage,
-an external worker entry point, a local-history migration command and Render
+an external worker entry point, a local-history migration command and GitHub Actions
 configuration are implemented. See `supabase_benchmark_setup.md` to connect them.
-Live hosted deployment still requires a Supabase project and a worker service.
+Live hosted deployment requires the Supabase URI and API key in GitHub Actions
+secrets. The queue workflow polls every 15 minutes (schedules may be delayed),
+processes one job per run, and can be manually dispatched. Each run is capped
+at 60 minutes; interrupted leases are detected on the next worker run.
 Research records are visible to everyone with access to this analyst instance;
 restrict that app to the analyst team. No result is synchronized to GitHub or
 the executive app.

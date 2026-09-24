@@ -105,7 +105,7 @@ def research_library():
         secret_key = ""
     has_key = config.has_api_key or bool(secret_key)
     if jobs.external_worker():
-        st.caption("Araştırmalar ayrı çalışan servisin kuyruğuna gönderilir. API anahtarı bu serviste tanımlanır.")
+        st.caption("Araştırmalar GitHub Actions kuyruğuna gönderilir. Kuyruk 15 dakikalık aralıklarla kontrol edilir; GitHub yoğunluğuna ve önceki işlere göre bekleme uzayabilir.")
     elif not has_key:
         st.info("Araştırmayı başlatmak için ANTHROPIC_API_KEY tanımlanmalı. Taslak kaydetmeye devam edebilirsiniz.")
     records = jobs.list_jobs()
@@ -123,7 +123,7 @@ def research_library():
                     st.rerun(scope="fragment")
             progress = job['progress']
             if job['status'] == 'Sırada':
-                st.info("Araştırma sırada. Uzun süre başlamazsa araştırma servisinin çalıştığını kontrol edin.")
+                st.info("Araştırma sırada. GitHub Actions → Benchmark Research Queue → Run workflow ile kontrolü elle başlatabilirsiniz.")
             if job['status'] == 'Kesildi':
                 st.warning("Araştırma servisiyle bağlantı kesildi. Mevcut sonuçlar korundu; yeni sürüm oluşturabilirsiniz.")
             if progress:
