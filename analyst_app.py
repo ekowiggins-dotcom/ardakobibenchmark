@@ -22,6 +22,10 @@ def render_source_health() -> None:
     run_streamlit_page_without_page_config(ROOT / "pages" / "5_Kaynak_Sagligi.py")
 
 
+def render_benchmark_builder() -> None:
+    run_streamlit_page_without_page_config(ROOT / "pages" / "9_Benchmark_Olustur.py")
+
+
 st.set_page_config(
     page_title="Rekabet Benchmarkı Analist Paneli",
     layout="wide",
@@ -48,6 +52,7 @@ source_health_page = st.Page(
 page = st.navigation(
     {
         "Analist Operasyon": [review_page],
+        "Araştırma": [st.Page(render_benchmark_builder, title="Benchmark Oluştur", url_path="benchmark-olustur")],
         "Kontrol & Sağlık": [archive_page, source_health_page],
     },
     position="sidebar",

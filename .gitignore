@@ -8,3 +8,4 @@ data/run_backups/
 data/snapshots/
 __pycache__/
 .DS_Store
+data/benchmark_jobs/
