@@ -55,7 +55,7 @@ def test_worker_keeps_partial_results_when_one_bank_fails(tmp_path, monkeypatch)
     monkeypatch.setattr(worker, 'candidates', lambda bank, topic: ['https://bank.test'])
     quote = 'KOBİ müşterileri için üç ay ücretsiz kullanım.'
     monkeypatch.setattr(worker, 'fetch', lambda url: (url, quote, []))
-    monkeypatch.setattr(worker, 'review_findings', lambda findings, brief: findings)
+    monkeypatch.setattr(worker, 'review_findings', lambda findings, brief, diagnostics=None: findings)
     replies = iter([json.dumps({'findings': [{'title': 'Paket', 'values': {'Fiyat': {'value': 'Ücretsiz', 'url': 'https://bank.test', 'quote': quote}}}]}), 'invalid JSON'])
     monkeypatch.setattr(worker, 'summarize_with_anthropic', lambda *args, **kwargs: next(replies))
     job_id = jobs.create({'banks': ['QNB', 'Akbank'], 'topic': 'AI / SaaS', 'criteria': ['Fiyat']}, 'Araştır')
@@ -72,6 +72,52 @@ def test_semantic_review_cannot_add_values(monkeypatch):
     findings = [{'bank': 'QNB', 'title': 'Paket', 'values': {'Fiyat': {'value': 'Ücretsiz'}, 'Süre': {'value': '6 ay'}}}]
     monkeypatch.setattr(worker, 'summarize_with_anthropic', lambda *a, **k: '{"findings":[{"index":0,"criteria":["Fiyat","Uydurma"]},{"index":8,"criteria":["Fiyat"]}]}')
     assert list(worker.review_findings(findings, 'AI')[0]['values']) == ['Fiyat']
+
+
+def test_partner_offers_scope_and_rejection_diagnostics(monkeypatch):
+    from pipeline import run_custom_benchmark as worker
+    findings = [
+        {'title': 'Partner SaaS', 'values': {'Fiyat': {'value': '%50 indirim'}}},
+        {'title': 'Genel kredi', 'values': {'Fiyat': {'value': '%2'}}},
+    ]
+    def answer(prompt, **kwargs):
+        assert 'yazılımı bankanın geliştirmesi veya sahiplenmesi şart değildir' in prompt
+        assert 'indirim oranı toplam fiyat değildir' in prompt
+        assert 'bugün aktif olduğunun kanıtı değildir' in prompt
+        return json.dumps({'findings': [{'index': 0, 'criteria': ['Fiyat']}], 'rejections': [
+            {'index': 1, 'reason': 'AI/SaaS ürünü değil'},
+            {'index': 99, 'reason': 'Geçersiz'},
+            {'index': 0, 'reason': 'Kabul edilen bulgu için çelişkili gerekçe'},
+        ]})
+    monkeypatch.setattr(worker, 'summarize_with_anthropic', answer)
+    diagnostics = {}
+    assert len(worker.review_findings(findings, 'AI / SaaS', diagnostics)) == 1
+    assert diagnostics['rejections'] == [{'title': 'Genel kredi', 'reason': 'AI/SaaS ürünü değil'}]
+
+
+def test_ellipsized_quotes_are_not_evidence():
+    quote = 'KOBİ müşterilerine üç ay ücretsiz kullanım sunulur.'
+    payload = {'findings': [{'values': {'Fiyat': {
+        'value': 'Ücretsiz', 'url': 'https://bank.test', 'quote': 'KOBİ müşterilerine...ücretsiz kullanım sunulur.',
+    }}}]}
+    assert validate_findings(payload, {'https://bank.test': quote}, ['Fiyat'], 'QNB') == []
+
+
+def test_review_decorated_labels_preserve_original_evidence(monkeypatch):
+    from pipeline import run_custom_benchmark as worker
+    original = {'value': '%50 indirim', 'quote': 'Kaynakta doğrulanan indirim', 'url': 'https://bank.test'}
+    findings = [{'title': 'Partner SaaS', 'values': {'Fiyat': original}}]
+    monkeypatch.setattr(worker, 'summarize_with_anthropic', lambda *a, **k:
+                        '{"findings":[{"index":0,"criteria":["Fiyat: bedava", "Uydurma: 100 TL"]}]}')
+    assert worker.review_findings(findings, 'AI')[0]['values'] == {'Fiyat': original}
+
+
+def test_review_missing_reason_is_visible(monkeypatch):
+    from pipeline import run_custom_benchmark as worker
+    monkeypatch.setattr(worker, 'summarize_with_anthropic', lambda *a, **k: '{"findings":[]}')
+    diagnostics = {}
+    worker.review_findings([{'title': 'Paket', 'values': {'Fiyat': {'value': '100'}}}], 'AI', diagnostics)
+    assert 'gerekçe alınamadı' in diagnostics['rejections'][0]['reason']
 
 
 def test_job_can_only_be_claimed_once(tmp_path, monkeypatch):

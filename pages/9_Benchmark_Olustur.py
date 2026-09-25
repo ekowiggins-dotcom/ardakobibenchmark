@@ -131,6 +131,13 @@ def research_library():
                 st.caption(f"{progress.get('completed', 0)} / {progress.get('total', 0)} banka tamamlandı · {progress.get('pages', 0)} sayfa okundu")
                 for bank, status in progress.get('banks', {}).items():
                     st.write(f"**{bank}:** {status}")
+                if not job['result'] and job['status'] not in ('Sırada', 'Araştırılıyor'):
+                    st.info("Bu sonuç kurumların teklif sunmadığı anlamına gelmez. Kaynak erişimi ve kanıt doğrulaması sonuçlarını kontrol edin.")
+                for bank, check in progress.get('validation', {}).items():
+                    with st.expander(f"{bank} · Doğrulama ayrıntıları"):
+                        st.caption(f"Çıkarılan: {check['extracted']} · Kaynak alıntısı doğrulanan: {check['evidence_validated']} · Kapsama kabul edilen: {check.get('accepted', 'Kontrol sürüyor')}")
+                        for rejection in check.get('rejections', []):
+                            st.write(f"{rejection['title']}: {rejection['reason']}")
             if job['status'] in ('Sırada', 'Araştırılıyor'):
                 if st.button("Araştırmayı iptal et", key=f"cancel_{job['id']}"):
                     jobs.cancel(job['id'])
